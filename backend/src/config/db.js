@@ -7,14 +7,21 @@ if (dns.getServers().every((server) => server === '127.0.0.1' || server === '::1
   dns.setServers(['8.8.8.8', '1.1.1.1'])
 }
 
+// Gọi nhiều lần vẫn chỉ kết nối một lần (serverless trên Vercel gọi lại ở mỗi request)
+let connection = null
+
 async function connectDB() {
   if (!process.env.MONGODB_URI) {
     throw new Error('Thiếu MONGODB_URI trong backend/.env (xem backend/.env.example)')
   }
 
-  return mongoose.connect(process.env.MONGODB_URI, {
-    dbName: process.env.MONGODB_DB_NAME || 'unimatch_hcmc',
-  })
+  connection ??= mongoose
+    .connect(process.env.MONGODB_URI, { dbName: process.env.MONGODB_DB_NAME || 'unimatch_hcmc' })
+    .catch((error) => {
+      connection = null // lỗi thì lần sau thử kết nối lại
+      throw error
+    })
+  return connection
 }
 
 module.exports = connectDB
