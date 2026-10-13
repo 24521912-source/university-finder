@@ -1,5 +1,4 @@
 const express = require('express')
-const University = require('../models/University')
 
 const router = express.Router()
 
@@ -10,13 +9,8 @@ router.get('/health', (req, res) => {
   })
 })
 
-router.get('/universities', async (req, res) => {
-  const universities = await University.find()
-    .select('slug name shortName institutionType address.district media.logoUrl favoriteCount')
-    .sort({ name: 1 })
-    .lean()
-
-  res.json(universities)
-})
+// Mỗi chức năng là một module trong src/modules/<tên>/ — thêm một dòng ở đây khi tạo module mới
+router.use('/auth', require('../modules/auth/auth.routes'))
+router.use('/universities', require('../modules/universities/universities.routes'))
 
 module.exports = router
