@@ -4,26 +4,38 @@
 
 ```text
 http://localhost:5000/api
-
 ```
+
 ## Health Check
+
 GET /health
+
 Response:
 
+```json
 {
   "message": "Backend is running",
   "status": "OK"
 }
+```
 
 ## Universities
-GET /universities
-Response:
 
+GET /universities
+
+Response (dữ liệu lấy từ MongoDB Atlas, sắp xếp theo tên):
+
+```json
 [
   {
-    "id": 1,
-    "name": "Đại học Công nghệ Thông tin",
-    "location": "TP.HCM"
+    "_id": "6710...",
+    "slug": "bach-khoa-tphcm",
+    "name": "Đại học Bách Khoa TP.HCM",
+    "shortName": "HCMUT",
+    "institutionType": "public",
+    "address": { "district": "Quận 10" },
+    "media": { "logoUrl": null },
+    "favoriteCount": 0
   }
 ]
-
+```

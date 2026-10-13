@@ -27,6 +27,8 @@ backend/ chứa API server và logic xử lý nghiệp vụ.
 # DATABASE 
 
 database/ dùng để lưu script database, schema, migration hoặc dữ liệu mẫu.
+- mongodb/: mô tả schema MongoDB Atlas.
+- seeds/: dữ liệu gốc dạng JSON, nạp lên Atlas bằng `npm run seed` trong backend.
 
 # DOCS
 
