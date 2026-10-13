@@ -6,7 +6,8 @@ University Finder là hệ thống hỗ trợ người dùng tìm kiếm, so sá
 
 - Frontend: React, Vite
 - Backend: Node.js, Express
-- Database: 
+- Database: MongoDB Atlas (cloud, dùng chung cả nhóm, không cần cài MongoDB trên máy) — xem `database/README.md`
+- ODM: Mongoose (`backend/src/models/`)
 - Package manager: npm
 
 ## Cấu trúc project
@@ -26,9 +27,10 @@ cd frontend
 npm install
 npm run dev
 
---CHẠY BACKEND
+--CHẠY BACKEND (cần backend/.env có MONGODB_URI, xem database/README.md)
 cd backend
 npm install 
+npm run seed   # lần đầu hoặc khi cần nạp lại dữ liệu
 npm run dev
 
 

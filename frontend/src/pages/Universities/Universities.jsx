@@ -20,8 +20,8 @@ function Universities() {
 
       <ul>
         {universities.map((university) => (
-          <li key={university.id}>
-            {university.name} - {university.location}
+          <li key={university.slug}>
+            {university.name} - {university.address?.district}
           </li>
         ))}
       </ul>
