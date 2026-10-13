@@ -2,12 +2,14 @@ import { Outlet } from 'react-router-dom'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 
-// Khung chung mọi trang: header + nội dung trang (Outlet) + footer
+// Khung chung mọi trang: skip-link + header + nội dung trang (Outlet) + footer.
+// Mỗi trang tự đặt đúng một <h1> bên trong <main>.
 function MainLayout() {
   return (
     <>
+      <a href="#main-content" className="skip-link">Bỏ qua, đến nội dung chính</a>
       <Header />
-      <main className="page">
+      <main id="main-content" className="page" tabIndex={-1}>
         <Outlet />
       </main>
       <Footer />
