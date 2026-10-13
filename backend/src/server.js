@@ -5,6 +5,11 @@ const connectDB = require('./config/db')
 
 const PORT = process.env.PORT || 5000
 
+if (!process.env.JWT_SECRET) {
+  console.error('Thiếu JWT_SECRET trong backend/.env (xem backend/.env.example)')
+  process.exit(1)
+}
+
 connectDB()
   .then(() => {
     app.listen(PORT, () => {
