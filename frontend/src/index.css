@@ -13,8 +13,22 @@
   --danger: #e53935;
   --success: #2e7d32;
   --success-bg: #e8f5e9;
+  --danger-bg: #fdecea;
+  --danger-text: #b71c1c;
+  --chip-bg: #f1f3f6;
+  --chip-text: #374151;
   --radius: 12px;
   --shadow: 0 1px 3px rgba(16, 24, 40, 0.08), 0 4px 12px rgba(16, 24, 40, 0.06);
+
+  /* Header / navigation */
+  --on-primary: #fff;
+  --header-bg: var(--primary-dark);
+  --header-hover: rgba(255, 255, 255, 0.12);
+  --header-border: rgba(255, 255, 255, 0.6);
+  --header-divider: rgba(255, 255, 255, 0.18);
+  --nav-active-bg: var(--primary-soft);
+  --nav-active-text: var(--primary-dark);
+  --header-height: 64px;
 
   font-family: 'Inter', system-ui, 'Segoe UI', Roboto, sans-serif;
   line-height: 1.5;
@@ -48,9 +62,9 @@ button, input, select, textarea { font: inherit; }
   transition: background 0.15s, border-color 0.15s;
 }
 .btn:disabled { opacity: 0.6; cursor: not-allowed; }
-.btn-primary { background: var(--primary); color: #fff; }
+.btn-primary { background: var(--primary); color: var(--on-primary); }
 .btn-primary:hover:not(:disabled) { background: var(--primary-hover); }
-.btn-outline { background: #fff; color: var(--primary); border-color: var(--primary); }
+.btn-outline { background: var(--surface); color: var(--primary); border-color: var(--primary); }
 .btn-outline:hover { background: var(--primary-light); }
 .btn-block { width: 100%; }
 
@@ -60,17 +74,17 @@ button, input, select, textarea { font: inherit; }
   font-size: 12px; font-weight: 500; background: var(--primary-light); color: var(--primary-dark);
 }
 .badge-green { background: var(--success-bg); color: var(--success); }
-.chip { background: #f1f3f6; border-radius: 999px; padding: 3px 10px; font-size: 12px; color: #374151; }
+.chip { background: var(--chip-bg); border-radius: 999px; padding: 3px 10px; font-size: 12px; color: var(--chip-text); }
 
 /* Form */
 .form-field { display: flex; flex-direction: column; gap: 6px; margin-bottom: 16px; }
 .form-field label { font-size: 13px; font-weight: 600; color: var(--muted); }
 .input {
   width: 100%; padding: 11px 14px; border: 1px solid var(--border);
-  border-radius: 10px; background: #fff; color: var(--text);
+  border-radius: 10px; background: var(--surface); color: var(--text);
 }
 .input:focus { outline: 2px solid var(--primary-soft); border-color: var(--primary); }
-.alert-error { background: #fdecea; color: #b71c1c; padding: 10px 14px; border-radius: 10px; margin-bottom: 16px; font-size: 14px; }
+.alert-error { background: var(--danger-bg); color: var(--danger-text); padding: 10px 14px; border-radius: 10px; margin-bottom: 16px; font-size: 14px; }
 
 /* Lưới thẻ trường */
 .card-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(300px, 100%), 1fr)); gap: 20px; }
