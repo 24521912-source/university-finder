@@ -6,6 +6,7 @@ import Home from '../pages/Home/Home'
 import Universities from '../pages/Universities/Universities'
 import Login from '../pages/Login/Login'
 import Register from '../pages/Register/Register'
+import Profile from '../pages/Profile/Profile'
 
 // Khai báo mọi trang của web. Làm xong chức năng nào thì thay <ComingSoon /> bằng trang thật.
 function AppRoutes() {
@@ -24,8 +25,8 @@ function AppRoutes() {
           <Route path="/signup" element={<Register />} />
 
           {/* Cần đăng nhập */}
-          <Route path="/ca-nhan" element={<ProtectedRoute><ComingSoon title="Trang cá nhân" /></ProtectedRoute>} />
-          <Route path="/profile" element={<ProtectedRoute><ComingSoon title="Trang cá nhân" /></ProtectedRoute>} />
+          <Route path="/ca-nhan" element={<ProtectedRoute><Profile /></ProtectedRoute>} />
+          <Route path="/profile" element={<ProtectedRoute><Profile /></ProtectedRoute>} />
 
           {/* Chỉ admin */}
           <Route path="/admin/*" element={<ProtectedRoute adminOnly><ComingSoon title="Trang quản trị" /></ProtectedRoute>} />
