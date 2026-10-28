@@ -20,6 +20,7 @@ function AuthProvider({ children }) {
     const saveSession = ({ token, user }) => {
       localStorage.setItem(TOKEN_KEY, token)
       setUser(user)
+      return user
     }
     return {
       user,

@@ -17,12 +17,13 @@ function createSession(user) {
   return { token, user: toPublicUser(user) }
 }
 
-async function register({ fullName, email, password }) {
+async function register({ fullName, email, password, role }) {
+  if (role !== undefined && role !== 'user') throw httpError(400, 'Đăng ký công khai chỉ cho phép vai trò user')
   email = email.trim().toLowerCase()
   if (await User.exists({ email })) throw httpError(409, 'Email đã được đăng ký')
 
   const passwordHash = await bcrypt.hash(password, 10)
-  const user = await User.create({ fullName: fullName.trim(), email, passwordHash })
+  const user = await User.create({ fullName: fullName.trim(), email, passwordHash, role: 'user' })
   return createSession(user)
 }
 

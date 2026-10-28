@@ -20,7 +20,7 @@ function Register() {
     setSubmitting(true)
     try {
       await register({ fullName: form.fullName, email: form.email, password: form.password })
-      navigate('/', { replace: true })
+      navigate('/profile', { replace: true })
     } catch (err) {
       setError(getErrorMessage(err))
       setSubmitting(false)

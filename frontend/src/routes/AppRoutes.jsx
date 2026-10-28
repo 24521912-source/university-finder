@@ -20,9 +20,12 @@ function AppRoutes() {
           <Route path="/so-sanh" element={<ComingSoon title="So sánh trường" />} />
           <Route path="/dang-nhap" element={<Login />} />
           <Route path="/dang-ky" element={<Register />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/signup" element={<Register />} />
 
           {/* Cần đăng nhập */}
           <Route path="/ca-nhan" element={<ProtectedRoute><ComingSoon title="Trang cá nhân" /></ProtectedRoute>} />
+          <Route path="/profile" element={<ProtectedRoute><ComingSoon title="Trang cá nhân" /></ProtectedRoute>} />
 
           {/* Chỉ admin */}
           <Route path="/admin/*" element={<ProtectedRoute adminOnly><ComingSoon title="Trang quản trị" /></ProtectedRoute>} />

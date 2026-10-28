@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { Link, useLocation, useNavigate } from 'react-router-dom'
 import { useAuth } from '../../features/auth/AuthContext'
 import { getErrorMessage } from '../../services/api'
+import { loginDestination } from '../../features/auth/loginDestination'
 
 function Login() {
   const { login } = useAuth()
@@ -18,9 +19,9 @@ function Login() {
     setError('')
     setSubmitting(true)
     try {
-      await login(form.email, form.password)
+      const account = await login(form.email, form.password)
       // Quay lại trang người dùng định vào trước khi bị yêu cầu đăng nhập
-      navigate(location.state?.from?.pathname || '/', { replace: true })
+      navigate(loginDestination(account, location.state?.from), { replace: true })
     } catch (err) {
       setError(getErrorMessage(err))
       setSubmitting(false)
