@@ -1,3 +1,4 @@
+import Admin from '../pages/Admin/Admin'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import MainLayout from '../layouts/MainLayout'
 import ProtectedRoute from '../components/ProtectedRoute'
@@ -12,6 +13,7 @@ function AppRoutes() {
   return (
     <BrowserRouter>
       <Routes>
+        <Route path="/admin/*" element={<ProtectedRoute adminOnly><Admin /></ProtectedRoute>} />
         <Route element={<MainLayout />}>
           <Route path="/" element={<Home />} />
           <Route path="/truong" element={<Universities />} />
@@ -28,7 +30,6 @@ function AppRoutes() {
           <Route path="/profile" element={<ProtectedRoute><ComingSoon title="Trang cá nhân" /></ProtectedRoute>} />
 
           {/* Chỉ admin */}
-          <Route path="/admin/*" element={<ProtectedRoute adminOnly><ComingSoon title="Trang quản trị" /></ProtectedRoute>} />
 
           <Route path="*" element={<ComingSoon title="Không tìm thấy trang" message="Đường dẫn này không tồn tại." />} />
         </Route>

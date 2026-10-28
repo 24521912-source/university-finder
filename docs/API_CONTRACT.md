@@ -47,7 +47,23 @@ Body: `{ "email": "a@gmail.com", "password": "matkhau123" }` → Response `200` 
 
 Response: `{ "user": { ...giống trên } }`
 
-Token có hạn 7 ngày. Tài khoản mới luôn là `user`; cấp quyền admin bằng `npm run make-admin -- email` trong `backend`.
+Token có hạn 7 ngày. Tài khoản mới luôn là `user`; `npm run make-admin -- email` trong `backend` chỉ dry-run. Apply riêng yêu cầu xác nhận email và User ID theo [ADMIN.md](ADMIN.md).
+
+## Admin — chỉ GET, bắt buộc requireAdmin
+
+Tất cả `/api/admin/*` xác minh JWT rồi kiểm tra role hiện tại từ MongoDB: guest/token sai trả 401, tài khoản khác admin trả 403. Không có POST/PUT/PATCH/DELETE quản trị.
+
+| GET | Nội dung |
+|---|---|
+| `/admin/overview` | Số document universities/majors/users và số bản ghi học phí/điểm nhúng |
+| `/admin/universities` | Tên, slug, loại trường, địa chỉ, dataLevel |
+| `/admin/majors` | code, name, fieldGroup trong danh mục ngành chung |
+| `/admin/tuition` | Bản ghi học phí, trường, chương trình, năm, đơn vị, ghi chú và nguồn |
+| `/admin/admissions` | Bản ghi điểm, phương thức, năm, thang điểm, tổ hợp và nguồn |
+| `/admin/users` | Chỉ _id, fullName, email, role, createdAt; không passwordHash/token/favorites |
+| `/admin/ai-data` | Bốn phần metadata nguồn cần thiết được trích từ cấu hình đã khảo sát, không gồm thuật toán/UI |
+
+Danh sách nhận q (tối đa 100 ký tự, tìm literal), page (1..100000), limit (1..100, mặc định 20), trả `{items,total,page,limit,totalPages}`. Sai query trả 400. ai-data có academicYear và provenance, không coi URL là bằng chứng mọi bản ghi đã xác minh. Thống kê ngành là số document catalog, không tổng số ngành nhúng của các trường.
 
 ## Universities
 
