@@ -43,4 +43,14 @@ async function list() {
   return universities.map(toCard)
 }
 
-module.exports = { list, toCard, CARD_FIELDS }
+// Chỉ các trường công khai phục vụ trang chi tiết. Không thay đổi truy vấn danh sách.
+const DETAIL_FIELDS = 'slug name shortName institutionType belongsToUniversitySystem universitySystem ' +
+  'foundedYear description favoriteCount overview contact address campuses media majors tuition admissions ' +
+  'facilities scholarships dormitory studentLife careerOpportunities'
+
+async function detail(slug) {
+  if (typeof slug !== 'string' || slug.length > 150 || !/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(slug)) return null
+  return University.findOne({ slug }).select(DETAIL_FIELDS).lean()
+}
+
+module.exports = { list, detail, toCard, CARD_FIELDS }

@@ -79,4 +79,14 @@ Danh sách 66 trường dạng **card** (dữ liệu cho component `UniversityCa
 - `scoreFrom`: điểm chuẩn thấp nhất **thang 30** năm gần nhất; `null` nếu trường không có điểm thang 30.
 - Backend tạo dữ liệu card bằng hàm `toCard()` trong `backend/src/modules/universities/universities.service.js` — API khác cần trả danh sách trường (kết quả AI, yêu thích, so sánh) nên dùng lại hàm này.
 
+### `GET /universities/:slug`
+
+Trả hồ sơ công khai của một trường theo slug để hiển thị trang chi tiết: thông tin cơ bản, liên hệ, cơ sở, ngành, học phí, điểm chuẩn và các mục giới thiệu đã có dữ liệu. Không trả tài khoản người dùng hoặc trường nội bộ khác.
+
+- `200`: một object trường có `slug`, `name` và các trường thông tin công khai; không bọc trong mảng.
+- `404`: `{ "message": "Không tìm thấy trường đại học" }` nếu slug sai định dạng hoặc trường không tồn tại.
+- API này chỉ đọc, không thay đổi dữ liệu trường.
+
+Trang tuyển sinh hiện là bản demo frontend có nhãn dữ liệu minh họa. Checklist cá nhân chỉ dành cho người đã đăng nhập và lưu trong trình duyệt theo tài khoản, trường, năm; chưa có API ghi checklist hoặc dữ liệu tuyển sinh mẫu vào database.
+
 <!-- Thêm API mới bên dưới theo cùng mẫu: phương thức + đường dẫn, body, response, lỗi. Đánh dấu 🔒 nếu cần đăng nhập, 🛡️ nếu chỉ admin. -->
