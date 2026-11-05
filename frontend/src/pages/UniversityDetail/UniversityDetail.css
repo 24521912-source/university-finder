@@ -57,6 +57,15 @@
 .university-detail .ud-major-table tbody th { width: 28%; font-weight: 600; }
 .university-detail .ud-major-table td p { margin: 6px 0 0; font-size: 12px; color: var(--ud-muted); }
 .university-detail .ud-major-table td strong { color: #125ca4; white-space: nowrap; }
+.university-detail .ud-tuition-table { min-width: 1080px; }
+.university-detail .ud-tuition-table tbody th { width: 24%; }
+.university-detail .ud-tuition-table tbody tr:nth-child(even) { background: #fafcfe; }
+.university-detail .ud-tuition-table tbody tr:hover { background: #f1f7ff; }
+.university-detail .ud-tuition-table .ud-tuition-amount { min-width: 145px; }
+.university-detail .ud-tuition-table .ud-tuition-amount strong { white-space: normal; }
+.university-detail .ud-tuition-table td .ud-tuition-note { margin: 0; font-size: 13px; color: #52647b; }
+.university-detail .ud-tuition-table td .ud-tuition-scope { margin: 0 0 8px; font-weight: 600; color: #3e5d80; }
+.university-detail .ud-tuition-discount { display: block; width: fit-content; background: #fff5df; color: #8a641e; border-radius: 5px; padding: 4px 8px; font-size: 11px; font-weight: 500; margin-top: 10px; }
 .university-detail .ud-catalog-table { min-width: 580px; table-layout: fixed; }
 .university-detail .ud-catalog-table thead th:first-child { width: 18%; }
 .university-detail .ud-catalog-table thead th:nth-child(2), .university-detail .ud-catalog-table tbody th { width: 42%; }
@@ -79,6 +88,8 @@
 .university-detail .ud-admissions-scroll { scroll-margin-top: 160px; }
 .university-detail .ud-admissions-table { min-width: 860px; }
 .university-detail .ud-admissions-table tbody th { width: 27%; }
+.university-detail .ud-admission-code { display: block; margin-bottom: 6px; }
+.university-detail .ud-major-description { font-size: 12px; line-height: 1.7; color: var(--ud-muted); font-weight: 400; margin: 10px 0 0; }
 .university-detail .ud-admissions-table tbody tr:nth-child(even) { background: #fafcfe; }
 .university-detail .ud-score-list { list-style: none; margin: 0; padding: 0; }
 .university-detail .ud-score-list li + li { margin-top: 14px; }

@@ -1,31 +1,52 @@
 const clean = value => typeof value === 'string' ? value.trim() : ''
+const normalized = value => clean(value).normalize('NFC').toLocaleLowerCase('vi-VN').replace(/\s+/g, ' ')
 
-// Keep admission groups intact: their scores do not describe individual majors.
+function groupIdentity(value) {
+  const full = clean(value).replace(/\\n/g, '\n').replace(/^\(Ngành mới\)\s*/iu, '')
+  const name = full.split(/\r?\n/).map(clean).find(Boolean) || ''
+  const joint = /^nhóm ngành\b/iu.test(name)
+  // Matching headings can describe different sets of jointly admitted majors.
+  // Keep the membership in the identity instead of assigning group scores to a major.
+  const key = normalized(joint ? full.split(/Đại học đối tác/iu)[0] : name)
+  return { key, name, description: joint ? full.slice(name.length).trim() : '' }
+}
+
+// Group presentation rows without altering the program/code attached to each score.
 export function buildMajorRows(data) {
   if (data.admissionGroups) {
     const groups = new Map()
     for (const score of data.admissionGroups) {
-      if (!groups.has(score.examCode)) groups.set(score.examCode, {
-        code: score.examCode, name: score.groupName, programs: [], scores: [], sources: [],
+      const identity = groupIdentity(score.groupName)
+      const key = identity.key || `code:${score.examCode}`
+      if (!groups.has(key)) groups.set(key, {
+        id: key, code: score.examCode, codes: [], name: identity.name || score.examCode,
+        description: identity.description, programs: [], scores: [], sources: [],
       })
-      const group = groups.get(score.examCode)
+      const group = groups.get(key)
+      group.codes.push(score.examCode)
       group.programs.push(clean(score.program))
       group.scores.push(score)
       if (score.sourceUrl) group.sources.push(score.sourceUrl)
     }
     return [...groups.values()].map(group => ({ ...group,
-      programs: [...new Set(group.programs)], sources: [...new Set(group.sources)],
+      codes: [...new Set(group.codes)], programs: [...new Set(group.programs)], sources: [...new Set(group.sources)],
     }))
   }
-  return data.majors.map(major => {
+  const majors = new Map()
+  for (const major of data.majors) {
+    if (majors.has(major.code)) {
+      if (major.sourceUrl) majors.get(major.code).sources.push(major.sourceUrl)
+      continue
+    }
     const scores = data.admissions.filter(row => row.majorCode === major.code)
     const fees = data.tuition.filter(row => row.majorCode === major.code)
     const programs = [...new Set([...scores, ...fees].map(row => clean(row.program)))]
-    return {
-      code: major.code, name: major.name, programs: programs.length ? programs : [''], scores,
+    majors.set(major.code, {
+      id: major.code, code: major.code, codes: [major.code], name: major.name, programs: programs.length ? programs : [''], scores,
       sources: [...new Set([major.sourceUrl, ...[...scores, ...fees].map(row => row.sourceUrl)].filter(Boolean))],
-    }
-  })
+    })
+  }
+  return [...majors.values()].map(major => ({ ...major, sources: [...new Set(major.sources)] }))
 }
 
 export function paginateRows(rows, requestedPage, size) {

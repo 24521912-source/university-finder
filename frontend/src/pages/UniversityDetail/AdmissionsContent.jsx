@@ -1,8 +1,9 @@
 import { Link, useSearchParams } from 'react-router-dom'
 import { ArrowUpRight, CalendarDays, Check, ChevronRight, ClipboardList, GraduationCap, Info } from 'lucide-react'
 import { safeUrl } from '../../utils/universityDetailPolicy'
-import { DEMO_YEARS, demoMethods, demoMilestones, demoSteps } from './admissionDemoData'
+import { DEMO_YEARS, demoMilestones, demoSteps } from './admissionDemoData'
 import AdmissionChecklist from './AdmissionChecklist'
+import AdmissionMethods from './AdmissionMethods'
 import './AdmissionDemo.css'
 
 const TABS = [
@@ -29,13 +30,7 @@ export default function AdmissionsContent({ base, admissionsUrl }) {
     </section>
     <nav className="ad-shortcuts ad-subpages" aria-label="Các mục tuyển sinh">{TABS.map(({ id, label, icon: Icon }) => <button key={id} type="button" aria-current={active === id ? 'page' : undefined} onClick={() => select('muc', id)}><Icon size={18} aria-hidden="true" />{label}</button>)}</nav>
     <div className="ad-selected-content" key={active}>
-      {active === 'phuong-thuc' && <section className="ud-section ad-section" aria-labelledby="ad-methods-title">
-        <div className="ad-section-heading"><div><p className="ad-kicker">CHỌN CÁCH XÉT TUYỂN</p><h3 id="ad-methods-title">Phương thức & điều kiện</h3></div><span className="ad-sample-tag">3 phương thức mẫu</span></div>
-        <p className="ad-description">So sánh yêu cầu cơ bản trước khi tìm hiểu chi tiết từng phương thức.</p>
-        <div className="ud-table-scroll" role="region" aria-label="Bảng phương thức tuyển sinh minh họa" tabIndex={0}><table className="ad-method-table"><caption>Nội dung minh họa cho giao diện, không dùng làm điều kiện đăng ký thực tế.</caption><thead><tr><th scope="col">Phương thức</th><th scope="col">Đối tượng & điều kiện</th><th scope="col">Cách xét tuyển</th></tr></thead><tbody>{demoMethods.map(method => <tr key={method.id}><th scope="row"><span className="ad-method-tag">{method.tag}</span><strong>{method.name}</strong></th><td><p>{method.audience}</p><p className="ad-condition">{method.condition}</p></td><td><p>{method.calculation}</p></td></tr>)}</tbody></table></div>
-        <p className="ad-source-note">Dữ liệu mẫu tự tạo để duyệt giao diện; chưa có nguồn tuyển sinh được đối chiếu cho nội dung này.</p>
-        <Link className="ad-text-link" to={`${base}/nganh-dao-tao`}>Xem ngành đào tạo & điểm chuẩn trong hồ sơ <ArrowUpRight size={15} aria-hidden="true" /></Link>
-      </section>}
+      {active === 'phuong-thuc' && <AdmissionMethods key={year} base={base} year={year} />}
       {active === 'moc-thoi-gian' && <section className="ud-section ad-section" aria-labelledby="ad-timeline-title"><div className="ad-section-heading"><div><p className="ad-kicker">GHI NHỚ THỜI HẠN</p><h3 id="ad-timeline-title">Các mốc quan trọng</h3></div><span className="ad-sample-tag">Lịch minh họa {year}</span></div><p className="ad-description">Một lịch ví dụ cho toàn bộ hành trình đăng ký.</p><ol className="ad-timeline">{demoMilestones(year).map((milestone, index) => <li key={milestone.title}><span className="ad-timeline-dot" aria-hidden="true">{index + 1}</span><div><span className="ad-date">{milestone.date}</span><h4>{milestone.title}</h4><p>{milestone.description}</p></div></li>)}</ol><p className="ad-source-note">Các ngày trên được tạo cho bản demo, không thể hiện thời hạn hay trạng thái nhận hồ sơ thực tế.</p></section>}
       {active === 'huong-dan' && <>
         <section className="ud-section ad-section" aria-labelledby="ad-steps-title"><div className="ad-section-heading"><div><p className="ad-kicker">BẮT ĐẦU TỪ ĐÂU?</p><h3 id="ad-steps-title">Đăng ký theo từng bước</h3></div><span className="ad-sample-tag">Hướng dẫn mẫu</span></div><ol className="ad-steps">{demoSteps.map((step, i) => <li key={step.title}><span className="ad-step-number">0{i + 1}</span><h4>{step.title}</h4><p>{step.description}</p></li>)}</ol><div className="ad-last-note"><Check size={18} aria-hidden="true" /><p>Trước khi nộp, đối chiếu lại thông tin cá nhân, phương thức và yêu cầu của ngành trong thông báo chính thức.</p></div><button type="button" className="ad-text-link" onClick={() => select('muc', 'ho-so')}>Chuẩn bị hồ sơ cơ bản <ChevronRight size={16} aria-hidden="true" /></button></section>

@@ -34,6 +34,40 @@
 .ad-demo .ad-method-table details { margin-top: 12px; }
 .ad-demo .ad-method-table summary { color: #2169b0; cursor: pointer; font-size: 12px; }
 .ad-demo .ad-method-table details p { margin-top: 10px; font-size: 12px; }
+.ad-demo .ad-method-demo-note { border-left: 3px solid #d8b264; background: #fffbef; padding: 12px 16px; color: #886c32; font-size: 12px; line-height: 1.8; margin-bottom: 18px; }
+.ad-demo .ad-method-demo-note strong { font-weight: 600; }
+.ad-demo .ad-method-comparison { min-width: 1080px; }
+.ad-demo .ad-method-comparison tbody th { width: 17%; }
+.ad-demo .ad-method-comparison td { width: auto; }
+.ad-demo .ad-method-comparison td:nth-child(2) { width: 26%; }
+.ad-demo .ad-method-comparison td:nth-child(3) { width: 20%; }
+.ad-demo .ad-method-comparison td:nth-child(4) { width: 16%; }
+.ad-demo .ad-method-comparison td:nth-child(5) { width: 21%; }
+.ad-demo .ad-method-comparison p.ad-method-audience { margin-bottom: 12px; }
+.ad-demo .ad-method-comparison p.ad-registration-range { color: #8190a1; font-size: 11px; margin-top: 4px; }
+.ad-demo .ad-method-comparison p.ad-registration-channel { margin-top: 12px; }
+.ad-demo .ad-method-comparison p.ad-registration-separate { margin-top: 10px; font-size: 12px; color: #70849a; }
+.ad-demo .ad-requirements { padding-left: 17px; margin: 0; }
+.ad-demo .ad-requirements li + li { margin-top: 8px; }
+.ad-demo .ad-method-toggle { display: inline-flex; align-items: center; gap: 6px; border: 0; background: transparent; padding: 8px 0; margin-top: 10px; color: #2169b0; font-size: 12px; }
+.ad-demo .ad-method-toggle[aria-expanded="true"] svg { transform: rotate(180deg); }
+.ad-demo .ad-deadline { display: block; font-weight: 600; white-space: nowrap; color: #3e5d80; }
+.ad-demo .ad-deadline-note { display: block; font-size: 10px; color: #8998a8; margin-top: 4px; }
+.ad-demo .ad-method-expanded > td { padding: 0; }
+.ad-demo .ad-method-detail { padding: 24px; background: #f8fbfe; }
+.ad-demo .ad-method-detail-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 32px; }
+.ad-demo .ad-method-detail h4 { margin: 20px 0 8px; font-size: 13px; color: #243e5b; }
+.ad-demo .ad-method-detail h4:first-child { margin-top: 0; }
+.ad-demo .ad-score-example { padding: 14px; background: #edf4fc; border-radius: 8px; margin-top: 14px; }
+.ad-demo .ad-score-example > span { display: block; font-size: 9px; font-weight: 700; letter-spacing: 1px; color: #6283a6; margin-bottom: 6px; }
+.ad-demo .ad-method-detail p.ad-method-priority { margin-top: 12px; color: #7c8da0; font-size: 12px; }
+.ad-demo .ad-registration-info { margin: 0; }
+.ad-demo .ad-registration-info > div { margin-bottom: 12px; }
+.ad-demo .ad-registration-info dt { color: #7b8fa3; font-size: 11px; }
+.ad-demo .ad-registration-info dd { margin: 3px 0 0; }
+.ad-demo .ad-registration-steps { padding-left: 18px; margin: 0; }
+.ad-demo .ad-registration-steps li + li { margin-top: 8px; }
+.ad-demo .ad-method-detail p.ad-method-caution { margin-top: 20px; border-top: 1px solid #e0e9f3; padding-top: 14px; font-size: 12px; color: #856b38; }
 .ad-demo .ad-source-note { font-size: 11px !important; color: #8190a1; line-height: 1.8; margin: 14px 0 0; }
 .ad-demo .ad-text-link { display: inline-flex; align-items: center; gap: 8px; margin-top: 18px; color: #2169b0; text-decoration: none; }
 .ad-demo .ad-two-columns { display: grid; grid-template-columns: minmax(0, 1fr) 330px; gap: 22px; align-items: start; }

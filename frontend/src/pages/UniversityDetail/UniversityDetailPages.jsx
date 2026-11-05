@@ -1,11 +1,12 @@
 import { useEffect, useRef, useState } from 'react'
 import { Link, Navigate, NavLink, useParams } from 'react-router-dom'
-import { MISSING, asArray, detailData, feeText, text } from '../../utils/universityDetail'
+import { MISSING, asArray, detailData, text } from '../../utils/universityDetail'
 import { profilePolicy, safeUrl } from '../../utils/universityDetailPolicy'
 import { hcmutContent, hcmutSources } from '../../utils/hcmutDetail'
 import { introBadges } from '../../utils/universityIntro'
 import MajorAdmissions from './MajorAdmissions'
 import AdmissionDemo from './AdmissionDemo'
+import TuitionTable from './TuitionTable'
 
 const PAGES = [
   ['tong-quan', 'Tổng quan', 'Tìm hiểu về trường và các thông tin cơ bản.'],
@@ -72,7 +73,7 @@ export function DetailContent({ university: u }) {
       </>}
       {active === 'nganh-dao-tao' && <section className="ud-section"><MajorAdmissions data={data} /></section>}
       {active === 'tuyen-sinh' && <AdmissionDemo base={base} admissionsUrl={contact.admissionsUrl} />}
-      {active === 'hoc-phi' && <section className="ud-section"><p className="ud-muted">Mức phí theo từng năm học và chương trình. Các mức dự kiến hoặc bình quân có thể thay đổi; xem ghi chú và nguồn trước khi tính ngân sách.</p>{data.tuition.length ? <div className="ud-fees">{data.tuition.map((fee, i) => <article className="ud-fee" key={fee._id || i}>{fee.restrictedDiscount && <span className="badge">Ưu đãi có điều kiện · {fee.academicYear}</span>}<p className="ud-fee-year">Năm học {fee.academicYear}</p><h3>{fee.program || 'Chương trình chưa ghi rõ'}</h3><strong>{feeText(fee)}</strong>{fee.majorCode && <p>Mã ngành {fee.majorCode}</p>}{text(fee.note) && <p>{fee.note}</p>}<Source href={fee.sourceUrl}>Nguồn học phí ↗</Source></article>)}</div> : <p className="ud-empty">{MISSING}</p>}{data.hiddenTuition > 0 && <p className="ud-muted">Một số mức phí chưa đủ căn cứ về nguồn, năm học, đơn vị hoặc phạm vi áp dụng nên chưa hiển thị.</p>}</section>}
+      {active === 'hoc-phi' && <TuitionTable data={data} />}
       {active === 'co-so-vi-tri' && <>
         <section className="ud-section"><h3>Vị trí & cơ sở đào tạo</h3><div className="ud-location"><span aria-hidden="true">⌖</span><p><strong>Trụ sở: </strong>{text(profile.address) || MISSING}</p></div>{profile.campuses?.length > 0 && <><InformationList items={profile.campuses} fields={[["name", ''], ['address', 'Địa chỉ']]} />{verified && <Source href={hcmutSources.overview}>Nguồn địa chỉ ↗</Source>}</>}<p className="ud-muted">Nơi học có thể khác nhau theo ngành và chương trình. Liên hệ trường để xác nhận cơ sở học.</p></section>
         <section className="ud-section"><h3>Cơ sở vật chất</h3><InformationList items={content.facilities} fields={[["name", ''], ['description', '']]} />{verified && <p><Source href={hcmutSources.library}>Nguồn thư viện ↗</Source> · <Source href={hcmutSources.overview}>Nguồn cơ sở vật chất ↗</Source></p>}</section>

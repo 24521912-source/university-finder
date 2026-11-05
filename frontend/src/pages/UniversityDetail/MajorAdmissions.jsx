@@ -14,7 +14,7 @@ export default function MajorAdmissions({ data }) {
   function update(key, value) {
     setFilters(previous => ({ ...previous, [key]: value, page: 1 }))
   }
-  const filtered = all.filter(row => normalizeSearch(`${row.code} ${row.name} ${row.programs.join(' ')}`).includes(normalizeSearch(filters.query)))
+  const filtered = all.filter(row => normalizeSearch(`${row.codes.join(' ')} ${row.name} ${row.description || ''} ${row.programs.join(' ')}`).includes(normalizeSearch(filters.query)))
     .map(row => ({ ...row, scores: row.scores.filter(score => (!filters.year || String(score.year) === filters.year) && (!filters.method || score.kind.key === filters.method) && (!filters.scale || String(score.scale) === filters.scale)) }))
   const result = paginateRows(filtered, filters.page, filters.size)
   const sources = [...new Set(result.rows.flatMap(row => row.sources).map(safeUrl).filter(Boolean))]
@@ -32,21 +32,21 @@ export default function MajorAdmissions({ data }) {
       <label>Thang điểm<select className="input" value={filters.scale} onChange={event => update('scale', event.target.value)}><option value="">Tất cả thang</option>{scales.map(scale => <option key={scale}>{scale}</option>)}</select></label>
     </div>
     <p className="ud-muted">Điểm chuẩn chỉ để tham khảo, giữ nguyên thang điểm của từng phương thức. Dấu “—” nghĩa là chưa có điểm phù hợp với bộ lọc.</p>
-    {data.admissionGroups && <p className="ud-notice">Mã tuyển sinh có thể đại diện cho một nhóm ngành. Điểm tổng hợp của nhóm không phải điểm tuyển riêng của từng ngành, điểm THPT hoặc ĐGNL riêng.</p>}
-    <div className="ud-results-toolbar"><p className="ud-muted" role="status">Hiển thị {result.start}–{result.end} / {filtered.length} {data.admissionGroups ? 'mã tuyển sinh' : 'ngành'}</p><label>{data.admissionGroups ? 'Số mã' : 'Số ngành'} / trang <select className="input" value={filters.size} onChange={event => update('size', Number(event.target.value))}>{[10, 20, 50].map(size => <option key={size}>{size}</option>)}</select></label></div>
+    {data.admissionGroups && <p className="ud-notice">Các chương trình cùng ngành được gom trong một dòng; mỗi mức điểm vẫn gắn với mã tuyển sinh riêng. Nhóm tuyển chung được giữ nguyên, không suy ra điểm tuyển riêng cho từng ngành thành phần.</p>}
+    <div className="ud-results-toolbar"><p className="ud-muted" role="status">Hiển thị {result.start}–{result.end} / {filtered.length} {data.admissionGroups ? 'ngành / nhóm ngành' : 'ngành'}</p><label>Số dòng / trang <select className="input" value={filters.size} onChange={event => update('size', Number(event.target.value))}>{[10, 20, 50].map(size => <option key={size}>{size}</option>)}</select></label></div>
     {!filtered.length ? <p className="ud-empty">{all.length ? 'Không tìm thấy ngành phù hợp với từ khóa.' : 'Chưa có dữ liệu ngành đào tạo.'}</p> : <>
       <div ref={tableRef} className="ud-table-scroll ud-admissions-scroll" role="region" aria-label="Bảng ngành đào tạo và điểm chuẩn" tabIndex={0}>
         <table className="ud-major-table ud-admissions-table">
           <caption>Ngành chưa có điểm chuẩn phù hợp vẫn được giữ trong danh sách.</caption>
           <thead><tr><th scope="col">{data.admissionGroups ? 'Mã tuyển sinh' : 'Mã ngành'}</th><th scope="col">Tên ngành / Nhóm ngành</th><th scope="col">Chương trình</th><th scope="col">Tổ hợp</th><th scope="col">Điểm chuẩn</th></tr></thead>
-          <tbody>{result.rows.map(row => <tr key={row.code}>
-            <td className="ud-catalog-code">{row.code}</td>
-            <th scope="row">{row.name}{sources.length > 1 && <sup className="ud-source-markers">{[...new Set(row.sources.map(safeUrl).filter(Boolean))].map(url => <a key={url} href={`#ud-catalog-source-${sources.indexOf(url) + 1}`} aria-label={`Nguồn ${sources.indexOf(url) + 1}`}>[{sources.indexOf(url) + 1}]</a>)}</sup>}</th>
+          <tbody>{result.rows.map(row => <tr key={row.id}>
+            <td className="ud-catalog-code">{row.codes.map(code => <span className="ud-admission-code" key={code}>{code}</span>)}</td>
+            <th scope="row">{row.name}{sources.length > 1 && <sup className="ud-source-markers">{[...new Set(row.sources.map(safeUrl).filter(Boolean))].map(url => <a key={url} href={`#ud-catalog-source-${sources.indexOf(url) + 1}`} aria-label={`Nguồn ${sources.indexOf(url) + 1}`}>[{sources.indexOf(url) + 1}]</a>)}</sup>}{row.description && <p className="ud-major-description">{row.description}</p>}</th>
             <td><ul className="ud-catalog-programs">{row.programs.map(program => <li key={program}>{program || <span className="ud-missing">Chương trình chưa ghi rõ</span>}</li>)}</ul></td>
             <td>{row.scores.some(score => score.combinations?.length) ? <ul className="ud-score-list">{row.scores.filter(score => score.combinations?.length).map((score, i) => <li key={i}>{score.combinations.join(', ')}<span>{score.program || 'Chương trình chưa ghi rõ'} · {score.year} · {score.kind.label}</span></li>)}</ul> : '—'}</td>
             <td><ul className="ud-score-list">{row.programs.map(program => {
               const scores = row.scores.filter(score => (score.program || '').trim() === program)
-              return <li key={program}><span className="ud-score-program">{program || 'Chương trình chưa ghi rõ'}</span>{scores.length ? scores.map((score, i) => <div className="ud-program-score" key={i}><strong>{score.score.toLocaleString('vi-VN')}/{score.scale}</strong><span>{score.kind.label} · {score.year}</span></div>) : <span className="ud-missing">—</span>}</li>
+              return <li key={program}><span className="ud-score-program">{program || 'Chương trình chưa ghi rõ'}</span>{scores.length ? scores.map((score, i) => <div className="ud-program-score" key={i}><strong>{score.score.toLocaleString('vi-VN')}/{score.scale}</strong><span>{score.examCode && <>Mã tuyển sinh {score.examCode} · </>}{score.kind.label} · {score.year}</span></div>) : <span className="ud-missing">—</span>}</li>
             })}</ul></td>
           </tr>)}</tbody>
         </table>
