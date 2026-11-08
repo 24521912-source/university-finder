@@ -72,7 +72,7 @@ function HistoryAdmin() {
     }
   }
 
-  const restoreText = (log) => !log.before
+  const restoreText = (log) => !log.hasBefore
     ? `Dòng này là "tạo mới". Khôi phục sẽ XÓA ${log.entity === 'university' ? 'trường' : 'tài khoản'} "${log.entityLabel}". Tiếp tục?`
     : `Đưa "${log.entityLabel}" về bản TRƯỚC thay đổi này? Mọi thay đổi sau đó trên đối tượng này sẽ bị ghi đè (vẫn khôi phục lại được từ lịch sử).`
   const pages = data ? Math.max(1, Math.ceil(data.total / data.pageSize)) : 1
