@@ -40,6 +40,7 @@ function mock(rel, exports) {
 mock('models/University', University)
 mock('models/Major', Major)
 mock('models/User', User)
+mock('models/ChangeLog', { create: async (doc) => ({ _id: 'log', ...doc }) })
 process.env.JWT_SECRET = require('node:crypto').randomBytes(32).toString('hex')
 
 const { errorHandler } = require('../src/middlewares/error')

@@ -146,6 +146,21 @@ Lỗi: `400` dữ liệu sai, `403` không đủ quyền, `404` không có tài 
 
 Đăng nhập: tài khoản bị khóa trả `403`, đã xóa trả `401`. `GET /auth/me` có thêm `canManageAdmins`, `mustChangePassword`; đổi mật khẩu xong `mustChangePassword` về `false`.
 
+## Lịch sử thay đổi 🛡️
+
+Mọi thao tác ghi của quản trị viên (thêm / sửa / xóa trường; tạo hộ, khóa, đổi vai trò, đổi quyền, xóa tài khoản; khôi phục) được lưu vào collection `admin_logs`: người thực hiện, thời gian, `before`, `after`, `changedFields`. Không bao giờ lưu `passwordHash`.
+
+| Phương thức | Đường dẫn | Ai | Mô tả |
+|---|---|---|---|
+| GET | `/admin/history?entity=&action=&q=&page=` | admin | Danh sách (30/trang), không kèm `before`/`after` |
+| GET | `/admin/history/:id` | admin | Một dòng, đủ `before`/`after` |
+| POST | `/admin/history/:id/restore` | admin | Đưa đối tượng về `before` của dòng đó (dòng "tạo mới" thì xóa đối tượng đã tạo). Bản thân việc khôi phục được ghi thành 1 dòng `restore` |
+| DELETE | `/admin/history/:id` | **superadmin** | Xóa dòng lịch sử |
+
+- Trường: khôi phục cả document, giữ nguyên `_id` của trường và từng dòng ngành / học phí / điểm chuẩn.
+- Tài khoản: chỉ khôi phục `fullName`, `role`, `canManageAdmins`, `status`, `deletedAt` (không đụng email, mật khẩu) và vẫn theo đúng quyền ở `utils/roles.js`; không khôi phục thành `superadmin`.
+- Lỗi: `403` không đủ quyền, `404` không có dòng / tài khoản, `409` đối tượng không còn hoặc đã giống hệt bản cần khôi phục.
+
 ## Favorites 🔒
 
 | Phương thức | Đường dẫn | Mô tả |

@@ -3,11 +3,13 @@ import { useAuth } from '../../features/auth/AuthContext'
 import { ROLE_LABEL } from '../../utils/roles'
 import UniversitiesAdmin from './UniversitiesAdmin'
 import AccountsAdmin from './AccountsAdmin'
+import HistoryAdmin from './HistoryAdmin'
 import './Admin.css'
 
 const TABS = [
   { key: 'universities', label: 'Dữ liệu trường', Component: UniversitiesAdmin },
   { key: 'accounts', label: 'Tài khoản', Component: AccountsAdmin },
+  { key: 'history', label: 'Lịch sử', Component: HistoryAdmin },
 ]
 
 // Trang quản trị: chia tab. Quyền chi tiết của từng thao tác do backend kiểm tra.

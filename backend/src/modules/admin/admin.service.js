@@ -2,6 +2,7 @@ const University = require('../../models/University')
 const Major = require('../../models/Major')
 const httpError = require('../../utils/httpError')
 const { validateSlug, validateBody, pickEditable, validateMajorCodes } = require('./admin.validation')
+const { record } = require('../history/history.recorder')
 
 const PAGE_SIZE = 20
 
@@ -45,16 +46,17 @@ async function get(slug) {
   return u
 }
 
-async function create(body) {
+async function create(actor, body) {
   ensure(validateBody(body))
   const data = pickEditable(body)
   ensure(validateSlug(data.slug))
   await checkMajorCodes(data)
-  const u = await University.create(data)
-  return u.toObject()
+  const u = (await University.create(data)).toObject()
+  await record({ actor, action: 'create', entity: 'university', entityId: u._id, entityLabel: u.name, after: u })
+  return u
 }
 
-async function update(slug, body) {
+async function update(actor, slug, body) {
   ensure(validateSlug(slug))
   ensure(validateBody(body))
   const data = pickEditable(body)
@@ -63,13 +65,17 @@ async function update(slug, body) {
   if (!current) throw httpError(404, 'Không tìm thấy trường đại học')
   await checkMajorCodes({ ...current, ...data })
   // Ghi đè các field được gửi lên; field không gửi giữ nguyên.
-  return University.findOneAndUpdate({ slug }, { $set: data }, { returnDocument: 'after', runValidators: true }).lean()
+  const after = await University.findOneAndUpdate({ slug }, { $set: data }, { returnDocument: 'after', runValidators: true }).lean()
+  await record({ actor, action: 'update', entity: 'university', entityId: current._id, entityLabel: after?.name || current.name, before: current, after })
+  return after
 }
 
-async function remove(slug) {
+async function remove(actor, slug) {
   ensure(validateSlug(slug))
   const u = await University.findOneAndDelete({ slug }).lean()
   if (!u) throw httpError(404, 'Không tìm thấy trường đại học')
+  // Lưu nguyên bản đã xóa để khôi phục được từ tab Lịch sử.
+  await record({ actor, action: 'delete', entity: 'university', entityId: u._id, entityLabel: u.name, before: u })
   return { slug: u.slug }
 }
 
