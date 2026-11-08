@@ -59,6 +59,9 @@ Dữ liệu cấp 2–3 được tra từ trang chính thức của trường (h
 - Trang liên hệ tuyển sinh ghi "khu phố 13" ở một chỗ, trang chủ uel.edu.vn ghi "khu phố 3".
 - Học phí 2026-2027 là mức dự kiến; không có mức riêng cho chương trình ICAEW.
 - Chương trình liên kết quốc tế (408_I, 410_I) không có điểm chuẩn trong bảng 2025.
+- [Bổ sung 11/2026] Điểm chuẩn 2026 xét tuyển tổng hợp THANG 100 (38 mã XT) đọc từ ảnh chính thức https://tuyensinh.uel.edu.vn/wp-content/uploads/2026/08/UEL_Cong-bo-diem-chuan-2026.png; khớp top 10 và khoảng 65,01–90,01 nêu trong bài công bố. Ghi year=2026, scale=100, method='high_school_exam' (gần nghĩa nhất), program = tên chuyên ngành + '(mã XT ...)'. Mã XT -> mã ngành theo Thông tin tuyển sinh 2026 (bản đăng Dân trí: https://dcdn.dantri.com.vn/2026/02/15/thong-tin-tuyen-sinh-uel-2026-1771150334010.docx).
+- Công thức 2026 (đề án): Điểm học lực = 55% ĐGNL quy đổi + 35% THPT quy đổi + 10% học bạ quy đổi; không thi ĐGNL thì ĐGNL thay bằng THPT quy đổi × α (α = 100% năm 2026). ĐGNL × 100/1200; THPT, học bạ = tổng 3 môn × 100/30. Công thức 20/30/50 và 50/50 trong cùng file chỉ dành cho chương trình liên kết (_I).
+- Tổ hợp 2026: A00, A01, D01, D07, X25, X26 (đề án ghi 'Toán - Tiếng Anh - Hóa học (D01)', hiểu là D07).
 
 ## Trường Đại học Mở TP.HCM (OU) — cấp 3
 
@@ -89,6 +92,8 @@ Dữ liệu cấp 2–3 được tra từ trang chính thức của trường (h
 - Thương mại điện tử (7340122) là ngành mới 2026, chưa có điểm chuẩn 2025.
 - Địa chỉ: hcmiu.edu.vn ghi "khu phố 9", trang tuyensinh.hcmiu.edu.vn/lien-he ghi "Khu phố 33". OSM xếp tọa độ vào khu Đông Hòa (giáp ranh).
 - Học phí 2026-2027 là mức dự kiến; liên kết 4+0 với ĐH Andrews thu theo tỷ giá (không có số); môn cơ sở/chuyên ngành 2 năm đầu CT liên kết 2.050.000đ/tín chỉ.
+- [Bổ sung 11/2026] Điểm chuẩn 2026 xét tuyển tổng hợp THANG 100 cho 24 ngành 'do ĐHQT cấp bằng' lấy từ trang tổng hợp https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-quoc-te-dhqg-tphcm-QSQ.html (không tìm thấy bảng chính thức dạng đọc được; PDF đề án trên tuyensinh.hcmiu.edu.vn không tải được). Không nhập các chương trình liên kết.
+- Đề án chỉ nêu dạng k1·THPT + k2·ĐGNL + k3·học bạ, chưa có hệ số -> trang tư vấn chỉ hiện điểm chuẩn, không ước tính.
 
 ## Trường Đại học Sư phạm Kỹ thuật TP.HCM (HCMUTE) — cấp 3
 
@@ -153,3 +158,19 @@ Dữ liệu cấp 2–3 được tra từ trang chính thức của trường (h
 - Tọa độ là điểm OSM 'Đại học HUTECH' (trạm xe buýt ngay cạnh Sai Gon Campus, Hẻm 502 Điện Biên Phủ) — xấp xỉ, không phải tọa độ tòa nhà. Nominatim bị chặn, dùng Photon (dữ liệu OSM).
 - Học phí khóa 2026 công bố theo toàn khóa + theo đợt; không có mức cho chương trình tiếng Anh và liên kết Lincoln/UWE trong bảng.
 - ĐGNL ĐHQG TP.HCM ghi là competency_assessment thang 1200; điểm học bạ và V-SAT có trên trang nhưng không ghi lại.
+
+## Trường Đại học Khoa học Xã hội và Nhân văn, ĐHQG-HCM (USSH) — cấp 2
+
+- Điểm chuẩn 2026 xét tuyển tổng hợp THANG 100, trường công bố riêng theo nhóm đối tượng (đủ 3 thành phần / THPT + học bạ / ĐGNL + học bạ). Nhập cột 'THPT + học bạ' (đối tượng 2) cho 41 ngành chương trình chuẩn, theo https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-khoa-hoc-xa-hoi-va-nhan-van-dhqg-tphcm-QSX.html; đối chiếu khớp các mức Tiền Phong nêu (Báo chí 84,90; TTĐPT 88,80; Tâm lý học 87,00 cho đối tượng 2...). Bảng gốc là ảnh, không đọc được.
+- Bỏ qua: chương trình chuẩn quốc tế, liên kết 2+2, Quản lý phát triển đô thị và bất động sản (chưa có mã ngành xác minh).
+- Công thức đối tượng 2 (Tuổi Trẻ 24/02/2026, trọng số dự kiến): ĐHL1 = 90% THPT quy đổi + 10% học bạ quy đổi, THPT/học bạ = tổng 3 môn × 100/30.
+- Mã ngành theo danh sách dự kiến 2026 (xaydungchinhsach.chinhphu.vn). Hán Nôm ghi 7220104 theo danh mục chuẩn (bảng nguồn bị lỗi định dạng ở dòng này). Chưa có học phí.
+
+## Trường Đại học Khoa học Sức khỏe, ĐHQG-HCM — cấp 1
+
+- Điểm chuẩn 2026 xét tuyển tổng hợp THANG 100 cho 5 ngành (Y khoa, Răng – Hàm – Mặt, Dược học, Y học cổ truyền, Điều dưỡng) theo https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-khoa-hoc-suc-khoe-dhqg-tphcm-QSY.html. Chưa xác minh trọng số công thức 2026 -> chỉ hiện điểm chuẩn. Chưa có học phí, địa chỉ chi tiết.
+
+## Ghi chú chung ĐHQG-HCM 2026
+
+- UIT và HCMUS: điểm thang 30 trong seed là điểm xét tuyển tổng hợp do chính trường quy đổi/công bố; trang tư vấn dùng để so gần đúng với tổng 3 môn (xem ADMISSION_SOURCES trong config.js). HCMUS 2026: ĐHL = max(0,8·THPT + 0,2·HB; 0,8·ĐGNL quy đổi + 0,2·HB) trên thang 30 (https://tuyensinh.hcmus.edu.vn/2026-thong-bao-ve-phuong-thuc-xet-tuyen-2/). UIT: thang 30 = thang 100 × 0,3.
+- HCMUT, UEL, USSH, IU, KHSK hiển thị ở mục 'Trường xét tuyển tổng hợp' (composite.js), không xếp chung với điểm thang 30.

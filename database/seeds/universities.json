@@ -5062,9 +5062,774 @@
     "address": {
       "city": "TP. Hồ Chí Minh"
     },
-    "majors": [],
+    "majors": [
+      {
+        "code": "7140101",
+        "name": "Giáo dục học"
+      },
+      {
+        "code": "7140107",
+        "name": "Quản trị chất lượng giáo dục"
+      },
+      {
+        "code": "7140114",
+        "name": "Quản lý giáo dục"
+      },
+      {
+        "code": "7210213",
+        "name": "Nghệ thuật học"
+      },
+      {
+        "code": "7220104",
+        "name": "Hán Nôm"
+      },
+      {
+        "code": "7220201",
+        "name": "Ngôn ngữ Anh"
+      },
+      {
+        "code": "7220202",
+        "name": "Ngôn ngữ Nga"
+      },
+      {
+        "code": "7220203",
+        "name": "Ngôn ngữ Pháp"
+      },
+      {
+        "code": "7220204",
+        "name": "Ngôn ngữ Trung Quốc"
+      },
+      {
+        "code": "7220205",
+        "name": "Ngôn ngữ Đức"
+      },
+      {
+        "code": "7220206",
+        "name": "Ngôn ngữ Tây Ban Nha"
+      },
+      {
+        "code": "7220208",
+        "name": "Ngôn ngữ Italia"
+      },
+      {
+        "code": "7229001",
+        "name": "Triết học"
+      },
+      {
+        "code": "7229009",
+        "name": "Tôn giáo học"
+      },
+      {
+        "code": "7229010",
+        "name": "Lịch sử"
+      },
+      {
+        "code": "7229020",
+        "name": "Ngôn ngữ học"
+      },
+      {
+        "code": "7229030",
+        "name": "Văn học"
+      },
+      {
+        "code": "7229040",
+        "name": "Văn hoá học"
+      },
+      {
+        "code": "7310206",
+        "name": "Quan hệ quốc tế"
+      },
+      {
+        "code": "7310301",
+        "name": "Xã hội học"
+      },
+      {
+        "code": "7310302",
+        "name": "Nhân học"
+      },
+      {
+        "code": "7310401",
+        "name": "Tâm lý học"
+      },
+      {
+        "code": "7310403",
+        "name": "Tâm lý học giáo dục"
+      },
+      {
+        "code": "7310501",
+        "name": "Địa lý học"
+      },
+      {
+        "code": "7310601",
+        "name": "Quốc tế học"
+      },
+      {
+        "code": "7310608",
+        "name": "Đông phương học"
+      },
+      {
+        "code": "7310613",
+        "name": "Nhật Bản học"
+      },
+      {
+        "code": "7310614",
+        "name": "Hàn Quốc học"
+      },
+      {
+        "code": "7310630",
+        "name": "Việt Nam học"
+      },
+      {
+        "code": "73106a1",
+        "name": "Kinh doanh thương mại Hàn Quốc"
+      },
+      {
+        "code": "7320101",
+        "name": "Báo chí"
+      },
+      {
+        "code": "7320104",
+        "name": "Truyền thông đa phương tiện"
+      },
+      {
+        "code": "7320108",
+        "name": "Quan hệ công chúng"
+      },
+      {
+        "code": "7320201",
+        "name": "Thông tin – thư viện"
+      },
+      {
+        "code": "7320205",
+        "name": "Quản lý thông tin"
+      },
+      {
+        "code": "7320303",
+        "name": "Lưu trữ học"
+      },
+      {
+        "code": "7340404",
+        "name": "Quản trị nhân lực"
+      },
+      {
+        "code": "7340406",
+        "name": "Quản trị văn phòng"
+      },
+      {
+        "code": "7580112",
+        "name": "Đô thị học"
+      },
+      {
+        "code": "7760101",
+        "name": "Công tác xã hội"
+      },
+      {
+        "code": "7810103",
+        "name": "Quản trị dịch vụ du lịch và lữ hành"
+      }
+    ],
     "tuition": [],
-    "admissions": []
+    "admissions": [
+      {
+        "year": 2026,
+        "method": "high_school_exam",
+        "majorCode": "7140101",
+        "program": "Chuẩn — đối tượng THPT + học bạ (không có ĐGNL)",
+        "combinations": [
+          "B00",
+          "C00",
+          "C01",
+          "D01"
+        ],
+        "score": 76.2,
+        "scale": 100,
+        "sourceUrl": "https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-khoa-hoc-xa-hoi-va-nhan-van-dhqg-tphcm-QSX.html"
+      },
+      {
+        "year": 2026,
+        "method": "high_school_exam",
+        "majorCode": "7140107",
+        "program": "Chuẩn — đối tượng THPT + học bạ (không có ĐGNL)",
+        "combinations": [
+          "C03",
+          "D01",
+          "D14",
+          "D15"
+        ],
+        "score": 78.5,
+        "scale": 100,
+        "sourceUrl": "https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-khoa-hoc-xa-hoi-va-nhan-van-dhqg-tphcm-QSX.html"
+      },
+      {
+        "year": 2026,
+        "method": "high_school_exam",
+        "majorCode": "7140114",
+        "program": "Chuẩn — đối tượng THPT + học bạ (không có ĐGNL)",
+        "combinations": [
+          "A01",
+          "C00",
+          "D01",
+          "D14"
+        ],
+        "score": 79,
+        "scale": 100,
+        "sourceUrl": "https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-khoa-hoc-xa-hoi-va-nhan-van-dhqg-tphcm-QSX.html"
+      },
+      {
+        "year": 2026,
+        "method": "high_school_exam",
+        "majorCode": "7210213",
+        "program": "Chuẩn — đối tượng THPT + học bạ (không có ĐGNL)",
+        "combinations": [
+          "C00",
+          "D01",
+          "D14"
+        ],
+        "score": 83.5,
+        "scale": 100,
+        "sourceUrl": "https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-khoa-hoc-xa-hoi-va-nhan-van-dhqg-tphcm-QSX.html"
+      },
+      {
+        "year": 2026,
+        "method": "high_school_exam",
+        "majorCode": "7220104",
+        "program": "Chuẩn — đối tượng THPT + học bạ (không có ĐGNL)",
+        "combinations": [
+          "C00",
+          "D01",
+          "D04",
+          "D14"
+        ],
+        "score": 73.5,
+        "scale": 100,
+        "sourceUrl": "https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-khoa-hoc-xa-hoi-va-nhan-van-dhqg-tphcm-QSX.html"
+      },
+      {
+        "year": 2026,
+        "method": "high_school_exam",
+        "majorCode": "7220201",
+        "program": "Chuẩn — đối tượng THPT + học bạ (không có ĐGNL)",
+        "combinations": [
+          "D01"
+        ],
+        "score": 83.1,
+        "scale": 100,
+        "sourceUrl": "https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-khoa-hoc-xa-hoi-va-nhan-van-dhqg-tphcm-QSX.html"
+      },
+      {
+        "year": 2026,
+        "method": "high_school_exam",
+        "majorCode": "7220202",
+        "program": "Chuẩn — đối tượng THPT + học bạ (không có ĐGNL)",
+        "combinations": [
+          "D01",
+          "D02",
+          "D14"
+        ],
+        "score": 77,
+        "scale": 100,
+        "sourceUrl": "https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-khoa-hoc-xa-hoi-va-nhan-van-dhqg-tphcm-QSX.html"
+      },
+      {
+        "year": 2026,
+        "method": "high_school_exam",
+        "majorCode": "7220203",
+        "program": "Chuẩn — đối tượng THPT + học bạ (không có ĐGNL)",
+        "combinations": [
+          "D01",
+          "D03",
+          "D14"
+        ],
+        "score": 73.7,
+        "scale": 100,
+        "sourceUrl": "https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-khoa-hoc-xa-hoi-va-nhan-van-dhqg-tphcm-QSX.html"
+      },
+      {
+        "year": 2026,
+        "method": "high_school_exam",
+        "majorCode": "7220204",
+        "program": "Chuẩn — đối tượng THPT + học bạ (không có ĐGNL)",
+        "combinations": [
+          "D01",
+          "D04",
+          "D14"
+        ],
+        "score": 81.5,
+        "scale": 100,
+        "sourceUrl": "https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-khoa-hoc-xa-hoi-va-nhan-van-dhqg-tphcm-QSX.html"
+      },
+      {
+        "year": 2026,
+        "method": "high_school_exam",
+        "majorCode": "7220205",
+        "program": "Chuẩn — đối tượng THPT + học bạ (không có ĐGNL)",
+        "combinations": [
+          "D01",
+          "D05",
+          "D14"
+        ],
+        "score": 78.7,
+        "scale": 100,
+        "sourceUrl": "https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-khoa-hoc-xa-hoi-va-nhan-van-dhqg-tphcm-QSX.html"
+      },
+      {
+        "year": 2026,
+        "method": "high_school_exam",
+        "majorCode": "7220206",
+        "program": "Chuẩn — đối tượng THPT + học bạ (không có ĐGNL)",
+        "combinations": [
+          "D01",
+          "D03",
+          "D05",
+          "D14"
+        ],
+        "score": 75.1,
+        "scale": 100,
+        "sourceUrl": "https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-khoa-hoc-xa-hoi-va-nhan-van-dhqg-tphcm-QSX.html"
+      },
+      {
+        "year": 2026,
+        "method": "high_school_exam",
+        "majorCode": "7220208",
+        "program": "Chuẩn — đối tượng THPT + học bạ (không có ĐGNL)",
+        "combinations": [
+          "D01",
+          "D03",
+          "D05",
+          "D14"
+        ],
+        "score": 71.6,
+        "scale": 100,
+        "sourceUrl": "https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-khoa-hoc-xa-hoi-va-nhan-van-dhqg-tphcm-QSX.html"
+      },
+      {
+        "year": 2026,
+        "method": "high_school_exam",
+        "majorCode": "7229001",
+        "program": "Chuẩn — đối tượng THPT + học bạ (không có ĐGNL)",
+        "combinations": [
+          "A01",
+          "C00",
+          "D01",
+          "D14"
+        ],
+        "score": 76.5,
+        "scale": 100,
+        "sourceUrl": "https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-khoa-hoc-xa-hoi-va-nhan-van-dhqg-tphcm-QSX.html"
+      },
+      {
+        "year": 2026,
+        "method": "high_school_exam",
+        "majorCode": "7229009",
+        "program": "Chuẩn — đối tượng THPT + học bạ (không có ĐGNL)",
+        "combinations": [
+          "C00",
+          "D01",
+          "D14"
+        ],
+        "score": 70,
+        "scale": 100,
+        "sourceUrl": "https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-khoa-hoc-xa-hoi-va-nhan-van-dhqg-tphcm-QSX.html"
+      },
+      {
+        "year": 2026,
+        "method": "high_school_exam",
+        "majorCode": "7229010",
+        "program": "Chuẩn — đối tượng THPT + học bạ (không có ĐGNL)",
+        "combinations": [
+          "C00",
+          "D01",
+          "D14",
+          "D15"
+        ],
+        "score": 80.3,
+        "scale": 100,
+        "sourceUrl": "https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-khoa-hoc-xa-hoi-va-nhan-van-dhqg-tphcm-QSX.html"
+      },
+      {
+        "year": 2026,
+        "method": "high_school_exam",
+        "majorCode": "7229020",
+        "program": "Chuẩn — đối tượng THPT + học bạ (không có ĐGNL)",
+        "combinations": [
+          "C00",
+          "D01",
+          "D14"
+        ],
+        "score": 74,
+        "scale": 100,
+        "sourceUrl": "https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-khoa-hoc-xa-hoi-va-nhan-van-dhqg-tphcm-QSX.html"
+      },
+      {
+        "year": 2026,
+        "method": "high_school_exam",
+        "majorCode": "7229030",
+        "program": "Chuẩn — đối tượng THPT + học bạ (không có ĐGNL)",
+        "combinations": [
+          "C00",
+          "D01",
+          "D14"
+        ],
+        "score": 81,
+        "scale": 100,
+        "sourceUrl": "https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-khoa-hoc-xa-hoi-va-nhan-van-dhqg-tphcm-QSX.html"
+      },
+      {
+        "year": 2026,
+        "method": "high_school_exam",
+        "majorCode": "7229040",
+        "program": "Chuẩn — đối tượng THPT + học bạ (không có ĐGNL)",
+        "combinations": [
+          "C00",
+          "D01",
+          "D14",
+          "D15"
+        ],
+        "score": 80.9,
+        "scale": 100,
+        "sourceUrl": "https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-khoa-hoc-xa-hoi-va-nhan-van-dhqg-tphcm-QSX.html"
+      },
+      {
+        "year": 2026,
+        "method": "high_school_exam",
+        "majorCode": "7310206",
+        "program": "Chuẩn — đối tượng THPT + học bạ (không có ĐGNL)",
+        "combinations": [
+          "D01",
+          "D14"
+        ],
+        "score": 82.6,
+        "scale": 100,
+        "sourceUrl": "https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-khoa-hoc-xa-hoi-va-nhan-van-dhqg-tphcm-QSX.html"
+      },
+      {
+        "year": 2026,
+        "method": "high_school_exam",
+        "majorCode": "7310301",
+        "program": "Chuẩn — đối tượng THPT + học bạ (không có ĐGNL)",
+        "combinations": [
+          "A00",
+          "C00",
+          "D01",
+          "D14"
+        ],
+        "score": 77.9,
+        "scale": 100,
+        "sourceUrl": "https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-khoa-hoc-xa-hoi-va-nhan-van-dhqg-tphcm-QSX.html"
+      },
+      {
+        "year": 2026,
+        "method": "high_school_exam",
+        "majorCode": "7310302",
+        "program": "Chuẩn — đối tượng THPT + học bạ (không có ĐGNL)",
+        "combinations": [
+          "C00",
+          "D01",
+          "D14",
+          "D15"
+        ],
+        "score": 75.3,
+        "scale": 100,
+        "sourceUrl": "https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-khoa-hoc-xa-hoi-va-nhan-van-dhqg-tphcm-QSX.html"
+      },
+      {
+        "year": 2026,
+        "method": "high_school_exam",
+        "majorCode": "7310401",
+        "program": "Chuẩn — đối tượng THPT + học bạ (không có ĐGNL)",
+        "combinations": [
+          "B00",
+          "C00",
+          "D01",
+          "D14"
+        ],
+        "score": 87,
+        "scale": 100,
+        "sourceUrl": "https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-khoa-hoc-xa-hoi-va-nhan-van-dhqg-tphcm-QSX.html"
+      },
+      {
+        "year": 2026,
+        "method": "high_school_exam",
+        "majorCode": "7310403",
+        "program": "Chuẩn — đối tượng THPT + học bạ (không có ĐGNL)",
+        "combinations": [
+          "B00",
+          "B08",
+          "D01",
+          "D14"
+        ],
+        "score": 79.5,
+        "scale": 100,
+        "sourceUrl": "https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-khoa-hoc-xa-hoi-va-nhan-van-dhqg-tphcm-QSX.html"
+      },
+      {
+        "year": 2026,
+        "method": "high_school_exam",
+        "majorCode": "7310501",
+        "program": "Chuẩn — đối tượng THPT + học bạ (không có ĐGNL)",
+        "combinations": [
+          "A01",
+          "C00",
+          "D01",
+          "D15"
+        ],
+        "score": 78.5,
+        "scale": 100,
+        "sourceUrl": "https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-khoa-hoc-xa-hoi-va-nhan-van-dhqg-tphcm-QSX.html"
+      },
+      {
+        "year": 2026,
+        "method": "high_school_exam",
+        "majorCode": "7310601",
+        "program": "Chuẩn — đối tượng THPT + học bạ (không có ĐGNL)",
+        "combinations": [
+          "D01",
+          "D09",
+          "D14",
+          "D15"
+        ],
+        "score": 79.5,
+        "scale": 100,
+        "sourceUrl": "https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-khoa-hoc-xa-hoi-va-nhan-van-dhqg-tphcm-QSX.html"
+      },
+      {
+        "year": 2026,
+        "method": "high_school_exam",
+        "majorCode": "7310608",
+        "program": "Chuẩn — đối tượng THPT + học bạ (không có ĐGNL)",
+        "combinations": [
+          "D01",
+          "D04",
+          "D14",
+          "D15"
+        ],
+        "score": 74.7,
+        "scale": 100,
+        "sourceUrl": "https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-khoa-hoc-xa-hoi-va-nhan-van-dhqg-tphcm-QSX.html"
+      },
+      {
+        "year": 2026,
+        "method": "high_school_exam",
+        "majorCode": "7310613",
+        "program": "Chuẩn — đối tượng THPT + học bạ (không có ĐGNL)",
+        "combinations": [
+          "D01",
+          "D06",
+          "D14",
+          "D63"
+        ],
+        "score": 76.3,
+        "scale": 100,
+        "sourceUrl": "https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-khoa-hoc-xa-hoi-va-nhan-van-dhqg-tphcm-QSX.html"
+      },
+      {
+        "year": 2026,
+        "method": "high_school_exam",
+        "majorCode": "7310614",
+        "program": "Chuẩn — đối tượng THPT + học bạ (không có ĐGNL)",
+        "combinations": [
+          "D01",
+          "D14",
+          "DD2",
+          "DH5"
+        ],
+        "score": 77,
+        "scale": 100,
+        "sourceUrl": "https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-khoa-hoc-xa-hoi-va-nhan-van-dhqg-tphcm-QSX.html"
+      },
+      {
+        "year": 2026,
+        "method": "high_school_exam",
+        "majorCode": "7310630",
+        "program": "Chuẩn — đối tượng THPT + học bạ (không có ĐGNL)",
+        "combinations": [
+          "C00",
+          "D01",
+          "D14",
+          "D15"
+        ],
+        "score": 76.6,
+        "scale": 100,
+        "sourceUrl": "https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-khoa-hoc-xa-hoi-va-nhan-van-dhqg-tphcm-QSX.html"
+      },
+      {
+        "year": 2026,
+        "method": "high_school_exam",
+        "majorCode": "73106a1",
+        "program": "Chuẩn — đối tượng THPT + học bạ (không có ĐGNL)",
+        "combinations": [
+          "D01",
+          "D14",
+          "DD2",
+          "DH5"
+        ],
+        "score": 76.9,
+        "scale": 100,
+        "sourceUrl": "https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-khoa-hoc-xa-hoi-va-nhan-van-dhqg-tphcm-QSX.html"
+      },
+      {
+        "year": 2026,
+        "method": "high_school_exam",
+        "majorCode": "7320101",
+        "program": "Chuẩn — đối tượng THPT + học bạ (không có ĐGNL)",
+        "combinations": [
+          "C00",
+          "D01",
+          "D14"
+        ],
+        "score": 84.9,
+        "scale": 100,
+        "sourceUrl": "https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-khoa-hoc-xa-hoi-va-nhan-van-dhqg-tphcm-QSX.html"
+      },
+      {
+        "year": 2026,
+        "method": "high_school_exam",
+        "majorCode": "7320104",
+        "program": "Chuẩn — đối tượng THPT + học bạ (không có ĐGNL)",
+        "combinations": [
+          "D01",
+          "D14",
+          "D15"
+        ],
+        "score": 88.8,
+        "scale": 100,
+        "sourceUrl": "https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-khoa-hoc-xa-hoi-va-nhan-van-dhqg-tphcm-QSX.html"
+      },
+      {
+        "year": 2026,
+        "method": "high_school_exam",
+        "majorCode": "7320108",
+        "program": "Chuẩn — đối tượng THPT + học bạ (không có ĐGNL)",
+        "combinations": [
+          "D01",
+          "D14",
+          "D15"
+        ],
+        "score": 85.5,
+        "scale": 100,
+        "sourceUrl": "https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-khoa-hoc-xa-hoi-va-nhan-van-dhqg-tphcm-QSX.html"
+      },
+      {
+        "year": 2026,
+        "method": "high_school_exam",
+        "majorCode": "7320201",
+        "program": "Chuẩn — đối tượng THPT + học bạ (không có ĐGNL)",
+        "combinations": [
+          "A01",
+          "C00",
+          "D01",
+          "D14"
+        ],
+        "score": 74.5,
+        "scale": 100,
+        "sourceUrl": "https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-khoa-hoc-xa-hoi-va-nhan-van-dhqg-tphcm-QSX.html"
+      },
+      {
+        "year": 2026,
+        "method": "high_school_exam",
+        "majorCode": "7320205",
+        "program": "Chuẩn — đối tượng THPT + học bạ (không có ĐGNL)",
+        "combinations": [
+          "A01",
+          "C00",
+          "D01",
+          "D14"
+        ],
+        "score": 79.5,
+        "scale": 100,
+        "sourceUrl": "https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-khoa-hoc-xa-hoi-va-nhan-van-dhqg-tphcm-QSX.html"
+      },
+      {
+        "year": 2026,
+        "method": "high_school_exam",
+        "majorCode": "7320303",
+        "program": "Chuẩn — đối tượng THPT + học bạ (không có ĐGNL)",
+        "combinations": [
+          "C00",
+          "D01",
+          "D14",
+          "D15"
+        ],
+        "score": 75.2,
+        "scale": 100,
+        "sourceUrl": "https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-khoa-hoc-xa-hoi-va-nhan-van-dhqg-tphcm-QSX.html"
+      },
+      {
+        "year": 2026,
+        "method": "high_school_exam",
+        "majorCode": "7340404",
+        "program": "Chuẩn — đối tượng THPT + học bạ (không có ĐGNL)",
+        "combinations": [
+          "A01",
+          "D01",
+          "D14",
+          "D15"
+        ],
+        "score": 80.35,
+        "scale": 100,
+        "sourceUrl": "https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-khoa-hoc-xa-hoi-va-nhan-van-dhqg-tphcm-QSX.html"
+      },
+      {
+        "year": 2026,
+        "method": "high_school_exam",
+        "majorCode": "7340406",
+        "program": "Chuẩn — đối tượng THPT + học bạ (không có ĐGNL)",
+        "combinations": [
+          "C00",
+          "D01",
+          "D14",
+          "D15"
+        ],
+        "score": 78.8,
+        "scale": 100,
+        "sourceUrl": "https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-khoa-hoc-xa-hoi-va-nhan-van-dhqg-tphcm-QSX.html"
+      },
+      {
+        "year": 2026,
+        "method": "high_school_exam",
+        "majorCode": "7580112",
+        "program": "Chuẩn — đối tượng THPT + học bạ (không có ĐGNL)",
+        "combinations": [
+          "A01",
+          "C00",
+          "D01",
+          "D14"
+        ],
+        "score": 74.1,
+        "scale": 100,
+        "sourceUrl": "https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-khoa-hoc-xa-hoi-va-nhan-van-dhqg-tphcm-QSX.html"
+      },
+      {
+        "year": 2026,
+        "method": "high_school_exam",
+        "majorCode": "7760101",
+        "program": "Chuẩn — đối tượng THPT + học bạ (không có ĐGNL)",
+        "combinations": [
+          "C00",
+          "D01",
+          "D14",
+          "D15"
+        ],
+        "score": 77.65,
+        "scale": 100,
+        "sourceUrl": "https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-khoa-hoc-xa-hoi-va-nhan-van-dhqg-tphcm-QSX.html"
+      },
+      {
+        "year": 2026,
+        "method": "high_school_exam",
+        "majorCode": "7810103",
+        "program": "Chuẩn — đối tượng THPT + học bạ (không có ĐGNL)",
+        "combinations": [
+          "C00",
+          "D01",
+          "D14",
+          "D15"
+        ],
+        "score": 82,
+        "scale": 100,
+        "sourceUrl": "https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-khoa-hoc-xa-hoi-va-nhan-van-dhqg-tphcm-QSX.html"
+      }
+    ]
   },
   {
     "slug": "kinh-te-luat-dhqg",
@@ -6503,6 +7268,652 @@
         "score": 881,
         "scale": 1200,
         "sourceUrl": "https://tuyensinh.uel.edu.vn/truong-dai-hoc-kinh-te-luat-cong-bo-ket-qua-trung-tuyen-dai-hoc-chinh-quy-nam-2025/"
+      },
+      {
+        "year": 2026,
+        "method": "high_school_exam",
+        "majorCode": "7310101",
+        "program": "Kinh tế (Chuyên ngành Kinh tế học) (mã XT 401)",
+        "combinations": [
+          "A00",
+          "A01",
+          "D01",
+          "D07",
+          "X25",
+          "X26"
+        ],
+        "score": 74.78,
+        "scale": 100,
+        "sourceUrl": "https://tuyensinh.uel.edu.vn/truong-dai-hoc-kinh-te-luat-cong-bo-ket-qua-tuyen-sinh-dai-hoc-chinh-quy-nam-2026/"
+      },
+      {
+        "year": 2026,
+        "method": "high_school_exam",
+        "majorCode": "7310101",
+        "program": "Kinh tế (Chuyên ngành Kinh tế và Quản lý công) (mã XT 403)",
+        "combinations": [
+          "A00",
+          "A01",
+          "D01",
+          "D07",
+          "X25",
+          "X26"
+        ],
+        "score": 74.49,
+        "scale": 100,
+        "sourceUrl": "https://tuyensinh.uel.edu.vn/truong-dai-hoc-kinh-te-luat-cong-bo-ket-qua-tuyen-sinh-dai-hoc-chinh-quy-nam-2026/"
+      },
+      {
+        "year": 2026,
+        "method": "high_school_exam",
+        "majorCode": "7310101",
+        "program": "Kinh tế (Chuyên ngành Kinh tế số) (mã XT 421)",
+        "combinations": [
+          "A00",
+          "A01",
+          "D01",
+          "D07",
+          "X25",
+          "X26"
+        ],
+        "score": 80.84,
+        "scale": 100,
+        "sourceUrl": "https://tuyensinh.uel.edu.vn/truong-dai-hoc-kinh-te-luat-cong-bo-ket-qua-tuyen-sinh-dai-hoc-chinh-quy-nam-2026/"
+      },
+      {
+        "year": 2026,
+        "method": "high_school_exam",
+        "majorCode": "7310106",
+        "program": "Kinh tế quốc tế (Chuyên ngành Kinh tế đối ngoại) (mã XT 402)",
+        "combinations": [
+          "A00",
+          "A01",
+          "D01",
+          "D07",
+          "X25",
+          "X26"
+        ],
+        "score": 84.76,
+        "scale": 100,
+        "sourceUrl": "https://tuyensinh.uel.edu.vn/truong-dai-hoc-kinh-te-luat-cong-bo-ket-qua-tuyen-sinh-dai-hoc-chinh-quy-nam-2026/"
+      },
+      {
+        "year": 2026,
+        "method": "high_school_exam",
+        "majorCode": "7310108",
+        "program": "Toán kinh tế (Chuyên ngành Toán ứng dụng trong Kinh tế, Quản trị và Tài chính) (mã XT 413)",
+        "combinations": [
+          "A00",
+          "A01",
+          "D01",
+          "D07",
+          "X25",
+          "X26"
+        ],
+        "score": 79.65,
+        "scale": 100,
+        "sourceUrl": "https://tuyensinh.uel.edu.vn/truong-dai-hoc-kinh-te-luat-cong-bo-ket-qua-tuyen-sinh-dai-hoc-chinh-quy-nam-2026/"
+      },
+      {
+        "year": 2026,
+        "method": "high_school_exam",
+        "majorCode": "7310108",
+        "program": "Toán kinh tế (Chuyên ngành Toán ứng dụng trong Kinh tế, Quản trị và Tài chính) (Tiếng Anh) (mã XT 413E)",
+        "combinations": [
+          "A00",
+          "A01",
+          "D01",
+          "D07",
+          "X25",
+          "X26"
+        ],
+        "score": 67.22,
+        "scale": 100,
+        "sourceUrl": "https://tuyensinh.uel.edu.vn/truong-dai-hoc-kinh-te-luat-cong-bo-ket-qua-tuyen-sinh-dai-hoc-chinh-quy-nam-2026/"
+      },
+      {
+        "year": 2026,
+        "method": "high_school_exam",
+        "majorCode": "7310108",
+        "program": "Toán kinh tế (Chuyên ngành Phân tích dữ liệu) (mã XT 419)",
+        "combinations": [
+          "A00",
+          "A01",
+          "D01",
+          "D07",
+          "X25",
+          "X26"
+        ],
+        "score": 82.61,
+        "scale": 100,
+        "sourceUrl": "https://tuyensinh.uel.edu.vn/truong-dai-hoc-kinh-te-luat-cong-bo-ket-qua-tuyen-sinh-dai-hoc-chinh-quy-nam-2026/"
+      },
+      {
+        "year": 2026,
+        "method": "high_school_exam",
+        "majorCode": "7340101",
+        "program": "Quản trị kinh doanh (mã XT 407)",
+        "combinations": [
+          "A00",
+          "A01",
+          "D01",
+          "D07",
+          "X25",
+          "X26"
+        ],
+        "score": 80.5,
+        "scale": 100,
+        "sourceUrl": "https://tuyensinh.uel.edu.vn/truong-dai-hoc-kinh-te-luat-cong-bo-ket-qua-tuyen-sinh-dai-hoc-chinh-quy-nam-2026/"
+      },
+      {
+        "year": 2026,
+        "method": "high_school_exam",
+        "majorCode": "7340101",
+        "program": "Quản trị kinh doanh (Tiếng Anh) (mã XT 407E)",
+        "combinations": [
+          "A00",
+          "A01",
+          "D01",
+          "D07",
+          "X25",
+          "X26"
+        ],
+        "score": 70.28,
+        "scale": 100,
+        "sourceUrl": "https://tuyensinh.uel.edu.vn/truong-dai-hoc-kinh-te-luat-cong-bo-ket-qua-tuyen-sinh-dai-hoc-chinh-quy-nam-2026/"
+      },
+      {
+        "year": 2026,
+        "method": "high_school_exam",
+        "majorCode": "7340101",
+        "program": "Quản trị kinh doanh (Chuyên ngành Quản trị du lịch và lữ hành) (mã XT 415)",
+        "combinations": [
+          "A00",
+          "A01",
+          "D01",
+          "D07",
+          "X25",
+          "X26"
+        ],
+        "score": 69.55,
+        "scale": 100,
+        "sourceUrl": "https://tuyensinh.uel.edu.vn/truong-dai-hoc-kinh-te-luat-cong-bo-ket-qua-tuyen-sinh-dai-hoc-chinh-quy-nam-2026/"
+      },
+      {
+        "year": 2026,
+        "method": "high_school_exam",
+        "majorCode": "7340115",
+        "program": "Marketing (mã XT 410)",
+        "combinations": [
+          "A00",
+          "A01",
+          "D01",
+          "D07",
+          "X25",
+          "X26"
+        ],
+        "score": 84.63,
+        "scale": 100,
+        "sourceUrl": "https://tuyensinh.uel.edu.vn/truong-dai-hoc-kinh-te-luat-cong-bo-ket-qua-tuyen-sinh-dai-hoc-chinh-quy-nam-2026/"
+      },
+      {
+        "year": 2026,
+        "method": "high_school_exam",
+        "majorCode": "7340115",
+        "program": "Marketing (Tiếng Anh) (mã XT 410E)",
+        "combinations": [
+          "A00",
+          "A01",
+          "D01",
+          "D07",
+          "X25",
+          "X26"
+        ],
+        "score": 70.09,
+        "scale": 100,
+        "sourceUrl": "https://tuyensinh.uel.edu.vn/truong-dai-hoc-kinh-te-luat-cong-bo-ket-qua-tuyen-sinh-dai-hoc-chinh-quy-nam-2026/"
+      },
+      {
+        "year": 2026,
+        "method": "high_school_exam",
+        "majorCode": "7340115",
+        "program": "Marketing (Chuyên ngành Digital Marketing) (mã XT 417)",
+        "combinations": [
+          "A00",
+          "A01",
+          "D01",
+          "D07",
+          "X25",
+          "X26"
+        ],
+        "score": 82.48,
+        "scale": 100,
+        "sourceUrl": "https://tuyensinh.uel.edu.vn/truong-dai-hoc-kinh-te-luat-cong-bo-ket-qua-tuyen-sinh-dai-hoc-chinh-quy-nam-2026/"
+      },
+      {
+        "year": 2026,
+        "method": "high_school_exam",
+        "majorCode": "7340120",
+        "program": "Kinh doanh quốc tế (mã XT 408)",
+        "combinations": [
+          "A00",
+          "A01",
+          "D01",
+          "D07",
+          "X25",
+          "X26"
+        ],
+        "score": 87.94,
+        "scale": 100,
+        "sourceUrl": "https://tuyensinh.uel.edu.vn/truong-dai-hoc-kinh-te-luat-cong-bo-ket-qua-tuyen-sinh-dai-hoc-chinh-quy-nam-2026/"
+      },
+      {
+        "year": 2026,
+        "method": "high_school_exam",
+        "majorCode": "7340120",
+        "program": "Kinh doanh quốc tế (Tiếng Anh) (mã XT 408E)",
+        "combinations": [
+          "A00",
+          "A01",
+          "D01",
+          "D07",
+          "X25",
+          "X26"
+        ],
+        "score": 82.66,
+        "scale": 100,
+        "sourceUrl": "https://tuyensinh.uel.edu.vn/truong-dai-hoc-kinh-te-luat-cong-bo-ket-qua-tuyen-sinh-dai-hoc-chinh-quy-nam-2026/"
+      },
+      {
+        "year": 2026,
+        "method": "high_school_exam",
+        "majorCode": "7340120",
+        "program": "Kinh doanh quốc tế (Chuyên ngành Quản lý chuỗi cung ứng và Logistics quốc tế) (mã XT 420)",
+        "combinations": [
+          "A00",
+          "A01",
+          "D01",
+          "D07",
+          "X25",
+          "X26"
+        ],
+        "score": 90.01,
+        "scale": 100,
+        "sourceUrl": "https://tuyensinh.uel.edu.vn/truong-dai-hoc-kinh-te-luat-cong-bo-ket-qua-tuyen-sinh-dai-hoc-chinh-quy-nam-2026/"
+      },
+      {
+        "year": 2026,
+        "method": "high_school_exam",
+        "majorCode": "7340122",
+        "program": "Thương mại điện tử (mã XT 411)",
+        "combinations": [
+          "A00",
+          "A01",
+          "D01",
+          "D07",
+          "X25",
+          "X26"
+        ],
+        "score": 86.73,
+        "scale": 100,
+        "sourceUrl": "https://tuyensinh.uel.edu.vn/truong-dai-hoc-kinh-te-luat-cong-bo-ket-qua-tuyen-sinh-dai-hoc-chinh-quy-nam-2026/"
+      },
+      {
+        "year": 2026,
+        "method": "high_school_exam",
+        "majorCode": "7340122",
+        "program": "Thương mại điện tử (Tiếng Anh) (mã XT 411E)",
+        "combinations": [
+          "A00",
+          "A01",
+          "D01",
+          "D07",
+          "X25",
+          "X26"
+        ],
+        "score": 78.36,
+        "scale": 100,
+        "sourceUrl": "https://tuyensinh.uel.edu.vn/truong-dai-hoc-kinh-te-luat-cong-bo-ket-qua-tuyen-sinh-dai-hoc-chinh-quy-nam-2026/"
+      },
+      {
+        "year": 2026,
+        "method": "high_school_exam",
+        "majorCode": "7340201",
+        "program": "Tài chính – Ngân hàng (mã XT 404)",
+        "combinations": [
+          "A00",
+          "A01",
+          "D01",
+          "D07",
+          "X25",
+          "X26"
+        ],
+        "score": 81.4,
+        "scale": 100,
+        "sourceUrl": "https://tuyensinh.uel.edu.vn/truong-dai-hoc-kinh-te-luat-cong-bo-ket-qua-tuyen-sinh-dai-hoc-chinh-quy-nam-2026/"
+      },
+      {
+        "year": 2026,
+        "method": "high_school_exam",
+        "majorCode": "7340201",
+        "program": "Tài chính – Ngân hàng (Tiếng Anh) (mã XT 404E)",
+        "combinations": [
+          "A00",
+          "A01",
+          "D01",
+          "D07",
+          "X25",
+          "X26"
+        ],
+        "score": 72.68,
+        "scale": 100,
+        "sourceUrl": "https://tuyensinh.uel.edu.vn/truong-dai-hoc-kinh-te-luat-cong-bo-ket-qua-tuyen-sinh-dai-hoc-chinh-quy-nam-2026/"
+      },
+      {
+        "year": 2026,
+        "method": "high_school_exam",
+        "majorCode": "7340205",
+        "program": "Công nghệ tài chính (mã XT 414)",
+        "combinations": [
+          "A00",
+          "A01",
+          "D01",
+          "D07",
+          "X25",
+          "X26"
+        ],
+        "score": 82.54,
+        "scale": 100,
+        "sourceUrl": "https://tuyensinh.uel.edu.vn/truong-dai-hoc-kinh-te-luat-cong-bo-ket-qua-tuyen-sinh-dai-hoc-chinh-quy-nam-2026/"
+      },
+      {
+        "year": 2026,
+        "method": "high_school_exam",
+        "majorCode": "7340205",
+        "program": "Công nghệ tài chính (Chương trình Co-operative Education) (Tiếng Anh bán phần) (mã XT 414H)",
+        "combinations": [
+          "A00",
+          "A01",
+          "D01",
+          "D07",
+          "X25",
+          "X26"
+        ],
+        "score": 73.15,
+        "scale": 100,
+        "sourceUrl": "https://tuyensinh.uel.edu.vn/truong-dai-hoc-kinh-te-luat-cong-bo-ket-qua-tuyen-sinh-dai-hoc-chinh-quy-nam-2026/"
+      },
+      {
+        "year": 2026,
+        "method": "high_school_exam",
+        "majorCode": "7340301",
+        "program": "Kế toán (mã XT 405)",
+        "combinations": [
+          "A00",
+          "A01",
+          "D01",
+          "D07",
+          "X25",
+          "X26"
+        ],
+        "score": 80.49,
+        "scale": 100,
+        "sourceUrl": "https://tuyensinh.uel.edu.vn/truong-dai-hoc-kinh-te-luat-cong-bo-ket-qua-tuyen-sinh-dai-hoc-chinh-quy-nam-2026/"
+      },
+      {
+        "year": 2026,
+        "method": "high_school_exam",
+        "majorCode": "7340301",
+        "program": "Kế toán (Tích hợp chứng chỉ quốc tế ICAEW – Tiếng Anh) (mã XT 405E)",
+        "combinations": [
+          "A00",
+          "A01",
+          "D01",
+          "D07",
+          "X25",
+          "X26"
+        ],
+        "score": 70.42,
+        "scale": 100,
+        "sourceUrl": "https://tuyensinh.uel.edu.vn/truong-dai-hoc-kinh-te-luat-cong-bo-ket-qua-tuyen-sinh-dai-hoc-chinh-quy-nam-2026/"
+      },
+      {
+        "year": 2026,
+        "method": "high_school_exam",
+        "majorCode": "7340301",
+        "program": "Kế toán (Chuyên ngành Kế toán và phân tích dữ liệu) (mã XT 422)",
+        "combinations": [
+          "A00",
+          "A01",
+          "D01",
+          "D07",
+          "X25",
+          "X26"
+        ],
+        "score": 79.91,
+        "scale": 100,
+        "sourceUrl": "https://tuyensinh.uel.edu.vn/truong-dai-hoc-kinh-te-luat-cong-bo-ket-qua-tuyen-sinh-dai-hoc-chinh-quy-nam-2026/"
+      },
+      {
+        "year": 2026,
+        "method": "high_school_exam",
+        "majorCode": "7340302",
+        "program": "Kiểm toán (mã XT 409)",
+        "combinations": [
+          "A00",
+          "A01",
+          "D01",
+          "D07",
+          "X25",
+          "X26"
+        ],
+        "score": 85.29,
+        "scale": 100,
+        "sourceUrl": "https://tuyensinh.uel.edu.vn/truong-dai-hoc-kinh-te-luat-cong-bo-ket-qua-tuyen-sinh-dai-hoc-chinh-quy-nam-2026/"
+      },
+      {
+        "year": 2026,
+        "method": "high_school_exam",
+        "majorCode": "7340403",
+        "program": "Quản lý công (mã XT 418)",
+        "combinations": [
+          "A00",
+          "A01",
+          "D01",
+          "D07",
+          "X25",
+          "X26"
+        ],
+        "score": 71.81,
+        "scale": 100,
+        "sourceUrl": "https://tuyensinh.uel.edu.vn/truong-dai-hoc-kinh-te-luat-cong-bo-ket-qua-tuyen-sinh-dai-hoc-chinh-quy-nam-2026/"
+      },
+      {
+        "year": 2026,
+        "method": "high_school_exam",
+        "majorCode": "7340405",
+        "program": "Hệ thống thông tin quản lý (mã XT 406)",
+        "combinations": [
+          "A00",
+          "A01",
+          "D01",
+          "D07",
+          "X25",
+          "X26"
+        ],
+        "score": 86.46,
+        "scale": 100,
+        "sourceUrl": "https://tuyensinh.uel.edu.vn/truong-dai-hoc-kinh-te-luat-cong-bo-ket-qua-tuyen-sinh-dai-hoc-chinh-quy-nam-2026/"
+      },
+      {
+        "year": 2026,
+        "method": "high_school_exam",
+        "majorCode": "7340405",
+        "program": "Hệ thống thông tin quản lý (Chương trình Co-operative Education) (Tiếng Anh bán phần) (mã XT 406H)",
+        "combinations": [
+          "A00",
+          "A01",
+          "D01",
+          "D07",
+          "X25",
+          "X26"
+        ],
+        "score": 86.22,
+        "scale": 100,
+        "sourceUrl": "https://tuyensinh.uel.edu.vn/truong-dai-hoc-kinh-te-luat-cong-bo-ket-qua-tuyen-sinh-dai-hoc-chinh-quy-nam-2026/"
+      },
+      {
+        "year": 2026,
+        "method": "high_school_exam",
+        "majorCode": "7340405",
+        "program": "Hệ thống thông tin quản lý (Chuyên ngành Kinh doanh số và trí tuệ nhân tạo) (mã XT 416)",
+        "combinations": [
+          "A00",
+          "A01",
+          "D01",
+          "D07",
+          "X25",
+          "X26"
+        ],
+        "score": 84.44,
+        "scale": 100,
+        "sourceUrl": "https://tuyensinh.uel.edu.vn/truong-dai-hoc-kinh-te-luat-cong-bo-ket-qua-tuyen-sinh-dai-hoc-chinh-quy-nam-2026/"
+      },
+      {
+        "year": 2026,
+        "method": "high_school_exam",
+        "majorCode": "7380101",
+        "program": "Luật (Chuyên ngành Luật Dân sự) (mã XT 503)",
+        "combinations": [
+          "A00",
+          "A01",
+          "D01",
+          "D07",
+          "X25",
+          "X26"
+        ],
+        "score": 76.01,
+        "scale": 100,
+        "sourceUrl": "https://tuyensinh.uel.edu.vn/truong-dai-hoc-kinh-te-luat-cong-bo-ket-qua-tuyen-sinh-dai-hoc-chinh-quy-nam-2026/"
+      },
+      {
+        "year": 2026,
+        "method": "high_school_exam",
+        "majorCode": "7380101",
+        "program": "Luật (Chuyên ngành Luật Dân sự) (Tiếng Anh) (mã XT 503E)",
+        "combinations": [
+          "A00",
+          "A01",
+          "D01",
+          "D07",
+          "X25",
+          "X26"
+        ],
+        "score": 69.42,
+        "scale": 100,
+        "sourceUrl": "https://tuyensinh.uel.edu.vn/truong-dai-hoc-kinh-te-luat-cong-bo-ket-qua-tuyen-sinh-dai-hoc-chinh-quy-nam-2026/"
+      },
+      {
+        "year": 2026,
+        "method": "high_school_exam",
+        "majorCode": "7380101",
+        "program": "Luật (Chuyên ngành Luật Tài chính – Ngân hàng) (mã XT 504)",
+        "combinations": [
+          "A00",
+          "A01",
+          "D01",
+          "D07",
+          "X25",
+          "X26"
+        ],
+        "score": 65.01,
+        "scale": 100,
+        "sourceUrl": "https://tuyensinh.uel.edu.vn/truong-dai-hoc-kinh-te-luat-cong-bo-ket-qua-tuyen-sinh-dai-hoc-chinh-quy-nam-2026/"
+      },
+      {
+        "year": 2026,
+        "method": "high_school_exam",
+        "majorCode": "7380101",
+        "program": "Luật (Chuyên ngành Luật và Chính sách công) (mã XT 505)",
+        "combinations": [
+          "A00",
+          "A01",
+          "D01",
+          "D07",
+          "X25",
+          "X26"
+        ],
+        "score": 65.54,
+        "scale": 100,
+        "sourceUrl": "https://tuyensinh.uel.edu.vn/truong-dai-hoc-kinh-te-luat-cong-bo-ket-qua-tuyen-sinh-dai-hoc-chinh-quy-nam-2026/"
+      },
+      {
+        "year": 2026,
+        "method": "high_school_exam",
+        "majorCode": "7380101",
+        "program": "Luật (Chuyên ngành Luật và Công nghệ) (mã XT 506)",
+        "combinations": [
+          "A00",
+          "A01",
+          "D01",
+          "D07",
+          "X25",
+          "X26"
+        ],
+        "score": 71.65,
+        "scale": 100,
+        "sourceUrl": "https://tuyensinh.uel.edu.vn/truong-dai-hoc-kinh-te-luat-cong-bo-ket-qua-tuyen-sinh-dai-hoc-chinh-quy-nam-2026/"
+      },
+      {
+        "year": 2026,
+        "method": "high_school_exam",
+        "majorCode": "7380107",
+        "program": "Luật kinh tế (Chuyên ngành Luật Kinh doanh) (mã XT 501)",
+        "combinations": [
+          "A00",
+          "A01",
+          "D01",
+          "D07",
+          "X25",
+          "X26"
+        ],
+        "score": 80.65,
+        "scale": 100,
+        "sourceUrl": "https://tuyensinh.uel.edu.vn/truong-dai-hoc-kinh-te-luat-cong-bo-ket-qua-tuyen-sinh-dai-hoc-chinh-quy-nam-2026/"
+      },
+      {
+        "year": 2026,
+        "method": "high_school_exam",
+        "majorCode": "7380107",
+        "program": "Luật kinh tế (Chuyên ngành Luật Thương mại quốc tế) (mã XT 502)",
+        "combinations": [
+          "A00",
+          "A01",
+          "D01",
+          "D07",
+          "X25",
+          "X26"
+        ],
+        "score": 83.24,
+        "scale": 100,
+        "sourceUrl": "https://tuyensinh.uel.edu.vn/truong-dai-hoc-kinh-te-luat-cong-bo-ket-qua-tuyen-sinh-dai-hoc-chinh-quy-nam-2026/"
+      },
+      {
+        "year": 2026,
+        "method": "high_school_exam",
+        "majorCode": "7380107",
+        "program": "Luật kinh tế (Chuyên ngành Luật Thương mại quốc tế) (Tiếng Anh) (mã XT 502E)",
+        "combinations": [
+          "A00",
+          "A01",
+          "D01",
+          "D07",
+          "X25",
+          "X26"
+        ],
+        "score": 76.72,
+        "scale": 100,
+        "sourceUrl": "https://tuyensinh.uel.edu.vn/truong-dai-hoc-kinh-te-luat-cong-bo-ket-qua-tuyen-sinh-dai-hoc-chinh-quy-nam-2026/"
       }
     ],
     "foundedYear": 2000,
@@ -9898,6 +11309,412 @@
         "score": 622,
         "scale": 1200,
         "sourceUrl": "https://tuyensinh.hcmiu.edu.vn/tuyen-sinh/muc-diem-trung-tuyen-vao-cac-nganh-nhom-nganh-cac-phuong-thuc-xet-tuyen-nam-2025/"
+      },
+      {
+        "year": 2026,
+        "method": "high_school_exam",
+        "majorCode": "7220201",
+        "program": "Ngôn ngữ Anh — do ĐHQT cấp bằng",
+        "combinations": [
+          "D09",
+          "D10",
+          "D01",
+          "D14",
+          "D15"
+        ],
+        "score": 73,
+        "scale": 100,
+        "sourceUrl": "https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-quoc-te-dhqg-tphcm-QSQ.html"
+      },
+      {
+        "year": 2026,
+        "method": "high_school_exam",
+        "majorCode": "7310101",
+        "program": "Kinh tế (Phân tích dữ liệu trong kinh tế) — do ĐHQT cấp bằng",
+        "combinations": [
+          "A01",
+          "D07",
+          "D09",
+          "D10",
+          "X25",
+          "D01"
+        ],
+        "score": 62,
+        "scale": 100,
+        "sourceUrl": "https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-quoc-te-dhqg-tphcm-QSQ.html"
+      },
+      {
+        "year": 2026,
+        "method": "high_school_exam",
+        "majorCode": "7340101",
+        "program": "Quản trị kinh doanh — do ĐHQT cấp bằng",
+        "combinations": [
+          "A01",
+          "D07",
+          "D09",
+          "D10",
+          "X25",
+          "D01"
+        ],
+        "score": 53,
+        "scale": 100,
+        "sourceUrl": "https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-quoc-te-dhqg-tphcm-QSQ.html"
+      },
+      {
+        "year": 2026,
+        "method": "high_school_exam",
+        "majorCode": "7340115",
+        "program": "Marketing — do ĐHQT cấp bằng",
+        "combinations": [
+          "A01",
+          "D07",
+          "D09",
+          "D10",
+          "X25",
+          "D01"
+        ],
+        "score": 53,
+        "scale": 100,
+        "sourceUrl": "https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-quoc-te-dhqg-tphcm-QSQ.html"
+      },
+      {
+        "year": 2026,
+        "method": "high_school_exam",
+        "majorCode": "7340122",
+        "program": "Thương mại điện tử — do ĐHQT cấp bằng",
+        "combinations": [
+          "A01",
+          "D07",
+          "D09",
+          "D10",
+          "X25",
+          "D01"
+        ],
+        "score": 53,
+        "scale": 100,
+        "sourceUrl": "https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-quoc-te-dhqg-tphcm-QSQ.html"
+      },
+      {
+        "year": 2026,
+        "method": "high_school_exam",
+        "majorCode": "7340201",
+        "program": "Tài chính – Ngân hàng — do ĐHQT cấp bằng",
+        "combinations": [
+          "A01",
+          "D07",
+          "D09",
+          "D10",
+          "X25",
+          "D01"
+        ],
+        "score": 53,
+        "scale": 100,
+        "sourceUrl": "https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-quoc-te-dhqg-tphcm-QSQ.html"
+      },
+      {
+        "year": 2026,
+        "method": "high_school_exam",
+        "majorCode": "7340301",
+        "program": "Kế toán — do ĐHQT cấp bằng",
+        "combinations": [
+          "A01",
+          "D07",
+          "D09",
+          "D10",
+          "X25",
+          "D01"
+        ],
+        "score": 53,
+        "scale": 100,
+        "sourceUrl": "https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-quoc-te-dhqg-tphcm-QSQ.html"
+      },
+      {
+        "year": 2026,
+        "method": "high_school_exam",
+        "majorCode": "7420201",
+        "program": "Công nghệ sinh học — do ĐHQT cấp bằng",
+        "combinations": [
+          "A00",
+          "B00",
+          "D07",
+          "B08",
+          "C08",
+          "D12",
+          "D13"
+        ],
+        "score": 55,
+        "scale": 100,
+        "sourceUrl": "https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-quoc-te-dhqg-tphcm-QSQ.html"
+      },
+      {
+        "year": 2026,
+        "method": "high_school_exam",
+        "majorCode": "7440112",
+        "program": "Hóa học (Hóa sinh) — do ĐHQT cấp bằng",
+        "combinations": [
+          "A00",
+          "B00",
+          "D07",
+          "B08",
+          "C08",
+          "D12",
+          "D13"
+        ],
+        "score": 58,
+        "scale": 100,
+        "sourceUrl": "https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-quoc-te-dhqg-tphcm-QSQ.html"
+      },
+      {
+        "year": 2026,
+        "method": "high_school_exam",
+        "majorCode": "7460108",
+        "program": "Khoa học dữ liệu — do ĐHQT cấp bằng",
+        "combinations": [
+          "A00",
+          "A01",
+          "X26",
+          "X06",
+          "X10"
+        ],
+        "score": 62,
+        "scale": 100,
+        "sourceUrl": "https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-quoc-te-dhqg-tphcm-QSQ.html"
+      },
+      {
+        "year": 2026,
+        "method": "high_school_exam",
+        "majorCode": "7460112",
+        "program": "Toán ứng dụng (Kỹ thuật Tài chính và Quản trị rủi ro) — do ĐHQT cấp bằng",
+        "combinations": [
+          "A00",
+          "A01",
+          "X26",
+          "X06",
+          "X10"
+        ],
+        "score": 52,
+        "scale": 100,
+        "sourceUrl": "https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-quoc-te-dhqg-tphcm-QSQ.html"
+      },
+      {
+        "year": 2026,
+        "method": "high_school_exam",
+        "majorCode": "7460201",
+        "program": "Thống kê (Thống kê ứng dụng) — do ĐHQT cấp bằng",
+        "combinations": [
+          "A00",
+          "A01",
+          "X26",
+          "X06",
+          "X10"
+        ],
+        "score": 52,
+        "scale": 100,
+        "sourceUrl": "https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-quoc-te-dhqg-tphcm-QSQ.html"
+      },
+      {
+        "year": 2026,
+        "method": "high_school_exam",
+        "majorCode": "7480101",
+        "program": "Khoa học máy tính — do ĐHQT cấp bằng",
+        "combinations": [
+          "A00",
+          "A01",
+          "X26",
+          "X06",
+          "X10"
+        ],
+        "score": 65,
+        "scale": 100,
+        "sourceUrl": "https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-quoc-te-dhqg-tphcm-QSQ.html"
+      },
+      {
+        "year": 2026,
+        "method": "high_school_exam",
+        "majorCode": "7480201",
+        "program": "Công nghệ thông tin — do ĐHQT cấp bằng",
+        "combinations": [
+          "A00",
+          "A01",
+          "X26",
+          "X06",
+          "X10"
+        ],
+        "score": 62,
+        "scale": 100,
+        "sourceUrl": "https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-quoc-te-dhqg-tphcm-QSQ.html"
+      },
+      {
+        "year": 2026,
+        "method": "high_school_exam",
+        "majorCode": "7510605",
+        "program": "Logistics và Quản lý chuỗi cung ứng — do ĐHQT cấp bằng",
+        "combinations": [
+          "A00",
+          "A01",
+          "B00",
+          "D07",
+          "B08",
+          "D01"
+        ],
+        "score": 72,
+        "scale": 100,
+        "sourceUrl": "https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-quoc-te-dhqg-tphcm-QSQ.html"
+      },
+      {
+        "year": 2026,
+        "method": "high_school_exam",
+        "majorCode": "7520118",
+        "program": "Kỹ thuật hệ thống công nghiệp — do ĐHQT cấp bằng",
+        "combinations": [
+          "A00",
+          "A01",
+          "B00",
+          "D07",
+          "B08",
+          "D01"
+        ],
+        "score": 63,
+        "scale": 100,
+        "sourceUrl": "https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-quoc-te-dhqg-tphcm-QSQ.html"
+      },
+      {
+        "year": 2026,
+        "method": "high_school_exam",
+        "majorCode": "7520121",
+        "program": "Kỹ thuật không gian (Phân tích và ứng dụng dữ liệu lớn) — do ĐHQT cấp bằng",
+        "combinations": [
+          "A00",
+          "A01",
+          "B00",
+          "D07",
+          "B08",
+          "D01"
+        ],
+        "score": 52,
+        "scale": 100,
+        "sourceUrl": "https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-quoc-te-dhqg-tphcm-QSQ.html"
+      },
+      {
+        "year": 2026,
+        "method": "high_school_exam",
+        "majorCode": "7520207",
+        "program": "Kỹ thuật điện tử – viễn thông — do ĐHQT cấp bằng",
+        "combinations": [
+          "A00",
+          "A01",
+          "B00",
+          "D07",
+          "B08",
+          "D01"
+        ],
+        "score": 55,
+        "scale": 100,
+        "sourceUrl": "https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-quoc-te-dhqg-tphcm-QSQ.html"
+      },
+      {
+        "year": 2026,
+        "method": "high_school_exam",
+        "majorCode": "7520212",
+        "program": "Kỹ thuật y sinh — do ĐHQT cấp bằng",
+        "combinations": [
+          "A00",
+          "A01",
+          "B00",
+          "D07",
+          "B08",
+          "D01"
+        ],
+        "score": 68,
+        "scale": 100,
+        "sourceUrl": "https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-quoc-te-dhqg-tphcm-QSQ.html"
+      },
+      {
+        "year": 2026,
+        "method": "high_school_exam",
+        "majorCode": "7520216",
+        "program": "Kỹ thuật điều khiển và tự động hóa — do ĐHQT cấp bằng",
+        "combinations": [
+          "A00",
+          "A01",
+          "B00",
+          "D07",
+          "B08",
+          "D01"
+        ],
+        "score": 65,
+        "scale": 100,
+        "sourceUrl": "https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-quoc-te-dhqg-tphcm-QSQ.html"
+      },
+      {
+        "year": 2026,
+        "method": "high_school_exam",
+        "majorCode": "7520301",
+        "program": "Kỹ thuật hóa học — do ĐHQT cấp bằng",
+        "combinations": [
+          "A00",
+          "B00",
+          "D07",
+          "B08",
+          "C08",
+          "D12",
+          "D13"
+        ],
+        "score": 58,
+        "scale": 100,
+        "sourceUrl": "https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-quoc-te-dhqg-tphcm-QSQ.html"
+      },
+      {
+        "year": 2026,
+        "method": "high_school_exam",
+        "majorCode": "7540101",
+        "program": "Công nghệ thực phẩm — do ĐHQT cấp bằng",
+        "combinations": [
+          "A00",
+          "B00",
+          "D07",
+          "B08",
+          "C08",
+          "D12",
+          "D13"
+        ],
+        "score": 52,
+        "scale": 100,
+        "sourceUrl": "https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-quoc-te-dhqg-tphcm-QSQ.html"
+      },
+      {
+        "year": 2026,
+        "method": "high_school_exam",
+        "majorCode": "7580201",
+        "program": "Kỹ thuật xây dựng — do ĐHQT cấp bằng",
+        "combinations": [
+          "A00",
+          "A01",
+          "B00",
+          "D07",
+          "B08",
+          "D01"
+        ],
+        "score": 50,
+        "scale": 100,
+        "sourceUrl": "https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-quoc-te-dhqg-tphcm-QSQ.html"
+      },
+      {
+        "year": 2026,
+        "method": "high_school_exam",
+        "majorCode": "7580302",
+        "program": "Quản lý xây dựng — do ĐHQT cấp bằng",
+        "combinations": [
+          "A00",
+          "A01",
+          "B00",
+          "D07",
+          "B08",
+          "D01"
+        ],
+        "score": 50,
+        "scale": 100,
+        "sourceUrl": "https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-quoc-te-dhqg-tphcm-QSQ.html"
       }
     ],
     "foundedYear": 2003,
@@ -17023,9 +18840,96 @@
     "address": {
       "city": "TP. Hồ Chí Minh"
     },
-    "majors": [],
+    "majors": [
+      {
+        "code": "7720101",
+        "name": "Y khoa"
+      },
+      {
+        "code": "7720501",
+        "name": "Răng – Hàm – Mặt"
+      },
+      {
+        "code": "7720201",
+        "name": "Dược học"
+      },
+      {
+        "code": "7720115",
+        "name": "Y học cổ truyền"
+      },
+      {
+        "code": "7720301",
+        "name": "Điều dưỡng"
+      }
+    ],
     "tuition": [],
-    "admissions": []
+    "admissions": [
+      {
+        "year": 2026,
+        "method": "high_school_exam",
+        "majorCode": "7720101",
+        "program": "Chuẩn — xét tuyển tổng hợp",
+        "combinations": [
+          "B00",
+          "A02"
+        ],
+        "score": 82.6,
+        "scale": 100,
+        "sourceUrl": "https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-khoa-hoc-suc-khoe-dhqg-tphcm-QSY.html"
+      },
+      {
+        "year": 2026,
+        "method": "high_school_exam",
+        "majorCode": "7720501",
+        "program": "Chuẩn — xét tuyển tổng hợp",
+        "combinations": [
+          "B00",
+          "A02"
+        ],
+        "score": 81.8,
+        "scale": 100,
+        "sourceUrl": "https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-khoa-hoc-suc-khoe-dhqg-tphcm-QSY.html"
+      },
+      {
+        "year": 2026,
+        "method": "high_school_exam",
+        "majorCode": "7720201",
+        "program": "Chuẩn — xét tuyển tổng hợp",
+        "combinations": [
+          "B00",
+          "A00"
+        ],
+        "score": 73,
+        "scale": 100,
+        "sourceUrl": "https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-khoa-hoc-suc-khoe-dhqg-tphcm-QSY.html"
+      },
+      {
+        "year": 2026,
+        "method": "high_school_exam",
+        "majorCode": "7720115",
+        "program": "Chuẩn — xét tuyển tổng hợp",
+        "combinations": [
+          "B00",
+          "A02"
+        ],
+        "score": 72.41,
+        "scale": 100,
+        "sourceUrl": "https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-khoa-hoc-suc-khoe-dhqg-tphcm-QSY.html"
+      },
+      {
+        "year": 2026,
+        "method": "high_school_exam",
+        "majorCode": "7720301",
+        "program": "Chuẩn — xét tuyển tổng hợp",
+        "combinations": [
+          "B00",
+          "A02"
+        ],
+        "score": 67,
+        "scale": 100,
+        "sourceUrl": "https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-khoa-hoc-suc-khoe-dhqg-tphcm-QSY.html"
+      }
+    ]
   },
   {
     "slug": "hoa-sen",
