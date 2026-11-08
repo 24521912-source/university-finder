@@ -35,4 +35,20 @@ async function login({ email, password }) {
   return createSession(user)
 }
 
-module.exports = { register, login, toPublicUser }
+// Chỉ ghi fullName (đã kiểm tra ở validation); không nhận email / role / favorites từ client.
+async function updateProfile(userId, { fullName }) {
+  const user = await User.findByIdAndUpdate(userId, { fullName: fullName.trim() }, { returnDocument: 'after', runValidators: true })
+  if (!user) throw httpError(404, 'Tài khoản không tồn tại')
+  return toPublicUser(user)
+}
+
+// Bắt nhập đúng mật khẩu hiện tại. Sai -> 400 (không dùng 401 để không bị hiểu là hết phiên đăng nhập).
+async function changePassword(userId, { currentPassword, newPassword }) {
+  const user = await User.findById(userId).select('+passwordHash')
+  if (!user) throw httpError(404, 'Tài khoản không tồn tại')
+  if (!(await bcrypt.compare(currentPassword, user.passwordHash))) throw httpError(400, 'Mật khẩu hiện tại không đúng')
+  user.passwordHash = await bcrypt.hash(newPassword, 10)
+  await user.save()
+}
+
+module.exports = { register, login, toPublicUser, updateProfile, changePassword }

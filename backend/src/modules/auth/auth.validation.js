@@ -15,4 +15,20 @@ function validateLogin({ email, password } = {}) {
   return null
 }
 
-module.exports = { validateRegister, validateLogin }
+const MAX_NAME = 100
+
+// Chỉ cho sửa họ tên. Email và vai trò không đổi qua API này.
+function validateProfile({ fullName } = {}) {
+  if (!isText(fullName)) return 'Vui lòng nhập họ tên'
+  if (fullName.trim().length > MAX_NAME) return `Họ tên tối đa ${MAX_NAME} ký tự`
+  return null
+}
+
+function validatePasswordChange({ currentPassword, newPassword } = {}) {
+  if (typeof currentPassword !== 'string' || !currentPassword) return 'Vui lòng nhập mật khẩu hiện tại'
+  if (typeof newPassword !== 'string' || newPassword.length < 6) return 'Mật khẩu mới tối thiểu 6 ký tự'
+  if (newPassword === currentPassword) return 'Mật khẩu mới phải khác mật khẩu hiện tại'
+  return null
+}
+
+module.exports = { validateRegister, validateLogin, validateProfile, validatePasswordChange }
