@@ -4,6 +4,7 @@ import { ArrowRight, BookOpen, Building2, ChevronRight, Compass, Heart, Info, Lo
 import { useAuth } from '../../features/auth/AuthContext'
 import api, { getErrorMessage } from '../../services/api'
 import { INSTITUTION_TYPE_LABEL } from '../../utils/format'
+import { ChangePasswordForm, EditProfileForm } from './ProfileForms'
 import './Profile.css'
 
 const tabs = [{ key: 'info', label: 'Thông tin cá nhân', icon: UserRound }, { key: 'favorites', label: 'Trường yêu thích', icon: Heart }]
@@ -30,6 +31,9 @@ function Profile() {
   const [profileState, setProfileState] = useState({ status: 'loading' })
   const [schoolsState, setSchoolsState] = useState({ key: null, status: 'loading', schools: [] })
   const [schoolAttempt, setSchoolAttempt] = useState(0)
+  const [editing, setEditing] = useState(false)
+  const [changingPassword, setChangingPassword] = useState(false)
+  const [notice, setNotice] = useState('')
   const tabId = useId()
   const idsKey = JSON.stringify(favoriteIds(user))
   const ids = JSON.parse(idsKey)
@@ -86,7 +90,9 @@ function Profile() {
 
     <section className="up-profile-card" aria-label="Hồ sơ tài khoản">
       <div className="up-banner"><span><BookOpen size={18} aria-hidden="true" />Cùng bạn chọn trường, định hướng tương lai.</span></div>
-      <div className="up-identity"><div className="up-avatar" aria-label={`Ảnh đại diện bằng chữ cái tên ${name}`}>{initials}</div><div className="up-identity-text"><span className="up-role"><ShieldCheck size={13} aria-hidden="true" />{roleLabel(user?.role)}</span><h2>{name}</h2><p><Mail size={16} aria-hidden="true" />{user?.email || 'Chưa có email'}</p></div><div className="up-edit"><button className="up-button up-button-outline" disabled aria-describedby="up-edit-help"><Pencil size={16} aria-hidden="true" />Chỉnh sửa hồ sơ</button><small id="up-edit-help">Chưa hỗ trợ cập nhật hồ sơ.</small></div></div>
+      <div className="up-identity"><div className="up-avatar" aria-label={`Ảnh đại diện bằng chữ cái tên ${name}`}>{initials}</div><div className="up-identity-text"><span className="up-role"><ShieldCheck size={13} aria-hidden="true" />{roleLabel(user?.role)}</span><h2>{name}</h2><p><Mail size={16} aria-hidden="true" />{user?.email || 'Chưa có email'}</p></div><div className="up-edit">{!editing && <button className="up-button up-button-outline" onClick={() => { setNotice(''); setEditing(true) }}><Pencil size={16} aria-hidden="true" />Chỉnh sửa hồ sơ</button>}</div></div>
+      {editing && <div className="up-edit-panel"><EditProfileForm user={user} onCancel={() => setEditing(false)} onSaved={(updated) => { setUser(updated); setEditing(false); setNotice('Đã cập nhật họ tên.') }} /></div>}
+      {notice && <p className="up-notice up-success" role="status">{notice}</p>}
     </section>
 
     <div className="up-summary"><section className="up-stat" aria-label="Thống kê yêu thích"><span className="up-icon up-icon-heart"><Heart aria-hidden="true" /></span><div><p>Trường đã yêu thích</p><strong>{profileState.status === 'loading' ? <span className="up-count-loading" aria-label="Đang tải số lượng">—</span> : ids.length.toLocaleString('vi-VN')}</strong><small>{profileState.status === 'error' ? 'Theo phiên đăng nhập gần nhất' : 'Được lưu trong tài khoản của bạn'}</small></div><button aria-label="Xem trường yêu thích" className="up-icon-button" onClick={() => setActiveTab('favorites')}><ArrowRight size={20} aria-hidden="true" /></button></section><aside className="up-discover"><span className="up-icon"><Compass aria-hidden="true" /></span><div><h2>Tìm ngôi trường phù hợp</h2><p>Khám phá thêm lựa chọn cho hành trình sắp tới.</p></div><Link className="up-button up-button-primary" to="/truong">Khám phá trường <ArrowRight size={16} aria-hidden="true" /></Link></aside></div>
@@ -98,7 +104,8 @@ function Profile() {
       <div id={`${tabId}-info-panel`} role="tabpanel" aria-labelledby={`${tabId}-info`} hidden={activeTab !== 'info'} tabIndex={0}>
         <div className="up-panel-heading"><div><h2>Thông tin cá nhân</h2><p>Thông tin gắn với tài khoản đăng nhập của bạn.</p></div><button className="up-button up-refresh" onClick={refreshProfile} disabled={profileState.status === 'loading'}><RefreshCw size={16} aria-hidden="true" />{profileState.status === 'loading' ? 'Đang tải…' : 'Tải lại'}</button></div>
         {profileState.status === 'loading' ? <div className="up-skeleton-grid" role="status" aria-label="Đang tải thông tin tài khoản"><span /><span /><span /></div> : <dl className="up-fields"><div><dt><UserRound size={16} aria-hidden="true" />Họ và tên</dt><dd>{name}</dd></div><div><dt><Mail size={16} aria-hidden="true" />Địa chỉ email</dt><dd>{user?.email || 'Chưa có email'}</dd></div><div><dt><ShieldCheck size={16} aria-hidden="true" />Vai trò tài khoản</dt><dd><span className="up-role">{roleLabel(user?.role)}</span></dd></div></dl>}
-        <div className="up-security"><span className="up-icon"><LockKeyhole aria-hidden="true" /></span><div><h3>Bảo mật tài khoản</h3><p>Chức năng đổi mật khẩu hiện chưa được hỗ trợ.</p></div><button className="up-button up-button-outline" disabled>Đổi mật khẩu</button></div>
+        <div className="up-security"><span className="up-icon"><LockKeyhole aria-hidden="true" /></span><div><h3>Bảo mật tài khoản</h3><p>Đổi mật khẩu đăng nhập. Cần nhập mật khẩu hiện tại để xác nhận.</p></div>{!changingPassword && <button className="up-button up-button-outline" onClick={() => { setNotice(''); setChangingPassword(true) }}>Đổi mật khẩu</button>}</div>
+        {changingPassword && <div className="up-edit-panel"><ChangePasswordForm onCancel={() => setChangingPassword(false)} onDone={() => { setChangingPassword(false); setNotice('Đã đổi mật khẩu. Lần đăng nhập sau dùng mật khẩu mới.') }} /></div>}
       </div>
       <div id={`${tabId}-favorites-panel`} role="tabpanel" aria-labelledby={`${tabId}-favorites`} hidden={activeTab !== 'favorites'} tabIndex={0}>
         <div className="up-panel-heading"><div><h2>Trường yêu thích</h2><p>Những ngôi trường bạn muốn tìm hiểu thêm.</p></div>{ids.length > 0 && <span className="up-type">{ids.length} trường đã lưu</span>}</div>

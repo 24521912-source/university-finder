@@ -142,3 +142,15 @@
   .user-profile .up-empty { padding: 20px 0; }
 }
 @media (prefers-reduced-motion: reduce) { .user-profile *, .user-profile *::before, .user-profile *::after { animation: none !important; transition: none !important; } }
+
+/* Form sửa hồ sơ / đổi mật khẩu */
+.user-profile .up-edit-panel { padding: 0 24px 20px; }
+.user-profile .up-panel .up-edit-panel, .user-profile [role="tabpanel"] .up-edit-panel { padding: 16px 0 0; }
+.user-profile .up-form { display: grid; gap: 6px; max-width: 420px; }
+.user-profile .up-form label { font-size: 12px; font-weight: 500; color: #64748b; margin-top: 8px; }
+.user-profile .up-input { padding: 10px 12px; border: 1px solid #dbe3ee; border-radius: 8px; font: inherit; font-size: 14px; background: white; }
+.user-profile .up-input:focus-visible { outline: 2px solid #1976d2; outline-offset: 1px; border-color: #1976d2; }
+.user-profile .up-form-help { margin: 0; font-size: 12px; color: #64748b; }
+.user-profile .up-form-error { margin: 4px 0 0; font-size: 13px; color: #b71c1c; }
+.user-profile .up-form-actions { display: flex; gap: 8px; margin-top: 10px; flex-wrap: wrap; }
+.user-profile .up-success { margin: 0 24px 20px; color: #2e7d32; background: #e8f5e9; }

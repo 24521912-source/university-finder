@@ -75,3 +75,42 @@ test('JWT sai chữ ký/hết hạn bị chặn trước khi đọc tài khoản
     await assert.rejects(auth.requireAuth({ headers: { authorization: 'Bearer ' + token } }, {}, () => {}), error => error.status === 401)
   }
 })
+
+const { validateProfile, validatePasswordChange } = require('../src/modules/auth/auth.validation')
+
+test('Sửa hồ sơ: chỉ ghi fullName đã trim, bỏ qua email/role/favorites client gửi', async () => {
+  assert(validateProfile({}))
+  assert(validateProfile({ fullName: '   ' }))
+  assert(validateProfile({ fullName: { $ne: '' } }))
+  assert(validateProfile({ fullName: 'a'.repeat(101) }))
+  assert.equal(validateProfile({ fullName: 'Nguyễn Văn A' }), null)
+  let update
+  const service = load('modules/auth/auth.service.js', { '../../models/User': {
+    findByIdAndUpdate: async (id, payload) => { update = payload; return { id, fullName: payload.fullName, email: 'a@b.c', role: 'user', favorites: [] } },
+  } })
+  const user = await service.updateProfile('u1', { fullName: '  Tên mới  ', email: 'hack@x.y', role: 'admin', favorites: ['x'] })
+  assert.deepEqual(Object.keys(update), ['fullName'])
+  assert.equal(user.fullName, 'Tên mới')
+  assert.equal(user.role, 'user')
+  assert(!('passwordHash' in user))
+})
+
+test('Đổi mật khẩu: sai mật khẩu hiện tại trả 400 và không ghi; đúng thì lưu hash mới', async () => {
+  assert(validatePasswordChange({ currentPassword: '', newPassword: 'abcdef' }))
+  assert(validatePasswordChange({ currentPassword: 'old-pass', newPassword: '123' }))
+  assert(validatePasswordChange({ currentPassword: 'same-pass', newPassword: 'same-pass' }))
+  assert(validatePasswordChange({ currentPassword: { $ne: '' }, newPassword: 'abcdef' }))
+  assert.equal(validatePasswordChange({ currentPassword: 'old-pass', newPassword: 'new-pass' }), null)
+  let saved = 0
+  const account = { passwordHash: 'old-hash', save: async () => { saved++ } }
+  const make = (match) => load('modules/auth/auth.service.js', {
+    '../../models/User': { findById: () => ({ select: async () => account }) },
+    bcryptjs: { compare: async () => match, hash: async () => 'new-hash' },
+  })
+  await assert.rejects(make(false).changePassword('u1', { currentPassword: 'wrong', newPassword: 'new-pass' }), (e) => e.status === 400)
+  assert.equal(saved, 0)
+  assert.equal(account.passwordHash, 'old-hash')
+  await make(true).changePassword('u1', { currentPassword: 'old-pass', newPassword: 'new-pass' })
+  assert.equal(saved, 1)
+  assert.equal(account.passwordHash, 'new-hash')
+})

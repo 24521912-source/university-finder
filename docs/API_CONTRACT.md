@@ -49,6 +49,18 @@ Response: `{ "user": { ...giống trên } }`
 
 Token có hạn 7 ngày. Tài khoản mới luôn là `user`; cấp quyền admin bằng `npm run make-admin -- email` trong `backend`.
 
+### `PUT /auth/me` 🔒
+
+Sửa họ tên của người đang đăng nhập. Body: `{ "fullName": "Nguyễn Văn A" }` (bắt buộc, tối đa 100 ký tự). Email, vai trò, yêu thích gửi kèm đều bị bỏ qua.
+
+Response: `{ "user": { ...giống trên } }`. Lỗi `400` khi họ tên trống / quá dài.
+
+### `PUT /auth/password` 🔒
+
+Body: `{ "currentPassword": "...", "newPassword": "..." }`. Mật khẩu mới tối thiểu 6 ký tự và khác mật khẩu hiện tại.
+
+Response: `{ "message": "Đã đổi mật khẩu" }`. Lỗi `400` khi thiếu dữ liệu, mật khẩu mới không hợp lệ hoặc **mật khẩu hiện tại không đúng** (dùng 400, không dùng 401, vì phiên đăng nhập vẫn hợp lệ). Token cũ vẫn dùng được đến khi hết hạn.
+
 ## Universities
 
 ### `GET /universities`
