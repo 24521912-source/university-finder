@@ -3,7 +3,7 @@
 // Chỉ các field này được admin ghi. Bỏ qua _id, favoriteCount, timestamps và field lạ.
 const EDITABLE = [
   'slug', 'name', 'shortName', 'aliases', 'institutionType', 'belongsToUniversitySystem', 'universitySystem',
-  'foundedYear', 'description', 'dataLevel', 'tags', 'overview', 'contact', 'address', 'campuses', 'media',
+  'foundedYear', 'description', 'dataLevel', 'tags', 'sourceDomains', 'overview', 'contact', 'address', 'campuses', 'media',
   'majors', 'tuition', 'admissions', 'facilities', 'scholarships', 'dormitory', 'studentLife', 'careerOpportunities',
   'detailEvidence',
 ]

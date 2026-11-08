@@ -1,5 +1,5 @@
 import { COMPOSITE_SCHOOLS, compositeCandidates } from './composite.js'
-import { ADMISSION_SLOPE, ADMISSION_SOURCES, ADMISSION_YEAR, ACADEMIC_YEAR, SOURCES, UNCERTAIN_MAJORS, WEIGHTS } from './config.js'
+import { ADMISSION_SLOPE, ADMISSION_YEAR, ACADEMIC_YEAR, UNCERTAIN_MAJORS, WEIGHTS } from './config.js'
 
 const clamp = (n) => Math.min(100, Math.max(0, n))
 const finite = (n) => typeof n === 'number' && Number.isFinite(n)
@@ -14,12 +14,20 @@ export function matchesVnuhcm(u, choice = 'any') {
   return true
 }
 
-export function trustedSource(slug, url) {
+// Link https hợp lệ, không chứa tài khoản/mật khẩu.
+export function safeUrl(url) {
   try {
     const parsed = new URL(url)
-    return parsed.protocol === 'https:' && !parsed.username && !parsed.password &&
-      (SOURCES[slug] || []).some((domain) => parsed.hostname === domain || parsed.hostname.endsWith(`.${domain}`))
+    return parsed.protocol === 'https:' && !parsed.username && !parsed.password
   } catch { return false }
+}
+
+// Nguồn thuộc tên miền chính thức của trường (university.sourceDomains trong database).
+export function trustedSource(u, url) {
+  if (!safeUrl(url)) return false
+  const host = new URL(url).hostname
+  return (Array.isArray(u?.sourceDomains) ? u.sourceDomains : []).some((domain) => typeof domain === 'string' && domain &&
+    (host === domain || host.endsWith(`.${domain}`)))
 }
 
 export function validatePreferences(p) {
@@ -41,29 +49,27 @@ function majorEvidence(u, code) {
   // Nguồn điểm tổng hợp vẫn có thể chứng minh trường đào tạo ngành, không chứng minh
   // điểm đó có thể so với điểm THPT. Hai quyết định được kiểm tra độc lập.
   return [...(u.admissions || []), ...(u.tuition || [])]
-    .find((item) => item.majorCode === code && trustedSource(u.slug, item.sourceUrl))?.sourceUrl || null
+    .find((item) => item.majorCode === code && trustedSource(u, item.sourceUrl))?.sourceUrl || null
 }
 
 function admissionCriterion(u, p) {
-  const policy = ADMISSION_SOURCES[u.slug]
   const scale = p.method === 'high_school_exam' ? 30 : 1200
-  if (!policy || policy.year !== ADMISSION_YEAR || !policy.methods.includes(p.method)) return missing('Chưa có điểm riêng đã xác minh đúng phương thức và năm tham chiếu.')
+  if (!(u.admissions || []).some((a) => a.verifiedForAI === true && a.method === p.method && a.year === ADMISSION_YEAR)) {
+    return missing('Chưa có điểm riêng đã xác minh đúng phương thức và năm tham chiếu.')
+  }
   if (/^(721|71402|78103|7580101)/.test(p.majorCode) || (p.method === 'high_school_exam' && !/^[ABCDX]\d{2}$/.test(p.combination))) return missing('Chưa xác minh được điều kiện năng khiếu / môn thành phần để so điểm ngành và tổ hợp này.')
+  // Chỉ so với dòng điểm chuẩn admin đã đánh dấu "Đã xác minh cho AI": đúng phương thức, năm, thang điểm,
+  // chương trình chuẩn, nguồn rõ ràng. Dòng chưa đánh dấu vẫn hiện ở trang chi tiết nhưng không dùng để so.
   const records = (u.admissions || []).filter((a) =>
-    a.majorCode === p.majorCode && a.method === p.method && a.year === ADMISSION_YEAR &&
-    a.scale === scale && a.sourceUrl === policy.url && trustedSource(u.slug, a.sourceUrl) &&
-    finite(a.score) && a.score >= 0 && a.score <= scale &&
-    (p.method !== 'high_school_exam' || a.combinations?.includes(p.combination)) &&
-    // Prototype chỉ so chương trình chuẩn. Không trộn liên kết, chuyên ngành,
-    // năng khiếu hoặc chương trình có quy tắc khác.
-    (u.slug === 'ton-duc-thang' ? /^Tiêu chuẩn:/.test(a.program || '') :
-      !a.program || (u.slug === 'van-lang' && a.program === 'Standard Program / Global Standard Program'))
+    a.verifiedForAI === true && a.majorCode === p.majorCode && a.method === p.method && a.year === ADMISSION_YEAR &&
+    a.scale === scale && safeUrl(a.sourceUrl) && finite(a.score) && a.score >= 0 && a.score <= scale &&
+    (p.method !== 'high_school_exam' || a.combinations?.includes(p.combination))
   )
   if (records.length !== 1) return missing('Chưa có một bản ghi điểm chuẩn phù hợp, không mơ hồ về chương trình / tổ hợp.')
   const a = records[0]
   const delta = Number(p.score) - a.score
   return evaluated(clamp(50 + ADMISSION_SLOPE * delta / scale),
-    `${p.method === 'high_school_exam' ? `THPT ${p.combination}` : 'ĐGNL ĐHQG-HCM'} ${a.year}: ${a.score}/${scale}; điểm bạn nhập ${p.score}, chênh lệch ${delta.toLocaleString('vi-VN', { maximumFractionDigits: 2 })}. ${a.program || 'Chương trình chuẩn'}. ${policy.caveat ? `${policy.caveat} ` : ''}Chỉ tham khảo lịch sử.`, a.sourceUrl)
+    `${p.method === 'high_school_exam' ? `THPT ${p.combination}` : 'ĐGNL ĐHQG-HCM'} ${a.year}: ${a.score}/${scale}; điểm bạn nhập ${p.score}, chênh lệch ${delta.toLocaleString('vi-VN', { maximumFractionDigits: 2 })}. ${a.program || 'Chương trình chuẩn'}. ${a.aiNote ? `${a.aiNote} ` : ''}Chỉ tham khảo lịch sử.`, a.sourceUrl)
 }
 
 function tuitionCriterion(u, p) {
@@ -73,7 +79,7 @@ function tuitionCriterion(u, p) {
   const standard = (t) => /^(Chương trình chuẩn|Chính quy|Chương trình tiếng Việt \(chuẩn\)|Sư phạm \(đào tạo giáo viên\))$/.test(t.program || '')
   const records = (u.tuition || []).filter((t) =>
     t.academicYear === ACADEMIC_YEAR && t.unit === 'year' && standard(t) &&
-    trustedSource(u.slug, t.sourceUrl) && finite(t.amountMin) && finite(t.amountMax) &&
+    trustedSource(u, t.sourceUrl) && finite(t.amountMin) && finite(t.amountMax) &&
     t.amountMin >= 0 && t.amountMax >= t.amountMin &&
     (t.majorCode === p.majorCode || (!t.majorCode && u.slug === 'kinh-te-luat-dhqg'))
   )

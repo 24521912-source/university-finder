@@ -4,7 +4,7 @@ import { createUniversity, deleteUniversity, getUniversity, listMajors, updateUn
 
 const EMPTY = {
   slug: '', name: '', shortName: '', institutionType: 'public', belongsToUniversitySystem: false,
-  dataLevel: 1, foundedYear: '', description: '',
+  dataLevel: 1, foundedYear: '', description: '', sourceDomains: [],
   address: { full: '', ward: '', district: '', city: 'TP. Hồ Chí Minh' },
   contact: { website: '', phone: '', email: '', admissionsUrl: '' },
   media: { logoUrl: '' },
@@ -42,11 +42,13 @@ const ADMISSION_COLS = [
   { key: 'scale', label: 'Thang', type: 'number', width: 70 },
   { key: 'quota', label: 'Chỉ tiêu', type: 'number', width: 80 },
   { key: 'sourceUrl', label: 'Link nguồn', type: 'text', width: 200 },
+  { key: 'verifiedForAI', label: 'Xác minh cho AI', type: 'checkbox', width: 90 },
+  { key: 'aiNote', label: 'Lưu ý khi AI dùng', type: 'text', width: 200 },
 ]
 const NEW_ROW = {
   majors: { code: '', name: '' },
   tuition: { academicYear: '2026-2027', program: 'Chương trình chuẩn', unit: 'year' },
-  admissions: { year: new Date().getFullYear(), method: 'high_school_exam', scale: 30, combinations: [] },
+  admissions: { year: new Date().getFullYear(), method: 'high_school_exam', scale: 30, combinations: [], verifiedForAI: false },
 }
 
 function RowTable({ title, cols, rows, onChange, newRow, help }) {
@@ -55,7 +57,7 @@ function RowTable({ title, cols, rows, onChange, newRow, help }) {
     .filter(({ row }) => !filter || JSON.stringify(row).toLowerCase().includes(filter.toLowerCase()))
 
   const setCell = (index, col, raw) => {
-    const value = col.type === 'number' ? num(raw) : col.type === 'list' ? raw.split(',').map((s) => s.trim().toUpperCase()).filter(Boolean) : raw
+    const value = col.type === 'checkbox' ? raw : col.type === 'number' ? num(raw) : col.type === 'list' ? raw.split(',').map((s) => s.trim().toUpperCase()).filter(Boolean) : raw
     onChange(rows.map((r, i) => (i === index ? { ...r, [col.key]: value } : r)))
   }
 
@@ -73,7 +75,9 @@ function RowTable({ title, cols, rows, onChange, newRow, help }) {
           <tbody>
             {shown.map(({ row, index }) => <tr key={row._id || `new-${index}`}>
               {cols.map((c) => <td key={c.key}>
-                {c.type === 'select'
+                {c.type === 'checkbox'
+                  ? <input type="checkbox" aria-label={c.label} checked={row[c.key] === true} onChange={(e) => setCell(index, c, e.target.checked)} />
+                  : c.type === 'select'
                   ? <select className="input" value={row[c.key] ?? ''} onChange={(e) => setCell(index, c, e.target.value)}>
                     {Object.entries(c.options).map(([v, l]) => <option key={v} value={v}>{l}</option>)}
                   </select>
@@ -196,6 +200,10 @@ function UniversityEditor({ slug, onClose, onDone }) {
           {text('Năm thành lập', form.foundedYear, (v) => set('foundedYear', v), { type: 'number' })}
           <label className="admin-field admin-check"><input type="checkbox" checked={!!form.belongsToUniversitySystem} onChange={(e) => set('belongsToUniversitySystem', e.target.checked)} /> Thuộc ĐHQG-HCM</label>
         </div>
+        <label className="admin-field"><span>Tên miền nguồn chính thức (cách nhau dấu phẩy, vd uit.edu.vn)</span>
+          <input className="input" value={(form.sourceDomains || []).join(', ')}
+            onChange={(e) => set('sourceDomains', e.target.value.split(',').map((d) => d.trim().toLowerCase()).filter(Boolean))} /></label>
+        <p className="muted admin-small">AI chỉ tin ngành / học phí có link nguồn thuộc các tên miền này.</p>
         <label className="admin-field"><span>Mô tả</span>
           <textarea className="input" rows="4" value={form.description ?? ''} onChange={(e) => set('description', e.target.value)} /></label>
         {!isNew && slug !== form.slug && <p className="admin-small admin-warn">Đổi slug sẽ đổi đường dẫn trang trường và có thể làm hỏng link cũ.</p>}
@@ -221,7 +229,7 @@ function UniversityEditor({ slug, onClose, onDone }) {
       <RowTable title="Học phí" cols={TUITION_COLS} rows={form.tuition} onChange={(rows) => set('tuition', rows)} newRow={NEW_ROW.tuition}
         help={`Mã ngành phải thuộc danh sách ngành ở trên${ownCodes.length ? '' : ' (hiện chưa có ngành nào)'}. Nên luôn có link nguồn chính thức.`} />
       <RowTable title="Điểm chuẩn" cols={ADMISSION_COLS} rows={form.admissions} onChange={(rows) => set('admissions', rows)} newRow={NEW_ROW.admissions}
-        help="THPT thang 30, ĐGNL thang 1200. AI tư vấn chỉ so điểm khi có nguồn đã xác minh trong cấu hình." />
+        help="THPT thang 30, ĐGNL thang 1200. Chỉ bật “Xác minh cho AI” khi đã kiểm tra đúng phương thức, năm, thang điểm và là chương trình chuẩn; AI chỉ dùng các dòng này để so điểm." />
 
       {evidenceText !== null && <fieldset className="admin-section">
         <legend>Dữ liệu duyệt riêng (JSON nâng cao)</legend>

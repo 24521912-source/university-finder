@@ -36,49 +36,8 @@ export const COMBINATIONS = {
 }
 export const ADMISSION_SLOPE = 500
 
-// Danh sách nguồn theo DATA_NOTES.md. Có URL chưa đủ: bản ghi còn phải qua
-// kiểm tra mã ngành, chương trình, phương thức, năm, thang điểm và các ngoại lệ.
-export const SOURCES = {
-  'kinh-te-tphcm': ['ueh.edu.vn'],
-  'cong-nghiep-tphcm': ['iuh.edu.vn'],
-  'cong-nghe-thong-tin-dhqg': ['uit.edu.vn'],
-  'khoa-hoc-tu-nhien-dhqg': ['hcmus.edu.vn'],
-  'kinh-te-luat-dhqg': ['uel.edu.vn'],
-  'mo-tphcm': ['ou.edu.vn'],
-  'quoc-te-dhqg': ['hcmiu.edu.vn'],
-  'su-pham-ky-thuat-tphcm': ['hcmute.edu.vn'],
-  'ton-duc-thang': ['tdtu.edu.vn'],
-  'y-duoc-tphcm': ['ump.edu.vn'],
-  'van-lang': ['vlu.edu.vn'],
-  'cong-nghe-tphcm': ['hutech.edu.vn'],
-}
+// Nguồn đáng tin của từng trường nằm trong database: university.sourceDomains.
+// Điểm chuẩn được AI dùng để so điểm: admissions[].verifiedForAI = true (admin bật trên trang /admin).
 export const UNCERTAIN_MAJORS = {
   'khoa-hoc-tu-nhien-dhqg': ['7480103', '7480104'],
-}
-
-// Chỉ các nguồn xác định là phương thức riêng trong DATA_NOTES được so điểm.
-// Những điểm tổng hợp/quy đổi UEH, IUH, HCMUTE không được dùng.
-// UIT, HCMUS: điểm chuẩn xét tuyển tổng hợp 2026 do CHÍNH TRƯỜNG công bố ở thang 30.
-// HCMUS tính trên thang 30 (80% THPT + 20% học bạ, hoặc ĐGNL quy đổi); UIT = thang 100 × 0,3
-// (47,5% THPT + 47,5% ĐGNL + 5% học bạ; không thi ĐGNL thì quy đổi bách phân vị từ THPT).
-// Với thí sinh không thi ĐGNL và học bạ xấp xỉ điểm thi, tổng 3 môn so được gần đúng.
-export const ADMISSION_SOURCES = {
-  'cong-nghe-thong-tin-dhqg': {
-    url: 'https://www.uit.edu.vn/bai-viet/truong-dai-hoc-cong-nghe-thong-tin-cong-bo-diem-chuan-trung-tuyen-nam-2026',
-    year: 2026, methods: ['high_school_exam'],
-    caveat: 'Điểm xét tuyển tổng hợp (THPT + ĐGNL + học bạ) trường quy đổi về thang 30; so gần đúng với tổng 3 môn.',
-  },
-  'khoa-hoc-tu-nhien-dhqg': {
-    url: 'https://tuyensinh.hcmus.edu.vn/2026-diem-chuan/',
-    year: 2026, methods: ['high_school_exam'],
-    caveat: 'Điểm xét tuyển tổng hợp thang 30 (80% THPT + 20% học bạ, đã gồm điểm cộng/ưu tiên); so gần đúng với tổng 3 môn.',
-  },
-  'van-lang': {
-    url: 'https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026',
-    year: 2026, methods: ['high_school_exam', 'competency_assessment'],
-  },
-  'ton-duc-thang': {
-    url: 'https://admission.tdtu.edu.vn/sites/admission/files/Tuyen-sinh/2026/TB-Diemtrungtuyen/PL2-Diem-trung-tuyen-DH-2026-PT2-TanHung.pdf',
-    year: 2026, methods: ['competency_assessment'],
-  },
 }

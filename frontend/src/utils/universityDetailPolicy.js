@@ -1,6 +1,6 @@
 // Quy tắc hiển thị từ database/seeds/DATA_NOTES.md, không thêm thông tin trường.
-// Dùng cùng danh sách nguồn tham chiếu; không thay đổi thuật toán tư vấn.
-import { SOURCES, UNCERTAIN_MAJORS, ADMISSION_SOURCES } from '../features/recommendations/config'
+// Nguồn tin cậy lấy từ database: university.sourceDomains và admissions[].verifiedForAI.
+import { UNCERTAIN_MAJORS } from '../features/recommendations/config'
 import { hcmutProfile } from './hcmutDetail.js'
 
 export function safeUrl(value) {
@@ -11,17 +11,19 @@ export function safeUrl(value) {
   } catch { return null }
 }
 
-export function hasTrustedSource(slug, value) {
+// Link thuộc tên miền nguồn chính thức của trường (university.sourceDomains).
+export function hasTrustedSource(u, value) {
   const source = safeUrl(value)
   if (!source || !source.startsWith('https:')) return false
   const host = new URL(source).hostname
-  return (SOURCES[slug] || []).some((domain) => host === domain || host.endsWith(`.${domain}`))
+  return (Array.isArray(u?.sourceDomains) ? u.sourceDomains : [])
+    .some((domain) => typeof domain === 'string' && domain && (host === domain || host.endsWith(`.${domain}`)))
 }
 
 export function verifiedMajor(u, major) {
   if ((UNCERTAIN_MAJORS[u.slug] || []).includes(major.code)) return false
   return [...(Array.isArray(u.admissions) ? u.admissions : []), ...(Array.isArray(u.tuition) ? u.tuition : [])]
-    .some((r) => r && r.majorCode === major.code && hasTrustedSource(u.slug, r.sourceUrl))
+    .some((r) => r && r.majorCode === major.code && hasTrustedSource(u, r.sourceUrl))
 }
 
 const COMBINED = {
@@ -33,14 +35,16 @@ const COMBINED = {
 }
 
 export function admissionKind(u, a) {
-  if (!hasTrustedSource(u.slug, a.sourceUrl)) return null
+  if (!hasTrustedSource(u, a.sourceUrl)) return null
   if (u.slug === 'van-lang' && a.program === 'Global Elite Program') return null
   if (u.slug === 'ton-duc-thang' && !/^Tiêu chuẩn:/.test(a.program || '')) return null
   if (a.method === 'high_school_exam' && COMBINED[u.slug]?.year === a.year) {
     return { key: 'combined', label: COMBINED[u.slug].label }
   }
-  const policy = ADMISSION_SOURCES[u.slug]
-  if (policy && a.sourceUrl === policy.url && a.year === policy.year && policy.methods.includes(a.method)) {
+  // Cùng bảng nguồn (link, năm, phương thức) với một dòng admin đã xác minh cho AI -> hiện đúng loại điểm.
+  const verifiedTable = (Array.isArray(u.admissions) ? u.admissions : []).some((v) =>
+    v?.verifiedForAI === true && v.sourceUrl === a.sourceUrl && v.year === a.year && v.method === a.method)
+  if (verifiedTable) {
     if (a.method === 'competency_assessment' && a.scale === 1200) return { key: 'competency', label: 'ĐGNL ĐHQG-HCM' }
     if (a.method === 'high_school_exam' && [30, 35, 40].includes(a.scale)) return { key: 'thpt', label: 'Thi tốt nghiệp THPT' }
   }
