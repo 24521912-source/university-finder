@@ -41,3 +41,14 @@ Khi thêm thư mục mới, cần cập nhất
     docs/PROJECT_STRUCTURE.md
 Code frontend đặt trong frontend/src
 Code backend đặt trong backend/src
+
+## Quản trị
+
+Website không cho tự đăng ký làm quản trị. Người có `backend/.env` chạy trong `backend`:
+
+```
+npm run make-admin -- email@example.com           # quản trị viên
+npm run make-admin -- email@example.com --super   # quản trị viên cấp cao (tối đa 2)
+```
+
+Sau đó quản trị cấp cao phân quyền tiếp trên trang /admin, tab Tài khoản (xem docs/API_CONTRACT.md).

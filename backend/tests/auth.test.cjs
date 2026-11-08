@@ -114,3 +114,14 @@ test('Đổi mật khẩu: sai mật khẩu hiện tại trả 400 và không gh
   assert.equal(saved, 1)
   assert.equal(account.passwordHash, 'new-hash')
 })
+
+test('Tài khoản bị khóa: login 403, token cũ bị chặn ngay; đã xóa mềm: 401', async () => {
+  const make = (account) => load('modules/auth/auth.service.js', { '../../models/User': { findOne: () => ({ select: async () => account }) }, bcryptjs: { compare: async () => true } }, { process: { env: { JWT_SECRET: 'x' } } })
+  await assert.rejects(make({ id: 'a', status: 'locked', role: 'user' }).login(form), (e) => e.status === 403)
+  await assert.rejects(make({ id: 'a', deletedAt: new Date(), role: 'user' }).login(form), (e) => e.status === 401)
+  const secret = crypto.randomBytes(32).toString('hex')
+  for (const account of [{ id: 'a', status: 'locked' }, { id: 'a', deletedAt: new Date() }]) {
+    const auth = load('middlewares/auth.js', { '../models/User': { findById: async () => account } }, { process: { env: { JWT_SECRET: secret } } })
+    await assert.rejects(auth.requireAuth({ headers: { authorization: 'Bearer ' + jwt.sign({ sub: 'a' }, secret) } }, {}, () => {}), (e) => e.status === 401)
+  }
+})

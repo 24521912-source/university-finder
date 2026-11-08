@@ -121,6 +121,31 @@ Mọi API dưới đây cần header `Authorization: Bearer <token>` của tài 
 - Chỉ ghi các field có trong `EDITABLE` (`backend/src/modules/admin/admin.service.js`); `_id`, `favoriteCount`, timestamps và field lạ bị bỏ qua.
 - `400` khi: slug sai định dạng, mã ngành không có trong danh mục, học phí / điểm chuẩn trỏ tới mã ngành không thuộc trường, hoặc vi phạm schema. `409` khi slug trùng. `404` khi không có trường.
 
+## Quản lý tài khoản 🛡️
+
+Gắn tại `/admin/users`, cần quản trị viên (`admin` hoặc `superadmin`). Quy tắc ai được làm gì với ai nằm ở `backend/src/utils/roles.js` (`denyReason`):
+
+| Vai trò | Được làm |
+|---|---|
+| `superadmin` (quản trị cấp cao, tối đa 2, chỉ tạo bằng `npm run make-admin -- email --super`) | Nâng/hạ/khóa/xóa quản trị viên; trao/thu quyền `canManageAdmins` |
+| `admin` có `canManageAdmins` | Nâng user lên admin; hạ/khóa/xóa admin **không** có quyền này |
+| `admin` | Tạo hộ / khóa / xóa user thường |
+
+Không ai thao tác lên chính mình hoặc lên `superadmin` qua web. Khóa / xóa có hiệu lực ngay ở request kế tiếp.
+
+| Phương thức | Đường dẫn | Body | Mô tả |
+|---|---|---|---|
+| GET | `/admin/users?q=&role=&status=&page=` | | Danh sách (20/trang), không gồm tài khoản đã xóa. Không trả `passwordHash` |
+| POST | `/admin/users` | `{ fullName, email, password }` | Tạo hộ: luôn `role: user`, `mustChangePassword: true` |
+| PATCH | `/admin/users/:id/status` | `{ status: "active" \| "locked" }` | Khóa / mở khóa |
+| PATCH | `/admin/users/:id/role` | `{ role: "user" \| "admin" }` | Nâng / hạ quyền (hạ thì thu luôn `canManageAdmins`) |
+| PATCH | `/admin/users/:id/permissions` | `{ canManageAdmins: true \| false }` | Chỉ `superadmin` |
+| DELETE | `/admin/users/:id` | | Xóa mềm (`deletedAt`), khôi phục được |
+
+Lỗi: `400` dữ liệu sai, `403` không đủ quyền, `404` không có tài khoản, `409` email trùng hoặc tài khoản vừa bị người khác đổi.
+
+Đăng nhập: tài khoản bị khóa trả `403`, đã xóa trả `401`. `GET /auth/me` có thêm `canManageAdmins`, `mustChangePassword`; đổi mật khẩu xong `mustChangePassword` về `false`.
+
 ## Favorites 🔒
 
 | Phương thức | Đường dẫn | Mô tả |

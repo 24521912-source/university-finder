@@ -10,7 +10,7 @@ import './Profile.css'
 
 const tabs = [{ key: 'info', label: 'Thông tin cá nhân', icon: UserRound }, { key: 'favorites', label: 'Trường yêu thích', icon: Heart }]
 const favoriteIds = user => [...new Set((Array.isArray(user?.favorites) ? user.favorites : []).map(item => typeof item === 'string' ? item : item?._id).filter(id => typeof id === 'string' && id))]
-const roleLabel = role => ({ user: 'Thành viên', admin: 'Quản trị viên' })[role] || 'Chưa có thông tin'
+const roleLabel = role => ({ user: 'Thành viên', admin: 'Quản trị viên', superadmin: 'Quản trị cấp cao' })[role] || 'Chưa có thông tin'
 
 function SchoolCard({ school, onRemove, removing }) {
   const [failedLogo, setFailedLogo] = useState(null)

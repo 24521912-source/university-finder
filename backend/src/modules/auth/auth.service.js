@@ -9,6 +9,8 @@ const toPublicUser = (user) => ({
   fullName: user.fullName,
   email: user.email,
   role: user.role,
+  canManageAdmins: user.canManageAdmins === true,
+  mustChangePassword: user.mustChangePassword === true,
   favorites: user.favorites,
 })
 
@@ -32,6 +34,8 @@ async function login({ email, password }) {
   if (!user || !(await bcrypt.compare(password, user.passwordHash))) {
     throw httpError(401, 'Email hoặc mật khẩu không đúng')
   }
+  if (user.deletedAt) throw httpError(401, 'Email hoặc mật khẩu không đúng')
+  if (user.status === 'locked') throw httpError(403, 'Tài khoản đã bị khóa. Vui lòng liên hệ quản trị viên')
   return createSession(user)
 }
 
@@ -48,6 +52,7 @@ async function changePassword(userId, { currentPassword, newPassword }) {
   if (!user) throw httpError(404, 'Tài khoản không tồn tại')
   if (!(await bcrypt.compare(currentPassword, user.passwordHash))) throw httpError(400, 'Mật khẩu hiện tại không đúng')
   user.passwordHash = await bcrypt.hash(newPassword, 10)
+  user.mustChangePassword = false
   await user.save()
 }
 

@@ -14,3 +14,8 @@ test('returns to the admissions checklist and year after login, ignoring unrelat
   assert.equal(loginDestination({ role: 'user' }, { pathname: '/demo/tuyen-sinh', search: '?muc=ho-so' }), '/demo/tuyen-sinh?muc=ho-so')
   assert.equal(loginDestination({ role: 'user' }, { pathname: '/truong/kinh-te-tphcm/unknown' }), '/profile')
 })
+
+test('Quản trị cấp cao được điều hướng như quản trị viên', () => {
+  assert.equal(loginDestination({ role: 'superadmin' }), '/admin')
+  assert.equal(loginDestination({ role: 'superadmin' }, { pathname: '/admin/users' }), '/admin/users')
+})
