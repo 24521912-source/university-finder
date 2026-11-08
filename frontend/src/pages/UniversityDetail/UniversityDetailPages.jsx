@@ -50,6 +50,7 @@ export function DetailContent({ university: u }) {
   const data = detailData(u)
   const profile = profilePolicy(u)
   const verified = hcmutContent(u)
+  const sources = hcmutSources(u)
   const content = verified || u
   const contact = u.contact || {}
   const badges = introBadges(u, profile)
@@ -66,7 +67,7 @@ export function DetailContent({ university: u }) {
     <div className="ud-page-content" key={active}>
       {!page && <Link to={base} className="btn btn-primary">Về tổng quan</Link>}
       {active === 'tong-quan' && <>
-        <section className="ud-section"><h3>Giới thiệu về trường</h3><p className="ud-intro-text">{text(profile.description) || 'Chưa có thông tin giới thiệu về trường.'}</p>{verified && <Source href={hcmutSources.overview}>Nguồn giới thiệu ↗</Source>}
+        <section className="ud-section"><h3>Giới thiệu về trường</h3><p className="ud-intro-text">{text(profile.description) || 'Chưa có thông tin giới thiệu về trường.'}</p>{verified && <Source href={sources.overview}>Nguồn giới thiệu ↗</Source>}
           <dl className="ud-contact ud-basic-info">{[['Hệ thống đại học', profile.universitySystem], ['Địa chỉ trụ sở', profile.address]].filter(([, value]) => text(value)).map(([label, value]) => <div key={label}><dt>{label}</dt><dd>{value}</dd></div>)}</dl>
         </section>
         <div className="ud-explore">{PAGES.slice(1).map(([id, label, description], index) => <Link key={id} to={`${base}/${id}`} className="ud-explore-card"><span className="ud-card-number">0{index + 1}</span><h3>{label}<span aria-hidden="true">↗</span></h3><p>{description}</p></Link>)}</div>
@@ -75,10 +76,10 @@ export function DetailContent({ university: u }) {
       {active === 'tuyen-sinh' && <AdmissionDemo base={base} admissionsUrl={contact.admissionsUrl} />}
       {active === 'hoc-phi' && <TuitionTable data={data} />}
       {active === 'co-so-vi-tri' && <>
-        <section className="ud-section"><h3>Vị trí & cơ sở đào tạo</h3><div className="ud-location"><span aria-hidden="true">⌖</span><p><strong>Trụ sở: </strong>{text(profile.address) || MISSING}</p></div>{profile.campuses?.length > 0 && <><InformationList items={profile.campuses} fields={[["name", ''], ['address', 'Địa chỉ']]} />{verified && <Source href={hcmutSources.overview}>Nguồn địa chỉ ↗</Source>}</>}<p className="ud-muted">Nơi học có thể khác nhau theo ngành và chương trình. Liên hệ trường để xác nhận cơ sở học.</p></section>
-        <section className="ud-section"><h3>Cơ sở vật chất</h3><InformationList items={content.facilities} fields={[["name", ''], ['description', '']]} />{verified && <p><Source href={hcmutSources.library}>Nguồn thư viện ↗</Source> · <Source href={hcmutSources.overview}>Nguồn cơ sở vật chất ↗</Source></p>}</section>
+        <section className="ud-section"><h3>Vị trí & cơ sở đào tạo</h3><div className="ud-location"><span aria-hidden="true">⌖</span><p><strong>Trụ sở: </strong>{text(profile.address) || MISSING}</p></div>{profile.campuses?.length > 0 && <><InformationList items={profile.campuses} fields={[["name", ''], ['address', 'Địa chỉ']]} />{verified && <Source href={sources.overview}>Nguồn địa chỉ ↗</Source>}</>}<p className="ud-muted">Nơi học có thể khác nhau theo ngành và chương trình. Liên hệ trường để xác nhận cơ sở học.</p></section>
+        <section className="ud-section"><h3>Cơ sở vật chất</h3><InformationList items={content.facilities} fields={[["name", ''], ['description', '']]} />{verified && <p><Source href={sources.library}>Nguồn thư viện ↗</Source> · <Source href={sources.overview}>Nguồn cơ sở vật chất ↗</Source></p>}</section>
       </>}
-      {active === 'lien-he' && <section className="ud-section"><h3>Kênh liên hệ của trường</h3><dl className="ud-contact">{[['Website', contact.website, true], ['Trang tuyển sinh', contact.admissionsUrl, true], ['Điện thoại', profile.phone], ['Email', contact.email], ['Điện thoại tuyển sinh', contact.admissionsPhone], ['Email tuyển sinh', contact.admissionsEmail]].filter(([, value]) => text(value)).map(([label, value, url]) => <div key={label}><dt>{label}</dt><dd>{url ? <Source href={value}>{value}</Source> : value}</dd></div>)}</dl>{![contact.website, contact.admissionsUrl, profile.phone, contact.email, contact.admissionsPhone, contact.admissionsEmail].some(text) && <p className="ud-empty">{MISSING}</p>}{verified && <p className="ud-muted"><Source href={hcmutSources.contact}>Nguồn liên hệ chung ↗</Source> · <Source href={hcmutSources.admissionsContact}>Nguồn liên hệ tuyển sinh ↗</Source></p>}</section>}
+      {active === 'lien-he' && <section className="ud-section"><h3>Kênh liên hệ của trường</h3><dl className="ud-contact">{[['Website', contact.website, true], ['Trang tuyển sinh', contact.admissionsUrl, true], ['Điện thoại', profile.phone], ['Email', contact.email], ['Điện thoại tuyển sinh', contact.admissionsPhone], ['Email tuyển sinh', contact.admissionsEmail]].filter(([, value]) => text(value)).map(([label, value, url]) => <div key={label}><dt>{label}</dt><dd>{url ? <Source href={value}>{value}</Source> : value}</dd></div>)}</dl>{![contact.website, contact.admissionsUrl, profile.phone, contact.email, contact.admissionsPhone, contact.admissionsEmail].some(text) && <p className="ud-empty">{MISSING}</p>}{verified && <p className="ud-muted"><Source href={sources.contact}>Nguồn liên hệ chung ↗</Source> · <Source href={sources.admissionsContact}>Nguồn liên hệ tuyển sinh ↗</Source></p>}</section>}
     </div>
     <footer className="ud-detail-footer"><p>{active === 'tuyen-sinh' ? 'Bản demo tuyển sinh dùng dữ liệu minh họa.' : 'Thông tin tham khảo từ hồ sơ trường. Năm và nguồn được ghi tại từng mục.'}</p><Link to="/ai-tu-van">Tư vấn chọn trường với AI →</Link></footer>
   </div>

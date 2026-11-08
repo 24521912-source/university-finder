@@ -50,7 +50,8 @@ test('empty lists have a stable first page with a zero result range', () => {
 })
 
 test('groups HCMUT programs under their major heading without losing admission codes or score records', () => {
-  const evidence = JSON.parse(readFileSync(new URL('../../utils/hcmutDetailEvidence.json', import.meta.url), 'utf8'))
+  const schools = JSON.parse(readFileSync(new URL('../../../../database/seeds/universities.json', import.meta.url), 'utf8'))
+  const evidence = schools.find(school => school.slug === 'bach-khoa-tphcm').detailEvidence
   const admissionGroups = Object.entries(evidence.groups).map(([examCode, group]) => ({ examCode, groupName: group.title, program: `Program ${examCode}`, score: group.htmlScore, scale: 100 }))
   const rows = buildMajorRows({ admissionGroups })
   assert.equal(rows.length, 43)

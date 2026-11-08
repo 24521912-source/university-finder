@@ -46,11 +46,18 @@ async function list() {
 // Chỉ các trường công khai phục vụ trang chi tiết. Không thay đổi truy vấn danh sách.
 const DETAIL_FIELDS = 'slug name shortName institutionType belongsToUniversitySystem universitySystem ' +
   'foundedYear description favoriteCount overview contact address campuses media majors tuition admissions ' +
-  'facilities scholarships dormitory studentLife careerOpportunities'
+  'facilities scholarships dormitory studentLife careerOpportunities detailEvidence'
 
 async function detail(slug) {
   if (typeof slug !== 'string' || slug.length > 150 || !/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(slug)) return null
   return University.findOne({ slug }).select(DETAIL_FIELDS).lean()
 }
 
-module.exports = { list, detail, toCard, CARD_FIELDS }
+// Dữ liệu trang AI tư vấn cần để chấm điểm: đọc trực tiếp MongoDB nên admin sửa là thấy ngay.
+const RECOMMENDATION_FIELDS = 'slug name shortName institutionType belongsToUniversitySystem dataLevel address.district majors tuition admissions'
+
+async function recommendationData() {
+  return University.find().select(`${RECOMMENDATION_FIELDS} -_id`).sort({ name: 1 }).lean()
+}
+
+module.exports = { list, detail, recommendationData, toCard, CARD_FIELDS }

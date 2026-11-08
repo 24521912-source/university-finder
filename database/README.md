@@ -8,7 +8,7 @@ Backend kết nối qua thư viện `mongoose` (đã có trong `backend/package.
 ```text
 database/
 ├─ mongodb/schema.md   # Mô tả collections, field, quy ước dữ liệu
-├─ seeds/              # Dữ liệu gốc (JSON) — nguồn chuẩn, lưu trong git
+├─ seeds/              # Dữ liệu nạp ban đầu (JSON), lưu trong git
 │  ├─ majors.json
 │  └─ universities.json
 └─ diagrams/           # Sơ đồ dữ liệu cho báo cáo
@@ -22,20 +22,27 @@ Model Mongoose (định nghĩa kiểu dữ liệu thật) nằm ở `backend/src
 2. Copy `backend/.env.example` thành `backend/.env`, dán connection string nhận được (gửi riêng, **không commit `.env`**).
 3. `cd backend && npm install && npm run dev`
 
+## Dữ liệu gốc là MongoDB Atlas
+
+- **Atlas là bản gốc.** Mọi trang web đọc dữ liệu từ Atlas qua API; frontend không đọc file JSON.
+- Sửa dữ liệu trường (ngành, học phí, điểm chuẩn, liên hệ…) bằng trang **/admin** trên web (tài khoản admin), hoặc bằng MongoDB Compass. Sửa xong cả nhóm thấy ngay.
+- File `seeds/*.json` chỉ để **nạp lần đầu** hoặc khôi phục khi database trống.
+
 ## Seed dữ liệu
 
 ```bash
 cd backend
-npm run seed
+npm run seed -- --dry-run     # xem trước sẽ thêm/sửa gì, KHÔNG ghi
+npm run seed -- --overwrite   # ghi thật (bắt buộc khi database đã có dữ liệu)
 ```
 
-- Đọc `database/seeds/*.json` rồi upsert lên Atlas theo `Major.code` và `University.slug`; chạy lại nhiều lần không tạo bản trùng.
-- File JSON trong git là **bản gốc**: thêm/sửa dữ liệu thì sửa JSON rồi chạy seed. Nếu ai lỡ xóa dữ liệu trên Atlas, chạy lại seed để khôi phục.
-- Seed ghi đè các field có trong JSON — sửa trực tiếp trên Atlas mà không cập nhật JSON sẽ bị mất ở lần seed sau.
+- Upsert theo `Major.code` và `University.slug`; chỉ ghi field có nội dung khác database, field giống hệt giữ nguyên (kể cả `_id` từng dòng).
+- ⚠️ Field nào khác giữa JSON và database sẽ bị **thay bằng bản JSON**, kể cả bản admin vừa sửa trên web. Luôn chạy `--dry-run` trước và báo cả nhóm trước khi ghi.
+- Database trống (lần đầu): `npm run seed` là đủ.
 
 ## Quy ước dữ liệu
 
 - Tiền lưu số nguyên VND (`20000000`), không lưu chuỗi "20 triệu/năm".
-- Ngành của trường tham chiếu mã trong `majors.json` — thêm ngành mới vào `majors.json` trước.
+- Ngành của trường tham chiếu mã trong danh mục ngành (collection `majors`) — trang admin từ chối mã ngành chưa có trong danh mục.
 - Điểm chuẩn luôn có `year`, `method`, `majorCode`, `scale` (30 hoặc 1200).
 - Không có dữ liệu thì bỏ trống/`null`, không tự đoán.

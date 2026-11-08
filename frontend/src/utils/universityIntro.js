@@ -1,9 +1,7 @@
 // Tóm tắt phần Giới thiệu trang chi tiết trường, chỉ dựa trên dữ liệu đã có trong hồ sơ.
 // Không thêm xếp hạng hay tuyên bố nào không có trong dữ liệu.
-import catalog from '../../../database/seeds/majors.json'
 import { INSTITUTION_TYPE_LABEL } from './format'
 
-const FIELD_GROUP = new Map(catalog.map((m) => [m.code, m.fieldGroup]))
 const plain = (value) => typeof value === 'string' && value.trim() ? value.trim() : null
 
 export function introBadges(u, profile) {
@@ -19,7 +17,9 @@ export function introBadges(u, profile) {
 }
 
 // Nhóm ngành có nhiều ngành đào tạo nhất (theo danh mục ngành của Bộ GD&ĐT).
-export function strengthGroups(u, data, limit = 3) {
+// majors: danh mục ngành [{ code, fieldGroup }] lấy từ API /majors.
+export function strengthGroups(u, data, limit = 3, majors = []) {
+  const FIELD_GROUP = new Map(majors.map((m) => [m.code, m.fieldGroup]))
   const source = data.majors.length ? data.majors : (Array.isArray(u.majors) ? u.majors : [])
   const counts = new Map()
   for (const code of new Set(source.map((m) => m?.code))) {
