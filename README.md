@@ -51,4 +51,4 @@ npm run make-admin -- email@example.com           # quản trị viên
 npm run make-admin -- email@example.com --super   # quản trị viên cấp cao (tối đa 2)
 ```
 
-Sau đó quản trị cấp cao phân quyền tiếp trên trang /admin, tab Tài khoản (xem docs/API_CONTRACT.md).
+Sau đó quản trị cấp cao phân quyền tiếp trên trang /admin, tab Tài khoản. Hướng dẫn trang quản trị, lịch sử và sao lưu: docs/ADMIN.md; vai trò: docs/AUTH.md.
