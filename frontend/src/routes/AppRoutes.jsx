@@ -9,6 +9,8 @@ import Register from '../pages/Register/Register'
 import Profile from '../pages/Profile/Profile'
 import UniversityDetail from '../pages/UniversityDetail/UniversityDetail'
 import AdmissionPreview from '../pages/UniversityDetail/AdmissionPreview'
+import AI from '../pages/AI/AI'
+import Compare from '../pages/Compare/Compare'
 
 // Khai báo mọi trang của web. Làm xong chức năng nào thì thay <ComingSoon /> bằng trang thật.
 function AppRoutes() {
@@ -20,8 +22,8 @@ function AppRoutes() {
           <Route path="/truong" element={<Universities />} />
           <Route path="/truong/:slug/:section?" element={<UniversityDetail />} />
           <Route path="/demo/tuyen-sinh" element={<AdmissionPreview />} />
-          <Route path="/ai-tu-van" element={<ComingSoon title="AI tư vấn chọn trường" />} />
-          <Route path="/so-sanh" element={<ComingSoon title="So sánh trường" />} />
+          <Route path="/ai-tu-van" element={<AI />} />
+          <Route path="/so-sanh" element={<Compare />} />
           <Route path="/dang-nhap" element={<Login />} />
           <Route path="/dang-ky" element={<Register />} />
           <Route path="/login" element={<Login />} />

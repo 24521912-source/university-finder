@@ -10,6 +10,11 @@
     "fieldGroup": "Khoa học giáo dục và đào tạo giáo viên"
   },
   {
+    "code": "7140107",
+    "name": "Quản trị chất lượng giáo dục",
+    "fieldGroup": "Khoa học giáo dục và đào tạo giáo viên"
+  },
+  {
     "code": "7140114",
     "name": "Quản lý giáo dục",
     "fieldGroup": "Khoa học giáo dục và đào tạo giáo viên"
@@ -135,6 +140,11 @@
     "fieldGroup": "Nghệ thuật"
   },
   {
+    "code": "7210213",
+    "name": "Nghệ thuật học",
+    "fieldGroup": "Nghệ thuật"
+  },
+  {
     "code": "7210234",
     "name": "Diễn viên kịch, điện ảnh – truyền hình",
     "fieldGroup": "Nghệ thuật"
@@ -185,6 +195,11 @@
     "fieldGroup": "Nhân văn"
   },
   {
+    "code": "7220104",
+    "name": "Hán Nôm",
+    "fieldGroup": "Nhân văn"
+  },
+  {
     "code": "7220201",
     "name": "Ngôn ngữ Anh",
     "fieldGroup": "Nhân văn"
@@ -205,6 +220,21 @@
     "fieldGroup": "Nhân văn"
   },
   {
+    "code": "7220205",
+    "name": "Ngôn ngữ Đức",
+    "fieldGroup": "Nhân văn"
+  },
+  {
+    "code": "7220206",
+    "name": "Ngôn ngữ Tây Ban Nha",
+    "fieldGroup": "Nhân văn"
+  },
+  {
+    "code": "7220208",
+    "name": "Ngôn ngữ Italia",
+    "fieldGroup": "Nhân văn"
+  },
+  {
     "code": "7220209",
     "name": "Ngôn ngữ Nhật",
     "fieldGroup": "Nhân văn"
@@ -215,8 +245,33 @@
     "fieldGroup": "Nhân văn"
   },
   {
+    "code": "7229001",
+    "name": "Triết học",
+    "fieldGroup": "Nhân văn"
+  },
+  {
+    "code": "7229009",
+    "name": "Tôn giáo học",
+    "fieldGroup": "Nhân văn"
+  },
+  {
+    "code": "7229010",
+    "name": "Lịch sử",
+    "fieldGroup": "Nhân văn"
+  },
+  {
+    "code": "7229020",
+    "name": "Ngôn ngữ học",
+    "fieldGroup": "Nhân văn"
+  },
+  {
     "code": "7229030",
     "name": "Văn học",
+    "fieldGroup": "Nhân văn"
+  },
+  {
+    "code": "7229040",
+    "name": "Văn hoá học",
     "fieldGroup": "Nhân văn"
   },
   {
@@ -270,6 +325,11 @@
     "fieldGroup": "Khoa học xã hội và hành vi"
   },
   {
+    "code": "7310302",
+    "name": "Nhân học",
+    "fieldGroup": "Khoa học xã hội và hành vi"
+  },
+  {
     "code": "7310401",
     "name": "Tâm lý học",
     "fieldGroup": "Khoa học xã hội và hành vi"
@@ -295,6 +355,16 @@
     "fieldGroup": "Khoa học xã hội và hành vi"
   },
   {
+    "code": "7310613",
+    "name": "Nhật Bản học",
+    "fieldGroup": "Khoa học xã hội và hành vi"
+  },
+  {
+    "code": "7310614",
+    "name": "Hàn Quốc học",
+    "fieldGroup": "Khoa học xã hội và hành vi"
+  },
+  {
     "code": "7310620",
     "name": "Đông Nam Á học",
     "fieldGroup": "Khoa học xã hội và hành vi"
@@ -303,6 +373,16 @@
     "code": "7310630",
     "name": "Việt Nam học",
     "fieldGroup": "Khoa học xã hội và hành vi"
+  },
+  {
+    "code": "73106a1",
+    "name": "Kinh doanh thương mại Hàn Quốc",
+    "fieldGroup": "Khoa học xã hội và hành vi"
+  },
+  {
+    "code": "7320101",
+    "name": "Báo chí",
+    "fieldGroup": "Báo chí và thông tin"
   },
   {
     "code": "7320104",
@@ -322,6 +402,21 @@
   {
     "code": "7320108",
     "name": "Quan hệ công chúng",
+    "fieldGroup": "Báo chí và thông tin"
+  },
+  {
+    "code": "7320201",
+    "name": "Thông tin – thư viện",
+    "fieldGroup": "Báo chí và thông tin"
+  },
+  {
+    "code": "7320205",
+    "name": "Quản lý thông tin",
+    "fieldGroup": "Báo chí và thông tin"
+  },
+  {
+    "code": "7320303",
+    "name": "Lưu trữ học",
     "fieldGroup": "Báo chí và thông tin"
   },
   {
@@ -402,6 +497,11 @@
   {
     "code": "7340405",
     "name": "Hệ thống thông tin quản lý",
+    "fieldGroup": "Kinh doanh và quản lý"
+  },
+  {
+    "code": "7340406",
+    "name": "Quản trị văn phòng",
     "fieldGroup": "Kinh doanh và quản lý"
   },
   {
@@ -842,6 +942,11 @@
   {
     "code": "7580108",
     "name": "Thiết kế nội thất",
+    "fieldGroup": "Kiến trúc và xây dựng"
+  },
+  {
+    "code": "7580112",
+    "name": "Đô thị học",
     "fieldGroup": "Kiến trúc và xây dựng"
   },
   {
