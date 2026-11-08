@@ -16,7 +16,7 @@ function SchoolCard({ school, onRemove, removing }) {
   const [failedLogo, setFailedLogo] = useState(null)
   const logo = typeof school.logoUrl === 'string' && /^https?:\/\//i.test(school.logoUrl) ? school.logoUrl : null
   return <article className="up-school">
-    <div className="up-school-heading"><div className="up-school-logo">{logo && failedLogo !== logo ? <img src={logo} alt="" loading="lazy" onError={() => setFailedLogo(logo)} /> : <Building2 aria-hidden="true" />}</div><button type="button" className="up-saved up-unsave" onClick={() => onRemove(school)} disabled={removing} aria-label={`Bỏ yêu thích ${school.name || 'trường này'}`}><Heart size={14} aria-hidden="true" />{removing ? 'Đang bỏ…' : 'Bỏ yêu thích'}</button></div>
+    <div className="up-school-heading"><div className="up-school-logo">{logo && failedLogo !== logo ? <img src={logo} alt="" loading="lazy" onError={() => setFailedLogo(logo)} /> : <Building2 aria-hidden="true" />}</div><button type="button" className="up-unsave" onClick={() => onRemove(school)} disabled={removing} aria-label={`Bỏ yêu thích ${school.name || 'trường này'}`}><Heart size={14} aria-hidden="true" />{removing ? 'Đang bỏ…' : 'Bỏ yêu thích'}</button></div>
     <span className="up-type">{INSTITUTION_TYPE_LABEL[school.institutionType] || 'Chưa rõ loại hình'}</span>
     <h3>{school.name || 'Chưa có tên trường'}</h3>
     {school.shortName && <p className="up-school-short">{school.shortName}</p>}
@@ -72,6 +72,15 @@ function Profile() {
     setProfileState({ status: 'loading' })
     setRefresh(value => value + 1)
   }
+  // Mũi tên ở ô "Trường đã yêu thích": mở tab yêu thích và cuộn tới danh sách (kể cả khi đang ở sẵn tab đó).
+  function showFavorites() {
+    setActiveTab('favorites')
+    requestAnimationFrame(() => {
+      const tab = document.getElementById(`${tabId}-favorites`)
+      tab?.scrollIntoView({ behavior: 'smooth', block: 'start' })
+      tab?.focus({ preventScroll: true })
+    })
+  }
   function onTabKey(event, index) {
     const next = event.key === 'Home' ? 0 : event.key === 'End' ? tabs.length - 1 : event.key === 'ArrowRight' ? (index + 1) % tabs.length : event.key === 'ArrowLeft' ? (index + tabs.length - 1) % tabs.length : null
     if (next === null) return
@@ -97,7 +106,7 @@ function Profile() {
       {notice && <p className="up-notice up-success" role="status">{notice}</p>}
     </section>
 
-    <div className="up-summary"><section className="up-stat" aria-label="Thống kê yêu thích"><span className="up-icon up-icon-heart"><Heart aria-hidden="true" /></span><div><p>Trường đã yêu thích</p><strong>{profileState.status === 'loading' ? <span className="up-count-loading" aria-label="Đang tải số lượng">—</span> : ids.length.toLocaleString('vi-VN')}</strong><small>{profileState.status === 'error' ? 'Theo phiên đăng nhập gần nhất' : 'Được lưu trong tài khoản của bạn'}</small></div><button aria-label="Xem trường yêu thích" className="up-icon-button" onClick={() => setActiveTab('favorites')}><ArrowRight size={20} aria-hidden="true" /></button></section><aside className="up-discover"><span className="up-icon"><Compass aria-hidden="true" /></span><div><h2>Tìm ngôi trường phù hợp</h2><p>Khám phá thêm lựa chọn cho hành trình sắp tới.</p></div><Link className="up-button up-button-primary" to="/truong">Khám phá trường <ArrowRight size={16} aria-hidden="true" /></Link></aside></div>
+    <div className="up-summary"><section className="up-stat" aria-label="Thống kê yêu thích"><span className="up-icon up-icon-heart"><Heart aria-hidden="true" /></span><div><p>Trường đã yêu thích</p><strong>{profileState.status === 'loading' ? <span className="up-count-loading" aria-label="Đang tải số lượng">—</span> : ids.length.toLocaleString('vi-VN')}</strong><small>{profileState.status === 'error' ? 'Theo phiên đăng nhập gần nhất' : 'Được lưu trong tài khoản của bạn'}</small></div><button aria-label="Xem trường yêu thích" className="up-icon-button" onClick={showFavorites}><ArrowRight size={20} aria-hidden="true" /></button></section><aside className="up-discover"><span className="up-icon"><Compass aria-hidden="true" /></span><div><h2>Tìm ngôi trường phù hợp</h2><p>Khám phá thêm lựa chọn cho hành trình sắp tới.</p></div><Link className="up-button up-button-primary" to="/truong">Khám phá trường <ArrowRight size={16} aria-hidden="true" /></Link></aside></div>
 
     <section className="up-workspace" aria-label="Chi tiết tài khoản">
       <div className="up-tabs" role="tablist" aria-label="Nội dung hồ sơ">{tabs.map(({ key, label, icon: Icon }, index) => <button key={key} id={`${tabId}-${key}`} role="tab" aria-selected={activeTab === key} aria-controls={`${tabId}-${key}-panel`} tabIndex={activeTab === key ? 0 : -1} onClick={() => setActiveTab(key)} onKeyDown={event => onTabKey(event, index)}><Icon size={18} aria-hidden="true" />{label}{key === 'favorites' && profileState.status !== 'loading' && <span className="up-tab-count">{ids.length}</span>}</button>)}</div>
