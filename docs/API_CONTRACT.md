@@ -121,6 +121,15 @@ Mọi API dưới đây cần header `Authorization: Bearer <token>` của tài 
 - Chỉ ghi các field có trong `EDITABLE` (`backend/src/modules/admin/admin.service.js`); `_id`, `favoriteCount`, timestamps và field lạ bị bỏ qua.
 - `400` khi: slug sai định dạng, mã ngành không có trong danh mục, học phí / điểm chuẩn trỏ tới mã ngành không thuộc trường, hoặc vi phạm schema. `409` khi slug trùng. `404` khi không có trường.
 
+## Favorites 🔒
+
+| Phương thức | Đường dẫn | Mô tả |
+|---|---|---|
+| POST | `/favorites/:slug` | Thêm trường vào yêu thích. Đã có thì không thêm lần nữa |
+| DELETE | `/favorites/:slug` | Bỏ yêu thích. Chưa có thì không làm gì |
+
+Response: `{ "favorites": ["<id trường>", ...] }` (danh sách sau khi đổi). `favoriteCount` của trường tăng/giảm 1 chỉ khi danh sách thực sự thay đổi, không bao giờ âm. Lỗi: `401` chưa đăng nhập, `400` slug sai định dạng, `404` không có trường.
+
 ## Majors
 
 ### `GET /majors`

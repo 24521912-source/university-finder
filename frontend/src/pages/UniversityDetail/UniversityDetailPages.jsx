@@ -4,6 +4,7 @@ import { MISSING, asArray, detailData, text } from '../../utils/universityDetail
 import { profilePolicy, safeUrl } from '../../utils/universityDetailPolicy'
 import { hcmutContent, hcmutSources } from '../../utils/hcmutDetail'
 import { introBadges } from '../../utils/universityIntro'
+import { useFavorites } from '../../features/favorites/useFavorites'
 import MajorAdmissions from './MajorAdmissions'
 import AdmissionDemo from './AdmissionDemo'
 import TuitionTable from './TuitionTable'
@@ -31,6 +32,17 @@ function Logo({ src, name }) {
   const [failed, setFailed] = useState(null)
   const url = safeUrl(src)
   return <div className="ud-logo">{url && failed !== url ? <img src={url} alt={`Logo ${name}`} onError={() => setFailed(url)} referrerPolicy="no-referrer" /> : <svg viewBox="0 0 80 64" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden="true"><path d="M8 56h64M16 56V25h48v31M10 25L40 8l30 17H10ZM34 56V40h12v16M24 32h4m24 0h4M24 40h4m24 0h4" /></svg>}</div>
+}
+
+function FavoriteButton({ university }) {
+  const { isFavorite, toggle, countOf, isPending, error } = useFavorites()
+  const active = isFavorite(university)
+  return <div className="ud-favorite">
+    <button type="button" className={`btn ${active ? 'btn-primary' : 'btn-outline'}`} aria-pressed={active} disabled={isPending(university)} onClick={() => toggle(university)}>
+      {active ? '♥ Đã yêu thích' : '♡ Yêu thích'} · {countOf(university).toLocaleString('vi-VN')}
+    </button>
+    {error && <p className="ud-favorite-error" role="alert">{error}</p>}
+  </div>
 }
 
 export function DetailContent({ university: u }) {
@@ -61,6 +73,7 @@ export function DetailContent({ university: u }) {
       <Logo src={u.media?.logoUrl} name={u.name} />
       <div className="ud-identity"><p className="ud-eyebrow">HỒ SƠ TRƯỜNG ĐẠI HỌC</p><h1>{u.name}</h1>{text(u.shortName) && <p className="ud-abbreviation">{u.shortName}</p>}{badges.length > 0 && <ul className="ud-intro-badges">{badges.map(badge => <li key={badge}>{badge}</li>)}</ul>}</div>
       {safeUrl(contact.website) && <div className="ud-official"><Source href={contact.website}>Website trường ↗</Source></div>}
+      <FavoriteButton university={u} />
     </div></header>
     <nav ref={navRef} className="ud-page-nav" aria-label="Các trang thông tin trường">{PAGES.map(([id, label]) => <NavLink key={id} end to={id === 'tong-quan' ? base : `${base}/${id}`} className={() => active === id ? 'is-active' : undefined} aria-current={active === id ? 'page' : undefined}>{label}</NavLink>)}</nav>
     <div className="ud-page-heading"><p className="ud-eyebrow">{u.shortName || 'THÔNG TIN TRƯỜNG'}</p><h2 ref={headingRef} tabIndex={-1}>{page?.[1] || 'Không tìm thấy mục thông tin'}</h2><p>{page?.[2] || 'Mục bạn tìm không tồn tại trong hồ sơ trường.'}</p></div>

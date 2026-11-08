@@ -154,3 +154,6 @@
 .user-profile .up-form-error { margin: 4px 0 0; font-size: 13px; color: #b71c1c; }
 .user-profile .up-form-actions { display: flex; gap: 8px; margin-top: 10px; flex-wrap: wrap; }
 .user-profile .up-success { margin: 0 24px 20px; color: #2e7d32; background: #e8f5e9; }
+.user-profile .up-unsave { border: 0; cursor: pointer; font: inherit; }
+.user-profile .up-unsave:hover:not(:disabled) { filter: brightness(0.95); text-decoration: underline; }
+.user-profile .up-unsave:disabled { cursor: progress; opacity: .7; }

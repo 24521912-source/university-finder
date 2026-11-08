@@ -5,17 +5,18 @@ import { useAuth } from '../../features/auth/AuthContext'
 import api, { getErrorMessage } from '../../services/api'
 import { INSTITUTION_TYPE_LABEL } from '../../utils/format'
 import { ChangePasswordForm, EditProfileForm } from './ProfileForms'
+import { useFavorites } from '../../features/favorites/useFavorites'
 import './Profile.css'
 
 const tabs = [{ key: 'info', label: 'Thông tin cá nhân', icon: UserRound }, { key: 'favorites', label: 'Trường yêu thích', icon: Heart }]
 const favoriteIds = user => [...new Set((Array.isArray(user?.favorites) ? user.favorites : []).map(item => typeof item === 'string' ? item : item?._id).filter(id => typeof id === 'string' && id))]
 const roleLabel = role => ({ user: 'Thành viên', admin: 'Quản trị viên' })[role] || 'Chưa có thông tin'
 
-function SchoolCard({ school }) {
+function SchoolCard({ school, onRemove, removing }) {
   const [failedLogo, setFailedLogo] = useState(null)
   const logo = typeof school.logoUrl === 'string' && /^https?:\/\//i.test(school.logoUrl) ? school.logoUrl : null
   return <article className="up-school">
-    <div className="up-school-heading"><div className="up-school-logo">{logo && failedLogo !== logo ? <img src={logo} alt="" loading="lazy" onError={() => setFailedLogo(logo)} /> : <Building2 aria-hidden="true" />}</div><span className="up-saved"><Heart size={14} aria-hidden="true" />Đã yêu thích</span></div>
+    <div className="up-school-heading"><div className="up-school-logo">{logo && failedLogo !== logo ? <img src={logo} alt="" loading="lazy" onError={() => setFailedLogo(logo)} /> : <Building2 aria-hidden="true" />}</div><button type="button" className="up-saved up-unsave" onClick={() => onRemove(school)} disabled={removing} aria-label={`Bỏ yêu thích ${school.name || 'trường này'}`}><Heart size={14} aria-hidden="true" />{removing ? 'Đang bỏ…' : 'Bỏ yêu thích'}</button></div>
     <span className="up-type">{INSTITUTION_TYPE_LABEL[school.institutionType] || 'Chưa rõ loại hình'}</span>
     <h3>{school.name || 'Chưa có tên trường'}</h3>
     {school.shortName && <p className="up-school-short">{school.shortName}</p>}
@@ -34,6 +35,7 @@ function Profile() {
   const [editing, setEditing] = useState(false)
   const [changingPassword, setChangingPassword] = useState(false)
   const [notice, setNotice] = useState('')
+  const favorites = useFavorites()
   const tabId = useId()
   const idsKey = JSON.stringify(favoriteIds(user))
   const ids = JSON.parse(idsKey)
@@ -109,7 +111,7 @@ function Profile() {
       </div>
       <div id={`${tabId}-favorites-panel`} role="tabpanel" aria-labelledby={`${tabId}-favorites`} hidden={activeTab !== 'favorites'} tabIndex={0}>
         <div className="up-panel-heading"><div><h2>Trường yêu thích</h2><p>Những ngôi trường bạn muốn tìm hiểu thêm.</p></div>{ids.length > 0 && <span className="up-type">{ids.length} trường đã lưu</span>}</div>
-        {profileState.status === 'loading' || schoolsLoading ? <div className="up-school-grid up-school-skeleton" role="status" aria-label="Đang tải trường yêu thích"><span /><span /><span /></div> : schoolsError ? <div className="up-empty" role="alert"><Info size={32} aria-hidden="true" /><h3>Chưa tải được trường yêu thích</h3><p>{schoolsState.message}</p><button className="up-button up-button-primary" onClick={() => setSchoolAttempt(value => value + 1)}>Thử lại</button></div> : !ids.length ? <div className="up-empty"><span className="up-empty-icon"><Heart size={30} aria-hidden="true" /></span><h3>Danh sách yêu thích còn trống</h3><p>Khám phá các trường đại học và tìm những lựa chọn phù hợp với bạn.</p><Link className="up-button up-button-primary" to="/truong">Khám phá trường <ArrowRight size={16} aria-hidden="true" /></Link></div> : <><div className="up-school-grid">{schools.map(school => <SchoolCard key={school._id} school={school} />)}</div>{schools.length < ids.length && <p className="up-notice" role="status"><Info size={18} aria-hidden="true" />{ids.length - schools.length} trường đã lưu hiện không có trong danh sách công khai. Số lượng đã lưu được giữ nguyên theo tài khoản.</p>}<p className="up-favorites-note"><Info size={15} aria-hidden="true" />Hiện chưa hỗ trợ thêm hoặc bỏ yêu thích trên website.</p></>}
+        {profileState.status === 'loading' || schoolsLoading ? <div className="up-school-grid up-school-skeleton" role="status" aria-label="Đang tải trường yêu thích"><span /><span /><span /></div> : schoolsError ? <div className="up-empty" role="alert"><Info size={32} aria-hidden="true" /><h3>Chưa tải được trường yêu thích</h3><p>{schoolsState.message}</p><button className="up-button up-button-primary" onClick={() => setSchoolAttempt(value => value + 1)}>Thử lại</button></div> : !ids.length ? <div className="up-empty"><span className="up-empty-icon"><Heart size={30} aria-hidden="true" /></span><h3>Danh sách yêu thích còn trống</h3><p>Khám phá các trường đại học và tìm những lựa chọn phù hợp với bạn.</p><Link className="up-button up-button-primary" to="/truong">Khám phá trường <ArrowRight size={16} aria-hidden="true" /></Link></div> : <><div className="up-school-grid">{schools.map(school => <SchoolCard key={school._id} school={school} onRemove={favorites.toggle} removing={favorites.isPending(school)} />)}</div>{schools.length < ids.length && <p className="up-notice" role="status"><Info size={18} aria-hidden="true" />{ids.length - schools.length} trường đã lưu hiện không có trong danh sách công khai. Số lượng đã lưu được giữ nguyên theo tài khoản.</p>}{favorites.error && <p className="up-notice up-error" role="alert"><Info size={15} aria-hidden="true" />{favorites.error}</p>}<p className="up-favorites-note"><Info size={15} aria-hidden="true" />Bấm ♥ trên thẻ trường hoặc trang chi tiết để thêm vào danh sách này.</p></>}
       </div>
     </section>
     <p className="up-footer-note"><ShieldCheck size={15} aria-hidden="true" />Không gian cá nhân dành riêng cho tài khoản của bạn.</p>
