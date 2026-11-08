@@ -10,4 +10,8 @@ async function detail(req, res) {
   res.json(university)
 }
 
-module.exports = { list, detail }
+async function recommendationData(req, res) {
+  res.json(await universitiesService.recommendationData())
+}
+
+module.exports = { list, detail, recommendationData }

@@ -89,4 +89,23 @@ Trả hồ sơ công khai của một trường theo slug để hiển thị tra
 
 Trang tuyển sinh hiện là bản demo frontend có nhãn dữ liệu minh họa. Checklist cá nhân chỉ dành cho người đã đăng nhập và lưu trong trình duyệt theo tài khoản, trường, năm; chưa có API ghi checklist hoặc dữ liệu tuyển sinh mẫu vào database.
 
+### `GET /universities/recommendation-data`
+
+Dữ liệu trang AI tư vấn dùng để chấm điểm, đọc trực tiếp MongoDB: mảng các trường với `slug`, `name`, `shortName`, `institutionType`, `belongsToUniversitySystem`, `dataLevel`, `address.district`, `majors`, `tuition`, `admissions`. Chỉ đọc.
+
+## Majors
+
+### `GET /majors`
+
+Danh mục ngành từ MongoDB: `[{ code, name, fieldGroup }]`, sắp theo mã. Dùng cho ô gợi ý ngành ở trang AI tư vấn.
+
+## Dữ liệu và seed
+
+MongoDB Atlas là nguồn dữ liệu duy nhất: frontend không đọc file `database/seeds/*.json`. File seed chỉ dùng để nạp dữ liệu ban đầu.
+
+- `npm run seed -- --dry-run`: chỉ in ra trường / ngành sẽ thêm hoặc sửa, không ghi.
+- `npm run seed -- --overwrite`: ghi thật. Chỉ ghi field có nội dung khác database (giữ `_id` của các dòng không đổi). Không có `--overwrite` thì seed dừng nếu database đã có dữ liệu.
+- ⚠️ Field nào khác giữa seed và database sẽ bị **thay bằng bản seed**, kể cả bản admin vừa sửa trên web. Luôn chạy `--dry-run` trước.
+- Trường Bách khoa có `detailEvidence` (danh sách bản ghi đã duyệt theo `_id`, nhóm mã xét tuyển, link nguồn). Dòng điểm chuẩn / học phí mới chỉ hiện trên trang chi tiết Bách khoa khi được thêm vào đây (admin sửa được ở mục "Dữ liệu duyệt riêng").
+
 <!-- Thêm API mới bên dưới theo cùng mẫu: phương thức + đường dẫn, body, response, lỗi. Đánh dấu 🔒 nếu cần đăng nhập, 🛡️ nếu chỉ admin. -->

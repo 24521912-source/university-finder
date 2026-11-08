@@ -864,8 +864,11 @@
     "universitySystem": "Đại học Quốc gia TP.HCM",
     "contact": {
       "website": "https://hcmut.edu.vn",
-      "admissionsUrl": "https://tuyensinh.hcmut.edu.vn",
-      "phone": "028 3864 7256"
+      "admissionsUrl": "https://hcmut.edu.vn/tuyen-sinh-dh/dai-hoc-chinh-quy",
+      "phone": "028 3864 7256",
+      "admissionsEmail": "tuyensinh@hcmut.edu.vn",
+      "admissionsPhone": "028 2214 6888",
+      "email": "info@hcmut.edu.vn"
     },
     "address": {
       "city": "TP. Hồ Chí Minh",
@@ -1014,36 +1017,45 @@
     "tuition": [
       {
         "academicYear": "2026-2027",
-        "program": "Tiêu chuẩn",
+        "program": "Tiêu chuẩn — khóa 2026",
         "amountMin": 31500000,
         "amountMax": 31500000,
         "unit": "year",
-        "note": "Học phí trung bình dự kiến; thu theo học kỳ, tối đa 18 tín chỉ/học kỳ, phần vượt tính theo đơn giá tín chỉ",
-        "sourceUrl": "https://diemthi.tuyensinh247.com/de-an-tuyen-sinh/dai-hoc-bach-khoa-hcm-QSB.html"
+        "note": "Mức dự kiến cho khóa 2026 trong năm học 2026-2027. Học phí học kỳ: 15.750.000 đồng; định mức 18 tín chỉ/học kỳ. Tín chỉ vượt định mức và các khoản riêng áp dụng theo thông báo của trường.",
+        "sourceUrl": "https://hcmut.edu.vn/bai-viet/thong-bao-dieu-chinh-muc-thu-hoc-phi-nam-hoc-2026-2027"
       },
       {
         "academicYear": "2026-2027",
-        "program": "Tiên tiến / Dạy và học bằng tiếng Anh",
-        "amountMin": 80000000,
-        "amountMax": 80000000,
+        "program": "Tiên tiến / Dạy và học bằng tiếng Anh — khóa 2026 — mức thông thường",
+        "amountMin": 88000000,
+        "amountMax": 88000000,
         "unit": "year",
-        "note": "Học phí trung bình dự kiến",
-        "sourceUrl": "https://diemthi.tuyensinh247.com/de-an-tuyen-sinh/dai-hoc-bach-khoa-hcm-QSB.html"
+        "note": "Mức thông thường cho khóa 2026 trong năm học 2026-2027; học phí học kỳ 44.000.000 đồng. Không áp dụng thay cho các mức ưu đãi riêng theo ngành hoặc học phí chương trình UTS.",
+        "sourceUrl": "https://hcmut.edu.vn/bai-viet/thong-bao-dieu-chinh-muc-thu-hoc-phi-nam-hoc-2026-2027"
       },
       {
         "academicYear": "2026-2027",
-        "program": "Định hướng Nhật Bản",
-        "amountMin": 60000000,
-        "amountMax": 60000000,
+        "program": "Định hướng Nhật Bản — khóa 2026",
+        "amountMin": 63000000,
+        "amountMax": 63000000,
         "unit": "year",
-        "note": "Học phí trung bình dự kiến",
-        "sourceUrl": "https://diemthi.tuyensinh247.com/de-an-tuyen-sinh/dai-hoc-bach-khoa-hcm-QSB.html"
+        "note": "Mức dự kiến cho khóa 2026 trong năm học 2026-2027; học phí học kỳ 31.500.000 đồng. Không bao gồm học phí giai đoạn chuyển tiếp ở nước ngoài.",
+        "sourceUrl": "https://hcmut.edu.vn/bai-viet/thong-bao-dieu-chinh-muc-thu-hoc-phi-nam-hoc-2026-2027"
+      },
+      {
+        "academicYear": "2026-2027",
+        "program": "Dạy và học bằng tiếng Anh — khóa 2026 — ưu đãi năm mở ngành",
+        "amountMin": 41800000,
+        "amountMax": 41800000,
+        "unit": "year",
+        "note": "Chỉ áp dụng cho chương trình tiếng Anh khóa 2026 của Kỹ thuật bán dẫn, Kỹ thuật đường sắt, Kỹ thuật hạt nhân và Khoa học dữ liệu trong năm học 2026-2027. Đây là ưu đãi năm mở ngành, không phải mức cho toàn khóa.",
+        "sourceUrl": "https://hcmut.edu.vn/bai-viet/thong-bao-dieu-chinh-muc-thu-hoc-phi-nam-hoc-2026-2027"
       }
     ],
     "admissions": [
       {
         "year": 2026,
-        "method": "high_school_exam",
+        "method": "other",
         "majorCode": "7480101",
         "program": "Tiêu chuẩn (mã XT 106)",
         "combinations": [
@@ -1054,11 +1066,11 @@
         ],
         "score": 85.45,
         "scale": 100,
-        "sourceUrl": "https://xaydungchinhsach.chinhphu.vn/diem-chuan-truong-dai-hoc-bach-khoa-dhqg-tphcm-2026-119260809130654977.htm"
+        "sourceUrl": "https://hcmut.edu.vn/tintuc/cong-bo-diem-trung-tuyen-phuong-thuc-xet-tuyen-tong-hop-nam-2026"
       },
       {
         "year": 2026,
-        "method": "high_school_exam",
+        "method": "other",
         "majorCode": "7480106",
         "program": "Tiêu chuẩn (mã XT 107)",
         "combinations": [
@@ -1069,11 +1081,11 @@
         ],
         "score": 84.98,
         "scale": 100,
-        "sourceUrl": "https://xaydungchinhsach.chinhphu.vn/diem-chuan-truong-dai-hoc-bach-khoa-dhqg-tphcm-2026-119260809130654977.htm"
+        "sourceUrl": "https://hcmut.edu.vn/tintuc/cong-bo-diem-trung-tuyen-phuong-thuc-xet-tuyen-tong-hop-nam-2026"
       },
       {
         "year": 2026,
-        "method": "high_school_exam",
+        "method": "other",
         "majorCode": "7520201",
         "program": "Tiêu chuẩn (mã XT 108)",
         "combinations": [
@@ -1084,11 +1096,11 @@
         ],
         "score": 84.29,
         "scale": 100,
-        "sourceUrl": "https://xaydungchinhsach.chinhphu.vn/diem-chuan-truong-dai-hoc-bach-khoa-dhqg-tphcm-2026-119260809130654977.htm"
+        "sourceUrl": "https://hcmut.edu.vn/tintuc/cong-bo-diem-trung-tuyen-phuong-thuc-xet-tuyen-tong-hop-nam-2026"
       },
       {
         "year": 2026,
-        "method": "high_school_exam",
+        "method": "other",
         "majorCode": "7520207",
         "program": "Tiêu chuẩn (mã XT 108)",
         "combinations": [
@@ -1099,11 +1111,11 @@
         ],
         "score": 84.29,
         "scale": 100,
-        "sourceUrl": "https://xaydungchinhsach.chinhphu.vn/diem-chuan-truong-dai-hoc-bach-khoa-dhqg-tphcm-2026-119260809130654977.htm"
+        "sourceUrl": "https://hcmut.edu.vn/tintuc/cong-bo-diem-trung-tuyen-phuong-thuc-xet-tuyen-tong-hop-nam-2026"
       },
       {
         "year": 2026,
-        "method": "high_school_exam",
+        "method": "other",
         "majorCode": "7520103",
         "program": "Tiêu chuẩn (mã XT 109)",
         "combinations": [
@@ -1114,11 +1126,11 @@
         ],
         "score": 80.75,
         "scale": 100,
-        "sourceUrl": "https://xaydungchinhsach.chinhphu.vn/diem-chuan-truong-dai-hoc-bach-khoa-dhqg-tphcm-2026-119260809130654977.htm"
+        "sourceUrl": "https://hcmut.edu.vn/tintuc/cong-bo-diem-trung-tuyen-phuong-thuc-xet-tuyen-tong-hop-nam-2026"
       },
       {
         "year": 2026,
-        "method": "high_school_exam",
+        "method": "other",
         "majorCode": "7520114",
         "program": "Tiêu chuẩn (mã XT 110)",
         "combinations": [
@@ -1129,11 +1141,11 @@
         ],
         "score": 84.36,
         "scale": 100,
-        "sourceUrl": "https://xaydungchinhsach.chinhphu.vn/diem-chuan-truong-dai-hoc-bach-khoa-dhqg-tphcm-2026-119260809130654977.htm"
+        "sourceUrl": "https://hcmut.edu.vn/tintuc/cong-bo-diem-trung-tuyen-phuong-thuc-xet-tuyen-tong-hop-nam-2026"
       },
       {
         "year": 2026,
-        "method": "high_school_exam",
+        "method": "other",
         "majorCode": "7540101",
         "program": "Tiêu chuẩn (mã XT 114)",
         "combinations": [
@@ -1146,11 +1158,11 @@
         ],
         "score": 79.08,
         "scale": 100,
-        "sourceUrl": "https://xaydungchinhsach.chinhphu.vn/diem-chuan-truong-dai-hoc-bach-khoa-dhqg-tphcm-2026-119260809130654977.htm"
+        "sourceUrl": "https://hcmut.edu.vn/tintuc/cong-bo-diem-trung-tuyen-phuong-thuc-xet-tuyen-tong-hop-nam-2026"
       },
       {
         "year": 2026,
-        "method": "high_school_exam",
+        "method": "other",
         "majorCode": "7420201",
         "program": "Tiêu chuẩn (mã XT 114)",
         "combinations": [
@@ -1163,11 +1175,11 @@
         ],
         "score": 79.08,
         "scale": 100,
-        "sourceUrl": "https://xaydungchinhsach.chinhphu.vn/diem-chuan-truong-dai-hoc-bach-khoa-dhqg-tphcm-2026-119260809130654977.htm"
+        "sourceUrl": "https://hcmut.edu.vn/tintuc/cong-bo-diem-trung-tuyen-phuong-thuc-xet-tuyen-tong-hop-nam-2026"
       },
       {
         "year": 2026,
-        "method": "high_school_exam",
+        "method": "other",
         "majorCode": "7520301",
         "program": "Tiêu chuẩn (mã XT 114)",
         "combinations": [
@@ -1180,11 +1192,11 @@
         ],
         "score": 79.08,
         "scale": 100,
-        "sourceUrl": "https://xaydungchinhsach.chinhphu.vn/diem-chuan-truong-dai-hoc-bach-khoa-dhqg-tphcm-2026-119260809130654977.htm"
+        "sourceUrl": "https://hcmut.edu.vn/tintuc/cong-bo-diem-trung-tuyen-phuong-thuc-xet-tuyen-tong-hop-nam-2026"
       },
       {
         "year": 2026,
-        "method": "high_school_exam",
+        "method": "other",
         "majorCode": "7580201",
         "program": "Tiêu chuẩn (mã XT 115)",
         "combinations": [
@@ -1195,11 +1207,11 @@
         ],
         "score": 68.69,
         "scale": 100,
-        "sourceUrl": "https://xaydungchinhsach.chinhphu.vn/diem-chuan-truong-dai-hoc-bach-khoa-dhqg-tphcm-2026-119260809130654977.htm"
+        "sourceUrl": "https://hcmut.edu.vn/tintuc/cong-bo-diem-trung-tuyen-phuong-thuc-xet-tuyen-tong-hop-nam-2026"
       },
       {
         "year": 2026,
-        "method": "high_school_exam",
+        "method": "other",
         "majorCode": "7580101",
         "program": "Tiêu chuẩn (mã XT 117)",
         "combinations": [
@@ -1211,11 +1223,11 @@
         ],
         "score": 71.57,
         "scale": 100,
-        "sourceUrl": "https://xaydungchinhsach.chinhphu.vn/diem-chuan-truong-dai-hoc-bach-khoa-dhqg-tphcm-2026-119260809130654977.htm"
+        "sourceUrl": "https://hcmut.edu.vn/tintuc/cong-bo-diem-trung-tuyen-phuong-thuc-xet-tuyen-tong-hop-nam-2026"
       },
       {
         "year": 2026,
-        "method": "high_school_exam",
+        "method": "other",
         "majorCode": "7510601",
         "program": "Tiêu chuẩn (mã XT 123)",
         "combinations": [
@@ -1230,11 +1242,11 @@
         ],
         "score": 80.17,
         "scale": 100,
-        "sourceUrl": "https://xaydungchinhsach.chinhphu.vn/diem-chuan-truong-dai-hoc-bach-khoa-dhqg-tphcm-2026-119260809130654977.htm"
+        "sourceUrl": "https://hcmut.edu.vn/tintuc/cong-bo-diem-trung-tuyen-phuong-thuc-xet-tuyen-tong-hop-nam-2026"
       },
       {
         "year": 2026,
-        "method": "high_school_exam",
+        "method": "other",
         "majorCode": "7850101",
         "program": "Tiêu chuẩn (mã XT 125)",
         "combinations": [
@@ -1247,11 +1259,11 @@
         ],
         "score": 69.38,
         "scale": 100,
-        "sourceUrl": "https://xaydungchinhsach.chinhphu.vn/diem-chuan-truong-dai-hoc-bach-khoa-dhqg-tphcm-2026-119260809130654977.htm"
+        "sourceUrl": "https://hcmut.edu.vn/tintuc/cong-bo-diem-trung-tuyen-phuong-thuc-xet-tuyen-tong-hop-nam-2026"
       },
       {
         "year": 2026,
-        "method": "high_school_exam",
+        "method": "other",
         "majorCode": "7510605",
         "program": "Tiêu chuẩn (mã XT 128)",
         "combinations": [
@@ -1262,11 +1274,11 @@
         ],
         "score": 82.4,
         "scale": 100,
-        "sourceUrl": "https://xaydungchinhsach.chinhphu.vn/diem-chuan-truong-dai-hoc-bach-khoa-dhqg-tphcm-2026-119260809130654977.htm"
+        "sourceUrl": "https://hcmut.edu.vn/tintuc/cong-bo-diem-trung-tuyen-phuong-thuc-xet-tuyen-tong-hop-nam-2026"
       },
       {
         "year": 2026,
-        "method": "high_school_exam",
+        "method": "other",
         "majorCode": "7520309",
         "program": "Tiêu chuẩn (mã XT 129)",
         "combinations": [
@@ -1281,11 +1293,11 @@
         ],
         "score": 78.88,
         "scale": 100,
-        "sourceUrl": "https://xaydungchinhsach.chinhphu.vn/diem-chuan-truong-dai-hoc-bach-khoa-dhqg-tphcm-2026-119260809130654977.htm"
+        "sourceUrl": "https://hcmut.edu.vn/tintuc/cong-bo-diem-trung-tuyen-phuong-thuc-xet-tuyen-tong-hop-nam-2026"
       },
       {
         "year": 2026,
-        "method": "high_school_exam",
+        "method": "other",
         "majorCode": "7520401",
         "program": "Tiêu chuẩn (mã XT 137)",
         "combinations": [
@@ -1297,11 +1309,11 @@
         ],
         "score": 82.01,
         "scale": 100,
-        "sourceUrl": "https://xaydungchinhsach.chinhphu.vn/diem-chuan-truong-dai-hoc-bach-khoa-dhqg-tphcm-2026-119260809130654977.htm"
+        "sourceUrl": "https://hcmut.edu.vn/tintuc/cong-bo-diem-trung-tuyen-phuong-thuc-xet-tuyen-tong-hop-nam-2026"
       },
       {
         "year": 2026,
-        "method": "high_school_exam",
+        "method": "other",
         "majorCode": "7520101",
         "program": "Tiêu chuẩn (mã XT 138)",
         "combinations": [
@@ -1312,11 +1324,11 @@
         ],
         "score": 79.62,
         "scale": 100,
-        "sourceUrl": "https://xaydungchinhsach.chinhphu.vn/diem-chuan-truong-dai-hoc-bach-khoa-dhqg-tphcm-2026-119260809130654977.htm"
+        "sourceUrl": "https://hcmut.edu.vn/tintuc/cong-bo-diem-trung-tuyen-phuong-thuc-xet-tuyen-tong-hop-nam-2026"
       },
       {
         "year": 2026,
-        "method": "high_school_exam",
+        "method": "other",
         "majorCode": "7520115",
         "program": "Tiêu chuẩn (mã XT 140)",
         "combinations": [
@@ -1327,11 +1339,11 @@
         ],
         "score": 79.91,
         "scale": 100,
-        "sourceUrl": "https://xaydungchinhsach.chinhphu.vn/diem-chuan-truong-dai-hoc-bach-khoa-dhqg-tphcm-2026-119260809130654977.htm"
+        "sourceUrl": "https://hcmut.edu.vn/tintuc/cong-bo-diem-trung-tuyen-phuong-thuc-xet-tuyen-tong-hop-nam-2026"
       },
       {
         "year": 2026,
-        "method": "high_school_exam",
+        "method": "other",
         "majorCode": "7510211",
         "program": "Tiêu chuẩn (mã XT 141)",
         "combinations": [
@@ -1342,11 +1354,11 @@
         ],
         "score": 75.31,
         "scale": 100,
-        "sourceUrl": "https://xaydungchinhsach.chinhphu.vn/diem-chuan-truong-dai-hoc-bach-khoa-dhqg-tphcm-2026-119260809130654977.htm"
+        "sourceUrl": "https://hcmut.edu.vn/tintuc/cong-bo-diem-trung-tuyen-phuong-thuc-xet-tuyen-tong-hop-nam-2026"
       },
       {
         "year": 2026,
-        "method": "high_school_exam",
+        "method": "other",
         "majorCode": "7520130",
         "program": "Tiêu chuẩn (mã XT 142)",
         "combinations": [
@@ -1357,11 +1369,11 @@
         ],
         "score": 79.3,
         "scale": 100,
-        "sourceUrl": "https://xaydungchinhsach.chinhphu.vn/diem-chuan-truong-dai-hoc-bach-khoa-dhqg-tphcm-2026-119260809130654977.htm"
+        "sourceUrl": "https://hcmut.edu.vn/tintuc/cong-bo-diem-trung-tuyen-phuong-thuc-xet-tuyen-tong-hop-nam-2026"
       },
       {
         "year": 2026,
-        "method": "high_school_exam",
+        "method": "other",
         "majorCode": "7520122",
         "program": "Tiêu chuẩn - Song ngành Tàu thủy - Hàng không (mã XT 145)",
         "combinations": [
@@ -1372,11 +1384,11 @@
         ],
         "score": 80.37,
         "scale": 100,
-        "sourceUrl": "https://xaydungchinhsach.chinhphu.vn/diem-chuan-truong-dai-hoc-bach-khoa-dhqg-tphcm-2026-119260809130654977.htm"
+        "sourceUrl": "https://hcmut.edu.vn/tintuc/cong-bo-diem-trung-tuyen-phuong-thuc-xet-tuyen-tong-hop-nam-2026"
       },
       {
         "year": 2026,
-        "method": "high_school_exam",
+        "method": "other",
         "majorCode": "7520120",
         "program": "Tiêu chuẩn - Song ngành Tàu thủy - Hàng không (mã XT 145)",
         "combinations": [
@@ -1387,11 +1399,11 @@
         ],
         "score": 80.37,
         "scale": 100,
-        "sourceUrl": "https://xaydungchinhsach.chinhphu.vn/diem-chuan-truong-dai-hoc-bach-khoa-dhqg-tphcm-2026-119260809130654977.htm"
+        "sourceUrl": "https://hcmut.edu.vn/tintuc/cong-bo-diem-trung-tuyen-phuong-thuc-xet-tuyen-tong-hop-nam-2026"
       },
       {
         "year": 2026,
-        "method": "high_school_exam",
+        "method": "other",
         "majorCode": "7460108",
         "program": "Tiêu chuẩn (mã XT 146)",
         "combinations": [
@@ -1402,11 +1414,11 @@
         ],
         "score": 84.97,
         "scale": 100,
-        "sourceUrl": "https://xaydungchinhsach.chinhphu.vn/diem-chuan-truong-dai-hoc-bach-khoa-dhqg-tphcm-2026-119260809130654977.htm"
+        "sourceUrl": "https://hcmut.edu.vn/tintuc/cong-bo-diem-trung-tuyen-phuong-thuc-xet-tuyen-tong-hop-nam-2026"
       },
       {
         "year": 2026,
-        "method": "high_school_exam",
+        "method": "other",
         "majorCode": "7580211",
         "program": "Tiêu chuẩn (mã XT 147)",
         "combinations": [
@@ -1417,11 +1429,11 @@
         ],
         "score": 64.37,
         "scale": 100,
-        "sourceUrl": "https://xaydungchinhsach.chinhphu.vn/diem-chuan-truong-dai-hoc-bach-khoa-dhqg-tphcm-2026-119260809130654977.htm"
+        "sourceUrl": "https://hcmut.edu.vn/tintuc/cong-bo-diem-trung-tuyen-phuong-thuc-xet-tuyen-tong-hop-nam-2026"
       },
       {
         "year": 2026,
-        "method": "high_school_exam",
+        "method": "other",
         "majorCode": "7580301",
         "program": "Tiêu chuẩn (mã XT 148)",
         "combinations": [
@@ -1436,11 +1448,11 @@
         ],
         "score": 69.35,
         "scale": 100,
-        "sourceUrl": "https://xaydungchinhsach.chinhphu.vn/diem-chuan-truong-dai-hoc-bach-khoa-dhqg-tphcm-2026-119260809130654977.htm"
+        "sourceUrl": "https://hcmut.edu.vn/tintuc/cong-bo-diem-trung-tuyen-phuong-thuc-xet-tuyen-tong-hop-nam-2026"
       },
       {
         "year": 2026,
-        "method": "high_school_exam",
+        "method": "other",
         "majorCode": "7520604",
         "program": "Tiêu chuẩn (mã XT 150)",
         "combinations": [
@@ -1451,11 +1463,11 @@
         ],
         "score": 73.82,
         "scale": 100,
-        "sourceUrl": "https://xaydungchinhsach.chinhphu.vn/diem-chuan-truong-dai-hoc-bach-khoa-dhqg-tphcm-2026-119260809130654977.htm"
+        "sourceUrl": "https://hcmut.edu.vn/tintuc/cong-bo-diem-trung-tuyen-phuong-thuc-xet-tuyen-tong-hop-nam-2026"
       },
       {
         "year": 2026,
-        "method": "high_school_exam",
+        "method": "other",
         "majorCode": "7520501",
         "program": "Tiêu chuẩn (mã XT 151)",
         "combinations": [
@@ -1466,11 +1478,11 @@
         ],
         "score": 65.6,
         "scale": 100,
-        "sourceUrl": "https://xaydungchinhsach.chinhphu.vn/diem-chuan-truong-dai-hoc-bach-khoa-dhqg-tphcm-2026-119260809130654977.htm"
+        "sourceUrl": "https://hcmut.edu.vn/tintuc/cong-bo-diem-trung-tuyen-phuong-thuc-xet-tuyen-tong-hop-nam-2026"
       },
       {
         "year": 2026,
-        "method": "high_school_exam",
+        "method": "other",
         "majorCode": "7340101",
         "program": "Tiêu chuẩn (mã XT 153)",
         "combinations": [
@@ -1485,11 +1497,11 @@
         ],
         "score": 73.59,
         "scale": 100,
-        "sourceUrl": "https://xaydungchinhsach.chinhphu.vn/diem-chuan-truong-dai-hoc-bach-khoa-dhqg-tphcm-2026-119260809130654977.htm"
+        "sourceUrl": "https://hcmut.edu.vn/tintuc/cong-bo-diem-trung-tuyen-phuong-thuc-xet-tuyen-tong-hop-nam-2026"
       },
       {
         "year": 2026,
-        "method": "high_school_exam",
+        "method": "other",
         "majorCode": "7850102",
         "program": "Tiêu chuẩn - Chuyên ngành Kinh tế Tuần hoàn (mã XT 155)",
         "combinations": [
@@ -1502,11 +1514,11 @@
         ],
         "score": 61.43,
         "scale": 100,
-        "sourceUrl": "https://xaydungchinhsach.chinhphu.vn/diem-chuan-truong-dai-hoc-bach-khoa-dhqg-tphcm-2026-119260809130654977.htm"
+        "sourceUrl": "https://hcmut.edu.vn/tintuc/cong-bo-diem-trung-tuyen-phuong-thuc-xet-tuyen-tong-hop-nam-2026"
       },
       {
         "year": 2026,
-        "method": "high_school_exam",
+        "method": "other",
         "majorCode": "7520402",
         "program": "Tiêu chuẩn (mã XT 156)",
         "combinations": [
@@ -1517,11 +1529,11 @@
         ],
         "score": 80.61,
         "scale": 100,
-        "sourceUrl": "https://xaydungchinhsach.chinhphu.vn/diem-chuan-truong-dai-hoc-bach-khoa-dhqg-tphcm-2026-119260809130654977.htm"
+        "sourceUrl": "https://hcmut.edu.vn/tintuc/cong-bo-diem-trung-tuyen-phuong-thuc-xet-tuyen-tong-hop-nam-2026"
       },
       {
         "year": 2026,
-        "method": "high_school_exam",
+        "method": "other",
         "majorCode": "7480101",
         "program": "Tiếng Anh (mã XT 206)",
         "combinations": [
@@ -1532,11 +1544,11 @@
         ],
         "score": 84.23,
         "scale": 100,
-        "sourceUrl": "https://xaydungchinhsach.chinhphu.vn/diem-chuan-truong-dai-hoc-bach-khoa-dhqg-tphcm-2026-119260809130654977.htm"
+        "sourceUrl": "https://hcmut.edu.vn/tintuc/cong-bo-diem-trung-tuyen-phuong-thuc-xet-tuyen-tong-hop-nam-2026"
       },
       {
         "year": 2026,
-        "method": "high_school_exam",
+        "method": "other",
         "majorCode": "7480106",
         "program": "Tiếng Anh (mã XT 207)",
         "combinations": [
@@ -1547,11 +1559,11 @@
         ],
         "score": 81.54,
         "scale": 100,
-        "sourceUrl": "https://xaydungchinhsach.chinhphu.vn/diem-chuan-truong-dai-hoc-bach-khoa-dhqg-tphcm-2026-119260809130654977.htm"
+        "sourceUrl": "https://hcmut.edu.vn/tintuc/cong-bo-diem-trung-tuyen-phuong-thuc-xet-tuyen-tong-hop-nam-2026"
       },
       {
         "year": 2026,
-        "method": "high_school_exam",
+        "method": "other",
         "majorCode": "7520103",
         "program": "Tiếng Anh (mã XT 209)",
         "combinations": [
@@ -1562,11 +1574,11 @@
         ],
         "score": 79.07,
         "scale": 100,
-        "sourceUrl": "https://xaydungchinhsach.chinhphu.vn/diem-chuan-truong-dai-hoc-bach-khoa-dhqg-tphcm-2026-119260809130654977.htm"
+        "sourceUrl": "https://hcmut.edu.vn/tintuc/cong-bo-diem-trung-tuyen-phuong-thuc-xet-tuyen-tong-hop-nam-2026"
       },
       {
         "year": 2026,
-        "method": "high_school_exam",
+        "method": "other",
         "majorCode": "7520114",
         "program": "Tiếng Anh (mã XT 210)",
         "combinations": [
@@ -1577,11 +1589,11 @@
         ],
         "score": 82.14,
         "scale": 100,
-        "sourceUrl": "https://xaydungchinhsach.chinhphu.vn/diem-chuan-truong-dai-hoc-bach-khoa-dhqg-tphcm-2026-119260809130654977.htm"
+        "sourceUrl": "https://hcmut.edu.vn/tintuc/cong-bo-diem-trung-tuyen-phuong-thuc-xet-tuyen-tong-hop-nam-2026"
       },
       {
         "year": 2026,
-        "method": "high_school_exam",
+        "method": "other",
         "majorCode": "7520114",
         "program": "Tiếng Anh - Chuyên ngành Kỹ thuật Robot (mã XT 211)",
         "combinations": [
@@ -1592,11 +1604,11 @@
         ],
         "score": 78.53,
         "scale": 100,
-        "sourceUrl": "https://xaydungchinhsach.chinhphu.vn/diem-chuan-truong-dai-hoc-bach-khoa-dhqg-tphcm-2026-119260809130654977.htm"
+        "sourceUrl": "https://hcmut.edu.vn/tintuc/cong-bo-diem-trung-tuyen-phuong-thuc-xet-tuyen-tong-hop-nam-2026"
       },
       {
         "year": 2026,
-        "method": "high_school_exam",
+        "method": "other",
         "majorCode": "7520301",
         "program": "Tiếng Anh (mã XT 214)",
         "combinations": [
@@ -1609,11 +1621,11 @@
         ],
         "score": 69.22,
         "scale": 100,
-        "sourceUrl": "https://xaydungchinhsach.chinhphu.vn/diem-chuan-truong-dai-hoc-bach-khoa-dhqg-tphcm-2026-119260809130654977.htm"
+        "sourceUrl": "https://hcmut.edu.vn/tintuc/cong-bo-diem-trung-tuyen-phuong-thuc-xet-tuyen-tong-hop-nam-2026"
       },
       {
         "year": 2026,
-        "method": "high_school_exam",
+        "method": "other",
         "majorCode": "7580201",
         "program": "Tiếng Anh (mã XT 215)",
         "combinations": [
@@ -1624,11 +1636,11 @@
         ],
         "score": 56.65,
         "scale": 100,
-        "sourceUrl": "https://xaydungchinhsach.chinhphu.vn/diem-chuan-truong-dai-hoc-bach-khoa-dhqg-tphcm-2026-119260809130654977.htm"
+        "sourceUrl": "https://hcmut.edu.vn/tintuc/cong-bo-diem-trung-tuyen-phuong-thuc-xet-tuyen-tong-hop-nam-2026"
       },
       {
         "year": 2026,
-        "method": "high_school_exam",
+        "method": "other",
         "majorCode": "7580101",
         "program": "Tiếng Anh - Chuyên ngành Kiến trúc Cảnh quan (mã XT 217)",
         "combinations": [
@@ -1640,11 +1652,11 @@
         ],
         "score": 55.82,
         "scale": 100,
-        "sourceUrl": "https://xaydungchinhsach.chinhphu.vn/diem-chuan-truong-dai-hoc-bach-khoa-dhqg-tphcm-2026-119260809130654977.htm"
+        "sourceUrl": "https://hcmut.edu.vn/tintuc/cong-bo-diem-trung-tuyen-phuong-thuc-xet-tuyen-tong-hop-nam-2026"
       },
       {
         "year": 2026,
-        "method": "high_school_exam",
+        "method": "other",
         "majorCode": "7420201",
         "program": "Tiếng Anh (mã XT 218)",
         "combinations": [
@@ -1657,11 +1669,11 @@
         ],
         "score": 59.96,
         "scale": 100,
-        "sourceUrl": "https://xaydungchinhsach.chinhphu.vn/diem-chuan-truong-dai-hoc-bach-khoa-dhqg-tphcm-2026-119260809130654977.htm"
+        "sourceUrl": "https://hcmut.edu.vn/tintuc/cong-bo-diem-trung-tuyen-phuong-thuc-xet-tuyen-tong-hop-nam-2026"
       },
       {
         "year": 2026,
-        "method": "high_school_exam",
+        "method": "other",
         "majorCode": "7540101",
         "program": "Tiếng Anh (mã XT 219)",
         "combinations": [
@@ -1674,11 +1686,11 @@
         ],
         "score": 58.77,
         "scale": 100,
-        "sourceUrl": "https://xaydungchinhsach.chinhphu.vn/diem-chuan-truong-dai-hoc-bach-khoa-dhqg-tphcm-2026-119260809130654977.htm"
+        "sourceUrl": "https://hcmut.edu.vn/tintuc/cong-bo-diem-trung-tuyen-phuong-thuc-xet-tuyen-tong-hop-nam-2026"
       },
       {
         "year": 2026,
-        "method": "high_school_exam",
+        "method": "other",
         "majorCode": "7520604",
         "program": "Tiếng Anh (mã XT 220)",
         "combinations": [
@@ -1689,11 +1701,11 @@
         ],
         "score": 55.76,
         "scale": 100,
-        "sourceUrl": "https://xaydungchinhsach.chinhphu.vn/diem-chuan-truong-dai-hoc-bach-khoa-dhqg-tphcm-2026-119260809130654977.htm"
+        "sourceUrl": "https://hcmut.edu.vn/tintuc/cong-bo-diem-trung-tuyen-phuong-thuc-xet-tuyen-tong-hop-nam-2026"
       },
       {
         "year": 2026,
-        "method": "high_school_exam",
+        "method": "other",
         "majorCode": "7510601",
         "program": "Tiếng Anh (mã XT 223)",
         "combinations": [
@@ -1708,11 +1720,11 @@
         ],
         "score": 65.81,
         "scale": 100,
-        "sourceUrl": "https://xaydungchinhsach.chinhphu.vn/diem-chuan-truong-dai-hoc-bach-khoa-dhqg-tphcm-2026-119260809130654977.htm"
+        "sourceUrl": "https://hcmut.edu.vn/tintuc/cong-bo-diem-trung-tuyen-phuong-thuc-xet-tuyen-tong-hop-nam-2026"
       },
       {
         "year": 2026,
-        "method": "high_school_exam",
+        "method": "other",
         "majorCode": "7850101",
         "program": "Tiếng Anh (mã XT 225)",
         "combinations": [
@@ -1725,11 +1737,11 @@
         ],
         "score": 57.04,
         "scale": 100,
-        "sourceUrl": "https://xaydungchinhsach.chinhphu.vn/diem-chuan-truong-dai-hoc-bach-khoa-dhqg-tphcm-2026-119260809130654977.htm"
+        "sourceUrl": "https://hcmut.edu.vn/tintuc/cong-bo-diem-trung-tuyen-phuong-thuc-xet-tuyen-tong-hop-nam-2026"
       },
       {
         "year": 2026,
-        "method": "high_school_exam",
+        "method": "other",
         "majorCode": "7510605",
         "program": "Tiếng Anh (mã XT 228)",
         "combinations": [
@@ -1740,11 +1752,11 @@
         ],
         "score": 78.04,
         "scale": 100,
-        "sourceUrl": "https://xaydungchinhsach.chinhphu.vn/diem-chuan-truong-dai-hoc-bach-khoa-dhqg-tphcm-2026-119260809130654977.htm"
+        "sourceUrl": "https://hcmut.edu.vn/tintuc/cong-bo-diem-trung-tuyen-phuong-thuc-xet-tuyen-tong-hop-nam-2026"
       },
       {
         "year": 2026,
-        "method": "high_school_exam",
+        "method": "other",
         "majorCode": "7520309",
         "program": "Tiếng Anh (mã XT 229)",
         "combinations": [
@@ -1758,11 +1770,11 @@
         ],
         "score": 67.15,
         "scale": 100,
-        "sourceUrl": "https://xaydungchinhsach.chinhphu.vn/diem-chuan-truong-dai-hoc-bach-khoa-dhqg-tphcm-2026-119260809130654977.htm"
+        "sourceUrl": "https://hcmut.edu.vn/tintuc/cong-bo-diem-trung-tuyen-phuong-thuc-xet-tuyen-tong-hop-nam-2026"
       },
       {
         "year": 2026,
-        "method": "high_school_exam",
+        "method": "other",
         "majorCode": "7520401",
         "program": "Tiếng Anh - Chuyên ngành Kỹ thuật Y sinh (mã XT 237)",
         "combinations": [
@@ -1774,11 +1786,11 @@
         ],
         "score": 65.9,
         "scale": 100,
-        "sourceUrl": "https://xaydungchinhsach.chinhphu.vn/diem-chuan-truong-dai-hoc-bach-khoa-dhqg-tphcm-2026-119260809130654977.htm"
+        "sourceUrl": "https://hcmut.edu.vn/tintuc/cong-bo-diem-trung-tuyen-phuong-thuc-xet-tuyen-tong-hop-nam-2026"
       },
       {
         "year": 2026,
-        "method": "high_school_exam",
+        "method": "other",
         "majorCode": "7520130",
         "program": "Tiếng Anh (mã XT 242)",
         "combinations": [
@@ -1789,11 +1801,11 @@
         ],
         "score": 71.22,
         "scale": 100,
-        "sourceUrl": "https://xaydungchinhsach.chinhphu.vn/diem-chuan-truong-dai-hoc-bach-khoa-dhqg-tphcm-2026-119260809130654977.htm"
+        "sourceUrl": "https://hcmut.edu.vn/tintuc/cong-bo-diem-trung-tuyen-phuong-thuc-xet-tuyen-tong-hop-nam-2026"
       },
       {
         "year": 2026,
-        "method": "high_school_exam",
+        "method": "other",
         "majorCode": "7520120",
         "program": "Tiếng Anh (mã XT 245)",
         "combinations": [
@@ -1804,11 +1816,11 @@
         ],
         "score": 79.87,
         "scale": 100,
-        "sourceUrl": "https://xaydungchinhsach.chinhphu.vn/diem-chuan-truong-dai-hoc-bach-khoa-dhqg-tphcm-2026-119260809130654977.htm"
+        "sourceUrl": "https://hcmut.edu.vn/tintuc/cong-bo-diem-trung-tuyen-phuong-thuc-xet-tuyen-tong-hop-nam-2026"
       },
       {
         "year": 2026,
-        "method": "high_school_exam",
+        "method": "other",
         "majorCode": "7460108",
         "program": "Tiếng Anh (mã XT 251)",
         "combinations": [
@@ -1819,11 +1831,11 @@
         ],
         "score": 80.68,
         "scale": 100,
-        "sourceUrl": "https://xaydungchinhsach.chinhphu.vn/diem-chuan-truong-dai-hoc-bach-khoa-dhqg-tphcm-2026-119260809130654977.htm"
+        "sourceUrl": "https://hcmut.edu.vn/tintuc/cong-bo-diem-trung-tuyen-phuong-thuc-xet-tuyen-tong-hop-nam-2026"
       },
       {
         "year": 2026,
-        "method": "high_school_exam",
+        "method": "other",
         "majorCode": "7340101",
         "program": "Tiếng Anh - Chuyên ngành Kinh doanh số (mã XT 253)",
         "combinations": [
@@ -1838,11 +1850,11 @@
         ],
         "score": 61.58,
         "scale": 100,
-        "sourceUrl": "https://xaydungchinhsach.chinhphu.vn/diem-chuan-truong-dai-hoc-bach-khoa-dhqg-tphcm-2026-119260809130654977.htm"
+        "sourceUrl": "https://hcmut.edu.vn/tintuc/cong-bo-diem-trung-tuyen-phuong-thuc-xet-tuyen-tong-hop-nam-2026"
       },
       {
         "year": 2026,
-        "method": "high_school_exam",
+        "method": "other",
         "majorCode": "7420201",
         "program": "Tiếng Anh - Chuyên ngành Công nghệ Sinh học số (mã XT 254)",
         "combinations": [
@@ -1855,11 +1867,11 @@
         ],
         "score": 56.77,
         "scale": 100,
-        "sourceUrl": "https://xaydungchinhsach.chinhphu.vn/diem-chuan-truong-dai-hoc-bach-khoa-dhqg-tphcm-2026-119260809130654977.htm"
+        "sourceUrl": "https://hcmut.edu.vn/tintuc/cong-bo-diem-trung-tuyen-phuong-thuc-xet-tuyen-tong-hop-nam-2026"
       },
       {
         "year": 2026,
-        "method": "high_school_exam",
+        "method": "other",
         "majorCode": "7850102",
         "program": "Tiếng Anh - Chuyên ngành Kinh tế Tuần hoàn (mã XT 255)",
         "combinations": [
@@ -1872,11 +1884,11 @@
         ],
         "score": 56.36,
         "scale": 100,
-        "sourceUrl": "https://xaydungchinhsach.chinhphu.vn/diem-chuan-truong-dai-hoc-bach-khoa-dhqg-tphcm-2026-119260809130654977.htm"
+        "sourceUrl": "https://hcmut.edu.vn/tintuc/cong-bo-diem-trung-tuyen-phuong-thuc-xet-tuyen-tong-hop-nam-2026"
       },
       {
         "year": 2026,
-        "method": "high_school_exam",
+        "method": "other",
         "majorCode": "7520402",
         "program": "Tiếng Anh (mã XT 256)",
         "combinations": [
@@ -1887,11 +1899,11 @@
         ],
         "score": 56.91,
         "scale": 100,
-        "sourceUrl": "https://xaydungchinhsach.chinhphu.vn/diem-chuan-truong-dai-hoc-bach-khoa-dhqg-tphcm-2026-119260809130654977.htm"
+        "sourceUrl": "https://hcmut.edu.vn/tintuc/cong-bo-diem-trung-tuyen-phuong-thuc-xet-tuyen-tong-hop-nam-2026"
       },
       {
         "year": 2026,
-        "method": "high_school_exam",
+        "method": "other",
         "majorCode": "7520201",
         "program": "Tiếng Anh - Chuyên ngành Năng lượng Tái tạo (mã XT 257)",
         "combinations": [
@@ -1902,11 +1914,11 @@
         ],
         "score": 61.71,
         "scale": 100,
-        "sourceUrl": "https://xaydungchinhsach.chinhphu.vn/diem-chuan-truong-dai-hoc-bach-khoa-dhqg-tphcm-2026-119260809130654977.htm"
+        "sourceUrl": "https://hcmut.edu.vn/tintuc/cong-bo-diem-trung-tuyen-phuong-thuc-xet-tuyen-tong-hop-nam-2026"
       },
       {
         "year": 2026,
-        "method": "high_school_exam",
+        "method": "other",
         "majorCode": "7480107",
         "program": "Liên kết UTS (Úc) (mã XT 406)",
         "combinations": [
@@ -1920,11 +1932,11 @@
         ],
         "score": 73.21,
         "scale": 100,
-        "sourceUrl": "https://xaydungchinhsach.chinhphu.vn/diem-chuan-truong-dai-hoc-bach-khoa-dhqg-tphcm-2026-119260809130654977.htm"
+        "sourceUrl": "https://hcmut.edu.vn/tintuc/cong-bo-diem-trung-tuyen-phuong-thuc-xet-tuyen-tong-hop-nam-2026"
       },
       {
         "year": 2026,
-        "method": "high_school_exam",
+        "method": "other",
         "majorCode": "7480201",
         "program": "Liên kết UTS (Úc) (mã XT 416)",
         "combinations": [
@@ -1938,11 +1950,11 @@
         ],
         "score": 70.18,
         "scale": 100,
-        "sourceUrl": "https://xaydungchinhsach.chinhphu.vn/diem-chuan-truong-dai-hoc-bach-khoa-dhqg-tphcm-2026-119260809130654977.htm"
+        "sourceUrl": "https://hcmut.edu.vn/tintuc/cong-bo-diem-trung-tuyen-phuong-thuc-xet-tuyen-tong-hop-nam-2026"
       },
       {
         "year": 2026,
-        "method": "high_school_exam",
+        "method": "other",
         "majorCode": "7480101",
         "program": "Định hướng Nhật Bản (mã XT 266)",
         "combinations": [
@@ -1953,11 +1965,11 @@
         ],
         "score": 78.69,
         "scale": 100,
-        "sourceUrl": "https://xaydungchinhsach.chinhphu.vn/diem-chuan-truong-dai-hoc-bach-khoa-dhqg-tphcm-2026-119260809130654977.htm"
+        "sourceUrl": "https://hcmut.edu.vn/tintuc/cong-bo-diem-trung-tuyen-phuong-thuc-xet-tuyen-tong-hop-nam-2026"
       },
       {
         "year": 2026,
-        "method": "high_school_exam",
+        "method": "other",
         "majorCode": "7520101",
         "program": "Định hướng Nhật Bản (mã XT 268)",
         "combinations": [
@@ -1968,11 +1980,11 @@
         ],
         "score": 73.96,
         "scale": 100,
-        "sourceUrl": "https://xaydungchinhsach.chinhphu.vn/diem-chuan-truong-dai-hoc-bach-khoa-dhqg-tphcm-2026-119260809130654977.htm"
+        "sourceUrl": "https://hcmut.edu.vn/tintuc/cong-bo-diem-trung-tuyen-phuong-thuc-xet-tuyen-tong-hop-nam-2026"
       },
       {
         "year": 2026,
-        "method": "high_school_exam",
+        "method": "other",
         "majorCode": "7480101",
         "program": "Chuyển tiếp quốc tế (Úc, New Zealand) (mã XT 306)",
         "combinations": [
@@ -1983,11 +1995,11 @@
         ],
         "score": 70.84,
         "scale": 100,
-        "sourceUrl": "https://xaydungchinhsach.chinhphu.vn/diem-chuan-truong-dai-hoc-bach-khoa-dhqg-tphcm-2026-119260809130654977.htm"
+        "sourceUrl": "https://hcmut.edu.vn/tintuc/cong-bo-diem-trung-tuyen-phuong-thuc-xet-tuyen-tong-hop-nam-2026"
       },
       {
         "year": 2026,
-        "method": "high_school_exam",
+        "method": "other",
         "majorCode": "7480106",
         "program": "Chuyển tiếp quốc tế (Úc) (mã XT 307)",
         "combinations": [
@@ -1998,11 +2010,11 @@
         ],
         "score": 62.37,
         "scale": 100,
-        "sourceUrl": "https://xaydungchinhsach.chinhphu.vn/diem-chuan-truong-dai-hoc-bach-khoa-dhqg-tphcm-2026-119260809130654977.htm"
+        "sourceUrl": "https://hcmut.edu.vn/tintuc/cong-bo-diem-trung-tuyen-phuong-thuc-xet-tuyen-tong-hop-nam-2026"
       },
       {
         "year": 2026,
-        "method": "high_school_exam",
+        "method": "other",
         "majorCode": "7520103",
         "program": "Chuyển tiếp quốc tế (Mỹ, Úc) (mã XT 309)",
         "combinations": [
@@ -2013,11 +2025,11 @@
         ],
         "score": 82.42,
         "scale": 100,
-        "sourceUrl": "https://xaydungchinhsach.chinhphu.vn/diem-chuan-truong-dai-hoc-bach-khoa-dhqg-tphcm-2026-119260809130654977.htm"
+        "sourceUrl": "https://hcmut.edu.vn/tintuc/cong-bo-diem-trung-tuyen-phuong-thuc-xet-tuyen-tong-hop-nam-2026"
       },
       {
         "year": 2026,
-        "method": "high_school_exam",
+        "method": "other",
         "majorCode": "7520114",
         "program": "Chuyển tiếp quốc tế (Mỹ, Úc) (mã XT 310)",
         "combinations": [
@@ -2028,11 +2040,11 @@
         ],
         "score": 61.51,
         "scale": 100,
-        "sourceUrl": "https://xaydungchinhsach.chinhphu.vn/diem-chuan-truong-dai-hoc-bach-khoa-dhqg-tphcm-2026-119260809130654977.htm"
+        "sourceUrl": "https://hcmut.edu.vn/tintuc/cong-bo-diem-trung-tuyen-phuong-thuc-xet-tuyen-tong-hop-nam-2026"
       },
       {
         "year": 2026,
-        "method": "high_school_exam",
+        "method": "other",
         "majorCode": "7520301",
         "program": "Chuyển tiếp quốc tế (Úc, Anh Quốc) (mã XT 314)",
         "combinations": [
@@ -2045,11 +2057,11 @@
         ],
         "score": 75.3,
         "scale": 100,
-        "sourceUrl": "https://xaydungchinhsach.chinhphu.vn/diem-chuan-truong-dai-hoc-bach-khoa-dhqg-tphcm-2026-119260809130654977.htm"
+        "sourceUrl": "https://hcmut.edu.vn/tintuc/cong-bo-diem-trung-tuyen-phuong-thuc-xet-tuyen-tong-hop-nam-2026"
       },
       {
         "year": 2026,
-        "method": "high_school_exam",
+        "method": "other",
         "majorCode": "7580201",
         "program": "Chuyển tiếp quốc tế (Úc, Anh Quốc) (mã XT 315)",
         "combinations": [
@@ -2060,11 +2072,11 @@
         ],
         "score": 67.58,
         "scale": 100,
-        "sourceUrl": "https://xaydungchinhsach.chinhphu.vn/diem-chuan-truong-dai-hoc-bach-khoa-dhqg-tphcm-2026-119260809130654977.htm"
+        "sourceUrl": "https://hcmut.edu.vn/tintuc/cong-bo-diem-trung-tuyen-phuong-thuc-xet-tuyen-tong-hop-nam-2026"
       },
       {
         "year": 2026,
-        "method": "high_school_exam",
+        "method": "other",
         "majorCode": "7540101",
         "program": "Chuyển tiếp quốc tế (New Zealand) (mã XT 319)",
         "combinations": [
@@ -2078,11 +2090,11 @@
         ],
         "score": 61.51,
         "scale": 100,
-        "sourceUrl": "https://xaydungchinhsach.chinhphu.vn/diem-chuan-truong-dai-hoc-bach-khoa-dhqg-tphcm-2026-119260809130654977.htm"
+        "sourceUrl": "https://hcmut.edu.vn/tintuc/cong-bo-diem-trung-tuyen-phuong-thuc-xet-tuyen-tong-hop-nam-2026"
       },
       {
         "year": 2026,
-        "method": "high_school_exam",
+        "method": "other",
         "majorCode": "7510601",
         "program": "Chuyển tiếp quốc tế (Úc, Pháp, Hàn Quốc) (mã XT 323)",
         "combinations": [
@@ -2097,11 +2109,11 @@
         ],
         "score": 61.51,
         "scale": 100,
-        "sourceUrl": "https://xaydungchinhsach.chinhphu.vn/diem-chuan-truong-dai-hoc-bach-khoa-dhqg-tphcm-2026-119260809130654977.htm"
+        "sourceUrl": "https://hcmut.edu.vn/tintuc/cong-bo-diem-trung-tuyen-phuong-thuc-xet-tuyen-tong-hop-nam-2026"
       },
       {
         "year": 2026,
-        "method": "high_school_exam",
+        "method": "other",
         "majorCode": "7850101",
         "program": "Chuyển tiếp quốc tế (Úc) (mã XT 325)",
         "combinations": [
@@ -2115,11 +2127,11 @@
         ],
         "score": 61.51,
         "scale": 100,
-        "sourceUrl": "https://xaydungchinhsach.chinhphu.vn/diem-chuan-truong-dai-hoc-bach-khoa-dhqg-tphcm-2026-119260809130654977.htm"
+        "sourceUrl": "https://hcmut.edu.vn/tintuc/cong-bo-diem-trung-tuyen-phuong-thuc-xet-tuyen-tong-hop-nam-2026"
       },
       {
         "year": 2026,
-        "method": "high_school_exam",
+        "method": "other",
         "majorCode": "7520130",
         "program": "Chuyển tiếp quốc tế (Úc) (mã XT 342)",
         "combinations": [
@@ -2130,11 +2142,11 @@
         ],
         "score": 61.51,
         "scale": 100,
-        "sourceUrl": "https://xaydungchinhsach.chinhphu.vn/diem-chuan-truong-dai-hoc-bach-khoa-dhqg-tphcm-2026-119260809130654977.htm"
+        "sourceUrl": "https://hcmut.edu.vn/tintuc/cong-bo-diem-trung-tuyen-phuong-thuc-xet-tuyen-tong-hop-nam-2026"
       },
       {
         "year": 2026,
-        "method": "high_school_exam",
+        "method": "other",
         "majorCode": "7520120",
         "program": "Chuyển tiếp quốc tế (Úc) (mã XT 345)",
         "combinations": [
@@ -2145,7 +2157,7 @@
         ],
         "score": 78.91,
         "scale": 100,
-        "sourceUrl": "https://xaydungchinhsach.chinhphu.vn/diem-chuan-truong-dai-hoc-bach-khoa-dhqg-tphcm-2026-119260809130654977.htm"
+        "sourceUrl": "https://hcmut.edu.vn/tintuc/cong-bo-diem-trung-tuyen-phuong-thuc-xet-tuyen-tong-hop-nam-2026"
       }
     ],
     "foundedYear": 1957,
@@ -2159,7 +2171,1193 @@
         "name": "Cơ sở 2",
         "address": "Khu phố Tân Lập, Phường Đông Hòa, TP. HCM"
       }
-    ]
+    ],
+    "aliases": [],
+    "careerOpportunities": [
+      {
+        "field": "Kết nối thực tập và tuyển dụng",
+        "description": "Thông tin sự kiện năm 2026 ghi nhận hoạt động gặp gỡ doanh nghiệp, tìm hiểu vị trí thực tập, việc làm và trao đổi tuyển dụng trực tiếp."
+      }
+    ],
+    "facilities": [
+      {
+        "name": "Thư viện",
+        "description": "Hệ thống thư viện phục vụ học tập, tra cứu tài liệu và tự học tại hai cơ sở của trường."
+      },
+      {
+        "name": "Không gian giảng dạy, nghiên cứu và thể thao",
+        "description": "Các cơ sở đào tạo có khu giảng dạy, nghiên cứu, thư viện và các khu chức năng phục vụ người học; cơ sở 2 có khu phức hợp thể dục thể thao."
+      }
+    ],
+    "media": {
+      "logoUrl": "https://hcmut.edu.vn/img/nhanDienThuongHieu/01_logobachkhoasang.png",
+      "coverImageUrl": null,
+      "gallery": []
+    },
+    "overview": {
+      "studentCount": null,
+      "facultyCount": null,
+      "campusCount": 2
+    },
+    "scholarships": [
+      {
+        "name": "Học bổng Sen Hồng — năm học 2026-2027",
+        "value": "500 USD/suất",
+        "eligibility": "Sinh viên nữ hệ đại học chính quy có hoàn cảnh khó khăn; đáp ứng các tiêu chí và hồ sơ trong thông báo. Sinh viên đang nhận học bổng do U-GO tài trợ không thuộc diện tham gia.",
+        "description": "Thông tin đợt học bổng năm học 2026-2027; hạn đăng ký 05/10/2026 đã kết thúc. Đây là thông tin lịch sử, không phải đợt đang nhận hồ sơ."
+      }
+    ],
+    "studentLife": [
+      {
+        "category": "Học thuật",
+        "name": "Cơ hội tham gia cuộc thi học thuật và lập trình",
+        "description": "Trường công bố thông tin các cuộc thi học thuật và lập trình, trong đó có Code Tour 2026. Điều kiện và thời gian tham gia theo từng thông báo."
+      },
+      {
+        "category": "Khởi nghiệp",
+        "name": "Hoạt động khởi nghiệp và đổi mới sáng tạo",
+        "description": "Các thông tin về khóa đào tạo, hội thảo và hoạt động kết nối khởi nghiệp được trường công bố theo từng đợt."
+      }
+    ],
+    "dormitory": {
+      "available": true,
+      "description": "Trường có Ký túc xá Bách khoa. Đối tượng, thủ tục đăng ký, bố trí chỗ ở và mức phí thực hiện theo thông báo từng năm học."
+    },
+    "detailEvidence": {
+      "slug": "bach-khoa-tphcm",
+      "reviewedOn": "2026-10-27",
+      "sources": {
+        "overview": {
+          "url": "https://hcmut.edu.vn/tong-quan",
+          "status": "verified-content",
+          "evidence": "Đã đọc nội dung bằng trình duyệt: tiền thân 1957, cơ sở Diên Hồng/Đông Hòa, thư viện/khu chức năng; số >28.000 là tổng nhiều bậc, không dùng làm studentCount."
+        },
+        "brand": {
+          "url": "https://hcmut.edu.vn/gioi-thieu/nhan-dien-thuong-hieu",
+          "logoUrl": "https://hcmut.edu.vn/img/nhanDienThuongHieu/01_logobachkhoasang.png",
+          "status": "verified-content",
+          "evidence": "Logo phiên bản nền sáng trong bộ nhận diện chính thức."
+        },
+        "contact": {
+          "url": "https://hcmut.edu.vn/contact",
+          "status": "verified-content",
+          "evidence": "info@hcmut.edu.vn; 028 3864 7256; máy lẻ 5282 Phòng Hành chính. Giữ số tổng đài hiện tại."
+        },
+        "admissionsLanding": {
+          "url": "https://hcmut.edu.vn/tuyen-sinh-dh/dai-hoc-chinh-quy",
+          "status": "verified-content"
+        },
+        "admissionsContact": {
+          "url": "https://hcmut.edu.vn/tuyen-sinh/dai-hoc-chinh-quy/thong-tin-lien-he",
+          "status": "verified-content",
+          "evidence": "Văn phòng tư vấn tuyển sinh: (028) 2214 6888; tuyensinh@hcmut.edu.vn."
+        },
+        "cutoffs": {
+          "url": "https://hcmut.edu.vn/tintuc/cong-bo-diem-trung-tuyen-phuong-thuc-xet-tuyen-tong-hop-nam-2026",
+          "status": "verified-content-and-images",
+          "evidence": "Đã đọc bài và 3 ảnh; 69 bản ghi khớp 65 mã tuyển sinh. Không tự xác minh mã ngành 7 chữ số.",
+          "imageUrls": [
+            "https://hcmut.edu.vn/img/news/gSoHe-i953FOWe3zIhOSph7G.jpg",
+            "https://hcmut.edu.vn/img/news/5s9yWbDq6QYD6OamPPXa_KP4.jpg",
+            "https://hcmut.edu.vn/img/news/azghKQTrY_GNoEkGZL4uPyue.jpg"
+          ]
+        },
+        "admissionMethod": {
+          "url": "https://hcmut.edu.vn/tuyen-sinh/dai-hoc-chinh-quy/phuong-thuc-tuyen-sinh/xet-tuyen-tong-hop-2026",
+          "status": "verified-content",
+          "evidence": "Xét tuyển tổng hợp thang 100; không phải điểm THPT hoặc ĐGNL riêng."
+        },
+        "admissionTable": {
+          "url": "https://hcmut.edu.vn/tuyen-sinh/dai-hoc-chinh-quy/nganh-va-chi-tieu",
+          "status": "verified-content-with-conflict",
+          "evidence": "Bảng HTML có mã 112=69,62 khác ảnh 69,92; giữ lại bất nhất, không thêm mã 112."
+        },
+        "tuition": {
+          "url": "https://hcmut.edu.vn/bai-viet/thong-bao-dieu-chinh-muc-thu-hoc-phi-nam-hoc-2026-2027",
+          "status": "verified-content",
+          "evidence": "Khóa 2026 năm học 2026-2027: tiêu chuẩn 31,5 triệu/năm; CTTA/CTTT thông thường 88 triệu/năm; định hướng Nhật 63 triệu/năm; CTTA 4 ngành ưu đãi 41,8 triệu năm mở ngành. 80/60 triệu thuộc khóa cũ. Không nhập học phí UTS."
+        },
+        "library": {
+          "url": "https://lib.hcmut.edu.vn/tien-ich?tab=dang-ky",
+          "status": "verified-content",
+          "evidence": "Hệ thống thư viện phục vụ hai cơ sở; không sử dụng số chỗ ngồi làm thống kê cập nhật 2026."
+        },
+        "dormitory": {
+          "url": "https://hcmut.edu.vn/ktxbk",
+          "status": "verified-content",
+          "evidence": "Có KTX Bách khoa; điều kiện bố trí và mức phí theo thông báo riêng."
+        },
+        "scholarship": {
+          "url": "https://fme.hcmut.edu.vn/hoc-bong-sen-hong-nam-hoc-2026-2027.html",
+          "status": "verified-content-historical",
+          "evidence": "500 USD/suất; sinh viên nữ khó khăn và điều kiện khác; hết hạn 05/10/2026; không trình bày đang mở."
+        },
+        "studentLife": {
+          "url": "https://hcmut.edu.vn/sinh-vien/hoat-dong-sinh-vien",
+          "status": "verified-content",
+          "evidence": "Thông tin cuộc thi học thuật, Code Tour 2026 và hoạt động khởi nghiệp; không suy ra trường tổ chức mọi cuộc thi."
+        },
+        "career": {
+          "url": "https://fme.hcmut.edu.vn/hon-2-000-vi-tri-tuyen-dung-danh-cho-sinh-vien-ky-thuat-cong-nghe-tai-ngay-hoi-viec-lam-bach-khoa-2026.html",
+          "status": "verified-content-event",
+          "evidence": "Bài đăng 07/10/2026 về kết nối doanh nghiệp, thực tập/tuyển dụng; không cam kết tỷ lệ việc làm hoặc lương."
+        }
+      },
+      "groups": {
+        "106": {
+          "title": "Khoa học Máy tính \n(Chuyên ngành: Khoa học Máy tính, Công nghệ Dữ liệu và Dữ liệu lớn, An ninh Hệ thống và Mạng, Trí tuệ Nhân tạo, Công nghệ Phần mềm)",
+          "imageScore": 85.45,
+          "htmlScore": 85.45,
+          "officialSubjects": "Toán, Lý, {Hóa, Anh, Tin, Công nghệ Công nghiệp}"
+        },
+        "107": {
+          "title": "Kỹ thuật Máy tính \n(Chuyên ngành: Kỹ thuật Máy tính, Hệ thống tính toán Nâng cao, Internet Vạn vật, Thiết kế Vi mạch số)",
+          "imageScore": 84.98,
+          "htmlScore": 84.98,
+          "officialSubjects": "Toán, Lý, {Hóa, Anh, Tin, Công nghệ Công nghiệp}"
+        },
+        "108": {
+          "title": "Nhóm ngành Điện - Điện tử - Viễn Thông - Tự động hoá - Thiết kế Vi mạch  \n(Ngành: Kỹ thuật Điện; Kỹ thuật Điện tử - Viễn thông; Kỹ thuật Điều khiển và Tự động hóa; Thiết kế Vi mạch)",
+          "imageScore": 84.29,
+          "htmlScore": 84.29,
+          "officialSubjects": "Toán, Lý, {Hóa, Anh, Tin, Công nghệ Công nghiệp}"
+        },
+        "109": {
+          "title": "Kỹ thuật Cơ khí",
+          "imageScore": 80.75,
+          "htmlScore": 80.75,
+          "officialSubjects": "Toán, Lý, {Hóa, Anh, Tin, Công nghệ Công nghiệp}"
+        },
+        "110": {
+          "title": "Kỹ thuật Cơ Điện tử",
+          "imageScore": 84.36,
+          "htmlScore": 84.36,
+          "officialSubjects": "Toán, Lý, {Hóa, Anh, Tin, Công nghệ Công nghiệp}"
+        },
+        "114": {
+          "title": "Nhóm ngành Hoá - Thực phẩm - Sinh học  \n(Ngành/Chuyên ngành: Công nghệ Thực phẩm; Công nghệ Sinh học;  \nKỹ thuật Hóa học/Kỹ thuật Hóa học, Công nghệ Hóa dược, Công nghệ Mỹ phẩm)",
+          "imageScore": 79.08,
+          "htmlScore": 79.08,
+          "officialSubjects": "Toán, Hóa, {Sinh, Lý, Anh, Tin, Công nghệ Công nghiệp}\n\nToán, Sinh, Anh"
+        },
+        "115": {
+          "title": "Nhóm ngành Xây dựng và Quản lý Dự án Xây dựng  \n(Ngành/Chuyên ngành: Kỹ thuật Xây dựng Công trình Giao thông/KTXD Công trình Giao thông, Đường sắt Tốc độ cao & Đường sắt Đô thị; Kỹ thuật Xây dựng Công trình Thủy; Kỹ thuật Xây dựng Công trình Biển; Kỹ thuật Cơ sở Hạ tầng; Kỹ thuật Trắc địa - Bản đồ; Công nghệ Kỹ thuật Vật liệu Xây dựng; Kỹ thuật Xây dựng/Kỹ thuật Xây dựng, Quản lý Dự án Xây dựng)",
+          "imageScore": 68.69,
+          "htmlScore": 68.69,
+          "officialSubjects": "Toán, Lý, {Hóa, Anh, Tin, Công nghệ Công nghiệp}"
+        },
+        "117": {
+          "title": "Kiến Trúc \n(Chuyên ngành: Kiến trúc, Kiến trúc Cảnh quan)",
+          "imageScore": 71.57,
+          "htmlScore": 71.57,
+          "officialSubjects": "Toán, Lý, {Văn, Anh, Tin, Hóa, Công nghệ Công nghiệp}"
+        },
+        "123": {
+          "title": "Quản lý Công nghiệp \n(Chuyên ngành: Quản lý Công nghiệp, Quản lý Chuỗi Cung ứng & Vận hành)",
+          "imageScore": 80.17,
+          "htmlScore": 80.17,
+          "officialSubjects": "Toán, Lý, {Hóa, Anh, Tin, Công nghệ Công nghiệp}\n\nToán, Anh, {Văn, Hóa, Tin, Công nghệ Công nghiệp}"
+        },
+        "125": {
+          "title": "Nhóm ngành Tài nguyên và Môi trường  \n(Ngành/Chuyên ngành: Quản lý Tài nguyên và Môi trường/QL Tài nguyên và Môi trường, Quản lý và Công nghệ Môi trường, Môi trường An toàn và Sức khỏe (dự kiến); Kỹ thuật Môi trường)",
+          "imageScore": 69.38,
+          "htmlScore": 69.38,
+          "officialSubjects": "Toán, Lý, {Hóa, Anh, Công nghệ Công nghiệp}\n\nToán, Hóa, {Sinh, Anh, Công nghệ Công nghiệp}"
+        },
+        "128": {
+          "title": "Nhóm ngành Logistics và Hệ thống Công nghiệp  \n(Ngành: Logistics và Quản lý Chuỗi Cung ứng; Kỹ thuật Hệ thống Công nghiệp)",
+          "imageScore": 82.4,
+          "htmlScore": 82.4,
+          "officialSubjects": "Toán, Lý, {Hóa, Anh, Tin, Công nghệ Công nghiệp}"
+        },
+        "129": {
+          "title": "Kỹ thuật Vật liệu \n(Chuyên ngành: Kỹ thuật Vật liệu, Kỹ thuật Vật liệu Kim loại, Kỹ thuật Vật liệu Năng lượng, Kỹ thuật Vật liệu Polymer, Kỹ thuật Vật liệu Silicat)",
+          "imageScore": 78.88,
+          "htmlScore": 78.88,
+          "officialSubjects": "Toán, Lý, {Hóa, Anh, Tin, Công nghệ Công nghiệp}\n\nToán, Hóa, {Sinh, Anh, Tin, Công nghệ Công nghiệp}"
+        },
+        "137": {
+          "title": "Vật lý Kỹ thuật \n(Chuyên ngành: Kỹ thuật Y sinh, Vật lý Tính toán, Vật lý Kỹ thuật)",
+          "imageScore": 82.01,
+          "htmlScore": 82.01,
+          "officialSubjects": "Toán, Lý, {Sinh, Hóa, Anh, Tin, Công nghệ Công nghiệp}"
+        },
+        "138": {
+          "title": "Cơ Kỹ thuật",
+          "imageScore": 79.62,
+          "htmlScore": 79.62,
+          "officialSubjects": "Toán, Lý, {Hóa, Anh, Tin, Công nghệ Công nghiệp}"
+        },
+        "140": {
+          "title": "Kỹ thuật Nhiệt  \n(Chuyên ngành: Kỹ thuật Nhiệt lạnh; Kỹ thuật Nhiệt)",
+          "imageScore": 79.91,
+          "htmlScore": 79.91,
+          "officialSubjects": "Toán, Lý, {Hóa, Anh, Tin, Công nghệ Công nghiệp}"
+        },
+        "141": {
+          "title": "Bảo dưỡng Công nghiệp",
+          "imageScore": 75.31,
+          "htmlScore": 75.31,
+          "officialSubjects": "Toán, Lý, {Hóa, Anh, Tin, Công nghệ Công nghiệp}"
+        },
+        "142": {
+          "title": "Kỹ thuật Ô tô",
+          "imageScore": 79.3,
+          "htmlScore": 79.3,
+          "officialSubjects": "Toán, Lý, {Hóa, Anh, Tin, Công nghệ Công nghiệp}"
+        },
+        "145": {
+          "title": "(Song ngành) Tàu  thủy - Hàng không \n(Ngành: Kỹ thuật Tàu thủy, Kỹ thuật Hàng không)",
+          "imageScore": 80.37,
+          "htmlScore": 80.37,
+          "officialSubjects": "Toán, Lý, {Hóa, Anh, Tin, Công nghệ Công nghiệp}"
+        },
+        "146": {
+          "title": "Khoa học Dữ liệu",
+          "imageScore": 84.97,
+          "htmlScore": 84.97,
+          "officialSubjects": "Toán, Lý, {Hóa, Anh, Tin, Công nghệ Công nghiệp}"
+        },
+        "147": {
+          "title": "Địa Kỹ thuật Xây dựng",
+          "imageScore": 64.37,
+          "htmlScore": 64.37,
+          "officialSubjects": "Toán, Lý, {Hóa, Anh, Tin, Công nghệ Công nghiệp}"
+        },
+        "148": {
+          "title": "Kinh tế Xây dựng",
+          "imageScore": 69.35,
+          "htmlScore": 69.35,
+          "officialSubjects": "Toán, Lý, {Hóa, Anh, Tin, Công nghệ Công nghiệp}\n\nToán, Văn, {Lý, Anh, Tin, Công nghệ Công nghiệp}"
+        },
+        "150": {
+          "title": "(Ngành mới)\n\nKỹ thuật Dầu khí",
+          "imageScore": 73.82,
+          "htmlScore": 73.82,
+          "officialSubjects": "Toán, Lý, {Hóa, Anh, Tin, Công nghệ Công nghiệp}\n\nToán, Hóa, {Lý, Anh, Tin, Công nghệ Công nghiệp}"
+        },
+        "151": {
+          "title": "(Ngành mới)\n\nKỹ thuật Địa chất",
+          "imageScore": 65.6,
+          "htmlScore": 65.6,
+          "officialSubjects": "Toán, Lý, {Hóa, Anh, Tin, Công nghệ Công nghiệp}"
+        },
+        "153": {
+          "title": "Quản trị Kinh doanh",
+          "imageScore": 73.59,
+          "htmlScore": 73.59,
+          "officialSubjects": "Toán, Lý, {Hóa, Anh, Tin, Công nghệ Công nghiệp}\n\nToán, Anh, {Văn, Hóa, Tin, Công nghệ Công nghiệp}"
+        },
+        "155": {
+          "title": "(Ngành mới)\n\nChuyên ngành Kinh tế Tuần hoàn\n\n(Chuyên ngành của ngành Kinh tế Tài nguyên Thiên nhiên)",
+          "imageScore": 61.43,
+          "htmlScore": 61.43,
+          "officialSubjects": "Toán, Lý, {Hóa, Anh, Công nghệ Công nghiệp}\n\nToán, Hóa, {Sinh, Anh, Công nghệ Công nghiệp}"
+        },
+        "156": {
+          "title": "(Ngành mới)\n\nKỹ thuật Hạt nhân",
+          "imageScore": 80.61,
+          "htmlScore": 80.61,
+          "officialSubjects": "Toán, Lý, {Hóa, Anh, Tin, Công nghệ Công nghiệp}"
+        },
+        "206": {
+          "title": "Khoa học Máy tính\n\n(Chuyên ngành: Khoa học Máy tính, Công nghệ Dữ liệu và Dữ liệu lớn, An ninh Hệ thống và Mạng, Trí tuệ Nhân tạo, Công nghệ Phần mềm)",
+          "imageScore": 84.23,
+          "htmlScore": 84.23,
+          "officialSubjects": "Toán, Lý, {Hóa, Anh, Tin, Công nghệ Công nghiệp}"
+        },
+        "207": {
+          "title": "Kỹ thuật Máy tính\n\n(Chuyên ngành: Kỹ thuật Máy tính, Hệ thống Tính toán Nâng cao, Internet Vạn vật, Thiết kế Vi mạch số)",
+          "imageScore": 81.54,
+          "htmlScore": 81.54,
+          "officialSubjects": "Toán, Lý, {Hóa, Anh, Tin, Công nghệ Công nghiệp}"
+        },
+        "209": {
+          "title": "Kỹ thuật Cơ khí",
+          "imageScore": 79.07,
+          "htmlScore": 79.07,
+          "officialSubjects": "Toán, Lý, {Hóa, Anh, Tin, Công nghệ Công nghiệp}"
+        },
+        "210": {
+          "title": "Kỹ Thuật Cơ Điện tử",
+          "imageScore": 82.14,
+          "htmlScore": 82.14,
+          "officialSubjects": "Toán, Lý, {Hóa, Anh, Tin, Công nghệ Công nghiệp}"
+        },
+        "211": {
+          "title": "Chuyên ngành Kỹ thuật Robot \n(Chuyên ngành của ngành Kỹ thuật Cơ Điện tử)",
+          "imageScore": 78.53,
+          "htmlScore": 78.53,
+          "officialSubjects": "Toán, Lý, {Hóa, Anh, Tin, Công nghệ Công nghiệp}"
+        },
+        "214": {
+          "title": "Kỹ thuật Hóa học \n(Chuyên ngành: Kỹ thuật Hóa học, Công nghệ Hóa dược, Công nghệ Mỹ phẩm)",
+          "imageScore": 69.22,
+          "htmlScore": 69.22,
+          "officialSubjects": "Toán, Hóa, {Sinh, Lý, Anh, Tin, Công nghệ Công nghiệp}\n\nToán, Sinh, Anh"
+        },
+        "215": {
+          "title": "Nhóm ngành Quản lý Dự án Xây dựng và Kỹ thuật Xây dựng \n(Ngành/Chuyên ngành: Kỹ thuật Xây dựng/Kỹ thuật Xây dựng, Quản lý Dự án Xây dựng; Kỹ thuật Xây dựng Công trình Giao thông, Đường sắt Tốc độ cao & Đường sắt Đô thị)",
+          "imageScore": 56.65,
+          "htmlScore": 56.65,
+          "officialSubjects": "Toán, Lý, {Hóa, Anh, Tin, Công nghệ Công nghiệp}"
+        },
+        "217": {
+          "title": "Chuyên ngành Kiến trúc Cảnh quan\n\n(Chuyên ngành của ngành Kiến trúc)",
+          "imageScore": 55.82,
+          "htmlScore": 55.82,
+          "officialSubjects": "Toán, Lý, {Văn, Anh, Tin, Hóa, Công nghệ Công nghiệp}"
+        },
+        "218": {
+          "title": "Công nghệ Sinh học",
+          "imageScore": 59.96,
+          "htmlScore": 59.96,
+          "officialSubjects": "Toán, Sinh, {Hóa, Lý, Anh, Tin, Công nghệ Công nghiệp}\n\nToán, Hóa, Anh"
+        },
+        "219": {
+          "title": "Công nghệ Thực phẩm",
+          "imageScore": 58.77,
+          "htmlScore": 58.77,
+          "officialSubjects": "Toán, Hóa, {Sinh, Lý, Anh, Tin, Công nghệ Công nghiệp}\n\nToán, Sinh, Anh"
+        },
+        "220": {
+          "title": "Kỹ thuật Dầu khí",
+          "imageScore": 55.76,
+          "htmlScore": 55.76,
+          "officialSubjects": "Toán, Lý, {Hóa, Anh, Tin, Công nghệ Công nghiệp}\n\nToán, Hóa, {Lý, Anh, Tin, Công nghệ Công nghiệp}"
+        },
+        "223": {
+          "title": "Quản lý Công nghiệp\n\n(Chuyên ngành: Quản lý Công nghiệp, Quản lý Chuỗi Cung ứng & Vận hành)",
+          "imageScore": 65.81,
+          "htmlScore": 65.81,
+          "officialSubjects": "Toán, Lý, {Hóa, Anh, Tin, Công nghệ Công nghiệp}\n\nToán, Anh, {Văn, Hóa, Tin, Công nghệ Công nghiệp}"
+        },
+        "225": {
+          "title": "Nhóm ngành Tài nguyên và Môi trường  \n(Ngành: Quản lý Tài nguyên và Môi trường; Kỹ thuật Môi trường)",
+          "imageScore": 57.04,
+          "htmlScore": 57.04,
+          "officialSubjects": "Toán, Lý, {Hóa, Anh, Công nghệ Công nghiệp}\n\nToán, Hóa, {Sinh, Anh, Công nghệ Công nghiệp}"
+        },
+        "228": {
+          "title": "Logistics và Quản lý Chuỗi Cung ứng",
+          "imageScore": 78.04,
+          "htmlScore": 78.04,
+          "officialSubjects": "Toán, Lý, {Hóa, Anh, Tin, Công nghệ Công nghiệp}"
+        },
+        "229": {
+          "title": "Kỹ thuật Vật liệu",
+          "imageScore": 67.15,
+          "htmlScore": 67.15,
+          "officialSubjects": "Toán, Lý, {Hóa, Anh, Tin, Công nghệ Công nghiệp}\n\nToán, Hóa, {Sinh, Anh, Tin, Công nghệ Công nghiệp}"
+        },
+        "237": {
+          "title": "Chuyên ngành Kỹ thuật Y sinh \n(Chuyên ngành của ngành Vật lý Kỹ thuật)",
+          "imageScore": 65.9,
+          "htmlScore": 65.9,
+          "officialSubjects": "Toán, Lý, {Sinh, Hóa, Anh, Tin, Công nghệ Công nghiệp}"
+        },
+        "242": {
+          "title": "Kỹ thuật Ô tô",
+          "imageScore": 71.22,
+          "htmlScore": 71.22,
+          "officialSubjects": "Toán, Lý, {Hóa, Anh, Tin, Công nghệ Công nghiệp}"
+        },
+        "245": {
+          "title": "Kỹ thuật Hàng không",
+          "imageScore": 79.87,
+          "htmlScore": 79.87,
+          "officialSubjects": "Toán, Lý, {Hóa, Anh, Tin, Công nghệ Công nghiệp}"
+        },
+        "251": {
+          "title": "(Ngành mới)\n\nKhoa học Dữ liệu",
+          "imageScore": 80.68,
+          "htmlScore": 80.68,
+          "officialSubjects": "Toán, Lý, {Hóa, Anh, Tin, Công nghệ Công nghiệp}"
+        },
+        "253": {
+          "title": "Chuyên ngành Kinh doanh số\n\n(Chuyên ngành của ngành Quản trị Kinh doanh)",
+          "imageScore": 61.58,
+          "htmlScore": 61.58,
+          "officialSubjects": "Toán, Lý, {Hóa, Anh, Tin, Công nghệ Công nghiệp}\n\nToán, Anh, {Văn, Hóa, Tin, Công nghệ Công nghiệp}"
+        },
+        "254": {
+          "title": "Chuyên ngành Công nghệ Sinh học số\n\n(Chuyên ngành của ngành Công nghệ Sinh học)",
+          "imageScore": 56.77,
+          "htmlScore": 56.77,
+          "officialSubjects": "Toán, Sinh, {Hóa, Lý, Anh, Tin, Công nghệ Công nghiệp}\n\nToán, Hóa, Anh"
+        },
+        "255": {
+          "title": "Chuyên ngành Kinh tế Tuần hoàn\n\n(Chuyên ngành của ngành Kinh tế Tài nguyên Thiên nhiên)",
+          "imageScore": 56.36,
+          "htmlScore": 56.36,
+          "officialSubjects": "Toán, Lý, {Hóa, Anh, Công nghệ Công nghiệp}\n\nToán, Hóa, {Sinh, Anh, Công nghệ Công nghiệp}"
+        },
+        "256": {
+          "title": "(Ngành mới)\n\nKỹ thuật Hạt nhân",
+          "imageScore": 56.91,
+          "htmlScore": 56.91,
+          "officialSubjects": "Toán, Lý, {Hóa, Anh, Tin, Công nghệ Công nghiệp}"
+        },
+        "257": {
+          "title": "Chuyên ngành Năng lượng Tái tạo\n\n(Chuyên ngành của ngành Kỹ thuật Điện)",
+          "imageScore": 61.71,
+          "htmlScore": 61.71,
+          "officialSubjects": "Toán, Lý, {Hóa, Anh, Tin, Công nghệ Công nghiệp}"
+        },
+        "266": {
+          "title": "Khoa học Máy tính\n\n(Chuyên ngành: Khoa học Máy tính, Công nghệ Dữ liệu và Dữ liệu lớn, An ninh Hệ thống và Mạng, Trí tuệ Nhân tạo, Công nghệ Phần mềm)",
+          "imageScore": 78.69,
+          "htmlScore": 78.69,
+          "officialSubjects": "Toán, Lý, {Hóa, Anh, Tin, Công nghệ Công nghiệp}"
+        },
+        "268": {
+          "title": "Cơ Kỹ thuật",
+          "imageScore": 73.96,
+          "htmlScore": 73.96,
+          "officialSubjects": "Toán, Lý, {Hóa, Anh, Tin, Công nghệ Công nghiệp}"
+        },
+        "306": {
+          "title": "Khoa học Máy tính\n\nĐại học đối tác:\n\nÚc: ĐH Queensland, ĐH Griffith, ĐH Công nghệ Sydney, ĐH Macquarie, ĐH Adelaide, ĐH Monash, ĐH Deakin, ĐH Southern Queensland\nNew Zealand: ĐH Auckland",
+          "imageScore": 70.84,
+          "htmlScore": 70.84,
+          "officialSubjects": "Toán, Lý, {Hóa, Anh, Tin, Công nghệ Công nghiệp}"
+        },
+        "307": {
+          "title": "Kỹ thuật Máy tính \n\nĐại học đối tác tại Úc: ĐH Queensland, ĐH Macquarie, ĐH Adelaide, ĐH Monash, ĐH Deakin, ĐH Southern Queensland",
+          "imageScore": 62.37,
+          "htmlScore": 62.37,
+          "officialSubjects": "67.68"
+        },
+        "309": {
+          "title": "Kỹ thuật Cơ khí\n\nĐại học đối tác:\n\nÚc: ĐH Griffith, ĐH Monash\nMỹ: ĐH Kentucky",
+          "imageScore": 82.42,
+          "htmlScore": 82.42,
+          "officialSubjects": "74.30"
+        },
+        "310": {
+          "title": "Kỹ thuật Cơ Điện tử\n\nĐại học đối tác:\n\nÚc: ĐH Công nghệ Sydney\nMỹ: ĐH Kentucky",
+          "imageScore": 61.51,
+          "htmlScore": 61.51,
+          "officialSubjects": "78.44"
+        },
+        "314": {
+          "title": "Kỹ thuật Hóa học\n\nĐại học đối tác:\n\nÚc: ĐH Queensland, ĐH Adelaide\nAnh: ĐH Birmingham",
+          "imageScore": 75.3,
+          "htmlScore": 75.3,
+          "officialSubjects": "63.30"
+        },
+        "315": {
+          "title": "Kỹ thuật Xây dựng\n\nĐại học đối tác:\n\nÚc: ĐH Queensland, ĐH Griffith, ĐH Công nghệ Sydney, ĐH Adelaide, ĐH Monash\nĐan Mạch: ĐH Northern Denmark\nAnh: ĐH Birmingham",
+          "imageScore": 67.58,
+          "htmlScore": 67.58,
+          "officialSubjects": "56.20"
+        },
+        "319": {
+          "title": "Công nghệ Thực phẩm\n\nĐại học đối tác tại New Zealand: ĐH Otago",
+          "imageScore": 61.51,
+          "htmlScore": 61.51,
+          "officialSubjects": "56.20"
+        },
+        "323": {
+          "title": "Quản lý Công nghiệp\n\nĐại học đối tác:\n\nÚc: ĐH Griffith, ĐH Công nghệ Sydney, ĐH Macquarie\nPháp: ĐH Lyon Catholic (ESDES) \nHàn Quốc: ĐH Tongmyong",
+          "imageScore": 61.51,
+          "htmlScore": 61.51,
+          "officialSubjects": "61.08"
+        },
+        "325": {
+          "title": "Nhóm ngành: Kỹ thuật Môi trường; Quản lý Tài nguyên & Môi trường\n\nĐại học đối tác tại Úc: ĐH Griffith",
+          "imageScore": 61.51,
+          "htmlScore": 61.51,
+          "officialSubjects": "55.46"
+        },
+        "342": {
+          "title": "Kỹ thuật Ô tô\n\nĐại học đối tác tại Úc: ĐH Griffith",
+          "imageScore": 61.51,
+          "htmlScore": 61.51,
+          "officialSubjects": "69.49"
+        },
+        "345": {
+          "title": "Kỹ thuật Hàng không\n\nĐại học đối tác tại Úc: ĐH Griffith",
+          "imageScore": 78.91,
+          "htmlScore": 78.91,
+          "officialSubjects": "78.79"
+        },
+        "406": {
+          "title": "Trí tuệ Nhân tạo",
+          "imageScore": 73.21,
+          "htmlScore": 73.21,
+          "officialSubjects": "Toán, Lý, {Hóa, Anh, Tin, Công nghệ Công nghiệp}\n\nToán, Tin, {Hóa, Anh, Lý, Công nghệ Công nghiệp}"
+        },
+        "416": {
+          "title": "Công nghệ Thông tin",
+          "imageScore": 70.18,
+          "htmlScore": 70.18,
+          "officialSubjects": "Toán, Lý, {Hóa, Anh, Tin, Công nghệ Công nghiệp}\n\nToán, Tin, {Hóa, Anh, Lý, Công nghệ Công nghiệp}"
+        }
+      },
+      "records": [
+        {
+          "id": "6ace7135b5a61b72bfd3e067",
+          "majorCode": "7480101",
+          "program": "Tiêu chuẩn (mã XT 106)",
+          "score": 85.45,
+          "year": 2026,
+          "scale": 100
+        },
+        {
+          "id": "6ace7135b5a61b72bfd3e068",
+          "majorCode": "7480106",
+          "program": "Tiêu chuẩn (mã XT 107)",
+          "score": 84.98,
+          "year": 2026,
+          "scale": 100
+        },
+        {
+          "id": "6ace7135b5a61b72bfd3e069",
+          "majorCode": "7520201",
+          "program": "Tiêu chuẩn (mã XT 108)",
+          "score": 84.29,
+          "year": 2026,
+          "scale": 100
+        },
+        {
+          "id": "6ace7135b5a61b72bfd3e06a",
+          "majorCode": "7520207",
+          "program": "Tiêu chuẩn (mã XT 108)",
+          "score": 84.29,
+          "year": 2026,
+          "scale": 100
+        },
+        {
+          "id": "6ace7135b5a61b72bfd3e06b",
+          "majorCode": "7520103",
+          "program": "Tiêu chuẩn (mã XT 109)",
+          "score": 80.75,
+          "year": 2026,
+          "scale": 100
+        },
+        {
+          "id": "6ace7135b5a61b72bfd3e06c",
+          "majorCode": "7520114",
+          "program": "Tiêu chuẩn (mã XT 110)",
+          "score": 84.36,
+          "year": 2026,
+          "scale": 100
+        },
+        {
+          "id": "6ace7135b5a61b72bfd3e06d",
+          "majorCode": "7540101",
+          "program": "Tiêu chuẩn (mã XT 114)",
+          "score": 79.08,
+          "year": 2026,
+          "scale": 100
+        },
+        {
+          "id": "6ace7135b5a61b72bfd3e06e",
+          "majorCode": "7420201",
+          "program": "Tiêu chuẩn (mã XT 114)",
+          "score": 79.08,
+          "year": 2026,
+          "scale": 100
+        },
+        {
+          "id": "6ace7135b5a61b72bfd3e06f",
+          "majorCode": "7520301",
+          "program": "Tiêu chuẩn (mã XT 114)",
+          "score": 79.08,
+          "year": 2026,
+          "scale": 100
+        },
+        {
+          "id": "6ace7135b5a61b72bfd3e070",
+          "majorCode": "7580201",
+          "program": "Tiêu chuẩn (mã XT 115)",
+          "score": 68.69,
+          "year": 2026,
+          "scale": 100
+        },
+        {
+          "id": "6ace7135b5a61b72bfd3e071",
+          "majorCode": "7580101",
+          "program": "Tiêu chuẩn (mã XT 117)",
+          "score": 71.57,
+          "year": 2026,
+          "scale": 100
+        },
+        {
+          "id": "6ace7135b5a61b72bfd3e072",
+          "majorCode": "7510601",
+          "program": "Tiêu chuẩn (mã XT 123)",
+          "score": 80.17,
+          "year": 2026,
+          "scale": 100
+        },
+        {
+          "id": "6ace7135b5a61b72bfd3e073",
+          "majorCode": "7850101",
+          "program": "Tiêu chuẩn (mã XT 125)",
+          "score": 69.38,
+          "year": 2026,
+          "scale": 100
+        },
+        {
+          "id": "6ace7135b5a61b72bfd3e074",
+          "majorCode": "7510605",
+          "program": "Tiêu chuẩn (mã XT 128)",
+          "score": 82.4,
+          "year": 2026,
+          "scale": 100
+        },
+        {
+          "id": "6ace7135b5a61b72bfd3e075",
+          "majorCode": "7520309",
+          "program": "Tiêu chuẩn (mã XT 129)",
+          "score": 78.88,
+          "year": 2026,
+          "scale": 100
+        },
+        {
+          "id": "6ace7135b5a61b72bfd3e076",
+          "majorCode": "7520401",
+          "program": "Tiêu chuẩn (mã XT 137)",
+          "score": 82.01,
+          "year": 2026,
+          "scale": 100
+        },
+        {
+          "id": "6ace7135b5a61b72bfd3e077",
+          "majorCode": "7520101",
+          "program": "Tiêu chuẩn (mã XT 138)",
+          "score": 79.62,
+          "year": 2026,
+          "scale": 100
+        },
+        {
+          "id": "6ace7135b5a61b72bfd3e078",
+          "majorCode": "7520115",
+          "program": "Tiêu chuẩn (mã XT 140)",
+          "score": 79.91,
+          "year": 2026,
+          "scale": 100
+        },
+        {
+          "id": "6ace7135b5a61b72bfd3e079",
+          "majorCode": "7510211",
+          "program": "Tiêu chuẩn (mã XT 141)",
+          "score": 75.31,
+          "year": 2026,
+          "scale": 100
+        },
+        {
+          "id": "6ace7135b5a61b72bfd3e07a",
+          "majorCode": "7520130",
+          "program": "Tiêu chuẩn (mã XT 142)",
+          "score": 79.3,
+          "year": 2026,
+          "scale": 100
+        },
+        {
+          "id": "6ace7135b5a61b72bfd3e07b",
+          "majorCode": "7520122",
+          "program": "Tiêu chuẩn - Song ngành Tàu thủy - Hàng không (mã XT 145)",
+          "score": 80.37,
+          "year": 2026,
+          "scale": 100
+        },
+        {
+          "id": "6ace7135b5a61b72bfd3e07c",
+          "majorCode": "7520120",
+          "program": "Tiêu chuẩn - Song ngành Tàu thủy - Hàng không (mã XT 145)",
+          "score": 80.37,
+          "year": 2026,
+          "scale": 100
+        },
+        {
+          "id": "6ace7135b5a61b72bfd3e07d",
+          "majorCode": "7460108",
+          "program": "Tiêu chuẩn (mã XT 146)",
+          "score": 84.97,
+          "year": 2026,
+          "scale": 100
+        },
+        {
+          "id": "6ace7135b5a61b72bfd3e07e",
+          "majorCode": "7580211",
+          "program": "Tiêu chuẩn (mã XT 147)",
+          "score": 64.37,
+          "year": 2026,
+          "scale": 100
+        },
+        {
+          "id": "6ace7135b5a61b72bfd3e07f",
+          "majorCode": "7580301",
+          "program": "Tiêu chuẩn (mã XT 148)",
+          "score": 69.35,
+          "year": 2026,
+          "scale": 100
+        },
+        {
+          "id": "6ace7135b5a61b72bfd3e080",
+          "majorCode": "7520604",
+          "program": "Tiêu chuẩn (mã XT 150)",
+          "score": 73.82,
+          "year": 2026,
+          "scale": 100
+        },
+        {
+          "id": "6ace7135b5a61b72bfd3e081",
+          "majorCode": "7520501",
+          "program": "Tiêu chuẩn (mã XT 151)",
+          "score": 65.6,
+          "year": 2026,
+          "scale": 100
+        },
+        {
+          "id": "6ace7135b5a61b72bfd3e082",
+          "majorCode": "7340101",
+          "program": "Tiêu chuẩn (mã XT 153)",
+          "score": 73.59,
+          "year": 2026,
+          "scale": 100
+        },
+        {
+          "id": "6ace7135b5a61b72bfd3e083",
+          "majorCode": "7850102",
+          "program": "Tiêu chuẩn - Chuyên ngành Kinh tế Tuần hoàn (mã XT 155)",
+          "score": 61.43,
+          "year": 2026,
+          "scale": 100
+        },
+        {
+          "id": "6ace7135b5a61b72bfd3e084",
+          "majorCode": "7520402",
+          "program": "Tiêu chuẩn (mã XT 156)",
+          "score": 80.61,
+          "year": 2026,
+          "scale": 100
+        },
+        {
+          "id": "6ace7135b5a61b72bfd3e085",
+          "majorCode": "7480101",
+          "program": "Tiếng Anh (mã XT 206)",
+          "score": 84.23,
+          "year": 2026,
+          "scale": 100
+        },
+        {
+          "id": "6ace7135b5a61b72bfd3e086",
+          "majorCode": "7480106",
+          "program": "Tiếng Anh (mã XT 207)",
+          "score": 81.54,
+          "year": 2026,
+          "scale": 100
+        },
+        {
+          "id": "6ace7135b5a61b72bfd3e087",
+          "majorCode": "7520103",
+          "program": "Tiếng Anh (mã XT 209)",
+          "score": 79.07,
+          "year": 2026,
+          "scale": 100
+        },
+        {
+          "id": "6ace7135b5a61b72bfd3e088",
+          "majorCode": "7520114",
+          "program": "Tiếng Anh (mã XT 210)",
+          "score": 82.14,
+          "year": 2026,
+          "scale": 100
+        },
+        {
+          "id": "6ace7135b5a61b72bfd3e089",
+          "majorCode": "7520114",
+          "program": "Tiếng Anh - Chuyên ngành Kỹ thuật Robot (mã XT 211)",
+          "score": 78.53,
+          "year": 2026,
+          "scale": 100
+        },
+        {
+          "id": "6ace7135b5a61b72bfd3e08a",
+          "majorCode": "7520301",
+          "program": "Tiếng Anh (mã XT 214)",
+          "score": 69.22,
+          "year": 2026,
+          "scale": 100
+        },
+        {
+          "id": "6ace7135b5a61b72bfd3e08b",
+          "majorCode": "7580201",
+          "program": "Tiếng Anh (mã XT 215)",
+          "score": 56.65,
+          "year": 2026,
+          "scale": 100
+        },
+        {
+          "id": "6ace7135b5a61b72bfd3e08c",
+          "majorCode": "7580101",
+          "program": "Tiếng Anh - Chuyên ngành Kiến trúc Cảnh quan (mã XT 217)",
+          "score": 55.82,
+          "year": 2026,
+          "scale": 100
+        },
+        {
+          "id": "6ace7135b5a61b72bfd3e08d",
+          "majorCode": "7420201",
+          "program": "Tiếng Anh (mã XT 218)",
+          "score": 59.96,
+          "year": 2026,
+          "scale": 100
+        },
+        {
+          "id": "6ace7135b5a61b72bfd3e08e",
+          "majorCode": "7540101",
+          "program": "Tiếng Anh (mã XT 219)",
+          "score": 58.77,
+          "year": 2026,
+          "scale": 100
+        },
+        {
+          "id": "6ace7135b5a61b72bfd3e08f",
+          "majorCode": "7520604",
+          "program": "Tiếng Anh (mã XT 220)",
+          "score": 55.76,
+          "year": 2026,
+          "scale": 100
+        },
+        {
+          "id": "6ace7135b5a61b72bfd3e090",
+          "majorCode": "7510601",
+          "program": "Tiếng Anh (mã XT 223)",
+          "score": 65.81,
+          "year": 2026,
+          "scale": 100
+        },
+        {
+          "id": "6ace7135b5a61b72bfd3e091",
+          "majorCode": "7850101",
+          "program": "Tiếng Anh (mã XT 225)",
+          "score": 57.04,
+          "year": 2026,
+          "scale": 100
+        },
+        {
+          "id": "6ace7135b5a61b72bfd3e092",
+          "majorCode": "7510605",
+          "program": "Tiếng Anh (mã XT 228)",
+          "score": 78.04,
+          "year": 2026,
+          "scale": 100
+        },
+        {
+          "id": "6ace7135b5a61b72bfd3e093",
+          "majorCode": "7520309",
+          "program": "Tiếng Anh (mã XT 229)",
+          "score": 67.15,
+          "year": 2026,
+          "scale": 100
+        },
+        {
+          "id": "6ace7135b5a61b72bfd3e094",
+          "majorCode": "7520401",
+          "program": "Tiếng Anh - Chuyên ngành Kỹ thuật Y sinh (mã XT 237)",
+          "score": 65.9,
+          "year": 2026,
+          "scale": 100
+        },
+        {
+          "id": "6ace7135b5a61b72bfd3e095",
+          "majorCode": "7520130",
+          "program": "Tiếng Anh (mã XT 242)",
+          "score": 71.22,
+          "year": 2026,
+          "scale": 100
+        },
+        {
+          "id": "6ace7135b5a61b72bfd3e096",
+          "majorCode": "7520120",
+          "program": "Tiếng Anh (mã XT 245)",
+          "score": 79.87,
+          "year": 2026,
+          "scale": 100
+        },
+        {
+          "id": "6ace7135b5a61b72bfd3e097",
+          "majorCode": "7460108",
+          "program": "Tiếng Anh (mã XT 251)",
+          "score": 80.68,
+          "year": 2026,
+          "scale": 100
+        },
+        {
+          "id": "6ace7135b5a61b72bfd3e098",
+          "majorCode": "7340101",
+          "program": "Tiếng Anh - Chuyên ngành Kinh doanh số (mã XT 253)",
+          "score": 61.58,
+          "year": 2026,
+          "scale": 100
+        },
+        {
+          "id": "6ace7135b5a61b72bfd3e099",
+          "majorCode": "7420201",
+          "program": "Tiếng Anh - Chuyên ngành Công nghệ Sinh học số (mã XT 254)",
+          "score": 56.77,
+          "year": 2026,
+          "scale": 100
+        },
+        {
+          "id": "6ace7135b5a61b72bfd3e09a",
+          "majorCode": "7850102",
+          "program": "Tiếng Anh - Chuyên ngành Kinh tế Tuần hoàn (mã XT 255)",
+          "score": 56.36,
+          "year": 2026,
+          "scale": 100
+        },
+        {
+          "id": "6ace7135b5a61b72bfd3e09b",
+          "majorCode": "7520402",
+          "program": "Tiếng Anh (mã XT 256)",
+          "score": 56.91,
+          "year": 2026,
+          "scale": 100
+        },
+        {
+          "id": "6ace7135b5a61b72bfd3e09c",
+          "majorCode": "7520201",
+          "program": "Tiếng Anh - Chuyên ngành Năng lượng Tái tạo (mã XT 257)",
+          "score": 61.71,
+          "year": 2026,
+          "scale": 100
+        },
+        {
+          "id": "6ace7135b5a61b72bfd3e09d",
+          "majorCode": "7480107",
+          "program": "Liên kết UTS (Úc) (mã XT 406)",
+          "score": 73.21,
+          "year": 2026,
+          "scale": 100
+        },
+        {
+          "id": "6ace7135b5a61b72bfd3e09e",
+          "majorCode": "7480201",
+          "program": "Liên kết UTS (Úc) (mã XT 416)",
+          "score": 70.18,
+          "year": 2026,
+          "scale": 100
+        },
+        {
+          "id": "6ace7135b5a61b72bfd3e09f",
+          "majorCode": "7480101",
+          "program": "Định hướng Nhật Bản (mã XT 266)",
+          "score": 78.69,
+          "year": 2026,
+          "scale": 100
+        },
+        {
+          "id": "6ace7135b5a61b72bfd3e0a0",
+          "majorCode": "7520101",
+          "program": "Định hướng Nhật Bản (mã XT 268)",
+          "score": 73.96,
+          "year": 2026,
+          "scale": 100
+        },
+        {
+          "id": "6ace7135b5a61b72bfd3e0a1",
+          "majorCode": "7480101",
+          "program": "Chuyển tiếp quốc tế (Úc, New Zealand) (mã XT 306)",
+          "score": 70.84,
+          "year": 2026,
+          "scale": 100
+        },
+        {
+          "id": "6ace7135b5a61b72bfd3e0a2",
+          "majorCode": "7480106",
+          "program": "Chuyển tiếp quốc tế (Úc) (mã XT 307)",
+          "score": 62.37,
+          "year": 2026,
+          "scale": 100
+        },
+        {
+          "id": "6ace7135b5a61b72bfd3e0a3",
+          "majorCode": "7520103",
+          "program": "Chuyển tiếp quốc tế (Mỹ, Úc) (mã XT 309)",
+          "score": 82.42,
+          "year": 2026,
+          "scale": 100
+        },
+        {
+          "id": "6ace7135b5a61b72bfd3e0a4",
+          "majorCode": "7520114",
+          "program": "Chuyển tiếp quốc tế (Mỹ, Úc) (mã XT 310)",
+          "score": 61.51,
+          "year": 2026,
+          "scale": 100
+        },
+        {
+          "id": "6ace7135b5a61b72bfd3e0a5",
+          "majorCode": "7520301",
+          "program": "Chuyển tiếp quốc tế (Úc, Anh Quốc) (mã XT 314)",
+          "score": 75.3,
+          "year": 2026,
+          "scale": 100
+        },
+        {
+          "id": "6ace7135b5a61b72bfd3e0a6",
+          "majorCode": "7580201",
+          "program": "Chuyển tiếp quốc tế (Úc, Anh Quốc) (mã XT 315)",
+          "score": 67.58,
+          "year": 2026,
+          "scale": 100
+        },
+        {
+          "id": "6ace7135b5a61b72bfd3e0a7",
+          "majorCode": "7540101",
+          "program": "Chuyển tiếp quốc tế (New Zealand) (mã XT 319)",
+          "score": 61.51,
+          "year": 2026,
+          "scale": 100
+        },
+        {
+          "id": "6ace7135b5a61b72bfd3e0a8",
+          "majorCode": "7510601",
+          "program": "Chuyển tiếp quốc tế (Úc, Pháp, Hàn Quốc) (mã XT 323)",
+          "score": 61.51,
+          "year": 2026,
+          "scale": 100
+        },
+        {
+          "id": "6ace7135b5a61b72bfd3e0a9",
+          "majorCode": "7850101",
+          "program": "Chuyển tiếp quốc tế (Úc) (mã XT 325)",
+          "score": 61.51,
+          "year": 2026,
+          "scale": 100
+        },
+        {
+          "id": "6ace7135b5a61b72bfd3e0aa",
+          "majorCode": "7520130",
+          "program": "Chuyển tiếp quốc tế (Úc) (mã XT 342)",
+          "score": 61.51,
+          "year": 2026,
+          "scale": 100
+        },
+        {
+          "id": "6ace7135b5a61b72bfd3e0ab",
+          "majorCode": "7520120",
+          "program": "Chuyển tiếp quốc tế (Úc) (mã XT 345)",
+          "score": 78.91,
+          "year": 2026,
+          "scale": 100
+        }
+      ],
+      "profile": {
+        "foundedYear": 1957,
+        "address": "268 Lý Thường Kiệt, Phường Diên Hồng, TP. Hồ Chí Minh",
+        "phone": "028 3864 7256",
+        "campuses": [
+          {
+            "name": "Cơ sở 1 (trụ sở chính)",
+            "address": "268 Lý Thường Kiệt, Phường Diên Hồng, TP. HCM",
+            "_id": "6ace7135b5a61b72bfd3e0ac"
+          },
+          {
+            "name": "Cơ sở 2",
+            "address": "Khu phố Tân Lập, Phường Đông Hòa, TP. HCM",
+            "_id": "6ace7135b5a61b72bfd3e0ad"
+          }
+        ],
+        "universitySystem": "Đại học Quốc gia TP.HCM"
+      },
+      "tuition": [
+        {
+          "academicYear": "2026-2027",
+          "program": "Tiêu chuẩn — khóa 2026",
+          "amountMin": 31500000,
+          "amountMax": 31500000,
+          "unit": "year",
+          "note": "Mức dự kiến cho khóa 2026 trong năm học 2026-2027. Học phí học kỳ: 15.750.000 đồng; định mức 18 tín chỉ/học kỳ. Tín chỉ vượt định mức và các khoản riêng áp dụng theo thông báo của trường.",
+          "sourceUrl": "https://hcmut.edu.vn/bai-viet/thong-bao-dieu-chinh-muc-thu-hoc-phi-nam-hoc-2026-2027",
+          "_id": "6ace7135b5a61b72bfd3e064"
+        },
+        {
+          "academicYear": "2026-2027",
+          "program": "Tiên tiến / Dạy và học bằng tiếng Anh — khóa 2026 — mức thông thường",
+          "amountMin": 88000000,
+          "amountMax": 88000000,
+          "unit": "year",
+          "note": "Mức thông thường cho khóa 2026 trong năm học 2026-2027; học phí học kỳ 44.000.000 đồng. Không áp dụng thay cho các mức ưu đãi riêng theo ngành hoặc học phí chương trình UTS.",
+          "sourceUrl": "https://hcmut.edu.vn/bai-viet/thong-bao-dieu-chinh-muc-thu-hoc-phi-nam-hoc-2026-2027",
+          "_id": "6ace7135b5a61b72bfd3e065"
+        },
+        {
+          "academicYear": "2026-2027",
+          "program": "Định hướng Nhật Bản — khóa 2026",
+          "amountMin": 63000000,
+          "amountMax": 63000000,
+          "unit": "year",
+          "note": "Mức dự kiến cho khóa 2026 trong năm học 2026-2027; học phí học kỳ 31.500.000 đồng. Không bao gồm học phí giai đoạn chuyển tiếp ở nước ngoài.",
+          "sourceUrl": "https://hcmut.edu.vn/bai-viet/thong-bao-dieu-chinh-muc-thu-hoc-phi-nam-hoc-2026-2027",
+          "_id": "6ace7135b5a61b72bfd3e066"
+        },
+        {
+          "_id": "184c3b65f3519cccf44475fa",
+          "academicYear": "2026-2027",
+          "program": "Dạy và học bằng tiếng Anh — khóa 2026 — ưu đãi năm mở ngành",
+          "amountMin": 41800000,
+          "amountMax": 41800000,
+          "unit": "year",
+          "note": "Chỉ áp dụng cho chương trình tiếng Anh khóa 2026 của Kỹ thuật bán dẫn, Kỹ thuật đường sắt, Kỹ thuật hạt nhân và Khoa học dữ liệu trong năm học 2026-2027. Đây là ưu đãi năm mở ngành, không phải mức cho toàn khóa.",
+          "sourceUrl": "https://hcmut.edu.vn/bai-viet/thong-bao-dieu-chinh-muc-thu-hoc-phi-nam-hoc-2026-2027"
+        }
+      ],
+      "content": {
+        "facilities": [
+          {
+            "_id": "5820f5d5523d7dfb49e60954",
+            "name": "Thư viện",
+            "description": "Hệ thống thư viện phục vụ học tập, tra cứu tài liệu và tự học tại hai cơ sở của trường."
+          },
+          {
+            "_id": "be0cbe74f9ddfc8566380b0b",
+            "name": "Không gian giảng dạy, nghiên cứu và thể thao",
+            "description": "Các cơ sở đào tạo có khu giảng dạy, nghiên cứu, thư viện và các khu chức năng phục vụ người học; cơ sở 2 có khu phức hợp thể dục thể thao."
+          }
+        ],
+        "scholarships": [
+          {
+            "_id": "1836133393d37dce21045bf8",
+            "name": "Học bổng Sen Hồng — năm học 2026-2027",
+            "value": "500 USD/suất",
+            "eligibility": "Sinh viên nữ hệ đại học chính quy có hoàn cảnh khó khăn; đáp ứng các tiêu chí và hồ sơ trong thông báo. Sinh viên đang nhận học bổng do U-GO tài trợ không thuộc diện tham gia.",
+            "description": "Thông tin đợt học bổng năm học 2026-2027; hạn đăng ký 05/10/2026 đã kết thúc. Đây là thông tin lịch sử, không phải đợt đang nhận hồ sơ."
+          }
+        ],
+        "studentLife": [
+          {
+            "_id": "85d22bfe730498d3e262602b",
+            "category": "Học thuật",
+            "name": "Cơ hội tham gia cuộc thi học thuật và lập trình",
+            "description": "Trường công bố thông tin các cuộc thi học thuật và lập trình, trong đó có Code Tour 2026. Điều kiện và thời gian tham gia theo từng thông báo."
+          },
+          {
+            "_id": "e0cd803f1f88c9e6cc3a813b",
+            "category": "Khởi nghiệp",
+            "name": "Hoạt động khởi nghiệp và đổi mới sáng tạo",
+            "description": "Các thông tin về khóa đào tạo, hội thảo và hoạt động kết nối khởi nghiệp được trường công bố theo từng đợt."
+          }
+        ],
+        "careerOpportunities": [
+          {
+            "_id": "352091f4e0400409f8da3e8d",
+            "field": "Kết nối thực tập và tuyển dụng",
+            "description": "Thông tin sự kiện năm 2026 ghi nhận hoạt động gặp gỡ doanh nghiệp, tìm hiểu vị trí thực tập, việc làm và trao đổi tuyển dụng trực tiếp."
+          }
+        ],
+        "dormitory": {
+          "available": true,
+          "description": "Trường có Ký túc xá Bách khoa. Đối tượng, thủ tục đăng ký, bố trí chỗ ở và mức phí thực hiện theo thông báo từng năm học."
+        }
+      }
+    }
   },
   {
     "slug": "canh-sat-nhan-dan",

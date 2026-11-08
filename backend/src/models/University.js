@@ -101,6 +101,8 @@ const universitySchema = new Schema(
     dormitory: { available: Boolean, description: String },
     studentLife: [{ category: String, name: String, description: String }],
     careerOpportunities: [{ field: String, description: String }],
+    // Dữ liệu duyệt riêng cho trang chi tiết (hiện chỉ Bách khoa): nhóm mã xét tuyển, nguồn, danh sách bản ghi đã duyệt.
+    detailEvidence: { type: Schema.Types.Mixed, default: undefined },
   },
   { timestamps: true }
 )

@@ -118,8 +118,8 @@ export const COMPOSITE_SCHOOLS = {
     year: 2026,
     scale: 100,
     formula: 'hcmut',
-    // Bảng điểm chuẩn chính thức là ảnh trên hcmut.edu.vn; dùng bản đăng lại (xem DATA_NOTES.md).
-    admissionDomains: ['xaydungchinhsach.chinhphu.vn'],
+    // Điểm chuẩn chính thức trên hcmut.edu.vn (bản trong database); bản đăng lại vẫn được chấp nhận.
+    admissionDomains: ['hcmut.edu.vn', 'xaydungchinhsach.chinhphu.vn'],
     isStandard: (program) => /^Tiêu chuẩn \(mã XT \d+\)$/.test(program || ''),
     formulaSources: [
       'https://hcmut.edu.vn/tuyen-sinh/dai-hoc-chinh-quy/phuong-thuc-tuyen-sinh/xet-tuyen-tong-hop-2026',

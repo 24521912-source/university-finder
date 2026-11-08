@@ -1,14 +1,21 @@
-// Bằng chứng đã duyệt riêng HCMUT; dùng để kiểm tra dữ liệu API, không thay thế API.
-// Không import vào AI và không thay đổi SOURCES dùng chung.
-import evidence from './hcmutDetailEvidence.json' with { type: 'json' }
+// Bằng chứng đã duyệt riêng HCMUT, lưu trong MongoDB (field detailEvidence của trường, trả về qua API chi tiết).
+// Dùng để kiểm tra dữ liệu API, không thay thế API. Không import vào AI và không thay đổi SOURCES dùng chung.
+const evidenceOf = university => {
+  const evidence = university?.detailEvidence
+  return evidence && typeof evidence === 'object' && evidence.slug === university.slug ? evidence : null
+}
 
-export const isHcmut = university => university?.slug === evidence.slug
-export const hcmutSources = Object.fromEntries(Object.entries(evidence.sources).map(([key, source]) => [key, source.url]))
+export const isHcmut = university => !!evidenceOf(university)
+export const hcmutSources = university => {
+  const evidence = evidenceOf(university)
+  return evidence ? Object.fromEntries(Object.entries(evidence.sources || {}).map(([key, source]) => [key, source.url])) : {}
+}
 const objects = value => Array.isArray(value) ? value.filter(item => item && typeof item === 'object') : []
 const approvedFields = (item, approved, fields) => approved && fields.every(key => item[key] === approved[key])
 
 export function hcmutProfile(university) {
-  if (!isHcmut(university)) return null
+  const evidence = evidenceOf(university)
+  if (!evidence) return null
   const approved = evidence.profile
   const campuses = objects(university.campuses).filter(item => approved.campuses.some(campus => approvedFields(item, campus, ['_id', 'name', 'address'])))
   return {
@@ -22,7 +29,8 @@ export function hcmutProfile(university) {
 }
 
 export function hcmutContent(university) {
-  if (!isHcmut(university)) return null
+  const evidence = evidenceOf(university)
+  if (!evidence) return null
   const result = {}
   for (const key of ['facilities', 'scholarships', 'studentLife', 'careerOpportunities']) {
     result[key] = objects(university[key]).filter(item => evidence.content[key].some(approved => approvedFields(item, approved, Object.keys(approved))))
@@ -32,14 +40,16 @@ export function hcmutContent(university) {
 }
 
 export function hcmutDetailData(university) {
-  if (!isHcmut(university)) return null
+  const evidence = evidenceOf(university)
+  if (!evidence) return null
+  const sources = hcmutSources(university)
   const records = objects(university.admissions)
   const accepted = []
   for (const record of records) {
     const approved = evidence.records.find(item => item.id === record._id)
     const code = typeof record.program === 'string' ? record.program.match(/mã XT (\d{3})/)?.[1] : null
     const group = evidence.groups[code]
-    if (!approved || !group || code === '112' || record.method !== 'other' || record.sourceUrl !== hcmutSources.cutoffs ||
+    if (!approved || !group || code === '112' || record.method !== 'other' || record.sourceUrl !== sources.cutoffs ||
         !approvedFields(record, approved, ['majorCode', 'program', 'score', 'year', 'scale']) || record.year !== 2026 || record.scale !== 100 ||
         !Number.isFinite(record.score) || record.score < 0 || record.score > 100 || group.imageScore !== group.htmlScore || record.score !== group.imageScore) continue
     accepted.push({ ...record, examCode: code, groupName: group.title, kind: { key: 'combined', label: 'Xét tuyển tổng hợp HCMUT' } })
@@ -64,7 +74,7 @@ export function hcmutDetailData(university) {
     tuition,
     annualMinimum,
     minimumScores,
-    methods: admissionGroups.length ? [{ label: 'Xét tuyển tổng hợp HCMUT', year: 2026, scale: 100, sourceUrl: hcmutSources.admissionMethod }] : [],
+    methods: admissionGroups.length ? [{ label: 'Xét tuyển tổng hợp HCMUT', year: 2026, scale: 100, sourceUrl: sources.admissionMethod }] : [],
     hiddenAdmissions: records.length - accepted.length,
     hiddenMajors: objects(university.majors).length,
     hiddenTuition: objects(university.tuition).length - tuition.length,

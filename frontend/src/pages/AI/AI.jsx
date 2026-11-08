@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import { getErrorMessage } from '../../services/api'
-import { districtOptions, loadRecommendationData, majorOptions } from '../../features/recommendations/data'
+import { districtsOf, loadRecommendationData } from '../../features/recommendations/data'
 import { recommend, validatePreferences } from '../../features/recommendations/recommend'
 import { COMBINATIONS, DEFAULT_PRIORITIES, weightsFromPriorities } from '../../features/recommendations/config'
 import RecommendationResults from '../../components/RecommendationResults'
@@ -33,6 +33,7 @@ const roundScore = (n) => Math.round(n * 100) / 100
 function AI() {
   const [preferences, setPreferences] = useState(initialPreferences)
   const [universities, setUniversities] = useState([])
+  const [majorOptions, setMajorOptions] = useState([])
   const [loading, setLoading] = useState(true)
   const [loadError, setLoadError] = useState('')
   const [attempt, setAttempt] = useState(0)
@@ -49,7 +50,7 @@ function AI() {
   useEffect(() => {
     const controller = new AbortController()
     loadRecommendationData(controller.signal)
-      .then((data) => { if (!controller.signal.aborted) setUniversities(data) })
+      .then((data) => { if (!controller.signal.aborted) { setUniversities(data.universities); setMajorOptions(data.majors) } })
       .catch((error) => {
         if (!controller.signal.aborted) setLoadError(error.response || error.request ? getErrorMessage(error) : error.message)
       })
@@ -178,7 +179,7 @@ function AI() {
           <legend><span>4</span> Khu vực</legend>
           {priority('geography')}
           <label htmlFor="district" className="consult-label">Khu vực mong muốn</label>
-          <select id="district" className="input" value={preferences.district} onChange={(e) => change('district', e.target.value)}><option value="any">Không quan trọng</option>{districtOptions.map((district) => <option key={district}>{district}</option>)}</select>
+          <select id="district" className="input" value={preferences.district} onChange={(e) => change('district', e.target.value)}><option value="any">Không quan trọng</option>{districtsOf(universities).map((district) => <option key={district}>{district}</option>)}</select>
           <p className="consult-help">Trường có trụ sở đúng quận bạn chọn được 100 điểm khu vực, khác quận 0 điểm. Tính theo địa chỉ trụ sở; ngành có thể học ở cơ sở khác.</p>
         </fieldset>
 

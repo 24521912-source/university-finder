@@ -30,7 +30,7 @@ npm run dev
 --CHẠY BACKEND (cần backend/.env có MONGODB_URI, xem database/README.md)
 cd backend
 npm install 
-npm run seed   # lần đầu hoặc khi cần nạp lại dữ liệu
+npm run seed   # chỉ khi database trống; database đã có dữ liệu thì xem database/README.md
 npm run dev
 
 
