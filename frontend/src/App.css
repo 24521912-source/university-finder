@@ -32,3 +32,7 @@
 
 /* Trang chưa làm */
 .coming-soon { text-align: center; padding: 64px 16px; background: #fff; border-radius: 16px; box-shadow: var(--shadow); }
+
+/* Nhắc đổi mật khẩu tạm (tài khoản do quản trị viên tạo hộ) */
+.temp-password-banner { background: #fff7e6; color: #8a5300; border-bottom: 1px solid #ffe0a3; padding: 10px 16px; text-align: center; font-size: 14px; }
+.temp-password-banner a { color: #8a5300; font-weight: 700; margin-left: 6px; }

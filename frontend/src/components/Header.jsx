@@ -1,5 +1,6 @@
 import { Link, NavLink, useNavigate } from 'react-router-dom'
 import { useAuth } from '../features/auth/AuthContext'
+import { isAdmin } from '../utils/roles'
 
 const NAV_ITEMS = [
   { to: '/', label: 'Trang chủ', end: true },
@@ -11,7 +12,7 @@ const NAV_ITEMS = [
 function Header() {
   const { user, logout } = useAuth()
   const navigate = useNavigate()
-  const items = user?.role === 'admin' ? [...NAV_ITEMS, { to: '/admin', label: 'Quản trị' }] : NAV_ITEMS
+  const items = isAdmin(user) ? [...NAV_ITEMS, { to: '/admin', label: 'Quản trị' }] : NAV_ITEMS
 
   function handleLogout() {
     logout()

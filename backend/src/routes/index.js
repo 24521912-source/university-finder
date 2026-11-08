@@ -14,6 +14,7 @@ router.use('/auth', require('../modules/auth/auth.routes'))
 router.use('/universities', require('../modules/universities/universities.routes'))
 router.use('/majors', require('../modules/majors/majors.routes'))
 router.use('/favorites', require('../modules/favorites/favorites.routes'))
+router.use('/admin/users', require('../modules/accounts/accounts.routes'))
 router.use('/admin', require('../modules/admin/admin.routes'))
 
 module.exports = router
