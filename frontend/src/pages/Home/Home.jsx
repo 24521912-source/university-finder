@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import universityImg from '../../assets/university.png'
 import UniversityCard from '../../components/UniversityCard'
+import { useFavorites } from '../../features/favorites/useFavorites'
 import api, { getErrorMessage } from '../../services/api'
 import './Home.css'
 
@@ -15,6 +16,7 @@ const aiFeatures = [
 ]
 
 function Home() {
+  const { isFavorite, toggle, countOf, error: favoriteError } = useFavorites()
   const [universities, setUniversities] = useState([])
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState('')
@@ -86,11 +88,11 @@ function Home() {
         ) : error ? (
           <div className="alert-error" role="alert">{error}</div>
         ) : topFavorites.length > 0 ? (
-          <div className="favorites-grid">
+          <>{favoriteError && <div className="alert-error" role="alert">{favoriteError}</div>}<div className="favorites-grid">
             {topFavorites.map((university) => (
-              <UniversityCard key={university._id} university={university} />
+              <UniversityCard key={university._id} university={{ ...university, favoriteCount: countOf(university) }} isFavorite={isFavorite(university)} onToggleFavorite={toggle} />
             ))}
-          </div>
+          </div></>
         ) : (
         <div className="favorites-empty">
           <span className="favorites-empty-icon" aria-hidden="true">

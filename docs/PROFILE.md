@@ -4,7 +4,7 @@
 
 Trang đọc GET /auth/me, cập nhật AuthContext bằng setUser và đối chiếu mảng ID User.favorites với GET /universities. Số lượng phản ánh ID tài khoản, không âm thầm bỏ ID chưa có trong danh sách trường công khai. Card có logo/fallback, tên, loại hình, quận nếu có và liên kết /truong/:slug. Giao diện University Detail nằm trong PR riêng; liên kết đã trỏ đúng route có sẵn trên develop nhưng route đó còn placeholder cho đến khi merge PR Detail.
 
-Sửa họ tên (`PUT /auth/me`) và đổi mật khẩu (`PUT /auth/password`, cần mật khẩu hiện tại) làm ngay trên trang bằng form; lưu xong cập nhật AuthContext và hiện thông báo. Thêm/xóa favorites làm ở PR riêng. Tải lại đọc dữ liệu mới và đồng bộ số lượng/danh sách. Lỗi đọc giữ dữ liệu phiên kèm thông báo rõ; có retry, loading skeleton và empty state. Tab hỗ trợ bàn phím, focus-visible, responsive và reduced motion.
+Sửa họ tên (`PUT /auth/me`) và đổi mật khẩu (`PUT /auth/password`, cần mật khẩu hiện tại) làm ngay trên trang bằng form; lưu xong cập nhật AuthContext và hiện thông báo. Yêu thích: nút ♥ trên thẻ trường (Trang chủ, Danh sách trường), nút trên trang chi tiết và nút "Bỏ yêu thích" trong tab này, cùng dùng hook `features/favorites/useFavorites.js` (`POST`/`DELETE /favorites/:slug`). Chưa đăng nhập bấm ♥ thì chuyển sang trang đăng nhập rồi quay lại. Tải lại đọc dữ liệu mới và đồng bộ số lượng/danh sách. Lỗi đọc giữ dữ liệu phiên kèm thông báo rõ; có retry, loading skeleton và empty state. Tab hỗ trợ bàn phím, focus-visible, responsive và reduced motion.
 
 Dependency mới duy nhất: lucide-react cho icon. Không đổi backend, model, dữ liệu, AI, Header, Footer hoặc Home.
 

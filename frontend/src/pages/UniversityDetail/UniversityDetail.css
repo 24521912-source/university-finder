@@ -159,3 +159,8 @@
 }
 @media (max-width: 360px) { .university-detail .ud-explore { grid-template-columns: minmax(0, 1fr); } }
 @media (prefers-reduced-motion: reduce) { .university-detail .ud-explore-card { transition: none; } }
+
+/* Nút yêu thích trên trang chi tiết */
+.ud-favorite { display: flex; flex-direction: column; align-items: flex-start; gap: 6px; }
+.ud-favorite .btn { white-space: nowrap; }
+.ud-favorite-error { margin: 0; font-size: 13px; color: #b71c1c; }

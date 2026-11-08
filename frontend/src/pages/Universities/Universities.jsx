@@ -2,12 +2,14 @@ import { useEffect, useMemo, useState } from 'react'
 import { useSearchParams } from 'react-router-dom'
 import api, { getErrorMessage } from '../../services/api'
 import UniversityCard from '../../components/UniversityCard'
+import { useFavorites } from '../../features/favorites/useFavorites'
 import { filterUniversities, PAGE_SIZE, paginate } from './universitySearch'
 import './Universities.css'
 
 const TYPE_OPTIONS = [['all', 'Tất cả'], ['public', 'Công lập'], ['private', 'Tư thục']]
 
 function Universities() {
+  const { isFavorite, toggle, countOf, error: favoriteError } = useFavorites()
   const [universities, setUniversities] = useState([])
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState('')
@@ -90,11 +92,11 @@ function Universities() {
               <button type="button" className="btn btn-outline" onClick={() => setParams({}, { replace: true })}>Xóa bộ lọc</button>
             </div>
           ) : (
-            <div className="card-grid">
+            <>{favoriteError && <div className="alert-error" role="alert">{favoriteError}</div>}<div className="card-grid">
               {items.map((university) => (
-                <UniversityCard key={university._id} university={university} />
+                <UniversityCard key={university._id} university={{ ...university, favoriteCount: countOf(university) }} isFavorite={isFavorite(university)} onToggleFavorite={toggle} />
               ))}
-            </div>
+            </div></>
           )}
           {totalPages > 1 && <Pagination current={current} total={totalPages} onChange={goTo} />}
         </>
