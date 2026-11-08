@@ -80,6 +80,9 @@ const User = {
 }
 const file = require.resolve(path.join(__dirname, '../src/models/User'))
 require.cache[file] = { id: file, filename: file, loaded: true, exports: User }
+const logs = []
+const logFile = require.resolve(path.join(__dirname, '../src/models/ChangeLog'))
+require.cache[logFile] = { id: logFile, filename: logFile, loaded: true, exports: { create: async (doc) => { logs.push(doc); return doc } } }
 const service = require('../src/modules/accounts/accounts.service')
 
 test('service: tạo hộ luôn là user + cần đổi mật khẩu; hạ quyền thu luôn canManageAdmins; xóa mềm', async () => {
@@ -102,4 +105,10 @@ test('service: tạo hộ luôn là user + cần đổi mật khẩu; hạ quy�
   assert.equal(removed.deleted, true)
   assert(users.get('u1').deletedAt instanceof Date)
   await assert.rejects(service.setStatus(ADMIN, 'u1', { status: 'active' }), (e) => e.status === 404)
+
+  // Mỗi thay đổi đều có 1 dòng lịch sử, không bao giờ lưu passwordHash.
+  assert.deepEqual(logs.map((l) => l.action), ['create', 'role', 'permissions', 'role', 'status', 'delete'])
+  assert(logs.every((l) => !JSON.stringify(l).includes('passwordHash')))
+  assert.deepEqual(logs[1].changedFields, ['role'])
+  assert.equal(logs[0].actor.role, 'admin')
 })

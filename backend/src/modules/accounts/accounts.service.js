@@ -2,6 +2,7 @@ const bcrypt = require('bcryptjs')
 const User = require('../../models/User')
 const httpError = require('../../utils/httpError')
 const { denyReason } = require('../../utils/roles')
+const { record } = require('../history/history.recorder')
 
 const PAGE_SIZE = 20
 // Không bao giờ trả passwordHash.
@@ -41,6 +42,7 @@ async function create(actor, { fullName, email, password }) {
     fullName: fullName.trim(), email, passwordHash: await bcrypt.hash(password, 10),
     role: 'user', mustChangePassword: true, createdBy: actor._id,
   })
+  await record({ actor, action: 'create', entity: 'user', entityId: user._id, entityLabel: user.email, after: user })
   return toAccount(user)
 }
 
@@ -54,30 +56,31 @@ async function loadTarget(actor, id, action, payload) {
 }
 
 // Cập nhật có điều kiện: tài khoản phải còn đúng vai trò lúc kiểm tra quyền (tránh 2 người sửa cùng lúc).
-async function apply(target, update) {
+async function apply(actor, action, target, update) {
   const user = await User.findOneAndUpdate({ _id: target._id, role: target.role, deletedAt: null }, update,
     { returnDocument: 'after', runValidators: true }).select(FIELDS).lean()
   if (!user) throw httpError(409, 'Tài khoản vừa bị thay đổi bởi người khác, vui lòng tải lại')
+  await record({ actor, action, entity: 'user', entityId: user._id, entityLabel: user.email, before: target, after: user })
   return toAccount(user)
 }
 
 async function setStatus(actor, id, { status }) {
-  return apply(await loadTarget(actor, id, 'status'), { status })
+  return apply(actor, 'status', await loadTarget(actor, id, 'status'), { status })
 }
 
 async function setRole(actor, id, { role }) {
   const target = await loadTarget(actor, id, 'role', { role })
   // Hạ xuống user thì thu luôn quyền quản lý quản trị viên.
-  return apply(target, role === 'user' ? { role, canManageAdmins: false } : { role })
+  return apply(actor, 'role', target, role === 'user' ? { role, canManageAdmins: false } : { role })
 }
 
 async function setPermissions(actor, id, { canManageAdmins }) {
-  return apply(await loadTarget(actor, id, 'permissions'), { canManageAdmins })
+  return apply(actor, 'permissions', await loadTarget(actor, id, 'permissions'), { canManageAdmins })
 }
 
 // Xóa mềm: giữ dữ liệu để khôi phục; tài khoản không đăng nhập được, ẩn khỏi danh sách.
 async function remove(actor, id) {
-  return apply(await loadTarget(actor, id, 'delete'), { deletedAt: new Date() })
+  return apply(actor, 'delete', await loadTarget(actor, id, 'delete'), { deletedAt: new Date() })
 }
 
-module.exports = { list, create, setStatus, setRole, setPermissions, remove, toAccount }
+module.exports = { list, create, setStatus, setRole, setPermissions, remove, toAccount, FIELDS }
