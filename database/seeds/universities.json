@@ -829,6 +829,9 @@
         "name": "Phân hiệu NEXUS Nha Trang",
         "address": "Số 59 Bắc Hòn Ông, Phường Nam Nha Trang, tỉnh Khánh Hòa"
       }
+    ],
+    "sourceDomains": [
+      "ueh.edu.vn"
     ]
   },
   {
@@ -1066,7 +1069,8 @@
         ],
         "score": 85.45,
         "scale": 100,
-        "sourceUrl": "https://hcmut.edu.vn/tintuc/cong-bo-diem-trung-tuyen-phuong-thuc-xet-tuyen-tong-hop-nam-2026"
+        "sourceUrl": "https://hcmut.edu.vn/tintuc/cong-bo-diem-trung-tuyen-phuong-thuc-xet-tuyen-tong-hop-nam-2026",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -1081,7 +1085,8 @@
         ],
         "score": 84.98,
         "scale": 100,
-        "sourceUrl": "https://hcmut.edu.vn/tintuc/cong-bo-diem-trung-tuyen-phuong-thuc-xet-tuyen-tong-hop-nam-2026"
+        "sourceUrl": "https://hcmut.edu.vn/tintuc/cong-bo-diem-trung-tuyen-phuong-thuc-xet-tuyen-tong-hop-nam-2026",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -1096,7 +1101,8 @@
         ],
         "score": 84.29,
         "scale": 100,
-        "sourceUrl": "https://hcmut.edu.vn/tintuc/cong-bo-diem-trung-tuyen-phuong-thuc-xet-tuyen-tong-hop-nam-2026"
+        "sourceUrl": "https://hcmut.edu.vn/tintuc/cong-bo-diem-trung-tuyen-phuong-thuc-xet-tuyen-tong-hop-nam-2026",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -1111,7 +1117,8 @@
         ],
         "score": 84.29,
         "scale": 100,
-        "sourceUrl": "https://hcmut.edu.vn/tintuc/cong-bo-diem-trung-tuyen-phuong-thuc-xet-tuyen-tong-hop-nam-2026"
+        "sourceUrl": "https://hcmut.edu.vn/tintuc/cong-bo-diem-trung-tuyen-phuong-thuc-xet-tuyen-tong-hop-nam-2026",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -1126,7 +1133,8 @@
         ],
         "score": 80.75,
         "scale": 100,
-        "sourceUrl": "https://hcmut.edu.vn/tintuc/cong-bo-diem-trung-tuyen-phuong-thuc-xet-tuyen-tong-hop-nam-2026"
+        "sourceUrl": "https://hcmut.edu.vn/tintuc/cong-bo-diem-trung-tuyen-phuong-thuc-xet-tuyen-tong-hop-nam-2026",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -1141,7 +1149,8 @@
         ],
         "score": 84.36,
         "scale": 100,
-        "sourceUrl": "https://hcmut.edu.vn/tintuc/cong-bo-diem-trung-tuyen-phuong-thuc-xet-tuyen-tong-hop-nam-2026"
+        "sourceUrl": "https://hcmut.edu.vn/tintuc/cong-bo-diem-trung-tuyen-phuong-thuc-xet-tuyen-tong-hop-nam-2026",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -1158,7 +1167,8 @@
         ],
         "score": 79.08,
         "scale": 100,
-        "sourceUrl": "https://hcmut.edu.vn/tintuc/cong-bo-diem-trung-tuyen-phuong-thuc-xet-tuyen-tong-hop-nam-2026"
+        "sourceUrl": "https://hcmut.edu.vn/tintuc/cong-bo-diem-trung-tuyen-phuong-thuc-xet-tuyen-tong-hop-nam-2026",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -1175,7 +1185,8 @@
         ],
         "score": 79.08,
         "scale": 100,
-        "sourceUrl": "https://hcmut.edu.vn/tintuc/cong-bo-diem-trung-tuyen-phuong-thuc-xet-tuyen-tong-hop-nam-2026"
+        "sourceUrl": "https://hcmut.edu.vn/tintuc/cong-bo-diem-trung-tuyen-phuong-thuc-xet-tuyen-tong-hop-nam-2026",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -1192,7 +1203,8 @@
         ],
         "score": 79.08,
         "scale": 100,
-        "sourceUrl": "https://hcmut.edu.vn/tintuc/cong-bo-diem-trung-tuyen-phuong-thuc-xet-tuyen-tong-hop-nam-2026"
+        "sourceUrl": "https://hcmut.edu.vn/tintuc/cong-bo-diem-trung-tuyen-phuong-thuc-xet-tuyen-tong-hop-nam-2026",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -1207,7 +1219,8 @@
         ],
         "score": 68.69,
         "scale": 100,
-        "sourceUrl": "https://hcmut.edu.vn/tintuc/cong-bo-diem-trung-tuyen-phuong-thuc-xet-tuyen-tong-hop-nam-2026"
+        "sourceUrl": "https://hcmut.edu.vn/tintuc/cong-bo-diem-trung-tuyen-phuong-thuc-xet-tuyen-tong-hop-nam-2026",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -1223,7 +1236,8 @@
         ],
         "score": 71.57,
         "scale": 100,
-        "sourceUrl": "https://hcmut.edu.vn/tintuc/cong-bo-diem-trung-tuyen-phuong-thuc-xet-tuyen-tong-hop-nam-2026"
+        "sourceUrl": "https://hcmut.edu.vn/tintuc/cong-bo-diem-trung-tuyen-phuong-thuc-xet-tuyen-tong-hop-nam-2026",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -1242,7 +1256,8 @@
         ],
         "score": 80.17,
         "scale": 100,
-        "sourceUrl": "https://hcmut.edu.vn/tintuc/cong-bo-diem-trung-tuyen-phuong-thuc-xet-tuyen-tong-hop-nam-2026"
+        "sourceUrl": "https://hcmut.edu.vn/tintuc/cong-bo-diem-trung-tuyen-phuong-thuc-xet-tuyen-tong-hop-nam-2026",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -1259,7 +1274,8 @@
         ],
         "score": 69.38,
         "scale": 100,
-        "sourceUrl": "https://hcmut.edu.vn/tintuc/cong-bo-diem-trung-tuyen-phuong-thuc-xet-tuyen-tong-hop-nam-2026"
+        "sourceUrl": "https://hcmut.edu.vn/tintuc/cong-bo-diem-trung-tuyen-phuong-thuc-xet-tuyen-tong-hop-nam-2026",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -1274,7 +1290,8 @@
         ],
         "score": 82.4,
         "scale": 100,
-        "sourceUrl": "https://hcmut.edu.vn/tintuc/cong-bo-diem-trung-tuyen-phuong-thuc-xet-tuyen-tong-hop-nam-2026"
+        "sourceUrl": "https://hcmut.edu.vn/tintuc/cong-bo-diem-trung-tuyen-phuong-thuc-xet-tuyen-tong-hop-nam-2026",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -1293,7 +1310,8 @@
         ],
         "score": 78.88,
         "scale": 100,
-        "sourceUrl": "https://hcmut.edu.vn/tintuc/cong-bo-diem-trung-tuyen-phuong-thuc-xet-tuyen-tong-hop-nam-2026"
+        "sourceUrl": "https://hcmut.edu.vn/tintuc/cong-bo-diem-trung-tuyen-phuong-thuc-xet-tuyen-tong-hop-nam-2026",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -1309,7 +1327,8 @@
         ],
         "score": 82.01,
         "scale": 100,
-        "sourceUrl": "https://hcmut.edu.vn/tintuc/cong-bo-diem-trung-tuyen-phuong-thuc-xet-tuyen-tong-hop-nam-2026"
+        "sourceUrl": "https://hcmut.edu.vn/tintuc/cong-bo-diem-trung-tuyen-phuong-thuc-xet-tuyen-tong-hop-nam-2026",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -1324,7 +1343,8 @@
         ],
         "score": 79.62,
         "scale": 100,
-        "sourceUrl": "https://hcmut.edu.vn/tintuc/cong-bo-diem-trung-tuyen-phuong-thuc-xet-tuyen-tong-hop-nam-2026"
+        "sourceUrl": "https://hcmut.edu.vn/tintuc/cong-bo-diem-trung-tuyen-phuong-thuc-xet-tuyen-tong-hop-nam-2026",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -1339,7 +1359,8 @@
         ],
         "score": 79.91,
         "scale": 100,
-        "sourceUrl": "https://hcmut.edu.vn/tintuc/cong-bo-diem-trung-tuyen-phuong-thuc-xet-tuyen-tong-hop-nam-2026"
+        "sourceUrl": "https://hcmut.edu.vn/tintuc/cong-bo-diem-trung-tuyen-phuong-thuc-xet-tuyen-tong-hop-nam-2026",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -1354,7 +1375,8 @@
         ],
         "score": 75.31,
         "scale": 100,
-        "sourceUrl": "https://hcmut.edu.vn/tintuc/cong-bo-diem-trung-tuyen-phuong-thuc-xet-tuyen-tong-hop-nam-2026"
+        "sourceUrl": "https://hcmut.edu.vn/tintuc/cong-bo-diem-trung-tuyen-phuong-thuc-xet-tuyen-tong-hop-nam-2026",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -1369,7 +1391,8 @@
         ],
         "score": 79.3,
         "scale": 100,
-        "sourceUrl": "https://hcmut.edu.vn/tintuc/cong-bo-diem-trung-tuyen-phuong-thuc-xet-tuyen-tong-hop-nam-2026"
+        "sourceUrl": "https://hcmut.edu.vn/tintuc/cong-bo-diem-trung-tuyen-phuong-thuc-xet-tuyen-tong-hop-nam-2026",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -1414,7 +1437,8 @@
         ],
         "score": 84.97,
         "scale": 100,
-        "sourceUrl": "https://hcmut.edu.vn/tintuc/cong-bo-diem-trung-tuyen-phuong-thuc-xet-tuyen-tong-hop-nam-2026"
+        "sourceUrl": "https://hcmut.edu.vn/tintuc/cong-bo-diem-trung-tuyen-phuong-thuc-xet-tuyen-tong-hop-nam-2026",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -1429,7 +1453,8 @@
         ],
         "score": 64.37,
         "scale": 100,
-        "sourceUrl": "https://hcmut.edu.vn/tintuc/cong-bo-diem-trung-tuyen-phuong-thuc-xet-tuyen-tong-hop-nam-2026"
+        "sourceUrl": "https://hcmut.edu.vn/tintuc/cong-bo-diem-trung-tuyen-phuong-thuc-xet-tuyen-tong-hop-nam-2026",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -1448,7 +1473,8 @@
         ],
         "score": 69.35,
         "scale": 100,
-        "sourceUrl": "https://hcmut.edu.vn/tintuc/cong-bo-diem-trung-tuyen-phuong-thuc-xet-tuyen-tong-hop-nam-2026"
+        "sourceUrl": "https://hcmut.edu.vn/tintuc/cong-bo-diem-trung-tuyen-phuong-thuc-xet-tuyen-tong-hop-nam-2026",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -1463,7 +1489,8 @@
         ],
         "score": 73.82,
         "scale": 100,
-        "sourceUrl": "https://hcmut.edu.vn/tintuc/cong-bo-diem-trung-tuyen-phuong-thuc-xet-tuyen-tong-hop-nam-2026"
+        "sourceUrl": "https://hcmut.edu.vn/tintuc/cong-bo-diem-trung-tuyen-phuong-thuc-xet-tuyen-tong-hop-nam-2026",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -1478,7 +1505,8 @@
         ],
         "score": 65.6,
         "scale": 100,
-        "sourceUrl": "https://hcmut.edu.vn/tintuc/cong-bo-diem-trung-tuyen-phuong-thuc-xet-tuyen-tong-hop-nam-2026"
+        "sourceUrl": "https://hcmut.edu.vn/tintuc/cong-bo-diem-trung-tuyen-phuong-thuc-xet-tuyen-tong-hop-nam-2026",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -1497,7 +1525,8 @@
         ],
         "score": 73.59,
         "scale": 100,
-        "sourceUrl": "https://hcmut.edu.vn/tintuc/cong-bo-diem-trung-tuyen-phuong-thuc-xet-tuyen-tong-hop-nam-2026"
+        "sourceUrl": "https://hcmut.edu.vn/tintuc/cong-bo-diem-trung-tuyen-phuong-thuc-xet-tuyen-tong-hop-nam-2026",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -1529,7 +1558,8 @@
         ],
         "score": 80.61,
         "scale": 100,
-        "sourceUrl": "https://hcmut.edu.vn/tintuc/cong-bo-diem-trung-tuyen-phuong-thuc-xet-tuyen-tong-hop-nam-2026"
+        "sourceUrl": "https://hcmut.edu.vn/tintuc/cong-bo-diem-trung-tuyen-phuong-thuc-xet-tuyen-tong-hop-nam-2026",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -4319,6 +4349,9 @@
         "name": "Phân hiệu Quảng Ngãi",
         "address": "Số 938 đường Quang Trung, phường Cẩm Thành, tỉnh Quảng Ngãi"
       }
+    ],
+    "sourceDomains": [
+      "iuh.edu.vn"
     ]
   },
   {
@@ -4491,7 +4524,9 @@
         ],
         "score": 24.66,
         "scale": 30,
-        "sourceUrl": "https://www.uit.edu.vn/bai-viet/truong-dai-hoc-cong-nghe-thong-tin-cong-bo-diem-chuan-trung-tuyen-nam-2026"
+        "sourceUrl": "https://www.uit.edu.vn/bai-viet/truong-dai-hoc-cong-nghe-thong-tin-cong-bo-diem-chuan-trung-tuyen-nam-2026",
+        "verifiedForAI": true,
+        "aiNote": "Điểm xét tuyển tổng hợp (THPT + ĐGNL + học bạ) trường quy đổi về thang 30; so gần đúng với tổng 3 môn."
       },
       {
         "year": 2026,
@@ -4507,7 +4542,9 @@
         ],
         "score": 23.7,
         "scale": 30,
-        "sourceUrl": "https://www.uit.edu.vn/bai-viet/truong-dai-hoc-cong-nghe-thong-tin-cong-bo-diem-chuan-trung-tuyen-nam-2026"
+        "sourceUrl": "https://www.uit.edu.vn/bai-viet/truong-dai-hoc-cong-nghe-thong-tin-cong-bo-diem-chuan-trung-tuyen-nam-2026",
+        "verifiedForAI": true,
+        "aiNote": "Điểm xét tuyển tổng hợp (THPT + ĐGNL + học bạ) trường quy đổi về thang 30; so gần đúng với tổng 3 môn."
       },
       {
         "year": 2026,
@@ -4524,7 +4561,9 @@
         ],
         "score": 27.51,
         "scale": 30,
-        "sourceUrl": "https://www.uit.edu.vn/bai-viet/truong-dai-hoc-cong-nghe-thong-tin-cong-bo-diem-chuan-trung-tuyen-nam-2026"
+        "sourceUrl": "https://www.uit.edu.vn/bai-viet/truong-dai-hoc-cong-nghe-thong-tin-cong-bo-diem-chuan-trung-tuyen-nam-2026",
+        "verifiedForAI": true,
+        "aiNote": "Điểm xét tuyển tổng hợp (THPT + ĐGNL + học bạ) trường quy đổi về thang 30; so gần đúng với tổng 3 môn."
       },
       {
         "year": 2026,
@@ -4558,7 +4597,9 @@
         ],
         "score": 26.55,
         "scale": 30,
-        "sourceUrl": "https://www.uit.edu.vn/bai-viet/truong-dai-hoc-cong-nghe-thong-tin-cong-bo-diem-chuan-trung-tuyen-nam-2026"
+        "sourceUrl": "https://www.uit.edu.vn/bai-viet/truong-dai-hoc-cong-nghe-thong-tin-cong-bo-diem-chuan-trung-tuyen-nam-2026",
+        "verifiedForAI": true,
+        "aiNote": "Điểm xét tuyển tổng hợp (THPT + ĐGNL + học bạ) trường quy đổi về thang 30; so gần đúng với tổng 3 môn."
       },
       {
         "year": 2026,
@@ -4592,7 +4633,9 @@
         ],
         "score": 23.49,
         "scale": 30,
-        "sourceUrl": "https://www.uit.edu.vn/bai-viet/truong-dai-hoc-cong-nghe-thong-tin-cong-bo-diem-chuan-trung-tuyen-nam-2026"
+        "sourceUrl": "https://www.uit.edu.vn/bai-viet/truong-dai-hoc-cong-nghe-thong-tin-cong-bo-diem-chuan-trung-tuyen-nam-2026",
+        "verifiedForAI": true,
+        "aiNote": "Điểm xét tuyển tổng hợp (THPT + ĐGNL + học bạ) trường quy đổi về thang 30; so gần đúng với tổng 3 môn."
       },
       {
         "year": 2026,
@@ -4608,7 +4651,9 @@
         ],
         "score": 24.3,
         "scale": 30,
-        "sourceUrl": "https://www.uit.edu.vn/bai-viet/truong-dai-hoc-cong-nghe-thong-tin-cong-bo-diem-chuan-trung-tuyen-nam-2026"
+        "sourceUrl": "https://www.uit.edu.vn/bai-viet/truong-dai-hoc-cong-nghe-thong-tin-cong-bo-diem-chuan-trung-tuyen-nam-2026",
+        "verifiedForAI": true,
+        "aiNote": "Điểm xét tuyển tổng hợp (THPT + ĐGNL + học bạ) trường quy đổi về thang 30; so gần đúng với tổng 3 môn."
       },
       {
         "year": 2026,
@@ -4642,7 +4687,9 @@
         ],
         "score": 24.24,
         "scale": 30,
-        "sourceUrl": "https://www.uit.edu.vn/bai-viet/truong-dai-hoc-cong-nghe-thong-tin-cong-bo-diem-chuan-trung-tuyen-nam-2026"
+        "sourceUrl": "https://www.uit.edu.vn/bai-viet/truong-dai-hoc-cong-nghe-thong-tin-cong-bo-diem-chuan-trung-tuyen-nam-2026",
+        "verifiedForAI": true,
+        "aiNote": "Điểm xét tuyển tổng hợp (THPT + ĐGNL + học bạ) trường quy đổi về thang 30; so gần đúng với tổng 3 môn."
       },
       {
         "year": 2026,
@@ -4672,7 +4719,9 @@
         ],
         "score": 25.2,
         "scale": 30,
-        "sourceUrl": "https://www.uit.edu.vn/bai-viet/truong-dai-hoc-cong-nghe-thong-tin-cong-bo-diem-chuan-trung-tuyen-nam-2026"
+        "sourceUrl": "https://www.uit.edu.vn/bai-viet/truong-dai-hoc-cong-nghe-thong-tin-cong-bo-diem-chuan-trung-tuyen-nam-2026",
+        "verifiedForAI": true,
+        "aiNote": "Điểm xét tuyển tổng hợp (THPT + ĐGNL + học bạ) trường quy đổi về thang 30; so gần đúng với tổng 3 môn."
       },
       {
         "year": 2026,
@@ -4688,7 +4737,9 @@
         ],
         "score": 30,
         "scale": 30,
-        "sourceUrl": "https://www.uit.edu.vn/bai-viet/truong-dai-hoc-cong-nghe-thong-tin-cong-bo-diem-chuan-trung-tuyen-nam-2026"
+        "sourceUrl": "https://www.uit.edu.vn/bai-viet/truong-dai-hoc-cong-nghe-thong-tin-cong-bo-diem-chuan-trung-tuyen-nam-2026",
+        "verifiedForAI": true,
+        "aiNote": "Điểm xét tuyển tổng hợp (THPT + ĐGNL + học bạ) trường quy đổi về thang 30; so gần đúng với tổng 3 môn."
       },
       {
         "year": 2026,
@@ -4704,7 +4755,9 @@
         ],
         "score": 25.26,
         "scale": 30,
-        "sourceUrl": "https://www.uit.edu.vn/bai-viet/truong-dai-hoc-cong-nghe-thong-tin-cong-bo-diem-chuan-trung-tuyen-nam-2026"
+        "sourceUrl": "https://www.uit.edu.vn/bai-viet/truong-dai-hoc-cong-nghe-thong-tin-cong-bo-diem-chuan-trung-tuyen-nam-2026",
+        "verifiedForAI": true,
+        "aiNote": "Điểm xét tuyển tổng hợp (THPT + ĐGNL + học bạ) trường quy đổi về thang 30; so gần đúng với tổng 3 môn."
       },
       {
         "year": 2026,
@@ -4738,7 +4791,9 @@
         ],
         "score": 26.61,
         "scale": 30,
-        "sourceUrl": "https://www.uit.edu.vn/bai-viet/truong-dai-hoc-cong-nghe-thong-tin-cong-bo-diem-chuan-trung-tuyen-nam-2026"
+        "sourceUrl": "https://www.uit.edu.vn/bai-viet/truong-dai-hoc-cong-nghe-thong-tin-cong-bo-diem-chuan-trung-tuyen-nam-2026",
+        "verifiedForAI": true,
+        "aiNote": "Điểm xét tuyển tổng hợp (THPT + ĐGNL + học bạ) trường quy đổi về thang 30; so gần đúng với tổng 3 môn."
       },
       {
         "year": 2026,
@@ -4769,7 +4824,9 @@
         ],
         "score": 27.15,
         "scale": 30,
-        "sourceUrl": "https://www.uit.edu.vn/bai-viet/truong-dai-hoc-cong-nghe-thong-tin-cong-bo-diem-chuan-trung-tuyen-nam-2026"
+        "sourceUrl": "https://www.uit.edu.vn/bai-viet/truong-dai-hoc-cong-nghe-thong-tin-cong-bo-diem-chuan-trung-tuyen-nam-2026",
+        "verifiedForAI": true,
+        "aiNote": "Điểm xét tuyển tổng hợp (THPT + ĐGNL + học bạ) trường quy đổi về thang 30; so gần đúng với tổng 3 môn."
       },
       {
         "year": 2026,
@@ -4789,7 +4846,10 @@
     ],
     "foundedYear": 2006,
     "description": "Trường Đại học Công nghệ Thông tin là trường đại học công lập thành viên của ĐHQG-HCM, đào tạo về công nghệ thông tin và truyền thông. Trường được thành lập theo Quyết định số 134/2006/QĐ-TTg ngày 08/06/2006 của Thủ tướng Chính phủ.",
-    "campuses": []
+    "campuses": [],
+    "sourceDomains": [
+      "uit.edu.vn"
+    ]
   },
   {
     "slug": "cong-thuong-tphcm",
@@ -5462,7 +5522,9 @@
         ],
         "score": 23.89,
         "scale": 30,
-        "sourceUrl": "https://tuyensinh.hcmus.edu.vn/2026-diem-chuan/"
+        "sourceUrl": "https://tuyensinh.hcmus.edu.vn/2026-diem-chuan/",
+        "verifiedForAI": true,
+        "aiNote": "Điểm xét tuyển tổng hợp thang 30 (80% THPT + 20% học bạ, đã gồm điểm cộng/ưu tiên); so gần đúng với tổng 3 môn."
       },
       {
         "year": 2026,
@@ -5478,7 +5540,9 @@
         ],
         "score": 23.5,
         "scale": 30,
-        "sourceUrl": "https://tuyensinh.hcmus.edu.vn/2026-diem-chuan/"
+        "sourceUrl": "https://tuyensinh.hcmus.edu.vn/2026-diem-chuan/",
+        "verifiedForAI": true,
+        "aiNote": "Điểm xét tuyển tổng hợp thang 30 (80% THPT + 20% học bạ, đã gồm điểm cộng/ưu tiên); so gần đúng với tổng 3 môn."
       },
       {
         "year": 2026,
@@ -5511,7 +5575,9 @@
         ],
         "score": 24.75,
         "scale": 30,
-        "sourceUrl": "https://tuyensinh.hcmus.edu.vn/2026-diem-chuan/"
+        "sourceUrl": "https://tuyensinh.hcmus.edu.vn/2026-diem-chuan/",
+        "verifiedForAI": true,
+        "aiNote": "Điểm xét tuyển tổng hợp thang 30 (80% THPT + 20% học bạ, đã gồm điểm cộng/ưu tiên); so gần đúng với tổng 3 môn."
       },
       {
         "year": 2026,
@@ -5612,7 +5678,9 @@
         ],
         "score": 26.15,
         "scale": 30,
-        "sourceUrl": "https://tuyensinh.hcmus.edu.vn/2026-diem-chuan/"
+        "sourceUrl": "https://tuyensinh.hcmus.edu.vn/2026-diem-chuan/",
+        "verifiedForAI": true,
+        "aiNote": "Điểm xét tuyển tổng hợp thang 30 (80% THPT + 20% học bạ, đã gồm điểm cộng/ưu tiên); so gần đúng với tổng 3 môn."
       },
       {
         "year": 2026,
@@ -5645,7 +5713,9 @@
         ],
         "score": 25.3,
         "scale": 30,
-        "sourceUrl": "https://tuyensinh.hcmus.edu.vn/2026-diem-chuan/"
+        "sourceUrl": "https://tuyensinh.hcmus.edu.vn/2026-diem-chuan/",
+        "verifiedForAI": true,
+        "aiNote": "Điểm xét tuyển tổng hợp thang 30 (80% THPT + 20% học bạ, đã gồm điểm cộng/ưu tiên); so gần đúng với tổng 3 môn."
       },
       {
         "year": 2026,
@@ -5678,7 +5748,9 @@
         ],
         "score": 27.34,
         "scale": 30,
-        "sourceUrl": "https://tuyensinh.hcmus.edu.vn/2026-diem-chuan/"
+        "sourceUrl": "https://tuyensinh.hcmus.edu.vn/2026-diem-chuan/",
+        "verifiedForAI": true,
+        "aiNote": "Điểm xét tuyển tổng hợp thang 30 (80% THPT + 20% học bạ, đã gồm điểm cộng/ưu tiên); so gần đúng với tổng 3 môn."
       },
       {
         "year": 2026,
@@ -5728,7 +5800,9 @@
         ],
         "score": 23.92,
         "scale": 30,
-        "sourceUrl": "https://tuyensinh.hcmus.edu.vn/2026-diem-chuan/"
+        "sourceUrl": "https://tuyensinh.hcmus.edu.vn/2026-diem-chuan/",
+        "verifiedForAI": true,
+        "aiNote": "Điểm xét tuyển tổng hợp thang 30 (80% THPT + 20% học bạ, đã gồm điểm cộng/ưu tiên); so gần đúng với tổng 3 môn."
       },
       {
         "year": 2026,
@@ -5761,7 +5835,9 @@
         ],
         "score": 23.1,
         "scale": 30,
-        "sourceUrl": "https://tuyensinh.hcmus.edu.vn/2026-diem-chuan/"
+        "sourceUrl": "https://tuyensinh.hcmus.edu.vn/2026-diem-chuan/",
+        "verifiedForAI": true,
+        "aiNote": "Điểm xét tuyển tổng hợp thang 30 (80% THPT + 20% học bạ, đã gồm điểm cộng/ưu tiên); so gần đúng với tổng 3 môn."
       },
       {
         "year": 2026,
@@ -5947,7 +6023,9 @@
         ],
         "score": 28.68,
         "scale": 30,
-        "sourceUrl": "https://tuyensinh.hcmus.edu.vn/2026-diem-chuan/"
+        "sourceUrl": "https://tuyensinh.hcmus.edu.vn/2026-diem-chuan/",
+        "verifiedForAI": true,
+        "aiNote": "Điểm xét tuyển tổng hợp thang 30 (80% THPT + 20% học bạ, đã gồm điểm cộng/ưu tiên); so gần đúng với tổng 3 môn."
       },
       {
         "year": 2026,
@@ -6065,7 +6143,9 @@
         ],
         "score": 25.58,
         "scale": 30,
-        "sourceUrl": "https://tuyensinh.hcmus.edu.vn/2026-diem-chuan/"
+        "sourceUrl": "https://tuyensinh.hcmus.edu.vn/2026-diem-chuan/",
+        "verifiedForAI": true,
+        "aiNote": "Điểm xét tuyển tổng hợp thang 30 (80% THPT + 20% học bạ, đã gồm điểm cộng/ưu tiên); so gần đúng với tổng 3 môn."
       },
       {
         "year": 2026,
@@ -6098,7 +6178,9 @@
         ],
         "score": 23.1,
         "scale": 30,
-        "sourceUrl": "https://tuyensinh.hcmus.edu.vn/2026-diem-chuan/"
+        "sourceUrl": "https://tuyensinh.hcmus.edu.vn/2026-diem-chuan/",
+        "verifiedForAI": true,
+        "aiNote": "Điểm xét tuyển tổng hợp thang 30 (80% THPT + 20% học bạ, đã gồm điểm cộng/ưu tiên); so gần đúng với tổng 3 môn."
       },
       {
         "year": 2026,
@@ -6114,7 +6196,9 @@
         ],
         "score": 26.55,
         "scale": 30,
-        "sourceUrl": "https://tuyensinh.hcmus.edu.vn/2026-diem-chuan/"
+        "sourceUrl": "https://tuyensinh.hcmus.edu.vn/2026-diem-chuan/",
+        "verifiedForAI": true,
+        "aiNote": "Điểm xét tuyển tổng hợp thang 30 (80% THPT + 20% học bạ, đã gồm điểm cộng/ưu tiên); so gần đúng với tổng 3 môn."
       },
       {
         "year": 2026,
@@ -6147,7 +6231,9 @@
         ],
         "score": 27.93,
         "scale": 30,
-        "sourceUrl": "https://tuyensinh.hcmus.edu.vn/2026-diem-chuan/"
+        "sourceUrl": "https://tuyensinh.hcmus.edu.vn/2026-diem-chuan/",
+        "verifiedForAI": true,
+        "aiNote": "Điểm xét tuyển tổng hợp thang 30 (80% THPT + 20% học bạ, đã gồm điểm cộng/ưu tiên); so gần đúng với tổng 3 môn."
       },
       {
         "year": 2026,
@@ -6163,7 +6249,9 @@
         ],
         "score": 26.21,
         "scale": 30,
-        "sourceUrl": "https://tuyensinh.hcmus.edu.vn/2026-diem-chuan/"
+        "sourceUrl": "https://tuyensinh.hcmus.edu.vn/2026-diem-chuan/",
+        "verifiedForAI": true,
+        "aiNote": "Điểm xét tuyển tổng hợp thang 30 (80% THPT + 20% học bạ, đã gồm điểm cộng/ưu tiên); so gần đúng với tổng 3 môn."
       },
       {
         "year": 2026,
@@ -6179,7 +6267,9 @@
         ],
         "score": 26,
         "scale": 30,
-        "sourceUrl": "https://tuyensinh.hcmus.edu.vn/2026-diem-chuan/"
+        "sourceUrl": "https://tuyensinh.hcmus.edu.vn/2026-diem-chuan/",
+        "verifiedForAI": true,
+        "aiNote": "Điểm xét tuyển tổng hợp thang 30 (80% THPT + 20% học bạ, đã gồm điểm cộng/ưu tiên); so gần đúng với tổng 3 môn."
       },
       {
         "year": 2026,
@@ -6212,7 +6302,9 @@
         ],
         "score": 23.85,
         "scale": 30,
-        "sourceUrl": "https://tuyensinh.hcmus.edu.vn/2026-diem-chuan/"
+        "sourceUrl": "https://tuyensinh.hcmus.edu.vn/2026-diem-chuan/",
+        "verifiedForAI": true,
+        "aiNote": "Điểm xét tuyển tổng hợp thang 30 (80% THPT + 20% học bạ, đã gồm điểm cộng/ưu tiên); so gần đúng với tổng 3 môn."
       },
       {
         "year": 2026,
@@ -6228,7 +6320,9 @@
         ],
         "score": 22.3,
         "scale": 30,
-        "sourceUrl": "https://tuyensinh.hcmus.edu.vn/2026-diem-chuan/"
+        "sourceUrl": "https://tuyensinh.hcmus.edu.vn/2026-diem-chuan/",
+        "verifiedForAI": true,
+        "aiNote": "Điểm xét tuyển tổng hợp thang 30 (80% THPT + 20% học bạ, đã gồm điểm cộng/ưu tiên); so gần đúng với tổng 3 môn."
       }
     ],
     "foundedYear": 1996,
@@ -6242,6 +6336,9 @@
         "name": "Cơ sở 2",
         "address": "Khu đô thị Đại học Quốc gia Thành phố Hồ Chí Minh, Phường Đông Hoà, Thành phố Hồ Chí Minh"
       }
+    ],
+    "sourceDomains": [
+      "hcmus.edu.vn"
     ]
   },
   {
@@ -6441,7 +6538,8 @@
         ],
         "score": 76.2,
         "scale": 100,
-        "sourceUrl": "https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-khoa-hoc-xa-hoi-va-nhan-van-dhqg-tphcm-QSX.html"
+        "sourceUrl": "https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-khoa-hoc-xa-hoi-va-nhan-van-dhqg-tphcm-QSX.html",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -6456,7 +6554,8 @@
         ],
         "score": 78.5,
         "scale": 100,
-        "sourceUrl": "https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-khoa-hoc-xa-hoi-va-nhan-van-dhqg-tphcm-QSX.html"
+        "sourceUrl": "https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-khoa-hoc-xa-hoi-va-nhan-van-dhqg-tphcm-QSX.html",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -6471,7 +6570,8 @@
         ],
         "score": 79,
         "scale": 100,
-        "sourceUrl": "https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-khoa-hoc-xa-hoi-va-nhan-van-dhqg-tphcm-QSX.html"
+        "sourceUrl": "https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-khoa-hoc-xa-hoi-va-nhan-van-dhqg-tphcm-QSX.html",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -6485,7 +6585,8 @@
         ],
         "score": 83.5,
         "scale": 100,
-        "sourceUrl": "https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-khoa-hoc-xa-hoi-va-nhan-van-dhqg-tphcm-QSX.html"
+        "sourceUrl": "https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-khoa-hoc-xa-hoi-va-nhan-van-dhqg-tphcm-QSX.html",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -6500,7 +6601,8 @@
         ],
         "score": 73.5,
         "scale": 100,
-        "sourceUrl": "https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-khoa-hoc-xa-hoi-va-nhan-van-dhqg-tphcm-QSX.html"
+        "sourceUrl": "https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-khoa-hoc-xa-hoi-va-nhan-van-dhqg-tphcm-QSX.html",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -6512,7 +6614,8 @@
         ],
         "score": 83.1,
         "scale": 100,
-        "sourceUrl": "https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-khoa-hoc-xa-hoi-va-nhan-van-dhqg-tphcm-QSX.html"
+        "sourceUrl": "https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-khoa-hoc-xa-hoi-va-nhan-van-dhqg-tphcm-QSX.html",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -6526,7 +6629,8 @@
         ],
         "score": 77,
         "scale": 100,
-        "sourceUrl": "https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-khoa-hoc-xa-hoi-va-nhan-van-dhqg-tphcm-QSX.html"
+        "sourceUrl": "https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-khoa-hoc-xa-hoi-va-nhan-van-dhqg-tphcm-QSX.html",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -6540,7 +6644,8 @@
         ],
         "score": 73.7,
         "scale": 100,
-        "sourceUrl": "https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-khoa-hoc-xa-hoi-va-nhan-van-dhqg-tphcm-QSX.html"
+        "sourceUrl": "https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-khoa-hoc-xa-hoi-va-nhan-van-dhqg-tphcm-QSX.html",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -6554,7 +6659,8 @@
         ],
         "score": 81.5,
         "scale": 100,
-        "sourceUrl": "https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-khoa-hoc-xa-hoi-va-nhan-van-dhqg-tphcm-QSX.html"
+        "sourceUrl": "https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-khoa-hoc-xa-hoi-va-nhan-van-dhqg-tphcm-QSX.html",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -6568,7 +6674,8 @@
         ],
         "score": 78.7,
         "scale": 100,
-        "sourceUrl": "https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-khoa-hoc-xa-hoi-va-nhan-van-dhqg-tphcm-QSX.html"
+        "sourceUrl": "https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-khoa-hoc-xa-hoi-va-nhan-van-dhqg-tphcm-QSX.html",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -6583,7 +6690,8 @@
         ],
         "score": 75.1,
         "scale": 100,
-        "sourceUrl": "https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-khoa-hoc-xa-hoi-va-nhan-van-dhqg-tphcm-QSX.html"
+        "sourceUrl": "https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-khoa-hoc-xa-hoi-va-nhan-van-dhqg-tphcm-QSX.html",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -6598,7 +6706,8 @@
         ],
         "score": 71.6,
         "scale": 100,
-        "sourceUrl": "https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-khoa-hoc-xa-hoi-va-nhan-van-dhqg-tphcm-QSX.html"
+        "sourceUrl": "https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-khoa-hoc-xa-hoi-va-nhan-van-dhqg-tphcm-QSX.html",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -6613,7 +6722,8 @@
         ],
         "score": 76.5,
         "scale": 100,
-        "sourceUrl": "https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-khoa-hoc-xa-hoi-va-nhan-van-dhqg-tphcm-QSX.html"
+        "sourceUrl": "https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-khoa-hoc-xa-hoi-va-nhan-van-dhqg-tphcm-QSX.html",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -6627,7 +6737,8 @@
         ],
         "score": 70,
         "scale": 100,
-        "sourceUrl": "https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-khoa-hoc-xa-hoi-va-nhan-van-dhqg-tphcm-QSX.html"
+        "sourceUrl": "https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-khoa-hoc-xa-hoi-va-nhan-van-dhqg-tphcm-QSX.html",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -6642,7 +6753,8 @@
         ],
         "score": 80.3,
         "scale": 100,
-        "sourceUrl": "https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-khoa-hoc-xa-hoi-va-nhan-van-dhqg-tphcm-QSX.html"
+        "sourceUrl": "https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-khoa-hoc-xa-hoi-va-nhan-van-dhqg-tphcm-QSX.html",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -6656,7 +6768,8 @@
         ],
         "score": 74,
         "scale": 100,
-        "sourceUrl": "https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-khoa-hoc-xa-hoi-va-nhan-van-dhqg-tphcm-QSX.html"
+        "sourceUrl": "https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-khoa-hoc-xa-hoi-va-nhan-van-dhqg-tphcm-QSX.html",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -6670,7 +6783,8 @@
         ],
         "score": 81,
         "scale": 100,
-        "sourceUrl": "https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-khoa-hoc-xa-hoi-va-nhan-van-dhqg-tphcm-QSX.html"
+        "sourceUrl": "https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-khoa-hoc-xa-hoi-va-nhan-van-dhqg-tphcm-QSX.html",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -6685,7 +6799,8 @@
         ],
         "score": 80.9,
         "scale": 100,
-        "sourceUrl": "https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-khoa-hoc-xa-hoi-va-nhan-van-dhqg-tphcm-QSX.html"
+        "sourceUrl": "https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-khoa-hoc-xa-hoi-va-nhan-van-dhqg-tphcm-QSX.html",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -6698,7 +6813,8 @@
         ],
         "score": 82.6,
         "scale": 100,
-        "sourceUrl": "https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-khoa-hoc-xa-hoi-va-nhan-van-dhqg-tphcm-QSX.html"
+        "sourceUrl": "https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-khoa-hoc-xa-hoi-va-nhan-van-dhqg-tphcm-QSX.html",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -6713,7 +6829,8 @@
         ],
         "score": 77.9,
         "scale": 100,
-        "sourceUrl": "https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-khoa-hoc-xa-hoi-va-nhan-van-dhqg-tphcm-QSX.html"
+        "sourceUrl": "https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-khoa-hoc-xa-hoi-va-nhan-van-dhqg-tphcm-QSX.html",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -6728,7 +6845,8 @@
         ],
         "score": 75.3,
         "scale": 100,
-        "sourceUrl": "https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-khoa-hoc-xa-hoi-va-nhan-van-dhqg-tphcm-QSX.html"
+        "sourceUrl": "https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-khoa-hoc-xa-hoi-va-nhan-van-dhqg-tphcm-QSX.html",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -6743,7 +6861,8 @@
         ],
         "score": 87,
         "scale": 100,
-        "sourceUrl": "https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-khoa-hoc-xa-hoi-va-nhan-van-dhqg-tphcm-QSX.html"
+        "sourceUrl": "https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-khoa-hoc-xa-hoi-va-nhan-van-dhqg-tphcm-QSX.html",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -6758,7 +6877,8 @@
         ],
         "score": 79.5,
         "scale": 100,
-        "sourceUrl": "https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-khoa-hoc-xa-hoi-va-nhan-van-dhqg-tphcm-QSX.html"
+        "sourceUrl": "https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-khoa-hoc-xa-hoi-va-nhan-van-dhqg-tphcm-QSX.html",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -6773,7 +6893,8 @@
         ],
         "score": 78.5,
         "scale": 100,
-        "sourceUrl": "https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-khoa-hoc-xa-hoi-va-nhan-van-dhqg-tphcm-QSX.html"
+        "sourceUrl": "https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-khoa-hoc-xa-hoi-va-nhan-van-dhqg-tphcm-QSX.html",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -6788,7 +6909,8 @@
         ],
         "score": 79.5,
         "scale": 100,
-        "sourceUrl": "https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-khoa-hoc-xa-hoi-va-nhan-van-dhqg-tphcm-QSX.html"
+        "sourceUrl": "https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-khoa-hoc-xa-hoi-va-nhan-van-dhqg-tphcm-QSX.html",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -6803,7 +6925,8 @@
         ],
         "score": 74.7,
         "scale": 100,
-        "sourceUrl": "https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-khoa-hoc-xa-hoi-va-nhan-van-dhqg-tphcm-QSX.html"
+        "sourceUrl": "https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-khoa-hoc-xa-hoi-va-nhan-van-dhqg-tphcm-QSX.html",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -6818,7 +6941,8 @@
         ],
         "score": 76.3,
         "scale": 100,
-        "sourceUrl": "https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-khoa-hoc-xa-hoi-va-nhan-van-dhqg-tphcm-QSX.html"
+        "sourceUrl": "https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-khoa-hoc-xa-hoi-va-nhan-van-dhqg-tphcm-QSX.html",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -6833,7 +6957,8 @@
         ],
         "score": 77,
         "scale": 100,
-        "sourceUrl": "https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-khoa-hoc-xa-hoi-va-nhan-van-dhqg-tphcm-QSX.html"
+        "sourceUrl": "https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-khoa-hoc-xa-hoi-va-nhan-van-dhqg-tphcm-QSX.html",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -6848,7 +6973,8 @@
         ],
         "score": 76.6,
         "scale": 100,
-        "sourceUrl": "https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-khoa-hoc-xa-hoi-va-nhan-van-dhqg-tphcm-QSX.html"
+        "sourceUrl": "https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-khoa-hoc-xa-hoi-va-nhan-van-dhqg-tphcm-QSX.html",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -6863,7 +6989,8 @@
         ],
         "score": 76.9,
         "scale": 100,
-        "sourceUrl": "https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-khoa-hoc-xa-hoi-va-nhan-van-dhqg-tphcm-QSX.html"
+        "sourceUrl": "https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-khoa-hoc-xa-hoi-va-nhan-van-dhqg-tphcm-QSX.html",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -6877,7 +7004,8 @@
         ],
         "score": 84.9,
         "scale": 100,
-        "sourceUrl": "https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-khoa-hoc-xa-hoi-va-nhan-van-dhqg-tphcm-QSX.html"
+        "sourceUrl": "https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-khoa-hoc-xa-hoi-va-nhan-van-dhqg-tphcm-QSX.html",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -6891,7 +7019,8 @@
         ],
         "score": 88.8,
         "scale": 100,
-        "sourceUrl": "https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-khoa-hoc-xa-hoi-va-nhan-van-dhqg-tphcm-QSX.html"
+        "sourceUrl": "https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-khoa-hoc-xa-hoi-va-nhan-van-dhqg-tphcm-QSX.html",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -6905,7 +7034,8 @@
         ],
         "score": 85.5,
         "scale": 100,
-        "sourceUrl": "https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-khoa-hoc-xa-hoi-va-nhan-van-dhqg-tphcm-QSX.html"
+        "sourceUrl": "https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-khoa-hoc-xa-hoi-va-nhan-van-dhqg-tphcm-QSX.html",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -6920,7 +7050,8 @@
         ],
         "score": 74.5,
         "scale": 100,
-        "sourceUrl": "https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-khoa-hoc-xa-hoi-va-nhan-van-dhqg-tphcm-QSX.html"
+        "sourceUrl": "https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-khoa-hoc-xa-hoi-va-nhan-van-dhqg-tphcm-QSX.html",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -6935,7 +7066,8 @@
         ],
         "score": 79.5,
         "scale": 100,
-        "sourceUrl": "https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-khoa-hoc-xa-hoi-va-nhan-van-dhqg-tphcm-QSX.html"
+        "sourceUrl": "https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-khoa-hoc-xa-hoi-va-nhan-van-dhqg-tphcm-QSX.html",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -6950,7 +7082,8 @@
         ],
         "score": 75.2,
         "scale": 100,
-        "sourceUrl": "https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-khoa-hoc-xa-hoi-va-nhan-van-dhqg-tphcm-QSX.html"
+        "sourceUrl": "https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-khoa-hoc-xa-hoi-va-nhan-van-dhqg-tphcm-QSX.html",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -6965,7 +7098,8 @@
         ],
         "score": 80.35,
         "scale": 100,
-        "sourceUrl": "https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-khoa-hoc-xa-hoi-va-nhan-van-dhqg-tphcm-QSX.html"
+        "sourceUrl": "https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-khoa-hoc-xa-hoi-va-nhan-van-dhqg-tphcm-QSX.html",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -6980,7 +7114,8 @@
         ],
         "score": 78.8,
         "scale": 100,
-        "sourceUrl": "https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-khoa-hoc-xa-hoi-va-nhan-van-dhqg-tphcm-QSX.html"
+        "sourceUrl": "https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-khoa-hoc-xa-hoi-va-nhan-van-dhqg-tphcm-QSX.html",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -6995,7 +7130,8 @@
         ],
         "score": 74.1,
         "scale": 100,
-        "sourceUrl": "https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-khoa-hoc-xa-hoi-va-nhan-van-dhqg-tphcm-QSX.html"
+        "sourceUrl": "https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-khoa-hoc-xa-hoi-va-nhan-van-dhqg-tphcm-QSX.html",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -7010,7 +7146,8 @@
         ],
         "score": 77.65,
         "scale": 100,
-        "sourceUrl": "https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-khoa-hoc-xa-hoi-va-nhan-van-dhqg-tphcm-QSX.html"
+        "sourceUrl": "https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-khoa-hoc-xa-hoi-va-nhan-van-dhqg-tphcm-QSX.html",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -7025,7 +7162,8 @@
         ],
         "score": 82,
         "scale": 100,
-        "sourceUrl": "https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-khoa-hoc-xa-hoi-va-nhan-van-dhqg-tphcm-QSX.html"
+        "sourceUrl": "https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-khoa-hoc-xa-hoi-va-nhan-van-dhqg-tphcm-QSX.html",
+        "verifiedForAI": true
       }
     ]
   },
@@ -8482,7 +8620,8 @@
         ],
         "score": 74.78,
         "scale": 100,
-        "sourceUrl": "https://tuyensinh.uel.edu.vn/truong-dai-hoc-kinh-te-luat-cong-bo-ket-qua-tuyen-sinh-dai-hoc-chinh-quy-nam-2026/"
+        "sourceUrl": "https://tuyensinh.uel.edu.vn/truong-dai-hoc-kinh-te-luat-cong-bo-ket-qua-tuyen-sinh-dai-hoc-chinh-quy-nam-2026/",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -8499,7 +8638,8 @@
         ],
         "score": 74.49,
         "scale": 100,
-        "sourceUrl": "https://tuyensinh.uel.edu.vn/truong-dai-hoc-kinh-te-luat-cong-bo-ket-qua-tuyen-sinh-dai-hoc-chinh-quy-nam-2026/"
+        "sourceUrl": "https://tuyensinh.uel.edu.vn/truong-dai-hoc-kinh-te-luat-cong-bo-ket-qua-tuyen-sinh-dai-hoc-chinh-quy-nam-2026/",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -8516,7 +8656,8 @@
         ],
         "score": 80.84,
         "scale": 100,
-        "sourceUrl": "https://tuyensinh.uel.edu.vn/truong-dai-hoc-kinh-te-luat-cong-bo-ket-qua-tuyen-sinh-dai-hoc-chinh-quy-nam-2026/"
+        "sourceUrl": "https://tuyensinh.uel.edu.vn/truong-dai-hoc-kinh-te-luat-cong-bo-ket-qua-tuyen-sinh-dai-hoc-chinh-quy-nam-2026/",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -8533,7 +8674,8 @@
         ],
         "score": 84.76,
         "scale": 100,
-        "sourceUrl": "https://tuyensinh.uel.edu.vn/truong-dai-hoc-kinh-te-luat-cong-bo-ket-qua-tuyen-sinh-dai-hoc-chinh-quy-nam-2026/"
+        "sourceUrl": "https://tuyensinh.uel.edu.vn/truong-dai-hoc-kinh-te-luat-cong-bo-ket-qua-tuyen-sinh-dai-hoc-chinh-quy-nam-2026/",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -8550,7 +8692,8 @@
         ],
         "score": 79.65,
         "scale": 100,
-        "sourceUrl": "https://tuyensinh.uel.edu.vn/truong-dai-hoc-kinh-te-luat-cong-bo-ket-qua-tuyen-sinh-dai-hoc-chinh-quy-nam-2026/"
+        "sourceUrl": "https://tuyensinh.uel.edu.vn/truong-dai-hoc-kinh-te-luat-cong-bo-ket-qua-tuyen-sinh-dai-hoc-chinh-quy-nam-2026/",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -8584,7 +8727,8 @@
         ],
         "score": 82.61,
         "scale": 100,
-        "sourceUrl": "https://tuyensinh.uel.edu.vn/truong-dai-hoc-kinh-te-luat-cong-bo-ket-qua-tuyen-sinh-dai-hoc-chinh-quy-nam-2026/"
+        "sourceUrl": "https://tuyensinh.uel.edu.vn/truong-dai-hoc-kinh-te-luat-cong-bo-ket-qua-tuyen-sinh-dai-hoc-chinh-quy-nam-2026/",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -8601,7 +8745,8 @@
         ],
         "score": 80.5,
         "scale": 100,
-        "sourceUrl": "https://tuyensinh.uel.edu.vn/truong-dai-hoc-kinh-te-luat-cong-bo-ket-qua-tuyen-sinh-dai-hoc-chinh-quy-nam-2026/"
+        "sourceUrl": "https://tuyensinh.uel.edu.vn/truong-dai-hoc-kinh-te-luat-cong-bo-ket-qua-tuyen-sinh-dai-hoc-chinh-quy-nam-2026/",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -8635,7 +8780,8 @@
         ],
         "score": 69.55,
         "scale": 100,
-        "sourceUrl": "https://tuyensinh.uel.edu.vn/truong-dai-hoc-kinh-te-luat-cong-bo-ket-qua-tuyen-sinh-dai-hoc-chinh-quy-nam-2026/"
+        "sourceUrl": "https://tuyensinh.uel.edu.vn/truong-dai-hoc-kinh-te-luat-cong-bo-ket-qua-tuyen-sinh-dai-hoc-chinh-quy-nam-2026/",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -8652,7 +8798,8 @@
         ],
         "score": 84.63,
         "scale": 100,
-        "sourceUrl": "https://tuyensinh.uel.edu.vn/truong-dai-hoc-kinh-te-luat-cong-bo-ket-qua-tuyen-sinh-dai-hoc-chinh-quy-nam-2026/"
+        "sourceUrl": "https://tuyensinh.uel.edu.vn/truong-dai-hoc-kinh-te-luat-cong-bo-ket-qua-tuyen-sinh-dai-hoc-chinh-quy-nam-2026/",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -8686,7 +8833,8 @@
         ],
         "score": 82.48,
         "scale": 100,
-        "sourceUrl": "https://tuyensinh.uel.edu.vn/truong-dai-hoc-kinh-te-luat-cong-bo-ket-qua-tuyen-sinh-dai-hoc-chinh-quy-nam-2026/"
+        "sourceUrl": "https://tuyensinh.uel.edu.vn/truong-dai-hoc-kinh-te-luat-cong-bo-ket-qua-tuyen-sinh-dai-hoc-chinh-quy-nam-2026/",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -8703,7 +8851,8 @@
         ],
         "score": 87.94,
         "scale": 100,
-        "sourceUrl": "https://tuyensinh.uel.edu.vn/truong-dai-hoc-kinh-te-luat-cong-bo-ket-qua-tuyen-sinh-dai-hoc-chinh-quy-nam-2026/"
+        "sourceUrl": "https://tuyensinh.uel.edu.vn/truong-dai-hoc-kinh-te-luat-cong-bo-ket-qua-tuyen-sinh-dai-hoc-chinh-quy-nam-2026/",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -8737,7 +8886,8 @@
         ],
         "score": 90.01,
         "scale": 100,
-        "sourceUrl": "https://tuyensinh.uel.edu.vn/truong-dai-hoc-kinh-te-luat-cong-bo-ket-qua-tuyen-sinh-dai-hoc-chinh-quy-nam-2026/"
+        "sourceUrl": "https://tuyensinh.uel.edu.vn/truong-dai-hoc-kinh-te-luat-cong-bo-ket-qua-tuyen-sinh-dai-hoc-chinh-quy-nam-2026/",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -8754,7 +8904,8 @@
         ],
         "score": 86.73,
         "scale": 100,
-        "sourceUrl": "https://tuyensinh.uel.edu.vn/truong-dai-hoc-kinh-te-luat-cong-bo-ket-qua-tuyen-sinh-dai-hoc-chinh-quy-nam-2026/"
+        "sourceUrl": "https://tuyensinh.uel.edu.vn/truong-dai-hoc-kinh-te-luat-cong-bo-ket-qua-tuyen-sinh-dai-hoc-chinh-quy-nam-2026/",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -8788,7 +8939,8 @@
         ],
         "score": 81.4,
         "scale": 100,
-        "sourceUrl": "https://tuyensinh.uel.edu.vn/truong-dai-hoc-kinh-te-luat-cong-bo-ket-qua-tuyen-sinh-dai-hoc-chinh-quy-nam-2026/"
+        "sourceUrl": "https://tuyensinh.uel.edu.vn/truong-dai-hoc-kinh-te-luat-cong-bo-ket-qua-tuyen-sinh-dai-hoc-chinh-quy-nam-2026/",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -8822,7 +8974,8 @@
         ],
         "score": 82.54,
         "scale": 100,
-        "sourceUrl": "https://tuyensinh.uel.edu.vn/truong-dai-hoc-kinh-te-luat-cong-bo-ket-qua-tuyen-sinh-dai-hoc-chinh-quy-nam-2026/"
+        "sourceUrl": "https://tuyensinh.uel.edu.vn/truong-dai-hoc-kinh-te-luat-cong-bo-ket-qua-tuyen-sinh-dai-hoc-chinh-quy-nam-2026/",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -8856,7 +9009,8 @@
         ],
         "score": 80.49,
         "scale": 100,
-        "sourceUrl": "https://tuyensinh.uel.edu.vn/truong-dai-hoc-kinh-te-luat-cong-bo-ket-qua-tuyen-sinh-dai-hoc-chinh-quy-nam-2026/"
+        "sourceUrl": "https://tuyensinh.uel.edu.vn/truong-dai-hoc-kinh-te-luat-cong-bo-ket-qua-tuyen-sinh-dai-hoc-chinh-quy-nam-2026/",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -8890,7 +9044,8 @@
         ],
         "score": 79.91,
         "scale": 100,
-        "sourceUrl": "https://tuyensinh.uel.edu.vn/truong-dai-hoc-kinh-te-luat-cong-bo-ket-qua-tuyen-sinh-dai-hoc-chinh-quy-nam-2026/"
+        "sourceUrl": "https://tuyensinh.uel.edu.vn/truong-dai-hoc-kinh-te-luat-cong-bo-ket-qua-tuyen-sinh-dai-hoc-chinh-quy-nam-2026/",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -8907,7 +9062,8 @@
         ],
         "score": 85.29,
         "scale": 100,
-        "sourceUrl": "https://tuyensinh.uel.edu.vn/truong-dai-hoc-kinh-te-luat-cong-bo-ket-qua-tuyen-sinh-dai-hoc-chinh-quy-nam-2026/"
+        "sourceUrl": "https://tuyensinh.uel.edu.vn/truong-dai-hoc-kinh-te-luat-cong-bo-ket-qua-tuyen-sinh-dai-hoc-chinh-quy-nam-2026/",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -8924,7 +9080,8 @@
         ],
         "score": 71.81,
         "scale": 100,
-        "sourceUrl": "https://tuyensinh.uel.edu.vn/truong-dai-hoc-kinh-te-luat-cong-bo-ket-qua-tuyen-sinh-dai-hoc-chinh-quy-nam-2026/"
+        "sourceUrl": "https://tuyensinh.uel.edu.vn/truong-dai-hoc-kinh-te-luat-cong-bo-ket-qua-tuyen-sinh-dai-hoc-chinh-quy-nam-2026/",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -8941,7 +9098,8 @@
         ],
         "score": 86.46,
         "scale": 100,
-        "sourceUrl": "https://tuyensinh.uel.edu.vn/truong-dai-hoc-kinh-te-luat-cong-bo-ket-qua-tuyen-sinh-dai-hoc-chinh-quy-nam-2026/"
+        "sourceUrl": "https://tuyensinh.uel.edu.vn/truong-dai-hoc-kinh-te-luat-cong-bo-ket-qua-tuyen-sinh-dai-hoc-chinh-quy-nam-2026/",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -8975,7 +9133,8 @@
         ],
         "score": 84.44,
         "scale": 100,
-        "sourceUrl": "https://tuyensinh.uel.edu.vn/truong-dai-hoc-kinh-te-luat-cong-bo-ket-qua-tuyen-sinh-dai-hoc-chinh-quy-nam-2026/"
+        "sourceUrl": "https://tuyensinh.uel.edu.vn/truong-dai-hoc-kinh-te-luat-cong-bo-ket-qua-tuyen-sinh-dai-hoc-chinh-quy-nam-2026/",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -8992,7 +9151,8 @@
         ],
         "score": 76.01,
         "scale": 100,
-        "sourceUrl": "https://tuyensinh.uel.edu.vn/truong-dai-hoc-kinh-te-luat-cong-bo-ket-qua-tuyen-sinh-dai-hoc-chinh-quy-nam-2026/"
+        "sourceUrl": "https://tuyensinh.uel.edu.vn/truong-dai-hoc-kinh-te-luat-cong-bo-ket-qua-tuyen-sinh-dai-hoc-chinh-quy-nam-2026/",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -9026,7 +9186,8 @@
         ],
         "score": 65.01,
         "scale": 100,
-        "sourceUrl": "https://tuyensinh.uel.edu.vn/truong-dai-hoc-kinh-te-luat-cong-bo-ket-qua-tuyen-sinh-dai-hoc-chinh-quy-nam-2026/"
+        "sourceUrl": "https://tuyensinh.uel.edu.vn/truong-dai-hoc-kinh-te-luat-cong-bo-ket-qua-tuyen-sinh-dai-hoc-chinh-quy-nam-2026/",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -9043,7 +9204,8 @@
         ],
         "score": 65.54,
         "scale": 100,
-        "sourceUrl": "https://tuyensinh.uel.edu.vn/truong-dai-hoc-kinh-te-luat-cong-bo-ket-qua-tuyen-sinh-dai-hoc-chinh-quy-nam-2026/"
+        "sourceUrl": "https://tuyensinh.uel.edu.vn/truong-dai-hoc-kinh-te-luat-cong-bo-ket-qua-tuyen-sinh-dai-hoc-chinh-quy-nam-2026/",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -9060,7 +9222,8 @@
         ],
         "score": 71.65,
         "scale": 100,
-        "sourceUrl": "https://tuyensinh.uel.edu.vn/truong-dai-hoc-kinh-te-luat-cong-bo-ket-qua-tuyen-sinh-dai-hoc-chinh-quy-nam-2026/"
+        "sourceUrl": "https://tuyensinh.uel.edu.vn/truong-dai-hoc-kinh-te-luat-cong-bo-ket-qua-tuyen-sinh-dai-hoc-chinh-quy-nam-2026/",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -9077,7 +9240,8 @@
         ],
         "score": 80.65,
         "scale": 100,
-        "sourceUrl": "https://tuyensinh.uel.edu.vn/truong-dai-hoc-kinh-te-luat-cong-bo-ket-qua-tuyen-sinh-dai-hoc-chinh-quy-nam-2026/"
+        "sourceUrl": "https://tuyensinh.uel.edu.vn/truong-dai-hoc-kinh-te-luat-cong-bo-ket-qua-tuyen-sinh-dai-hoc-chinh-quy-nam-2026/",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -9094,7 +9258,8 @@
         ],
         "score": 83.24,
         "scale": 100,
-        "sourceUrl": "https://tuyensinh.uel.edu.vn/truong-dai-hoc-kinh-te-luat-cong-bo-ket-qua-tuyen-sinh-dai-hoc-chinh-quy-nam-2026/"
+        "sourceUrl": "https://tuyensinh.uel.edu.vn/truong-dai-hoc-kinh-te-luat-cong-bo-ket-qua-tuyen-sinh-dai-hoc-chinh-quy-nam-2026/",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -9121,6 +9286,9 @@
         "name": "Viện Quốc tế UEL - Cơ sở Quận 1",
         "address": "45 Đinh Tiên Hoàng, phường Bến Nghé, Quận 1 (chân trang ghi phường Sài Gòn)"
       }
+    ],
+    "sourceDomains": [
+      "uel.edu.vn"
     ]
   },
   {
@@ -10815,6 +10983,9 @@
         "name": "Cơ sở Khánh Hòa",
         "address": "Số 04 đường Tân Định, P. Ninh Hòa, Tỉnh Khánh Hòa"
       }
+    ],
+    "sourceDomains": [
+      "ou.edu.vn"
     ]
   },
   {
@@ -12522,7 +12693,8 @@
         ],
         "score": 73,
         "scale": 100,
-        "sourceUrl": "https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-quoc-te-dhqg-tphcm-QSQ.html"
+        "sourceUrl": "https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-quoc-te-dhqg-tphcm-QSQ.html",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -12539,7 +12711,8 @@
         ],
         "score": 62,
         "scale": 100,
-        "sourceUrl": "https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-quoc-te-dhqg-tphcm-QSQ.html"
+        "sourceUrl": "https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-quoc-te-dhqg-tphcm-QSQ.html",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -12556,7 +12729,8 @@
         ],
         "score": 53,
         "scale": 100,
-        "sourceUrl": "https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-quoc-te-dhqg-tphcm-QSQ.html"
+        "sourceUrl": "https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-quoc-te-dhqg-tphcm-QSQ.html",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -12573,7 +12747,8 @@
         ],
         "score": 53,
         "scale": 100,
-        "sourceUrl": "https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-quoc-te-dhqg-tphcm-QSQ.html"
+        "sourceUrl": "https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-quoc-te-dhqg-tphcm-QSQ.html",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -12590,7 +12765,8 @@
         ],
         "score": 53,
         "scale": 100,
-        "sourceUrl": "https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-quoc-te-dhqg-tphcm-QSQ.html"
+        "sourceUrl": "https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-quoc-te-dhqg-tphcm-QSQ.html",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -12607,7 +12783,8 @@
         ],
         "score": 53,
         "scale": 100,
-        "sourceUrl": "https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-quoc-te-dhqg-tphcm-QSQ.html"
+        "sourceUrl": "https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-quoc-te-dhqg-tphcm-QSQ.html",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -12624,7 +12801,8 @@
         ],
         "score": 53,
         "scale": 100,
-        "sourceUrl": "https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-quoc-te-dhqg-tphcm-QSQ.html"
+        "sourceUrl": "https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-quoc-te-dhqg-tphcm-QSQ.html",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -12642,7 +12820,8 @@
         ],
         "score": 55,
         "scale": 100,
-        "sourceUrl": "https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-quoc-te-dhqg-tphcm-QSQ.html"
+        "sourceUrl": "https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-quoc-te-dhqg-tphcm-QSQ.html",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -12660,7 +12839,8 @@
         ],
         "score": 58,
         "scale": 100,
-        "sourceUrl": "https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-quoc-te-dhqg-tphcm-QSQ.html"
+        "sourceUrl": "https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-quoc-te-dhqg-tphcm-QSQ.html",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -12676,7 +12856,8 @@
         ],
         "score": 62,
         "scale": 100,
-        "sourceUrl": "https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-quoc-te-dhqg-tphcm-QSQ.html"
+        "sourceUrl": "https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-quoc-te-dhqg-tphcm-QSQ.html",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -12692,7 +12873,8 @@
         ],
         "score": 52,
         "scale": 100,
-        "sourceUrl": "https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-quoc-te-dhqg-tphcm-QSQ.html"
+        "sourceUrl": "https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-quoc-te-dhqg-tphcm-QSQ.html",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -12708,7 +12890,8 @@
         ],
         "score": 52,
         "scale": 100,
-        "sourceUrl": "https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-quoc-te-dhqg-tphcm-QSQ.html"
+        "sourceUrl": "https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-quoc-te-dhqg-tphcm-QSQ.html",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -12724,7 +12907,8 @@
         ],
         "score": 65,
         "scale": 100,
-        "sourceUrl": "https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-quoc-te-dhqg-tphcm-QSQ.html"
+        "sourceUrl": "https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-quoc-te-dhqg-tphcm-QSQ.html",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -12740,7 +12924,8 @@
         ],
         "score": 62,
         "scale": 100,
-        "sourceUrl": "https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-quoc-te-dhqg-tphcm-QSQ.html"
+        "sourceUrl": "https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-quoc-te-dhqg-tphcm-QSQ.html",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -12757,7 +12942,8 @@
         ],
         "score": 72,
         "scale": 100,
-        "sourceUrl": "https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-quoc-te-dhqg-tphcm-QSQ.html"
+        "sourceUrl": "https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-quoc-te-dhqg-tphcm-QSQ.html",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -12774,7 +12960,8 @@
         ],
         "score": 63,
         "scale": 100,
-        "sourceUrl": "https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-quoc-te-dhqg-tphcm-QSQ.html"
+        "sourceUrl": "https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-quoc-te-dhqg-tphcm-QSQ.html",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -12791,7 +12978,8 @@
         ],
         "score": 52,
         "scale": 100,
-        "sourceUrl": "https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-quoc-te-dhqg-tphcm-QSQ.html"
+        "sourceUrl": "https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-quoc-te-dhqg-tphcm-QSQ.html",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -12808,7 +12996,8 @@
         ],
         "score": 55,
         "scale": 100,
-        "sourceUrl": "https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-quoc-te-dhqg-tphcm-QSQ.html"
+        "sourceUrl": "https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-quoc-te-dhqg-tphcm-QSQ.html",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -12825,7 +13014,8 @@
         ],
         "score": 68,
         "scale": 100,
-        "sourceUrl": "https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-quoc-te-dhqg-tphcm-QSQ.html"
+        "sourceUrl": "https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-quoc-te-dhqg-tphcm-QSQ.html",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -12842,7 +13032,8 @@
         ],
         "score": 65,
         "scale": 100,
-        "sourceUrl": "https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-quoc-te-dhqg-tphcm-QSQ.html"
+        "sourceUrl": "https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-quoc-te-dhqg-tphcm-QSQ.html",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -12860,7 +13051,8 @@
         ],
         "score": 58,
         "scale": 100,
-        "sourceUrl": "https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-quoc-te-dhqg-tphcm-QSQ.html"
+        "sourceUrl": "https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-quoc-te-dhqg-tphcm-QSQ.html",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -12878,7 +13070,8 @@
         ],
         "score": 52,
         "scale": 100,
-        "sourceUrl": "https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-quoc-te-dhqg-tphcm-QSQ.html"
+        "sourceUrl": "https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-quoc-te-dhqg-tphcm-QSQ.html",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -12895,7 +13088,8 @@
         ],
         "score": 50,
         "scale": 100,
-        "sourceUrl": "https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-quoc-te-dhqg-tphcm-QSQ.html"
+        "sourceUrl": "https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-quoc-te-dhqg-tphcm-QSQ.html",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -12912,12 +13106,16 @@
         ],
         "score": 50,
         "scale": 100,
-        "sourceUrl": "https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-quoc-te-dhqg-tphcm-QSQ.html"
+        "sourceUrl": "https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-quoc-te-dhqg-tphcm-QSQ.html",
+        "verifiedForAI": true
       }
     ],
     "foundedYear": 2003,
     "description": "Trường đại học công lập thành viên ĐHQG-HCM, thành lập tháng 12/2003; là trường đại học công lập đa ngành đầu tiên tại Việt Nam giảng dạy và nghiên cứu hoàn toàn bằng tiếng Anh.",
-    "campuses": []
+    "campuses": [],
+    "sourceDomains": [
+      "hcmiu.edu.vn"
+    ]
   },
   {
     "slug": "sai-gon",
@@ -14007,6 +14205,9 @@
         "name": "Phân hiệu tại Bình Phước (nay thuộc tỉnh Đồng Nai)",
         "address": null
       }
+    ],
+    "sourceDomains": [
+      "hcmute.edu.vn"
     ]
   },
   {
@@ -17923,7 +18124,8 @@
         "combinations": [],
         "score": 911.52,
         "scale": 1200,
-        "sourceUrl": "https://admission.tdtu.edu.vn/sites/admission/files/Tuyen-sinh/2026/TB-Diemtrungtuyen/PL2-Diem-trung-tuyen-DH-2026-PT2-TanHung.pdf"
+        "sourceUrl": "https://admission.tdtu.edu.vn/sites/admission/files/Tuyen-sinh/2026/TB-Diemtrungtuyen/PL2-Diem-trung-tuyen-DH-2026-PT2-TanHung.pdf",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -17933,7 +18135,8 @@
         "combinations": [],
         "score": 863.66,
         "scale": 1200,
-        "sourceUrl": "https://admission.tdtu.edu.vn/sites/admission/files/Tuyen-sinh/2026/TB-Diemtrungtuyen/PL2-Diem-trung-tuyen-DH-2026-PT2-TanHung.pdf"
+        "sourceUrl": "https://admission.tdtu.edu.vn/sites/admission/files/Tuyen-sinh/2026/TB-Diemtrungtuyen/PL2-Diem-trung-tuyen-DH-2026-PT2-TanHung.pdf",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -17943,7 +18146,8 @@
         "combinations": [],
         "score": 857.88,
         "scale": 1200,
-        "sourceUrl": "https://admission.tdtu.edu.vn/sites/admission/files/Tuyen-sinh/2026/TB-Diemtrungtuyen/PL2-Diem-trung-tuyen-DH-2026-PT2-TanHung.pdf"
+        "sourceUrl": "https://admission.tdtu.edu.vn/sites/admission/files/Tuyen-sinh/2026/TB-Diemtrungtuyen/PL2-Diem-trung-tuyen-DH-2026-PT2-TanHung.pdf",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -17953,7 +18157,8 @@
         "combinations": [],
         "score": 848.85,
         "scale": 1200,
-        "sourceUrl": "https://admission.tdtu.edu.vn/sites/admission/files/Tuyen-sinh/2026/TB-Diemtrungtuyen/PL2-Diem-trung-tuyen-DH-2026-PT2-TanHung.pdf"
+        "sourceUrl": "https://admission.tdtu.edu.vn/sites/admission/files/Tuyen-sinh/2026/TB-Diemtrungtuyen/PL2-Diem-trung-tuyen-DH-2026-PT2-TanHung.pdf",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -17963,7 +18168,8 @@
         "combinations": [],
         "score": 807.78,
         "scale": 1200,
-        "sourceUrl": "https://admission.tdtu.edu.vn/sites/admission/files/Tuyen-sinh/2026/TB-Diemtrungtuyen/PL2-Diem-trung-tuyen-DH-2026-PT2-TanHung.pdf"
+        "sourceUrl": "https://admission.tdtu.edu.vn/sites/admission/files/Tuyen-sinh/2026/TB-Diemtrungtuyen/PL2-Diem-trung-tuyen-DH-2026-PT2-TanHung.pdf",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -17973,7 +18179,8 @@
         "combinations": [],
         "score": 776.3,
         "scale": 1200,
-        "sourceUrl": "https://admission.tdtu.edu.vn/sites/admission/files/Tuyen-sinh/2026/TB-Diemtrungtuyen/PL2-Diem-trung-tuyen-DH-2026-PT2-TanHung.pdf"
+        "sourceUrl": "https://admission.tdtu.edu.vn/sites/admission/files/Tuyen-sinh/2026/TB-Diemtrungtuyen/PL2-Diem-trung-tuyen-DH-2026-PT2-TanHung.pdf",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -17983,7 +18190,8 @@
         "combinations": [],
         "score": 872.81,
         "scale": 1200,
-        "sourceUrl": "https://admission.tdtu.edu.vn/sites/admission/files/Tuyen-sinh/2026/TB-Diemtrungtuyen/PL2-Diem-trung-tuyen-DH-2026-PT2-TanHung.pdf"
+        "sourceUrl": "https://admission.tdtu.edu.vn/sites/admission/files/Tuyen-sinh/2026/TB-Diemtrungtuyen/PL2-Diem-trung-tuyen-DH-2026-PT2-TanHung.pdf",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -17993,7 +18201,8 @@
         "combinations": [],
         "score": 812.57,
         "scale": 1200,
-        "sourceUrl": "https://admission.tdtu.edu.vn/sites/admission/files/Tuyen-sinh/2026/TB-Diemtrungtuyen/PL2-Diem-trung-tuyen-DH-2026-PT2-TanHung.pdf"
+        "sourceUrl": "https://admission.tdtu.edu.vn/sites/admission/files/Tuyen-sinh/2026/TB-Diemtrungtuyen/PL2-Diem-trung-tuyen-DH-2026-PT2-TanHung.pdf",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -18003,7 +18212,8 @@
         "combinations": [],
         "score": 889.04,
         "scale": 1200,
-        "sourceUrl": "https://admission.tdtu.edu.vn/sites/admission/files/Tuyen-sinh/2026/TB-Diemtrungtuyen/PL2-Diem-trung-tuyen-DH-2026-PT2-TanHung.pdf"
+        "sourceUrl": "https://admission.tdtu.edu.vn/sites/admission/files/Tuyen-sinh/2026/TB-Diemtrungtuyen/PL2-Diem-trung-tuyen-DH-2026-PT2-TanHung.pdf",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -18013,7 +18223,8 @@
         "combinations": [],
         "score": 862.49,
         "scale": 1200,
-        "sourceUrl": "https://admission.tdtu.edu.vn/sites/admission/files/Tuyen-sinh/2026/TB-Diemtrungtuyen/PL2-Diem-trung-tuyen-DH-2026-PT2-TanHung.pdf"
+        "sourceUrl": "https://admission.tdtu.edu.vn/sites/admission/files/Tuyen-sinh/2026/TB-Diemtrungtuyen/PL2-Diem-trung-tuyen-DH-2026-PT2-TanHung.pdf",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -18023,7 +18234,8 @@
         "combinations": [],
         "score": 902.53,
         "scale": 1200,
-        "sourceUrl": "https://admission.tdtu.edu.vn/sites/admission/files/Tuyen-sinh/2026/TB-Diemtrungtuyen/PL2-Diem-trung-tuyen-DH-2026-PT2-TanHung.pdf"
+        "sourceUrl": "https://admission.tdtu.edu.vn/sites/admission/files/Tuyen-sinh/2026/TB-Diemtrungtuyen/PL2-Diem-trung-tuyen-DH-2026-PT2-TanHung.pdf",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -18033,7 +18245,8 @@
         "combinations": [],
         "score": 900.71,
         "scale": 1200,
-        "sourceUrl": "https://admission.tdtu.edu.vn/sites/admission/files/Tuyen-sinh/2026/TB-Diemtrungtuyen/PL2-Diem-trung-tuyen-DH-2026-PT2-TanHung.pdf"
+        "sourceUrl": "https://admission.tdtu.edu.vn/sites/admission/files/Tuyen-sinh/2026/TB-Diemtrungtuyen/PL2-Diem-trung-tuyen-DH-2026-PT2-TanHung.pdf",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -18043,7 +18256,8 @@
         "combinations": [],
         "score": 622.05,
         "scale": 1200,
-        "sourceUrl": "https://admission.tdtu.edu.vn/sites/admission/files/Tuyen-sinh/2026/TB-Diemtrungtuyen/PL2-Diem-trung-tuyen-DH-2026-PT2-TanHung.pdf"
+        "sourceUrl": "https://admission.tdtu.edu.vn/sites/admission/files/Tuyen-sinh/2026/TB-Diemtrungtuyen/PL2-Diem-trung-tuyen-DH-2026-PT2-TanHung.pdf",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -18053,7 +18267,8 @@
         "combinations": [],
         "score": 824.77,
         "scale": 1200,
-        "sourceUrl": "https://admission.tdtu.edu.vn/sites/admission/files/Tuyen-sinh/2026/TB-Diemtrungtuyen/PL2-Diem-trung-tuyen-DH-2026-PT2-TanHung.pdf"
+        "sourceUrl": "https://admission.tdtu.edu.vn/sites/admission/files/Tuyen-sinh/2026/TB-Diemtrungtuyen/PL2-Diem-trung-tuyen-DH-2026-PT2-TanHung.pdf",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -18063,7 +18278,8 @@
         "combinations": [],
         "score": 684.7,
         "scale": 1200,
-        "sourceUrl": "https://admission.tdtu.edu.vn/sites/admission/files/Tuyen-sinh/2026/TB-Diemtrungtuyen/PL2-Diem-trung-tuyen-DH-2026-PT2-TanHung.pdf"
+        "sourceUrl": "https://admission.tdtu.edu.vn/sites/admission/files/Tuyen-sinh/2026/TB-Diemtrungtuyen/PL2-Diem-trung-tuyen-DH-2026-PT2-TanHung.pdf",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -18073,7 +18289,8 @@
         "combinations": [],
         "score": 831.89,
         "scale": 1200,
-        "sourceUrl": "https://admission.tdtu.edu.vn/sites/admission/files/Tuyen-sinh/2026/TB-Diemtrungtuyen/PL2-Diem-trung-tuyen-DH-2026-PT2-TanHung.pdf"
+        "sourceUrl": "https://admission.tdtu.edu.vn/sites/admission/files/Tuyen-sinh/2026/TB-Diemtrungtuyen/PL2-Diem-trung-tuyen-DH-2026-PT2-TanHung.pdf",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -18083,7 +18300,8 @@
         "combinations": [],
         "score": 823.25,
         "scale": 1200,
-        "sourceUrl": "https://admission.tdtu.edu.vn/sites/admission/files/Tuyen-sinh/2026/TB-Diemtrungtuyen/PL2-Diem-trung-tuyen-DH-2026-PT2-TanHung.pdf"
+        "sourceUrl": "https://admission.tdtu.edu.vn/sites/admission/files/Tuyen-sinh/2026/TB-Diemtrungtuyen/PL2-Diem-trung-tuyen-DH-2026-PT2-TanHung.pdf",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -18093,7 +18311,8 @@
         "combinations": [],
         "score": 853.87,
         "scale": 1200,
-        "sourceUrl": "https://admission.tdtu.edu.vn/sites/admission/files/Tuyen-sinh/2026/TB-Diemtrungtuyen/PL2-Diem-trung-tuyen-DH-2026-PT2-TanHung.pdf"
+        "sourceUrl": "https://admission.tdtu.edu.vn/sites/admission/files/Tuyen-sinh/2026/TB-Diemtrungtuyen/PL2-Diem-trung-tuyen-DH-2026-PT2-TanHung.pdf",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -18103,7 +18322,8 @@
         "combinations": [],
         "score": 771.54,
         "scale": 1200,
-        "sourceUrl": "https://admission.tdtu.edu.vn/sites/admission/files/Tuyen-sinh/2026/TB-Diemtrungtuyen/PL2-Diem-trung-tuyen-DH-2026-PT2-TanHung.pdf"
+        "sourceUrl": "https://admission.tdtu.edu.vn/sites/admission/files/Tuyen-sinh/2026/TB-Diemtrungtuyen/PL2-Diem-trung-tuyen-DH-2026-PT2-TanHung.pdf",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -18113,7 +18333,8 @@
         "combinations": [],
         "score": 772.82,
         "scale": 1200,
-        "sourceUrl": "https://admission.tdtu.edu.vn/sites/admission/files/Tuyen-sinh/2026/TB-Diemtrungtuyen/PL2-Diem-trung-tuyen-DH-2026-PT2-TanHung.pdf"
+        "sourceUrl": "https://admission.tdtu.edu.vn/sites/admission/files/Tuyen-sinh/2026/TB-Diemtrungtuyen/PL2-Diem-trung-tuyen-DH-2026-PT2-TanHung.pdf",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -18123,7 +18344,8 @@
         "combinations": [],
         "score": 634.26,
         "scale": 1200,
-        "sourceUrl": "https://admission.tdtu.edu.vn/sites/admission/files/Tuyen-sinh/2026/TB-Diemtrungtuyen/PL2-Diem-trung-tuyen-DH-2026-PT2-TanHung.pdf"
+        "sourceUrl": "https://admission.tdtu.edu.vn/sites/admission/files/Tuyen-sinh/2026/TB-Diemtrungtuyen/PL2-Diem-trung-tuyen-DH-2026-PT2-TanHung.pdf",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -18133,7 +18355,8 @@
         "combinations": [],
         "score": 634.26,
         "scale": 1200,
-        "sourceUrl": "https://admission.tdtu.edu.vn/sites/admission/files/Tuyen-sinh/2026/TB-Diemtrungtuyen/PL2-Diem-trung-tuyen-DH-2026-PT2-TanHung.pdf"
+        "sourceUrl": "https://admission.tdtu.edu.vn/sites/admission/files/Tuyen-sinh/2026/TB-Diemtrungtuyen/PL2-Diem-trung-tuyen-DH-2026-PT2-TanHung.pdf",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -18143,7 +18366,8 @@
         "combinations": [],
         "score": 829.12,
         "scale": 1200,
-        "sourceUrl": "https://admission.tdtu.edu.vn/sites/admission/files/Tuyen-sinh/2026/TB-Diemtrungtuyen/PL2-Diem-trung-tuyen-DH-2026-PT2-TanHung.pdf"
+        "sourceUrl": "https://admission.tdtu.edu.vn/sites/admission/files/Tuyen-sinh/2026/TB-Diemtrungtuyen/PL2-Diem-trung-tuyen-DH-2026-PT2-TanHung.pdf",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -18153,7 +18377,8 @@
         "combinations": [],
         "score": 821.01,
         "scale": 1200,
-        "sourceUrl": "https://admission.tdtu.edu.vn/sites/admission/files/Tuyen-sinh/2026/TB-Diemtrungtuyen/PL2-Diem-trung-tuyen-DH-2026-PT2-TanHung.pdf"
+        "sourceUrl": "https://admission.tdtu.edu.vn/sites/admission/files/Tuyen-sinh/2026/TB-Diemtrungtuyen/PL2-Diem-trung-tuyen-DH-2026-PT2-TanHung.pdf",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -18163,7 +18388,8 @@
         "combinations": [],
         "score": 739.53,
         "scale": 1200,
-        "sourceUrl": "https://admission.tdtu.edu.vn/sites/admission/files/Tuyen-sinh/2026/TB-Diemtrungtuyen/PL2-Diem-trung-tuyen-DH-2026-PT2-TanHung.pdf"
+        "sourceUrl": "https://admission.tdtu.edu.vn/sites/admission/files/Tuyen-sinh/2026/TB-Diemtrungtuyen/PL2-Diem-trung-tuyen-DH-2026-PT2-TanHung.pdf",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -18173,7 +18399,8 @@
         "combinations": [],
         "score": 786.65,
         "scale": 1200,
-        "sourceUrl": "https://admission.tdtu.edu.vn/sites/admission/files/Tuyen-sinh/2026/TB-Diemtrungtuyen/PL2-Diem-trung-tuyen-DH-2026-PT2-TanHung.pdf"
+        "sourceUrl": "https://admission.tdtu.edu.vn/sites/admission/files/Tuyen-sinh/2026/TB-Diemtrungtuyen/PL2-Diem-trung-tuyen-DH-2026-PT2-TanHung.pdf",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -18183,7 +18410,8 @@
         "combinations": [],
         "score": 794.26,
         "scale": 1200,
-        "sourceUrl": "https://admission.tdtu.edu.vn/sites/admission/files/Tuyen-sinh/2026/TB-Diemtrungtuyen/PL2-Diem-trung-tuyen-DH-2026-PT2-TanHung.pdf"
+        "sourceUrl": "https://admission.tdtu.edu.vn/sites/admission/files/Tuyen-sinh/2026/TB-Diemtrungtuyen/PL2-Diem-trung-tuyen-DH-2026-PT2-TanHung.pdf",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -18193,7 +18421,8 @@
         "combinations": [],
         "score": 862.55,
         "scale": 1200,
-        "sourceUrl": "https://admission.tdtu.edu.vn/sites/admission/files/Tuyen-sinh/2026/TB-Diemtrungtuyen/PL2-Diem-trung-tuyen-DH-2026-PT2-TanHung.pdf"
+        "sourceUrl": "https://admission.tdtu.edu.vn/sites/admission/files/Tuyen-sinh/2026/TB-Diemtrungtuyen/PL2-Diem-trung-tuyen-DH-2026-PT2-TanHung.pdf",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -18203,7 +18432,8 @@
         "combinations": [],
         "score": 835.44,
         "scale": 1200,
-        "sourceUrl": "https://admission.tdtu.edu.vn/sites/admission/files/Tuyen-sinh/2026/TB-Diemtrungtuyen/PL2-Diem-trung-tuyen-DH-2026-PT2-TanHung.pdf"
+        "sourceUrl": "https://admission.tdtu.edu.vn/sites/admission/files/Tuyen-sinh/2026/TB-Diemtrungtuyen/PL2-Diem-trung-tuyen-DH-2026-PT2-TanHung.pdf",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -18213,7 +18443,8 @@
         "combinations": [],
         "score": 906,
         "scale": 1200,
-        "sourceUrl": "https://admission.tdtu.edu.vn/sites/admission/files/Tuyen-sinh/2026/TB-Diemtrungtuyen/PL2-Diem-trung-tuyen-DH-2026-PT2-TanHung.pdf"
+        "sourceUrl": "https://admission.tdtu.edu.vn/sites/admission/files/Tuyen-sinh/2026/TB-Diemtrungtuyen/PL2-Diem-trung-tuyen-DH-2026-PT2-TanHung.pdf",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -18223,7 +18454,8 @@
         "combinations": [],
         "score": 921.61,
         "scale": 1200,
-        "sourceUrl": "https://admission.tdtu.edu.vn/sites/admission/files/Tuyen-sinh/2026/TB-Diemtrungtuyen/PL2-Diem-trung-tuyen-DH-2026-PT2-TanHung.pdf"
+        "sourceUrl": "https://admission.tdtu.edu.vn/sites/admission/files/Tuyen-sinh/2026/TB-Diemtrungtuyen/PL2-Diem-trung-tuyen-DH-2026-PT2-TanHung.pdf",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -18233,7 +18465,8 @@
         "combinations": [],
         "score": 884.62,
         "scale": 1200,
-        "sourceUrl": "https://admission.tdtu.edu.vn/sites/admission/files/Tuyen-sinh/2026/TB-Diemtrungtuyen/PL2-Diem-trung-tuyen-DH-2026-PT2-TanHung.pdf"
+        "sourceUrl": "https://admission.tdtu.edu.vn/sites/admission/files/Tuyen-sinh/2026/TB-Diemtrungtuyen/PL2-Diem-trung-tuyen-DH-2026-PT2-TanHung.pdf",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -18243,7 +18476,8 @@
         "combinations": [],
         "score": 718.81,
         "scale": 1200,
-        "sourceUrl": "https://admission.tdtu.edu.vn/sites/admission/files/Tuyen-sinh/2026/TB-Diemtrungtuyen/PL2-Diem-trung-tuyen-DH-2026-PT2-TanHung.pdf"
+        "sourceUrl": "https://admission.tdtu.edu.vn/sites/admission/files/Tuyen-sinh/2026/TB-Diemtrungtuyen/PL2-Diem-trung-tuyen-DH-2026-PT2-TanHung.pdf",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -18253,7 +18487,8 @@
         "combinations": [],
         "score": 600,
         "scale": 1200,
-        "sourceUrl": "https://admission.tdtu.edu.vn/sites/admission/files/Tuyen-sinh/2026/TB-Diemtrungtuyen/PL2-Diem-trung-tuyen-DH-2026-PT2-TanHung.pdf"
+        "sourceUrl": "https://admission.tdtu.edu.vn/sites/admission/files/Tuyen-sinh/2026/TB-Diemtrungtuyen/PL2-Diem-trung-tuyen-DH-2026-PT2-TanHung.pdf",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -18263,7 +18498,8 @@
         "combinations": [],
         "score": 623.75,
         "scale": 1200,
-        "sourceUrl": "https://admission.tdtu.edu.vn/sites/admission/files/Tuyen-sinh/2026/TB-Diemtrungtuyen/PL2-Diem-trung-tuyen-DH-2026-PT2-TanHung.pdf"
+        "sourceUrl": "https://admission.tdtu.edu.vn/sites/admission/files/Tuyen-sinh/2026/TB-Diemtrungtuyen/PL2-Diem-trung-tuyen-DH-2026-PT2-TanHung.pdf",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -18273,7 +18509,8 @@
         "combinations": [],
         "score": 852.97,
         "scale": 1200,
-        "sourceUrl": "https://admission.tdtu.edu.vn/sites/admission/files/Tuyen-sinh/2026/TB-Diemtrungtuyen/PL2-Diem-trung-tuyen-DH-2026-PT2-TanHung.pdf"
+        "sourceUrl": "https://admission.tdtu.edu.vn/sites/admission/files/Tuyen-sinh/2026/TB-Diemtrungtuyen/PL2-Diem-trung-tuyen-DH-2026-PT2-TanHung.pdf",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -18283,7 +18520,8 @@
         "combinations": [],
         "score": 739.72,
         "scale": 1200,
-        "sourceUrl": "https://admission.tdtu.edu.vn/sites/admission/files/Tuyen-sinh/2026/TB-Diemtrungtuyen/PL2-Diem-trung-tuyen-DH-2026-PT2-TanHung.pdf"
+        "sourceUrl": "https://admission.tdtu.edu.vn/sites/admission/files/Tuyen-sinh/2026/TB-Diemtrungtuyen/PL2-Diem-trung-tuyen-DH-2026-PT2-TanHung.pdf",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -18293,7 +18531,8 @@
         "combinations": [],
         "score": 711.99,
         "scale": 1200,
-        "sourceUrl": "https://admission.tdtu.edu.vn/sites/admission/files/Tuyen-sinh/2026/TB-Diemtrungtuyen/PL2-Diem-trung-tuyen-DH-2026-PT2-TanHung.pdf"
+        "sourceUrl": "https://admission.tdtu.edu.vn/sites/admission/files/Tuyen-sinh/2026/TB-Diemtrungtuyen/PL2-Diem-trung-tuyen-DH-2026-PT2-TanHung.pdf",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -18303,7 +18542,8 @@
         "combinations": [],
         "score": 812.69,
         "scale": 1200,
-        "sourceUrl": "https://admission.tdtu.edu.vn/sites/admission/files/Tuyen-sinh/2026/TB-Diemtrungtuyen/PL2-Diem-trung-tuyen-DH-2026-PT2-TanHung.pdf"
+        "sourceUrl": "https://admission.tdtu.edu.vn/sites/admission/files/Tuyen-sinh/2026/TB-Diemtrungtuyen/PL2-Diem-trung-tuyen-DH-2026-PT2-TanHung.pdf",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -18313,7 +18553,8 @@
         "combinations": [],
         "score": 850.77,
         "scale": 1200,
-        "sourceUrl": "https://admission.tdtu.edu.vn/sites/admission/files/Tuyen-sinh/2026/TB-Diemtrungtuyen/PL2-Diem-trung-tuyen-DH-2026-PT2-TanHung.pdf"
+        "sourceUrl": "https://admission.tdtu.edu.vn/sites/admission/files/Tuyen-sinh/2026/TB-Diemtrungtuyen/PL2-Diem-trung-tuyen-DH-2026-PT2-TanHung.pdf",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -18323,7 +18564,8 @@
         "combinations": [],
         "score": 772.98,
         "scale": 1200,
-        "sourceUrl": "https://admission.tdtu.edu.vn/sites/admission/files/Tuyen-sinh/2026/TB-Diemtrungtuyen/PL2-Diem-trung-tuyen-DH-2026-PT2-TanHung.pdf"
+        "sourceUrl": "https://admission.tdtu.edu.vn/sites/admission/files/Tuyen-sinh/2026/TB-Diemtrungtuyen/PL2-Diem-trung-tuyen-DH-2026-PT2-TanHung.pdf",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -18333,7 +18575,8 @@
         "combinations": [],
         "score": 927.29,
         "scale": 1200,
-        "sourceUrl": "https://admission.tdtu.edu.vn/sites/admission/files/Tuyen-sinh/2026/TB-Diemtrungtuyen/PL2-Diem-trung-tuyen-DH-2026-PT2-TanHung.pdf"
+        "sourceUrl": "https://admission.tdtu.edu.vn/sites/admission/files/Tuyen-sinh/2026/TB-Diemtrungtuyen/PL2-Diem-trung-tuyen-DH-2026-PT2-TanHung.pdf",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -18343,7 +18586,8 @@
         "combinations": [],
         "score": 695.67,
         "scale": 1200,
-        "sourceUrl": "https://admission.tdtu.edu.vn/sites/admission/files/Tuyen-sinh/2026/TB-Diemtrungtuyen/PL2-Diem-trung-tuyen-DH-2026-PT2-TanHung.pdf"
+        "sourceUrl": "https://admission.tdtu.edu.vn/sites/admission/files/Tuyen-sinh/2026/TB-Diemtrungtuyen/PL2-Diem-trung-tuyen-DH-2026-PT2-TanHung.pdf",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -18353,7 +18597,8 @@
         "combinations": [],
         "score": 600,
         "scale": 1200,
-        "sourceUrl": "https://admission.tdtu.edu.vn/sites/admission/files/Tuyen-sinh/2026/TB-Diemtrungtuyen/PL2-Diem-trung-tuyen-DH-2026-PT2-TanHung.pdf"
+        "sourceUrl": "https://admission.tdtu.edu.vn/sites/admission/files/Tuyen-sinh/2026/TB-Diemtrungtuyen/PL2-Diem-trung-tuyen-DH-2026-PT2-TanHung.pdf",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -18363,7 +18608,8 @@
         "combinations": [],
         "score": 622.05,
         "scale": 1200,
-        "sourceUrl": "https://admission.tdtu.edu.vn/sites/admission/files/Tuyen-sinh/2026/TB-Diemtrungtuyen/PL2-Diem-trung-tuyen-DH-2026-PT2-TanHung.pdf"
+        "sourceUrl": "https://admission.tdtu.edu.vn/sites/admission/files/Tuyen-sinh/2026/TB-Diemtrungtuyen/PL2-Diem-trung-tuyen-DH-2026-PT2-TanHung.pdf",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -18373,7 +18619,8 @@
         "combinations": [],
         "score": 620.68,
         "scale": 1200,
-        "sourceUrl": "https://admission.tdtu.edu.vn/sites/admission/files/Tuyen-sinh/2026/TB-Diemtrungtuyen/PL2-Diem-trung-tuyen-DH-2026-PT2-TanHung.pdf"
+        "sourceUrl": "https://admission.tdtu.edu.vn/sites/admission/files/Tuyen-sinh/2026/TB-Diemtrungtuyen/PL2-Diem-trung-tuyen-DH-2026-PT2-TanHung.pdf",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -18383,7 +18630,8 @@
         "combinations": [],
         "score": 600,
         "scale": 1200,
-        "sourceUrl": "https://admission.tdtu.edu.vn/sites/admission/files/Tuyen-sinh/2026/TB-Diemtrungtuyen/PL2-Diem-trung-tuyen-DH-2026-PT2-TanHung.pdf"
+        "sourceUrl": "https://admission.tdtu.edu.vn/sites/admission/files/Tuyen-sinh/2026/TB-Diemtrungtuyen/PL2-Diem-trung-tuyen-DH-2026-PT2-TanHung.pdf",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -18393,7 +18641,8 @@
         "combinations": [],
         "score": 600,
         "scale": 1200,
-        "sourceUrl": "https://admission.tdtu.edu.vn/sites/admission/files/Tuyen-sinh/2026/TB-Diemtrungtuyen/PL2-Diem-trung-tuyen-DH-2026-PT2-TanHung.pdf"
+        "sourceUrl": "https://admission.tdtu.edu.vn/sites/admission/files/Tuyen-sinh/2026/TB-Diemtrungtuyen/PL2-Diem-trung-tuyen-DH-2026-PT2-TanHung.pdf",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -18403,7 +18652,8 @@
         "combinations": [],
         "score": 832.78,
         "scale": 1200,
-        "sourceUrl": "https://admission.tdtu.edu.vn/sites/admission/files/Tuyen-sinh/2026/TB-Diemtrungtuyen/PL2-Diem-trung-tuyen-DH-2026-PT2-TanHung.pdf"
+        "sourceUrl": "https://admission.tdtu.edu.vn/sites/admission/files/Tuyen-sinh/2026/TB-Diemtrungtuyen/PL2-Diem-trung-tuyen-DH-2026-PT2-TanHung.pdf",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -18413,7 +18663,8 @@
         "combinations": [],
         "score": 690.4,
         "scale": 1200,
-        "sourceUrl": "https://admission.tdtu.edu.vn/sites/admission/files/Tuyen-sinh/2026/TB-Diemtrungtuyen/PL2-Diem-trung-tuyen-DH-2026-PT2-TanHung.pdf"
+        "sourceUrl": "https://admission.tdtu.edu.vn/sites/admission/files/Tuyen-sinh/2026/TB-Diemtrungtuyen/PL2-Diem-trung-tuyen-DH-2026-PT2-TanHung.pdf",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -18423,7 +18674,8 @@
         "combinations": [],
         "score": 755.82,
         "scale": 1200,
-        "sourceUrl": "https://admission.tdtu.edu.vn/sites/admission/files/Tuyen-sinh/2026/TB-Diemtrungtuyen/PL2-Diem-trung-tuyen-DH-2026-PT2-TanHung.pdf"
+        "sourceUrl": "https://admission.tdtu.edu.vn/sites/admission/files/Tuyen-sinh/2026/TB-Diemtrungtuyen/PL2-Diem-trung-tuyen-DH-2026-PT2-TanHung.pdf",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -19107,6 +19359,9 @@
         "name": "Phân hiệu Trường Đại học Tôn Đức Thắng tại tỉnh Khánh Hòa",
         "address": "22 Nguyễn Đình Chiểu, phường Bắc Nha Trang, tỉnh Khánh Hòa"
       }
+    ],
+    "sourceDomains": [
+      "tdtu.edu.vn"
     ]
   },
   {
@@ -20000,6 +20255,9 @@
         "name": "Khoa Y tế công cộng",
         "address": "159 Hưng Phú, Phường Chánh Hưng, TP.HCM"
       }
+    ],
+    "sourceDomains": [
+      "ump.edu.vn"
     ]
   },
   {
@@ -20073,7 +20331,8 @@
         ],
         "score": 82.6,
         "scale": 100,
-        "sourceUrl": "https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-khoa-hoc-suc-khoe-dhqg-tphcm-QSY.html"
+        "sourceUrl": "https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-khoa-hoc-suc-khoe-dhqg-tphcm-QSY.html",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -20086,7 +20345,8 @@
         ],
         "score": 81.8,
         "scale": 100,
-        "sourceUrl": "https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-khoa-hoc-suc-khoe-dhqg-tphcm-QSY.html"
+        "sourceUrl": "https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-khoa-hoc-suc-khoe-dhqg-tphcm-QSY.html",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -20099,7 +20359,8 @@
         ],
         "score": 73,
         "scale": 100,
-        "sourceUrl": "https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-khoa-hoc-suc-khoe-dhqg-tphcm-QSY.html"
+        "sourceUrl": "https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-khoa-hoc-suc-khoe-dhqg-tphcm-QSY.html",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -20112,7 +20373,8 @@
         ],
         "score": 72.41,
         "scale": 100,
-        "sourceUrl": "https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-khoa-hoc-suc-khoe-dhqg-tphcm-QSY.html"
+        "sourceUrl": "https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-khoa-hoc-suc-khoe-dhqg-tphcm-QSY.html",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -20125,7 +20387,8 @@
         ],
         "score": 67,
         "scale": 100,
-        "sourceUrl": "https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-khoa-hoc-suc-khoe-dhqg-tphcm-QSY.html"
+        "sourceUrl": "https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-khoa-hoc-suc-khoe-dhqg-tphcm-QSY.html",
+        "verifiedForAI": true
       }
     ]
   },
@@ -20532,7 +20795,8 @@
         ],
         "score": 18,
         "scale": 30,
-        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026"
+        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -20541,7 +20805,8 @@
         "combinations": [],
         "score": 600,
         "scale": 1200,
-        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026"
+        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -20552,7 +20817,8 @@
         ],
         "score": 18,
         "scale": 30,
-        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026"
+        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -20561,7 +20827,8 @@
         "combinations": [],
         "score": 600,
         "scale": 1200,
-        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026"
+        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -20572,7 +20839,8 @@
         ],
         "score": 18,
         "scale": 30,
-        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026"
+        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -20581,7 +20849,8 @@
         "combinations": [],
         "score": 600,
         "scale": 1200,
-        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026"
+        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -20592,7 +20861,8 @@
         ],
         "score": 18,
         "scale": 30,
-        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026"
+        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -20601,7 +20871,8 @@
         "combinations": [],
         "score": 600,
         "scale": 1200,
-        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026"
+        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -20617,7 +20888,8 @@
         ],
         "score": 15,
         "scale": 30,
-        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026"
+        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -20627,7 +20899,8 @@
         "combinations": [],
         "score": 600,
         "scale": 1200,
-        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026"
+        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -20643,7 +20916,8 @@
         ],
         "score": 15,
         "scale": 30,
-        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026"
+        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -20653,7 +20927,8 @@
         "combinations": [],
         "score": 600,
         "scale": 1200,
-        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026"
+        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -20669,7 +20944,8 @@
         ],
         "score": 15,
         "scale": 30,
-        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026"
+        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -20679,7 +20955,8 @@
         "combinations": [],
         "score": 600,
         "scale": 1200,
-        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026"
+        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -20695,7 +20972,8 @@
         ],
         "score": 15,
         "scale": 30,
-        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026"
+        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -20705,7 +20983,8 @@
         "combinations": [],
         "score": 600,
         "scale": 1200,
-        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026"
+        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -20721,7 +21000,8 @@
         ],
         "score": 15,
         "scale": 30,
-        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026"
+        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -20731,7 +21011,8 @@
         "combinations": [],
         "score": 600,
         "scale": 1200,
-        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026"
+        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -20746,7 +21027,8 @@
         ],
         "score": 15,
         "scale": 30,
-        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026"
+        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -20756,7 +21038,8 @@
         "combinations": [],
         "score": 600,
         "scale": 1200,
-        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026"
+        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -20772,7 +21055,8 @@
         ],
         "score": 15,
         "scale": 30,
-        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026"
+        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -20782,7 +21066,8 @@
         "combinations": [],
         "score": 600,
         "scale": 1200,
-        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026"
+        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -20798,7 +21083,8 @@
         ],
         "score": 15,
         "scale": 30,
-        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026"
+        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -20808,7 +21094,8 @@
         "combinations": [],
         "score": 600,
         "scale": 1200,
-        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026"
+        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -20826,7 +21113,8 @@
         ],
         "score": 15,
         "scale": 30,
-        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026"
+        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -20836,7 +21124,8 @@
         "combinations": [],
         "score": 600,
         "scale": 1200,
-        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026"
+        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -20851,7 +21140,8 @@
         ],
         "score": 15,
         "scale": 30,
-        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026"
+        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -20861,7 +21151,8 @@
         "combinations": [],
         "score": 600,
         "scale": 1200,
-        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026"
+        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -20879,7 +21170,8 @@
         ],
         "score": 15,
         "scale": 30,
-        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026"
+        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -20889,7 +21181,8 @@
         "combinations": [],
         "score": 600,
         "scale": 1200,
-        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026"
+        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -20906,7 +21199,8 @@
         ],
         "score": 15,
         "scale": 30,
-        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026"
+        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -20916,7 +21210,8 @@
         "combinations": [],
         "score": 600,
         "scale": 1200,
-        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026"
+        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -20933,7 +21228,8 @@
         ],
         "score": 15,
         "scale": 30,
-        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026"
+        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -20943,7 +21239,8 @@
         "combinations": [],
         "score": 600,
         "scale": 1200,
-        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026"
+        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -20960,7 +21257,8 @@
         ],
         "score": 15,
         "scale": 30,
-        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026"
+        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -20970,7 +21268,8 @@
         "combinations": [],
         "score": 600,
         "scale": 1200,
-        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026"
+        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -20987,7 +21286,8 @@
         ],
         "score": 15,
         "scale": 30,
-        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026"
+        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -20997,7 +21297,8 @@
         "combinations": [],
         "score": 600,
         "scale": 1200,
-        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026"
+        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -21014,7 +21315,8 @@
         ],
         "score": 15,
         "scale": 30,
-        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026"
+        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -21024,7 +21326,8 @@
         "combinations": [],
         "score": 600,
         "scale": 1200,
-        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026"
+        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -21041,7 +21344,8 @@
         ],
         "score": 15,
         "scale": 30,
-        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026"
+        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -21051,7 +21355,8 @@
         "combinations": [],
         "score": 600,
         "scale": 1200,
-        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026"
+        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -21069,7 +21374,8 @@
         ],
         "score": 15,
         "scale": 30,
-        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026"
+        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -21079,7 +21385,8 @@
         "combinations": [],
         "score": 600,
         "scale": 1200,
-        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026"
+        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -21097,7 +21404,8 @@
         ],
         "score": 15,
         "scale": 30,
-        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026"
+        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -21107,7 +21415,8 @@
         "combinations": [],
         "score": 600,
         "scale": 1200,
-        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026"
+        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -21125,7 +21434,8 @@
         ],
         "score": 15,
         "scale": 30,
-        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026"
+        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -21135,7 +21445,8 @@
         "combinations": [],
         "score": 600,
         "scale": 1200,
-        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026"
+        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -21153,7 +21464,8 @@
         ],
         "score": 15,
         "scale": 30,
-        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026"
+        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -21163,7 +21475,8 @@
         "combinations": [],
         "score": 600,
         "scale": 1200,
-        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026"
+        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -21181,7 +21494,8 @@
         ],
         "score": 15,
         "scale": 30,
-        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026"
+        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -21191,7 +21505,8 @@
         "combinations": [],
         "score": 600,
         "scale": 1200,
-        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026"
+        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -21209,7 +21524,8 @@
         ],
         "score": 15,
         "scale": 30,
-        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026"
+        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -21219,7 +21535,8 @@
         "combinations": [],
         "score": 600,
         "scale": 1200,
-        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026"
+        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -21237,7 +21554,8 @@
         ],
         "score": 15,
         "scale": 30,
-        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026"
+        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -21247,7 +21565,8 @@
         "combinations": [],
         "score": 600,
         "scale": 1200,
-        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026"
+        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -21265,7 +21584,8 @@
         ],
         "score": 15,
         "scale": 30,
-        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026"
+        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -21275,7 +21595,8 @@
         "combinations": [],
         "score": 600,
         "scale": 1200,
-        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026"
+        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -21293,7 +21614,8 @@
         ],
         "score": 15,
         "scale": 30,
-        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026"
+        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -21303,7 +21625,8 @@
         "combinations": [],
         "score": 600,
         "scale": 1200,
-        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026"
+        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -21321,7 +21644,8 @@
         ],
         "score": 15,
         "scale": 30,
-        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026"
+        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -21331,7 +21655,8 @@
         "combinations": [],
         "score": 600,
         "scale": 1200,
-        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026"
+        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -21348,7 +21673,8 @@
         ],
         "score": 20,
         "scale": 30,
-        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026"
+        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -21357,7 +21683,8 @@
         "combinations": [],
         "score": 700,
         "scale": 1200,
-        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026"
+        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -21374,7 +21701,8 @@
         ],
         "score": 20,
         "scale": 30,
-        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026"
+        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -21383,7 +21711,8 @@
         "combinations": [],
         "score": 700,
         "scale": 1200,
-        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026"
+        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -21403,7 +21732,8 @@
         ],
         "score": 15,
         "scale": 30,
-        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026"
+        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -21413,7 +21743,8 @@
         "combinations": [],
         "score": 600,
         "scale": 1200,
-        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026"
+        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -21433,7 +21764,8 @@
         ],
         "score": 15,
         "scale": 30,
-        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026"
+        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -21443,7 +21775,8 @@
         "combinations": [],
         "score": 600,
         "scale": 1200,
-        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026"
+        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -21461,7 +21794,8 @@
         ],
         "score": 15,
         "scale": 30,
-        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026"
+        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -21471,7 +21805,8 @@
         "combinations": [],
         "score": 600,
         "scale": 1200,
-        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026"
+        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -21489,7 +21824,8 @@
         ],
         "score": 15,
         "scale": 30,
-        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026"
+        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -21499,7 +21835,8 @@
         "combinations": [],
         "score": 600,
         "scale": 1200,
-        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026"
+        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -21517,7 +21854,8 @@
         ],
         "score": 15,
         "scale": 30,
-        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026"
+        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -21527,7 +21865,8 @@
         "combinations": [],
         "score": 600,
         "scale": 1200,
-        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026"
+        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -21545,7 +21884,8 @@
         ],
         "score": 15,
         "scale": 30,
-        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026"
+        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -21555,7 +21895,8 @@
         "combinations": [],
         "score": 600,
         "scale": 1200,
-        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026"
+        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -21573,7 +21914,8 @@
         ],
         "score": 15,
         "scale": 30,
-        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026"
+        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -21583,7 +21925,8 @@
         "combinations": [],
         "score": 600,
         "scale": 1200,
-        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026"
+        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -21601,7 +21944,8 @@
         ],
         "score": 15,
         "scale": 30,
-        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026"
+        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -21611,7 +21955,8 @@
         "combinations": [],
         "score": 600,
         "scale": 1200,
-        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026"
+        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -21627,7 +21972,8 @@
         ],
         "score": 15,
         "scale": 30,
-        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026"
+        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -21637,7 +21983,8 @@
         "combinations": [],
         "score": 600,
         "scale": 1200,
-        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026"
+        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -21653,7 +22000,8 @@
         ],
         "score": 15,
         "scale": 30,
-        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026"
+        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -21663,7 +22011,8 @@
         "combinations": [],
         "score": 600,
         "scale": 1200,
-        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026"
+        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -21679,7 +22028,8 @@
         ],
         "score": 15,
         "scale": 30,
-        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026"
+        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -21689,7 +22039,8 @@
         "combinations": [],
         "score": 600,
         "scale": 1200,
-        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026"
+        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -21707,7 +22058,8 @@
         ],
         "score": 15,
         "scale": 30,
-        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026"
+        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -21717,7 +22069,8 @@
         "combinations": [],
         "score": 600,
         "scale": 1200,
-        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026"
+        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -21733,7 +22086,8 @@
         ],
         "score": 15,
         "scale": 30,
-        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026"
+        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -21743,7 +22097,8 @@
         "combinations": [],
         "score": 600,
         "scale": 1200,
-        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026"
+        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -21759,7 +22114,8 @@
         ],
         "score": 15,
         "scale": 30,
-        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026"
+        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -21769,7 +22125,8 @@
         "combinations": [],
         "score": 600,
         "scale": 1200,
-        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026"
+        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -21787,7 +22144,8 @@
         ],
         "score": 15,
         "scale": 30,
-        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026"
+        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -21797,7 +22155,8 @@
         "combinations": [],
         "score": 600,
         "scale": 1200,
-        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026"
+        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -21813,7 +22172,8 @@
         ],
         "score": 15,
         "scale": 30,
-        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026"
+        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -21823,7 +22183,8 @@
         "combinations": [],
         "score": 600,
         "scale": 1200,
-        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026"
+        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -21843,7 +22204,8 @@
         ],
         "score": 15,
         "scale": 30,
-        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026"
+        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -21853,7 +22215,8 @@
         "combinations": [],
         "score": 600,
         "scale": 1200,
-        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026"
+        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -21868,7 +22231,8 @@
         ],
         "score": 15,
         "scale": 30,
-        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026"
+        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -21878,7 +22242,8 @@
         "combinations": [],
         "score": 600,
         "scale": 1200,
-        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026"
+        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -21894,7 +22259,8 @@
         ],
         "score": 15,
         "scale": 30,
-        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026"
+        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -21904,7 +22270,8 @@
         "combinations": [],
         "score": 600,
         "scale": 1200,
-        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026"
+        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -21920,7 +22287,8 @@
         ],
         "score": 15,
         "scale": 30,
-        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026"
+        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -21930,7 +22298,8 @@
         "combinations": [],
         "score": 600,
         "scale": 1200,
-        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026"
+        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -21946,7 +22315,8 @@
         ],
         "score": 15,
         "scale": 30,
-        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026"
+        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -21956,7 +22326,8 @@
         "combinations": [],
         "score": 600,
         "scale": 1200,
-        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026"
+        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -21970,7 +22341,8 @@
         ],
         "score": 15,
         "scale": 30,
-        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026"
+        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -21980,7 +22352,8 @@
         "combinations": [],
         "score": 600,
         "scale": 1200,
-        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026"
+        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -21994,7 +22367,8 @@
         ],
         "score": 22,
         "scale": 30,
-        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026"
+        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -22003,7 +22377,8 @@
         "combinations": [],
         "score": 750,
         "scale": 1200,
-        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026"
+        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -22017,7 +22392,8 @@
         ],
         "score": 20,
         "scale": 30,
-        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026"
+        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -22026,7 +22402,8 @@
         "combinations": [],
         "score": 700,
         "scale": 1200,
-        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026"
+        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -22040,7 +22417,8 @@
         ],
         "score": 18,
         "scale": 30,
-        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026"
+        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -22049,7 +22427,8 @@
         "combinations": [],
         "score": 650,
         "scale": 1200,
-        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026"
+        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -22063,7 +22442,8 @@
         ],
         "score": 22,
         "scale": 30,
-        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026"
+        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -22072,7 +22452,8 @@
         "combinations": [],
         "score": 750,
         "scale": 1200,
-        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026"
+        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -22086,7 +22467,8 @@
         ],
         "score": 18,
         "scale": 30,
-        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026"
+        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -22095,7 +22477,8 @@
         "combinations": [],
         "score": 650,
         "scale": 1200,
-        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026"
+        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -22112,7 +22495,8 @@
         ],
         "score": 15,
         "scale": 30,
-        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026"
+        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -22122,7 +22506,8 @@
         "combinations": [],
         "score": 600,
         "scale": 1200,
-        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026"
+        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -22139,7 +22524,8 @@
         ],
         "score": 15,
         "scale": 30,
-        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026"
+        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -22149,7 +22535,8 @@
         "combinations": [],
         "score": 600,
         "scale": 1200,
-        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026"
+        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -22166,7 +22553,8 @@
         ],
         "score": 15,
         "scale": 30,
-        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026"
+        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -22176,7 +22564,8 @@
         "combinations": [],
         "score": 600,
         "scale": 1200,
-        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026"
+        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -22193,7 +22582,8 @@
         ],
         "score": 15,
         "scale": 30,
-        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026"
+        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -22203,7 +22593,8 @@
         "combinations": [],
         "score": 600,
         "scale": 1200,
-        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026"
+        "sourceUrl": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-diem-chuan-trung-tuyen-dai-hoc-chinh-quy-nam-2026",
+        "verifiedForAI": true
       },
       {
         "year": 2026,
@@ -22492,6 +22883,9 @@
         "name": "Cơ sở 2",
         "address": "233A Phan Văn Trị, Phường 11, Quận Bình Thạnh, TP. Hồ Chí Minh"
       }
+    ],
+    "sourceDomains": [
+      "vlu.edu.vn"
     ]
   },
   {
@@ -24859,6 +25253,9 @@
         "name": "Thu Duc Campus",
         "address": "Phân khu Đào tạo E1, Khu Công nghệ cao, Phường Tăng Nhơn Phú, TP. Hồ Chí Minh"
       }
+    ],
+    "sourceDomains": [
+      "hutech.edu.vn"
     ]
   },
   {

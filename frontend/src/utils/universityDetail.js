@@ -27,7 +27,7 @@ export function detailData(u) {
       validNumber(a.score) && validNumber(a.scale) && a.scale > 0 && a.score <= a.scale ? [{ ...a, kind }] : []
   })
   const tuition = asArray(u.tuition).filter((t) =>
-    hasTrustedSource(u.slug, t.sourceUrl) && validNumber(t.amountMin) &&
+    hasTrustedSource(u, t.sourceUrl) && validNumber(t.amountMin) &&
     // DATA_NOTES ghi năm học UMP là giả định, chưa xác minh trực tiếp.
     u.slug !== 'y-duoc-tphcm' &&
     (t.amountMax == null || (validNumber(t.amountMax) && t.amountMax >= t.amountMin)) &&

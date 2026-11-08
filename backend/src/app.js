@@ -7,7 +7,8 @@ const connectDB = require('./config/db')
 const app = express()
 
 app.use(cors())
-app.use(express.json())
+// 1mb: một trường có thể có vài trăm dòng điểm chuẩn khi admin lưu cả document.
+app.use(express.json({ limit: '1mb' }))
 
 // Bảo đảm đã kết nối DB trước mỗi request — cần khi chạy serverless (Vercel);
 // chạy local thì server.js đã kết nối sẵn nên bước này dùng lại kết nối cũ.

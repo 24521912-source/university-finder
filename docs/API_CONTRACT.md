@@ -93,6 +93,22 @@ Trang tuyển sinh hiện là bản demo frontend có nhãn dữ liệu minh h�
 
 Dữ liệu trang AI tư vấn dùng để chấm điểm, đọc trực tiếp MongoDB: mảng các trường với `slug`, `name`, `shortName`, `institutionType`, `belongsToUniversitySystem`, `dataLevel`, `address.district`, `majors`, `tuition`, `admissions`. Chỉ đọc.
 
+## Admin 🛡️
+
+Mọi API dưới đây cần header `Authorization: Bearer <token>` của tài khoản có `role: "admin"` trong database. Thiếu/sai token → `401`; không phải admin → `403`. Dữ liệu ghi thẳng vào MongoDB và hiện ngay trên các trang công khai.
+
+| Phương thức | Đường dẫn | Mô tả |
+|---|---|---|
+| GET | `/admin/universities?q=&page=` | Danh sách trường (20/trang), tìm theo tên / tên viết tắt / slug. Trả `{ items, page, pageSize, total }` |
+| GET | `/admin/universities/:slug` | Toàn bộ document một trường |
+| POST | `/admin/universities` | Thêm trường. `201` + document |
+| PUT | `/admin/universities/:slug` | Sửa trường: field gửi lên được ghi đè, field không gửi giữ nguyên |
+| DELETE | `/admin/universities/:slug` | Xóa trường. `{ slug }` |
+| GET | `/admin/majors` | Danh mục ngành `[{ code, name }]` để gợi ý mã ngành |
+
+- Chỉ ghi các field có trong `EDITABLE` (`backend/src/modules/admin/admin.service.js`); `_id`, `favoriteCount`, timestamps và field lạ bị bỏ qua.
+- `400` khi: slug sai định dạng, mã ngành không có trong danh mục, học phí / điểm chuẩn trỏ tới mã ngành không thuộc trường, hoặc vi phạm schema. `409` khi slug trùng. `404` khi không có trường.
+
 ## Majors
 
 ### `GET /majors`

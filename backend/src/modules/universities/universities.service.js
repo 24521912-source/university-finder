@@ -54,7 +54,7 @@ async function detail(slug) {
 }
 
 // Dữ liệu trang AI tư vấn cần để chấm điểm: đọc trực tiếp MongoDB nên admin sửa là thấy ngay.
-const RECOMMENDATION_FIELDS = 'slug name shortName institutionType belongsToUniversitySystem dataLevel address.district majors tuition admissions'
+const RECOMMENDATION_FIELDS = 'slug name shortName institutionType belongsToUniversitySystem dataLevel sourceDomains address.district majors tuition admissions'
 
 async function recommendationData() {
   return University.find().select(`${RECOMMENDATION_FIELDS} -_id`).sort({ name: 1 }).lean()

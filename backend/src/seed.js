@@ -14,7 +14,15 @@ const universities = require('../../database/seeds/universities.json')
 const DRY_RUN = process.argv.includes('--dry-run')
 
 // Bỏ _id/timestamps để so nội dung.
-const plain = (v) => JSON.stringify(v ?? null, (k, x) => (['_id', '__v', 'createdAt', 'updatedAt'].includes(k) ? undefined : x))
+// Sắp key theo tên để thứ tự field (JSON vs MongoDB) không làm 2 bản giống nhau bị coi là khác.
+const IGNORED = ['_id', '__v', 'createdAt', 'updatedAt']
+const plain = (v) => JSON.stringify(v ?? null, (k, x) => {
+  if (IGNORED.includes(k)) return undefined
+  if (x && typeof x === 'object' && !Array.isArray(x) && !(x instanceof Date) && x.constructor?.name !== 'ObjectId') {
+    return Object.fromEntries(Object.keys(x).sort().map((key) => [key, x[key]]))
+  }
+  return x
+})
 
 // Chỉ ghi field có nội dung khác database. Field giống hệt không bị ghi lại, nên _id của từng
 // dòng điểm chuẩn / học phí được giữ (trang chi tiết Bách khoa đối chiếu bản ghi đã duyệt theo _id).

@@ -118,9 +118,6 @@ export const COMPOSITE_SCHOOLS = {
     year: 2026,
     scale: 100,
     formula: 'hcmut',
-    // Điểm chuẩn chính thức trên hcmut.edu.vn (bản trong database); bản đăng lại vẫn được chấp nhận.
-    admissionDomains: ['hcmut.edu.vn', 'xaydungchinhsach.chinhphu.vn'],
-    isStandard: (program) => /^Tiêu chuẩn \(mã XT \d+\)$/.test(program || ''),
     formulaSources: [
       'https://hcmut.edu.vn/tuyen-sinh/dai-hoc-chinh-quy/phuong-thuc-tuyen-sinh/xet-tuyen-tong-hop-2026',
       'https://diemthi.tuyensinh247.com/tin/cach-tinh-diem-xet-tuyen-dai-hoc-bach-khoa-dhqg-tphcm-hcmut-2026-504.html',
@@ -131,18 +128,12 @@ export const COMPOSITE_SCHOOLS = {
     scale: 100,
     // Đề án IU 2026 chỉ nêu dạng k1·THPT + k2·ĐGNL + k3·học bạ, chưa tìm được hệ số -> chưa ước tính.
     formula: null,
-    // Bảng điểm chuẩn 2026 lấy từ trang tổng hợp (chưa tìm thấy bảng chính thức dạng đọc được).
-    admissionDomains: ['diemthi.tuyensinh247.com'],
-    isStandard: (program) => /— do ĐHQT cấp bằng$/.test(program || ''),
     formulaSources: ['https://tuyensinh.hcmiu.edu.vn/wp-content/uploads/2026/04/0420_QSQ_Thong-tin-tuyen-sinh-2026.pdf'],
   },
   'khoa-hoc-xa-hoi-nhan-van-dhqg': {
     year: 2026,
     scale: 100,
     formula: 'ussh',
-    // Bảng điểm chính thức là ảnh; số liệu theo trang tổng hợp, đối chiếu khớp các mức Tiền Phong nêu.
-    admissionDomains: ['diemthi.tuyensinh247.com'],
-    isStandard: (program) => /^Chuẩn — đối tượng THPT \+ học bạ/.test(program || ''),
     formulaSources: [
       'https://tuoitre.vn/khong-thi-danh-gia-nang-luc-co-duoc-xet-tuyen-vo-truong-dh-khoa-hoc-xa-hoi-va-nhan-van-20260224114759718.htm',
       'https://tienphong.vn/bao-chi-mat-ngoi-dau-diem-chuan-tai-truong-dh-khoa-hoc-xa-hoi-va-nhan-van-tphcm-post1866740.tpo',
@@ -153,17 +144,12 @@ export const COMPOSITE_SCHOOLS = {
     scale: 100,
     // Chưa xác minh được trọng số THPT / ĐGNL / học bạ năm 2026 -> chỉ hiện điểm chuẩn.
     formula: null,
-    admissionDomains: ['diemthi.tuyensinh247.com'],
-    isStandard: (program) => program === 'Chuẩn — xét tuyển tổng hợp',
     formulaSources: ['https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-khoa-hoc-suc-khoe-dhqg-tphcm-QSY.html'],
   },
   'kinh-te-luat-dhqg': {
     year: 2026,
     scale: 100,
     formula: 'uel',
-    admissionDomains: ['tuyensinh.uel.edu.vn'],
-    // Chương trình tiếng Việt: mã XT 3 số, không có hậu tố E (tiếng Anh) / H (Co-op).
-    isStandard: (program) => /\(mã XT \d{3}\)$/.test(program || ''),
     formulaSources: [
       'https://dcdn.dantri.com.vn/2026/02/15/thong-tin-tuyen-sinh-uel-2026-1771150334010.docx',
       'https://tuyensinh.uel.edu.vn/truong-dai-hoc-kinh-te-luat-cong-bo-ket-qua-tuyen-sinh-dai-hoc-chinh-quy-nam-2026/',
@@ -171,11 +157,8 @@ export const COMPOSITE_SCHOOLS = {
   },
 }
 
-const allowedSource = (url, domains) => {
-  try {
-    const u = new URL(url)
-    return u.protocol === 'https:' && domains.some((d) => u.hostname === d || u.hostname.endsWith(`.${d}`))
-  } catch { return false }
+const safeUrl = (url) => {
+  try { return new URL(url).protocol === 'https:' } catch { return false }
 }
 
 export function feasibility(estimate, cutoff) {
@@ -198,8 +181,8 @@ export function compositeCandidates(universities, p) {
     if (!matchesVnuhcm(u, p.vnuhcm)) continue
     const records = (u.admissions || []).filter((a) =>
       codes.includes(a.majorCode) && a.year === cfg.year && a.scale === cfg.scale &&
-      cfg.isStandard(a.program) && finite(a.score) && a.score >= 0 && a.score <= cfg.scale &&
-      allowedSource(a.sourceUrl, cfg.admissionDomains))
+      // Admin đánh dấu "Đã xác minh cho AI" cho dòng chương trình chuẩn, nguồn rõ ràng.
+      a.verifiedForAI === true && finite(a.score) && a.score >= 0 && a.score <= cfg.scale && safeUrl(a.sourceUrl))
     if (!records.length) continue
     const nameOf = (code) => u.majors?.find((m) => m.code === code)?.name || code
     const scores = p.subjectScores || []

@@ -60,8 +60,29 @@ test('nguồn thiếu hoặc nguồn thứ cấp không được dùng để ch�
   const { ranked, needsData } = recommend([u], preferences)
   assert.equal(ranked.length, 0)
   assert.equal(needsData[0].coverage, 0)
-  assert.equal(trustedSource(u.slug, 'https://hcmus.edu.vn.attacker.example/'), false)
-  assert.equal(trustedSource(u.slug, 'http://hcmus.edu.vn/'), false)
+  assert.equal(trustedSource(u, 'https://hcmus.edu.vn.attacker.example/'), false)
+  assert.equal(trustedSource(u, 'http://hcmus.edu.vn/'), false)
+  assert.equal(trustedSource(u, 'https://tuyensinh.hcmus.edu.vn/x'), true)
+  assert.equal(trustedSource({ ...u, sourceDomains: [] }, 'https://tuyensinh.hcmus.edu.vn/x'), false)
+})
+
+test('điểm chuẩn chỉ được AI dùng khi admin bật verifiedForAI', () => {
+  const p = { ...preferences, majorCode: '7480201', combination: 'A00', score: '27' }
+  const u = school('cong-nghe-thong-tin-dhqg')
+  assert.notEqual(recommend([u], p).ranked[0].criteria.admission.score, null)
+  for (const a of u.admissions) a.verifiedForAI = false
+  const r = recommend([u], p)
+  assert.equal([...r.ranked, ...r.needsData][0].criteria.admission.score, null)
+})
+
+test('admin bật verifiedForAI cho trường mới thì AI dùng ngay, không cần sửa code', () => {
+  const u = { slug: 'truong-thu', name: 'Trường thử', institutionType: 'public', sourceDomains: ['truongthu.edu.vn'],
+    majors: [{ code: '7480201', name: 'Công nghệ thông tin' }], tuition: [],
+    admissions: [{ year: 2026, method: 'high_school_exam', majorCode: '7480201', combinations: ['A00'], score: 24, scale: 30,
+      sourceUrl: 'https://truongthu.edu.vn/diem-chuan', verifiedForAI: true, aiNote: 'Ghi chú thử.' }] }
+  const r = recommend([u], { ...preferences, majorCode: '7480201', combination: 'A00', score: '24', budget: 'any' }).ranked[0]
+  assert.equal(r.criteria.admission.score, 50)
+  assert.match(r.criteria.admission.text, /Ghi chú thử\./)
 })
 
 test('không suy ra học phí theo năm từ học kỳ hoặc dùng phí chương trình khác', () => {

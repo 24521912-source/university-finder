@@ -13,5 +13,6 @@ router.get('/health', (req, res) => {
 router.use('/auth', require('../modules/auth/auth.routes'))
 router.use('/universities', require('../modules/universities/universities.routes'))
 router.use('/majors', require('../modules/majors/majors.routes'))
+router.use('/admin', require('../modules/admin/admin.routes'))
 
 module.exports = router

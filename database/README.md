@@ -45,4 +45,6 @@ npm run seed -- --overwrite   # ghi thật (bắt buộc khi database đã có d
 - Tiền lưu số nguyên VND (`20000000`), không lưu chuỗi "20 triệu/năm".
 - Ngành của trường tham chiếu mã trong danh mục ngành (collection `majors`) — trang admin từ chối mã ngành chưa có trong danh mục.
 - Điểm chuẩn luôn có `year`, `method`, `majorCode`, `scale` (30 hoặc 1200).
+- `admissions[].verifiedForAI = true`: dòng đã kiểm tra đúng phương thức, năm, thang điểm và là chương trình chuẩn → AI tư vấn được dùng để so điểm (`aiNote` là lưu ý hiện kèm). Mặc định `false`; bật/tắt trên trang /admin.
+- `sourceDomains` của trường (vd `["uit.edu.vn"]`): ngành / học phí có link nguồn thuộc các tên miền này mới được AI và trang chi tiết coi là đã xác minh.
 - Không có dữ liệu thì bỏ trống/`null`, không tự đoán.

@@ -45,6 +45,9 @@ const admissionSchema = new Schema({
   scale: { type: Number, required: true }, // 30 (THPT, học bạ), 40 (một số trường nhân hệ số) hoặc 1200 (ĐGNL)
   quota: Number,
   sourceUrl: String,
+  // Đã xác minh đúng phương thức / năm / thang điểm / chương trình chuẩn -> AI tư vấn được dùng để so điểm
+  verifiedForAI: { type: Boolean, default: false },
+  aiNote: String, // lưu ý hiện kèm khi AI dùng dòng này (vd điểm tổng hợp quy đổi)
 })
 
 const universitySchema = new Schema(
@@ -65,6 +68,8 @@ const universitySchema = new Schema(
     // 1 = thông tin cơ bản, 2 = có ngành/học phí/điểm chuẩn, 3 = đầy đủ để demo AI
     dataLevel: { type: Number, enum: [1, 2, 3], default: 1 },
     tags: [String], // "ky-tuc-xa", "hoc-bong", "quoc-te"... dùng cho AI tư vấn
+    // Tên miền nguồn chính thức (vd "uit.edu.vn"): ngành / học phí có link thuộc các tên miền này mới được AI tin
+    sourceDomains: [String],
     favoriteCount: { type: Number, default: 0, min: 0 },
     overview: {
       studentCount: Number,

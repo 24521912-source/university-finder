@@ -11,6 +11,7 @@ import UniversityDetail from '../pages/UniversityDetail/UniversityDetail'
 import AdmissionPreview from '../pages/UniversityDetail/AdmissionPreview'
 import AI from '../pages/AI/AI'
 import Compare from '../pages/Compare/Compare'
+import Admin from '../pages/Admin/Admin'
 
 // Khai báo mọi trang của web. Làm xong chức năng nào thì thay <ComingSoon /> bằng trang thật.
 function AppRoutes() {
@@ -34,7 +35,7 @@ function AppRoutes() {
           <Route path="/profile" element={<ProtectedRoute><Profile /></ProtectedRoute>} />
 
           {/* Chỉ admin */}
-          <Route path="/admin/*" element={<ProtectedRoute adminOnly><ComingSoon title="Trang quản trị" /></ProtectedRoute>} />
+          <Route path="/admin/*" element={<ProtectedRoute adminOnly><Admin /></ProtectedRoute>} />
 
           <Route path="*" element={<ComingSoon title="Không tìm thấy trang" message="Đường dẫn này không tồn tại." />} />
         </Route>
