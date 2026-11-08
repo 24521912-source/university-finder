@@ -28,7 +28,9 @@ backend/ chứa API server và logic xử lý nghiệp vụ.
 
 database/ dùng để lưu script database, schema, migration hoặc dữ liệu mẫu.
 - mongodb/: mô tả schema MongoDB Atlas.
-- seeds/: dữ liệu gốc dạng JSON, nạp lên Atlas bằng `npm run seed` trong backend.
+- seeds/: dữ liệu nạp ban đầu dạng JSON (`npm run seed`). Sau khi nạp, Atlas là dữ liệu gốc, sửa qua trang /admin.
+
+backups/ (ngoài git): bản sao lưu từ `npm run backup`.
 
 # DOCS
 
@@ -44,11 +46,15 @@ Mỗi người làm trọn một chức năng (frontend + backend). Phần khung
 |---|---|
 | Gọi API từ frontend | `import api, { getErrorMessage } from '../../services/api'` — tự gắn token |
 | Biết ai đang đăng nhập | `const { user, setUser } = useAuth()` từ `features/auth/AuthContext` |
-| Trang cần đăng nhập / chỉ admin | Bọc bằng `<ProtectedRoute>` / `<ProtectedRoute adminOnly>` trong `routes/AppRoutes.jsx` |
+| Trang cần đăng nhập / chỉ quản trị viên | Bọc bằng `<ProtectedRoute>` / `<ProtectedRoute adminOnly>` trong `routes/AppRoutes.jsx` |
+| Kiểm tra quyền ở frontend | `isAdmin`, `isSuperadmin`, `can(actor, target, action)` trong `utils/roles.js` (chỉ để ẩn/hiện nút) |
+| Nút yêu thích | Hook `useFavorites()` trong `features/favorites/useFavorites.js` |
 | Hiển thị một trường | `<UniversityCard university={...} />` (truyền thêm `onToggleFavorite`, `isFavorite` nếu có nút yêu thích) |
 | Định dạng học phí, loại trường | `formatTuition`, `INSTITUTION_TYPE_LABEL` trong `utils/format.js` |
 | Màu, nút, form, badge | Class trong `src/index.css`: `container`, `page-title`, `btn btn-primary`, `input`, `badge`, `card-grid`… |
-| API cần đăng nhập / chỉ admin | `requireAuth` / `requireAdmin` trong `backend/src/middlewares/auth.js` (người dùng ở `req.user`) |
+| API cần đăng nhập / quản trị viên / quản trị cấp cao | `requireAuth` / `requireAdmin` / `requireSuperadmin` trong `backend/src/middlewares/auth.js` (người dùng ở `req.user`) |
+| Quy tắc ai được thao tác lên ai | `denyReason()` trong `backend/src/utils/roles.js` |
+| Ghi lịch sử khi quản trị viên sửa dữ liệu | `record()` trong `backend/src/modules/history/history.recorder.js` |
 | Trả lỗi từ backend | `throw httpError(404, 'Không tìm thấy trường')` (`utils/httpError.js`) — không cần try/catch, Express 5 tự bắt |
 | Dữ liệu card của trường | `toCard()`, `CARD_FIELDS` trong `modules/universities/universities.service.js` |
 

@@ -116,3 +116,11 @@ test('route: xóa dòng lịch sử chỉ quản trị cấp cao; chưa đăng n
     await new Promise((r) => server.close(r))
   }
 })
+
+test('changedFields bỏ qua thứ tự field, ô trống và verifiedForAI:false mặc định', () => {
+  const { changedFields } = require('../src/modules/history/history.recorder')
+  const before = { address: { city: 'HCM', district: 'Q1' }, contact: { website: 'x' }, media: { gallery: [] }, admissions: [{ _id: '1', score: 15 }], institutionType: 'private', foundedYear: 1995 }
+  const after = { address: { district: 'Q1', city: 'HCM' }, contact: { website: 'x', email: '' }, media: { logoUrl: '', gallery: [] }, admissions: [{ score: 15, verifiedForAI: false, _id: '1' }], institutionType: 'international', foundedYear: 1993 }
+  assert.deepEqual(changedFields(before, after), ['institutionType', 'foundedYear'])
+  assert.deepEqual(changedFields({ admissions: [{ verifiedForAI: true }] }, { admissions: [{ verifiedForAI: false }] }), ['admissions'])
+})

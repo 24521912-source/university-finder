@@ -1,24 +1,33 @@
-# Authentication và điều hướng theo quyền
+# Tài khoản, đăng nhập và phân quyền
 
-Phần đăng ký/đăng nhập, User model, JWT, requireAuth/requireAdmin, AuthContext và Header đã có trong foundation trên develop. PR Auth này chỉ bổ sung phần còn thiếu, không tạo lại các thành phần dùng chung.
+## Đăng ký / đăng nhập
 
-- /login và /dang-nhap dùng chung form đăng nhập.
-- /signup và /dang-ky dùng chung form đăng ký.
-- Đăng ký công khai chỉ nhận role bỏ trống hoặc user. Validation và service đều từ chối role khác; User.create chỉ nhận các field được phép và luôn gán role user.
-- AuthProvider trả thông tin tài khoản sau khi lưu phiên. Login mặc định đưa user tới /profile, admin tới /admin. state.from chỉ được dùng nếu pathname nội bộ đã biết và tài khoản có quyền. Không nhận URL bên ngoài hoặc cho user vào route admin.
-- Giữ nguyên middleware backend: xác minh JWT rồi lấy tài khoản MongoDB; requireAdmin quyết định theo role hiện tại trong database, không chỉ dựa vào claim role trong JWT.
-- Không tạo tài khoản hoặc thay đổi role qua PR này; script cấp quyền và Dashboard thuộc PR Admin riêng.
+- /login và /dang-nhap dùng chung form đăng nhập; /signup và /dang-ky dùng chung form đăng ký.
+- Đăng ký công khai luôn tạo `role: user` (validation và service đều từ chối role khác). Mật khẩu tối thiểu 6 ký tự; email kiểm tra định dạng, chưa gửi mail xác nhận.
+- Đăng nhập xong: người dùng tới /profile, quản trị viên (admin / superadmin) tới /admin. `state.from` chỉ dùng khi là đường dẫn nội bộ đã biết và tài khoản có quyền.
+- Tài khoản bị khóa: đăng nhập trả 403. Tài khoản đã xóa (xóa mềm): báo sai email / mật khẩu.
+- Backend xác minh JWT rồi đọc tài khoản trong MongoDB ở **mỗi request**: quyền, khóa, xóa có hiệu lực ngay, không chờ token hết hạn.
 
-## Phạm vi độc lập
+## Trang Cá nhân
 
-/profile dùng cùng placeholder ComingSoon đã có cho /ca-nhan. /admin/* giữ nguyên placeholder được bảo vệ adminOnly trên develop. Đây là điểm đến để kiểm thử Auth chạy độc lập; chưa bao gồm giao diện Profile hoặc Admin Dashboard. Những giao diện đó sẽ được thay trong các PR riêng.
+- Sửa họ tên (`PUT /auth/me`), đổi mật khẩu (`PUT /auth/password`, cần mật khẩu hiện tại).
+- Tài khoản do quản trị viên tạo hộ có `mustChangePassword`: đầu mỗi trang hiện dòng nhắc đổi mật khẩu cho tới khi đổi.
 
-Không thay đổi Home, AI, Compare, University Detail, dependencies, Header, schema hoặc cấu hình môi trường.
+## Vai trò
+
+| Vai trò | Tạo bằng | Được làm |
+|---|---|---|
+| `user` | Tự đăng ký, hoặc admin tạo hộ | Dùng web, yêu thích, sửa hồ sơ |
+| `admin` | `npm run make-admin -- email`, hoặc được nâng trên /admin | Sửa dữ liệu trường; tạo hộ / khóa / xóa user thường |
+| `admin` + `canManageAdmins` | Superadmin trao quyền trên /admin | Thêm: nâng user lên admin; hạ / khóa / xóa admin thường |
+| `superadmin` | Chỉ `npm run make-admin -- email --super` (tối đa 2) | Mọi việc trên; trao / thu `canManageAdmins`; xóa dòng lịch sử |
+
+Không ai thao tác lên chính mình hoặc lên superadmin qua web. Quy tắc nằm ở `backend/src/utils/roles.js` (`denyReason`); frontend `utils/roles.js` chỉ để ẩn / hiện nút.
+
+Middleware: `requireAuth`, `requireAdmin` (admin hoặc superadmin), `requireSuperadmin` trong `backend/src/middlewares/auth.js`. Frontend: `isAdmin(user)` trong `utils/roles.js` (Header, ProtectedRoute, điều hướng sau đăng nhập).
 
 ## Kiểm thử
 
-Backend: `node --test tests/auth.test.cjs`.
+Backend: `node --test tests/*.cjs` — model giả trong RAM, JWT khóa ngẫu nhiên, không kết nối Atlas. Có test: role injection khi đăng ký, khóa / xóa mềm chặn đăng nhập và token cũ, ma trận phân quyền, tạo hộ, lịch sử không chứa passwordHash.
 
-Frontend: `node --test src/features/auth/loginDestination.test.js`; `npm run lint`; `npm run build`.
-
-Test backend dùng model giả trong RAM và JWT với khóa ngẫu nhiên chỉ dành cho tiến trình kiểm thử, không kết nối Atlas, không chạy seed hoặc tạo tài khoản thật. Kiểm tra role injection, whitelist field, login, JWT sai/hết hạn và requireAdmin theo role từ model. Test frontend kiểm tra điều hướng mặc định và state.from đúng quyền.
+Frontend: `node --test` các file `*.test.js`, `npm run lint`, `npm run build`.

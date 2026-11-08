@@ -40,6 +40,21 @@ npm run seed -- --overwrite   # ghi thật (bắt buộc khi database đã có d
 - ⚠️ Field nào khác giữa JSON và database sẽ bị **thay bằng bản JSON**, kể cả bản admin vừa sửa trên web. Luôn chạy `--dry-run` trước và báo cả nhóm trước khi ghi.
 - Database trống (lần đầu): `npm run seed` là đủ.
 
+## Sao lưu và khôi phục
+
+Gói Atlas miễn phí (M0) không tự sao lưu. Ngoài lịch sử thay đổi trên trang /admin (khôi phục từng trường / tài khoản), nên sao lưu toàn bộ định kỳ và trước mỗi lần chạy seed:
+
+```bash
+cd backend
+npm run backup                                                     # -> backups/<ngày-giờ>/<collection>.json
+npm run restore-backup -- ../backups/<ngày-giờ> universities       # chạy thử: in số bản ghi sẽ ghi
+npm run restore-backup -- ../backups/<ngày-giờ> universities --overwrite   # ghi thật
+```
+
+- File sao lưu dạng Extended JSON (giữ đúng ObjectId / Date); mở được bằng MongoDB Compass (Import).
+- Khôi phục từng collection một, ghi đè theo `_id`; bản ghi chỉ có trong database giữ nguyên.
+- ⚠️ `backups/` chứa mật khẩu đã mã hóa của người dùng: đã nằm trong `.gitignore`, không gửi ra ngoài nhóm.
+
 ## Quy ước dữ liệu
 
 - Tiền lưu số nguyên VND (`20000000`), không lưu chuỗi "20 triệu/năm".

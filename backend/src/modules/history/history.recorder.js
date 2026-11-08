@@ -11,9 +11,23 @@ function snapshot(doc) {
 }
 
 const IGNORED = ['_id', 'createdAt', 'updatedAt']
+// Chuẩn hóa để so: bỏ _id lồng, bỏ giá trị rỗng ('' / null / false / mảng rỗng) và sắp key theo tên.
+// Nhờ vậy form thêm ô trống hay đổi thứ tự field không bị báo là "thay đổi".
+function normalize(value) {
+  if (Array.isArray(value)) return value.map(normalize)
+  if (value && typeof value === 'object') {
+    return Object.fromEntries(Object.keys(value).sort()
+      .filter((k) => k !== '_id' && !isEmpty(value[k]))
+      .map((k) => [k, normalize(value[k])]))
+  }
+  return value
+}
+const isEmpty = (v) => v === '' || v === null || v === undefined || v === false || (Array.isArray(v) && !v.length)
+const same = (a, b) => JSON.stringify(isEmpty(a) ? null : normalize(a)) === JSON.stringify(isEmpty(b) ? null : normalize(b))
+
 function changedFields(before, after) {
   const keys = new Set([...Object.keys(before || {}), ...Object.keys(after || {})])
-  return [...keys].filter((k) => !IGNORED.includes(k) && JSON.stringify(before?.[k] ?? null) !== JSON.stringify(after?.[k] ?? null))
+  return [...keys].filter((k) => !IGNORED.includes(k) && !same(before?.[k], after?.[k]))
 }
 
 async function record({ actor, action, entity, entityId, entityLabel, before = null, after = null, restoredFrom = null }) {

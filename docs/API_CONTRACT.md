@@ -12,8 +12,8 @@ Ghi API vào file này **trước khi code** để người làm frontend và ng
 | Mã | Ý nghĩa |
 |---|---|
 | 400 | Dữ liệu gửi lên sai |
-| 401 | Chưa đăng nhập / token sai hoặc hết hạn |
-| 403 | Không đủ quyền (không phải admin) |
+| 401 | Chưa đăng nhập / token sai hoặc hết hạn / tài khoản đã bị khóa hoặc xóa |
+| 403 | Không đủ quyền (vd. không phải quản trị viên, hoặc thao tác vượt quyền — xem mục Quản lý tài khoản) |
 | 404 | Không tìm thấy |
 | 409 | Trùng dữ liệu (vd. email đã đăng ký) |
 | 500 | Lỗi máy chủ |
@@ -107,7 +107,7 @@ Dữ liệu trang AI tư vấn dùng để chấm điểm, đọc trực tiếp 
 
 ## Admin 🛡️
 
-Mọi API dưới đây cần header `Authorization: Bearer <token>` của tài khoản có `role: "admin"` trong database. Thiếu/sai token → `401`; không phải admin → `403`. Dữ liệu ghi thẳng vào MongoDB và hiện ngay trên các trang công khai.
+Mọi API dưới đây cần header `Authorization: Bearer <token>` của quản trị viên (`role` là `admin` hoặc `superadmin` trong database). Thiếu/sai token → `401`; không phải admin → `403`. Dữ liệu ghi thẳng vào MongoDB và hiện ngay trên các trang công khai.
 
 | Phương thức | Đường dẫn | Mô tả |
 |---|---|---|
@@ -185,4 +185,4 @@ MongoDB Atlas là nguồn dữ liệu duy nhất: frontend không đọc file `d
 - ⚠️ Field nào khác giữa seed và database sẽ bị **thay bằng bản seed**, kể cả bản admin vừa sửa trên web. Luôn chạy `--dry-run` trước.
 - Trường Bách khoa có `detailEvidence` (danh sách bản ghi đã duyệt theo `_id`, nhóm mã xét tuyển, link nguồn). Dòng điểm chuẩn / học phí mới chỉ hiện trên trang chi tiết Bách khoa khi được thêm vào đây (admin sửa được ở mục "Dữ liệu duyệt riêng").
 
-<!-- Thêm API mới bên dưới theo cùng mẫu: phương thức + đường dẫn, body, response, lỗi. Đánh dấu 🔒 nếu cần đăng nhập, 🛡️ nếu chỉ admin. -->
+<!-- Thêm API mới bên dưới theo cùng mẫu: phương thức + đường dẫn, body, response, lỗi. Đánh dấu 🔒 nếu cần đăng nhập, 🛡️ nếu chỉ quản trị viên. -->

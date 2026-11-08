@@ -10,7 +10,9 @@
     "dev": "nodemon src/server.js",
     "start": "node src/server.js",
     "seed": "node src/seed.js",
-    "make-admin": "node src/makeAdmin.js"
+    "make-admin": "node src/makeAdmin.js",
+    "backup": "node src/backup.js",
+    "restore-backup": "node src/restoreBackup.js"
   },
   "keywords": [],
   "author": "",

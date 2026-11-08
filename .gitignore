@@ -144,3 +144,6 @@ vite.config.ts.timestamp-*
 
 # File tạm của Microsoft Office
 ~$*
+
+# Bản sao lưu database (chứa mật khẩu đã mã hóa) — không commit
+backups/

@@ -20,7 +20,15 @@ async function list({ entity = '', action = '', q = '', page = 1 } = {}) {
   if (text) filter.$or = ['entityLabel', 'actor.email'].map((f) => ({ [f]: { $regex: escapeRegex(text), $options: 'i' } }))
   const [items, total] = await Promise.all([
     // Danh sách không kèm before/after (có thể rất lớn); xem chi tiết bằng get(id).
-    ChangeLog.find(filter).select('-before -after').sort({ createdAt: -1 }).skip((p - 1) * PAGE_SIZE).limit(PAGE_SIZE).lean(),
+    // hasBefore: false = dòng "tạo mới" (khôi phục sẽ xóa đối tượng) — giao diện dùng để hiện đúng cảnh báo.
+    ChangeLog.aggregate([
+      { $match: filter },
+      { $sort: { createdAt: -1 } },
+      { $skip: (p - 1) * PAGE_SIZE },
+      { $limit: PAGE_SIZE },
+      { $addFields: { hasBefore: { $ne: [{ $ifNull: ['$before', null] }, null] } } },
+      { $project: { before: 0, after: 0 } },
+    ]),
     ChangeLog.countDocuments(filter),
   ])
   return { items, page: p, pageSize: PAGE_SIZE, total }
