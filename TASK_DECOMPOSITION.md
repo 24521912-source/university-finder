@@ -10,6 +10,12 @@ Ghi task và contract **trước** khi code hoặc nhờ AI. Mỗi sub-task tư�
 - **Sản phẩm:** `docs/QUY_TRINH_NGHIEP_VU_NGUOI_DUNG.md` — đối tượng (khách / người dùng), bảng chức năng, 9 quy trình theo bước, ràng buộc, chức năng chưa làm.
 - **Commit gợi ý:** `docs(spec): describe user business processes (WBS 2.1)`
 
+## WBS 2.4 — Thiết kế luồng xử lý AI tư vấn
+
+- **Phụ trách:** Tú · **Ưu tiên:** P0 · **Trạng thái:** DONE
+- **Sản phẩm:** `docs/LUONG_AI_TU_VAN.md` — sơ đồ luồng (Mermaid), đầu vào, trọng số, công thức 6 tiêu chí, độ phủ, trường xét tuyển tổng hợp, đầu ra. Mô tả đúng code hiện có của `features/recommendations/` (Hương cài đặt).
+- **Commit gợi ý:** `docs(spec): design AI advisor processing flow (WBS 2.4)`
+
 ---
 
 ## WBS 4.1 — Layout chung: header, footer, navigation
