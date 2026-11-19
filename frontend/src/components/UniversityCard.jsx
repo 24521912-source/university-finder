@@ -5,7 +5,8 @@ import './UniversityCard.css'
 // Thẻ một trường — dùng chung cho danh sách, kết quả AI, trường yêu thích, so sánh.
 // university: dữ liệu dạng "card" backend trả về (hàm toCard trong backend/src/modules/universities/universities.service.js)
 // onToggleFavorite, isFavorite: truyền vào khi trang có chức năng lưu yêu thích; không truyền thì chỉ hiện số lượt
-function UniversityCard({ university: u, isFavorite = false, onToggleFavorite }) {
+// onToggleCompare, isCompared, compareDisabled: truyền vào khi trang cho chọn trường để so sánh (vd. danh sách trường)
+function UniversityCard({ university: u, isFavorite = false, onToggleFavorite, isCompared = false, compareDisabled = false, onToggleCompare }) {
   const favProps = onToggleFavorite
     ? {
         type: 'button',
@@ -74,9 +75,23 @@ function UniversityCard({ university: u, isFavorite = false, onToggleFavorite })
         </div>
       )}
 
-      <Link to={`/truong/${u.slug}`} className="btn btn-primary btn-block">
-        Xem chi tiết
-      </Link>
+      <div className="uni-card-actions">
+        <Link to={`/truong/${u.slug}`} className="btn btn-primary">
+          Xem chi tiết
+        </Link>
+        {onToggleCompare && (
+          <button
+            type="button"
+            className={`btn btn-outline uni-compare${isCompared ? ' is-active' : ''}`}
+            aria-pressed={isCompared}
+            disabled={!isCompared && compareDisabled}
+            title={!isCompared && compareDisabled ? 'Chỉ so sánh tối đa 3 trường' : undefined}
+            onClick={() => onToggleCompare(u)}
+          >
+            {isCompared ? '✓ Đã chọn so sánh' : '+ So sánh'}
+          </button>
+        )}
+      </div>
     </article>
   )
 }

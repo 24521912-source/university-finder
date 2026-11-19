@@ -1,46 +1,75 @@
-// Tìm kiếm / lọc / phân trang danh sách trường (chạy phía client).
+// Hàm thuần cho trang danh sách trường: đọc bộ lọc từ URL, đổi sang tham số API, phân trang.
+// Việc tìm theo tên / lọc thực hiện ở backend: GET /api/universities/search (WBS 5.4).
+
 export const PAGE_SIZE = 12
 
-// Bỏ dấu, đ -> d, chữ thường, gộp ký tự đặc biệt thành khoảng trắng.
-export const normalize = (s) => String(s || '')
-  .normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/đ/gi, 'd')
-  .toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim()
+export const TYPE_OPTIONS = [
+  { value: 'all', label: 'Tất cả' },
+  { value: 'public', label: 'Công lập' },
+  { value: 'private', label: 'Tư thục' },
+  { value: 'international', label: 'Quốc tế' },
+]
 
-// Tiền tố chung không mang nghĩa khi tìm ("trường đại học công nghệ thông tin" vẫn khớp UIT).
-const PREFIX = /^(truong )?(dai hoc|hoc vien|nhac vien)\s+/
+// Mức trần học phí (đồng/năm). value rỗng = không lọc.
+export const TUITION_OPTIONS = [
+  { value: '', label: 'Không giới hạn' },
+  { value: '20000000', label: 'Tối đa 20 triệu/năm' },
+  { value: '30000000', label: 'Tối đa 30 triệu/năm' },
+  { value: '50000000', label: 'Tối đa 50 triệu/năm' },
+  { value: '80000000', label: 'Tối đa 80 triệu/năm' },
+  { value: '120000000', label: 'Tối đa 120 triệu/năm' },
+]
 
-function haystack(u) {
-  const name = normalize(u.name)
-  const short = normalize(u.shortName)
-  return { name, core: name.replace(PREFIX, ''), short, shortCompact: short.replace(/ /g, '') }
+// Tên tham số trên URL (tiếng Việt cho dễ đọc, dễ chia sẻ link): /truong?q=uit&loai=public&nganh=7480201
+export const URL_KEYS = {
+  q: 'q',
+  type: 'loai',
+  vnuOnly: 'dhqg',
+  group: 'nhom',
+  major: 'nganh',
+  district: 'khuvuc',
+  maxTuition: 'hocphi',
+  page: 'trang',
 }
 
-export function matchesQuery(u, query) {
-  const q = normalize(query).replace(PREFIX, '')
-  if (!q) return true
-  const h = haystack(u)
-  if (h.short && (h.shortCompact === q.replace(/ /g, '') || h.short.startsWith(q))) return true
-  // Mọi từ trong câu tìm đều phải xuất hiện trong tên (không phụ thuộc thứ tự).
-  return q.split(' ').every((word) => h.name.includes(word) || h.short.split(' ').includes(word))
+const isAllowed = (options, value) => options.some((option) => option.value === value)
+
+// URLSearchParams -> object bộ lọc. Giá trị lạ trên URL được bỏ qua thay vì làm hỏng trang.
+export function readFilters(params) {
+  const type = params.get(URL_KEYS.type)
+  const maxTuition = params.get(URL_KEYS.maxTuition) || ''
+  return {
+    q: params.get(URL_KEYS.q) || '',
+    type: isAllowed(TYPE_OPTIONS, type) ? type : 'all',
+    vnuOnly: params.get(URL_KEYS.vnuOnly) === '1',
+    group: params.get(URL_KEYS.group) || '',
+    major: params.get(URL_KEYS.major) || '',
+    district: params.get(URL_KEYS.district) || '',
+    maxTuition: isAllowed(TUITION_OPTIONS, maxTuition) ? maxTuition : '',
+  }
 }
 
-export function filterUniversities(list, { query = '', type = 'all', vnuOnly = false } = {}) {
-  const q = normalize(query)
-  return list
-    .filter((u) => (type === 'all' || u.institutionType === type) && (!vnuOnly || u.belongsToUniversitySystem === true) && matchesQuery(u, query))
-    .map((u, index) => ({ u, index, rank: rank(u, q) }))
-    .sort((a, b) => a.rank - b.rank || a.index - b.index)
-    .map((x) => x.u)
+export function readPage(params) {
+  return Math.max(1, Number.parseInt(params.get(URL_KEYS.page), 10) || 1)
 }
 
-// Ưu tiên: trùng tên viết tắt > tên bắt đầu bằng câu tìm > còn lại (giữ thứ tự gốc).
-function rank(u, q) {
-  if (!q) return 0
-  const h = haystack(u)
-  const core = q.replace(PREFIX, '')
-  if (h.shortCompact && h.shortCompact === core.replace(/ /g, '')) return 0
-  if (h.core.startsWith(core)) return 1
-  return 2
+// Có đang bật bộ lọc nào không (để hiện nút "Xóa bộ lọc").
+export function hasActiveFilter(filters) {
+  return Boolean(filters.q.trim() || filters.type !== 'all' || filters.vnuOnly ||
+    filters.group || filters.major || filters.district || filters.maxTuition)
+}
+
+// Object bộ lọc -> tham số gửi API. Chỉ gửi field đang dùng.
+export function toApiParams(filters) {
+  const params = {}
+  if (filters.q.trim()) params.q = filters.q.trim()
+  if (filters.type !== 'all') params.type = filters.type
+  if (filters.vnuOnly) params.vnu = '1'
+  if (filters.major) params.major = filters.major
+  else if (filters.group) params.group = filters.group // đã chọn ngành cụ thể thì không cần gửi nhóm
+  if (filters.district) params.district = filters.district
+  if (filters.maxTuition) params.maxTuition = filters.maxTuition
+  return params
 }
 
 export function paginate(list, page, size = PAGE_SIZE) {

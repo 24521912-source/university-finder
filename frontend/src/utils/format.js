@@ -16,3 +16,16 @@ export function formatTuition(fee) {
       : `${fee.amount.toLocaleString('vi-VN')} đ`
   return `${amount}/${UNIT_LABEL[fee.unit] || fee.unit}`
 }
+
+// 20900000 -> "20,9 tr";  850000 -> "850.000 đ"
+export function formatMoney(amount) {
+  return amount >= 1e6
+    ? `${(amount / 1e6).toLocaleString('vi-VN', { maximumFractionDigits: 1 })} tr`
+    : `${amount.toLocaleString('vi-VN')} đ`
+}
+
+// { unit: 'year', min: 30000000, max: 40000000 } -> "30 tr – 40 tr/năm";  min = max -> "30 tr/năm"
+export function formatTuitionRange({ unit, min, max }) {
+  const amount = min === max ? formatMoney(min) : `${formatMoney(min)} – ${formatMoney(max)}`
+  return `${amount}/${UNIT_LABEL[unit] || unit}`
+}

@@ -49,8 +49,12 @@ Mỗi người làm trọn một chức năng (frontend + backend). Phần khung
 | Trang cần đăng nhập / chỉ quản trị viên | Bọc bằng `<ProtectedRoute>` / `<ProtectedRoute adminOnly>` trong `routes/AppRoutes.jsx` |
 | Kiểm tra quyền ở frontend | `isAdmin`, `isSuperadmin`, `can(actor, target, action)` trong `utils/roles.js` (chỉ để ẩn/hiện nút) |
 | Nút yêu thích | Hook `useFavorites()` trong `features/favorites/useFavorites.js` |
+| Gọi API GET có trạng thái tải / lỗi, tự hủy request cũ | Hook `useApiData(key, fetcher)` trong `hooks/useApiData.js` |
+| Chờ người dùng dừng gõ rồi mới xử lý | Hook `useDebouncedValue(value, 300)` trong `hooks/useDebouncedValue.js` |
+| Danh sách trường chọn để so sánh (tối đa 3) | Hook `useCompareList()` trong `features/compare/useCompareList.js` |
+| Tìm kiếm / lọc / so sánh trường | `searchUniversities`, `getFilterOptions`, `compareUniversities` trong `services/universities.js` |
 | Hiển thị một trường | `<UniversityCard university={...} />` (truyền thêm `onToggleFavorite`, `isFavorite` nếu có nút yêu thích) |
-| Định dạng học phí, loại trường | `formatTuition`, `INSTITUTION_TYPE_LABEL` trong `utils/format.js` |
+| Định dạng học phí, loại trường | `formatTuition`, `formatTuitionRange`, `formatMoney`, `INSTITUTION_TYPE_LABEL` trong `utils/format.js` |
 | Màu, nút, form, badge | Class trong `src/index.css`: `container`, `page-title`, `btn btn-primary`, `input`, `badge`, `card-grid`… |
 | API cần đăng nhập / quản trị viên / quản trị cấp cao | `requireAuth` / `requireAdmin` / `requireSuperadmin` trong `backend/src/middlewares/auth.js` (người dùng ở `req.user`) |
 | Quy tắc ai được thao tác lên ai | `denyReason()` trong `backend/src/utils/roles.js` |

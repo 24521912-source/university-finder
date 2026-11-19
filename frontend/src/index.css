@@ -20,6 +20,9 @@
   --warning-bg: #fff7e6;
   --warning-text: #8a5300;
   --warning-border: #ffe0a3;
+  --control-border: #dce3ed;
+  --control-text: #36516e;
+  --icon-muted: #6b7d93;
   --radius: 12px;
   --shadow: 0 1px 3px rgba(16, 24, 40, 0.08), 0 4px 12px rgba(16, 24, 40, 0.06);
 

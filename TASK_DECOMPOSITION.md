@@ -85,3 +85,47 @@ Footer: 1 cột ở 375px, 3 cột từ 768px.
 - [x] DevTools → Accessibility: thấy đủ banner, navigation, main, contentinfo.
 - [ ] Tương phản chữ ≥ 4.5:1 (chữ trắng trên `--header-bg`, chữ trên mục đang chọn).
 - [x] Không lỗi console; `npm run lint` và `npm run build` sạch.
+
+---
+
+## WBS 5.4 + 4.4 — API tìm kiếm / lọc trường + bộ lọc trên giao diện
+
+- **Phụ trách:** Tú · **Ưu tiên:** P0 · **Trạng thái:** DONE
+- **Contract:** `GET /api/universities/search`, `GET /api/universities/filter-options` (xem `docs/API_CONTRACT.md`).
+- **Backend:** `modules/universities/universities.search.js` (hàm thuần: tìm không dấu, quy đổi học phí năm), `universities.validation.js`, service / controller / routes.
+- **Frontend:** `pages/Universities/` (`Universities.jsx`, `UniversityFilters.jsx`, `Pagination.jsx`, `universitySearch.js`), `services/universities.js`, `hooks/useApiData.js`, `hooks/useDebouncedValue.js`.
+- **Thay đổi so với bản cũ:** logic tìm theo tên (Hương viết ở frontend) chuyển sang backend; frontend chỉ còn đọc bộ lọc từ URL + phân trang.
+
+| Bộ lọc | Tham số URL trang | Tham số API |
+|---|---|---|
+| Tên / viết tắt | `q` | `q` (debounce 300ms) |
+| Nhóm ngành → ngành | `nhom`, `nganh` | `group`, `major` |
+| Học phí tối đa / năm | `hocphi` | `maxTuition` |
+| Khu vực | `khuvuc` | `district` |
+| Loại trường | `loai` | `type` |
+| Chỉ ĐHQG | `dhqg=1` | `vnu=1` |
+
+**Tiêu chí nghiệm thu**
+
+- [x] Từng bộ lọc và kết hợp nhiều bộ lọc trả đúng kết quả (Atlas: nhóm CNTT 12 trường, ngành 7480201 11 trường, `uit` 1 trường).
+- [x] Tham số sai → `400 { message }`; `?major[$ne]=x` không lọt vào truy vấn MongoDB.
+- [x] Bộ lọc lưu trên URL; đổi bộ lọc quay về trang 1; "Xóa bộ lọc" về 66 trường.
+- [x] Request cũ bị hủy (AbortController) khi đổi bộ lọc nhanh.
+- [x] 375px không cuộn ngang; mọi ô lọc có `<label>` hiển thị.
+- [x] Test: `backend/tests/university-search.test.cjs`, `frontend/src/pages/Universities/universitySearch.test.js`.
+
+## WBS 5.6 + 4.6 — API so sánh trường + giao diện so sánh
+
+- **Phụ trách:** Tú · **Ưu tiên:** P3 · **Trạng thái:** DONE
+- **Contract:** `GET /api/universities/compare?slugs=a,b,c` (2–3 slug).
+- **Frontend:** nút "+ So sánh" trên `UniversityCard` (chỉ hiện khi trang truyền `onToggleCompare`), thanh `CompareBar`, `features/compare/useCompareList.js` (sessionStorage), trang `pages/Compare/` 2 chế độ:
+  1. `location.state.recommendations` từ trang AI → `AiCompareTable` (bản của Hương, chỉ tách file).
+  2. `?truong=a,b,c` → `UniversityCompareTable` (gọi API mới).
+
+**Tiêu chí nghiệm thu**
+
+- [x] Chọn tối đa 3 trường; đủ 3 thì khóa nút còn lại; danh sách giữ khi chuyển trang.
+- [x] Bảng hiện học phí từng đơn vị, đánh dấu học phí năm thấp nhất, ô thiếu ghi "Chưa có dữ liệu".
+- [x] Bỏ một cột → URL cập nhật; còn < 2 trường → về `/truong`.
+- [x] Slug không tồn tại → thông báo lỗi nêu rõ slug; trang `/so-sanh` rỗng có hướng dẫn.
+- [x] Chế độ so sánh kết quả AI vẫn hoạt động như cũ.

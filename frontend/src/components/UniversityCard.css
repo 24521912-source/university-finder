@@ -24,4 +24,7 @@ button.uni-fav { cursor: pointer; }
 .uni-stat strong { color: var(--primary-dark); font-size: 15px; }
 .uni-majors-label { font-size: 13px; color: var(--muted); margin-bottom: 6px; }
 .uni-majors { display: flex; flex-wrap: wrap; gap: 6px; }
-.uni-card > .btn { margin-top: auto; }
+
+/* Nút hành động: 1 cột trên điện thoại, nút "So sánh" chỉ có ở trang danh sách trường */
+.uni-card-actions { margin-top: auto; display: grid; gap: 8px; }
+.uni-compare.is-active { background: var(--primary-light); }
