@@ -91,6 +91,65 @@ Danh sách 66 trường dạng **card** (dữ liệu cho component `UniversityCa
 - `scoreFrom`: điểm chuẩn thấp nhất **thang 30** năm gần nhất; `null` nếu trường không có điểm thang 30.
 - Backend tạo dữ liệu card bằng hàm `toCard()` trong `backend/src/modules/universities/universities.service.js` — API khác cần trả danh sách trường (kết quả AI, yêu thích, so sánh) nên dùng lại hàm này.
 
+### `GET /universities/search` (WBS 5.4)
+
+Tìm kiếm và lọc trường. Mọi tham số đều không bắt buộc; bỏ trống = không lọc theo tham số đó. Dùng cho trang `/truong`.
+
+| Tham số | Ví dụ | Ý nghĩa |
+|---|---|---|
+| `q` | `uit`, `bach khoa` | Tên / tên viết tắt, không phân biệt dấu và hoa thường (≤ 100 ký tự). Trùng tên viết tắt xếp đầu |
+| `type` | `public` | `public` \| `private` \| `international` \| `other` |
+| `vnu` | `1` | Chỉ trường thuộc ĐHQG-HCM |
+| `group` | `Máy tính và công nghệ thông tin` | Nhóm ngành (`fieldGroup` của danh mục ngành) |
+| `major` | `7480201` | Mã ngành. Có `major` thì bỏ qua `group` |
+| `district` | `TP. Thủ Đức` | Quận của địa chỉ trụ sở |
+| `maxTuition` | `40000000` | Học phí thấp nhất ≤ mức này (đồng/năm). Học phí học kỳ ước tính × 2; trường chỉ có học phí tín chỉ / trọn khóa hoặc chưa có học phí bị loại |
+
+Response `200`: `{ "total": 11, "items": [ /* dữ liệu card, giống GET /universities */ ] }`. Sắp xếp giống `GET /universities`.
+
+Lỗi `400` khi tham số sai kiểu / sai giá trị, vd. `{ "message": "Loại trường không hợp lệ" }`.
+
+### `GET /universities/filter-options` (WBS 5.4)
+
+Dữ liệu cho các ô chọn của bộ lọc. Chỉ gồm khu vực / ngành mà ít nhất một trường đang có.
+
+```json
+{
+  "districts": ["Quận 10", "TP. Thủ Đức"],
+  "majorGroups": [
+    { "name": "Máy tính và công nghệ thông tin", "majors": [{ "code": "7480201", "name": "Công nghệ thông tin" }] }
+  ]
+}
+```
+
+### `GET /universities/compare?slugs=a,b,c` (WBS 5.6)
+
+So sánh 2–3 trường (slug cách nhau bằng dấu phẩy, trùng thì bỏ). Trả về mảng theo **đúng thứ tự** slug gửi lên:
+
+```json
+[
+  {
+    "slug": "cong-nghe-thong-tin-dhqg", "name": "Trường Đại học Công nghệ Thông tin, ĐHQG-HCM", "shortName": "UIT",
+    "logoUrl": null, "institutionType": "public", "belongsToUniversitySystem": true,
+    "district": "TP. Thủ Đức", "foundedYear": 2006, "website": "https://www.uit.edu.vn",
+    "studentCount": null, "favoriteCount": 0,
+    "majorCount": 12, "majors": ["Khoa học máy tính", "..."],
+    "tuition": [{ "unit": "year", "min": 84000000, "max": 140000000 }, { "unit": "semester", "min": 20900000, "max": 42500000 }],
+    "annualTuitionFrom": 41800000,
+    "examScore": { "year": 2026, "scale": 30, "min": 22.8, "max": 30 },
+    "competencyScore": null,
+    "dormitory": null,
+    "scholarshipCount": 0
+  }
+]
+```
+
+- `tuition`: khoảng học phí cho **từng đơn vị** (không gộp đơn vị khác nhau); `[]` nếu chưa có.
+- `annualTuitionFrom`: học phí thấp nhất quy về năm (học kỳ × 2), `null` nếu không quy đổi được.
+- `examScore` / `competencyScore`: điểm chuẩn thấp nhất – cao nhất năm gần nhất của phương thức THPT (thang 30) / ĐGNL (thang 1200); `null` nếu chưa có.
+- Field nào chưa có dữ liệu trả `null`.
+- Lỗi: `400` khi ít hơn 2 / nhiều hơn 3 slug hoặc slug sai định dạng; `404` `{ "message": "Không tìm thấy trường: <slug>" }`.
+
 ### `GET /universities/:slug`
 
 Trả hồ sơ công khai của một trường theo slug để hiển thị trang chi tiết: thông tin cơ bản, liên hệ, cơ sở, ngành, học phí, điểm chuẩn và các mục giới thiệu đã có dữ liệu. Không trả tài khoản người dùng hoặc trường nội bộ khác.

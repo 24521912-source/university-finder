@@ -3,12 +3,15 @@ const assert = require('node:assert/strict')
 const fs = require('node:fs')
 const path = require('node:path')
 const vm = require('node:vm')
+const { createRequire } = require('node:module')
 const express = require('express')
 
 function load(file, replacements) {
   const filename = path.join(__dirname, '../src/modules/universities', file)
   const module = { exports: {} }
-  vm.runInNewContext(fs.readFileSync(filename, 'utf8'), { module, require: name => replacements[name] || require(name) }, { filename })
+  // require tương đối (./, ../) phải tính từ file được nạp, không phải từ thư mục tests/
+  const requireFromFile = createRequire(filename)
+  vm.runInNewContext(fs.readFileSync(filename, 'utf8'), { module, require: name => replacements[name] || requireFromFile(name) }, { filename })
   return module.exports
 }
 
