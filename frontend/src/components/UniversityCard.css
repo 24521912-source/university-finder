@@ -1,4 +1,4 @@
-.uni-card { background: #fff; border-radius: 16px; box-shadow: var(--shadow); padding: 20px; display: flex; flex-direction: column; gap: 14px; }
+.uni-card { background: var(--surface); border-radius: 16px; box-shadow: var(--shadow); padding: 20px; display: flex; flex-direction: column; gap: 14px; }
 .uni-card-head { display: flex; gap: 12px; align-items: flex-start; }
 .uni-logo {
   width: 52px; height: 52px; flex: none; border-radius: 10px; object-fit: cover; overflow: hidden;
