@@ -59,7 +59,7 @@ function UniversityCard({ university: u, isFavorite = false, onToggleFavorite })
         </div>
         <div className="uni-stat">
           <span>Điểm chuẩn từ</span>
-          <strong>{u.scoreFrom ?? 'Chưa có'}</strong>
+          <strong>{u.scoreFrom != null ? u.scoreFrom.toLocaleString('vi-VN') : 'Chưa có'}</strong>
         </div>
       </div>
 
