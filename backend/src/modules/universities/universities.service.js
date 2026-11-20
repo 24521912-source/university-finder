@@ -2,13 +2,29 @@ const University = require('../../models/University')
 
 const UNIT_ORDER = ['year', 'semester', 'credit', 'program']
 
+// Số lần đóng học phí trong 1 năm, dùng để so mức theo năm với mức theo học kỳ.
+// Tín chỉ và trọn khóa không quy ra năm được (số tín chỉ / số năm học khác nhau theo ngành).
+const TIMES_PER_YEAR = { year: 1, semester: 2 }
+
+// Mức học phí thấp nhất (> 0) để hiện trên thẻ, giữ nguyên đơn vị gốc.
+// Năm và học kỳ được so với nhau sau khi quy ra năm: 20,9 tr/học kỳ (~41,8 tr/năm) rẻ hơn 84 tr/năm.
+// Trường chỉ có học phí theo tín chỉ hoặc trọn khóa thì lấy mức thấp nhất theo thứ tự tín chỉ -> trọn khóa.
+function cheapestFee(tuition) {
+  const fees = (tuition || []).filter((t) => t.amountMin > 0)
+  const comparable = fees.filter((t) => TIMES_PER_YEAR[t.unit])
+  if (comparable.length) {
+    const perYear = (t) => t.amountMin * TIMES_PER_YEAR[t.unit]
+    const best = comparable.reduce((a, b) => (perYear(b) < perYear(a) ? b : a))
+    return { amount: best.amountMin, unit: best.unit }
+  }
+  const unit = UNIT_ORDER.find((x) => fees.some((t) => t.unit === x))
+  return unit ? { amount: Math.min(...fees.filter((t) => t.unit === unit).map((t) => t.amountMin)), unit } : null
+}
+
 // Tóm tắt một trường cho thẻ UniversityCard ở frontend. Dùng chung cho danh sách, kết quả AI, yêu thích, so sánh.
-// tuitionFrom: mức thấp nhất (> 0) theo đơn vị ưu tiên năm -> học kỳ -> tín chỉ -> trọn khóa (khác đơn vị không so được)
+// tuitionFrom: xem cheapestFee ở trên
 // scoreFrom:   điểm chuẩn thấp nhất thang 30 của năm gần nhất (null nếu trường không có điểm thang 30)
 function toCard(u) {
-  const fees = (u.tuition || []).filter((t) => t.amountMin > 0)
-  const unit = UNIT_ORDER.find((x) => fees.some((t) => t.unit === x))
-  const amount = unit ? Math.min(...fees.filter((t) => t.unit === unit).map((t) => t.amountMin)) : null
 
   const scores30 = (u.admissions || []).filter((a) => a.scale === 30)
   const latestYear = Math.max(...scores30.map((a) => a.year))
@@ -27,7 +43,7 @@ function toCard(u) {
     logoUrl: u.media?.logoUrl ?? null,
     favoriteCount: u.favoriteCount ?? 0,
     dataLevel: u.dataLevel,
-    tuitionFrom: unit ? { amount, unit } : null,
+    tuitionFrom: cheapestFee(u.tuition),
     scoreFrom,
     majors: (u.majors || []).slice(0, 3).map((m) => m.name),
   }
