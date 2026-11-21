@@ -42,4 +42,25 @@ function validateMajorCodes(data, knownCodes) {
   return errors.length ? [...new Set(errors)].join('; ') : null
 }
 
-module.exports = { EDITABLE, validateSlug, validateBody, pickEditable, validateMajorCodes }
+// Tọa độ trụ sở / cơ sở (GeoJSON Point, [kinh độ, vĩ độ]) phải là số hợp lệ. Bỏ trống location thì không kiểm tra.
+function validateLocations(data) {
+  const check = (location, label) => {
+    if (location === undefined || location === null) return null
+    const c = location.coordinates
+    if (c === undefined || c === null) return null
+    if (!Array.isArray(c) || c.length !== 2 || !c.every((n) => typeof n === 'number' && Number.isFinite(n))) {
+      return `${label}: tọa độ phải gồm đúng 2 số [kinh độ, vĩ độ]`
+    }
+    const [lng, lat] = c
+    if (Math.abs(lat) > 90 || Math.abs(lng) > 180) return `${label}: vĩ độ phải trong -90..90, kinh độ trong -180..180`
+    if (location.type !== undefined && location.type !== 'Point') return `${label}: kiểu tọa độ phải là Point`
+    return null
+  }
+  const errors = [check(data.address?.location, 'Địa chỉ trụ sở')]
+  for (const [i, campus] of (Array.isArray(data.campuses) ? data.campuses : []).entries()) {
+    errors.push(check(campus?.location, `Cơ sở ${i + 1}`))
+  }
+  return errors.filter(Boolean).join('; ') || null
+}
+
+module.exports = { EDITABLE, validateSlug, validateBody, pickEditable, validateMajorCodes, validateLocations }
