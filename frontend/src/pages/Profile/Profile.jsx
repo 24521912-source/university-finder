@@ -1,14 +1,17 @@
 import { useEffect, useId, useState } from 'react'
-import { Link } from 'react-router-dom'
-import { ArrowRight, BookOpen, Building2, ChevronRight, Compass, Heart, Info, LockKeyhole, Mail, MapPin, Pencil, RefreshCw, ShieldCheck, UserRound } from 'lucide-react'
+import { Link, useSearchParams } from 'react-router-dom'
+import { ArrowRight, BookOpen, Building2, ChevronRight, Compass, Heart, History, Info, LockKeyhole, Mail, MapPin, Pencil, RefreshCw, ShieldCheck, UserRound } from 'lucide-react'
 import { useAuth } from '../../features/auth/AuthContext'
 import api, { getErrorMessage } from '../../services/api'
 import { INSTITUTION_TYPE_LABEL } from '../../utils/format'
 import { ChangePasswordForm, EditProfileForm } from './ProfileForms'
 import { useFavorites } from '../../features/favorites/useFavorites'
+import ConsultationHistory from './ConsultationHistory'
 import './Profile.css'
 
-const tabs = [{ key: 'info', label: 'Thông tin cá nhân', icon: UserRound }, { key: 'favorites', label: 'Trường yêu thích', icon: Heart }]
+const tabs = [{ key: 'info', label: 'Thông tin cá nhân', icon: UserRound }, { key: 'favorites', label: 'Trường yêu thích', icon: Heart }, { key: 'history', label: 'Lịch sử tư vấn', icon: History }]
+// ?tab=lich-su-tu-van mở thẳng tab lịch sử (link từ trang AI tư vấn sau khi lưu).
+const TAB_FROM_QUERY = { 'yeu-thich': 'favorites', 'lich-su-tu-van': 'history' }
 const favoriteIds = user => [...new Set((Array.isArray(user?.favorites) ? user.favorites : []).map(item => typeof item === 'string' ? item : item?._id).filter(id => typeof id === 'string' && id))]
 const roleLabel = role => ({ user: 'Thành viên', admin: 'Quản trị viên', superadmin: 'Quản trị cấp cao' })[role] || 'Chưa có thông tin'
 
@@ -27,7 +30,8 @@ function SchoolCard({ school, onRemove, removing }) {
 
 function Profile() {
   const { user, setUser } = useAuth()
-  const [activeTab, setActiveTab] = useState('info')
+  const [searchParams] = useSearchParams()
+  const [activeTab, setActiveTab] = useState(() => TAB_FROM_QUERY[searchParams.get('tab')] || 'info')
   const [refresh, setRefresh] = useState(0)
   const [profileState, setProfileState] = useState({ status: 'loading' })
   const [schoolsState, setSchoolsState] = useState({ key: null, status: 'loading', schools: [] })
@@ -121,6 +125,9 @@ function Profile() {
       <div id={`${tabId}-favorites-panel`} role="tabpanel" aria-labelledby={`${tabId}-favorites`} hidden={activeTab !== 'favorites'} tabIndex={0}>
         <div className="up-panel-heading"><div><h2>Trường yêu thích</h2><p>Những ngôi trường bạn muốn tìm hiểu thêm.</p></div>{ids.length > 0 && <span className="up-type">{ids.length} trường đã lưu</span>}</div>
         {profileState.status === 'loading' || schoolsLoading ? <div className="up-school-grid up-school-skeleton" role="status" aria-label="Đang tải trường yêu thích"><span /><span /><span /></div> : schoolsError ? <div className="up-empty" role="alert"><Info size={32} aria-hidden="true" /><h3>Chưa tải được trường yêu thích</h3><p>{schoolsState.message}</p><button className="up-button up-button-primary" onClick={() => setSchoolAttempt(value => value + 1)}>Thử lại</button></div> : !ids.length ? <div className="up-empty"><span className="up-empty-icon"><Heart size={30} aria-hidden="true" /></span><h3>Danh sách yêu thích còn trống</h3><p>Khám phá các trường đại học và tìm những lựa chọn phù hợp với bạn.</p><Link className="up-button up-button-primary" to="/truong">Khám phá trường <ArrowRight size={16} aria-hidden="true" /></Link></div> : <><div className="up-school-grid">{schools.map(school => <SchoolCard key={school._id} school={school} onRemove={favorites.toggle} removing={favorites.isPending(school)} />)}</div>{schools.length < ids.length && <p className="up-notice" role="status"><Info size={18} aria-hidden="true" />{ids.length - schools.length} trường đã lưu hiện không có trong danh sách công khai. Số lượng đã lưu được giữ nguyên theo tài khoản.</p>}{favorites.error && <p className="up-notice up-error" role="alert"><Info size={15} aria-hidden="true" />{favorites.error}</p>}<p className="up-favorites-note"><Info size={15} aria-hidden="true" />Bấm ♥ trên thẻ trường hoặc trang chi tiết để thêm vào danh sách này.</p></>}
+      </div>
+      <div id={`${tabId}-history-panel`} role="tabpanel" aria-labelledby={`${tabId}-history`} hidden={activeTab !== 'history'} tabIndex={0}>
+        <ConsultationHistory active={activeTab === 'history'} />
       </div>
     </section>
     <p className="up-footer-note"><ShieldCheck size={15} aria-hidden="true" />Không gian cá nhân dành riêng cho tài khoản của bạn.</p>
