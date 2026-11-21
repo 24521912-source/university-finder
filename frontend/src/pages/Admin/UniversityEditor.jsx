@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useState } from 'react'
 import { getErrorMessage } from '../../services/api'
 import { createUniversity, deleteUniversity, getUniversity, listMajors, updateUniversity } from '../../services/admin'
+import { formatLatLng, parseLatLng } from '../../features/map/mapData'
 
 const EMPTY = {
   slug: '', name: '', shortName: '', institutionType: 'public', belongsToUniversitySystem: false,
@@ -103,6 +104,8 @@ function UniversityEditor({ slug, onClose, onDone }) {
   const [error, setError] = useState('')
   const [saving, setSaving] = useState(false)
   const [evidenceText, setEvidenceText] = useState(null)
+  // Tọa độ trụ sở dạng "vĩ độ, kinh độ" (WBS 7.8); lưu vào address.location = GeoJSON [kinh độ, vĩ độ].
+  const [geoText, setGeoText] = useState('')
 
   useEffect(() => {
     const controller = new AbortController()
@@ -111,6 +114,7 @@ function UniversityEditor({ slug, onClose, onDone }) {
       getUniversity(slug, controller.signal)
         .then((u) => {
           setEvidenceText(u.detailEvidence ? JSON.stringify(u.detailEvidence, null, 2) : null)
+          setGeoText(formatLatLng(u.address?.location))
           setForm({ ...EMPTY, ...u, address: { ...EMPTY.address, ...u.address }, contact: { ...EMPTY.contact, ...u.contact }, media: { ...EMPTY.media, ...u.media } })
         })
         .catch((e) => { if (!controller.signal.aborted) setError(getErrorMessage(e)) })
@@ -135,6 +139,18 @@ function UniversityEditor({ slug, onClose, onDone }) {
     setError('')
     setSaving(true)
     const payload = { ...form, foundedYear: num(form.foundedYear), dataLevel: Number(form.dataLevel) }
+    const geo = parseLatLng(geoText)
+    if (geo?.error) {
+      setError(`Tọa độ trụ sở: ${geo.error}`)
+      setSaving(false)
+      window.scrollTo({ top: 0, behavior: 'smooth' })
+      return
+    }
+    // Bỏ trống ô tọa độ = xóa vị trí (không gửi location).
+    const address = { ...form.address }
+    delete address.location
+    if (geo) address.location = { type: 'Point', coordinates: [geo.lng, geo.lat] }
+    payload.address = address
     if (evidenceText !== null) {
       try {
         payload.detailEvidence = JSON.parse(evidenceText)
@@ -167,6 +183,7 @@ function UniversityEditor({ slug, onClose, onDone }) {
   }
 
   const ownCodes = form.majors.map((m) => m.code).filter(Boolean)
+  const geoPreview = parseLatLng(geoText)
   const text = (label, value, onChange, props = {}) => <label className="admin-field"><span>{label}</span>
     <input className="input" value={value ?? ''} onChange={(e) => onChange(e.target.value)} {...props} /></label>
 
@@ -216,6 +233,12 @@ function UniversityEditor({ slug, onClose, onDone }) {
           {text('Phường', form.address.ward, (v) => setIn('address', 'ward', v))}
           {text('Quận / khu vực (dùng cho AI tư vấn)', form.address.district, (v) => setIn('address', 'district', v), { placeholder: 'Quận 10' })}
           {text('Thành phố', form.address.city, (v) => setIn('address', 'city', v))}
+          <label className="admin-field"><span>Tọa độ trụ sở (vĩ độ, kinh độ — dùng cho bản đồ)</span>
+            <input className="input" value={geoText} onChange={(e) => setGeoText(e.target.value)} placeholder="10.8700, 106.8031" inputMode="decimal" />
+            {geoPreview?.error
+              ? <small className="admin-warn">{geoPreview.error}</small>
+              : geoPreview && <small><a href={`https://www.openstreetmap.org/?mlat=${geoPreview.lat}&mlon=${geoPreview.lng}#map=17/${geoPreview.lat}/${geoPreview.lng}`} target="_blank" rel="noreferrer">Kiểm tra vị trí trên OpenStreetMap ↗</a></small>}
+          </label>
           {text('Website', form.contact.website, (v) => setIn('contact', 'website', v))}
           {text('Trang tuyển sinh', form.contact.admissionsUrl, (v) => setIn('contact', 'admissionsUrl', v))}
           {text('Điện thoại', form.contact.phone, (v) => setIn('contact', 'phone', v))}
