@@ -121,6 +121,27 @@ Mọi API dưới đây cần header `Authorization: Bearer <token>` của quả
 - Chỉ ghi các field có trong `EDITABLE` (`backend/src/modules/admin/admin.service.js`); `_id`, `favoriteCount`, timestamps và field lạ bị bỏ qua.
 - `400` khi: slug sai định dạng, mã ngành không có trong danh mục, học phí / điểm chuẩn trỏ tới mã ngành không thuộc trường, hoặc vi phạm schema. `409` khi slug trùng. `404` khi không có trường.
 
+### `GET /admin/dashboard` 🛡️
+
+Số liệu tab **Tổng quan** (WBS 7.2). Chỉ đọc, tính trực tiếp từ MongoDB mỗi lần gọi.
+
+```json
+{
+  "universities": { "total": 66, "byType": { "public": 41, "private": 23, "international": 2, "other": 0 }, "byDataLevel": { "1": 30, "2": 24, "3": 12 }, "vnuhcm": 9 },
+  "coverage": { "majors": 58, "admissions": 34, "verifiedForAI": 21, "tuition": 29, "coordinates": 15, "logo": 62 },
+  "majorCount": 187,
+  "users": { "total": 48, "byRole": { "user": 44, "admin": 3, "superadmin": 1 }, "locked": 2, "newLast30Days": 17 },
+  "consultations": { "total": 93, "last7Days": 31, "trend": [{ "date": "2026-11-21", "count": 8 }] },
+  "topFavorites": [{ "slug": "cong-nghe-thong-tin-dhqg", "name": "...", "shortName": "UIT", "favoriteCount": 14 }],
+  "recentChanges": [{ "id": "...", "action": "update", "entity": "university", "entityLabel": "...", "actor": "Nguyễn Văn A", "createdAt": "..." }],
+  "generatedAt": "2026-11-21T15:48:00.000Z"
+}
+```
+
+- `coverage`: số trường đã có từng loại dữ liệu (ngành, điểm chuẩn, điểm đã xác minh cho AI, học phí, tọa độ, logo).
+- `users` không tính tài khoản đã xóa mềm. `consultations.trend`: 14 ngày gần nhất theo giờ Việt Nam, ngày không có lượt nào vẫn có mặt với `count: 0`.
+- `topFavorites`: tối đa 5 trường có `favoriteCount > 0`. `recentChanges`: 5 thay đổi mới nhất trong lịch sử admin.
+
 ## Quản lý tài khoản 🛡️
 
 Gắn tại `/admin/users`, cần quản trị viên (`admin` hoặc `superadmin`). Quy tắc ai được làm gì với ai nằm ở `backend/src/utils/roles.js` (`denyReason`):

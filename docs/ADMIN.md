@@ -2,6 +2,15 @@
 
 Chỉ quản trị viên (`admin`, `superadmin`) vào được. Mọi thay đổi ghi thẳng vào MongoDB Atlas và hiện ngay trên các trang công khai. API chi tiết: `docs/API_CONTRACT.md`; vai trò: `docs/AUTH.md`.
 
+## Tab Tổng quan
+
+Tab mở đầu tiên. Đọc `GET /admin/dashboard` (chỉ đọc, bấm **Tải lại** để lấy số mới):
+
+- 4 ô số liệu: số trường (và số trường thuộc ĐHQG-HCM), số ngành trong danh mục, số tài khoản (mới trong 30 ngày, đang khóa), số lượt lưu tư vấn (trong 7 ngày).
+- **Độ đầy đủ dữ liệu trường**: bao nhiêu trường đã có ngành, điểm chuẩn, điểm đã xác minh cho AI, học phí, tọa độ bản đồ, logo. Thanh ngắn là phần nên bổ sung trước.
+- Biểu đồ lượt lưu tư vấn 14 ngày (có nút xem dạng bảng), trường theo loại hình, tài khoản theo vai trò, top 5 trường được yêu thích, 5 thay đổi gần nhất.
+- Nút "Sửa dữ liệu trường" / "Xem toàn bộ lịch sử" chuyển sang tab tương ứng.
+
 ## Tab Dữ liệu trường
 
 - Tìm, phân trang, thêm / sửa / xóa trường.
