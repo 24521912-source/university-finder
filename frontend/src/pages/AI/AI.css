@@ -56,6 +56,9 @@
 .consult-compare-choice input { width: 18px; height: 18px; accent-color: var(--primary); }
 .consult-compare-bar { padding: 16px; background: var(--primary-light); border-radius: 12px; display: flex; justify-content: space-between; gap: 12px; align-items: center; flex-wrap: wrap; }
 .consult-compare-bar p { margin: 0; }
+.consult-save { margin-top: 12px; padding: 16px; border: 1px solid #bedcf8; border-radius: 12px; display: flex; justify-content: space-between; gap: 12px; align-items: center; flex-wrap: wrap; }
+.consult-save p { margin: 0; }
+.consult-save .consult-field-error { flex-basis: 100%; }
 .consult-missing-group { margin-top: 32px; border: 1px dashed #b5c3d3; border-radius: 12px; padding: 20px; }
 .consult-missing-group > ul { list-style: none; padding: 0; margin: 0; }
 .consult-missing-group > ul > li { padding: 12px 0; border-top: 1px solid var(--border); }
