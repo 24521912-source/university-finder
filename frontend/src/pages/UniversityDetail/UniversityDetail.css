@@ -119,6 +119,9 @@
 .university-detail .ud-location { display: flex; gap: 16px; padding: 18px; border-radius: 10px; background: #f2f7fd; font-size: 14px; line-height: 1.8; }
 .university-detail .ud-location > span { color: #1976d2; font-size: 24px; }
 .university-detail .ud-location p { margin: 0; }
+.university-detail .ud-map { margin: 16px 0; }
+.university-detail .ud-map .leaflet-map { height: 340px; }
+.university-detail .ud-map p { margin-top: 8px; }
 .university-detail .ud-info-list { padding-left: 20px; font-size: 14px; line-height: 1.8; }
 .university-detail .ud-info-list li { padding: 8px 0; }
 .university-detail .ud-info-list p { margin: 6px 0; }
