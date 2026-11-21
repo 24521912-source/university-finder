@@ -3,12 +3,15 @@ const assert = require('node:assert/strict')
 const fs = require('node:fs')
 const path = require('node:path')
 const vm = require('node:vm')
+const { createRequire } = require('node:module')
 
 const filename = path.join(__dirname, '../src/modules/universities/universities.service.js')
 const serviceModule = { exports: {} }
+// require tương đối (vd ../../models/Major) phải tính từ file service, không phải từ thư mục tests/
+const requireFromFile = createRequire(filename)
 vm.runInNewContext(fs.readFileSync(filename, 'utf8'), {
   module: serviceModule,
-  require: (name) => (name === '../../models/University' ? {} : require(name)),
+  require: (name) => (name.startsWith('../../models/') ? {} : requireFromFile(name)),
 }, { filename })
 const { toCard } = serviceModule.exports
 
