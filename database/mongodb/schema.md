@@ -111,11 +111,14 @@ Trang /admin, tab Lịch sử đọc collection này; nút Khôi phục đưa đ
 ```js
 {
   user: ObjectId("..."),                // ref users
-  criteria: { majorCode, method, combination, score, maxTuition, district, institutionType, tags: [] },
-  results: [{ university: ObjectId("..."), matchScore: 87, reasons: ["Điểm của bạn cao hơn điểm chuẩn 1.5"] }],
+  criteria: { majorCode, majorLabel, method, combination, score, maxTuition, district, institutionType, vnuhcm, tags: [] },
+  results: [{ university: ObjectId("..."), major: "Công nghệ thông tin", matchScore: 87, coverage: 75,
+              reasons: ["Điểm của bạn cao hơn điểm chuẩn 1.5"] }],
   createdAt, updatedAt
 }
 ```
+
+Ghi bằng `POST /api/consultations` khi người dùng bấm "Lưu kết quả tư vấn" ở trang AI; xem lại ở trang Cá nhân → tab Lịch sử tư vấn. Mỗi tài khoản giữ tối đa 30 lần gần nhất.
 
 ## Indexes
 
