@@ -6,6 +6,8 @@ Trang đọc GET /auth/me, cập nhật AuthContext bằng setUser và đối ch
 
 Sửa họ tên (`PUT /auth/me`) và đổi mật khẩu (`PUT /auth/password`, cần mật khẩu hiện tại) làm ngay trên trang bằng form; lưu xong cập nhật AuthContext và hiện thông báo. Yêu thích: nút ♥ trên thẻ trường (Trang chủ, Danh sách trường), nút trên trang chi tiết và nút "Bỏ yêu thích" trong tab này, cùng dùng hook `features/favorites/useFavorites.js` (`POST`/`DELETE /favorites/:slug`). Chưa đăng nhập bấm ♥ thì chuyển sang trang đăng nhập rồi quay lại. Tải lại đọc dữ liệu mới và đồng bộ số lượng/danh sách. Lỗi đọc giữ dữ liệu phiên kèm thông báo rõ; có retry, loading skeleton và empty state. Tab hỗ trợ bàn phím, focus-visible, responsive và reduced motion.
 
+Tab **Lịch sử tư vấn** (`pages/Profile/ConsultationHistory.jsx`): chỉ tải `GET /consultations` khi mở tab lần đầu; mỗi lần hiện thời gian, tiêu chí đã chọn và top trường kèm điểm phù hợp, có nút xóa (`DELETE /consultations/:id`). Mở thẳng tab bằng `/ca-nhan?tab=lich-su-tu-van` (link "Xem lịch sử tư vấn" sau khi bấm Lưu ở trang AI).
+
 Dependency mới duy nhất: lucide-react cho icon. Không đổi backend, model, dữ liệu, AI, Header, Footer hoặc Home.
 
 ## Kiểm thử cách ly
