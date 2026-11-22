@@ -1,30 +1,42 @@
-.uni-card { background: var(--surface); border-radius: 16px; box-shadow: var(--shadow); padding: 20px; display: flex; flex-direction: column; gap: 14px; }
-.uni-card-head { display: flex; gap: 12px; align-items: flex-start; }
-.uni-logo {
-  width: 52px; height: 52px; flex: none; border-radius: 10px; object-fit: cover; overflow: hidden;
-  background: var(--primary-light); color: var(--primary-dark);
-  display: grid; place-items: center; font-weight: 700; font-size: 11px; text-align: center;
+/* Thẻ trường: viền mảnh thay bóng đổ, thông tin xếp theo thứ tự đọc — tên, vị trí, học phí / điểm, ngành, hành động */
+.uni-card {
+  display: flex; flex-direction: column; gap: 14px; padding: 20px;
+  background: var(--surface); border: 1px solid var(--border); border-radius: 16px;
+  transition: border-color 0.15s, box-shadow 0.15s;
 }
+.uni-card:hover { border-color: var(--primary-soft); box-shadow: 0 6px 20px rgba(13, 71, 161, 0.08); }
+
+.uni-card-head { display: flex; gap: 14px; align-items: flex-start; }
 .uni-title { flex: 1; min-width: 0; }
-.uni-badges { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 4px; }
-.uni-name { font-size: 16px; font-weight: 700; margin: 0; }
-.uni-short { color: var(--primary); font-size: 13px; font-weight: 600; }
+.uni-name { font-size: 16px; font-weight: 700; line-height: 1.4; margin: 0 0 6px; }
+.uni-name a { color: var(--text); }
+.uni-name a:hover { color: var(--primary); }
+.uni-badges { display: flex; gap: 6px; flex-wrap: wrap; align-items: center; }
+.uni-short { color: var(--primary); font-size: 13px; font-weight: 700; margin-right: 2px; }
+
 .uni-fav {
-  display: flex; flex-direction: column; align-items: center; gap: 2px;
-  font-size: 12px; color: var(--muted); background: none; border: none; padding: 0;
+  display: flex; flex-direction: column; align-items: center; gap: 2px; flex: none;
+  min-width: 36px; padding: 4px; border: none; border-radius: 10px; background: none;
+  color: var(--muted); font-size: 12px; font-variant-numeric: tabular-nums;
 }
 button.uni-fav { cursor: pointer; }
-.uni-fav svg { width: 22px; height: 22px; }
-.uni-fav.is-active svg { fill: var(--danger); stroke: var(--danger); }
-.uni-district { display: flex; align-items: center; gap: 6px; color: var(--muted); font-size: 14px; }
-.uni-district svg { width: 16px; height: 16px; }
-.uni-stats { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
-.uni-stat { background: var(--primary-light); border-radius: 10px; padding: 10px 12px; }
-.uni-stat span { display: block; font-size: 12px; color: var(--primary); }
-.uni-stat strong { color: var(--primary-dark); font-size: 15px; }
-.uni-majors-label { font-size: 13px; color: var(--muted); margin-bottom: 6px; }
-.uni-majors { display: flex; flex-wrap: wrap; gap: 6px; }
+button.uni-fav:hover { background: #fdecea; color: var(--danger); }
+.uni-fav.is-active { color: var(--danger); }
 
-/* Nút hành động: 1 cột trên điện thoại, nút "So sánh" chỉ có ở trang danh sách trường */
-.uni-card-actions { margin-top: auto; display: grid; gap: 8px; }
+.uni-district { display: flex; align-items: center; gap: 6px; margin: 0; color: var(--muted); font-size: 14px; }
+
+/* Hai con số chính: một khối nền nhạt, chia đôi bằng đường kẻ */
+.uni-stats { display: grid; grid-template-columns: 1fr 1fr; margin: 0; background: var(--bg); border-radius: 12px; }
+.uni-stats > div { padding: 10px 14px; }
+.uni-stats > div + div { border-left: 1px solid var(--border); }
+.uni-stats dt { font-size: 12px; color: var(--muted); }
+.uni-stats dd { margin: 2px 0 0; font-size: 16px; font-weight: 700; color: var(--text); font-variant-numeric: tabular-nums; }
+.uni-stats dd.is-missing { font-size: 14px; font-weight: 500; color: var(--muted); }
+
+.uni-majors { display: flex; flex-wrap: wrap; gap: 6px; margin: 0; padding: 0; list-style: none; }
+
+/* Hành động: nút xem chi tiết chiếm phần lớn, nút so sánh gọn bên phải (chỉ có ở trang danh sách) */
+.uni-card-actions { margin-top: auto; display: flex; gap: 8px; padding-top: 4px; }
+.uni-detail-link { flex: 1; }
+.uni-compare { flex: none; }
 .uni-compare.is-active { background: var(--primary-light); }

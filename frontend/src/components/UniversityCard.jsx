@@ -1,5 +1,7 @@
 import { Link } from 'react-router-dom'
 import { formatTuition, INSTITUTION_TYPE_LABEL } from '../utils/format'
+import UniversityLogo from './UniversityLogo'
+import { Check, Heart, MapPin, Plus } from 'lucide-react'
 import './UniversityCard.css'
 
 // Thẻ một trường — dùng chung cho danh sách, kết quả AI, trường yêu thích, so sánh.
@@ -20,63 +22,51 @@ function UniversityCard({ university: u, isFavorite = false, onToggleFavorite, i
   return (
     <article className="uni-card">
       <div className="uni-card-head">
-        {u.logoUrl ? (
-          <img className="uni-logo" src={u.logoUrl} alt="" />
-        ) : (
-          <div className="uni-logo" aria-hidden="true">{u.shortName || '—'}</div>
-        )}
-
+        <UniversityLogo university={u} />
         <div className="uni-title">
+          <h3 className="uni-name">
+            <Link to={`/truong/${u.slug}`}>{u.name}</Link>
+          </h3>
           <div className="uni-badges">
+            {u.shortName && <span className="uni-short">{u.shortName}</span>}
             <span className="badge">{INSTITUTION_TYPE_LABEL[u.institutionType]}</span>
             {u.belongsToUniversitySystem && <span className="badge badge-green">ĐHQG</span>}
           </div>
-          <h3 className="uni-name">{u.name}</h3>
-          {u.shortName && <div className="uni-short">{u.shortName}</div>}
         </div>
-
         <Fav className={`uni-fav${isFavorite ? ' is-active' : ''}`} {...favProps}>
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden="true">
-            <path d="M12 21s-7.5-4.6-9.5-9.2C1.2 8.6 3.3 5 6.8 5c2 0 3.4 1.1 4.2 2.4h2C13.8 6.1 15.2 5 17.2 5c3.5 0 5.6 3.6 4.3 6.8C19.5 16.4 12 21 12 21z" />
-          </svg>
-          {u.favoriteCount.toLocaleString('vi-VN')}
+          <Heart size={20} aria-hidden="true" fill={isFavorite ? 'currentColor' : 'none'} />
+          <span>{u.favoriteCount.toLocaleString('vi-VN')}</span>
         </Fav>
       </div>
 
       {u.district && (
-        <div className="uni-district">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden="true">
-            <path d="M12 22s7-6.2 7-12a7 7 0 10-14 0c0 5.8 7 12 7 12z" />
-            <circle cx="12" cy="10" r="2.5" />
-          </svg>
+        <p className="uni-district">
+          <MapPin size={15} aria-hidden="true" />
           {u.district}
-        </div>
+        </p>
       )}
 
-      <div className="uni-stats">
-        <div className="uni-stat">
-          <span>Học phí từ</span>
-          <strong>{formatTuition(u.tuitionFrom) || 'Chưa có'}</strong>
+      <dl className="uni-stats">
+        <div>
+          <dt>Học phí từ</dt>
+          <dd className={u.tuitionFrom ? undefined : 'is-missing'}>{formatTuition(u.tuitionFrom) || 'Chưa có'}</dd>
         </div>
-        <div className="uni-stat">
-          <span>Điểm chuẩn từ</span>
-          <strong>{u.scoreFrom ?? 'Chưa có'}</strong>
+        <div>
+          <dt>Điểm chuẩn từ</dt>
+          <dd className={u.scoreFrom == null ? 'is-missing' : undefined}>{u.scoreFrom == null ? 'Chưa có' : u.scoreFrom.toLocaleString('vi-VN')}</dd>
         </div>
-      </div>
+      </dl>
 
       {u.majors.length > 0 && (
-        <div>
-          <div className="uni-majors-label">Ngành đào tạo</div>
-          <div className="uni-majors">
-            {u.majors.map((name) => (
-              <span key={name} className="chip">{name}</span>
-            ))}
-          </div>
-        </div>
+        <ul className="uni-majors" aria-label="Một số ngành đào tạo">
+          {u.majors.map((name) => (
+            <li key={name} className="chip">{name}</li>
+          ))}
+        </ul>
       )}
 
       <div className="uni-card-actions">
-        <Link to={`/truong/${u.slug}`} className="btn btn-primary">
+        <Link to={`/truong/${u.slug}`} className="btn btn-primary uni-detail-link">
           Xem chi tiết
         </Link>
         {onToggleCompare && (
@@ -88,7 +78,8 @@ function UniversityCard({ university: u, isFavorite = false, onToggleFavorite, i
             title={!isCompared && compareDisabled ? 'Chỉ so sánh tối đa 3 trường' : undefined}
             onClick={() => onToggleCompare(u)}
           >
-            {isCompared ? '✓ Đã chọn so sánh' : '+ So sánh'}
+            {isCompared ? <Check size={16} aria-hidden="true" /> : <Plus size={16} aria-hidden="true" />}
+            {isCompared ? 'Đã chọn' : 'So sánh'}
           </button>
         )}
       </div>
