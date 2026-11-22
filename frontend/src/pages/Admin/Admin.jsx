@@ -1,12 +1,14 @@
 import { useState } from 'react'
 import { useAuth } from '../../features/auth/AuthContext'
 import { ROLE_LABEL } from '../../utils/roles'
+import DashboardAdmin from './DashboardAdmin'
 import UniversitiesAdmin from './UniversitiesAdmin'
 import AccountsAdmin from './AccountsAdmin'
 import HistoryAdmin from './HistoryAdmin'
 import './Admin.css'
 
 const TABS = [
+  { key: 'dashboard', label: 'Tổng quan', Component: DashboardAdmin },
   { key: 'universities', label: 'Dữ liệu trường', Component: UniversitiesAdmin },
   { key: 'accounts', label: 'Tài khoản', Component: AccountsAdmin },
   { key: 'history', label: 'Lịch sử', Component: HistoryAdmin },
@@ -15,7 +17,7 @@ const TABS = [
 // Trang quản trị: chia tab. Quyền chi tiết của từng thao tác do backend kiểm tra.
 function Admin() {
   const { user } = useAuth()
-  const [tab, setTab] = useState('universities')
+  const [tab, setTab] = useState('dashboard')
   const Active = TABS.find((t) => t.key === tab).Component
 
   return (
@@ -27,7 +29,7 @@ function Admin() {
         {TABS.map((t) => <button key={t.key} type="button" role="tab" aria-selected={tab === t.key}
           className={tab === t.key ? 'is-active' : ''} onClick={() => setTab(t.key)}>{t.label}</button>)}
       </div>
-      <div role="tabpanel"><Active /></div>
+      <div role="tabpanel"><Active goTo={setTab} /></div>
     </div>
   )
 }
