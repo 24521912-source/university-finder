@@ -1,7 +1,7 @@
 const University = require('../../models/University')
 const Major = require('../../models/Major')
 const httpError = require('../../utils/httpError')
-const { validateSlug, validateBody, pickEditable, validateMajorCodes } = require('./admin.validation')
+const { validateSlug, validateBody, pickEditable, validateMajorCodes, validateLocations } = require('./admin.validation')
 const { record } = require('../history/history.recorder')
 
 const PAGE_SIZE = 20
@@ -50,6 +50,7 @@ async function create(actor, body) {
   ensure(validateBody(body))
   const data = pickEditable(body)
   ensure(validateSlug(data.slug))
+  ensure(validateLocations(data))
   await checkMajorCodes(data)
   const u = (await University.create(data)).toObject()
   await record({ actor, action: 'create', entity: 'university', entityId: u._id, entityLabel: u.name, after: u })
@@ -61,6 +62,7 @@ async function update(actor, slug, body) {
   ensure(validateBody(body))
   const data = pickEditable(body)
   if ('slug' in data) ensure(validateSlug(data.slug))
+  ensure(validateLocations(data))
   const current = await University.findOne({ slug }).lean()
   if (!current) throw httpError(404, 'Không tìm thấy trường đại học')
   await checkMajorCodes({ ...current, ...data })

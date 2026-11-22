@@ -7,6 +7,7 @@ const NAV_ITEMS = [
   { to: '/', label: 'Trang chủ', end: true },
   { to: '/truong', label: 'Trường' },
   { to: '/ai-tu-van', label: 'AI tư vấn' },
+  { to: '/ban-do', label: 'Bản đồ' },
   { to: '/ca-nhan', label: 'Cá nhân' },
 ]
 const ADMIN_ITEM = { to: '/admin', label: 'Quản trị' }

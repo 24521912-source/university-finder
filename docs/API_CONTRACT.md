@@ -164,6 +164,26 @@ Trang tuyển sinh hiện là bản demo frontend có nhãn dữ liệu minh h�
 
 Dữ liệu trang AI tư vấn dùng để chấm điểm, đọc trực tiếp MongoDB: mảng các trường với `slug`, `name`, `shortName`, `institutionType`, `belongsToUniversitySystem`, `dataLevel`, `address.district`, `majors`, `tuition`, `admissions`. Chỉ đọc.
 
+## Bản đồ
+
+### `GET /map/universities`
+
+Dữ liệu cho trang `/ban-do` và bản đồ nhỏ ở mục "Cơ sở & vị trí" (WBS 5.7). Công khai, chỉ đọc.
+
+```json
+{
+  "items": [{ "slug": "bach-khoa-tphcm", "name": "Trường Đại học Bách khoa, ĐHQG-HCM", "shortName": "HCMUT", "district": "Quận 10",
+              "lat": 10.7733495, "lng": 106.6596319, "institutionType": "public", "belongsToUniversitySystem": true,
+              "address": "268 Lý Thường Kiệt, ...", "logoUrl": "https://...", "dataLevel": 3,
+              "campuses": [{ "name": "Cơ sở 2", "address": "...", "lat": 10.88, "lng": 106.80 }] }],
+  "missing": [{ "slug": "...", "name": "...", "shortName": "...", "district": "Quận 3" }]
+}
+```
+
+- Tọa độ trong database là GeoJSON `address.location.coordinates = [kinh độ, vĩ độ]`; API đổi sang `lat` / `lng`.
+- Trường thiếu tọa độ hoặc tọa độ sai (ngoài phạm vi, `[0, 0]`) nằm trong `missing`. Cơ sở phụ không có tọa độ thì bị bỏ.
+- Admin nhập tọa độ trụ sở ở trang sửa trường (ô "Tọa độ trụ sở", dạng `vĩ độ, kinh độ` như Google Maps). `PUT/POST /admin/universities` trả `400` nếu tọa độ không phải 2 số hoặc ngoài phạm vi.
+
 ## Admin 🛡️
 
 Mọi API dưới đây cần header `Authorization: Bearer <token>` của quản trị viên (`role` là `admin` hoặc `superadmin` trong database). Thiếu/sai token → `401`; không phải admin → `403`. Dữ liệu ghi thẳng vào MongoDB và hiện ngay trên các trang công khai.

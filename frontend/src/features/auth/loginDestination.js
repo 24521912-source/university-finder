@@ -8,7 +8,7 @@ export function loginDestination(user, from) {
   if (path === '/admin' || /^\/admin\/(universities|majors|tuition|admissions|users|ai-data)\/?$/.test(path)) return isAdmin(user) ? path : fallback
   const detailPath = /^\/truong\/[a-z0-9]+(?:-[a-z0-9]+)*(?:\/(?:tong-quan|nganh-dao-tao|diem-chuan|tuyen-sinh|hoc-phi|co-so-vi-tri|lien-he))?$/.test(path)
   const previewPath = path === '/demo/tuyen-sinh'
-  if (!['/', '/profile', '/ca-nhan', '/truong', '/ai-tu-van', '/so-sanh'].includes(path) && !detailPath && !previewPath) return fallback
+  if (!['/', '/profile', '/ca-nhan', '/truong', '/ai-tu-van', '/so-sanh', '/ban-do'].includes(path) && !detailPath && !previewPath) return fallback
   const query = new URLSearchParams(typeof from.search === 'string' ? from.search : '')
   const preserved = new URLSearchParams()
   if (previewPath || path.endsWith('/tuyen-sinh')) {

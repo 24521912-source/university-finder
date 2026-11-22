@@ -1,3 +1,4 @@
+import { lazy, Suspense } from 'react'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import MainLayout from '../layouts/MainLayout'
 import ProtectedRoute from '../components/ProtectedRoute'
@@ -12,6 +13,8 @@ import AdmissionPreview from '../pages/UniversityDetail/AdmissionPreview'
 import AI from '../pages/AI/AI'
 import Compare from '../pages/Compare/Compare'
 import Admin from '../pages/Admin/Admin'
+// Trang bản đồ kéo theo thư viện Leaflet (~150 kB): chỉ tải khi mở trang.
+const MapPage = lazy(() => import('../pages/Map/MapPage'))
 
 // Khai báo mọi trang của web. Làm xong chức năng nào thì thay <ComingSoon /> bằng trang thật.
 function AppRoutes() {
@@ -25,6 +28,7 @@ function AppRoutes() {
           <Route path="/demo/tuyen-sinh" element={<AdmissionPreview />} />
           <Route path="/ai-tu-van" element={<AI />} />
           <Route path="/so-sanh" element={<Compare />} />
+          <Route path="/ban-do" element={<Suspense fallback={<p className="container" role="status">Đang tải bản đồ…</p>}><MapPage /></Suspense>} />
           <Route path="/dang-nhap" element={<Login />} />
           <Route path="/dang-ky" element={<Register />} />
           <Route path="/login" element={<Login />} />
