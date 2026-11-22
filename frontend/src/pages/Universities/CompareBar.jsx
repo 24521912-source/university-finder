@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import { ArrowRight } from 'lucide-react'
 import { compareUrl, MAX_COMPARE, MIN_COMPARE } from '../../features/compare/useCompareList'
 
 // Thanh dính dưới màn hình: các trường đã chọn so sánh + nút "So sánh ngay".
@@ -26,7 +27,7 @@ function CompareBar({ compare }) {
         <div className="compare-bar-actions">
           <button type="button" className="btn btn-outline" onClick={clear}>Xóa hết</button>
           {ready ? (
-            <Link className="btn btn-primary" to={compareUrl(items.map((item) => item.slug))}>So sánh ngay →</Link>
+            <Link className="btn btn-primary" to={compareUrl(items.map((item) => item.slug))}>So sánh ngay<ArrowRight size={16} aria-hidden="true" /></Link>
           ) : (
             <button type="button" className="btn btn-primary" disabled>Chọn thêm {MIN_COMPARE - items.length} trường</button>
           )}

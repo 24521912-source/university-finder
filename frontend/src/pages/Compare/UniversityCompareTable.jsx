@@ -4,6 +4,8 @@ import { compareUniversities } from '../../services/universities'
 import { compareUrl, MAX_COMPARE, MIN_COMPARE, useCompareList } from '../../features/compare/useCompareList'
 import { COMPARE_ROWS } from './compareRows'
 import { lowestTuitionSlug } from './compareUtils'
+import UniversityLogo from '../../components/UniversityLogo'
+import { ArrowLeft } from 'lucide-react'
 
 // So sánh 2–3 trường bất kỳ người dùng chọn ở trang danh sách (/so-sanh?truong=a,b,c).
 function UniversityCompareTable({ slugs }) {
@@ -47,6 +49,7 @@ function UniversityCompareTable({ slugs }) {
                   <th scope="col">Tiêu chí</th>
                   {universities.map((u) => (
                     <th scope="col" key={u.slug}>
+                      <UniversityLogo university={u} size="sm" className="compare-logo" />
                       <span className="compare-name">{u.name}</span>
                       {u.shortName && <small className="compare-short">{u.shortName}</small>}
                       <span className="compare-head-actions">
@@ -75,7 +78,7 @@ function UniversityCompareTable({ slugs }) {
 
           <div className="compare-actions">
             {slugs.length < MAX_COMPARE && <Link to="/truong" className="btn btn-primary">+ Thêm trường để so sánh</Link>}
-            <Link to="/truong" className="btn btn-outline">← Quay lại danh sách trường</Link>
+            <Link to="/truong" className="btn btn-outline"><ArrowLeft size={16} aria-hidden="true" />Quay lại danh sách trường</Link>
           </div>
         </>
       )}

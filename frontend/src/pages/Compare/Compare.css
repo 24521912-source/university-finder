@@ -10,6 +10,7 @@
 .compare-empty { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 24px; }
 
 /* Đầu cột: tên trường + "Xem chi tiết" + "Bỏ" */
+.compare-logo { margin-bottom: 10px; }
 .compare-name { display: block; }
 .compare-short { display: block; margin-top: 2px; }
 .compare-head-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 12px; margin-top: 10px; font-weight: 500; }
