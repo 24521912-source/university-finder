@@ -56,4 +56,4 @@ async function changePassword(userId, { currentPassword, newPassword }) {
   await user.save()
 }
 
-module.exports = { register, login, toPublicUser, updateProfile, changePassword }
+module.exports = { register, login, toPublicUser, createSession, updateProfile, changePassword }
