@@ -3,12 +3,12 @@
 .university-detail h1, .university-detail h2, .university-detail h3, .university-detail h4 { color: var(--ud-text); }
 .university-detail .ud-shell { width: min(1200px, 100%); margin-inline: auto; padding: 24px; }
 .university-detail .ud-breadcrumb { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; margin-bottom: 22px; color: var(--ud-muted); font-size: 13px; }
-.university-detail .ud-breadcrumb a { color: #245d9d; }
+.university-detail .ud-breadcrumb a { color: #245d9d; display: inline-flex; align-items: center; gap: 2px; }
+.university-detail .ud-ext-link { display: inline-flex; align-items: center; gap: 4px; }
 .university-detail .ud-profile { background: white; border: 1px solid var(--ud-border); border-radius: 18px; border-top: 4px solid #1976d2; }
 .university-detail .ud-profile-body { display: flex; gap: 24px; align-items: center; padding: 28px; }
-.university-detail .ud-logo { display: grid; place-items: center; width: 88px; height: 88px; flex-shrink: 0; border: 1px solid var(--ud-border); border-radius: 16px; background: #f7faff; overflow: hidden; color: #5f87b1; }
-.university-detail .ud-logo img { width: 100%; height: 100%; object-fit: contain; padding: 8px; }
-.university-detail .ud-logo svg { width: 60px; height: 48px; }
+/* Logo trường: xem components/UniversityLogo.css (cỡ lg) */
+.university-detail .ud-logo { border-color: var(--ud-border); }
 .university-detail .ud-identity { flex: 1; min-width: 0; }
 .university-detail .ud-eyebrow { margin: 0 0 8px; font-size: 10px; font-weight: 700; letter-spacing: 1.4px; color: #65809d; }
 .university-detail .ud-identity h1 { margin: 0 0 8px; font-size: clamp(22px, 2.4vw, 30px); line-height: 1.35; overflow-wrap: anywhere; }
@@ -40,9 +40,8 @@
 .university-detail .ud-explore { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
 .university-detail .ud-explore-card { border: 1px solid var(--ud-border); border-radius: 12px; background: white; padding: 22px; text-decoration: none; transition: border-color .15s, box-shadow .15s; }
 .university-detail .ud-explore-card:hover { border-color: #7aa9df; box-shadow: 0 4px 16px #163c6c0c; }
-.university-detail .ud-card-number { color: #7b99b8; font-size: 12px; }
-.university-detail .ud-explore-card h3 { font-size: 17px; margin: 16px 0 10px; display: flex; align-items: center; justify-content: space-between; gap: 8px; }
-.university-detail .ud-explore-card h3 span { color: #1976d2; }
+.university-detail .ud-explore-card h3 { font-size: 17px; margin: 0 0 10px; display: flex; align-items: center; justify-content: space-between; gap: 8px; }
+.university-detail .ud-explore-card h3 svg { color: var(--primary); flex: none; }
 .university-detail .ud-explore-card p { font-size: 13px; line-height: 1.8; color: var(--ud-muted); margin: 0; }
 .university-detail .ud-label { display: block; font-size: 13px; font-weight: 600; margin: 22px 0 10px; }
 .university-detail .input { width: 100%; min-width: 0; min-height: 44px; border: 1px solid #cdd9e6; border-radius: 8px; background: white; color: var(--ud-text); padding: 10px 12px; font: inherit; font-size: 14px; }
@@ -139,8 +138,7 @@
   .university-detail .ud-shell { padding: 16px; }
   .university-detail .ud-breadcrumb { font-size: 12px; gap: 8px; }
   .university-detail .ud-profile-body { padding: 20px; gap: 14px; align-items: flex-start; }
-  .university-detail .ud-logo { width: 56px; height: 56px; border-radius: 10px; }
-  .university-detail .ud-logo svg { width: 40px; }
+  .university-detail .ud-logo { --logo-size: 56px; border-radius: 12px; }
   .university-detail .ud-identity { flex-basis: calc(100% - 70px); }
   .university-detail .ud-identity h1 { font-size: 21px; }
   .university-detail .ud-official { margin-left: 0; }
@@ -163,4 +161,5 @@
 /* Nút yêu thích trên trang chi tiết */
 .ud-favorite { display: flex; flex-direction: column; align-items: flex-start; gap: 6px; }
 .ud-favorite .btn { white-space: nowrap; }
+.ud-fav-count { padding-left: 8px; margin-left: 2px; border-left: 1px solid currentColor; opacity: .8; font-variant-numeric: tabular-nums; }
 .ud-favorite-error { margin: 0; font-size: 13px; color: #b71c1c; }
