@@ -61,6 +61,26 @@ Body: `{ "currentPassword": "...", "newPassword": "..." }`. Mật khẩu mới t
 
 Response: `{ "message": "Đã đổi mật khẩu" }`. Lỗi `400` khi thiếu dữ liệu, mật khẩu mới không hợp lệ hoặc **mật khẩu hiện tại không đúng** (dùng 400, không dùng 401, vì phiên đăng nhập vẫn hợp lệ). Token cũ vẫn dùng được đến khi hết hạn.
 
+### `POST /auth/forgot-password`
+
+Quên mật khẩu, bước 1: gửi link đặt lại mật khẩu về email. Body: `{ "email": "a@gmail.com" }`.
+
+Response `200` **luôn giống nhau** dù email có tài khoản hay không (không lộ email nào đã đăng ký):
+`{ "message": "Nếu email này đã đăng ký, bạn sẽ nhận được liên kết ..." }`.
+
+- Link có dạng `{APP_URL}/dat-lai-mat-khau?token=<64 ký tự hex>`, hết hạn sau **30 phút**, chỉ dùng được một lần. Database chỉ lưu hash SHA-256 của mã.
+- Gửi lại trong vòng 1 phút thì bỏ qua (không gửi thêm thư). Yêu cầu mới làm link cũ hết hiệu lực.
+- Tài khoản bị khóa hoặc đã xóa: không gửi thư.
+- Lỗi: `400` email sai định dạng · `502` máy chủ email lỗi · `503` server chưa cấu hình gửi email (xem [EMAIL.md](EMAIL.md)).
+
+### `POST /auth/reset-password`
+
+Quên mật khẩu, bước 2. Body: `{ "token": "<mã trong link>", "password": "matkhaumoi" }` (≥ 6 ký tự).
+
+Response `200` giống `/auth/login` (`{ token, user }`): đặt mật khẩu xong là đăng nhập luôn. Mọi token đăng nhập cấp **trước** lúc đặt lại bị từ chối (`401`), tức là các thiết bị khác bị đăng xuất. Cờ `mustChangePassword` được tắt.
+
+Lỗi: `400` mã sai / hết hạn / đã dùng hoặc mật khẩu quá ngắn · `403` tài khoản bị khóa.
+
 ## Universities
 
 ### `GET /universities`

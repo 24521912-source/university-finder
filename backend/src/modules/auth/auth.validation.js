@@ -31,4 +31,22 @@ function validatePasswordChange({ currentPassword, newPassword } = {}) {
   return null
 }
 
-module.exports = { validateRegister, validateLogin, validateProfile, validatePasswordChange }
+// Mã đặt lại mật khẩu: 32 byte ngẫu nhiên dạng hex (xem passwordReset.service.js).
+const RESET_TOKEN = /^[0-9a-f]{64}$/
+const INVALID_LINK = 'Liên kết đặt lại mật khẩu không hợp lệ hoặc đã hết hạn'
+
+function validateForgotPassword({ email } = {}) {
+  if (typeof email !== 'string' || !EMAIL.test(email.trim())) return 'Email không hợp lệ'
+  return null
+}
+
+function validateResetPassword({ token, password } = {}) {
+  if (typeof token !== 'string' || !RESET_TOKEN.test(token)) return INVALID_LINK
+  if (typeof password !== 'string' || password.length < 6) return 'Mật khẩu mới tối thiểu 6 ký tự'
+  return null
+}
+
+module.exports = {
+  validateRegister, validateLogin, validateProfile, validatePasswordChange,
+  validateForgotPassword, validateResetPassword, INVALID_LINK,
+}

@@ -14,6 +14,12 @@ const userSchema = new mongoose.Schema(
     deletedAt: { type: Date, default: null },
     // Tài khoản admin tạo hộ với mật khẩu tạm -> nhắc người dùng đổi mật khẩu.
     mustChangePassword: { type: Boolean, default: false },
+    // Quên mật khẩu: chỉ lưu hash SHA-256 của mã đặt lại; mã gốc chỉ nằm trong link gửi qua email.
+    resetTokenHash: { type: String, select: false },
+    resetTokenExpiresAt: { type: Date, select: false },
+    resetRequestedAt: { type: Date, select: false },
+    // Token đăng nhập cấp trước thời điểm này bị từ chối (đặt lại mật khẩu = đăng xuất mọi thiết bị).
+    passwordChangedAt: { type: Date, default: null },
     createdBy: { type: mongoose.Schema.Types.ObjectId, ref: 'User', default: null },
     // Nhúng thẳng vào user: số trường có giới hạn (~70) nên mảng không phình vô hạn.
     favorites: [{ type: mongoose.Schema.Types.ObjectId, ref: 'University' }],

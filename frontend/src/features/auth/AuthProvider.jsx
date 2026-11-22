@@ -28,6 +28,8 @@ function AuthProvider({ children }) {
       setUser, // để chức năng khác cập nhật user (vd. danh sách yêu thích) mà không cần tải lại
       login: async (email, password) => saveSession((await api.post('/auth/login', { email, password })).data),
       register: async (form) => saveSession((await api.post('/auth/register', form)).data),
+      // Đặt mật khẩu mới bằng mã trong email; backend trả phiên đăng nhập mới.
+      resetPassword: async (token, password) => saveSession((await api.post('/auth/reset-password', { token, password })).data),
       logout: () => {
         localStorage.removeItem(TOKEN_KEY)
         setUser(null)

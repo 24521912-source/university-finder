@@ -3,6 +3,7 @@ import { Link, useLocation, useNavigate } from 'react-router-dom'
 import { useAuth } from '../../features/auth/AuthContext'
 import { getErrorMessage } from '../../services/api'
 import { loginDestination } from '../../features/auth/loginDestination'
+import '../PasswordReset/PasswordReset.css'
 
 function Login() {
   const { login } = useAuth()
@@ -46,6 +47,9 @@ function Login() {
           <input id="password" name="password" type="password" className="input" autoComplete="current-password" required
             value={form.password} onChange={handleChange} />
         </div>
+        <p className="pr-forgot">
+          <Link to="/quen-mat-khau" state={{ email: form.email }}>Quên mật khẩu?</Link>
+        </p>
 
         <button type="submit" className="btn btn-primary btn-block" disabled={submitting}>
           {submitting ? 'Đang đăng nhập…' : 'Đăng nhập'}
