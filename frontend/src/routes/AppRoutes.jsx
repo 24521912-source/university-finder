@@ -6,6 +6,8 @@ import Home from '../pages/Home/Home'
 import Universities from '../pages/Universities/Universities'
 import Login from '../pages/Login/Login'
 import Register from '../pages/Register/Register'
+import ForgotPassword from '../pages/PasswordReset/ForgotPassword'
+import ResetPassword from '../pages/PasswordReset/ResetPassword'
 import Profile from '../pages/Profile/Profile'
 import UniversityDetail from '../pages/UniversityDetail/UniversityDetail'
 import AdmissionPreview from '../pages/UniversityDetail/AdmissionPreview'
@@ -29,6 +31,8 @@ function AppRoutes() {
           <Route path="/dang-ky" element={<Register />} />
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<Register />} />
+          <Route path="/quen-mat-khau" element={<ForgotPassword />} />
+          <Route path="/dat-lai-mat-khau" element={<ResetPassword />} />
 
           {/* Cần đăng nhập */}
           <Route path="/ca-nhan" element={<ProtectedRoute><Profile /></ProtectedRoute>} />
