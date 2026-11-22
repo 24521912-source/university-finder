@@ -91,6 +91,24 @@
 .user-profile .up-skeleton-grid span, .user-profile .up-school-skeleton span { background: #f1f5f9; border-radius: 8px; height: 76px; animation: up-pulse 1.5s ease-in-out infinite alternate; }
 .user-profile .up-school-skeleton span { height: 250px; }
 @keyframes up-pulse { to { opacity: .45; } }
+.user-profile .up-history, .user-profile .up-history-results, .user-profile .up-history-tags { list-style: none; margin: 0; padding: 0; }
+.user-profile .up-history { display: grid; gap: 16px; }
+.user-profile .up-history-item { border: 1px solid #e2e8f0; border-radius: 12px; padding: 18px 20px; }
+.user-profile .up-history-head { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; margin-bottom: 14px; }
+.user-profile .up-history-date { display: flex; align-items: center; gap: 6px; font-size: 13px; font-weight: 600; color: #334155; margin-bottom: 10px; }
+.user-profile .up-history-tags { display: flex; flex-wrap: wrap; gap: 6px; }
+.user-profile .up-history-results { display: grid; gap: 8px; counter-reset: rank; }
+.user-profile .up-history-results li { display: flex; justify-content: space-between; align-items: center; gap: 12px; padding: 10px 12px; background: #f8fafc; border-radius: 8px; font-size: 13px; counter-increment: rank; }
+.user-profile .up-history-results li > div::before { content: counter(rank) ". "; color: #64748b; font-weight: 600; }
+.user-profile .up-history-results a { color: #0d47a1; font-weight: 600; text-decoration: none; }
+.user-profile .up-history-results a:hover { text-decoration: underline; }
+.user-profile .up-history-results small { color: #64748b; }
+.user-profile .up-history-results strong { color: #1976d2; white-space: nowrap; }
+.user-profile .up-muted { color: #64748b; font-size: 12px; }
+@media (max-width: 640px) {
+  .user-profile .up-history-item { padding: 14px; }
+  .user-profile .up-history-head { flex-direction: column; }
+}
 @media (max-width: 1050px) {
   .user-profile .up-summary { grid-template-columns: minmax(260px, .9fr) minmax(0, 1.2fr); }
   .user-profile .up-discover { flex-wrap: wrap; }

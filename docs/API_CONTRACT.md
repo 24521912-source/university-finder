@@ -270,6 +270,39 @@ Mọi thao tác ghi của quản trị viên (thêm / sửa / xóa trường; t�
 
 Response: `{ "favorites": ["<id trường>", ...] }` (danh sách sau khi đổi). `favoriteCount` của trường tăng/giảm 1 chỉ khi danh sách thực sự thay đổi, không bao giờ âm. Lỗi: `401` chưa đăng nhập, `400` slug sai định dạng, `404` không có trường.
 
+## Lịch sử tư vấn 🔒
+
+Lịch sử AI tư vấn của người đang đăng nhập (WBS 5.10, 6.7). Thuật toán chấm điểm chạy ở trình duyệt; backend chỉ kiểm tra dữ liệu rồi lưu.
+
+| Method | Path | Mô tả |
+|---|---|---|
+| GET | `/consultations` | Tối đa 30 lần gần nhất, mới nhất trước |
+| POST | `/consultations` | Lưu một lần tư vấn. Trả `201` + bản đã lưu. Quá 30 lần thì tự xóa bản cũ nhất |
+| DELETE | `/consultations/:id` | Xóa một lần tư vấn của chính mình |
+
+Body `POST`:
+
+```json
+{
+  "criteria": { "majorCode": "7480201", "majorLabel": "Công nghệ thông tin", "method": "high_school_exam", "combination": "A00",
+                "score": 25.5, "maxTuition": 40000000, "district": "any", "institutionType": "any", "vnuhcm": "any" },
+  "results": [{ "slug": "cong-nghe-thong-tin-dhqg", "major": "Công nghệ thông tin", "matchScore": 92.5, "coverage": 75, "reasons": ["..."] }]
+}
+```
+
+- `method`: `high_school_exam` (điểm 0–30) hoặc `competency_assessment` (0–1200). `maxTuition: null` = không quan trọng.
+- `results`: 1–10 trường, `matchScore` / `coverage` 0–100, tối đa 6 lý do.
+
+Response (`GET` là mảng các phần tử này):
+
+```json
+{ "id": "6740...", "createdAt": "2026-11-21T08:00:00.000Z", "criteria": { "...": "..." },
+  "results": [{ "slug": "cong-nghe-thong-tin-dhqg", "name": "Trường Đại học Công nghệ Thông tin", "shortName": "UIT",
+                "major": "Công nghệ thông tin", "matchScore": 92.5, "coverage": 75, "reasons": ["..."] }] }
+```
+
+Lỗi: `401` chưa đăng nhập, `400` dữ liệu sai / slug không có trong database / id sai định dạng, `404` không có lần tư vấn này (hoặc của người khác). Trường đã bị admin xóa thì không hiện trong `results`.
+
 ## Majors
 
 ### `GET /majors`

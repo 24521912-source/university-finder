@@ -3,7 +3,9 @@ import { getErrorMessage } from '../../services/api'
 import { districtsOf, loadRecommendationData } from '../../features/recommendations/data'
 import { recommend, validatePreferences } from '../../features/recommendations/recommend'
 import { COMBINATIONS, DEFAULT_PRIORITIES, weightsFromPriorities } from '../../features/recommendations/config'
+import { toConsultationPayload } from '../../features/recommendations/consultation'
 import RecommendationResults from '../../components/RecommendationResults'
+import SaveConsultation from '../../components/SaveConsultation'
 import MajorPicker from '../../components/MajorPicker'
 import './AI.css'
 
@@ -39,6 +41,8 @@ function AI() {
   const [attempt, setAttempt] = useState(0)
   const [errors, setErrors] = useState({})
   const [results, setResults] = useState(null)
+  // Dữ liệu để lưu lịch sử, tạo cùng lúc với results. runId đổi mỗi lần tư vấn để nút Lưu reset.
+  const [saved, setSaved] = useState({ runId: 0, payload: null })
   const [priorities, setPriorities] = useState(DEFAULT_PRIORITIES)
 
   function changePriority(key, value) {
@@ -93,7 +97,9 @@ function AI() {
     }
     setErrors(nextErrors)
     if (Object.keys(nextErrors).length || loading || loadError) return
-    setResults(recommend(universities, effective, weightsFromPriorities(priorities)))
+    const next = recommend(universities, effective, weightsFromPriorities(priorities))
+    setResults(next)
+    setSaved((s) => ({ runId: s.runId + 1, payload: toConsultationPayload(effective, next) }))
   }
 
   const scale = preferences.method === 'high_school_exam' ? 30 : 1200
@@ -201,7 +207,9 @@ function AI() {
         <button type="submit" className="btn btn-primary btn-block" disabled={loading || !!loadError}>Tư vấn cho tôi</button>
       </form>
 
-      {results && <RecommendationResults results={results} preferences={preferences} />}
+      {results && <RecommendationResults results={results} preferences={preferences}>
+        {saved.payload && <SaveConsultation key={saved.runId} payload={saved.payload} />}
+      </RecommendationResults>}
       <details className="consult-rules">
         <summary>Cách tính điểm và xử lý dữ liệu thiếu</summary>
         <p>Bạn chọn mức ưu tiên 1–5 cho từng tiêu chí (1 = quan trọng nhất). Trọng số tương ứng: 1 → 1; 2 → 0,75; 3 → 0,55; 4 → 0,4; 5 → 0,3; “Không quan tâm” → bỏ qua. Nhiều tiêu chí có thể cùng mức. Điểm tổng = tổng (điểm tiêu chí × trọng số) / tổng trọng số đã đánh giá. Thiếu dữ liệu được loại khỏi mẫu số, không gán 0.</p>

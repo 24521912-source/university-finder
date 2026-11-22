@@ -4,7 +4,8 @@ import { ArrowRight, Calculator } from 'lucide-react'
 import { LABELS } from '../features/recommendations/config'
 import CompositeCalculator from './CompositeCalculator'
 
-function RecommendationResults({ results, preferences = {} }) {
+// children: thao tác thêm hiện ngay dưới danh sách xếp hạng (vd nút lưu lịch sử tư vấn).
+function RecommendationResults({ results, preferences = {}, children }) {
   const [selected, setSelected] = useState([])
   const [openCalc, setOpenCalc] = useState(null)
   const chosen = results.ranked.filter((r) => selected.includes(r.slug))
@@ -27,6 +28,7 @@ function RecommendationResults({ results, preferences = {} }) {
         <label className="consult-compare-choice"><input type="checkbox" checked={selected.includes(r.slug)} disabled={!selected.includes(r.slug) && selected.length >= 3} onChange={() => toggle(r.slug)} /> Chọn so sánh</label>
       </article>)}
       {results.ranked.length > 0 && <div className="consult-compare-bar"><p>Chọn 2–3 trường để so sánh ({chosen.length}/3).</p>{chosen.length >= 2 ? <Link className="btn btn-primary" to="/so-sanh" state={{ recommendations: chosen }}>So sánh {chosen.length} trường →</Link> : <button className="btn btn-primary" disabled>Chọn thêm trường</button>}</div>}
+      {children}
       <div className="consult-missing-group">
         <h3>Cần bổ sung dữ liệu ({results.needsData.length})</h3>
         <p className="muted">Nhóm này không được chấm điểm tổng hoặc xếp hạng. Trường chưa có dữ liệu ngành cũng được giữ ở đây để tránh kết luận trường không đào tạo ngành bạn chọn.</p>
