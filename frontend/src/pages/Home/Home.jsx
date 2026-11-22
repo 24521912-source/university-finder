@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
+import { ArrowRight, BookOpen, Bot, Compass, Landmark, MapPin, Target, Wallet } from 'lucide-react'
 import universityImg from '../../assets/university.png'
 import UniversityCard from '../../components/UniversityCard'
 import { useFavorites } from '../../features/favorites/useFavorites'
@@ -7,12 +8,12 @@ import api, { getErrorMessage } from '../../services/api'
 import './Home.css'
 
 const aiFeatures = [
-  ['📖', 'Ngành muốn học'],
-  ['📊', 'Điểm dự kiến'],
-  ['💰', 'Học phí mong muốn'],
-  ['📍', 'Khu vực'],
-  ['🏫', 'Loại trường'],
-  ['✨', 'Sở thích cá nhân'],
+  [BookOpen, 'Ngành muốn học'],
+  [Target, 'Điểm dự kiến'],
+  [Wallet, 'Học phí mong muốn'],
+  [MapPin, 'Khu vực'],
+  [Landmark, 'Loại trường'],
+  [Compass, 'Sở thích cá nhân'],
 ]
 
 function Home() {
@@ -24,6 +25,13 @@ function Home() {
     .filter((university) => Number.isFinite(university.favoriteCount) && university.favoriteCount > 0)
     .sort((a, b) => b.favoriteCount - a.favoriteCount)
     .slice(0, 3)
+  const countBy = (test) => universities.filter(test).length
+  const stats = loading || error ? [] : [
+    [universities.length, 'Trường đại học, học viện'],
+    [countBy((u) => u.belongsToUniversitySystem), 'Trường thuộc ĐHQG-HCM'],
+    [countBy((u) => u.institutionType === 'public'), 'Trường công lập'],
+    [countBy((u) => u.institutionType === 'private' || u.institutionType === 'international'), 'Trường tư thục, quốc tế'],
+  ]
 
   useEffect(() => {
     let active = true
@@ -46,7 +54,6 @@ function Home() {
     <div className="home-page">
       <section className="hero">
         <div className="hero-left">
-          <p className="hero-label">NỀN TẢNG TÌM TRƯỜNG #1 TP.HCM</p>
           <h1>Tìm trường đại học<br /> dễ dàng hơn</h1>
           <p className="hero-description">
             Khám phá các trường đại học, ngành học tại TP.HCM
@@ -64,21 +71,22 @@ function Home() {
         </div>
       </section>
 
-      <section className="home-stats" aria-label="Thống kê UniMatch HCMC">
-        <div className="stat-item">
-          <h3>{loading || error ? '--' : universities.length.toLocaleString('vi-VN')}</h3>
-          <p>Trường đại học</p>
-        </div>
-        <div className="stat-item"><h3>--</h3><p>Ngành học</p></div>
-        <div className="stat-item"><h3>--</h3><p>Người dùng</p></div>
-        <div className="stat-item"><h3>--</h3><p>Đánh giá trung bình</p></div>
-        {error && <p className="home-stats-error" role="alert">{error}</p>}
-      </section>
+      {/* Số liệu tính trực tiếp từ danh sách trường; chưa tải xong thì không hiện để tránh ô trống "--" */}
+      {stats.length > 0 && (
+        <section className="home-stats" aria-label="Dữ liệu trên UniMatch HCMC">
+          {stats.map(([value, label]) => (
+            <div className="stat-item" key={label}>
+              <h3>{value.toLocaleString('vi-VN')}</h3>
+              <p>{label}</p>
+            </div>
+          ))}
+        </section>
+      )}
 
       <section className="featured-universities" aria-labelledby="featured-title">
         <div className="featured-header">
-          <h2 id="featured-title">Top 3 trường được yêu thích nhất ❤️</h2>
-          <Link to="/truong" className="view-all">Xem tất cả →</Link>
+          <h2 id="featured-title">Trường được yêu thích nhất</h2>
+          <Link to="/truong" className="view-all">Xem tất cả<ArrowRight size={16} aria-hidden="true" /></Link>
         </div>
         <p className="featured-description">
           Khám phá những trường đại học được cộng đồng UniMatch yêu thích nhất.
@@ -108,24 +116,22 @@ function Home() {
 
       <section className="home-ai" aria-labelledby="home-ai-title">
         <div className="home-ai-content">
-          <span className="home-ai-label">🤖 Trí tuệ nhân tạo</span>
           <h2 id="home-ai-title">Chưa biết trường nào phù hợp với bạn?</h2>
           <p className="home-ai-description">
             Hãy cho UniMatch biết ngành muốn học, điểm dự kiến, học phí mong muốn,
             khu vực, loại trường và sở thích của bạn để khám phá những lựa chọn phù hợp.
           </p>
           <ul className="home-ai-features">
-            {aiFeatures.map(([icon, label]) => (
-              <li key={label}><span aria-hidden="true">{icon}</span>{label}</li>
+            {aiFeatures.map(([Icon, label]) => (
+              <li key={label}><Icon size={18} aria-hidden="true" />{label}</li>
             ))}
           </ul>
-          <Link to="/ai-tu-van" className="home-action home-action-primary">Bắt đầu tư vấn →</Link>
+          <Link to="/ai-tu-van" className="home-action home-action-primary">Bắt đầu tư vấn<ArrowRight size={16} aria-hidden="true" /></Link>
         </div>
         <div className="home-ai-preview" role="figure" aria-labelledby="ai-preview-caption">
           <div className="home-ai-preview-head">
-            <span className="home-ai-avatar" aria-hidden="true">🤖</span>
+            <span className="home-ai-avatar" aria-hidden="true"><Bot size={20} /></span>
             <div><strong>UniMatch AI</strong><span>Khám phá lựa chọn phù hợp</span></div>
-            <span className="home-ai-dots" aria-hidden="true">•••</span>
           </div>
           <p id="ai-preview-caption" className="home-ai-example">Ví dụ minh họa — không phải kết quả tư vấn thực tế</p>
           <div className="home-ai-example-rows" aria-hidden="true">
@@ -141,7 +147,7 @@ function Home() {
         <p>Khám phá thông tin trường đại học tại TP.HCM và tìm hiểu lựa chọn phù hợp cùng UniMatch HCMC.</p>
         <div className="home-cta-actions">
           <Link to="/truong" className="home-action home-action-outline">Khám phá trường</Link>
-          <Link to="/ai-tu-van" className="home-action home-action-primary">Dùng AI tư vấn →</Link>
+          <Link to="/ai-tu-van" className="home-action home-action-primary">Dùng AI tư vấn<ArrowRight size={16} aria-hidden="true" /></Link>
         </div>
       </section>
     </div>
