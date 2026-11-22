@@ -1,4 +1,4 @@
-.user-profile { background: #f8fafc; color: #0f172a; font-family: Inter, system-ui, sans-serif; }
+.user-profile { background: #f8fafc; color: #0f172a; font-family: inherit; }
 .user-profile .up-shell { max-width: 1200px; margin: 0 auto; padding: 0 24px 12px; }
 .user-profile h1, .user-profile h2, .user-profile h3 { color: #0f172a; }
 .user-profile p { margin: 0; }

@@ -36,7 +36,8 @@
   --nav-active-text: var(--primary-dark);
   --header-height: 64px;
 
-  font-family: 'Inter', system-ui, 'Segoe UI', Roboto, sans-serif;
+  /* Be Vietnam Pro: font thiết kế cho tiếng Việt, dấu rõ và cân ở mọi cỡ chữ */
+  font-family: 'Be Vietnam Pro', system-ui, 'Segoe UI', Roboto, sans-serif;
   line-height: 1.5;
   color: var(--text);
   background: var(--bg);
