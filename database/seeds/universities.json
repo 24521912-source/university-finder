@@ -11,7 +11,9 @@
     "contact": {
       "website": "https://ueh.edu.vn",
       "admissionsUrl": "https://tuyensinh.ueh.edu.vn",
-      "phone": "(028) 7306 1976"
+      "phone": "(028) 7306 1976",
+      "admissionsPhone": "0902 230 082 - 0941 230 082",
+      "email": "info@ueh.edu.vn"
     },
     "address": {
       "city": "TP. Hồ Chí Minh",
@@ -832,7 +834,16 @@
     ],
     "sourceDomains": [
       "ueh.edu.vn"
-    ]
+    ],
+    "aliases": [],
+    "careerOpportunities": [],
+    "facilities": [],
+    "media": {
+      "gallery": [],
+      "logoUrl": "https://ueh.edu.vn/images/logo-header.png"
+    },
+    "scholarships": [],
+    "studentLife": []
   },
   {
     "slug": "an-ninh-nhan-dan",
@@ -854,7 +865,16 @@
     },
     "majors": [],
     "tuition": [],
-    "admissions": []
+    "admissions": [],
+    "aliases": [],
+    "campuses": [],
+    "careerOpportunities": [],
+    "facilities": [],
+    "media": {
+      "gallery": []
+    },
+    "scholarships": [],
+    "studentLife": []
   },
   {
     "slug": "bach-khoa-tphcm",
@@ -3409,7 +3429,16 @@
     },
     "majors": [],
     "tuition": [],
-    "admissions": []
+    "admissions": [],
+    "aliases": [],
+    "campuses": [],
+    "careerOpportunities": [],
+    "facilities": [],
+    "media": {
+      "gallery": []
+    },
+    "scholarships": [],
+    "studentLife": []
   },
   {
     "slug": "cong-nghiep-tphcm",
@@ -3423,7 +3452,10 @@
     "contact": {
       "website": "https://iuh.edu.vn",
       "admissionsUrl": "https://tuyensinh.iuh.edu.vn",
-      "phone": "0283 8940 390"
+      "phone": "0283 8940 390",
+      "admissionsEmail": "tuyensinh@iuh.edu.vn",
+      "admissionsPhone": "(028) 3895 5858",
+      "email": "dhcn@iuh.edu.vn"
     },
     "address": {
       "city": "TP. Hồ Chí Minh",
@@ -4352,7 +4384,25 @@
     ],
     "sourceDomains": [
       "iuh.edu.vn"
-    ]
+    ],
+    "aliases": [],
+    "careerOpportunities": [],
+    "facilities": [
+      {
+        "name": "Giảng đường và phòng học",
+        "description": "Trên 500 giảng đường và phòng học."
+      },
+      {
+        "name": "Phòng thí nghiệm và xưởng thực hành",
+        "description": "Trên 350 phòng thí nghiệm và xưởng thực hành."
+      }
+    ],
+    "media": {
+      "gallery": [],
+      "logoUrl": "https://iuh.edu.vn/assets/images/icons/logo.svg"
+    },
+    "scholarships": [],
+    "studentLife": []
   },
   {
     "slug": "cong-nghe-thong-tin-dhqg",
@@ -4366,7 +4416,10 @@
     "contact": {
       "website": "https://www.uit.edu.vn",
       "admissionsUrl": "https://tuyensinh.uit.edu.vn",
-      "phone": "(028) 372 52002"
+      "phone": "(028) 372 52002",
+      "admissionsEmail": "tuyensinh@uit.edu.vn",
+      "admissionsPhone": "(028) 372 52002 - Hotline 090 883 1246",
+      "email": "info@uit.edu.vn"
     },
     "address": {
       "city": "TP. Hồ Chí Minh",
@@ -4846,10 +4899,33 @@
     ],
     "foundedYear": 2006,
     "description": "Trường Đại học Công nghệ Thông tin là trường đại học công lập thành viên của ĐHQG-HCM, đào tạo về công nghệ thông tin và truyền thông. Trường được thành lập theo Quyết định số 134/2006/QĐ-TTg ngày 08/06/2006 của Thủ tướng Chính phủ.",
-    "campuses": [],
+    "campuses": [
+      {
+        "name": "Khu đô thị ĐHQG-HCM",
+        "address": "Khu đô thị ĐHQG-HCM, Khu phố 9, Phường Linh Xuân, Thành phố Hồ Chí Minh"
+      }
+    ],
     "sourceDomains": [
       "uit.edu.vn"
-    ]
+    ],
+    "aliases": [],
+    "careerOpportunities": [],
+    "facilities": [
+      {
+        "name": "Khu học tập, nghiên cứu và làm việc",
+        "description": "Tổng diện tích trên 14 hecta trong khuôn viên Khu đô thị ĐHQG-HCM."
+      },
+      {
+        "name": "Thư viện",
+        "description": "Thư viện trường (thuvien.uit.edu.vn)."
+      }
+    ],
+    "media": {
+      "gallery": [],
+      "logoUrl": "https://www.uit.edu.vn/_next/image?url=%2Fmedia%2FLOGO_VNA_c054066f11_7d72ba6441.png&w=1536&q=100"
+    },
+    "scholarships": [],
+    "studentLife": []
   },
   {
     "slug": "cong-thuong-tphcm",
@@ -4869,7 +4945,16 @@
     },
     "majors": [],
     "tuition": [],
-    "admissions": []
+    "admissions": [],
+    "aliases": [],
+    "campuses": [],
+    "careerOpportunities": [],
+    "facilities": [],
+    "media": {
+      "gallery": []
+    },
+    "scholarships": [],
+    "studentLife": []
   },
   {
     "slug": "giao-thong-van-tai-tphcm",
@@ -4889,7 +4974,16 @@
     },
     "majors": [],
     "tuition": [],
-    "admissions": []
+    "admissions": [],
+    "aliases": [],
+    "campuses": [],
+    "careerOpportunities": [],
+    "facilities": [],
+    "media": {
+      "gallery": []
+    },
+    "scholarships": [],
+    "studentLife": []
   },
   {
     "slug": "giao-thong-van-tai-phan-hieu-tphcm",
@@ -4909,7 +5003,16 @@
     },
     "majors": [],
     "tuition": [],
-    "admissions": []
+    "admissions": [],
+    "aliases": [],
+    "campuses": [],
+    "careerOpportunities": [],
+    "facilities": [],
+    "media": {
+      "gallery": []
+    },
+    "scholarships": [],
+    "studentLife": []
   },
   {
     "slug": "khoa-hoc-tu-nhien-dhqg",
@@ -4923,7 +5026,9 @@
     "contact": {
       "website": "https://hcmus.edu.vn",
       "admissionsUrl": "https://tuyensinh.hcmus.edu.vn",
-      "phone": "(028) 62884499"
+      "phone": "(028) 62884499",
+      "admissionsPhone": "1900 999 978",
+      "email": "info@hcmus.edu.vn"
     },
     "address": {
       "city": "TP. Hồ Chí Minh",
@@ -6339,7 +6444,25 @@
     ],
     "sourceDomains": [
       "hcmus.edu.vn"
-    ]
+    ],
+    "aliases": [],
+    "careerOpportunities": [],
+    "facilities": [
+      {
+        "name": "Thư viện",
+        "description": "Hệ thống thư viện của trường (glib.hcmus.edu.vn)."
+      },
+      {
+        "name": "Trung tâm - Phòng thí nghiệm",
+        "description": "Các trung tâm và phòng thí nghiệm nghiên cứu của trường."
+      }
+    ],
+    "media": {
+      "gallery": [],
+      "logoUrl": "https://hcmus.edu.vn/wp-content/uploads/2023/04/Logo-chinh-e1681638380305.png"
+    },
+    "scholarships": [],
+    "studentLife": []
   },
   {
     "slug": "khoa-hoc-xa-hoi-nhan-van-dhqg",
@@ -7165,6 +7288,41 @@
         "sourceUrl": "https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-khoa-hoc-xa-hoi-va-nhan-van-dhqg-tphcm-QSX.html",
         "verifiedForAI": true
       }
+    ],
+    "aliases": [],
+    "campuses": [
+      {
+        "name": "Cơ sở Sài Gòn"
+      },
+      {
+        "name": "Cơ sở Linh Xuân"
+      }
+    ],
+    "careerOpportunities": [],
+    "facilities": [
+      {
+        "name": "Thư viện",
+        "description": "Thư viện tại Cơ sở Linh Xuân."
+      },
+      {
+        "name": "Bảo tàng",
+        "description": "Bảo tàng tại Cơ sở Linh Xuân."
+      },
+      {
+        "name": "Khu phức hợp thể dục thể thao",
+        "description": "Khu thể thao và nhà học thể thao đa năng tại Cơ sở Linh Xuân."
+      }
+    ],
+    "media": {
+      "gallery": [],
+      "logoUrl": "https://cms.hcmussh.edu.vn/api/file/d2db6617-0d8a-40ea-a905-79410bd57d5c.webp"
+    },
+    "scholarships": [],
+    "studentLife": [],
+    "description": "Trường Đại học Khoa học Xã hội và Nhân văn là thành viên của ĐHQG-HCM, có tiền thân là Đại học Văn Khoa thuộc Viện Đại học Sài Gòn. Trường đào tạo 42 ngành bậc đại học, 34 ngành thạc sĩ và 17 ngành tiến sĩ trong 10 lĩnh vực. Nhà trường có hai cơ sở đào tạo là Cơ sở Sài Gòn và Cơ sở Linh Xuân.",
+    "foundedYear": 1957,
+    "sourceDomains": [
+      "hcmussh.edu.vn"
     ]
   },
   {
@@ -7179,7 +7337,9 @@
     "contact": {
       "website": "https://uel.edu.vn",
       "admissionsUrl": "https://tuyensinh.uel.edu.vn",
-      "phone": "1900 1239"
+      "phone": "1900 1239",
+      "admissionsEmail": "tuvantuyensinh@uel.edu.vn",
+      "admissionsPhone": "1900 1239 - nhánh 6001 hoặc (028) 372 44 550"
     },
     "address": {
       "city": "TP. Hồ Chí Minh",
@@ -9289,7 +9449,21 @@
     ],
     "sourceDomains": [
       "uel.edu.vn"
-    ]
+    ],
+    "aliases": [],
+    "careerOpportunities": [],
+    "facilities": [
+      {
+        "name": "Thư viện",
+        "description": "Hệ thống thư viện liên kết nhiều dữ liệu học tập và nghiên cứu (lib.uel.edu.vn)."
+      }
+    ],
+    "media": {
+      "gallery": [],
+      "logoUrl": "https://uel.edu.vn/storage/logo.svg"
+    },
+    "scholarships": [],
+    "studentLife": []
   },
   {
     "slug": "lao-dong-xa-hoi-cs2",
@@ -9309,7 +9483,16 @@
     },
     "majors": [],
     "tuition": [],
-    "admissions": []
+    "admissions": [],
+    "aliases": [],
+    "campuses": [],
+    "careerOpportunities": [],
+    "facilities": [],
+    "media": {
+      "gallery": []
+    },
+    "scholarships": [],
+    "studentLife": []
   },
   {
     "slug": "kien-truc-tphcm",
@@ -9329,7 +9512,16 @@
     },
     "majors": [],
     "tuition": [],
-    "admissions": []
+    "admissions": [],
+    "aliases": [],
+    "campuses": [],
+    "careerOpportunities": [],
+    "facilities": [],
+    "media": {
+      "gallery": []
+    },
+    "scholarships": [],
+    "studentLife": []
   },
   {
     "slug": "luat-tphcm",
@@ -9342,14 +9534,57 @@
     "universitySystem": null,
     "contact": {
       "website": "https://hcmulaw.edu.vn",
-      "admissionsUrl": "https://tuyensinh.hcmulaw.edu.vn"
+      "admissionsUrl": "https://tuyensinh.hcmulaw.edu.vn",
+      "email": "ulaw@hcmulaw.edu.vn",
+      "phone": "(028) 3940 0989"
     },
     "address": {
-      "city": "TP. Hồ Chí Minh"
+      "city": "TP. Hồ Chí Minh",
+      "full": "Số 02 Nguyễn Tất Thành, phường Xóm Chiếu, TP. Hồ Chí Minh"
     },
     "majors": [],
     "tuition": [],
-    "admissions": []
+    "admissions": [],
+    "aliases": [],
+    "campuses": [
+      {
+        "name": "Trụ sở chính",
+        "address": "Số 02 Nguyễn Tất Thành, phường Xóm Chiếu, TP. Hồ Chí Minh"
+      },
+      {
+        "name": "Cơ sở 2",
+        "address": "Số 123 Quốc lộ 13, phường Hiệp Bình, TP. Hồ Chí Minh"
+      },
+      {
+        "name": "Cơ sở 3",
+        "address": "Phường Long Phước, TP. Hồ Chí Minh"
+      },
+      {
+        "name": "Phân hiệu Quảng Trị",
+        "address": "Tổ dân phố 4, phường Đồng Thuận, tỉnh Quảng Trị"
+      }
+    ],
+    "careerOpportunities": [],
+    "facilities": [
+      {
+        "name": "Thư viện / Trung tâm Học liệu",
+        "description": "Thư viện và Trung tâm Học liệu của trường."
+      },
+      {
+        "name": "Không gian tự học, kết nối và thư giãn",
+        "description": "Tại tầng 7, cơ sở Bình Triệu."
+      }
+    ],
+    "media": {
+      "gallery": [],
+      "logoUrl": "https://hcmulaw.edu.vn/Resources/assets/images/logo/logo.png"
+    },
+    "scholarships": [],
+    "studentLife": [],
+    "description": "Trường Đại học Luật TP.HCM (ULAW) là trường đại học công lập chịu sự quản lý nhà nước của Bộ Giáo dục và Đào tạo. Trường đào tạo cán bộ pháp luật trình độ đại học, sau đại học và nghiên cứu khoa học, trọng tâm là khoa học pháp lý. Trường có Phân hiệu tại tỉnh Quảng Trị.",
+    "sourceDomains": [
+      "hcmulaw.edu.vn"
+    ]
   },
   {
     "slug": "mo-tphcm",
@@ -10986,7 +11221,15 @@
     ],
     "sourceDomains": [
       "ou.edu.vn"
-    ]
+    ],
+    "aliases": [],
+    "careerOpportunities": [],
+    "facilities": [],
+    "media": {
+      "gallery": []
+    },
+    "scholarships": [],
+    "studentLife": []
   },
   {
     "slug": "my-thuat-tphcm",
@@ -11006,7 +11249,16 @@
     },
     "majors": [],
     "tuition": [],
-    "admissions": []
+    "admissions": [],
+    "aliases": [],
+    "campuses": [],
+    "careerOpportunities": [],
+    "facilities": [],
+    "media": {
+      "gallery": []
+    },
+    "scholarships": [],
+    "studentLife": []
   },
   {
     "slug": "ngoai-thuong-cs2",
@@ -11304,7 +11556,15 @@
         "name": "Phân hiệu Trường Đại học Ngoại thương tại TP. Hồ Chí Minh (Cơ sở II)",
         "address": "Số 15, Đường D5, Phường Thạnh Mỹ Tây, TP. Hồ Chí Minh"
       }
-    ]
+    ],
+    "aliases": [],
+    "careerOpportunities": [],
+    "facilities": [],
+    "media": {
+      "gallery": []
+    },
+    "scholarships": [],
+    "studentLife": []
   },
   {
     "slug": "ngan-hang-tphcm",
@@ -11317,14 +11577,59 @@
     "universitySystem": null,
     "contact": {
       "website": "https://hub.edu.vn",
-      "admissionsUrl": "https://tuyensinh.hub.edu.vn"
+      "admissionsUrl": "https://tuyensinh.hub.edu.vn",
+      "admissionsPhone": "0888 353 488",
+      "email": "dhnhtphcm@hub.edu.vn",
+      "phone": "(028) 3829 1901"
     },
     "address": {
-      "city": "TP. Hồ Chí Minh"
+      "city": "TP. Hồ Chí Minh",
+      "full": "36 Tôn Thất Đạm, Quận 1, TP. HCM"
     },
     "majors": [],
     "tuition": [],
-    "admissions": []
+    "admissions": [],
+    "aliases": [],
+    "campuses": [
+      {
+        "name": "Trụ sở chính",
+        "address": "36 Tôn Thất Đạm, Quận 1, TP. HCM"
+      },
+      {
+        "name": "Cơ sở Hàm Nghi",
+        "address": "39 Hàm Nghi, Quận 1, TP. HCM"
+      },
+      {
+        "name": "Cơ sở Hoàng Diệu",
+        "address": "56 Hoàng Diệu II, Thủ Đức, TP. HCM"
+      }
+    ],
+    "careerOpportunities": [],
+    "facilities": [
+      {
+        "name": "Thư viện, trung tâm học liệu",
+        "description": "Diện tích sàn 6.666 m2, gần 47.000 đầu sách; phục vụ 600 người đọc cùng lúc."
+      },
+      {
+        "name": "Ký túc xá",
+        "description": "328 phòng ký túc xá."
+      },
+      {
+        "name": "Khu thể thao",
+        "description": "Sân bóng đá, bóng chuyền, bóng rổ, tennis, cầu lông và hồ bơi có mái che."
+      }
+    ],
+    "media": {
+      "gallery": [],
+      "logoUrl": "https://tuyensinh.hub.edu.vn/assets/svg/logo.svg"
+    },
+    "scholarships": [],
+    "studentLife": [],
+    "description": "Trường Đại học Ngân hàng TP. Hồ Chí Minh là trường đại học công lập trực thuộc Ngân hàng Nhà nước Việt Nam. Trường đào tạo trình độ đại học, thạc sĩ và tiến sĩ, chủ yếu trong các lĩnh vực kinh tế, tài chính - ngân hàng và quản trị. Trường có 3 cơ sở đào tạo tại TP. Hồ Chí Minh.",
+    "foundedYear": 1976,
+    "sourceDomains": [
+      "hub.edu.vn"
+    ]
   },
   {
     "slug": "nong-lam-tphcm",
@@ -11337,14 +11642,52 @@
     "universitySystem": null,
     "contact": {
       "website": "https://hcmuaf.edu.vn",
-      "admissionsUrl": "https://tuyensinh.hcmuaf.edu.vn"
+      "admissionsUrl": "https://tuyensinh.hcmuaf.edu.vn",
+      "admissionsEmail": "pdaotao@hcmuaf.edu.vn",
+      "admissionsPhone": "(028) 3896 3350",
+      "email": "vptruong@hcmuaf.edu.vn",
+      "phone": "(028) 3896 6780"
     },
     "address": {
-      "city": "TP. Hồ Chí Minh"
+      "city": "TP. Hồ Chí Minh",
+      "full": "Khu Phố 33, phường Linh Xuân, TP. Hồ Chí Minh"
     },
     "majors": [],
     "tuition": [],
-    "admissions": []
+    "admissions": [],
+    "aliases": [],
+    "campuses": [
+      {
+        "name": "Trụ sở chính",
+        "address": "Khu Phố 33, phường Linh Xuân, TP. Hồ Chí Minh"
+      },
+      {
+        "name": "Phân hiệu Khánh Hòa",
+        "address": "Số 8 Yên Ninh, phường Ninh Chữ, tỉnh Khánh Hòa"
+      }
+    ],
+    "careerOpportunities": [],
+    "facilities": [
+      {
+        "name": "Phòng học, phòng thí nghiệm và thực hành",
+        "description": "237 phòng học và 195 phòng thí nghiệm, thực hành."
+      },
+      {
+        "name": "Khuôn viên",
+        "description": "Tổng diện tích khuôn viên 198,8 ha."
+      }
+    ],
+    "media": {
+      "gallery": [],
+      "logoUrl": "https://hcmuaf.edu.vn/be/Logo/logo.png"
+    },
+    "scholarships": [],
+    "studentLife": [],
+    "description": "Trường Đại học Nông Lâm TP. Hồ Chí Minh là trường đại học đa ngành, trọng tâm là lĩnh vực nông - lâm - ngư nghiệp và công nghệ thực phẩm. Trường đào tạo nguồn nhân lực có tri thức, kỹ năng số và tinh thần khởi nghiệp. Trường có khuôn viên tại phường Linh Xuân, TP. Hồ Chí Minh và phân hiệu tại tỉnh Khánh Hòa.",
+    "foundedYear": 1955,
+    "sourceDomains": [
+      "hcmuaf.edu.vn"
+    ]
   },
   {
     "slug": "quoc-te-dhqg",
@@ -13115,7 +13458,15 @@
     "campuses": [],
     "sourceDomains": [
       "hcmiu.edu.vn"
-    ]
+    ],
+    "aliases": [],
+    "careerOpportunities": [],
+    "facilities": [],
+    "media": {
+      "gallery": []
+    },
+    "scholarships": [],
+    "studentLife": []
   },
   {
     "slug": "sai-gon",
@@ -13135,7 +13486,16 @@
     },
     "majors": [],
     "tuition": [],
-    "admissions": []
+    "admissions": [],
+    "aliases": [],
+    "campuses": [],
+    "careerOpportunities": [],
+    "facilities": [],
+    "media": {
+      "gallery": []
+    },
+    "scholarships": [],
+    "studentLife": []
   },
   {
     "slug": "san-khau-dien-anh-tphcm",
@@ -13155,7 +13515,16 @@
     },
     "majors": [],
     "tuition": [],
-    "admissions": []
+    "admissions": [],
+    "aliases": [],
+    "campuses": [],
+    "careerOpportunities": [],
+    "facilities": [],
+    "media": {
+      "gallery": []
+    },
+    "scholarships": [],
+    "studentLife": []
   },
   {
     "slug": "su-pham-ky-thuat-tphcm",
@@ -13169,7 +13538,8 @@
     "contact": {
       "website": "https://hcmute.edu.vn",
       "admissionsUrl": "https://tuyensinh.hcmute.edu.vn",
-      "phone": "028.3722.5724"
+      "phone": "028.3722.5724",
+      "email": "ptchc@hcmute.edu.vn"
     },
     "address": {
       "city": "TP. Hồ Chí Minh",
@@ -14208,7 +14578,29 @@
     ],
     "sourceDomains": [
       "hcmute.edu.vn"
-    ]
+    ],
+    "aliases": [],
+    "careerOpportunities": [],
+    "facilities": [
+      {
+        "name": "Thư viện",
+        "description": "Thư viện thông minh trong khuôn viên trường."
+      },
+      {
+        "name": "Ký túc xá",
+        "description": "Ký túc xá cho sinh viên."
+      },
+      {
+        "name": "Phòng thí nghiệm",
+        "description": "Hệ thống phòng thí nghiệm trong khuôn viên."
+      }
+    ],
+    "media": {
+      "gallery": [],
+      "logoUrl": "https://hcmute.edu.vn/logo/rectangle-logo.png"
+    },
+    "scholarships": [],
+    "studentLife": []
   },
   {
     "slug": "su-pham-the-duc-the-thao-tphcm",
@@ -14228,7 +14620,16 @@
     },
     "majors": [],
     "tuition": [],
-    "admissions": []
+    "admissions": [],
+    "aliases": [],
+    "campuses": [],
+    "careerOpportunities": [],
+    "facilities": [],
+    "media": {
+      "gallery": []
+    },
+    "scholarships": [],
+    "studentLife": []
   },
   {
     "slug": "su-pham-tphcm",
@@ -14242,7 +14643,9 @@
     "contact": {
       "website": "https://hcmue.edu.vn",
       "admissionsUrl": "https://tuyensinh.hcmue.edu.vn",
-      "phone": "(028) 38352020"
+      "phone": "(028) 38352020",
+      "admissionsEmail": "tuvantuyensinh@hcmue.edu.vn",
+      "admissionsPhone": "(028) 3835 5077"
     },
     "address": {
       "city": "TP. Hồ Chí Minh",
@@ -15699,6 +16102,18 @@
         "name": "Phân hiệu Gia Lai",
         "address": null
       }
+    ],
+    "aliases": [],
+    "careerOpportunities": [],
+    "facilities": [],
+    "media": {
+      "gallery": [],
+      "logoUrl": "https://hcmue.edu.vn/images/Logo_Banner_SP/Logo-HCMUE---ENG-2.png"
+    },
+    "scholarships": [],
+    "studentLife": [],
+    "sourceDomains": [
+      "hcmue.edu.vn"
     ]
   },
   {
@@ -15719,7 +16134,16 @@
     },
     "majors": [],
     "tuition": [],
-    "admissions": []
+    "admissions": [],
+    "aliases": [],
+    "campuses": [],
+    "careerOpportunities": [],
+    "facilities": [],
+    "media": {
+      "gallery": []
+    },
+    "scholarships": [],
+    "studentLife": []
   },
   {
     "slug": "thuy-loi-phan-hieu",
@@ -15739,7 +16163,16 @@
     },
     "majors": [],
     "tuition": [],
-    "admissions": []
+    "admissions": [],
+    "aliases": [],
+    "campuses": [],
+    "careerOpportunities": [],
+    "facilities": [],
+    "media": {
+      "gallery": []
+    },
+    "scholarships": [],
+    "studentLife": []
   },
   {
     "slug": "tran-dai-nghia",
@@ -15761,7 +16194,16 @@
     },
     "majors": [],
     "tuition": [],
-    "admissions": []
+    "admissions": [],
+    "aliases": [],
+    "campuses": [],
+    "careerOpportunities": [],
+    "facilities": [],
+    "media": {
+      "gallery": []
+    },
+    "scholarships": [],
+    "studentLife": []
   },
   {
     "slug": "tai-chinh-marketing",
@@ -15781,7 +16223,16 @@
     },
     "majors": [],
     "tuition": [],
-    "admissions": []
+    "admissions": [],
+    "aliases": [],
+    "campuses": [],
+    "careerOpportunities": [],
+    "facilities": [],
+    "media": {
+      "gallery": []
+    },
+    "scholarships": [],
+    "studentLife": []
   },
   {
     "slug": "tai-nguyen-moi-truong-tphcm",
@@ -15801,7 +16252,16 @@
     },
     "majors": [],
     "tuition": [],
-    "admissions": []
+    "admissions": [],
+    "aliases": [],
+    "campuses": [],
+    "careerOpportunities": [],
+    "facilities": [],
+    "media": {
+      "gallery": []
+    },
+    "scholarships": [],
+    "studentLife": []
   },
   {
     "slug": "ton-duc-thang",
@@ -15815,7 +16275,9 @@
     "contact": {
       "website": "https://tdtu.edu.vn",
       "admissionsUrl": "https://admission.tdtu.edu.vn",
-      "phone": "1900 2024"
+      "phone": "1900 2024",
+      "admissionsEmail": "tuvantuyensinh@tdtu.edu.vn",
+      "admissionsPhone": "1900 2024"
     },
     "address": {
       "city": "TP. Hồ Chí Minh",
@@ -19362,7 +19824,29 @@
     ],
     "sourceDomains": [
       "tdtu.edu.vn"
-    ]
+    ],
+    "aliases": [],
+    "careerOpportunities": [],
+    "facilities": [
+      {
+        "name": "Thư viện",
+        "description": "Thư viện 7 tầng trong khuôn viên."
+      },
+      {
+        "name": "Ký túc xá",
+        "description": "Ký túc xá trong khuôn viên trường, có cổng an ninh."
+      },
+      {
+        "name": "Nhà thi đấu, sân vận động, sân tennis",
+        "description": "Khu thể thao trong khuôn viên."
+      }
+    ],
+    "media": {
+      "gallery": [],
+      "logoUrl": "https://tdtu.edu.vn/sites/www/files/logo-dh_0.png"
+    },
+    "scholarships": [],
+    "studentLife": []
   },
   {
     "slug": "van-hoa-tphcm",
@@ -19382,7 +19866,16 @@
     },
     "majors": [],
     "tuition": [],
-    "admissions": []
+    "admissions": [],
+    "aliases": [],
+    "campuses": [],
+    "careerOpportunities": [],
+    "facilities": [],
+    "media": {
+      "gallery": []
+    },
+    "scholarships": [],
+    "studentLife": []
   },
   {
     "slug": "viet-duc",
@@ -19402,7 +19895,16 @@
     },
     "majors": [],
     "tuition": [],
-    "admissions": []
+    "admissions": [],
+    "aliases": [],
+    "campuses": [],
+    "careerOpportunities": [],
+    "facilities": [],
+    "media": {
+      "gallery": []
+    },
+    "scholarships": [],
+    "studentLife": []
   },
   {
     "slug": "y-duoc-tphcm",
@@ -20258,7 +20760,15 @@
     ],
     "sourceDomains": [
       "ump.edu.vn"
-    ]
+    ],
+    "aliases": [],
+    "careerOpportunities": [],
+    "facilities": [],
+    "media": {
+      "gallery": []
+    },
+    "scholarships": [],
+    "studentLife": []
   },
   {
     "slug": "y-khoa-pham-ngoc-thach",
@@ -20278,7 +20788,16 @@
     },
     "majors": [],
     "tuition": [],
-    "admissions": []
+    "admissions": [],
+    "aliases": [],
+    "campuses": [],
+    "careerOpportunities": [],
+    "facilities": [],
+    "media": {
+      "gallery": []
+    },
+    "scholarships": [],
+    "studentLife": []
   },
   {
     "slug": "khoa-hoc-suc-khoe-dhqg",
@@ -20291,10 +20810,15 @@
     "universitySystem": "Đại học Quốc gia TP.HCM",
     "contact": {
       "website": "https://uhsvnu.edu.vn",
-      "admissionsUrl": "https://tuyensinh.uhsvnu.edu.vn"
+      "admissionsUrl": "https://tuyensinh.uhsvnu.edu.vn",
+      "admissionsEmail": "tuyensinh@uhsvnu.edu.vn",
+      "admissionsPhone": "(028) 7101 8787 - (028) 7102 8787",
+      "email": "info@uhsvnu.edu.vn",
+      "phone": "(028) 7102 1212"
     },
     "address": {
-      "city": "TP. Hồ Chí Minh"
+      "city": "TP. Hồ Chí Minh",
+      "full": "Tòa nhà hành chính YA1, Đường Hải Thượng Lãn Ông, Khu Đô thị ĐHQG-HCM, Phường Đông Hòa, Thành phố Hồ Chí Minh"
     },
     "majors": [
       {
@@ -20390,6 +20914,20 @@
         "sourceUrl": "https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-khoa-hoc-suc-khoe-dhqg-tphcm-QSY.html",
         "verifiedForAI": true
       }
+    ],
+    "aliases": [],
+    "campuses": [],
+    "careerOpportunities": [],
+    "facilities": [],
+    "media": {
+      "gallery": [],
+      "logoUrl": "https://s3.uhsvnu.com/uhscms/logo/logo-vn-horizontal.png"
+    },
+    "scholarships": [],
+    "studentLife": [],
+    "description": "Trường Đại học Khoa học Sức khỏe là trường thành viên thuộc Đại học Quốc gia TP.HCM. Trường đào tạo Bác sĩ Y khoa, Bác sĩ Răng Hàm Mặt, Bác sĩ Y học cổ truyền, Dược sĩ và Điều dưỡng. Chương trình đào tạo được tích hợp theo module.",
+    "sourceDomains": [
+      "uhsvnu.edu.vn"
     ]
   },
   {
@@ -20410,7 +20948,16 @@
     },
     "majors": [],
     "tuition": [],
-    "admissions": []
+    "admissions": [],
+    "aliases": [],
+    "campuses": [],
+    "careerOpportunities": [],
+    "facilities": [],
+    "media": {
+      "gallery": []
+    },
+    "scholarships": [],
+    "studentLife": []
   },
   {
     "slug": "ngoai-ngu-tin-hoc-tphcm",
@@ -20430,7 +20977,16 @@
     },
     "majors": [],
     "tuition": [],
-    "admissions": []
+    "admissions": [],
+    "aliases": [],
+    "campuses": [],
+    "careerOpportunities": [],
+    "facilities": [],
+    "media": {
+      "gallery": []
+    },
+    "scholarships": [],
+    "studentLife": []
   },
   {
     "slug": "hung-vuong-tphcm",
@@ -20450,7 +21006,16 @@
     },
     "majors": [],
     "tuition": [],
-    "admissions": []
+    "admissions": [],
+    "aliases": [],
+    "campuses": [],
+    "careerOpportunities": [],
+    "facilities": [],
+    "media": {
+      "gallery": []
+    },
+    "scholarships": [],
+    "studentLife": []
   },
   {
     "slug": "van-lang",
@@ -22886,7 +23451,15 @@
     ],
     "sourceDomains": [
       "vlu.edu.vn"
-    ]
+    ],
+    "aliases": [],
+    "careerOpportunities": [],
+    "facilities": [],
+    "media": {
+      "gallery": []
+    },
+    "scholarships": [],
+    "studentLife": []
   },
   {
     "slug": "cong-nghe-tphcm",
@@ -22900,7 +23473,10 @@
     "contact": {
       "website": "https://www.hutech.edu.vn",
       "admissionsUrl": "https://www.hutech.edu.vn/tuyensinh",
-      "phone": "(028) 3510 8888 - (028) 3851 1111"
+      "phone": "(028) 3510 8888 - (028) 3851 1111",
+      "admissionsEmail": "tuyensinh@hutech.edu.vn",
+      "admissionsPhone": "(028) 3510 8888 - (028) 3851 1111",
+      "email": "hutech@hutech.edu.vn"
     },
     "address": {
       "city": "TP. Hồ Chí Minh",
@@ -23808,7 +24384,8 @@
         "combinations": [],
         "score": 15,
         "scale": 30,
-        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem"
+        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem",
+        "verifiedForAI": false
       },
       {
         "year": 2026,
@@ -23817,7 +24394,8 @@
         "combinations": [],
         "score": 600,
         "scale": 1200,
-        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem"
+        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem",
+        "verifiedForAI": false
       },
       {
         "year": 2026,
@@ -23826,7 +24404,8 @@
         "combinations": [],
         "score": 15,
         "scale": 30,
-        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem"
+        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem",
+        "verifiedForAI": false
       },
       {
         "year": 2026,
@@ -23835,7 +24414,8 @@
         "combinations": [],
         "score": 600,
         "scale": 1200,
-        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem"
+        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem",
+        "verifiedForAI": false
       },
       {
         "year": 2026,
@@ -23844,7 +24424,8 @@
         "combinations": [],
         "score": 15,
         "scale": 30,
-        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem"
+        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem",
+        "verifiedForAI": false
       },
       {
         "year": 2026,
@@ -23853,7 +24434,8 @@
         "combinations": [],
         "score": 600,
         "scale": 1200,
-        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem"
+        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem",
+        "verifiedForAI": false
       },
       {
         "year": 2026,
@@ -23862,7 +24444,8 @@
         "combinations": [],
         "score": 15,
         "scale": 30,
-        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem"
+        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem",
+        "verifiedForAI": false
       },
       {
         "year": 2026,
@@ -23871,7 +24454,8 @@
         "combinations": [],
         "score": 600,
         "scale": 1200,
-        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem"
+        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem",
+        "verifiedForAI": false
       },
       {
         "year": 2026,
@@ -23880,7 +24464,8 @@
         "combinations": [],
         "score": 15,
         "scale": 30,
-        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem"
+        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem",
+        "verifiedForAI": false
       },
       {
         "year": 2026,
@@ -23889,7 +24474,8 @@
         "combinations": [],
         "score": 600,
         "scale": 1200,
-        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem"
+        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem",
+        "verifiedForAI": false
       },
       {
         "year": 2026,
@@ -23898,7 +24484,8 @@
         "combinations": [],
         "score": 15,
         "scale": 30,
-        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem"
+        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem",
+        "verifiedForAI": false
       },
       {
         "year": 2026,
@@ -23907,7 +24494,8 @@
         "combinations": [],
         "score": 600,
         "scale": 1200,
-        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem"
+        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem",
+        "verifiedForAI": false
       },
       {
         "year": 2026,
@@ -23916,7 +24504,8 @@
         "combinations": [],
         "score": 15,
         "scale": 30,
-        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem"
+        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem",
+        "verifiedForAI": false
       },
       {
         "year": 2026,
@@ -23925,7 +24514,8 @@
         "combinations": [],
         "score": 600,
         "scale": 1200,
-        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem"
+        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem",
+        "verifiedForAI": false
       },
       {
         "year": 2026,
@@ -23934,7 +24524,8 @@
         "combinations": [],
         "score": 15,
         "scale": 30,
-        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem"
+        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem",
+        "verifiedForAI": false
       },
       {
         "year": 2026,
@@ -23943,7 +24534,8 @@
         "combinations": [],
         "score": 600,
         "scale": 1200,
-        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem"
+        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem",
+        "verifiedForAI": false
       },
       {
         "year": 2026,
@@ -23952,7 +24544,8 @@
         "combinations": [],
         "score": 15,
         "scale": 30,
-        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem"
+        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem",
+        "verifiedForAI": false
       },
       {
         "year": 2026,
@@ -23961,7 +24554,8 @@
         "combinations": [],
         "score": 600,
         "scale": 1200,
-        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem"
+        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem",
+        "verifiedForAI": false
       },
       {
         "year": 2026,
@@ -23970,7 +24564,8 @@
         "combinations": [],
         "score": 15,
         "scale": 30,
-        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem"
+        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem",
+        "verifiedForAI": false
       },
       {
         "year": 2026,
@@ -23979,7 +24574,8 @@
         "combinations": [],
         "score": 600,
         "scale": 1200,
-        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem"
+        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem",
+        "verifiedForAI": false
       },
       {
         "year": 2026,
@@ -23989,7 +24585,8 @@
         "combinations": [],
         "score": 15,
         "scale": 30,
-        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem"
+        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem",
+        "verifiedForAI": false
       },
       {
         "year": 2026,
@@ -23999,7 +24596,8 @@
         "combinations": [],
         "score": 600,
         "scale": 1200,
-        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem"
+        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem",
+        "verifiedForAI": false
       },
       {
         "year": 2026,
@@ -24008,7 +24606,8 @@
         "combinations": [],
         "score": 15,
         "scale": 30,
-        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem"
+        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem",
+        "verifiedForAI": false
       },
       {
         "year": 2026,
@@ -24017,7 +24616,8 @@
         "combinations": [],
         "score": 600,
         "scale": 1200,
-        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem"
+        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem",
+        "verifiedForAI": false
       },
       {
         "year": 2026,
@@ -24026,7 +24626,8 @@
         "combinations": [],
         "score": 15,
         "scale": 30,
-        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem"
+        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem",
+        "verifiedForAI": false
       },
       {
         "year": 2026,
@@ -24035,7 +24636,8 @@
         "combinations": [],
         "score": 600,
         "scale": 1200,
-        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem"
+        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem",
+        "verifiedForAI": false
       },
       {
         "year": 2026,
@@ -24044,7 +24646,8 @@
         "combinations": [],
         "score": 15,
         "scale": 30,
-        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem"
+        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem",
+        "verifiedForAI": false
       },
       {
         "year": 2026,
@@ -24053,7 +24656,8 @@
         "combinations": [],
         "score": 600,
         "scale": 1200,
-        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem"
+        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem",
+        "verifiedForAI": false
       },
       {
         "year": 2026,
@@ -24062,7 +24666,8 @@
         "combinations": [],
         "score": 15,
         "scale": 30,
-        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem"
+        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem",
+        "verifiedForAI": false
       },
       {
         "year": 2026,
@@ -24071,7 +24676,8 @@
         "combinations": [],
         "score": 600,
         "scale": 1200,
-        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem"
+        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem",
+        "verifiedForAI": false
       },
       {
         "year": 2026,
@@ -24080,7 +24686,8 @@
         "combinations": [],
         "score": 15,
         "scale": 30,
-        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem"
+        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem",
+        "verifiedForAI": false
       },
       {
         "year": 2026,
@@ -24089,7 +24696,8 @@
         "combinations": [],
         "score": 600,
         "scale": 1200,
-        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem"
+        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem",
+        "verifiedForAI": false
       },
       {
         "year": 2026,
@@ -24098,7 +24706,8 @@
         "combinations": [],
         "score": 15,
         "scale": 30,
-        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem"
+        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem",
+        "verifiedForAI": false
       },
       {
         "year": 2026,
@@ -24107,7 +24716,8 @@
         "combinations": [],
         "score": 600,
         "scale": 1200,
-        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem"
+        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem",
+        "verifiedForAI": false
       },
       {
         "year": 2026,
@@ -24116,7 +24726,8 @@
         "combinations": [],
         "score": 15,
         "scale": 30,
-        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem"
+        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem",
+        "verifiedForAI": false
       },
       {
         "year": 2026,
@@ -24125,7 +24736,8 @@
         "combinations": [],
         "score": 600,
         "scale": 1200,
-        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem"
+        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem",
+        "verifiedForAI": false
       },
       {
         "year": 2026,
@@ -24134,7 +24746,8 @@
         "combinations": [],
         "score": 15,
         "scale": 30,
-        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem"
+        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem",
+        "verifiedForAI": false
       },
       {
         "year": 2026,
@@ -24143,7 +24756,8 @@
         "combinations": [],
         "score": 600,
         "scale": 1200,
-        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem"
+        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem",
+        "verifiedForAI": false
       },
       {
         "year": 2026,
@@ -24153,7 +24767,8 @@
         "combinations": [],
         "score": 15,
         "scale": 30,
-        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem"
+        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem",
+        "verifiedForAI": false
       },
       {
         "year": 2026,
@@ -24163,7 +24778,8 @@
         "combinations": [],
         "score": 600,
         "scale": 1200,
-        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem"
+        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem",
+        "verifiedForAI": false
       },
       {
         "year": 2026,
@@ -24172,7 +24788,8 @@
         "combinations": [],
         "score": 15,
         "scale": 30,
-        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem"
+        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem",
+        "verifiedForAI": false
       },
       {
         "year": 2026,
@@ -24181,7 +24798,8 @@
         "combinations": [],
         "score": 600,
         "scale": 1200,
-        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem"
+        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem",
+        "verifiedForAI": false
       },
       {
         "year": 2026,
@@ -24190,7 +24808,8 @@
         "combinations": [],
         "score": 15,
         "scale": 30,
-        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem"
+        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem",
+        "verifiedForAI": false
       },
       {
         "year": 2026,
@@ -24199,7 +24818,8 @@
         "combinations": [],
         "score": 600,
         "scale": 1200,
-        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem"
+        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem",
+        "verifiedForAI": false
       },
       {
         "year": 2026,
@@ -24208,7 +24828,8 @@
         "combinations": [],
         "score": 15,
         "scale": 30,
-        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem"
+        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem",
+        "verifiedForAI": false
       },
       {
         "year": 2026,
@@ -24217,7 +24838,8 @@
         "combinations": [],
         "score": 600,
         "scale": 1200,
-        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem"
+        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem",
+        "verifiedForAI": false
       },
       {
         "year": 2026,
@@ -24226,7 +24848,8 @@
         "combinations": [],
         "score": 15,
         "scale": 30,
-        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem"
+        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem",
+        "verifiedForAI": false
       },
       {
         "year": 2026,
@@ -24235,7 +24858,8 @@
         "combinations": [],
         "score": 600,
         "scale": 1200,
-        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem"
+        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem",
+        "verifiedForAI": false
       },
       {
         "year": 2026,
@@ -24244,7 +24868,8 @@
         "combinations": [],
         "score": 15,
         "scale": 30,
-        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem"
+        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem",
+        "verifiedForAI": false
       },
       {
         "year": 2026,
@@ -24253,7 +24878,8 @@
         "combinations": [],
         "score": 600,
         "scale": 1200,
-        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem"
+        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem",
+        "verifiedForAI": false
       },
       {
         "year": 2026,
@@ -24262,7 +24888,8 @@
         "combinations": [],
         "score": 15,
         "scale": 30,
-        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem"
+        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem",
+        "verifiedForAI": false
       },
       {
         "year": 2026,
@@ -24271,7 +24898,8 @@
         "combinations": [],
         "score": 600,
         "scale": 1200,
-        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem"
+        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem",
+        "verifiedForAI": false
       },
       {
         "year": 2026,
@@ -24281,7 +24909,8 @@
         "combinations": [],
         "score": 15,
         "scale": 30,
-        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem"
+        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem",
+        "verifiedForAI": false
       },
       {
         "year": 2026,
@@ -24291,7 +24920,8 @@
         "combinations": [],
         "score": 600,
         "scale": 1200,
-        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem"
+        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem",
+        "verifiedForAI": false
       },
       {
         "year": 2026,
@@ -24300,7 +24930,8 @@
         "combinations": [],
         "score": 15,
         "scale": 30,
-        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem"
+        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem",
+        "verifiedForAI": false
       },
       {
         "year": 2026,
@@ -24309,7 +24940,8 @@
         "combinations": [],
         "score": 600,
         "scale": 1200,
-        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem"
+        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem",
+        "verifiedForAI": false
       },
       {
         "year": 2026,
@@ -24318,7 +24950,8 @@
         "combinations": [],
         "score": 15,
         "scale": 30,
-        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem"
+        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem",
+        "verifiedForAI": false
       },
       {
         "year": 2026,
@@ -24327,7 +24960,8 @@
         "combinations": [],
         "score": 600,
         "scale": 1200,
-        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem"
+        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem",
+        "verifiedForAI": false
       },
       {
         "year": 2026,
@@ -24336,7 +24970,8 @@
         "combinations": [],
         "score": 15,
         "scale": 30,
-        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem"
+        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem",
+        "verifiedForAI": false
       },
       {
         "year": 2026,
@@ -24345,7 +24980,8 @@
         "combinations": [],
         "score": 600,
         "scale": 1200,
-        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem"
+        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem",
+        "verifiedForAI": false
       },
       {
         "year": 2026,
@@ -24354,7 +24990,8 @@
         "combinations": [],
         "score": 15,
         "scale": 30,
-        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem"
+        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem",
+        "verifiedForAI": false
       },
       {
         "year": 2026,
@@ -24363,7 +25000,8 @@
         "combinations": [],
         "score": 600,
         "scale": 1200,
-        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem"
+        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem",
+        "verifiedForAI": false
       },
       {
         "year": 2026,
@@ -24372,7 +25010,8 @@
         "combinations": [],
         "score": 15,
         "scale": 30,
-        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem"
+        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem",
+        "verifiedForAI": false
       },
       {
         "year": 2026,
@@ -24381,7 +25020,8 @@
         "combinations": [],
         "score": 600,
         "scale": 1200,
-        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem"
+        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem",
+        "verifiedForAI": false
       },
       {
         "year": 2026,
@@ -24390,7 +25030,8 @@
         "combinations": [],
         "score": 15,
         "scale": 30,
-        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem"
+        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem",
+        "verifiedForAI": false
       },
       {
         "year": 2026,
@@ -24399,7 +25040,8 @@
         "combinations": [],
         "score": 600,
         "scale": 1200,
-        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem"
+        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem",
+        "verifiedForAI": false
       },
       {
         "year": 2026,
@@ -24408,7 +25050,8 @@
         "combinations": [],
         "score": 15,
         "scale": 30,
-        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem"
+        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem",
+        "verifiedForAI": false
       },
       {
         "year": 2026,
@@ -24417,7 +25060,8 @@
         "combinations": [],
         "score": 600,
         "scale": 1200,
-        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem"
+        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem",
+        "verifiedForAI": false
       },
       {
         "year": 2026,
@@ -24426,7 +25070,8 @@
         "combinations": [],
         "score": 15,
         "scale": 30,
-        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem"
+        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem",
+        "verifiedForAI": false
       },
       {
         "year": 2026,
@@ -24435,7 +25080,8 @@
         "combinations": [],
         "score": 600,
         "scale": 1200,
-        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem"
+        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem",
+        "verifiedForAI": false
       },
       {
         "year": 2026,
@@ -24444,7 +25090,8 @@
         "combinations": [],
         "score": 15,
         "scale": 30,
-        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem"
+        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem",
+        "verifiedForAI": false
       },
       {
         "year": 2026,
@@ -24453,7 +25100,8 @@
         "combinations": [],
         "score": 600,
         "scale": 1200,
-        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem"
+        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem",
+        "verifiedForAI": false
       },
       {
         "year": 2026,
@@ -24462,7 +25110,8 @@
         "combinations": [],
         "score": 15,
         "scale": 30,
-        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem"
+        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem",
+        "verifiedForAI": false
       },
       {
         "year": 2026,
@@ -24471,7 +25120,8 @@
         "combinations": [],
         "score": 600,
         "scale": 1200,
-        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem"
+        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem",
+        "verifiedForAI": false
       },
       {
         "year": 2026,
@@ -24480,7 +25130,8 @@
         "combinations": [],
         "score": 15,
         "scale": 30,
-        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem"
+        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem",
+        "verifiedForAI": false
       },
       {
         "year": 2026,
@@ -24489,7 +25140,8 @@
         "combinations": [],
         "score": 600,
         "scale": 1200,
-        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem"
+        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem",
+        "verifiedForAI": false
       },
       {
         "year": 2026,
@@ -24498,7 +25150,8 @@
         "combinations": [],
         "score": 15,
         "scale": 30,
-        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem"
+        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem",
+        "verifiedForAI": false
       },
       {
         "year": 2026,
@@ -24507,7 +25160,8 @@
         "combinations": [],
         "score": 600,
         "scale": 1200,
-        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem"
+        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem",
+        "verifiedForAI": false
       },
       {
         "year": 2026,
@@ -24516,7 +25170,8 @@
         "combinations": [],
         "score": 20,
         "scale": 30,
-        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem"
+        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem",
+        "verifiedForAI": false
       },
       {
         "year": 2026,
@@ -24525,7 +25180,8 @@
         "combinations": [],
         "score": 720,
         "scale": 1200,
-        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem"
+        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem",
+        "verifiedForAI": false
       },
       {
         "year": 2026,
@@ -24534,7 +25190,8 @@
         "combinations": [],
         "score": 20,
         "scale": 30,
-        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem"
+        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem",
+        "verifiedForAI": false
       },
       {
         "year": 2026,
@@ -24543,7 +25200,8 @@
         "combinations": [],
         "score": 720,
         "scale": 1200,
-        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem"
+        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem",
+        "verifiedForAI": false
       },
       {
         "year": 2026,
@@ -24552,7 +25210,8 @@
         "combinations": [],
         "score": 15,
         "scale": 30,
-        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem"
+        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem",
+        "verifiedForAI": false
       },
       {
         "year": 2026,
@@ -24561,7 +25220,8 @@
         "combinations": [],
         "score": 600,
         "scale": 1200,
-        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem"
+        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem",
+        "verifiedForAI": false
       },
       {
         "year": 2026,
@@ -24570,7 +25230,8 @@
         "combinations": [],
         "score": 15,
         "scale": 30,
-        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem"
+        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem",
+        "verifiedForAI": false
       },
       {
         "year": 2026,
@@ -24579,7 +25240,8 @@
         "combinations": [],
         "score": 600,
         "scale": 1200,
-        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem"
+        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem",
+        "verifiedForAI": false
       },
       {
         "year": 2026,
@@ -24588,7 +25250,8 @@
         "combinations": [],
         "score": 15,
         "scale": 30,
-        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem"
+        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem",
+        "verifiedForAI": false
       },
       {
         "year": 2026,
@@ -24597,7 +25260,8 @@
         "combinations": [],
         "score": 600,
         "scale": 1200,
-        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem"
+        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem",
+        "verifiedForAI": false
       },
       {
         "year": 2026,
@@ -24606,7 +25270,8 @@
         "combinations": [],
         "score": 15,
         "scale": 30,
-        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem"
+        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem",
+        "verifiedForAI": false
       },
       {
         "year": 2026,
@@ -24615,7 +25280,8 @@
         "combinations": [],
         "score": 600,
         "scale": 1200,
-        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem"
+        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem",
+        "verifiedForAI": false
       },
       {
         "year": 2026,
@@ -24624,7 +25290,8 @@
         "combinations": [],
         "score": 15,
         "scale": 30,
-        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem"
+        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem",
+        "verifiedForAI": false
       },
       {
         "year": 2026,
@@ -24633,7 +25300,8 @@
         "combinations": [],
         "score": 600,
         "scale": 1200,
-        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem"
+        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem",
+        "verifiedForAI": false
       },
       {
         "year": 2026,
@@ -24642,7 +25310,8 @@
         "combinations": [],
         "score": 15,
         "scale": 30,
-        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem"
+        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem",
+        "verifiedForAI": false
       },
       {
         "year": 2026,
@@ -24651,7 +25320,8 @@
         "combinations": [],
         "score": 600,
         "scale": 1200,
-        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem"
+        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem",
+        "verifiedForAI": false
       },
       {
         "year": 2026,
@@ -24660,7 +25330,8 @@
         "combinations": [],
         "score": 15,
         "scale": 30,
-        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem"
+        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem",
+        "verifiedForAI": false
       },
       {
         "year": 2026,
@@ -24669,7 +25340,8 @@
         "combinations": [],
         "score": 600,
         "scale": 1200,
-        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem"
+        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem",
+        "verifiedForAI": false
       },
       {
         "year": 2026,
@@ -24678,7 +25350,8 @@
         "combinations": [],
         "score": 15,
         "scale": 30,
-        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem"
+        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem",
+        "verifiedForAI": false
       },
       {
         "year": 2026,
@@ -24687,7 +25360,8 @@
         "combinations": [],
         "score": 600,
         "scale": 1200,
-        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem"
+        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem",
+        "verifiedForAI": false
       },
       {
         "year": 2026,
@@ -24696,7 +25370,8 @@
         "combinations": [],
         "score": 15,
         "scale": 30,
-        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem"
+        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem",
+        "verifiedForAI": false
       },
       {
         "year": 2026,
@@ -24705,7 +25380,8 @@
         "combinations": [],
         "score": 600,
         "scale": 1200,
-        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem"
+        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem",
+        "verifiedForAI": false
       },
       {
         "year": 2026,
@@ -24714,7 +25390,8 @@
         "combinations": [],
         "score": 15,
         "scale": 30,
-        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem"
+        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem",
+        "verifiedForAI": false
       },
       {
         "year": 2026,
@@ -24723,7 +25400,8 @@
         "combinations": [],
         "score": 600,
         "scale": 1200,
-        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem"
+        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem",
+        "verifiedForAI": false
       },
       {
         "year": 2026,
@@ -24732,7 +25410,8 @@
         "combinations": [],
         "score": 15,
         "scale": 30,
-        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem"
+        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem",
+        "verifiedForAI": false
       },
       {
         "year": 2026,
@@ -24741,7 +25420,8 @@
         "combinations": [],
         "score": 600,
         "scale": 1200,
-        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem"
+        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem",
+        "verifiedForAI": false
       },
       {
         "year": 2026,
@@ -24750,7 +25430,8 @@
         "combinations": [],
         "score": 15,
         "scale": 30,
-        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem"
+        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem",
+        "verifiedForAI": false
       },
       {
         "year": 2026,
@@ -24759,7 +25440,8 @@
         "combinations": [],
         "score": 600,
         "scale": 1200,
-        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem"
+        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem",
+        "verifiedForAI": false
       },
       {
         "year": 2026,
@@ -24768,7 +25450,8 @@
         "combinations": [],
         "score": 15,
         "scale": 30,
-        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem"
+        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem",
+        "verifiedForAI": false
       },
       {
         "year": 2026,
@@ -24777,7 +25460,8 @@
         "combinations": [],
         "score": 600,
         "scale": 1200,
-        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem"
+        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem",
+        "verifiedForAI": false
       },
       {
         "year": 2026,
@@ -24786,7 +25470,8 @@
         "combinations": [],
         "score": 15,
         "scale": 30,
-        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem"
+        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem",
+        "verifiedForAI": false
       },
       {
         "year": 2026,
@@ -24795,7 +25480,8 @@
         "combinations": [],
         "score": 600,
         "scale": 1200,
-        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem"
+        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem",
+        "verifiedForAI": false
       },
       {
         "year": 2026,
@@ -24804,7 +25490,8 @@
         "combinations": [],
         "score": 22,
         "scale": 30,
-        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem"
+        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem",
+        "verifiedForAI": false
       },
       {
         "year": 2026,
@@ -24813,7 +25500,8 @@
         "combinations": [],
         "score": 750,
         "scale": 1200,
-        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem"
+        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem",
+        "verifiedForAI": false
       },
       {
         "year": 2026,
@@ -24822,7 +25510,8 @@
         "combinations": [],
         "score": 20,
         "scale": 30,
-        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem"
+        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem",
+        "verifiedForAI": false
       },
       {
         "year": 2026,
@@ -24831,7 +25520,8 @@
         "combinations": [],
         "score": 720,
         "scale": 1200,
-        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem"
+        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem",
+        "verifiedForAI": false
       },
       {
         "year": 2026,
@@ -24840,7 +25530,8 @@
         "combinations": [],
         "score": 18,
         "scale": 30,
-        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem"
+        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem",
+        "verifiedForAI": false
       },
       {
         "year": 2026,
@@ -24849,7 +25540,8 @@
         "combinations": [],
         "score": 650,
         "scale": 1200,
-        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem"
+        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem",
+        "verifiedForAI": false
       },
       {
         "year": 2026,
@@ -24858,7 +25550,8 @@
         "combinations": [],
         "score": 18,
         "scale": 30,
-        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem"
+        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem",
+        "verifiedForAI": false
       },
       {
         "year": 2026,
@@ -24867,7 +25560,8 @@
         "combinations": [],
         "score": 650,
         "scale": 1200,
-        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem"
+        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem",
+        "verifiedForAI": false
       },
       {
         "year": 2026,
@@ -24876,7 +25570,8 @@
         "combinations": [],
         "score": 15,
         "scale": 30,
-        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem"
+        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem",
+        "verifiedForAI": false
       },
       {
         "year": 2026,
@@ -24885,7 +25580,8 @@
         "combinations": [],
         "score": 600,
         "scale": 1200,
-        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem"
+        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem",
+        "verifiedForAI": false
       },
       {
         "year": 2026,
@@ -24894,7 +25590,8 @@
         "combinations": [],
         "score": 15,
         "scale": 30,
-        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem"
+        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem",
+        "verifiedForAI": false
       },
       {
         "year": 2026,
@@ -24903,7 +25600,8 @@
         "combinations": [],
         "score": 600,
         "scale": 1200,
-        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem"
+        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem",
+        "verifiedForAI": false
       },
       {
         "year": 2026,
@@ -24912,7 +25610,8 @@
         "combinations": [],
         "score": 15,
         "scale": 30,
-        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem"
+        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem",
+        "verifiedForAI": false
       },
       {
         "year": 2026,
@@ -24921,7 +25620,8 @@
         "combinations": [],
         "score": 600,
         "scale": 1200,
-        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem"
+        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem",
+        "verifiedForAI": false
       },
       {
         "year": 2026,
@@ -24930,7 +25630,8 @@
         "combinations": [],
         "score": 15,
         "scale": 30,
-        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem"
+        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem",
+        "verifiedForAI": false
       },
       {
         "year": 2026,
@@ -24939,7 +25640,8 @@
         "combinations": [],
         "score": 600,
         "scale": 1200,
-        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem"
+        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem",
+        "verifiedForAI": false
       },
       {
         "year": 2026,
@@ -24949,7 +25651,8 @@
         "combinations": [],
         "score": 15,
         "scale": 30,
-        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem"
+        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem",
+        "verifiedForAI": false
       },
       {
         "year": 2026,
@@ -24959,7 +25662,8 @@
         "combinations": [],
         "score": 600,
         "scale": 1200,
-        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem"
+        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem",
+        "verifiedForAI": false
       },
       {
         "year": 2026,
@@ -24969,7 +25673,8 @@
         "combinations": [],
         "score": 15,
         "scale": 30,
-        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem"
+        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem",
+        "verifiedForAI": false
       },
       {
         "year": 2026,
@@ -24979,7 +25684,8 @@
         "combinations": [],
         "score": 600,
         "scale": 1200,
-        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem"
+        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem",
+        "verifiedForAI": false
       },
       {
         "year": 2026,
@@ -24989,7 +25695,8 @@
         "combinations": [],
         "score": 15,
         "scale": 30,
-        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem"
+        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem",
+        "verifiedForAI": false
       },
       {
         "year": 2026,
@@ -24999,7 +25706,8 @@
         "combinations": [],
         "score": 600,
         "scale": 1200,
-        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem"
+        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem",
+        "verifiedForAI": false
       },
       {
         "year": 2026,
@@ -25009,7 +25717,8 @@
         "combinations": [],
         "score": 15,
         "scale": 30,
-        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem"
+        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem",
+        "verifiedForAI": false
       },
       {
         "year": 2026,
@@ -25019,7 +25728,8 @@
         "combinations": [],
         "score": 600,
         "scale": 1200,
-        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem"
+        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem",
+        "verifiedForAI": false
       },
       {
         "year": 2026,
@@ -25029,7 +25739,8 @@
         "combinations": [],
         "score": 15,
         "scale": 30,
-        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem"
+        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem",
+        "verifiedForAI": false
       },
       {
         "year": 2026,
@@ -25039,7 +25750,8 @@
         "combinations": [],
         "score": 600,
         "scale": 1200,
-        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem"
+        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem",
+        "verifiedForAI": false
       },
       {
         "year": 2026,
@@ -25049,7 +25761,8 @@
         "combinations": [],
         "score": 15,
         "scale": 30,
-        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem"
+        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem",
+        "verifiedForAI": false
       },
       {
         "year": 2026,
@@ -25059,7 +25772,8 @@
         "combinations": [],
         "score": 600,
         "scale": 1200,
-        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem"
+        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem",
+        "verifiedForAI": false
       },
       {
         "year": 2026,
@@ -25069,7 +25783,8 @@
         "combinations": [],
         "score": 15,
         "scale": 30,
-        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem"
+        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem",
+        "verifiedForAI": false
       },
       {
         "year": 2026,
@@ -25079,7 +25794,8 @@
         "combinations": [],
         "score": 600,
         "scale": 1200,
-        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem"
+        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem",
+        "verifiedForAI": false
       },
       {
         "year": 2026,
@@ -25089,7 +25805,8 @@
         "combinations": [],
         "score": 15,
         "scale": 30,
-        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem"
+        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem",
+        "verifiedForAI": false
       },
       {
         "year": 2026,
@@ -25099,7 +25816,8 @@
         "combinations": [],
         "score": 600,
         "scale": 1200,
-        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem"
+        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem",
+        "verifiedForAI": false
       },
       {
         "year": 2026,
@@ -25109,7 +25827,8 @@
         "combinations": [],
         "score": 15,
         "scale": 30,
-        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem"
+        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem",
+        "verifiedForAI": false
       },
       {
         "year": 2026,
@@ -25119,7 +25838,8 @@
         "combinations": [],
         "score": 600,
         "scale": 1200,
-        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem"
+        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem",
+        "verifiedForAI": false
       },
       {
         "year": 2026,
@@ -25129,7 +25849,8 @@
         "combinations": [],
         "score": 15,
         "scale": 30,
-        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem"
+        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem",
+        "verifiedForAI": false
       },
       {
         "year": 2026,
@@ -25139,7 +25860,8 @@
         "combinations": [],
         "score": 600,
         "scale": 1200,
-        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem"
+        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem",
+        "verifiedForAI": false
       },
       {
         "year": 2026,
@@ -25149,7 +25871,8 @@
         "combinations": [],
         "score": 15,
         "scale": 30,
-        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem"
+        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem",
+        "verifiedForAI": false
       },
       {
         "year": 2026,
@@ -25159,7 +25882,8 @@
         "combinations": [],
         "score": 600,
         "scale": 1200,
-        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem"
+        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem",
+        "verifiedForAI": false
       },
       {
         "year": 2026,
@@ -25169,7 +25893,8 @@
         "combinations": [],
         "score": 15,
         "scale": 30,
-        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem"
+        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem",
+        "verifiedForAI": false
       },
       {
         "year": 2026,
@@ -25179,7 +25904,8 @@
         "combinations": [],
         "score": 600,
         "scale": 1200,
-        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem"
+        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem",
+        "verifiedForAI": false
       },
       {
         "year": 2026,
@@ -25189,7 +25915,8 @@
         "combinations": [],
         "score": 15,
         "scale": 30,
-        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem"
+        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem",
+        "verifiedForAI": false
       },
       {
         "year": 2026,
@@ -25199,7 +25926,8 @@
         "combinations": [],
         "score": 600,
         "scale": 1200,
-        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem"
+        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem",
+        "verifiedForAI": false
       },
       {
         "year": 2026,
@@ -25209,7 +25937,8 @@
         "combinations": [],
         "score": 15,
         "scale": 30,
-        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem"
+        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem",
+        "verifiedForAI": false
       },
       {
         "year": 2026,
@@ -25219,7 +25948,8 @@
         "combinations": [],
         "score": 600,
         "scale": 1200,
-        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem"
+        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem",
+        "verifiedForAI": false
       },
       {
         "year": 2026,
@@ -25229,7 +25959,8 @@
         "combinations": [],
         "score": 15,
         "scale": 30,
-        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem"
+        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem",
+        "verifiedForAI": false
       },
       {
         "year": 2026,
@@ -25239,7 +25970,8 @@
         "combinations": [],
         "score": 600,
         "scale": 1200,
-        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem"
+        "sourceUrl": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14634620-hutech-chinh-thuc-cong-bo-diem-chuan-nam-2026-diem-thi-thpt-tu-15-22-diem",
+        "verifiedForAI": false
       }
     ],
     "foundedYear": 1995,
@@ -25256,7 +25988,25 @@
     ],
     "sourceDomains": [
       "hutech.edu.vn"
-    ]
+    ],
+    "aliases": [],
+    "media": {
+      "gallery": [],
+      "logoUrl": "https://www.hutech.edu.vn/images/logo/HUTECH_qs_starts.png"
+    },
+    "facilities": [
+      {
+        "name": "Khu học xá",
+        "description": "Năm khu học xá tại TP.HCM, tổng diện tích trên 100.000 m2."
+      },
+      {
+        "name": "Thư viện",
+        "description": "Thư viện trường (lib.hutech.edu.vn)."
+      }
+    ],
+    "scholarships": [],
+    "studentLife": [],
+    "careerOpportunities": []
   },
   {
     "slug": "quoc-te-hong-bang",
@@ -25276,7 +26026,16 @@
     },
     "majors": [],
     "tuition": [],
-    "admissions": []
+    "admissions": [],
+    "aliases": [],
+    "campuses": [],
+    "careerOpportunities": [],
+    "facilities": [],
+    "media": {
+      "gallery": []
+    },
+    "scholarships": [],
+    "studentLife": []
   },
   {
     "slug": "van-hien",
@@ -25296,7 +26055,16 @@
     },
     "majors": [],
     "tuition": [],
-    "admissions": []
+    "admissions": [],
+    "aliases": [],
+    "campuses": [],
+    "careerOpportunities": [],
+    "facilities": [],
+    "media": {
+      "gallery": []
+    },
+    "scholarships": [],
+    "studentLife": []
   },
   {
     "slug": "cong-nghe-sai-gon",
@@ -25316,7 +26084,16 @@
     },
     "majors": [],
     "tuition": [],
-    "admissions": []
+    "admissions": [],
+    "aliases": [],
+    "campuses": [],
+    "careerOpportunities": [],
+    "facilities": [],
+    "media": {
+      "gallery": []
+    },
+    "scholarships": [],
+    "studentLife": []
   },
   {
     "slug": "nguyen-tat-thanh",
@@ -25336,7 +26113,16 @@
     },
     "majors": [],
     "tuition": [],
-    "admissions": []
+    "admissions": [],
+    "aliases": [],
+    "campuses": [],
+    "careerOpportunities": [],
+    "facilities": [],
+    "media": {
+      "gallery": []
+    },
+    "scholarships": [],
+    "studentLife": []
   },
   {
     "slug": "fpt-tphcm",
@@ -25349,14 +26135,54 @@
     "universitySystem": null,
     "contact": {
       "website": "https://daihoc.fpt.edu.vn",
-      "admissionsUrl": "https://daihoc.fpt.edu.vn/tuyen-sinh"
+      "admissionsUrl": "https://daihoc.fpt.edu.vn/tuyen-sinh",
+      "admissionsEmail": "tuyensinhhcm@fpt.edu.vn",
+      "phone": "(028) 7300 5588"
     },
     "address": {
-      "city": "TP. Hồ Chí Minh"
+      "city": "TP. Hồ Chí Minh",
+      "full": "Lô E2a-7, Đường D1, Khu Công nghệ cao, Phường Tăng Nhơn Phú, TP. Hồ Chí Minh"
     },
     "majors": [],
-    "tuition": [],
-    "admissions": []
+    "tuition": [
+      {
+        "academicYear": "2026-2027",
+        "program": "Nhóm CNTT, Truyền thông, Quản trị kinh doanh",
+        "amountMin": 31600000,
+        "unit": "semester",
+        "note": "Khóa nhập học 2026, campus TP.HCM, mức cho thí sinh ngoài KV1 (KV1: 22.120.000 đ/học kỳ). Học kỳ 4 tăng 6,3%, học kỳ 7 tăng 6,5%.",
+        "sourceUrl": "https://daihoc.fpt.edu.vn/hoc-phi-tai-campus-tp-ho-chi-minh/"
+      },
+      {
+        "academicYear": "2026-2027",
+        "program": "Nhóm Ngôn ngữ, Luật, Quản trị khách sạn, Du lịch - lữ hành",
+        "amountMin": 22120000,
+        "unit": "semester",
+        "note": "Khóa nhập học 2026, campus TP.HCM, mức cho thí sinh ngoài KV1 (KV1: 15.480.000 đ/học kỳ).",
+        "sourceUrl": "https://daihoc.fpt.edu.vn/hoc-phi-tai-campus-tp-ho-chi-minh/"
+      }
+    ],
+    "admissions": [],
+    "aliases": [],
+    "campuses": [
+      {
+        "name": "Campus TP. Hồ Chí Minh",
+        "address": "Lô E2a-7, Đường D1, Khu Công nghệ cao, Phường Tăng Nhơn Phú, TP. Hồ Chí Minh"
+      }
+    ],
+    "careerOpportunities": [],
+    "facilities": [],
+    "media": {
+      "gallery": [],
+      "logoUrl": "https://daihoc.fpt.edu.vn/wp-content/themes/fpt-university/assets/images/logo.png"
+    },
+    "scholarships": [],
+    "studentLife": [],
+    "description": "Trường Đại học FPT thuộc Tổ chức giáo dục FPT, được thành lập năm 2006 theo quyết định của Thủ tướng Chính phủ. Trường đào tạo công nghệ thông tin, công nghệ truyền thông, quản trị kinh doanh, luật và khối ngành ngôn ngữ, có học kỳ thực tập tại doanh nghiệp (OJT). Cơ sở TP.HCM đặt tại Khu Công nghệ cao.",
+    "foundedYear": 2006,
+    "sourceDomains": [
+      "fpt.edu.vn"
+    ]
   },
   {
     "slug": "gia-dinh",
@@ -25376,7 +26202,16 @@
     },
     "majors": [],
     "tuition": [],
-    "admissions": []
+    "admissions": [],
+    "aliases": [],
+    "campuses": [],
+    "careerOpportunities": [],
+    "facilities": [],
+    "media": {
+      "gallery": []
+    },
+    "scholarships": [],
+    "studentLife": []
   },
   {
     "slug": "kinh-te-tai-chinh-tphcm",
@@ -25396,7 +26231,16 @@
     },
     "majors": [],
     "tuition": [],
-    "admissions": []
+    "admissions": [],
+    "aliases": [],
+    "campuses": [],
+    "careerOpportunities": [],
+    "facilities": [],
+    "media": {
+      "gallery": []
+    },
+    "scholarships": [],
+    "studentLife": []
   },
   {
     "slug": "quoc-te-sai-gon",
@@ -25416,7 +26260,16 @@
     },
     "majors": [],
     "tuition": [],
-    "admissions": []
+    "admissions": [],
+    "aliases": [],
+    "campuses": [],
+    "careerOpportunities": [],
+    "facilities": [],
+    "media": {
+      "gallery": []
+    },
+    "scholarships": [],
+    "studentLife": []
   },
   {
     "slug": "quan-ly-cong-nghe-tphcm",
@@ -25436,7 +26289,16 @@
     },
     "majors": [],
     "tuition": [],
-    "admissions": []
+    "admissions": [],
+    "aliases": [],
+    "campuses": [],
+    "careerOpportunities": [],
+    "facilities": [],
+    "media": {
+      "gallery": []
+    },
+    "scholarships": [],
+    "studentLife": []
   },
   {
     "slug": "kinh-doanh-sai-gon",
@@ -25456,7 +26318,16 @@
     },
     "majors": [],
     "tuition": [],
-    "admissions": []
+    "admissions": [],
+    "aliases": [],
+    "campuses": [],
+    "careerOpportunities": [],
+    "facilities": [],
+    "media": {
+      "gallery": []
+    },
+    "scholarships": [],
+    "studentLife": []
   },
   {
     "slug": "hoc-vien-can-bo-tphcm",
@@ -25476,7 +26347,16 @@
     },
     "majors": [],
     "tuition": [],
-    "admissions": []
+    "admissions": [],
+    "aliases": [],
+    "campuses": [],
+    "careerOpportunities": [],
+    "facilities": [],
+    "media": {
+      "gallery": []
+    },
+    "scholarships": [],
+    "studentLife": []
   },
   {
     "slug": "hoc-vien-buu-chinh-vien-thong-tphcm",
@@ -25496,7 +26376,16 @@
     },
     "majors": [],
     "tuition": [],
-    "admissions": []
+    "admissions": [],
+    "aliases": [],
+    "campuses": [],
+    "careerOpportunities": [],
+    "facilities": [],
+    "media": {
+      "gallery": []
+    },
+    "scholarships": [],
+    "studentLife": []
   },
   {
     "slug": "hoc-vien-hang-khong",
@@ -25516,7 +26405,16 @@
     },
     "majors": [],
     "tuition": [],
-    "admissions": []
+    "admissions": [],
+    "aliases": [],
+    "campuses": [],
+    "careerOpportunities": [],
+    "facilities": [],
+    "media": {
+      "gallery": []
+    },
+    "scholarships": [],
+    "studentLife": []
   },
   {
     "slug": "hoc-vien-hanh-chinh-quan-tri-cong-tphcm",
@@ -25536,7 +26434,16 @@
     },
     "majors": [],
     "tuition": [],
-    "admissions": []
+    "admissions": [],
+    "aliases": [],
+    "campuses": [],
+    "careerOpportunities": [],
+    "facilities": [],
+    "media": {
+      "gallery": []
+    },
+    "scholarships": [],
+    "studentLife": []
   },
   {
     "slug": "hoc-vien-ky-thuat-mat-ma-phia-nam",
@@ -25556,7 +26463,16 @@
     },
     "majors": [],
     "tuition": [],
-    "admissions": []
+    "admissions": [],
+    "aliases": [],
+    "campuses": [],
+    "careerOpportunities": [],
+    "facilities": [],
+    "media": {
+      "gallery": []
+    },
+    "scholarships": [],
+    "studentLife": []
   },
   {
     "slug": "hoc-vien-ky-thuat-quan-su-cs2",
@@ -25578,7 +26494,16 @@
     },
     "majors": [],
     "tuition": [],
-    "admissions": []
+    "admissions": [],
+    "aliases": [],
+    "campuses": [],
+    "careerOpportunities": [],
+    "facilities": [],
+    "media": {
+      "gallery": []
+    },
+    "scholarships": [],
+    "studentLife": []
   },
   {
     "slug": "nhac-vien-tphcm",
@@ -25598,7 +26523,16 @@
     },
     "majors": [],
     "tuition": [],
-    "admissions": []
+    "admissions": [],
+    "aliases": [],
+    "campuses": [],
+    "careerOpportunities": [],
+    "facilities": [],
+    "media": {
+      "gallery": []
+    },
+    "scholarships": [],
+    "studentLife": []
   },
   {
     "slug": "hoc-vien-thanh-thieu-nien-mien-nam",
@@ -25618,7 +26552,16 @@
     },
     "majors": [],
     "tuition": [],
-    "admissions": []
+    "admissions": [],
+    "aliases": [],
+    "campuses": [],
+    "careerOpportunities": [],
+    "facilities": [],
+    "media": {
+      "gallery": []
+    },
+    "scholarships": [],
+    "studentLife": []
   },
   {
     "slug": "rmit-viet-nam",
@@ -25631,14 +26574,51 @@
     "universitySystem": null,
     "contact": {
       "website": "https://www.rmit.edu.vn",
-      "admissionsUrl": "https://www.rmit.edu.vn/vi/tuyen-sinh"
+      "admissionsUrl": "https://www.rmit.edu.vn/vi/tuyen-sinh",
+      "admissionsEmail": "enquiries@rmit.edu.vn",
+      "admissionsPhone": "(028) 3776 1369",
+      "email": "enquiries@rmit.edu.vn",
+      "phone": "(028) 3776 1300"
     },
     "address": {
-      "city": "TP. Hồ Chí Minh"
+      "city": "TP. Hồ Chí Minh",
+      "full": "702 đại lộ Nguyễn Văn Linh, Phường Tân Hưng, Thành phố Hồ Chí Minh"
     },
     "majors": [],
     "tuition": [],
-    "admissions": []
+    "admissions": [],
+    "aliases": [],
+    "campuses": [
+      {
+        "name": "Cơ sở Nam Sài Gòn",
+        "address": "702 đại lộ Nguyễn Văn Linh, Phường Tân Hưng, Thành phố Hồ Chí Minh"
+      }
+    ],
+    "careerOpportunities": [],
+    "facilities": [
+      {
+        "name": "Thư viện",
+        "description": "Thư viện tại cơ sở Nam Sài Gòn."
+      },
+      {
+        "name": "Phòng thực hành CNTT, kỹ thuật và giao dịch tài chính",
+        "description": "Các phòng máy tính và phòng thực hành chuyên ngành."
+      },
+      {
+        "name": "Studio quay phim, hậu kỳ và thời trang",
+        "description": "Phòng thực hành cho khối truyền thông và thiết kế."
+      }
+    ],
+    "media": {
+      "gallery": []
+    },
+    "scholarships": [],
+    "studentLife": [],
+    "description": "Đại học RMIT Việt Nam được thành lập năm 2000 và là một phần của RMIT Melbourne (Australia). Trường cung cấp chương trình về kinh doanh, công nghệ, truyền thông, thiết kế và thời trang; sinh viên tốt nghiệp nhận bằng do RMIT tại Melbourne cấp.",
+    "foundedYear": 2000,
+    "sourceDomains": [
+      "rmit.edu.vn"
+    ]
   },
   {
     "slug": "fulbright-viet-nam",
@@ -25658,7 +26638,16 @@
     },
     "majors": [],
     "tuition": [],
-    "admissions": []
+    "admissions": [],
+    "aliases": [],
+    "campuses": [],
+    "careerOpportunities": [],
+    "facilities": [],
+    "media": {
+      "gallery": []
+    },
+    "scholarships": [],
+    "studentLife": []
   },
   {
     "slug": "pacific-vietnam",
@@ -25678,7 +26667,16 @@
     },
     "majors": [],
     "tuition": [],
-    "admissions": []
+    "admissions": [],
+    "aliases": [],
+    "campuses": [],
+    "careerOpportunities": [],
+    "facilities": [],
+    "media": {
+      "gallery": []
+    },
+    "scholarships": [],
+    "studentLife": []
   },
   {
     "slug": "greenwich-viet-nam",
@@ -25698,7 +26696,16 @@
     },
     "majors": [],
     "tuition": [],
-    "admissions": []
+    "admissions": [],
+    "aliases": [],
+    "campuses": [],
+    "careerOpportunities": [],
+    "facilities": [],
+    "media": {
+      "gallery": []
+    },
+    "scholarships": [],
+    "studentLife": []
   },
   {
     "slug": "swinburne-viet-nam",
@@ -25718,7 +26725,16 @@
     },
     "majors": [],
     "tuition": [],
-    "admissions": []
+    "admissions": [],
+    "aliases": [],
+    "campuses": [],
+    "careerOpportunities": [],
+    "facilities": [],
+    "media": {
+      "gallery": []
+    },
+    "scholarships": [],
+    "studentLife": []
   },
   {
     "slug": "columbia-southern-viet-nam",
@@ -25738,6 +26754,15 @@
     },
     "majors": [],
     "tuition": [],
-    "admissions": []
+    "admissions": [],
+    "aliases": [],
+    "campuses": [],
+    "careerOpportunities": [],
+    "facilities": [],
+    "media": {
+      "gallery": []
+    },
+    "scholarships": [],
+    "studentLife": []
   }
 ]
