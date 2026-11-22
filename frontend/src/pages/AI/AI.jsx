@@ -126,7 +126,7 @@ function AI() {
           {priority('admission')}
           <p className="consult-label" id="method-label">Phương thức xét tuyển</p>
           <div className="consult-choices two" role="group" aria-labelledby="method-label">
-            {[['high_school_exam', '📝 Điểm THPT (thang 30)'], ['competency_assessment', '🧠 ĐGNL ĐHQG-HCM (thang 1200)']].map(([value, label]) => <button key={value} type="button" aria-pressed={preferences.method === value} className={preferences.method === value ? 'selected' : ''} onClick={() => change('method', value)}>{label}</button>)}
+            {[['high_school_exam', 'Điểm THPT (thang 30)'], ['competency_assessment', 'ĐGNL ĐHQG-HCM (thang 1200)']].map(([value, label]) => <button key={value} type="button" aria-pressed={preferences.method === value} className={preferences.method === value ? 'selected' : ''} onClick={() => change('method', value)}>{label}</button>)}
           </div>
           {fieldError('method')}
           {isExam && <>
@@ -198,7 +198,7 @@ function AI() {
           </div>
           {fieldError('vnuhcm')}
         </fieldset>
-        <button type="submit" className="btn btn-primary btn-block" disabled={loading || !!loadError}>🤖 Tư vấn cho tôi</button>
+        <button type="submit" className="btn btn-primary btn-block" disabled={loading || !!loadError}>Tư vấn cho tôi</button>
       </form>
 
       {results && <RecommendationResults results={results} preferences={preferences} />}
