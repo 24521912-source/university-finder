@@ -19,6 +19,10 @@ async function requireAuth(req, res, next) {
   if (!user || user.deletedAt) throw httpError(401, 'Tài khoản không tồn tại')
   // Khóa có hiệu lực ngay ở request kế tiếp, không chờ token hết hạn.
   if (user.status === 'locked') throw httpError(401, 'Tài khoản đã bị khóa. Vui lòng liên hệ quản trị viên')
+  // Mật khẩu đã được đặt lại sau khi cấp token này -> phải đăng nhập lại.
+  if (user.passwordChangedAt && payload.iat < Math.floor(user.passwordChangedAt.getTime() / 1000)) {
+    throw httpError(401, 'Phiên đăng nhập đã hết hạn, vui lòng đăng nhập lại')
+  }
   req.user = user
   next()
 }
