@@ -12,7 +12,8 @@
     "seed": "node src/seed.js",
     "make-admin": "node src/makeAdmin.js",
     "backup": "node src/backup.js",
-    "restore-backup": "node src/restoreBackup.js"
+    "restore-backup": "node src/restoreBackup.js",
+    "docs": "apidoc -i apidoc -o public/api-docs"
   },
   "keywords": [],
   "author": "",
@@ -28,6 +29,7 @@
     "nodemailer": "^10.6.1"
   },
   "devDependencies": {
+    "apidoc": "^1.2.0",
     "nodemon": "^3.1.14"
   }
 }

@@ -1,0 +1,30 @@
+name: 📋 Công việc (Task)
+description: Một đầu việc trong WBS — phân công và theo dõi trên bảng Kanban
+title: "[WBS x.y] "
+labels: ["task"]
+body:
+  - type: input
+    id: wbs
+    attributes:
+      label: Mã WBS
+      placeholder: "4.4"
+    validations:
+      required: true
+  - type: textarea
+    id: goal
+    attributes:
+      label: Mục tiêu / phạm vi
+    validations:
+      required: true
+  - type: textarea
+    id: done
+    attributes:
+      label: Tiêu chí hoàn thành
+      placeholder: |
+        - [ ] ...
+        - [ ] Có test / đã kiểm tra trên 375px
+  - type: input
+    id: branch
+    attributes:
+      label: Nhánh làm việc
+      placeholder: "feature/<tên-chức-năng>"
