@@ -102,7 +102,7 @@ function Profile() {
 
   return <div className="user-profile"><div className="up-shell">
     <nav className="up-breadcrumb" aria-label="Đường dẫn"><Link to="/">Trang chủ</Link><ChevronRight size={14} aria-hidden="true" /><span aria-current="page">Cá nhân</span></nav>
-    <div className="up-page-heading"><div><p className="up-eyebrow">KHÔNG GIAN CỦA BẠN</p><h1>Hồ sơ cá nhân</h1><p>Thông tin của bạn, hành trình đại học của bạn.</p></div><span className="up-platform"><ShieldCheck size={17} aria-hidden="true" />Tài khoản UniMatch</span></div>
+    <div className="up-page-heading"><div><h1>Hồ sơ cá nhân</h1><p>Thông tin của bạn, hành trình đại học của bạn.</p></div></div>
 
     <section className="up-profile-card" aria-label="Hồ sơ tài khoản">
       <div className="up-banner"><span><BookOpen size={18} aria-hidden="true" />Cùng bạn chọn trường, định hướng tương lai.</span></div>
