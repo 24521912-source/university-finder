@@ -23,6 +23,7 @@
  * @apiName ListConsultations
  * @apiGroup Consultations
  * @apiVersion 1.0.0
+ * @apiPermission user
  * @apiDescription Tối đa 30 lần gần nhất, mới nhất trước.
  * @apiUse AuthHeader
  * @apiUse ConsultationItem
@@ -34,6 +35,7 @@
  * @apiName CreateConsultation
  * @apiGroup Consultations
  * @apiVersion 1.0.0
+ * @apiPermission user
  * @apiDescription Thuật toán chấm điểm chạy ở trình duyệt; backend kiểm tra kiểu dữ liệu, đổi slug thành ID trường rồi lưu.
  * Mỗi tài khoản giữ tối đa 30 lần, lưu thêm thì tự xóa lần cũ nhất.
  * @apiUse AuthHeader
@@ -63,6 +65,7 @@
  * @apiName DeleteConsultation
  * @apiGroup Consultations
  * @apiVersion 1.0.0
+ * @apiPermission user
  * @apiDescription Chỉ xóa được lần tư vấn của chính mình.
  * @apiUse AuthHeader
  * @apiParam {String} id ID lần tư vấn.

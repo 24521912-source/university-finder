@@ -8,6 +8,7 @@
  * @apiName MapUniversities
  * @apiGroup Map
  * @apiVersion 1.0.0
+ * @apiPermission public
  * @apiDescription Trường có tọa độ trụ sở hợp lệ nằm trong `items` (kèm cơ sở phụ có tọa độ); trường chưa có tọa độ nằm trong `missing`.
  * Database lưu GeoJSON `[kinh độ, vĩ độ]`, API trả `lat` / `lng`.
  * @apiExample {curl} Ví dụ:

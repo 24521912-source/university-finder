@@ -3,7 +3,7 @@
 # branch protection "Require status checks" thì PR không merge được cho tới khi sửa.
 #
 # Cần: Settings -> Secrets and variables -> Actions -> New repository secret: GEMINI_API_KEY
-# Tùy chọn: Variables -> GEMINI_MODEL (mặc định gemini-2.5-flash)
+# Tùy chọn: Variables -> GEMINI_MODEL (mặc định gemini-3.8-flash)
 name: AI Code Review (Gemini)
 
 on:

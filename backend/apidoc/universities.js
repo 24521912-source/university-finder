@@ -6,6 +6,7 @@
  * @apiName ListUniversities
  * @apiGroup Universities
  * @apiVersion 1.0.0
+ * @apiPermission public
  * @apiDescription Toàn bộ trường dạng **card** (dữ liệu cho thẻ trường ở frontend), trường có dữ liệu đầy đủ xếp trước.
  * @apiUse UniversityCard
  * @apiSuccessExample {json} 200:
@@ -20,6 +21,7 @@
  * @apiName SearchUniversities
  * @apiGroup Universities
  * @apiVersion 1.0.0
+ * @apiPermission public
  * @apiDescription Mọi tham số đều không bắt buộc. Tìm theo tên không phân biệt dấu / hoa thường; trùng tên viết tắt xếp đầu.
  * Có từ nhánh `feature/universities` (WBS 5.4).
  * @apiQuery {String{..100}} [q] Tên hoặc tên viết tắt, vd. `uit`, `bach khoa`.
@@ -41,6 +43,7 @@
  * @apiName FilterOptions
  * @apiGroup Universities
  * @apiVersion 1.0.0
+ * @apiPermission public
  * @apiDescription Khu vực và ngành mà ít nhất một trường đang có (WBS 5.4).
  * @apiSuccess {String[]} districts Danh sách quận.
  * @apiSuccess {Object[]} majorGroups Nhóm ngành `{ name, majors: [{ code, name }] }`.
@@ -51,6 +54,7 @@
  * @apiName CompareUniversities
  * @apiGroup Universities
  * @apiVersion 1.0.0
+ * @apiPermission public
  * @apiDescription Trả về mảng theo đúng thứ tự slug gửi lên. Field chưa có dữ liệu là `null` (WBS 5.6).
  * @apiQuery {String} slugs 2–3 slug cách nhau bằng dấu phẩy.
  * @apiExample {curl} Ví dụ:
@@ -71,6 +75,7 @@
  * @apiName RecommendationData
  * @apiGroup Universities
  * @apiVersion 1.0.0
+ * @apiPermission public
  * @apiDescription Dữ liệu trang AI tư vấn dùng để chấm điểm: ngành, học phí, điểm chuẩn, quận, tên miền nguồn chính thức. Chỉ đọc.
  * @apiSuccess {Object[]} body Mảng trường gồm `slug, name, shortName, institutionType, belongsToUniversitySystem, dataLevel, sourceDomains, address.district, majors, tuition, admissions`.
  */
@@ -80,6 +85,7 @@
  * @apiName UniversityDetail
  * @apiGroup Universities
  * @apiVersion 1.0.0
+ * @apiPermission public
  * @apiParam {String} slug Đường dẫn trường.
  * @apiSuccess {Object} body Hồ sơ công khai: thông tin cơ bản, liên hệ, cơ sở, ngành, học phí, điểm chuẩn, học bổng, ký túc xá...
  * @apiError (404) NotFound `{ "message": "Không tìm thấy trường đại học" }`.
@@ -90,6 +96,7 @@
  * @apiName ListMajors
  * @apiGroup Majors
  * @apiVersion 1.0.0
+ * @apiPermission public
  * @apiSuccess {Object[]} body Mảng ngành sắp theo mã, mỗi phần tử gồm code, name, fieldGroup.
  * @apiSuccessExample {json} 200:
  *   HTTP/1.1 200 OK
@@ -101,6 +108,7 @@
  * @apiName AddFavorite
  * @apiGroup Favorites
  * @apiVersion 1.0.0
+ * @apiPermission user
  * @apiDescription Đã có thì không thêm lần nữa. `favoriteCount` của trường chỉ tăng khi danh sách thực sự thay đổi.
  * @apiUse AuthHeader
  * @apiParam {String} slug Đường dẫn trường.
@@ -115,6 +123,7 @@
  * @apiName RemoveFavorite
  * @apiGroup Favorites
  * @apiVersion 1.0.0
+ * @apiPermission user
  * @apiUse AuthHeader
  * @apiParam {String} slug Đường dẫn trường.
  * @apiSuccess {String[]} favorites ID các trường yêu thích sau khi bỏ.
