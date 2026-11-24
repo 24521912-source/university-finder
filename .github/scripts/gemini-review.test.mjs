@@ -1,7 +1,9 @@
 // Test phần xử lý của AI review (không gọi Gemini / GitHub). Chạy: node --test .github/scripts/
 import test from 'node:test'
 import assert from 'node:assert/strict'
-import { buildPrompt, formatComment, parseReview, shouldFail, truncateDiff } from './gemini-review.mjs'
+import {
+  buildPrompt, formatComment, isRetryableStatus, parseReview, retryDelayMs, shouldFail, truncateDiff,
+} from './gemini-review.mjs'
 
 test('cắt diff quá dài và báo đã cắt', () => {
   assert.deepEqual(truncateDiff('abc', 10), { text: 'abc', truncated: false })
@@ -53,4 +55,16 @@ test('bình luận có marker để cập nhật thay vì spam, escape ký tự 
   assert.ok(comment.includes('`x.js:1`'))
   assert.ok(comment.includes('abcdef1'))
   assert.ok(comment.includes('chỉ review một phần'))
+})
+
+test('chỉ thử lại khi Gemini quá tải / quá hạn mức, không thử lại lỗi do cấu hình', () => {
+  for (const status of [429, 500, 503]) assert.equal(isRetryableStatus(status), true)
+  for (const status of [400, 401, 403, 404]) assert.equal(isRetryableStatus(status), false)
+})
+
+test('thời gian chờ tăng dần, theo Retry-After nếu có và không quá 60 giây', () => {
+  assert.deepEqual([1, 2, 3].map((attempt) => retryDelayMs(attempt, null)), [10_000, 20_000, 40_000])
+  assert.equal(retryDelayMs(1, '7'), 7_000)
+  assert.equal(retryDelayMs(1, '600'), 60_000)
+  assert.equal(retryDelayMs(2, 'abc'), 20_000)
 })
