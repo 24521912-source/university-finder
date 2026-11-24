@@ -47,6 +47,7 @@ export function admissionKind(u, a) {
   if (verifiedTable) {
     if (a.method === 'competency_assessment' && a.scale === 1200) return { key: 'competency', label: 'ĐGNL ĐHQG-HCM' }
     if (a.method === 'high_school_exam' && [30, 35, 40].includes(a.scale)) return { key: 'thpt', label: 'Thi tốt nghiệp THPT' }
+    if (a.method === 'transcript' && a.scale === 30) return { key: 'transcript', label: 'Học bạ THPT' }
   }
   // Các trường hợp chưa xác minh thang ĐGNL OU, điểm bách phân vị UEL,
   // nguồn thứ cấp HCMUE, ánh xạ FTU không được đưa vào cột điểm chuẩn.

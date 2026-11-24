@@ -193,7 +193,7 @@ async function compare(slugs) {
 
 // Chỉ các trường công khai phục vụ trang chi tiết. Không thay đổi truy vấn danh sách.
 const DETAIL_FIELDS = 'slug name shortName institutionType belongsToUniversitySystem universitySystem ' +
-  'foundedYear description favoriteCount overview contact address campuses media majors tuition admissions ' +
+  'foundedYear description dataLevel sourceDomains favoriteCount overview contact address campuses media majors tuition admissions ' +
   'facilities scholarships dormitory studentLife careerOpportunities detailEvidence'
 
 async function detail(slug) {
