@@ -1,0 +1,1127 @@
+[
+  {
+    "code": "7140101",
+    "name": "Giáo dục học",
+    "fieldGroup": "Khoa học giáo dục và đào tạo giáo viên"
+  },
+  {
+    "code": "7140103",
+    "name": "Công nghệ giáo dục",
+    "fieldGroup": "Khoa học giáo dục và đào tạo giáo viên"
+  },
+  {
+    "code": "7140107",
+    "name": "Quản trị chất lượng giáo dục",
+    "fieldGroup": "Khoa học giáo dục và đào tạo giáo viên"
+  },
+  {
+    "code": "7140114",
+    "name": "Quản lý giáo dục",
+    "fieldGroup": "Khoa học giáo dục và đào tạo giáo viên"
+  },
+  {
+    "code": "7140201",
+    "name": "Giáo dục Mầm non",
+    "fieldGroup": "Khoa học giáo dục và đào tạo giáo viên"
+  },
+  {
+    "code": "7140202",
+    "name": "Giáo dục Tiểu học",
+    "fieldGroup": "Khoa học giáo dục và đào tạo giáo viên"
+  },
+  {
+    "code": "7140203",
+    "name": "Giáo dục Đặc biệt",
+    "fieldGroup": "Khoa học giáo dục và đào tạo giáo viên"
+  },
+  {
+    "code": "7140204",
+    "name": "Giáo dục Công dân",
+    "fieldGroup": "Khoa học giáo dục và đào tạo giáo viên"
+  },
+  {
+    "code": "7140205",
+    "name": "Giáo dục Chính trị",
+    "fieldGroup": "Khoa học giáo dục và đào tạo giáo viên"
+  },
+  {
+    "code": "7140206",
+    "name": "Giáo dục Thể chất",
+    "fieldGroup": "Khoa học giáo dục và đào tạo giáo viên"
+  },
+  {
+    "code": "7140208",
+    "name": "Giáo dục Quốc phòng – An ninh",
+    "fieldGroup": "Khoa học giáo dục và đào tạo giáo viên"
+  },
+  {
+    "code": "7140209",
+    "name": "Sư phạm Toán học",
+    "fieldGroup": "Khoa học giáo dục và đào tạo giáo viên"
+  },
+  {
+    "code": "7140210",
+    "name": "Sư phạm Tin học",
+    "fieldGroup": "Khoa học giáo dục và đào tạo giáo viên"
+  },
+  {
+    "code": "7140211",
+    "name": "Sư phạm Vật lý",
+    "fieldGroup": "Khoa học giáo dục và đào tạo giáo viên"
+  },
+  {
+    "code": "7140212",
+    "name": "Sư phạm Hoá học",
+    "fieldGroup": "Khoa học giáo dục và đào tạo giáo viên"
+  },
+  {
+    "code": "7140213",
+    "name": "Sư phạm Sinh học",
+    "fieldGroup": "Khoa học giáo dục và đào tạo giáo viên"
+  },
+  {
+    "code": "7140217",
+    "name": "Sư phạm Ngữ văn",
+    "fieldGroup": "Khoa học giáo dục và đào tạo giáo viên"
+  },
+  {
+    "code": "7140218",
+    "name": "Sư phạm Lịch sử",
+    "fieldGroup": "Khoa học giáo dục và đào tạo giáo viên"
+  },
+  {
+    "code": "7140219",
+    "name": "Sư phạm Địa lý",
+    "fieldGroup": "Khoa học giáo dục và đào tạo giáo viên"
+  },
+  {
+    "code": "7140231",
+    "name": "Sư phạm Tiếng Anh",
+    "fieldGroup": "Khoa học giáo dục và đào tạo giáo viên"
+  },
+  {
+    "code": "7140232",
+    "name": "Sư phạm Tiếng Nga",
+    "fieldGroup": "Khoa học giáo dục và đào tạo giáo viên"
+  },
+  {
+    "code": "7140233",
+    "name": "Sư phạm Tiếng Pháp",
+    "fieldGroup": "Khoa học giáo dục và đào tạo giáo viên"
+  },
+  {
+    "code": "7140234",
+    "name": "Sư phạm Tiếng Trung Quốc",
+    "fieldGroup": "Khoa học giáo dục và đào tạo giáo viên"
+  },
+  {
+    "code": "7140246",
+    "name": "Sư phạm công nghệ",
+    "fieldGroup": "Khoa học giáo dục và đào tạo giáo viên"
+  },
+  {
+    "code": "7140247",
+    "name": "Sư phạm khoa học tự nhiên",
+    "fieldGroup": "Khoa học giáo dục và đào tạo giáo viên"
+  },
+  {
+    "code": "7140249",
+    "name": "Sư phạm Lịch sử – Địa lý",
+    "fieldGroup": "Khoa học giáo dục và đào tạo giáo viên"
+  },
+  {
+    "code": "7210205",
+    "name": "Thanh nhạc",
+    "fieldGroup": "Nghệ thuật"
+  },
+  {
+    "code": "7210208",
+    "name": "Piano",
+    "fieldGroup": "Nghệ thuật"
+  },
+  {
+    "code": "7210213",
+    "name": "Nghệ thuật học",
+    "fieldGroup": "Nghệ thuật"
+  },
+  {
+    "code": "7210234",
+    "name": "Diễn viên kịch, điện ảnh – truyền hình",
+    "fieldGroup": "Nghệ thuật"
+  },
+  {
+    "code": "7210235",
+    "name": "Đạo diễn điện ảnh, truyền hình",
+    "fieldGroup": "Nghệ thuật"
+  },
+  {
+    "code": "7210302",
+    "name": "Công nghệ điện ảnh, truyền hình",
+    "fieldGroup": "Nghệ thuật"
+  },
+  {
+    "code": "7210303",
+    "name": "Thiết kế âm thanh, ánh sáng",
+    "fieldGroup": "Nghệ thuật"
+  },
+  {
+    "code": "7210402",
+    "name": "Thiết kế công nghiệp",
+    "fieldGroup": "Nghệ thuật"
+  },
+  {
+    "code": "7210403",
+    "name": "Thiết kế đồ họa",
+    "fieldGroup": "Nghệ thuật"
+  },
+  {
+    "code": "7210404",
+    "name": "Thiết kế thời trang",
+    "fieldGroup": "Nghệ thuật"
+  },
+  {
+    "code": "7210408",
+    "name": "Nghệ thuật số",
+    "fieldGroup": "Nghệ thuật"
+  },
+  {
+    "code": "7210409",
+    "name": "Thiết kế mỹ thuật số",
+    "fieldGroup": "Nghệ thuật"
+  },
+  {
+    "code": "7220101",
+    "name": "Tiếng Việt và Văn hóa Việt Nam",
+    "fieldGroup": "Nhân văn"
+  },
+  {
+    "code": "7220104",
+    "name": "Hán Nôm",
+    "fieldGroup": "Nhân văn"
+  },
+  {
+    "code": "7220201",
+    "name": "Ngôn ngữ Anh",
+    "fieldGroup": "Nhân văn"
+  },
+  {
+    "code": "7220202",
+    "name": "Ngôn ngữ Nga",
+    "fieldGroup": "Nhân văn"
+  },
+  {
+    "code": "7220203",
+    "name": "Ngôn ngữ Pháp",
+    "fieldGroup": "Nhân văn"
+  },
+  {
+    "code": "7220204",
+    "name": "Ngôn ngữ Trung Quốc",
+    "fieldGroup": "Nhân văn"
+  },
+  {
+    "code": "7220205",
+    "name": "Ngôn ngữ Đức",
+    "fieldGroup": "Nhân văn"
+  },
+  {
+    "code": "7220206",
+    "name": "Ngôn ngữ Tây Ban Nha",
+    "fieldGroup": "Nhân văn"
+  },
+  {
+    "code": "7220208",
+    "name": "Ngôn ngữ Italia",
+    "fieldGroup": "Nhân văn"
+  },
+  {
+    "code": "7220209",
+    "name": "Ngôn ngữ Nhật",
+    "fieldGroup": "Nhân văn"
+  },
+  {
+    "code": "7220210",
+    "name": "Ngôn ngữ Hàn Quốc",
+    "fieldGroup": "Nhân văn"
+  },
+  {
+    "code": "7229001",
+    "name": "Triết học",
+    "fieldGroup": "Nhân văn"
+  },
+  {
+    "code": "7229009",
+    "name": "Tôn giáo học",
+    "fieldGroup": "Nhân văn"
+  },
+  {
+    "code": "7229010",
+    "name": "Lịch sử",
+    "fieldGroup": "Nhân văn"
+  },
+  {
+    "code": "7229020",
+    "name": "Ngôn ngữ học",
+    "fieldGroup": "Nhân văn"
+  },
+  {
+    "code": "7229030",
+    "name": "Văn học",
+    "fieldGroup": "Nhân văn"
+  },
+  {
+    "code": "7229040",
+    "name": "Văn hoá học",
+    "fieldGroup": "Nhân văn"
+  },
+  {
+    "code": "7310101",
+    "name": "Kinh tế",
+    "fieldGroup": "Khoa học xã hội và hành vi"
+  },
+  {
+    "code": "7310102",
+    "name": "Kinh tế chính trị",
+    "fieldGroup": "Khoa học xã hội và hành vi"
+  },
+  {
+    "code": "7310104",
+    "name": "Kinh tế đầu tư",
+    "fieldGroup": "Khoa học xã hội và hành vi"
+  },
+  {
+    "code": "7310106",
+    "name": "Kinh tế quốc tế",
+    "fieldGroup": "Khoa học xã hội và hành vi"
+  },
+  {
+    "code": "7310107",
+    "name": "Thống kê kinh tế",
+    "fieldGroup": "Khoa học xã hội và hành vi"
+  },
+  {
+    "code": "7310108",
+    "name": "Toán kinh tế",
+    "fieldGroup": "Khoa học xã hội và hành vi"
+  },
+  {
+    "code": "7310109",
+    "name": "Kinh tế số",
+    "fieldGroup": "Khoa học xã hội và hành vi"
+  },
+  {
+    "code": "7310201",
+    "name": "Chính trị học",
+    "fieldGroup": "Khoa học xã hội và hành vi"
+  },
+  {
+    "code": "7310206",
+    "name": "Quan hệ quốc tế",
+    "fieldGroup": "Khoa học xã hội và hành vi"
+  },
+  {
+    "code": "7310301",
+    "name": "Xã hội học",
+    "fieldGroup": "Khoa học xã hội và hành vi"
+  },
+  {
+    "code": "7310302",
+    "name": "Nhân học",
+    "fieldGroup": "Khoa học xã hội và hành vi"
+  },
+  {
+    "code": "7310401",
+    "name": "Tâm lý học",
+    "fieldGroup": "Khoa học xã hội và hành vi"
+  },
+  {
+    "code": "7310403",
+    "name": "Tâm lý học giáo dục",
+    "fieldGroup": "Khoa học xã hội và hành vi"
+  },
+  {
+    "code": "7310501",
+    "name": "Địa lý học",
+    "fieldGroup": "Khoa học xã hội và hành vi"
+  },
+  {
+    "code": "7310601",
+    "name": "Quốc tế học",
+    "fieldGroup": "Khoa học xã hội và hành vi"
+  },
+  {
+    "code": "7310608",
+    "name": "Đông phương học",
+    "fieldGroup": "Khoa học xã hội và hành vi"
+  },
+  {
+    "code": "7310613",
+    "name": "Nhật Bản học",
+    "fieldGroup": "Khoa học xã hội và hành vi"
+  },
+  {
+    "code": "7310614",
+    "name": "Hàn Quốc học",
+    "fieldGroup": "Khoa học xã hội và hành vi"
+  },
+  {
+    "code": "7310620",
+    "name": "Đông Nam Á học",
+    "fieldGroup": "Khoa học xã hội và hành vi"
+  },
+  {
+    "code": "7310630",
+    "name": "Việt Nam học",
+    "fieldGroup": "Khoa học xã hội và hành vi"
+  },
+  {
+    "code": "73106a1",
+    "name": "Kinh doanh thương mại Hàn Quốc",
+    "fieldGroup": "Khoa học xã hội và hành vi"
+  },
+  {
+    "code": "7320101",
+    "name": "Báo chí",
+    "fieldGroup": "Báo chí và thông tin"
+  },
+  {
+    "code": "7320104",
+    "name": "Truyền thông đa phương tiện",
+    "fieldGroup": "Báo chí và thông tin"
+  },
+  {
+    "code": "7320105",
+    "name": "Truyền thông đại chúng",
+    "fieldGroup": "Báo chí và thông tin"
+  },
+  {
+    "code": "7320106",
+    "name": "Công nghệ truyền thông",
+    "fieldGroup": "Báo chí và thông tin"
+  },
+  {
+    "code": "7320108",
+    "name": "Quan hệ công chúng",
+    "fieldGroup": "Báo chí và thông tin"
+  },
+  {
+    "code": "7320201",
+    "name": "Thông tin – thư viện",
+    "fieldGroup": "Báo chí và thông tin"
+  },
+  {
+    "code": "7320205",
+    "name": "Quản lý thông tin",
+    "fieldGroup": "Báo chí và thông tin"
+  },
+  {
+    "code": "7320303",
+    "name": "Lưu trữ học",
+    "fieldGroup": "Báo chí và thông tin"
+  },
+  {
+    "code": "7340101",
+    "name": "Quản trị kinh doanh",
+    "fieldGroup": "Kinh doanh và quản lý"
+  },
+  {
+    "code": "7340114",
+    "name": "Digital Marketing",
+    "fieldGroup": "Kinh doanh và quản lý"
+  },
+  {
+    "code": "7340115",
+    "name": "Marketing",
+    "fieldGroup": "Kinh doanh và quản lý"
+  },
+  {
+    "code": "7340116",
+    "name": "Bất động sản",
+    "fieldGroup": "Kinh doanh và quản lý"
+  },
+  {
+    "code": "7340120",
+    "name": "Kinh doanh quốc tế",
+    "fieldGroup": "Kinh doanh và quản lý"
+  },
+  {
+    "code": "7340121",
+    "name": "Kinh doanh thương mại",
+    "fieldGroup": "Kinh doanh và quản lý"
+  },
+  {
+    "code": "7340122",
+    "name": "Thương mại điện tử",
+    "fieldGroup": "Kinh doanh và quản lý"
+  },
+  {
+    "code": "7340201",
+    "name": "Tài chính – Ngân hàng",
+    "fieldGroup": "Kinh doanh và quản lý"
+  },
+  {
+    "code": "7340204",
+    "name": "Bảo hiểm",
+    "fieldGroup": "Kinh doanh và quản lý"
+  },
+  {
+    "code": "7340205",
+    "name": "Công nghệ tài chính",
+    "fieldGroup": "Kinh doanh và quản lý"
+  },
+  {
+    "code": "7340206",
+    "name": "Tài chính quốc tế",
+    "fieldGroup": "Kinh doanh và quản lý"
+  },
+  {
+    "code": "7340301",
+    "name": "Kế toán",
+    "fieldGroup": "Kinh doanh và quản lý"
+  },
+  {
+    "code": "7340302",
+    "name": "Kiểm toán",
+    "fieldGroup": "Kinh doanh và quản lý"
+  },
+  {
+    "code": "7340403",
+    "name": "Quản lý công",
+    "fieldGroup": "Kinh doanh và quản lý"
+  },
+  {
+    "code": "7340404",
+    "name": "Quản trị nhân lực",
+    "fieldGroup": "Kinh doanh và quản lý"
+  },
+  {
+    "code": "7340405",
+    "name": "Hệ thống thông tin quản lý",
+    "fieldGroup": "Kinh doanh và quản lý"
+  },
+  {
+    "code": "7340406",
+    "name": "Quản trị văn phòng",
+    "fieldGroup": "Kinh doanh và quản lý"
+  },
+  {
+    "code": "7340408",
+    "name": "Quan hệ lao động",
+    "fieldGroup": "Kinh doanh và quản lý"
+  },
+  {
+    "code": "7340412",
+    "name": "Quản trị sự kiện",
+    "fieldGroup": "Kinh doanh và quản lý"
+  },
+  {
+    "code": "7380101",
+    "name": "Luật",
+    "fieldGroup": "Pháp luật"
+  },
+  {
+    "code": "7380107",
+    "name": "Luật kinh tế",
+    "fieldGroup": "Pháp luật"
+  },
+  {
+    "code": "7420101",
+    "name": "Sinh học",
+    "fieldGroup": "Khoa học sự sống"
+  },
+  {
+    "code": "7420201",
+    "name": "Công nghệ sinh học",
+    "fieldGroup": "Khoa học sự sống"
+  },
+  {
+    "code": "7420203",
+    "name": "Sinh học ứng dụng",
+    "fieldGroup": "Khoa học sự sống"
+  },
+  {
+    "code": "7420204",
+    "name": "Khoa học y sinh",
+    "fieldGroup": "Khoa học sự sống"
+  },
+  {
+    "code": "7420207",
+    "name": "Công nghệ thẩm mỹ",
+    "fieldGroup": "Khoa học sự sống"
+  },
+  {
+    "code": "7440102",
+    "name": "Vật lý học",
+    "fieldGroup": "Khoa học tự nhiên"
+  },
+  {
+    "code": "7440107",
+    "name": "Công nghệ vật lý điện tử và tin học",
+    "fieldGroup": "Khoa học tự nhiên"
+  },
+  {
+    "code": "7440112",
+    "name": "Hóa học",
+    "fieldGroup": "Khoa học tự nhiên"
+  },
+  {
+    "code": "7440122",
+    "name": "Khoa học vật liệu",
+    "fieldGroup": "Khoa học tự nhiên"
+  },
+  {
+    "code": "74401A1",
+    "name": "Công nghệ bán dẫn",
+    "fieldGroup": "Khoa học tự nhiên"
+  },
+  {
+    "code": "7440201",
+    "name": "Địa chất học",
+    "fieldGroup": "Khoa học tự nhiên"
+  },
+  {
+    "code": "7440206",
+    "name": "Kinh tế đất đai",
+    "fieldGroup": "Khoa học tự nhiên"
+  },
+  {
+    "code": "7440228",
+    "name": "Hải dương học",
+    "fieldGroup": "Khoa học tự nhiên"
+  },
+  {
+    "code": "7440301",
+    "name": "Khoa học môi trường",
+    "fieldGroup": "Khoa học tự nhiên"
+  },
+  {
+    "code": "7460101",
+    "name": "Toán học",
+    "fieldGroup": "Toán và thống kê"
+  },
+  {
+    "code": "7460108",
+    "name": "Khoa học dữ liệu",
+    "fieldGroup": "Toán và thống kê"
+  },
+  {
+    "code": "7460112",
+    "name": "Toán ứng dụng",
+    "fieldGroup": "Toán và thống kê"
+  },
+  {
+    "code": "7460117",
+    "name": "Toán tin",
+    "fieldGroup": "Toán và thống kê"
+  },
+  {
+    "code": "7460201",
+    "name": "Thống kê",
+    "fieldGroup": "Toán và thống kê"
+  },
+  {
+    "code": "7480101",
+    "name": "Khoa học máy tính",
+    "fieldGroup": "Máy tính và công nghệ thông tin"
+  },
+  {
+    "code": "7480102",
+    "name": "Mạng máy tính và truyền thông dữ liệu",
+    "fieldGroup": "Máy tính và công nghệ thông tin"
+  },
+  {
+    "code": "7480103",
+    "name": "Kỹ thuật phần mềm",
+    "fieldGroup": "Máy tính và công nghệ thông tin"
+  },
+  {
+    "code": "7480104",
+    "name": "Hệ thống thông tin",
+    "fieldGroup": "Máy tính và công nghệ thông tin"
+  },
+  {
+    "code": "7480106",
+    "name": "Kỹ thuật máy tính",
+    "fieldGroup": "Máy tính và công nghệ thông tin"
+  },
+  {
+    "code": "7480107",
+    "name": "Trí tuệ nhân tạo",
+    "fieldGroup": "Máy tính và công nghệ thông tin"
+  },
+  {
+    "code": "7480108",
+    "name": "Công nghệ kỹ thuật máy tính",
+    "fieldGroup": "Máy tính và công nghệ thông tin"
+  },
+  {
+    "code": "7480118",
+    "name": "Hệ thống nhúng và IoT",
+    "fieldGroup": "Máy tính và công nghệ thông tin"
+  },
+  {
+    "code": "7480201",
+    "name": "Công nghệ thông tin",
+    "fieldGroup": "Máy tính và công nghệ thông tin"
+  },
+  {
+    "code": "7480202",
+    "name": "An toàn thông tin",
+    "fieldGroup": "Máy tính và công nghệ thông tin"
+  },
+  {
+    "code": "7480203",
+    "name": "Kỹ thuật dữ liệu",
+    "fieldGroup": "Máy tính và công nghệ thông tin"
+  },
+  {
+    "code": "7480208",
+    "name": "An ninh mạng",
+    "fieldGroup": "Máy tính và công nghệ thông tin"
+  },
+  {
+    "code": "7510102",
+    "name": "Công nghệ kỹ thuật công trình xây dựng",
+    "fieldGroup": "Công nghệ kỹ thuật"
+  },
+  {
+    "code": "7510106",
+    "name": "Hệ thống kỹ thuật công trình xây dựng",
+    "fieldGroup": "Công nghệ kỹ thuật"
+  },
+  {
+    "code": "7510201",
+    "name": "Công nghệ kỹ thuật cơ khí",
+    "fieldGroup": "Công nghệ kỹ thuật"
+  },
+  {
+    "code": "7510202",
+    "name": "Công nghệ chế tạo máy",
+    "fieldGroup": "Công nghệ kỹ thuật"
+  },
+  {
+    "code": "7510203",
+    "name": "Công nghệ kỹ thuật cơ điện tử",
+    "fieldGroup": "Công nghệ kỹ thuật"
+  },
+  {
+    "code": "7510205",
+    "name": "Công nghệ kỹ thuật ô tô",
+    "fieldGroup": "Công nghệ kỹ thuật"
+  },
+  {
+    "code": "7510206",
+    "name": "Công nghệ kỹ thuật nhiệt",
+    "fieldGroup": "Công nghệ kỹ thuật"
+  },
+  {
+    "code": "7510208",
+    "name": "Năng lượng tái tạo",
+    "fieldGroup": "Công nghệ kỹ thuật"
+  },
+  {
+    "code": "7510209",
+    "name": "Robot và trí tuệ nhân tạo",
+    "fieldGroup": "Công nghệ kỹ thuật"
+  },
+  {
+    "code": "7510211",
+    "name": "Bảo dưỡng công nghiệp",
+    "fieldGroup": "Công nghệ kỹ thuật"
+  },
+  {
+    "code": "7510301",
+    "name": "Công nghệ kỹ thuật điện, điện tử",
+    "fieldGroup": "Công nghệ kỹ thuật"
+  },
+  {
+    "code": "7510302",
+    "name": "Công nghệ kỹ thuật điện tử – viễn thông",
+    "fieldGroup": "Công nghệ kỹ thuật"
+  },
+  {
+    "code": "7510303",
+    "name": "Công nghệ kỹ thuật điều khiển và tự động hóa",
+    "fieldGroup": "Công nghệ kỹ thuật"
+  },
+  {
+    "code": "7510401",
+    "name": "Công nghệ kỹ thuật hóa học",
+    "fieldGroup": "Công nghệ kỹ thuật"
+  },
+  {
+    "code": "7510402",
+    "name": "Công nghệ vật liệu",
+    "fieldGroup": "Công nghệ kỹ thuật"
+  },
+  {
+    "code": "7510406",
+    "name": "Công nghệ kỹ thuật môi trường",
+    "fieldGroup": "Công nghệ kỹ thuật"
+  },
+  {
+    "code": "7510601",
+    "name": "Quản lý công nghiệp",
+    "fieldGroup": "Công nghệ kỹ thuật"
+  },
+  {
+    "code": "7510605",
+    "name": "Logistics và quản lý chuỗi cung ứng",
+    "fieldGroup": "Công nghệ kỹ thuật"
+  },
+  {
+    "code": "7510801",
+    "name": "Công nghệ kỹ thuật in",
+    "fieldGroup": "Công nghệ kỹ thuật"
+  },
+  {
+    "code": "7520101",
+    "name": "Cơ kỹ thuật",
+    "fieldGroup": "Kỹ thuật"
+  },
+  {
+    "code": "7520103",
+    "name": "Kỹ thuật cơ khí",
+    "fieldGroup": "Kỹ thuật"
+  },
+  {
+    "code": "7520114",
+    "name": "Kỹ thuật cơ điện tử",
+    "fieldGroup": "Kỹ thuật"
+  },
+  {
+    "code": "7520115",
+    "name": "Kỹ thuật nhiệt",
+    "fieldGroup": "Kỹ thuật"
+  },
+  {
+    "code": "7520117",
+    "name": "Kỹ thuật công nghiệp",
+    "fieldGroup": "Kỹ thuật"
+  },
+  {
+    "code": "7520118",
+    "name": "Kỹ thuật hệ thống công nghiệp",
+    "fieldGroup": "Kỹ thuật"
+  },
+  {
+    "code": "7520120",
+    "name": "Kỹ thuật hàng không",
+    "fieldGroup": "Kỹ thuật"
+  },
+  {
+    "code": "7520121",
+    "name": "Kỹ thuật không gian",
+    "fieldGroup": "Kỹ thuật"
+  },
+  {
+    "code": "7520122",
+    "name": "Kỹ thuật tàu thủy",
+    "fieldGroup": "Kỹ thuật"
+  },
+  {
+    "code": "7520130",
+    "name": "Kỹ thuật ô tô",
+    "fieldGroup": "Kỹ thuật"
+  },
+  {
+    "code": "7520141",
+    "name": "Công nghệ ô tô điện",
+    "fieldGroup": "Kỹ thuật"
+  },
+  {
+    "code": "7520201",
+    "name": "Kỹ thuật điện",
+    "fieldGroup": "Kỹ thuật"
+  },
+  {
+    "code": "7520207",
+    "name": "Kỹ thuật điện tử – viễn thông",
+    "fieldGroup": "Kỹ thuật"
+  },
+  {
+    "code": "7520212",
+    "name": "Kỹ thuật y sinh",
+    "fieldGroup": "Kỹ thuật"
+  },
+  {
+    "code": "7520216",
+    "name": "Kỹ thuật điều khiển và tự động hóa",
+    "fieldGroup": "Kỹ thuật"
+  },
+  {
+    "code": "75202A1",
+    "name": "Thiết kế vi mạch",
+    "fieldGroup": "Kỹ thuật"
+  },
+  {
+    "code": "7520301",
+    "name": "Kỹ thuật hóa học",
+    "fieldGroup": "Kỹ thuật"
+  },
+  {
+    "code": "7520309",
+    "name": "Kỹ thuật vật liệu",
+    "fieldGroup": "Kỹ thuật"
+  },
+  {
+    "code": "7520320",
+    "name": "Kỹ thuật môi trường",
+    "fieldGroup": "Kỹ thuật"
+  },
+  {
+    "code": "7520401",
+    "name": "Vật lý kỹ thuật",
+    "fieldGroup": "Kỹ thuật"
+  },
+  {
+    "code": "7520402",
+    "name": "Kỹ thuật hạt nhân",
+    "fieldGroup": "Kỹ thuật"
+  },
+  {
+    "code": "7520403",
+    "name": "Vật lý y khoa",
+    "fieldGroup": "Kỹ thuật"
+  },
+  {
+    "code": "7520501",
+    "name": "Kỹ thuật địa chất",
+    "fieldGroup": "Kỹ thuật"
+  },
+  {
+    "code": "7520604",
+    "name": "Kỹ thuật dầu khí",
+    "fieldGroup": "Kỹ thuật"
+  },
+  {
+    "code": "7540101",
+    "name": "Công nghệ thực phẩm",
+    "fieldGroup": "Sản xuất và chế biến"
+  },
+  {
+    "code": "7540106",
+    "name": "Đảm bảo chất lượng và an toàn thực phẩm",
+    "fieldGroup": "Sản xuất và chế biến"
+  },
+  {
+    "code": "7540204",
+    "name": "Công nghệ dệt, may",
+    "fieldGroup": "Sản xuất và chế biến"
+  },
+  {
+    "code": "7540209",
+    "name": "Công nghệ may",
+    "fieldGroup": "Sản xuất và chế biến"
+  },
+  {
+    "code": "7549002",
+    "name": "Kỹ nghệ gỗ và nội thất",
+    "fieldGroup": "Sản xuất và chế biến"
+  },
+  {
+    "code": "7580101",
+    "name": "Kiến trúc",
+    "fieldGroup": "Kiến trúc và xây dựng"
+  },
+  {
+    "code": "7580103",
+    "name": "Kiến trúc nội thất",
+    "fieldGroup": "Kiến trúc và xây dựng"
+  },
+  {
+    "code": "7580104",
+    "name": "Kiến trúc đô thị",
+    "fieldGroup": "Kiến trúc và xây dựng"
+  },
+  {
+    "code": "7580105",
+    "name": "Quy hoạch vùng và đô thị",
+    "fieldGroup": "Kiến trúc và xây dựng"
+  },
+  {
+    "code": "7580108",
+    "name": "Thiết kế nội thất",
+    "fieldGroup": "Kiến trúc và xây dựng"
+  },
+  {
+    "code": "7580112",
+    "name": "Đô thị học",
+    "fieldGroup": "Kiến trúc và xây dựng"
+  },
+  {
+    "code": "7580201",
+    "name": "Kỹ thuật xây dựng",
+    "fieldGroup": "Kiến trúc và xây dựng"
+  },
+  {
+    "code": "7580205",
+    "name": "Kỹ thuật xây dựng công trình giao thông",
+    "fieldGroup": "Kiến trúc và xây dựng"
+  },
+  {
+    "code": "7580211",
+    "name": "Địa kỹ thuật xây dựng",
+    "fieldGroup": "Kiến trúc và xây dựng"
+  },
+  {
+    "code": "7580301",
+    "name": "Kinh tế xây dựng",
+    "fieldGroup": "Kiến trúc và xây dựng"
+  },
+  {
+    "code": "7580302",
+    "name": "Quản lý xây dựng",
+    "fieldGroup": "Kiến trúc và xây dựng"
+  },
+  {
+    "code": "7620114",
+    "name": "Kinh doanh nông nghiệp",
+    "fieldGroup": "Nông, lâm nghiệp và thủy sản"
+  },
+  {
+    "code": "7640101",
+    "name": "Thú y",
+    "fieldGroup": "Thú y"
+  },
+  {
+    "code": "7720101",
+    "name": "Y khoa",
+    "fieldGroup": "Sức khỏe"
+  },
+  {
+    "code": "7720110",
+    "name": "Y học dự phòng",
+    "fieldGroup": "Sức khỏe"
+  },
+  {
+    "code": "7720115",
+    "name": "Y học cổ truyền",
+    "fieldGroup": "Sức khỏe"
+  },
+  {
+    "code": "7720201",
+    "name": "Dược học",
+    "fieldGroup": "Sức khỏe"
+  },
+  {
+    "code": "7720202",
+    "name": "Công nghệ dược phẩm",
+    "fieldGroup": "Sức khỏe"
+  },
+  {
+    "code": "7720203",
+    "name": "Hóa dược",
+    "fieldGroup": "Sức khỏe"
+  },
+  {
+    "code": "7720301",
+    "name": "Điều dưỡng",
+    "fieldGroup": "Sức khỏe"
+  },
+  {
+    "code": "7720302",
+    "name": "Hộ sinh",
+    "fieldGroup": "Sức khỏe"
+  },
+  {
+    "code": "7720401",
+    "name": "Dinh dưỡng",
+    "fieldGroup": "Sức khỏe"
+  },
+  {
+    "code": "7720402",
+    "name": "Dinh dưỡng và khoa học thực phẩm",
+    "fieldGroup": "Sức khỏe"
+  },
+  {
+    "code": "7720501",
+    "name": "Răng – Hàm – Mặt",
+    "fieldGroup": "Sức khỏe"
+  },
+  {
+    "code": "7720502",
+    "name": "Kỹ thuật phục hình răng",
+    "fieldGroup": "Sức khỏe"
+  },
+  {
+    "code": "7720601",
+    "name": "Kỹ thuật xét nghiệm y học",
+    "fieldGroup": "Sức khỏe"
+  },
+  {
+    "code": "7720602",
+    "name": "Kỹ thuật hình ảnh y học",
+    "fieldGroup": "Sức khỏe"
+  },
+  {
+    "code": "7720603",
+    "name": "Kỹ thuật phục hồi chức năng",
+    "fieldGroup": "Sức khỏe"
+  },
+  {
+    "code": "7720701",
+    "name": "Y tế công cộng",
+    "fieldGroup": "Sức khỏe"
+  },
+  {
+    "code": "7760101",
+    "name": "Công tác xã hội",
+    "fieldGroup": "Dịch vụ xã hội"
+  },
+  {
+    "code": "7760103",
+    "name": "Hỗ trợ giáo dục người khuyết tật",
+    "fieldGroup": "Dịch vụ xã hội"
+  },
+  {
+    "code": "7810101",
+    "name": "Du lịch",
+    "fieldGroup": "Du lịch, khách sạn, thể thao và dịch vụ cá nhân"
+  },
+  {
+    "code": "7810103",
+    "name": "Quản trị dịch vụ du lịch và lữ hành",
+    "fieldGroup": "Du lịch, khách sạn, thể thao và dịch vụ cá nhân"
+  },
+  {
+    "code": "7810201",
+    "name": "Quản trị khách sạn",
+    "fieldGroup": "Du lịch, khách sạn, thể thao và dịch vụ cá nhân"
+  },
+  {
+    "code": "7810202",
+    "name": "Quản trị nhà hàng và dịch vụ ăn uống",
+    "fieldGroup": "Du lịch, khách sạn, thể thao và dịch vụ cá nhân"
+  },
+  {
+    "code": "7810301",
+    "name": "Quản lý thể dục thể thao",
+    "fieldGroup": "Du lịch, khách sạn, thể thao và dịch vụ cá nhân"
+  },
+  {
+    "code": "7840110",
+    "name": "Quản lý và vận hành hạ tầng",
+    "fieldGroup": "Dịch vụ vận tải"
+  },
+  {
+    "code": "7850101",
+    "name": "Quản lý tài nguyên và môi trường",
+    "fieldGroup": "Môi trường và bảo vệ môi trường"
+  },
+  {
+    "code": "7850102",
+    "name": "Kinh tế tài nguyên thiên nhiên",
+    "fieldGroup": "Môi trường và bảo vệ môi trường"
+  },
+  {
+    "code": "7850103",
+    "name": "Quản lý đất đai",
+    "fieldGroup": "Môi trường và bảo vệ môi trường"
+  },
+  {
+    "code": "7850201",
+    "name": "Bảo hộ lao động",
+    "fieldGroup": "Môi trường và bảo vệ môi trường"
+  }
+]

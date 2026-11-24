@@ -9,19 +9,16 @@ router.get('/health', (req, res) => {
   })
 })
 
-router.get('/universities', (req, res) => {
-  res.json([
-    {
-      id: 1,
-      name: 'Đại học Công nghệ Thông tin',
-      location: 'TP.HCM',
-    },
-    {
-      id: 2,
-      name: 'Đại học Bách Khoa',
-      location: 'TP.HCM',
-    },
-  ])
-})
+// Mỗi chức năng là một module trong src/modules/<tên>/ — thêm một dòng ở đây khi tạo module mới
+router.use('/auth', require('../modules/auth/auth.routes'))
+router.use('/universities', require('../modules/universities/universities.routes'))
+router.use('/map', require('../modules/map/map.routes'))
+router.use('/majors', require('../modules/majors/majors.routes'))
+router.use('/favorites', require('../modules/favorites/favorites.routes'))
+router.use('/consultations', require('../modules/consultations/consultations.routes'))
+router.use('/admin/users', require('../modules/accounts/accounts.routes'))
+router.use('/admin/history', require('../modules/history/history.routes'))
+router.use('/admin/dashboard', require('../modules/dashboard/dashboard.routes'))
+router.use('/admin', require('../modules/admin/admin.routes'))
 
 module.exports = router

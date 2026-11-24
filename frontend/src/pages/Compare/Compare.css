@@ -1,0 +1,26 @@
+/* Bảng so sánh: cuộn ngang trên điện thoại, cột tiêu chí cố định độ rộng */
+.compare-scroll { overflow-x: auto; border: 1px solid var(--border); border-radius: 12px; background: var(--surface); margin-bottom: 24px; }
+.compare-table { width: 100%; min-width: 700px; border-collapse: collapse; table-layout: fixed; font-size: 14px; }
+.compare-table caption { caption-side: bottom; text-align: left; padding: 16px; color: var(--muted); }
+.compare-table th, .compare-table td { padding: 16px; border: 1px solid var(--border); vertical-align: top; text-align: left; overflow-wrap: anywhere; }
+.compare-table thead th { background: var(--primary-light); color: var(--primary-dark); }
+.compare-table th:first-child { width: 160px; }
+.compare-table td p { margin: 8px 0; color: var(--control-text); }
+.compare-table small { font-weight: 400; }
+.compare-empty { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 24px; }
+
+/* Đầu cột: tên trường + "Xem chi tiết" + "Bỏ" */
+.compare-logo { margin-bottom: 10px; }
+.compare-name { display: block; }
+.compare-short { display: block; margin-top: 2px; }
+.compare-head-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 12px; margin-top: 10px; font-weight: 500; }
+.compare-remove {
+  padding: 4px 10px; border: 1px solid var(--control-border); border-radius: 8px; cursor: pointer;
+  background: var(--surface); color: var(--control-text); font-size: 13px;
+}
+.compare-remove:hover { border-color: var(--danger); color: var(--danger); }
+
+.compare-list { margin: 0; padding-left: 18px; }
+.compare-table details { margin-top: 6px; }
+.compare-table summary { cursor: pointer; color: var(--primary); }
+.compare-actions { display: flex; flex-wrap: wrap; gap: 12px; }

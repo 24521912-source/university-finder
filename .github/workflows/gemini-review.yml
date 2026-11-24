@@ -1,0 +1,43 @@
+# AI review: mỗi khi PR được mở hoặc có commit mới, Gemini đọc phần thay đổi, bình luận vào PR
+# và đánh giá APPROVE / COMMENT / REQUEST_CHANGES. REQUEST_CHANGES làm check này fail -> nếu bật
+# branch protection "Require status checks" thì PR không merge được cho tới khi sửa.
+#
+# Cần: Settings -> Secrets and variables -> Actions -> New repository secret: GEMINI_API_KEY
+# Tùy chọn: Variables -> GEMINI_MODEL (mặc định gemini-2.5-flash)
+name: AI Code Review (Gemini)
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened, ready_for_review]
+
+permissions:
+  contents: read
+  pull-requests: write
+  issues: write
+
+concurrency:
+  group: gemini-review-${{ github.event.pull_request.number }}
+  cancel-in-progress: true
+
+jobs:
+  review:
+    if: github.event.pull_request.draft == false
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+      - name: Gemini review
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GEMINI_MODEL: ${{ vars.GEMINI_MODEL }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          REPO: ${{ github.repository }}
+          PR_NUMBER: ${{ github.event.pull_request.number }}
+          PR_TITLE: ${{ github.event.pull_request.title }}
+          BASE_SHA: ${{ github.event.pull_request.base.sha }}
+          HEAD_SHA: ${{ github.event.pull_request.head.sha }}
+        run: node .github/scripts/gemini-review.mjs

@@ -1,0 +1,1007 @@
+{
+  "owner": "24521912-source",
+  "repo": "university-finder",
+  "projectTitle": "UniMatch HCMC – Kanban",
+  "tasks": [
+    {
+      "wbs": "1.1",
+      "title": "Khảo sát các website tuyển sinh/trường đại học",
+      "type": "task",
+      "module": "Tài liệu & Báo cáo",
+      "priority": "P0",
+      "status": "Done",
+      "assignee": null,
+      "note": ""
+    },
+    {
+      "wbs": "1.2",
+      "title": "Xác định đối tượng người dùng",
+      "type": "task",
+      "module": "Tài liệu & Báo cáo",
+      "priority": "P0",
+      "status": "Done",
+      "assignee": null,
+      "note": ""
+    },
+    {
+      "wbs": "1.3",
+      "title": "Xác định chức năng người dùng",
+      "type": "task",
+      "module": "Tài liệu & Báo cáo",
+      "priority": "P0",
+      "status": "Done",
+      "assignee": null,
+      "note": ""
+    },
+    {
+      "wbs": "1.4",
+      "title": "Xác định chức năng admin",
+      "type": "task",
+      "module": "Tài liệu & Báo cáo",
+      "priority": "P1",
+      "status": "Done",
+      "assignee": null,
+      "note": ""
+    },
+    {
+      "wbs": "1.5",
+      "title": "Xác định dữ liệu cần thu thập",
+      "type": "task",
+      "module": "Tài liệu & Báo cáo",
+      "priority": "P1",
+      "status": "Done",
+      "assignee": null,
+      "note": ""
+    },
+    {
+      "wbs": "1.6",
+      "title": "Xác định phạm vi hệ thống",
+      "type": "task",
+      "module": "Tài liệu & Báo cáo",
+      "priority": "P1",
+      "status": "Done",
+      "assignee": null,
+      "note": ""
+    },
+    {
+      "wbs": "2.1",
+      "title": "Mô tả quy trình nghiệp vụ người dùng",
+      "type": "task",
+      "module": "Tài liệu & Báo cáo",
+      "priority": "P0",
+      "status": "In Progress",
+      "assignee": "24521912-source",
+      "note": "docs/QUY_TRINH_NGHIEP_VU_NGUOI_DUNG.md — nhánh feature/layout-v2, chờ PR"
+    },
+    {
+      "wbs": "2.2",
+      "title": "Mô tả quy trình nghiệp vụ admin",
+      "type": "task",
+      "module": "Tài liệu & Báo cáo",
+      "priority": "P0",
+      "status": "Done",
+      "assignee": "ngochuong-money",
+      "note": "Quy trình nghiệp vụ Admin.docx"
+    },
+    {
+      "wbs": "2.3",
+      "title": "Vẽ sơ đồ use case",
+      "type": "task",
+      "module": "Tài liệu & Báo cáo",
+      "priority": "P0",
+      "status": "Todo",
+      "assignee": "ngochuong-money",
+      "note": "Chưa thấy sơ đồ use case trong repo"
+    },
+    {
+      "wbs": "2.4",
+      "title": "Thiết kế luồng xử lý AI tư vấn",
+      "type": "task",
+      "module": "Tài liệu & Báo cáo",
+      "priority": "P0",
+      "status": "In Progress",
+      "assignee": "24521912-source",
+      "note": "docs/LUONG_AI_TU_VAN.md — nhánh feature/ai-advisor, chờ PR"
+    },
+    {
+      "wbs": "2.5",
+      "title": "Thiết kế wireframe giao diện",
+      "type": "task",
+      "module": "Tài liệu & Báo cáo",
+      "priority": "P1",
+      "status": "Done",
+      "assignee": "ngochuong-money",
+      "note": ""
+    },
+    {
+      "wbs": "2.6",
+      "title": "Thiết kế kiến trúc tổng thể FE/BE/DB",
+      "type": "task",
+      "module": "Tài liệu & Báo cáo",
+      "priority": "P0",
+      "status": "Done",
+      "assignee": "24521912-source",
+      "note": ""
+    },
+    {
+      "wbs": "3.1",
+      "title": "Thiết kế bảng users",
+      "type": "task",
+      "module": "Cơ sở dữ liệu",
+      "priority": "P1",
+      "status": "Done",
+      "assignee": "24521912-source",
+      "note": "backend/src/models/User.js, database/mongodb/schema.md"
+    },
+    {
+      "wbs": "3.2",
+      "title": "Thiết kế bảng universities",
+      "type": "task",
+      "module": "Cơ sở dữ liệu",
+      "priority": "P0",
+      "status": "Done",
+      "assignee": "24521912-source",
+      "note": "backend/src/models/University.js"
+    },
+    {
+      "wbs": "3.3",
+      "title": "Thiết kế bảng majors",
+      "type": "task",
+      "module": "Cơ sở dữ liệu",
+      "priority": "P0",
+      "status": "Done",
+      "assignee": "24521912-source",
+      "note": "backend/src/models/Major.js"
+    },
+    {
+      "wbs": "3.4",
+      "title": "Thiết kế bảng tuition_fees",
+      "type": "task",
+      "module": "Cơ sở dữ liệu",
+      "priority": "P0",
+      "status": "Done",
+      "assignee": "24521912-source",
+      "note": "University.tuition[] (nhúng trong document trường)"
+    },
+    {
+      "wbs": "3.5",
+      "title": "Thiết kế bảng admission_scores",
+      "type": "task",
+      "module": "Cơ sở dữ liệu",
+      "priority": "P0",
+      "status": "Done",
+      "assignee": "24521912-source",
+      "note": "University.admissions[]"
+    },
+    {
+      "wbs": "3.6",
+      "title": "Thiết kế bảng admission_methods",
+      "type": "task",
+      "module": "Cơ sở dữ liệu",
+      "priority": "P1",
+      "status": "Done",
+      "assignee": "24521912-source",
+      "note": "admissions[].method (enum phương thức)"
+    },
+    {
+      "wbs": "3.7",
+      "title": "Thiết kế bảng favorites",
+      "type": "task",
+      "module": "Cơ sở dữ liệu",
+      "priority": "P2",
+      "status": "Done",
+      "assignee": "24521912-source",
+      "note": "User.favorites[]"
+    },
+    {
+      "wbs": "3.8",
+      "title": "Thiết kế bảng consultation_history",
+      "type": "task",
+      "module": "Cơ sở dữ liệu",
+      "priority": "P2",
+      "status": "Done",
+      "assignee": "24521912-source",
+      "note": "backend/src/models/Consultation.js (chưa có API dùng)"
+    },
+    {
+      "wbs": "3.9",
+      "title": "Thiết kế quan hệ giữa các bảng",
+      "type": "task",
+      "module": "Cơ sở dữ liệu",
+      "priority": "P0",
+      "status": "Done",
+      "assignee": "24521912-source",
+      "note": "docs/Bao_cao_xay_dung_CSDL.docx, database/diagrams/so-do-csdl.png"
+    },
+    {
+      "wbs": "3.10",
+      "title": "Nhập dữ liệu mẫu",
+      "type": "task",
+      "module": "Cơ sở dữ liệu",
+      "priority": "P0",
+      "status": "Done",
+      "assignee": "24521912-source",
+      "note": "database/seeds (66 trường, 225 ngành) — PR #1"
+    },
+    {
+      "wbs": "4.1",
+      "title": "Xây dựng layout chung: header, footer, navigation",
+      "type": "task",
+      "module": "Khung chung",
+      "priority": "P0",
+      "status": "In Progress",
+      "assignee": "24521912-source",
+      "note": "nhánh feature/layout-v2, chờ PR (bản đầu ở feature/layout)"
+    },
+    {
+      "wbs": "4.2",
+      "title": "Xây dựng trang chủ",
+      "type": "task",
+      "module": "Trang chủ",
+      "priority": "P0",
+      "status": "Done",
+      "assignee": "ngochuong-money",
+      "note": "PR #4"
+    },
+    {
+      "wbs": "4.3",
+      "title": "Xây dựng trang danh sách trường",
+      "type": "task",
+      "module": "Trường",
+      "priority": "P0",
+      "status": "Done",
+      "assignee": "ngochuong-money",
+      "note": "PR #19"
+    },
+    {
+      "wbs": "4.4",
+      "title": "Xây dựng bộ lọc trường theo ngành, học phí, khu vực, loại trường",
+      "type": "task",
+      "module": "Trường",
+      "priority": "P0",
+      "status": "In Progress",
+      "assignee": "24521912-source",
+      "note": "nhánh feature/universities, chờ PR"
+    },
+    {
+      "wbs": "4.5",
+      "title": "Xây dựng trang chi tiết trường",
+      "type": "task",
+      "module": "Trường",
+      "priority": "P0",
+      "status": "Done",
+      "assignee": "ngochuong-money",
+      "note": "commit 6701c1e, c454b79"
+    },
+    {
+      "wbs": "4.6",
+      "title": "Xây dựng giao diện so sánh trường",
+      "type": "task",
+      "module": "Trường",
+      "priority": "P3",
+      "status": "In Progress",
+      "assignee": "24521912-source",
+      "note": "nhánh feature/universities, chờ PR (so sánh kết quả AI đã có từ PR #21)"
+    },
+    {
+      "wbs": "4.7",
+      "title": "Xây dựng giao diện form AI tư vấn",
+      "type": "task",
+      "module": "AI tư vấn",
+      "priority": "P0",
+      "status": "Done",
+      "assignee": "ngochuong-money",
+      "note": "PR #21"
+    },
+    {
+      "wbs": "4.8",
+      "title": "Xây dựng giao diện kết quả AI gợi ý",
+      "type": "task",
+      "module": "AI tư vấn",
+      "priority": "P0",
+      "status": "Done",
+      "assignee": "24521912-source",
+      "note": "components/RecommendationResults.jsx — PR #21"
+    },
+    {
+      "wbs": "4.9",
+      "title": "Xây dựng map view bằng Leaflet",
+      "type": "task",
+      "module": "Trường",
+      "priority": "P2",
+      "status": "Todo",
+      "assignee": null,
+      "note": "Chưa có giao diện bản đồ"
+    },
+    {
+      "wbs": "4.10",
+      "title": "Xây dựng trang đăng nhập/đăng ký",
+      "type": "task",
+      "module": "Cá nhân & Tài khoản",
+      "priority": "P1",
+      "status": "Done",
+      "assignee": "24521912-source",
+      "note": "PR #2 (Tú) + PR #5 (Hương)"
+    },
+    {
+      "wbs": "4.11",
+      "title": "Xây dựng trang cá nhân/yêu thích nếu có",
+      "type": "task",
+      "module": "Cá nhân & Tài khoản",
+      "priority": "P2",
+      "status": "Done",
+      "assignee": "ngochuong-money",
+      "note": "PR #6, #26, #27"
+    },
+    {
+      "wbs": "4.12",
+      "title": "Responsive giao diện cho mobile/tablet",
+      "type": "task",
+      "module": "Khung chung",
+      "priority": "P3",
+      "status": "In Progress",
+      "assignee": null,
+      "note": "Layout và trang Trường đã mobile-first; chưa rà soát toàn bộ"
+    },
+    {
+      "wbs": "5.1",
+      "title": "Cấu hình project backend",
+      "type": "task",
+      "module": "DevOps",
+      "priority": "P0",
+      "status": "Done",
+      "assignee": "24521912-source",
+      "note": "PR #2, #3"
+    },
+    {
+      "wbs": "5.2",
+      "title": "Kết nối cơ sở dữ liệu",
+      "type": "task",
+      "module": "Cơ sở dữ liệu",
+      "priority": "P0",
+      "status": "Done",
+      "assignee": "24521912-source",
+      "note": "PR #1 — MongoDB Atlas"
+    },
+    {
+      "wbs": "5.3",
+      "title": "Xây dựng API lấy danh sách trường",
+      "type": "task",
+      "module": "Trường",
+      "priority": "P0",
+      "status": "Done",
+      "assignee": "ngochuong-money",
+      "note": "GET /api/universities"
+    },
+    {
+      "wbs": "5.4",
+      "title": "Xây dựng API tìm kiếm và lọc trường",
+      "type": "task",
+      "module": "Trường",
+      "priority": "P0",
+      "status": "In Progress",
+      "assignee": "24521912-source",
+      "note": "GET /api/universities/search, /filter-options — nhánh feature/universities"
+    },
+    {
+      "wbs": "5.5",
+      "title": "Xây dựng API chi tiết trường",
+      "type": "task",
+      "module": "Trường",
+      "priority": "P0",
+      "status": "Done",
+      "assignee": "ngochuong-money",
+      "note": "GET /api/universities/:slug"
+    },
+    {
+      "wbs": "5.6",
+      "title": "Xây dựng API so sánh trường",
+      "type": "task",
+      "module": "Trường",
+      "priority": "P3",
+      "status": "In Progress",
+      "assignee": "24521912-source",
+      "note": "GET /api/universities/compare — nhánh feature/universities"
+    },
+    {
+      "wbs": "5.7",
+      "title": "Xây dựng API map view trả dữ liệu tọa độ",
+      "type": "task",
+      "module": "Trường",
+      "priority": "P2",
+      "status": "Todo",
+      "assignee": null,
+      "note": "Model có address.location; chưa có API"
+    },
+    {
+      "wbs": "5.8",
+      "title": "Xây dựng API đăng nhập/đăng ký nếu có",
+      "type": "task",
+      "module": "Cá nhân & Tài khoản",
+      "priority": "P1",
+      "status": "Done",
+      "assignee": "24521912-source",
+      "note": "PR #2 (Tú) + PR #5 (Hương)"
+    },
+    {
+      "wbs": "5.9",
+      "title": "Xây dựng API lưu trường yêu thích",
+      "type": "task",
+      "module": "Cá nhân & Tài khoản",
+      "priority": "P2",
+      "status": "Done",
+      "assignee": "ngochuong-money",
+      "note": "PR #27"
+    },
+    {
+      "wbs": "5.10",
+      "title": "Xây dựng API lưu lịch sử tư vấn",
+      "type": "task",
+      "module": "AI tư vấn",
+      "priority": "P3",
+      "status": "Todo",
+      "assignee": null,
+      "note": "Model Consultation có sẵn; chưa có API"
+    },
+    {
+      "wbs": "5.11",
+      "title": "Xử lý validation dữ liệu",
+      "type": "task",
+      "module": "Khung chung",
+      "priority": "P0",
+      "status": "Done",
+      "assignee": "ngochuong-money",
+      "note": "Các file *.validation.js ở mỗi module"
+    },
+    {
+      "wbs": "5.12",
+      "title": "Xử lý phân quyền user/admin",
+      "type": "task",
+      "module": "Cá nhân & Tài khoản",
+      "priority": "P1",
+      "status": "Done",
+      "assignee": "ngochuong-money",
+      "note": "PR #31 — superadmin / admin / user"
+    },
+    {
+      "wbs": "6.1",
+      "title": "Xác định tiêu chí tư vấn: ngành, điểm, học phí, khu vực, loại trường",
+      "type": "task",
+      "module": "AI tư vấn",
+      "priority": "P0",
+      "status": "Done",
+      "assignee": "ngochuong-money",
+      "note": "PR #21"
+    },
+    {
+      "wbs": "6.2",
+      "title": "Xây dựng form thu thập nhu cầu người dùng",
+      "type": "task",
+      "module": "AI tư vấn",
+      "priority": "P0",
+      "status": "Done",
+      "assignee": "ngochuong-money",
+      "note": "PR #21"
+    },
+    {
+      "wbs": "6.3",
+      "title": "Xây dựng thuật toán chấm điểm phù hợp",
+      "type": "task",
+      "module": "AI tư vấn",
+      "priority": "P0",
+      "status": "Done",
+      "assignee": "ngochuong-money",
+      "note": "features/recommendations/recommend.js"
+    },
+    {
+      "wbs": "6.4",
+      "title": "Xây dựng logic xếp hạng trường",
+      "type": "task",
+      "module": "AI tư vấn",
+      "priority": "P0",
+      "status": "Done",
+      "assignee": "ngochuong-money",
+      "note": "PR #21"
+    },
+    {
+      "wbs": "6.5",
+      "title": "Sinh lý do đề xuất trường",
+      "type": "task",
+      "module": "AI tư vấn",
+      "priority": "P0",
+      "status": "Done",
+      "assignee": "ngochuong-money",
+      "note": "criteria[].text + link nguồn"
+    },
+    {
+      "wbs": "6.6",
+      "title": "Hiển thị top trường phù hợp",
+      "type": "task",
+      "module": "AI tư vấn",
+      "priority": "P0",
+      "status": "Done",
+      "assignee": "ngochuong-money",
+      "note": "PR #21"
+    },
+    {
+      "wbs": "6.7",
+      "title": "Lưu lịch sử kết quả tư vấn",
+      "type": "task",
+      "module": "AI tư vấn",
+      "priority": "P3",
+      "status": "Todo",
+      "assignee": null,
+      "note": "Chưa lưu lịch sử tư vấn"
+    },
+    {
+      "wbs": "6.8",
+      "title": "Kiểm tra kết quả gợi ý với dữ liệu mẫu",
+      "type": "task",
+      "module": "AI tư vấn",
+      "priority": "P0",
+      "status": "Done",
+      "assignee": "ngochuong-money",
+      "note": "recommend.test.js, composite.test.js"
+    },
+    {
+      "wbs": "7.1",
+      "title": "Xây dựng đăng nhập admin",
+      "type": "task",
+      "module": "Quản trị",
+      "priority": "P0",
+      "status": "Done",
+      "assignee": "ngochuong-money",
+      "note": "Đăng nhập chung + chuyển trang theo vai trò (PR #5)"
+    },
+    {
+      "wbs": "7.2",
+      "title": "Xây dựng dashboard tổng quan",
+      "type": "task",
+      "module": "Quản trị",
+      "priority": "P0",
+      "status": "Todo",
+      "assignee": null,
+      "note": "PR #7 (dashboard) đã đóng, chưa merge"
+    },
+    {
+      "wbs": "7.3",
+      "title": "Quản lý trường đại học",
+      "type": "task",
+      "module": "Quản trị",
+      "priority": "P0",
+      "status": "Done",
+      "assignee": "ngochuong-money",
+      "note": "PR #25"
+    },
+    {
+      "wbs": "7.4",
+      "title": "Quản lý ngành học",
+      "type": "task",
+      "module": "Quản trị",
+      "priority": "P0",
+      "status": "In Progress",
+      "assignee": "ngochuong-money",
+      "note": "Sửa được trong form từng trường; chưa có trang quản lý ngành riêng"
+    },
+    {
+      "wbs": "7.5",
+      "title": "Quản lý học phí",
+      "type": "task",
+      "module": "Quản trị",
+      "priority": "P0",
+      "status": "In Progress",
+      "assignee": "ngochuong-money",
+      "note": "Sửa được trong form từng trường; chưa có trang riêng"
+    },
+    {
+      "wbs": "7.6",
+      "title": "Quản lý điểm chuẩn",
+      "type": "task",
+      "module": "Quản trị",
+      "priority": "P0",
+      "status": "In Progress",
+      "assignee": "ngochuong-money",
+      "note": "Sửa được trong form từng trường; chưa có trang riêng"
+    },
+    {
+      "wbs": "7.7",
+      "title": "Quản lý phương thức xét tuyển",
+      "type": "task",
+      "module": "Quản trị",
+      "priority": "P1",
+      "status": "In Progress",
+      "assignee": "ngochuong-money",
+      "note": "Chọn phương thức trong dòng điểm chuẩn; chưa có trang riêng"
+    },
+    {
+      "wbs": "7.8",
+      "title": "Quản lý dữ liệu map: địa chỉ, latitude, longitude",
+      "type": "task",
+      "module": "Quản trị",
+      "priority": "P2",
+      "status": "Todo",
+      "assignee": null,
+      "note": "Chưa có"
+    },
+    {
+      "wbs": "7.9",
+      "title": "Quản lý dữ liệu phục vụ AI tư vấn",
+      "type": "task",
+      "module": "Quản trị",
+      "priority": "P0",
+      "status": "In Progress",
+      "assignee": "ngochuong-money",
+      "note": "Bật \"verifiedForAI\" cho dòng điểm chuẩn; chưa có trang riêng"
+    },
+    {
+      "wbs": "7.10",
+      "title": "Quản lý tài khoản người dùng nếu có",
+      "type": "task",
+      "module": "Quản trị",
+      "priority": "P1",
+      "status": "Done",
+      "assignee": "ngochuong-money",
+      "note": "PR #31"
+    },
+    {
+      "wbs": "8.1",
+      "title": "Tích hợp Frontend với API Backend",
+      "type": "task",
+      "module": "Khung chung",
+      "priority": "P0",
+      "status": "Done",
+      "assignee": null,
+      "note": "Frontend đọc dữ liệu qua API (PR #24)"
+    },
+    {
+      "wbs": "8.2",
+      "title": "Tích hợp bộ lọc với danh sách trường",
+      "type": "task",
+      "module": "Trường",
+      "priority": "P0",
+      "status": "In Progress",
+      "assignee": "24521912-source",
+      "note": "nhánh feature/universities"
+    },
+    {
+      "wbs": "8.3",
+      "title": "Tích hợp map view với dữ liệu trường",
+      "type": "task",
+      "module": "Trường",
+      "priority": "P2",
+      "status": "Todo",
+      "assignee": null,
+      "note": ""
+    },
+    {
+      "wbs": "8.4",
+      "title": "Tích hợp AI tư vấn với CSDL",
+      "type": "task",
+      "module": "AI tư vấn",
+      "priority": "P0",
+      "status": "Done",
+      "assignee": "ngochuong-money",
+      "note": "GET /universities/recommendation-data"
+    },
+    {
+      "wbs": "8.5",
+      "title": "Tích hợp so sánh trường",
+      "type": "task",
+      "module": "Trường",
+      "priority": "P3",
+      "status": "In Progress",
+      "assignee": "24521912-source",
+      "note": "nhánh feature/universities"
+    },
+    {
+      "wbs": "8.6",
+      "title": "Tích hợp chức năng yêu thích/cá nhân hóa",
+      "type": "task",
+      "module": "Cá nhân & Tài khoản",
+      "priority": "P2",
+      "status": "Done",
+      "assignee": "ngochuong-money",
+      "note": "PR #27"
+    },
+    {
+      "wbs": "8.7",
+      "title": "Kiểm tra luồng hoàn chỉnh từ user đến admin",
+      "type": "task",
+      "module": "Kiểm thử",
+      "priority": "P0",
+      "status": "Todo",
+      "assignee": null,
+      "note": ""
+    },
+    {
+      "wbs": "9.1",
+      "title": "Kiểm thử giao diện người dùng",
+      "type": "task",
+      "module": "Kiểm thử",
+      "priority": "P0",
+      "status": "Todo",
+      "assignee": null,
+      "note": ""
+    },
+    {
+      "wbs": "9.2",
+      "title": "Kiểm thử responsive",
+      "type": "task",
+      "module": "Kiểm thử",
+      "priority": "P3",
+      "status": "Todo",
+      "assignee": null,
+      "note": ""
+    },
+    {
+      "wbs": "9.3",
+      "title": "Kiểm thử API Backend",
+      "type": "task",
+      "module": "Kiểm thử",
+      "priority": "P0",
+      "status": "In Progress",
+      "assignee": null,
+      "note": "Có unit test backend (backend/tests)"
+    },
+    {
+      "wbs": "9.4",
+      "title": "Kiểm thử tìm kiếm và lọc",
+      "type": "task",
+      "module": "Kiểm thử",
+      "priority": "P0",
+      "status": "In Progress",
+      "assignee": "24521912-source",
+      "note": "backend/tests/university-search.test.cjs"
+    },
+    {
+      "wbs": "9.5",
+      "title": "Kiểm thử AI tư vấn",
+      "type": "task",
+      "module": "Kiểm thử",
+      "priority": "P0",
+      "status": "In Progress",
+      "assignee": "ngochuong-money",
+      "note": "recommend.test.js"
+    },
+    {
+      "wbs": "9.6",
+      "title": "Kiểm thử chức năng so sánh trường",
+      "type": "task",
+      "module": "Kiểm thử",
+      "priority": "P3",
+      "status": "Todo",
+      "assignee": null,
+      "note": ""
+    },
+    {
+      "wbs": "9.7",
+      "title": "Kiểm thử map view",
+      "type": "task",
+      "module": "Kiểm thử",
+      "priority": "P2",
+      "status": "Todo",
+      "assignee": null,
+      "note": ""
+    },
+    {
+      "wbs": "9.8",
+      "title": "Kiểm thử trang admin",
+      "type": "task",
+      "module": "Kiểm thử",
+      "priority": "P0",
+      "status": "Todo",
+      "assignee": null,
+      "note": ""
+    },
+    {
+      "wbs": "9.9",
+      "title": "Kiểm thử phân quyền user/admin",
+      "type": "task",
+      "module": "Kiểm thử",
+      "priority": "P1",
+      "status": "Todo",
+      "assignee": null,
+      "note": ""
+    },
+    {
+      "wbs": "9.10",
+      "title": "Kiểm thử dữ liệu đầu vào",
+      "type": "task",
+      "module": "Kiểm thử",
+      "priority": "P0",
+      "status": "Todo",
+      "assignee": null,
+      "note": ""
+    },
+    {
+      "wbs": "9.11",
+      "title": "Sửa lỗi sau kiểm thử",
+      "type": "task",
+      "module": "Kiểm thử",
+      "priority": "P1",
+      "status": "Todo",
+      "assignee": null,
+      "note": ""
+    },
+    {
+      "wbs": "9.12",
+      "title": "Kiểm thử lại sau khi sửa lỗi",
+      "type": "task",
+      "module": "Kiểm thử",
+      "priority": "P1",
+      "status": "Todo",
+      "assignee": null,
+      "note": ""
+    },
+    {
+      "wbs": "10.1",
+      "title": "Viết chương 1: giới thiệu tổng quan",
+      "type": "task",
+      "module": "Tài liệu & Báo cáo",
+      "priority": "P1",
+      "status": "Todo",
+      "assignee": null,
+      "note": ""
+    },
+    {
+      "wbs": "10.2",
+      "title": "Viết chương 2: cơ sở lý thuyết",
+      "type": "task",
+      "module": "Tài liệu & Báo cáo",
+      "priority": "P1",
+      "status": "Todo",
+      "assignee": null,
+      "note": ""
+    },
+    {
+      "wbs": "10.3",
+      "title": "Viết chương 3: phân tích và thiết kế hệ thống",
+      "type": "task",
+      "module": "Tài liệu & Báo cáo",
+      "priority": "P0",
+      "status": "Todo",
+      "assignee": null,
+      "note": ""
+    },
+    {
+      "wbs": "10.4",
+      "title": "Viết chương 4: cài đặt và giao diện hệ thống",
+      "type": "task",
+      "module": "Tài liệu & Báo cáo",
+      "priority": "P0",
+      "status": "Todo",
+      "assignee": null,
+      "note": ""
+    },
+    {
+      "wbs": "10.5",
+      "title": "Viết chương 5: tổng kết",
+      "type": "task",
+      "module": "Tài liệu & Báo cáo",
+      "priority": "P1",
+      "status": "Todo",
+      "assignee": null,
+      "note": ""
+    },
+    {
+      "wbs": "10.6",
+      "title": "Chụp màn hình giao diện",
+      "type": "task",
+      "module": "Tài liệu & Báo cáo",
+      "priority": "P0",
+      "status": "Todo",
+      "assignee": null,
+      "note": ""
+    },
+    {
+      "wbs": "10.7",
+      "title": "Chuẩn bị slide thuyết trình",
+      "type": "task",
+      "module": "Tài liệu & Báo cáo",
+      "priority": "P0",
+      "status": "Todo",
+      "assignee": null,
+      "note": ""
+    },
+    {
+      "wbs": "10.8",
+      "title": "Chuẩn bị kịch bản demo",
+      "type": "task",
+      "module": "Tài liệu & Báo cáo",
+      "priority": "P1",
+      "status": "Todo",
+      "assignee": null,
+      "note": ""
+    },
+    {
+      "wbs": "D.1",
+      "title": "Tài liệu API bằng apidoc, công khai tại /api-docs",
+      "type": "task",
+      "module": "DevOps",
+      "priority": "P0",
+      "status": "In Progress",
+      "assignee": "24521912-source",
+      "note": "backend/apidoc/, npm run docs — nhánh feature/devops"
+    },
+    {
+      "wbs": "D.2",
+      "title": "Quản lý tiến trình API bằng PM2 (process.json, cluster, tự khởi động cùng server)",
+      "type": "task",
+      "module": "DevOps",
+      "priority": "P0",
+      "status": "In Progress",
+      "assignee": "24521912-source",
+      "note": "process.json — nhánh feature/devops"
+    },
+    {
+      "wbs": "D.3",
+      "title": "Deploy lên cloud VPS: tên miền, DNS, Nginx, HTTPS",
+      "type": "task",
+      "module": "DevOps",
+      "priority": "P0",
+      "status": "Todo",
+      "assignee": null,
+      "note": "Hướng dẫn: docs/DEPLOYMENT.md, deploy/nginx/unimatch.conf"
+    },
+    {
+      "wbs": "D.4",
+      "title": "GitHub Project: bảng Kanban phân công + ghi bug",
+      "type": "task",
+      "module": "DevOps",
+      "priority": "P0",
+      "status": "In Progress",
+      "assignee": "24521912-source",
+      "note": "tools/github-project/"
+    },
+    {
+      "wbs": "D.5",
+      "title": "CI GitHub Actions: test + lint + build mỗi PR",
+      "type": "task",
+      "module": "DevOps",
+      "priority": "P1",
+      "status": "In Progress",
+      "assignee": "24521912-source",
+      "note": ".github/workflows/ci.yml"
+    },
+    {
+      "wbs": "D.6",
+      "title": "AI agent Gemini review code mỗi commit trong PR",
+      "type": "task",
+      "module": "DevOps",
+      "priority": "P1",
+      "status": "In Progress",
+      "assignee": "24521912-source",
+      "note": ".github/workflows/gemini-review.yml — cần secret GEMINI_API_KEY"
+    },
+    {
+      "wbs": "D.7",
+      "title": "Bật branch protection cho develop/main (bắt buộc PR + CI pass)",
+      "type": "task",
+      "module": "DevOps",
+      "priority": "P1",
+      "status": "Todo",
+      "assignee": "24521912-source",
+      "note": "Settings → Branches"
+    },
+    {
+      "wbs": "BUG-1",
+      "type": "bug",
+      "module": "Trường",
+      "priority": "P2",
+      "status": "Todo",
+      "assignee": null,
+      "title": "Thẻ trường: \"Học phí từ\" ưu tiên đơn vị năm dù học phí theo học kỳ rẻ hơn",
+      "note": "toCard() chọn đơn vị theo thứ tự năm → học kỳ, nên UIT hiện \"84 tr/năm\" (chương trình đặc biệt) thay vì \"20,9 tr/học kỳ\". Người dùng tưởng UIT rất đắt. File: backend/src/modules/universities/universities.service.js (toCard)."
+    },
+    {
+      "wbs": "BUG-2",
+      "type": "bug",
+      "module": "Trường",
+      "priority": "P3",
+      "status": "Todo",
+      "assignee": null,
+      "title": "Thẻ trường: \"Điểm chuẩn từ\" hiển thị dấu chấm thập phân (22.8) không theo định dạng tiếng Việt",
+      "note": "Học phí hiển thị \"31,5 tr\" (dấu phẩy) nhưng điểm chuẩn hiện \"22.8\". Nên dùng toLocaleString(\"vi-VN\"). File: frontend/src/components/UniversityCard.jsx."
+    }
+  ]
+}

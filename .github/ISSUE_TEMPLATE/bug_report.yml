@@ -1,0 +1,57 @@
+name: 🐞 Báo lỗi (Bug)
+description: Lỗi phát hiện khi test — tự vào bảng Kanban của project
+title: "[Bug] "
+labels: ["bug"]
+body:
+  - type: dropdown
+    id: module
+    attributes:
+      label: Module
+      options:
+        - Khung chung (header, footer, menu)
+        - Trang chủ
+        - Trường (danh sách, bộ lọc, chi tiết, so sánh)
+        - AI tư vấn
+        - Cá nhân & Tài khoản (đăng nhập, đăng ký, yêu thích)
+        - Quản trị
+        - Backend / API
+        - Deploy / DevOps
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Các bước tái hiện
+      placeholder: |
+        1. Mở /truong
+        2. Chọn ngành Công nghệ thông tin
+        3. ...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Kết quả mong đợi
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Kết quả thực tế (kèm ảnh chụp / log console nếu có)
+    validations:
+      required: true
+  - type: dropdown
+    id: severity
+    attributes:
+      label: Mức độ
+      options:
+        - Nghiêm trọng — không dùng được chức năng
+        - Trung bình — dùng được nhưng sai
+        - Nhẹ — giao diện / chính tả
+    validations:
+      required: true
+  - type: input
+    id: env
+    attributes:
+      label: Môi trường
+      placeholder: "Chrome 131, màn hình 375px, nhánh develop / bản deploy"

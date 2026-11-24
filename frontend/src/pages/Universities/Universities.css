@@ -1,0 +1,91 @@
+/* =========================================================
+   Trang danh sách trường (WBS 4.4) — mobile-first, màu dùng token trong :root
+   ========================================================= */
+
+/* Chừa chỗ cho thanh so sánh dính dưới màn hình */
+.uni-page { padding-bottom: 96px; }
+
+/* ---------- Bộ lọc ---------- */
+.uni-filters {
+  display: flex; flex-direction: column; gap: 16px; margin-bottom: 20px; padding: 16px;
+  background: var(--surface); border-radius: var(--radius); box-shadow: var(--shadow);
+}
+.uni-filter-label { display: block; margin-bottom: 6px; font-size: 13px; font-weight: 600; color: var(--muted); }
+
+.uni-search-box { position: relative; }
+.uni-search-box svg {
+  position: absolute; left: 14px; top: 50%; width: 18px; height: 18px;
+  transform: translateY(-50%); color: var(--icon-muted); pointer-events: none;
+}
+.uni-search-box .input { padding-left: 42px; }
+
+.uni-filter-grid { display: grid; gap: 12px; }
+.uni-filter .input { cursor: pointer; }
+.uni-filter-note { margin: 0; font-size: 13px; color: var(--muted); }
+
+.uni-filter-row { display: flex; flex-wrap: wrap; align-items: center; gap: 12px; }
+
+/* Điện thoại: 4 nút chia đều một hàng; từ 640px co theo nội dung */
+.uni-type {
+  display: flex; width: 100%; overflow: hidden;
+  border: 1px solid var(--control-border); border-radius: 10px; background: var(--surface);
+}
+.uni-type button {
+  flex: 1; border: 0; background: transparent; color: var(--control-text);
+  padding: 8px 10px; font-size: 14px; white-space: nowrap; cursor: pointer;
+}
+.uni-type button + button { border-left: 1px solid var(--control-border); }
+.uni-type button.selected { background: var(--primary); color: var(--on-primary); }
+
+.uni-vnu {
+  display: inline-flex; align-items: center; gap: 8px; padding: 8px 14px; cursor: pointer;
+  font-size: 14px; color: var(--control-text);
+  border: 1px dashed var(--control-border); border-radius: 999px; background: var(--surface);
+}
+.uni-vnu input { accent-color: var(--primary); }
+.uni-reset { padding: 8px 14px; font-size: 14px; }
+
+/* ---------- Kết quả ---------- */
+.uni-empty { display: flex; flex-direction: column; align-items: center; gap: 12px; padding: 40px 16px; text-align: center; }
+
+.uni-pagination { display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 6px; margin: 28px 0 8px; }
+.uni-pagination button {
+  min-width: 38px; height: 38px; padding: 0 10px; cursor: pointer;
+  border: 1px solid var(--control-border); border-radius: 8px;
+  background: var(--surface); color: var(--control-text); font-size: 14px;
+}
+.uni-pagination button.selected { background: var(--primary); border-color: var(--primary); color: var(--on-primary); }
+.uni-pagination button:disabled { opacity: 0.4; cursor: default; }
+.uni-page-gap { padding: 0 4px; color: var(--icon-muted); }
+
+/* ---------- Thanh so sánh dính dưới màn hình ---------- */
+.compare-bar {
+  position: fixed; left: 0; right: 0; bottom: 0; z-index: 20;
+  background: var(--surface); border-top: 1px solid var(--border); box-shadow: var(--shadow);
+}
+.compare-bar-inner { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 16px; padding-block: 12px; }
+.compare-bar-title { margin: 0; font-weight: 700; }
+.compare-bar-list { display: flex; flex-wrap: wrap; gap: 8px; margin: 0; padding: 0; list-style: none; }
+.compare-bar-item {
+  display: inline-flex; align-items: center; gap: 4px; padding: 4px 4px 4px 12px;
+  border-radius: 999px; background: var(--primary-light); color: var(--primary-dark); font-size: 14px; font-weight: 600;
+}
+.compare-bar-item button {
+  width: 28px; height: 28px; border: 0; border-radius: 50%; cursor: pointer;
+  background: transparent; color: var(--primary-dark); font-size: 18px; line-height: 1;
+}
+.compare-bar-item button:hover { background: var(--surface); }
+.compare-bar-actions { display: flex; gap: 8px; margin-left: auto; }
+.compare-bar-actions .btn { padding: 8px 14px; font-size: 14px; }
+
+/* ---------- Máy tính bảng / máy tính ---------- */
+@media (min-width: 640px) {
+  .uni-filter-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .uni-type { display: inline-flex; width: auto; }
+  .uni-type button { flex: none; padding: 8px 14px; }
+}
+@media (min-width: 960px) {
+  .uni-filters { padding: 20px; }
+  .uni-filter-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+  .uni-reset { margin-left: auto; }
+}

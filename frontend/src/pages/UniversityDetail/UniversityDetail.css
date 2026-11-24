@@ -1,0 +1,168 @@
+.university-detail { --ud-text: #172b4d; --ud-muted: #64748b; --ud-border: #e3eaf2; --ud-blue: #1976d2; color: var(--ud-text); min-width: 0; background: #f6f8fc; padding-bottom: 24px; }
+.university-detail * { box-sizing: border-box; }
+.university-detail h1, .university-detail h2, .university-detail h3, .university-detail h4 { color: var(--ud-text); }
+.university-detail .ud-shell { width: min(1200px, 100%); margin-inline: auto; padding: 24px; }
+.university-detail .ud-breadcrumb { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; margin-bottom: 22px; color: var(--ud-muted); font-size: 13px; }
+.university-detail .ud-breadcrumb a { color: #245d9d; display: inline-flex; align-items: center; gap: 2px; }
+.university-detail .ud-ext-link { display: inline-flex; align-items: center; gap: 4px; }
+.university-detail .ud-profile { background: white; border: 1px solid var(--ud-border); border-radius: 18px; border-top: 4px solid #1976d2; }
+.university-detail .ud-profile-body { display: flex; gap: 24px; align-items: center; padding: 28px; }
+/* Logo trường: xem components/UniversityLogo.css (cỡ lg) */
+.university-detail .ud-logo { border-color: var(--ud-border); }
+.university-detail .ud-identity { flex: 1; min-width: 0; }
+.university-detail .ud-eyebrow { margin: 0 0 8px; font-size: 10px; font-weight: 700; letter-spacing: 1.4px; color: #65809d; }
+.university-detail .ud-identity h1 { margin: 0 0 8px; font-size: clamp(22px, 2.4vw, 30px); line-height: 1.35; overflow-wrap: anywhere; }
+.university-detail .ud-abbreviation { color: #38648d; font-size: 14px; margin: 0 0 12px; }
+.university-detail .ud-official { flex-shrink: 0; font-size: 13px; padding: 10px 14px; border: 1px solid var(--ud-border); border-radius: 8px; }
+.university-detail .ud-intro-badges { display: flex; flex-wrap: wrap; gap: 8px; list-style: none; padding: 0; margin: 12px 0 0; }
+.university-detail .ud-intro-badges li { background: #eef5fc; color: #37618a; border-radius: 6px; padding: 5px 10px; font-size: 12px; line-height: 1.5; }
+.university-detail .ud-page-nav { display: flex; gap: 4px; overflow-x: auto; scrollbar-width: thin; border-bottom: 1px solid #dbe4ee; margin-top: 16px; padding: 0 2px; }
+.university-detail .ud-page-nav a { white-space: nowrap; color: #61718a; font-size: 14px; padding: 17px 16px; border-bottom: 3px solid transparent; text-decoration: none; }
+.university-detail .ud-page-nav a:hover { color: #125ca4; background: #edf4fc; }
+.university-detail .ud-page-nav a.is-active { color: #125ca4; border-bottom-color: #1976d2; font-weight: 700; }
+.university-detail .ud-page-heading { margin: 32px 0 24px; }
+.university-detail .ud-page-heading h2 { font-size: clamp(24px, 3vw, 30px); margin: 0 0 8px; line-height: 1.3; }
+.university-detail .ud-page-heading h2:focus { outline: none; }
+.university-detail .ud-page-heading > p:last-child { color: var(--ud-muted); margin: 0; font-size: 14px; line-height: 1.7; }
+.university-detail .ud-page-content { min-height: 240px; min-width: 0; }
+.university-detail .ud-section { background: white; padding: 28px; border: 1px solid var(--ud-border); border-radius: 14px; margin-bottom: 22px; min-width: 0; overflow-wrap: anywhere; }
+.university-detail .ud-section h3 { font-size: 17px; line-height: 1.5; margin: 0 0 14px; }
+.university-detail .ud-section > p { font-size: 14px; line-height: 1.8; }
+.university-detail .ud-section a { font-size: 13px; }
+.university-detail .ud-intro-text { font-size: 15px !important; line-height: 1.9 !important; white-space: pre-line; }
+.university-detail .ud-muted, .university-detail .ud-missing { color: var(--ud-muted); font-size: 13px; line-height: 1.7; }
+.university-detail .ud-contact { margin: 0; }
+.university-detail .ud-contact > div { display: grid; grid-template-columns: 180px minmax(0, 1fr); border-bottom: 1px solid #edf1f6; padding: 16px 0; gap: 20px; font-size: 14px; line-height: 1.7; }
+.university-detail .ud-contact > div:last-child { border-bottom: 0; }
+.university-detail .ud-contact dt { color: var(--ud-muted); }
+.university-detail .ud-contact dd { margin: 0; overflow-wrap: anywhere; }
+.university-detail .ud-basic-info { margin-top: 22px; border-top: 1px solid var(--ud-border); }
+.university-detail .ud-explore { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
+.university-detail .ud-explore-card { border: 1px solid var(--ud-border); border-radius: 12px; background: white; padding: 22px; text-decoration: none; transition: border-color .15s, box-shadow .15s; }
+.university-detail .ud-explore-card:hover { border-color: #7aa9df; box-shadow: 0 4px 16px #163c6c0c; }
+.university-detail .ud-explore-card h3 { font-size: 17px; margin: 0 0 10px; display: flex; align-items: center; justify-content: space-between; gap: 8px; }
+.university-detail .ud-explore-card h3 svg { color: var(--primary); flex: none; }
+.university-detail .ud-explore-card p { font-size: 13px; line-height: 1.8; color: var(--ud-muted); margin: 0; }
+.university-detail .ud-label { display: block; font-size: 13px; font-weight: 600; margin: 22px 0 10px; }
+.university-detail .input { width: 100%; min-width: 0; min-height: 44px; border: 1px solid #cdd9e6; border-radius: 8px; background: white; color: var(--ud-text); padding: 10px 12px; font: inherit; font-size: 14px; }
+.university-detail .ud-code { display: block; color: #637e9c; font-size: 12px; font-weight: 500; margin-bottom: 6px; }
+.university-detail .ud-filters { display: grid; grid-template-columns: 2fr 1fr 1.5fr 1fr; gap: 12px; margin: 24px 0 16px; }
+.university-detail .ud-filters label { min-width: 0; font-size: 12px; font-weight: 600; display: flex; flex-direction: column; gap: 8px; }
+.university-detail .ud-table-scroll { max-width: 100%; overflow-x: auto; border: 1px solid var(--ud-border); border-radius: 10px; }
+.university-detail .ud-major-table { width: 100%; min-width: 780px; border-collapse: collapse; font-size: 13px; text-align: left; }
+.university-detail .ud-major-table caption { caption-side: bottom; text-align: left; color: var(--ud-muted); padding: 14px; font-size: 12px; line-height: 1.7; background: #f9fbfd; }
+.university-detail .ud-major-table th, .university-detail .ud-major-table td { padding: 16px; border-bottom: 1px solid var(--ud-border); vertical-align: top; line-height: 1.6; }
+.university-detail .ud-major-table thead th { background: #eff5fc; color: #3e5d80; font-size: 12px; }
+.university-detail .ud-major-table tbody th { width: 28%; font-weight: 600; }
+.university-detail .ud-major-table td p { margin: 6px 0 0; font-size: 12px; color: var(--ud-muted); }
+.university-detail .ud-major-table td strong { color: #125ca4; white-space: nowrap; }
+.university-detail .ud-tuition-table { min-width: 1080px; }
+.university-detail .ud-tuition-table tbody th { width: 24%; }
+.university-detail .ud-tuition-table tbody tr:nth-child(even) { background: #fafcfe; }
+.university-detail .ud-tuition-table tbody tr:hover { background: #f1f7ff; }
+.university-detail .ud-tuition-table .ud-tuition-amount { min-width: 145px; }
+.university-detail .ud-tuition-table .ud-tuition-amount strong { white-space: normal; }
+.university-detail .ud-tuition-table td .ud-tuition-note { margin: 0; font-size: 13px; color: #52647b; }
+.university-detail .ud-tuition-table td .ud-tuition-scope { margin: 0 0 8px; font-weight: 600; color: #3e5d80; }
+.university-detail .ud-tuition-discount { display: block; width: fit-content; background: #fff5df; color: #8a641e; border-radius: 5px; padding: 4px 8px; font-size: 11px; font-weight: 500; margin-top: 10px; }
+.university-detail .ud-catalog-table { min-width: 580px; table-layout: fixed; }
+.university-detail .ud-catalog-table thead th:first-child { width: 18%; }
+.university-detail .ud-catalog-table thead th:nth-child(2), .university-detail .ud-catalog-table tbody th { width: 42%; }
+.university-detail .ud-catalog-table tbody tr:nth-child(even) { background: #fafcfe; }
+.university-detail .ud-catalog-table tbody tr:hover { background: #f1f7ff; }
+.university-detail .ud-catalog-code { color: #637e9c; font-variant-numeric: tabular-nums; }
+.university-detail .ud-catalog-programs { list-style: none; padding: 0; margin: 0; color: #52647b; }
+.university-detail .ud-catalog-programs li + li { margin-top: 8px; }
+.university-detail .ud-source-markers { margin-left: 6px; white-space: nowrap; font-weight: 400; }
+.university-detail .ud-source-markers a { font-size: 10px; margin-right: 3px; }
+.university-detail .ud-catalog-sources { margin-top: 16px; font-size: 12px; line-height: 1.8; color: var(--ud-muted); }
+.university-detail .ud-catalog-sources > p { font-weight: 600; margin: 0 0 4px; }
+.university-detail .ud-catalog-sources ul { list-style: none; padding: 0; margin: 0; }
+.university-detail .ud-catalog-sources li { scroll-margin-top: 160px; overflow-wrap: anywhere; }
+.university-detail .ud-catalog-sources li:target { background: #eef5fc; }
+.university-detail .ud-results-toolbar { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; margin: 18px 0; }
+.university-detail .ud-results-toolbar p { margin: 0; }
+.university-detail .ud-results-toolbar label { display: flex; align-items: center; gap: 10px; font-size: 12px; color: var(--ud-muted); }
+.university-detail .ud-results-toolbar select { width: 76px; }
+.university-detail .ud-admissions-scroll { scroll-margin-top: 160px; }
+.university-detail .ud-admissions-table { min-width: 860px; }
+.university-detail .ud-admissions-table tbody th { width: 27%; }
+.university-detail .ud-admission-code { display: block; margin-bottom: 6px; }
+.university-detail .ud-major-description { font-size: 12px; line-height: 1.7; color: var(--ud-muted); font-weight: 400; margin: 10px 0 0; }
+.university-detail .ud-admissions-table tbody tr:nth-child(even) { background: #fafcfe; }
+.university-detail .ud-score-list { list-style: none; margin: 0; padding: 0; }
+.university-detail .ud-score-list li + li { margin-top: 14px; }
+.university-detail .ud-score-list span { display: block; color: var(--ud-muted); font-size: 12px; margin-top: 4px; }
+.university-detail .ud-score-list .ud-score-program { font-weight: 600; color: #3e5d80; margin: 0 0 6px; }
+.university-detail .ud-program-score + .ud-program-score { margin-top: 10px; }
+.university-detail .ud-pagination { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; margin: 20px 0; }
+.university-detail .ud-pagination > div { display: flex; align-items: center; flex-wrap: wrap; gap: 6px; }
+.university-detail .ud-pagination button { min-width: 40px; min-height: 40px; border: 1px solid var(--ud-border); border-radius: 8px; background: white; color: #3e5d80; font: inherit; font-size: 13px; padding: 8px 12px; cursor: pointer; }
+.university-detail .ud-pagination button:hover:not(:disabled) { border-color: #1976d2; background: #eff5fc; }
+.university-detail .ud-pagination button[aria-current="page"] { color: white; background: #1976d2; border-color: #1976d2; }
+.university-detail .ud-pagination button:disabled { opacity: .45; cursor: default; }
+.university-detail .ud-pagination button:focus-visible { outline: 3px solid #86b6ee; outline-offset: 3px; }
+.university-detail .ud-page-gap { padding-inline: 6px; color: var(--ud-muted); }
+.university-detail .ud-notice { border-left: 3px solid #8ab6e7; background: #f1f7ff; color: #446281; padding: 14px 16px; font-size: 13px; line-height: 1.8; border-radius: 0 8px 8px 0; }
+.university-detail .ud-empty { text-align: center; padding: 40px 16px; background: #f8fafc; border-radius: 10px; color: var(--ud-muted); font-size: 14px; }
+.university-detail .ud-methods { list-style: none; margin: 24px 0; padding: 0; }
+.university-detail .ud-methods li { display: flex; align-items: center; justify-content: space-between; gap: 20px; border-bottom: 1px solid var(--ud-border); padding: 20px 0; }
+.university-detail .ud-methods h4 { font-size: 15px; margin: 0 0 8px; }
+.university-detail .ud-methods p { font-size: 13px; color: var(--ud-muted); margin: 0; }
+.university-detail .ud-methods a { flex-shrink: 0; }
+.university-detail .ud-fees { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; margin: 22px 0; }
+.university-detail .ud-fee { padding: 24px; border: 1px solid var(--ud-border); border-radius: 12px; }
+.university-detail .ud-fee > strong { display: block; color: #125ca4; font-size: 21px; line-height: 1.5; margin: 16px 0; }
+.university-detail .ud-fee p { color: var(--ud-muted); font-size: 13px; line-height: 1.8; }
+.university-detail .ud-fee .ud-fee-year { font-size: 11px; text-transform: uppercase; letter-spacing: .5px; }
+.university-detail .ud-location { display: flex; gap: 16px; padding: 18px; border-radius: 10px; background: #f2f7fd; font-size: 14px; line-height: 1.8; }
+.university-detail .ud-location > span { color: #1976d2; font-size: 24px; }
+.university-detail .ud-location p { margin: 0; }
+.university-detail .ud-map { margin: 16px 0; }
+.university-detail .ud-map .leaflet-map { height: 340px; }
+.university-detail .ud-map p { margin-top: 8px; }
+.university-detail .ud-info-list { padding-left: 20px; font-size: 14px; line-height: 1.8; }
+.university-detail .ud-info-list li { padding: 8px 0; }
+.university-detail .ud-info-list p { margin: 6px 0; }
+.university-detail .ud-detail-footer { display: flex; justify-content: space-between; gap: 16px; align-items: center; margin-top: 32px; padding-top: 22px; border-top: 1px solid var(--ud-border); font-size: 12px; line-height: 1.8; color: var(--ud-muted); }
+.university-detail .ud-detail-footer p { margin: 0; }
+.university-detail .ud-detail-footer a { flex-shrink: 0; }
+.university-detail .ud-state { max-width: 800px; margin: 40px auto; padding: 60px 24px; background: white; border: 1px solid var(--ud-border); border-radius: 16px; text-align: center; }
+.university-detail .ud-state h1 { font-size: 26px; }
+.university-detail .ud-state-actions { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; }
+.university-detail a:focus-visible, .university-detail input:focus-visible, .university-detail select:focus-visible, .university-detail [role="region"]:focus-visible { outline: 3px solid #86b6ee; outline-offset: 3px; }
+@media (max-width: 1000px) {
+  .university-detail .ud-profile-body { flex-wrap: wrap; }
+  .university-detail .ud-official { margin-left: 112px; }
+  .university-detail .ud-explore { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .university-detail .ud-filters { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 600px) {
+  .university-detail .ud-shell { padding: 16px; }
+  .university-detail .ud-breadcrumb { font-size: 12px; gap: 8px; }
+  .university-detail .ud-profile-body { padding: 20px; gap: 14px; align-items: flex-start; }
+  .university-detail .ud-logo { --logo-size: 56px; border-radius: 12px; }
+  .university-detail .ud-identity { flex-basis: calc(100% - 70px); }
+  .university-detail .ud-identity h1 { font-size: 21px; }
+  .university-detail .ud-official { margin-left: 0; }
+  .university-detail .ud-page-nav a { font-size: 13px; padding: 15px 12px; }
+  .university-detail .ud-page-heading { margin-top: 26px; }
+  .university-detail .ud-section { padding: 20px 16px; }
+  .university-detail .ud-explore { gap: 10px; }
+  .university-detail .ud-explore-card { padding: 16px; }
+  .university-detail .ud-explore-card h3 { font-size: 15px; }
+  .university-detail .ud-fees { grid-template-columns: minmax(0, 1fr); }
+  .university-detail .ud-filters { gap: 12px 8px; }
+  .university-detail .ud-filters label:first-child { grid-column: 1 / -1; }
+  .university-detail .ud-contact > div { grid-template-columns: minmax(0, 1fr); gap: 6px; }
+  .university-detail .ud-detail-footer { flex-direction: column; align-items: flex-start; }
+  .university-detail .ud-methods li { align-items: flex-start; flex-direction: column; gap: 8px; }
+}
+@media (max-width: 360px) { .university-detail .ud-explore { grid-template-columns: minmax(0, 1fr); } }
+@media (prefers-reduced-motion: reduce) { .university-detail .ud-explore-card { transition: none; } }
+
+/* Nút yêu thích trên trang chi tiết */
+.ud-favorite { display: flex; flex-direction: column; align-items: flex-start; gap: 6px; }
+.ud-favorite .btn { white-space: nowrap; }
+.ud-fav-count { padding-left: 8px; margin-left: 2px; border-left: 1px solid currentColor; opacity: .8; font-variant-numeric: tabular-nums; }
+.ud-favorite-error { margin: 0; font-size: 13px; color: #b71c1c; }

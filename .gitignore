@@ -141,3 +141,12 @@ dist
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
 .vite/
+
+# File tạm của Microsoft Office
+~$*
+
+# Bản sao lưu database (chứa mật khẩu đã mã hóa) — không commit
+backups/
+
+# Tài liệu API do apidoc tạo (npm run docs) — không commit, build lại khi deploy
+backend/public/api-docs/
