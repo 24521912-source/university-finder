@@ -1,3 +1,4 @@
+import { Suspense } from 'react'
 import { Link, Outlet, useLocation } from 'react-router-dom'
 import { useAuth } from '../features/auth/AuthContext'
 import Header from '../components/Header'
@@ -26,7 +27,10 @@ function MainLayout() {
       )}
       <main id="main-content" className="page" tabIndex={-1}>
         <div key={pageKey(pathname)} className="page-enter">
-          <Outlet />
+          {/* Các trang được tải riêng khi mở tới: header/footer vẫn hiện trong lúc chờ */}
+          <Suspense fallback={<p className="container" role="status">Đang tải trang…</p>}>
+            <Outlet />
+          </Suspense>
         </div>
       </main>
       <Footer />

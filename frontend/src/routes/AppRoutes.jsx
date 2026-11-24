@@ -1,22 +1,24 @@
-import { lazy, Suspense } from 'react'
+import { lazy } from 'react'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import MainLayout from '../layouts/MainLayout'
 import ProtectedRoute from '../components/ProtectedRoute'
 import ComingSoon from '../components/ComingSoon'
 import Home from '../pages/Home/Home'
-import Universities from '../pages/Universities/Universities'
-import Login from '../pages/Login/Login'
-import Register from '../pages/Register/Register'
-import ForgotPassword from '../pages/PasswordReset/ForgotPassword'
-import ResetPassword from '../pages/PasswordReset/ResetPassword'
-import Profile from '../pages/Profile/Profile'
-import UniversityDetail from '../pages/UniversityDetail/UniversityDetail'
-import AdmissionPreview from '../pages/UniversityDetail/AdmissionPreview'
-import AI from '../pages/AI/AI'
-import Compare from '../pages/Compare/Compare'
-import Admin from '../pages/Admin/Admin'
-// Trang bản đồ kéo theo thư viện Leaflet (~150 kB): chỉ tải khi mở trang.
+
+// Trang chủ tải ngay; các trang khác tách thành file riêng, chỉ tải khi mở tới
+// (MainLayout bọc <Suspense> quanh nội dung trang). Trang bản đồ còn kéo theo Leaflet (~150 kB).
+const Universities = lazy(() => import('../pages/Universities/Universities'))
+const UniversityDetail = lazy(() => import('../pages/UniversityDetail/UniversityDetail'))
+const AdmissionPreview = lazy(() => import('../pages/UniversityDetail/AdmissionPreview'))
+const AI = lazy(() => import('../pages/AI/AI'))
+const Compare = lazy(() => import('../pages/Compare/Compare'))
 const MapPage = lazy(() => import('../pages/Map/MapPage'))
+const Login = lazy(() => import('../pages/Login/Login'))
+const Register = lazy(() => import('../pages/Register/Register'))
+const ForgotPassword = lazy(() => import('../pages/PasswordReset/ForgotPassword'))
+const ResetPassword = lazy(() => import('../pages/PasswordReset/ResetPassword'))
+const Profile = lazy(() => import('../pages/Profile/Profile'))
+const Admin = lazy(() => import('../pages/Admin/Admin'))
 
 // Khai báo mọi trang của web. Làm xong chức năng nào thì thay <ComingSoon /> bằng trang thật.
 function AppRoutes() {
@@ -30,7 +32,7 @@ function AppRoutes() {
           <Route path="/demo/tuyen-sinh" element={<AdmissionPreview />} />
           <Route path="/ai-tu-van" element={<AI />} />
           <Route path="/so-sanh" element={<Compare />} />
-          <Route path="/ban-do" element={<Suspense fallback={<p className="container" role="status">Đang tải bản đồ…</p>}><MapPage /></Suspense>} />
+          <Route path="/ban-do" element={<MapPage />} />
           <Route path="/dang-nhap" element={<Login />} />
           <Route path="/dang-ky" element={<Register />} />
           <Route path="/login" element={<Login />} />
