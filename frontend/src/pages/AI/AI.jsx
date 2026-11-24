@@ -110,11 +110,6 @@ function AI() {
     <div className="container consult-page">
       <h1 className="page-title">AI tư vấn trường đại học phù hợp</h1>
       <p className="page-subtitle">Hãy cho chúng tôi biết nhu cầu của bạn.</p>
-      <aside className="consult-notice">
-        <strong>Bản thử nghiệm UniMatch HCMC</strong>
-        <p>Gợi ý bằng quy tắc có thể giải thích, sử dụng bộ dữ liệu tham chiếu của dự án. Điểm phù hợp không phải xác suất trúng tuyển. Điểm chuẩn lịch sử chỉ để tham khảo; không tính điểm cộng hoặc ưu tiên.</p>
-        <p>Hiện chỉ đánh giá chương trình chuẩn. Học phí tham chiếu năm học 2026–2027; dữ liệu có thể thiếu hoặc khác với thông tin tuyển sinh hiện hành.</p>
-      </aside>
       {loading && <p role="status">Đang tải danh sách trường từ API…</p>}
       {loadError && <div className="alert-error" role="alert">{loadError} <button type="button" className="btn btn-outline" onClick={() => { setLoadError(''); setLoading(true); setAttempt((n) => n + 1) }}>Thử lại</button></div>}
       <form className="consult-form" onSubmit={submit} noValidate>
@@ -213,9 +208,9 @@ function AI() {
       <details className="consult-rules">
         <summary>Cách tính điểm và xử lý dữ liệu thiếu</summary>
         <p>Bạn chọn mức ưu tiên 1–5 cho từng tiêu chí (1 = quan trọng nhất). Trọng số tương ứng: 1 → 1; 2 → 0,75; 3 → 0,55; 4 → 0,4; 5 → 0,3; “Không quan tâm” → bỏ qua. Nhiều tiêu chí có thể cùng mức. Điểm tổng = tổng (điểm tiêu chí × trọng số) / tổng trọng số đã đánh giá. Thiếu dữ liệu được loại khỏi mẫu số, không gán 0.</p>
-        <p>Ngành khớp: 100. Điểm tham chiếu: giới hạn trong 0–100 của 50 + 500 × (điểm nhập − điểm chuẩn) / thang điểm. Học phí: tối đa 100 của 100 × ngân sách / mức phí tối đa; miễn học phí: 100. Đây là quy tắc của prototype, không phải xác suất.</p>
+        <p>Ngành khớp: 100. Điểm tham chiếu: giới hạn trong 0–100 của 50 + 500 × (điểm nhập − điểm chuẩn) / thang điểm. Học phí: tối đa 100 của 100 × ngân sách / mức phí tối đa; miễn học phí: 100. Đây là quy tắc chấm điểm, không phải xác suất.</p>
         <p>Chỉ xếp hạng khi xác minh được ngành và ít nhất một tiêu chí khác. Điểm bằng nhau ưu tiên độ phủ cao hơn, rồi tên trường. Độ phủ là tỷ lệ trọng số có dữ liệu trên tổng trọng số ban đầu; trường có độ phủ khác nhau cần được cân nhắc riêng.</p>
-        <p>Dữ liệu nguồn: database/seeds của dự án và các ngoại lệ trong DATA_NOTES.md. Một URL trong seed không chứng minh rằng thông tin đã được kiểm chứng lại theo thời gian thực. Không dùng điểm tổng hợp, điểm sai phương thức hoặc thang điểm chưa xác nhận để so sánh.</p>
+        <p>Dữ liệu lấy từ database của hệ thống, mỗi mục kèm link nguồn của trường.Không dùng điểm tổng hợp, điểm sai phương thức hoặc thang điểm chưa xác nhận để so sánh.</p>
       </details>
     </div>
   )

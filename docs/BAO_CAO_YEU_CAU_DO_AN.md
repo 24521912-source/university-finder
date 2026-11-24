@@ -77,7 +77,7 @@ Ký hiệu: ✅ đã xong và đã kiểm tra · 🟡 code / cấu hình đã s�
 
 ## 4. Điểm sáng tạo / đặc biệt có thể trình bày (mục 2.3)
 
-1. **AI tư vấn "giải thích được":** chấm 6 tiêu chí theo mức ưu tiên người dùng chọn. Mỗi điểm số đều có **câu lý do + link nguồn chính thức**. Dữ liệu thiếu **không gán 0** mà loại khỏi mẫu số, đi kèm "độ phủ dữ liệu". Riêng các trường xét tuyển tổng hợp (Bách khoa, UEL, USSH) có công thức thang 100 và máy tính chi tiết (`docs/LUONG_AI_TU_VAN.md`).
+1. **AI tư vấn "giải thích được":** chấm 4 tiêu chí (ngành, điểm, học phí, khu vực) theo mức ưu tiên người dùng chọn. Mỗi điểm số đều có **câu lý do + link nguồn chính thức**. Dữ liệu thiếu **không gán 0** mà loại khỏi mẫu số, đi kèm "độ phủ dữ liệu". Riêng các trường xét tuyển tổng hợp (Bách khoa, UEL, USSH) có công thức thang 100 và máy tính chi tiết (`docs/LUONG_AI_TU_VAN.md`).
 2. **Kiểm soát chất lượng dữ liệu cho AI:** admin đánh dấu `verifiedForAI` cho từng dòng điểm chuẩn; ngành chỉ được tin khi nguồn thuộc tên miền chính thức của trường.
 3. **Tìm kiếm tiếng Việt không dấu + viết tắt** ở backend (`uit`, `bach khoa`, `đại học y dược`), ưu tiên trùng tên viết tắt; lọc học phí có quy đổi học kỳ → năm và ghi chú minh bạch.
 4. **So sánh 2–3 trường** cạnh nhau, tự đánh dấu trường học phí thấp nhất.

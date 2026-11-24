@@ -14,16 +14,15 @@ function RecommendationResults({ results, preferences = {}, children }) {
   }
   return (
     <section className="consult-results" aria-labelledby="results-title" aria-live="polite">
-      <h2 id="results-title">Gợi ý phù hợp — bản thử nghiệm</h2>
+      <h2 id="results-title">Gợi ý phù hợp</h2>
       <p className="muted">Hiển thị {results.ranked.length}/{results.rankedCount} trường đủ dữ liệu xếp hạng. Điểm phù hợp không phải xác suất trúng tuyển.</p>
       <p className="consult-help">Độ phủ khác nhau có thể ảnh hưởng thứ tự: điểm cao với ít dữ liệu chưa thể hiện mức phù hợp toàn diện.</p>
       {!results.ranked.length && <div className="consult-notice" role="status">Chưa có trường đủ dữ liệu để xếp hạng theo lựa chọn hiện tại. Bạn có thể xem nhóm cần bổ sung dữ liệu hoặc thay đổi ngành / ngân sách / năm tham chiếu.</div>}
       {results.ranked.map((r, index) => <article key={r.slug} className="consult-result-card">
-        <div className="consult-result-heading"><h3>{index + 1}. {r.name}</h3><div className="consult-score-badges"><strong>{r.score.toLocaleString('vi-VN')}/100 phù hợp</strong><span>Độ phủ {r.coverage}% ({r.evaluatedCount}/6 tiêu chí)</span></div></div>
+        <div className="consult-result-heading"><h3>{index + 1}. {r.name}</h3><div className="consult-score-badges"><strong>{r.score.toLocaleString('vi-VN')}/100 phù hợp</strong><span>Độ phủ {r.coverage}% ({r.evaluatedCount}/{Object.keys(LABELS).length} tiêu chí)</span></div></div>
         <p>Ngành phù hợp: <strong>{r.major}</strong></p>
         {r.relatedMajors?.length > 0 && <p className="consult-help">Trường còn các ngành liên quan: {r.relatedMajors.join(', ')}.</p>}
         <Link to={`/truong/${r.slug}`} className="btn btn-outline">Xem chi tiết trường<ArrowRight size={16} aria-hidden="true" /></Link>
-        <p className="consult-help">Độ phủ tính theo mức ưu tiên bạn đã chọn. Học phí và điểm là dữ liệu tham chiếu trong seed dự án.</p>
         <dl className="consult-criteria">{Object.entries(r.criteria).map(([key, criterion]) => <div key={key}><dt>{LABELS[key]} {criterion.score !== null && <span className="badge">{criterion.score.toLocaleString('vi-VN', { maximumFractionDigits: 1 })}/100</span>}</dt><dd>{criterion.score === null && <strong>Chưa đủ dữ liệu / không áp dụng. </strong>}{criterion.text} {criterion.source && <a href={criterion.source} target="_blank" rel="noreferrer">Xem nguồn</a>}</dd></div>)}</dl>
         <label className="consult-compare-choice"><input type="checkbox" checked={selected.includes(r.slug)} disabled={!selected.includes(r.slug) && selected.length >= 3} onChange={() => toggle(r.slug)} /> Chọn so sánh</label>
       </article>)}
