@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import { Link, useParams } from 'react-router-dom'
 import { getUniversityDetail } from '../../services/universityDetail'
 import { getErrorMessage } from '../../services/api'
+import useDocumentTitle from '../../hooks/useDocumentTitle'
 import { DetailContent } from './UniversityDetailPages'
 import './UniversityDetail.css'
 
@@ -28,6 +29,7 @@ function UniversityDetail() {
     return () => controller.abort()
   }, [slug, attempt])
   const status = resource.slug === slug && resource.attempt === attempt ? resource.status : 'loading'
+  useDocumentTitle(status === 'ready' ? resource.university.name : status === 'not-found' ? 'Không tìm thấy trường' : null)
   return <div className="university-detail">
     {status === 'loading' ? <div className="ud-state" role="status">Đang tải thông tin trường…</div> : status === 'ready' ? <DetailContent key={slug} university={resource.university} /> : <div className="ud-state" role={status === 'error' ? 'alert' : 'status'}><h1>{status === 'not-found' ? 'Không tìm thấy trường đại học' : 'Không tải được thông tin trường'}</h1><p>{status === 'not-found' ? 'Trường không tồn tại trong hệ thống hoặc đường dẫn không đúng.' : resource.message}</p><div className="ud-state-actions">{status === 'error' && <button type="button" className="btn btn-primary" onClick={() => setAttempt((n) => n + 1)}>Thử lại</button>}<Link className="btn btn-outline" to="/truong">Về danh sách trường</Link></div></div>}
   </div>
