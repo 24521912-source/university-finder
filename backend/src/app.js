@@ -7,6 +7,10 @@ const connectDB = require('./config/db')
 
 const app = express()
 
+// Chạy sau Nginx (một tầng proxy): lấy IP thật của người dùng từ X-Forwarded-For,
+// để giới hạn số lần thử (middlewares/rateLimit.js) đếm theo từng người chứ không theo IP của Nginx.
+app.set('trust proxy', 1)
+
 app.use(cors())
 // 1mb: một trường có thể có vài trăm dòng điểm chuẩn khi admin lưu cả document.
 app.use(express.json({ limit: '1mb' }))
