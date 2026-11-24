@@ -8,6 +8,7 @@
  * @apiName AdminDashboard
  * @apiGroup AdminDashboard
  * @apiVersion 1.0.0
+ * @apiPermission admin
  * @apiDescription Chỉ đọc, tính trực tiếp từ MongoDB mỗi lần gọi. Tài khoản đã xóa mềm không được tính.
  * @apiHeader {String} Authorization `Bearer <token>` của quản trị viên (`admin` hoặc `superadmin`).
  * @apiSuccess {Object} universities `{ total, byType: { public, private, international, other }, byDataLevel: { 1, 2, 3 }, vnuhcm }`.

@@ -5,6 +5,7 @@
  * @apiName Health
  * @apiGroup Health
  * @apiVersion 1.0.0
+ * @apiPermission public
  * @apiDescription Dùng cho giám sát (uptime check, PM2, load balancer).
  * @apiSuccessExample {json} 200:
  *   HTTP/1.1 200 OK
@@ -16,6 +17,7 @@
  * @apiName Register
  * @apiGroup Auth
  * @apiVersion 1.0.0
+ * @apiPermission public
  * @apiDescription Tạo tài khoản mới, luôn có vai trò `user`, rồi trả token để đăng nhập ngay.
  * @apiBody {String} fullName Họ tên.
  * @apiBody {String} email Email (chưa được đăng ký).
@@ -37,6 +39,7 @@
  * @apiName Login
  * @apiGroup Auth
  * @apiVersion 1.0.0
+ * @apiPermission public
  * @apiBody {String} email Email.
  * @apiBody {String} password Mật khẩu.
  * @apiSuccess {String} token JWT, hạn 7 ngày.
@@ -52,6 +55,7 @@
  * @apiName Me
  * @apiGroup Auth
  * @apiVersion 1.0.0
+ * @apiPermission user
  * @apiUse AuthHeader
  * @apiSuccess {Object} user Thông tin tài khoản.
  * @apiUse PublicUser
@@ -63,6 +67,7 @@
  * @apiName UpdateMe
  * @apiGroup Auth
  * @apiVersion 1.0.0
+ * @apiPermission user
  * @apiDescription Chỉ sửa được họ tên; email, vai trò, yêu thích gửi kèm đều bị bỏ qua.
  * @apiUse AuthHeader
  * @apiBody {String{1..100}} fullName Họ tên mới.
@@ -76,6 +81,7 @@
  * @apiName ChangePassword
  * @apiGroup Auth
  * @apiVersion 1.0.0
+ * @apiPermission user
  * @apiUse AuthHeader
  * @apiBody {String} currentPassword Mật khẩu hiện tại.
  * @apiBody {String} newPassword Mật khẩu mới, tối thiểu 6 ký tự, khác mật khẩu hiện tại.

@@ -8,7 +8,7 @@ import { execFileSync } from 'node:child_process'
 import { existsSync, readFileSync } from 'node:fs'
 import { pathToFileURL } from 'node:url'
 
-const DEFAULT_MODEL = 'gemini-2.5-flash'
+const DEFAULT_MODEL = 'gemini-3.8-flash'
 const MAX_DIFF_CHARS = 120_000 // tránh vượt giới hạn token
 const COMMENT_MARKER = '<!-- gemini-code-review -->'
 
@@ -110,6 +110,18 @@ export function formatComment(review, { model, sha, truncated }) {
 
 export const shouldFail = (review) => review.verdict === 'REQUEST_CHANGES'
 
+// Gemini quá tải (503), quá hạn mức theo phút (429) hoặc lỗi máy chủ tạm thời: thử lại thay vì bỏ qua review.
+// Lỗi khác (400 sai yêu cầu, 403 không có quyền, 404 sai tên model) thử lại cũng vô ích.
+const MAX_ATTEMPTS = 4
+export const isRetryableStatus = (status) => status === 429 || status === 500 || status === 503
+
+// Chờ 10, 20, 40 giây giữa các lần thử. Máy chủ gửi Retry-After (giây) thì theo đó, tối đa 60 giây.
+export function retryDelayMs(attempt, retryAfter) {
+  const seconds = Number(retryAfter)
+  if (Number.isFinite(seconds) && seconds > 0) return Math.min(seconds, 60) * 1000
+  return 10_000 * 2 ** (attempt - 1)
+}
+
 // ================= Gọi bên ngoài (git, Gemini, GitHub) =================
 
 function getDiff(base, head) {
@@ -119,16 +131,25 @@ function getDiff(base, head) {
   })
 }
 
+const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms))
+
 async function askGemini({ apiKey, model, prompt }) {
   const url = `https://generativelanguage.googleapis.com/v1beta/models/${encodeURIComponent(model)}:generateContent`
-  const response = await fetch(url, {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json', 'x-goog-api-key': apiKey },
-    body: JSON.stringify({
-      contents: [{ role: 'user', parts: [{ text: prompt }] }],
-      generationConfig: { temperature: 0.2, responseMimeType: 'application/json' },
-    }),
-  })
+  let response
+  for (let attempt = 1; ; attempt++) {
+    response = await fetch(url, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', 'x-goog-api-key': apiKey },
+      body: JSON.stringify({
+        contents: [{ role: 'user', parts: [{ text: prompt }] }],
+        generationConfig: { temperature: 0.2, responseMimeType: 'application/json' },
+      }),
+    })
+    if (response.ok || !isRetryableStatus(response.status) || attempt >= MAX_ATTEMPTS) break
+    const delay = retryDelayMs(attempt, response.headers.get('retry-after'))
+    console.log(`Gemini trả ${response.status} (lần ${attempt}/${MAX_ATTEMPTS}), thử lại sau ${delay / 1000} giây...`)
+    await sleep(delay)
+  }
   if (!response.ok) throw new Error(`Gemini API ${response.status}: ${(await response.text()).slice(0, 300)}`)
   const data = await response.json()
   const text = data.candidates?.[0]?.content?.parts?.map((part) => part.text || '').join('')

@@ -6,6 +6,7 @@
  * @apiName ForgotPassword
  * @apiGroup Auth
  * @apiVersion 1.0.0
+ * @apiPermission public
  * @apiDescription Gửi link `{APP_URL}/dat-lai-mat-khau?token=...` (hết hạn sau 30 phút, dùng một lần).
  * Luôn trả cùng một câu dù email có tài khoản hay không. Gửi lại trong vòng 1 phút thì bỏ qua.
  * @apiBody {String} email Email đã đăng ký.
@@ -20,6 +21,7 @@
  * @apiName ResetPassword
  * @apiGroup Auth
  * @apiVersion 1.0.0
+ * @apiPermission public
  * @apiDescription Đặt mật khẩu mới bằng mã trong email rồi đăng nhập luôn. Các token đăng nhập cũ của tài khoản bị vô hiệu.
  * @apiBody {String} token Mã 64 ký tự hex lấy từ link trong email.
  * @apiBody {String} password Mật khẩu mới, tối thiểu 6 ký tự.

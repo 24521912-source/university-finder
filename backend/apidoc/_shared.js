@@ -10,6 +10,24 @@
 /** @apiDefine AdminUsers Quản trị — Tài khoản */
 /** @apiDefine AdminHistory Quản trị — Lịch sử thay đổi */
 
+// ---------- Quyền truy cập (@apiPermission) ----------
+/**
+ * @apiDefine public Mọi người
+ * Không cần đăng nhập.
+ */
+/**
+ * @apiDefine user Người dùng đã đăng nhập
+ * Cần header `Authorization: Bearer <token>`. Tài khoản bị khóa nhận 403.
+ */
+/**
+ * @apiDefine admin Quản trị viên
+ * Vai trò `admin` hoặc `superadmin` (middleware `requireAdmin`).
+ */
+/**
+ * @apiDefine superadmin Quản trị viên cấp cao
+ * Chỉ vai trò `superadmin`.
+ */
+
 /**
  * @apiDefine AuthHeader
  * @apiHeader {String} Authorization `Bearer <token>` lấy từ đăng nhập / đăng ký.

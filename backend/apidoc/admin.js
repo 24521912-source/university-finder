@@ -7,6 +7,7 @@
  * @apiName AdminListUniversities
  * @apiGroup AdminUniversities
  * @apiVersion 1.0.0
+ * @apiPermission admin
  * @apiUse AdminHeader
  * @apiQuery {String} [q] Tìm theo tên / tên viết tắt / slug.
  * @apiQuery {Number} [page=1] Trang (20 trường / trang).
@@ -23,6 +24,7 @@
  * @apiName AdminGetUniversity
  * @apiGroup AdminUniversities
  * @apiVersion 1.0.0
+ * @apiPermission admin
  * @apiUse AdminHeader
  * @apiParam {String} slug Đường dẫn trường.
  * @apiUse Error404
@@ -33,6 +35,7 @@
  * @apiName AdminCreateUniversity
  * @apiGroup AdminUniversities
  * @apiVersion 1.0.0
+ * @apiPermission admin
  * @apiDescription Chỉ ghi các field cho phép (`EDITABLE` trong admin.service.js). Thao tác được ghi vào lịch sử thay đổi.
  * @apiUse AdminHeader
  * @apiBody {String} slug Đường dẫn (chữ thường, số, gạch nối; không trùng).
@@ -51,6 +54,7 @@
  * @apiName AdminUpdateUniversity
  * @apiGroup AdminUniversities
  * @apiVersion 1.0.0
+ * @apiPermission admin
  * @apiDescription Field gửi lên được ghi đè, field không gửi giữ nguyên. Ghi lịch sử `before` / `after`.
  * @apiUse AdminHeader
  * @apiParam {String} slug Đường dẫn trường.
@@ -63,6 +67,7 @@
  * @apiName AdminDeleteUniversity
  * @apiGroup AdminUniversities
  * @apiVersion 1.0.0
+ * @apiPermission admin
  * @apiDescription Khôi phục được từ lịch sử thay đổi.
  * @apiUse AdminHeader
  * @apiParam {String} slug Đường dẫn trường.
@@ -77,6 +82,7 @@
  * @apiName AdminMajors
  * @apiGroup AdminUniversities
  * @apiVersion 1.0.0
+ * @apiPermission admin
  * @apiUse AdminHeader
  * @apiSuccess {Object[]} body Mảng ngành, mỗi phần tử gồm mã ngành (code) và tên ngành (name).
  */
@@ -88,6 +94,7 @@
  * @apiName AdminListUsers
  * @apiGroup AdminUsers
  * @apiVersion 1.0.0
+ * @apiPermission admin
  * @apiDescription Không gồm tài khoản đã xóa; không bao giờ trả `passwordHash`.
  * @apiUse AdminHeader
  * @apiQuery {String} [q] Tìm theo họ tên / email.
@@ -103,6 +110,7 @@
  * @apiName AdminCreateUser
  * @apiGroup AdminUsers
  * @apiVersion 1.0.0
+ * @apiPermission admin
  * @apiDescription Tài khoản mới luôn là `user`, `mustChangePassword: true` (người dùng được nhắc đổi mật khẩu).
  * @apiUse AdminHeader
  * @apiBody {String} fullName Họ tên.
@@ -117,6 +125,7 @@
  * @apiName AdminSetUserStatus
  * @apiGroup AdminUsers
  * @apiVersion 1.0.0
+ * @apiPermission admin
  * @apiDescription Có hiệu lực ngay ở request kế tiếp của người bị khóa. Quyền theo `denyReason()` trong utils/roles.js.
  * @apiUse AdminHeader
  * @apiParam {String} id ID tài khoản.
@@ -132,6 +141,7 @@
  * @apiName AdminSetUserRole
  * @apiGroup AdminUsers
  * @apiVersion 1.0.0
+ * @apiPermission admin
  * @apiDescription Hạ về `user` thì thu luôn `canManageAdmins`. Không ai đổi được chính mình hoặc `superadmin` qua web.
  * @apiUse AdminHeader
  * @apiParam {String} id ID tài khoản.
@@ -144,6 +154,7 @@
  * @apiName AdminSetUserPermissions
  * @apiGroup AdminUsers
  * @apiVersion 1.0.0
+ * @apiPermission superadmin
  * @apiDescription Chỉ `superadmin`.
  * @apiUse AdminHeader
  * @apiParam {String} id ID tài khoản.
@@ -156,6 +167,7 @@
  * @apiName AdminDeleteUser
  * @apiGroup AdminUsers
  * @apiVersion 1.0.0
+ * @apiPermission admin
  * @apiDescription Xóa mềm (`deletedAt`), khôi phục được từ lịch sử thay đổi.
  * @apiUse AdminHeader
  * @apiParam {String} id ID tài khoản.
@@ -170,6 +182,7 @@
  * @apiName AdminListHistory
  * @apiGroup AdminHistory
  * @apiVersion 1.0.0
+ * @apiPermission admin
  * @apiDescription Mọi thao tác ghi của quản trị viên. Danh sách không kèm `before` / `after`.
  * @apiUse AdminHeader
  * @apiQuery {String} [entity] Loại đối tượng (trường / tài khoản).
@@ -185,6 +198,7 @@
  * @apiName AdminGetHistory
  * @apiGroup AdminHistory
  * @apiVersion 1.0.0
+ * @apiPermission admin
  * @apiUse AdminHeader
  * @apiParam {String} id ID dòng lịch sử.
  * @apiSuccess {Object} before Dữ liệu trước khi đổi.
@@ -198,6 +212,7 @@
  * @apiName AdminRestoreHistory
  * @apiGroup AdminHistory
  * @apiVersion 1.0.0
+ * @apiPermission admin
  * @apiDescription Đưa đối tượng về `before` của dòng đó (dòng "tạo mới" thì xóa đối tượng đã tạo). Việc khôi phục cũng được ghi lịch sử.
  * @apiUse AdminHeader
  * @apiParam {String} id ID dòng lịch sử.
@@ -214,6 +229,7 @@
  * @apiName AdminDeleteHistory
  * @apiGroup AdminHistory
  * @apiVersion 1.0.0
+ * @apiPermission superadmin
  * @apiDescription Chỉ `superadmin` (tránh xóa dấu vết).
  * @apiUse AdminHeader
  * @apiParam {String} id ID dòng lịch sử.
