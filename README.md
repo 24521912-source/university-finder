@@ -50,12 +50,36 @@ Sửa tài liệu trong `backend/apidoc/*.js` khi thêm / đổi API.
 
 ## Chạy bằng PM2 (production)
 
+Cài PM2 global một lần, dùng chung cho mọi dự án Node.js trên máy: `npm install -g pm2`
+
+Chạy các lệnh dưới đây tại thư mục gốc repo (nơi có `process.json`):
+
 ```
-npm install -g pm2                                        # cài global 1 lần
-pm2 start process.json --only unimatch-api --env production   # chạy tại thư mục gốc repo
-pm2 status | pm2 monit | pm2 logs unimatch-api
-pm2 save && pm2 startup                                   # tự chạy lại khi khởi động máy (Linux)
+pm2 start process.json --only unimatch-api --env development   # chạy API với biến env_development
+pm2 start process.json --only unimatch-api --env production    # trên server: biến env_production
+pm2 ps                    # danh sách tiến trình: id, trạng thái, số lần restart, CPU, RAM (= pm2 status)
+pm2 monit                 # theo dõi CPU / RAM / log theo thời gian thực
+pm2 logs unimatch-api     # xem log (ghi vào backend/logs/api-out.log và api-error.log)
+pm2 restart all           # restart mọi tiến trình
+pm2 reload unimatch-api   # restart lần lượt từng instance, không gián đoạn
+pm2 stop <id>             # dừng tiến trình có id tương ứng
+pm2 delete <id>           # xoá tiến trình khỏi danh sách PM2
+pm2 save && pm2 startup   # lưu danh sách và tự chạy lại API khi server khởi động lại (Linux)
 ```
+
+Các tùy chọn trong `process.json` (app `unimatch-api`):
+
+| Tùy chọn | Ý nghĩa |
+|---|---|
+| `exec_mode: cluster`, `instances: 2` | Chạy 2 tiến trình API trên một server, dùng 2 nhân CPU để xử lý request song song. Đổi thành `"max"` để dùng hết số nhân |
+| `env_development`, `env_production` | Biến môi trường theo từng môi trường, chọn bằng `--env`. Mật khẩu (MONGODB_URI, JWT_SECRET, SMTP_PASS) vẫn để trong `backend/.env` để không đưa lên git |
+| `error_file`, `out_file`, `merge_logs` | Ghi log của cả 2 instance vào chung 2 file trong `backend/logs/` |
+| `wait_ready`, `listen_timeout` | PM2 chờ API nối xong database và gửi tín hiệu `ready` mới coi là online (tối đa 15 giây) |
+| `kill_timeout` | Khi stop / reload, API được 5 giây để trả lời nốt request đang chạy rồi mới bị buộc dừng |
+| `max_memory_restart`, `autorestart` | Tự restart khi API vượt 300 MB RAM hoặc bị lỗi dừng đột ngột |
+| `watch: false`, `ignore_watch` | Không tự restart khi file thay đổi (production). Nếu bật watch thì bỏ qua `node_modules`, `public`, `logs` |
+
+Mở rộng: `instances` giúp tận dụng nhiều CPU trên một server. Khi cần nhiều server hơn, chạy cùng `process.json` này trên server A, B, C rồi để Nginx chia request giữa các server (load balancing).
 
 Deploy đầy đủ (domain, DNS, Nginx, HTTPS, cloud): `docs/DEPLOYMENT.md`.
 
