@@ -1,0 +1,148 @@
+.campus-slider {
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 4 / 3;
+  border-radius: 28px;
+  background: var(--primary-light);
+  box-shadow: 0 24px 48px rgba(13, 71, 161, 0.18);
+  isolation: isolate;
+}
+
+.campus-slides,
+.campus-slide {
+  position: absolute;
+  inset: 0;
+  margin: 0;
+}
+
+.campus-slide {
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+.campus-slide.is-active { opacity: 1; }
+
+.campus-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: scale(1.08);
+}
+/* Ken Burns: ảnh đang hiện phóng to/thu lại thật chậm cho có cảm giác chuyển động */
+.campus-slide.is-active img { animation: campus-zoom calc(var(--slide-ms) + 1500ms) ease-out forwards; }
+
+@keyframes campus-zoom {
+  from { transform: scale(1.12) translate(1%, 1%); }
+  to { transform: scale(1) translate(0, 0); }
+}
+
+/* Lớp tối dần ở đáy ảnh để chữ trắng đọc được trên mọi ảnh */
+.campus-slides::after {
+  content: '';
+  position: absolute;
+  inset: 45% 0 0;
+  z-index: 1;
+  background: linear-gradient(to top, rgba(6, 18, 40, 0.78), transparent);
+}
+
+.campus-caption {
+  position: absolute;
+  left: 24px;
+  right: 140px;
+  bottom: 44px;
+  z-index: 2;
+  color: #fff;
+  animation: caption-in 0.7s var(--ease-out) both;
+}
+.campus-caption p { margin: 0; }
+.campus-school { font-size: 18px; font-weight: 700; line-height: 1.35; text-shadow: 0 1px 8px rgba(0, 0, 0, 0.35); }
+.campus-place { display: flex; align-items: center; gap: 4px; margin-top: 4px !important; font-size: 13px; opacity: 0.9; }
+
+@keyframes caption-in {
+  from { opacity: 0; transform: translateY(14px); }
+  to { opacity: 1; transform: none; }
+}
+
+.campus-credit {
+  position: absolute;
+  left: 24px;
+  bottom: 14px;
+  z-index: 2;
+  margin: 0;
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.75);
+}
+.campus-credit a { color: inherit; text-decoration: underline; text-underline-offset: 2px; }
+
+.campus-controls {
+  position: absolute;
+  right: 16px;
+  bottom: 16px;
+  z-index: 2;
+  display: flex;
+  gap: 6px;
+}
+
+.campus-btn {
+  display: grid;
+  place-items: center;
+  width: 38px;
+  height: 38px;
+  padding: 0;
+  border: 1px solid rgba(255, 255, 255, 0.45);
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.16);
+  color: #fff;
+  cursor: pointer;
+  backdrop-filter: blur(6px);
+  transition: background 0.2s, transform 0.2s var(--ease-out);
+}
+.campus-btn:hover { background: rgba(255, 255, 255, 0.32); transform: scale(1.08); }
+.campus-btn:focus-visible { outline: 2px solid #fff; outline-offset: 2px; }
+
+/* Chấm chuyển ảnh ở trên cùng: chấm đang chọn dài ra và chạy thanh thời gian */
+.campus-dots {
+  position: absolute;
+  top: 16px;
+  left: 50%;
+  z-index: 2;
+  display: flex;
+  gap: 6px;
+  transform: translateX(-50%);
+}
+
+.campus-dot {
+  width: 8px;
+  height: 8px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.55);
+  cursor: pointer;
+  transition: width 0.4s var(--ease-out), background 0.2s;
+}
+.campus-dot:hover { background: rgba(255, 255, 255, 0.85); }
+.campus-dot.is-active { width: 34px; background: rgba(255, 255, 255, 0.4); }
+.campus-dot span { display: block; width: 100%; height: 100%; border-radius: inherit; background: #fff; transform-origin: left; transform: scaleX(0); }
+.campus-dot.is-active span { transform: scaleX(1); }
+.campus-slider.is-running .campus-dot.is-active span { animation: dot-progress var(--slide-ms) linear both; }
+.campus-dot:focus-visible { outline: 2px solid #fff; outline-offset: 3px; }
+
+@keyframes dot-progress {
+  from { transform: scaleX(0); }
+  to { transform: scaleX(1); }
+}
+
+@media (max-width: 480px) {
+  .campus-slider { border-radius: 22px; aspect-ratio: 5 / 4; }
+  .campus-caption { left: 18px; right: 18px; bottom: 74px; }
+  .campus-school { font-size: 16px; }
+  .campus-credit { left: 18px; bottom: 26px; max-width: 45%; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .campus-slide { transition: none; }
+  .campus-slide img,
+  .campus-slide.is-active img { animation: none; transform: none; }
+  .campus-caption { animation: none; }
+}
