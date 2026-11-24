@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "REST API của hệ thống tra cứu và tư vấn chọn trường đại học tại TP.HCM",
   "title": "UniMatch HCMC — Tài liệu API",
-  "url": "http://localhost:5000/api",
+  "url": "https://unimatch.tech/api",
   "header": {
     "title": "Giới thiệu",
     "filename": "apidoc/HEADER.md"
