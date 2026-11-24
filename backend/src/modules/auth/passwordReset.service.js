@@ -17,8 +17,20 @@ const hashToken = (token) => crypto.createHash('sha256').update(token).digest('h
 
 const escapeHtml = (text) => String(text).replace(/[&<>"']/g, (c) => `&#${c.charCodeAt(0)};`)
 
-function resetLink(token) {
-  const base = (process.env.APP_URL || 'http://localhost:5173').replace(/\/+$/, '')
+// APP_URL phải là địa chỉ web đầy đủ (vd. http://localhost:5173 hoặc https://unimatch.tech).
+// Sai định dạng thì báo lỗi ngay, không gửi email chứa link hỏng.
+const APP_URL_PATTERN = /^https?:\/\/[a-z0-9.-]+(:\d+)?(\/[\w./-]*)?$/i
+
+function appBaseUrl() {
+  const raw = (process.env.APP_URL || 'http://localhost:5173').trim()
+  if (!APP_URL_PATTERN.test(raw)) {
+    console.error(`[mail] APP_URL trong backend/.env không hợp lệ: "${raw}". Ví dụ đúng: http://localhost:5173`)
+    throw httpError(503, 'Chức năng gửi email chưa được cấu hình đúng. Vui lòng liên hệ quản trị viên')
+  }
+  return raw.replace(/\/+$/, '')
+}
+
+function resetLink(token, base = appBaseUrl()) {
   return `${base}/dat-lai-mat-khau?token=${token}`
 }
 
@@ -48,6 +60,7 @@ function resetEmail(user, link) {
 // Không cho biết email có tài khoản hay không: trường hợp nào cũng trả về bình thường.
 async function requestReset({ email }, now = new Date()) {
   if (!mailer.canSend()) throw httpError(503, 'Chức năng gửi email chưa được cấu hình. Vui lòng liên hệ quản trị viên')
+  const base = appBaseUrl() // APP_URL sai thì dừng trước khi tạo mã, không gửi link hỏng
 
   const user = await User.findOne({ email: email.trim().toLowerCase() }).select('+resetRequestedAt')
   if (!user || user.deletedAt || user.status === 'locked') return
@@ -61,7 +74,7 @@ async function requestReset({ email }, now = new Date()) {
   await user.save()
 
   try {
-    await mailer.sendMail(resetEmail(user, resetLink(token)))
+    await mailer.sendMail(resetEmail(user, resetLink(token, base)))
   } catch (error) {
     console.error('[mail] Gửi thư đặt lại mật khẩu thất bại:', error.message)
     user.resetTokenHash = user.resetTokenExpiresAt = user.resetRequestedAt = undefined
