@@ -6,8 +6,8 @@
 /* ---------- Skip link: phần tử focus đầu tiên của trang ---------- */
 .skip-link {
   position: absolute; left: 16px; top: -100px; z-index: 100;
-  padding: 10px 16px; border-radius: 10px;
-  background: var(--surface); color: var(--primary-dark);
+  padding: 10px 16px; border-radius: 999px;
+  background: var(--surface); color: var(--primary-strong);
   font-weight: 600; box-shadow: var(--shadow);
 }
 .skip-link:focus { top: 8px; }
@@ -15,7 +15,11 @@
 #main-content:focus { outline: none; }
 
 /* ---------- Header (gốc: điện thoại) ---------- */
-.site-header { position: sticky; top: 0; z-index: 10; background: var(--header-bg); color: var(--on-primary); }
+.site-header {
+  position: sticky; top: 0; z-index: 10;
+  background: var(--header-bg); color: var(--on-primary);
+  box-shadow: 0 6px 20px rgba(8, 30, 66, 0.18);
+}
 .site-header :focus-visible { outline-color: var(--on-primary); } /* viền focus thấy được trên nền xanh đậm */
 
 .header-inner {
@@ -24,23 +28,45 @@
 }
 
 .brand { display: flex; align-items: center; gap: 10px; color: var(--on-primary); font-weight: 700; font-size: 18px; white-space: nowrap; }
-.brand-logo { width: 32px; height: 32px; border-radius: 8px; background: var(--primary); display: grid; place-items: center; }
+.brand-logo {
+  width: 34px; height: 34px; border-radius: 12px; background: var(--primary);
+  display: grid; place-items: center; transition: transform 0.4s var(--ease-out);
+}
 .brand-logo svg { width: 18px; height: 18px; }
+.brand:hover .brand-logo { transform: rotate(-10deg) scale(1.08); }
 
 .menu-toggle {
   display: inline-grid; place-items: center; width: 44px; height: 44px;
-  border: 1px solid var(--header-border); border-radius: 10px;
+  border: 1px solid var(--header-border); border-radius: 14px;
   background: transparent; color: var(--on-primary); cursor: pointer;
 }
 .menu-toggle:hover { background: var(--header-hover); }
 .menu-toggle svg { width: 22px; height: 22px; }
+
+/* Nút đổi giao diện sáng/tối: mặt trời và mặt trăng xoay qua lại */
+.theme-toggle {
+  position: relative; display: inline-grid; place-items: center; overflow: hidden;
+  width: 40px; height: 40px; margin-left: auto; margin-right: 8px;
+  border: 1px solid var(--header-border); border-radius: 50%;
+  background: transparent; color: var(--on-primary); cursor: pointer;
+  transition: background 0.2s;
+}
+.theme-toggle:hover { background: var(--header-hover); }
+.theme-icon { position: absolute; transition: transform 0.5s var(--ease-out), opacity 0.3s; }
+.theme-icon-moon { transform: rotate(-90deg) scale(0.4); opacity: 0; }
+:root[data-theme='dark'] .theme-icon-sun { transform: rotate(90deg) scale(0.4); opacity: 0; }
+:root[data-theme='dark'] .theme-icon-moon { transform: none; opacity: 1; }
 
 /* Menu di động: ẩn, mở thành khối dọc dưới thanh header khi có class is-open */
 .nav-panel { display: none; flex-basis: 100%; padding: 8px 0 16px; border-top: 1px solid var(--header-divider); }
 .nav-panel.is-open { display: block; }
 
 .nav-list { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 4px; }
-.nav-list a { display: block; padding: 10px 14px; border-radius: 8px; color: var(--on-primary); font-weight: 500; font-size: 15px; }
+.nav-list a {
+  display: block; padding: 10px 16px; border-radius: 999px;
+  color: var(--on-primary); font-weight: 500; font-size: 15px;
+  transition: background 0.2s, color 0.2s;
+}
 .nav-list a:hover { background: var(--header-hover); }
 .nav-list a.active { background: var(--nav-active-bg); color: var(--nav-active-text); }
 
@@ -52,16 +78,17 @@
 .header-actions .btn { padding: 8px 16px; font-size: 14px; }
 .btn-ghost { background: transparent; color: var(--on-primary); border-color: var(--header-border); }
 .btn-ghost:hover { background: var(--header-hover); }
-.btn-light { background: var(--surface); color: var(--primary-dark); }
+.btn-light { background: #fff; color: #0d47a1; } /* header luôn nền đậm nên nút này giữ màu trắng ở cả hai giao diện */
 
 /* ---------- Header (máy tính ≥ 960px): logo · menu ngang · tài khoản ---------- */
 @media (min-width: 960px) {
   .menu-toggle { display: none; }
+  .theme-toggle { order: 3; margin: 0 0 0 4px; }
   .nav-panel,
   .nav-panel.is-open { display: flex; flex: 1; flex-basis: auto; align-items: center; gap: 24px; padding: 0; border: 0; }
   .nav-list { flex-direction: row; margin: 0 auto; }
   .nav-list a { padding: 8px 14px; }
-  .header-actions { flex-wrap: nowrap; margin: 0; padding: 0; border: 0; }
+  .header-actions { flex-wrap: nowrap; margin: 0 0 0 auto; padding: 0; border: 0; }
   .header-user { flex-basis: auto; max-width: 160px; }
 }
 
@@ -81,12 +108,15 @@
 }
 
 /* ---------- Trang đăng nhập / đăng ký ---------- */
-.auth-card { max-width: 420px; margin: 0 auto; background: var(--surface); border-radius: 16px; box-shadow: var(--shadow); padding: 32px; }
+.auth-card { max-width: 420px; margin: 0 auto; background: var(--surface); border-radius: var(--radius-lg); box-shadow: var(--shadow); padding: 32px; }
 .auth-card h1 { font-size: 24px; }
+.auth-card { position: relative; animation: page-enter 0.6s var(--ease-out); }
+.auth-sticker { top: -30px; right: -24px; }
+@media (max-width: 480px) { .auth-sticker { right: -6px; } }
 .auth-switch { text-align: center; margin: 16px 0 0; font-size: 14px; color: var(--muted); }
 
 /* ---------- Trang chưa làm ---------- */
-.coming-soon { text-align: center; padding: 64px 16px; background: var(--surface); border-radius: 16px; box-shadow: var(--shadow); }
+.coming-soon { text-align: center; padding: 64px 16px; background: var(--surface); border-radius: var(--radius-lg); box-shadow: var(--shadow); }
 
 /* ---------- Nhắc đổi mật khẩu tạm (tài khoản do quản trị viên tạo hộ) ---------- */
 .temp-password-banner {

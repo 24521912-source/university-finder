@@ -20,7 +20,7 @@
   color: var(--muted); font-size: 12px; font-variant-numeric: tabular-nums;
 }
 button.uni-fav { cursor: pointer; }
-button.uni-fav:hover { background: #fdecea; color: var(--danger); }
+button.uni-fav:hover { background: var(--danger-bg); color: var(--danger); }
 .uni-fav.is-active { color: var(--danger); }
 
 .uni-district { display: flex; align-items: center; gap: 6px; margin: 0; color: var(--muted); font-size: 14px; }
