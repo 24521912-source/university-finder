@@ -10,7 +10,7 @@
 | **Khách** | Học sinh, phụ huynh truy cập web, chưa đăng nhập | Không có token |
 | **Người dùng** | Đã đăng ký tài khoản và đăng nhập | `role = user` |
 
-Khách dùng được mọi chức năng **tra cứu**. Các chức năng **cá nhân hóa** (yêu thích, checklist hồ sơ, trang cá nhân) cần đăng nhập.
+Khách dùng được mọi chức năng **tra cứu**. Các chức năng **cá nhân hóa** (yêu thích, trang cá nhân) cần đăng nhập.
 
 ## 2. Danh sách chức năng
 
@@ -18,14 +18,13 @@ Khách dùng được mọi chức năng **tra cứu**. Các chức năng **cá 
 |---|---|:---:|:---:|---|
 | 1 | Xem trang chủ | ✔ | ✔ | `/` |
 | 2 | Tìm kiếm và lọc trường (tên, ngành, học phí, khu vực, loại trường, ĐHQG) | ✔ | ✔ | `/truong` |
-| 3 | Xem chi tiết trường (tổng quan, ngành, điểm chuẩn, học phí, tuyển sinh, cơ sở, liên hệ) | ✔ | ✔ | `/truong/:slug` |
+| 3 | Xem chi tiết trường (tổng quan, ngành, điểm chuẩn, học phí, cơ sở, liên hệ) | ✔ | ✔ | `/truong/:slug` |
 | 4 | So sánh 2–3 trường | ✔ | ✔ | `/so-sanh` |
 | 5 | AI tư vấn chọn trường | ✔ | ✔ | `/ai-tu-van` |
 | 6 | Đăng ký tài khoản | ✔ | — | `/dang-ky` |
 | 7 | Đăng nhập / đăng xuất | ✔ | ✔ | `/dang-nhap` |
 | 8 | Lưu / bỏ trường yêu thích | → yêu cầu đăng nhập | ✔ | thẻ trường, trang chi tiết |
-| 9 | Checklist hồ sơ tuyển sinh | → yêu cầu đăng nhập | ✔ | `/truong/:slug/tuyen-sinh` |
-| 10 | Quản lý tài khoản: sửa họ tên, đổi mật khẩu, xem trường yêu thích | → yêu cầu đăng nhập | ✔ | `/ca-nhan` |
+| 9 | Quản lý tài khoản: sửa họ tên, đổi mật khẩu, xem trường yêu thích | → yêu cầu đăng nhập | ✔ | `/ca-nhan` |
 
 > Người dùng tự đăng ký, tài khoản mới luôn có vai trò `user`. Vai trò quản trị chỉ do quản trị viên cấp.
 
@@ -53,7 +52,7 @@ Khách dùng được mọi chức năng **tra cứu**. Các chức năng **cá 
 ### 3.2. Xem chi tiết trường
 
 1. Từ thẻ trường, người dùng bấm **Xem chi tiết**.
-2. Hệ thống tải hồ sơ công khai (`GET /api/universities/:slug`) và hiện các mục: tổng quan, ngành đào tạo, điểm chuẩn, tuyển sinh, học phí, cơ sở – vị trí, liên hệ.
+2. Hệ thống tải hồ sơ công khai (`GET /api/universities/:slug`) và hiện các mục: tổng quan, ngành đào tạo, điểm chuẩn, học phí, cơ sở – vị trí, liên hệ.
 3. Slug sai hoặc trường không tồn tại → trang báo "Không tìm thấy trường đại học".
 
 ### 3.3. So sánh trường
@@ -111,11 +110,6 @@ Danh sách đã chọn được giữ trong phiên làm việc (sessionStorage) 
 2. **Sửa họ tên:** nhập tên mới (≤ 100 ký tự) → `PUT /api/auth/me`.
 3. **Đổi mật khẩu:** nhập mật khẩu hiện tại + mật khẩu mới (≥ 6 ký tự, khác mật khẩu cũ) → `PUT /api/auth/password`.
 4. Xem và bỏ các trường đã lưu yêu thích.
-
-### 3.9. Checklist hồ sơ tuyển sinh
-
-1. Ở mục **Tuyển sinh** của trang chi tiết, người dùng đã đăng nhập đánh dấu các giấy tờ đã chuẩn bị.
-2. Checklist lưu trong trình duyệt theo tài khoản + trường + năm (chưa lưu lên máy chủ). Nội dung tuyển sinh hiện là **dữ liệu minh họa** (có nhãn trên giao diện).
 
 ---
 

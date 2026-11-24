@@ -9,7 +9,6 @@ import Home from '../pages/Home/Home'
 // (MainLayout bọc <Suspense> quanh nội dung trang). Trang bản đồ còn kéo theo Leaflet (~150 kB).
 const Universities = lazy(() => import('../pages/Universities/Universities'))
 const UniversityDetail = lazy(() => import('../pages/UniversityDetail/UniversityDetail'))
-const AdmissionPreview = lazy(() => import('../pages/UniversityDetail/AdmissionPreview'))
 const AI = lazy(() => import('../pages/AI/AI'))
 const Compare = lazy(() => import('../pages/Compare/Compare'))
 const MapPage = lazy(() => import('../pages/Map/MapPage'))
@@ -29,7 +28,6 @@ function AppRoutes() {
           <Route path="/" element={<Home />} />
           <Route path="/truong" element={<Universities />} />
           <Route path="/truong/:slug/:section?" element={<UniversityDetail />} />
-          <Route path="/demo/tuyen-sinh" element={<AdmissionPreview />} />
           <Route path="/ai-tu-van" element={<AI />} />
           <Route path="/so-sanh" element={<Compare />} />
           <Route path="/ban-do" element={<MapPage />} />

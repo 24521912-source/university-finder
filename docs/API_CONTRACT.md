@@ -178,8 +178,6 @@ Trả hồ sơ công khai của một trường theo slug để hiển thị tra
 - `404`: `{ "message": "Không tìm thấy trường đại học" }` nếu slug sai định dạng hoặc trường không tồn tại.
 - API này chỉ đọc, không thay đổi dữ liệu trường.
 
-Trang tuyển sinh hiện là bản demo frontend có nhãn dữ liệu minh họa. Checklist cá nhân chỉ dành cho người đã đăng nhập và lưu trong trình duyệt theo tài khoản, trường, năm; chưa có API ghi checklist hoặc dữ liệu tuyển sinh mẫu vào database.
-
 ### `GET /universities/recommendation-data`
 
 Dữ liệu trang AI tư vấn dùng để chấm điểm, đọc trực tiếp MongoDB: mảng các trường với `slug`, `name`, `shortName`, `institutionType`, `belongsToUniversitySystem`, `dataLevel`, `address.district`, `majors`, `tuition`, `admissions`. Chỉ đọc.

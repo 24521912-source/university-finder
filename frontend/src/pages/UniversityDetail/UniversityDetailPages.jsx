@@ -8,14 +8,12 @@ import { useFavorites } from '../../features/favorites/useFavorites'
 import UniversityLogo from '../../components/UniversityLogo'
 import { ArrowRight, ArrowUpRight, ChevronLeft, ExternalLink, Heart } from 'lucide-react'
 import MajorAdmissions from './MajorAdmissions'
-import AdmissionDemo from './AdmissionDemo'
 import TuitionTable from './TuitionTable'
 const LocationMap = lazy(() => import('./LocationMap')) // Leaflet chỉ tải khi mở mục Cơ sở & vị trí
 
 const PAGES = [
   ['tong-quan', 'Tổng quan', 'Tìm hiểu về trường và các thông tin cơ bản.'],
   ['nganh-dao-tao', 'Ngành & điểm chuẩn', 'Tra cứu ngành, chương trình và điểm chuẩn theo năm.'],
-  ['tuyen-sinh', 'Tuyển sinh', 'Phương thức, mốc thời gian và hướng dẫn đăng ký tuyển sinh.'],
   ['hoc-phi', 'Học phí', 'Xem mức phí, năm học và phạm vi áp dụng.'],
   ['co-so-vi-tri', 'Cơ sở & vị trí', 'Địa chỉ các cơ sở và điều kiện học tập.'],
   ['lien-he', 'Liên hệ', 'Kết nối với trường và bộ phận tư vấn tuyển sinh.'],
@@ -71,6 +69,8 @@ export function DetailContent({ university: u }) {
   const contact = u.contact || {}
   const badges = introBadges(u, profile)
   if (section === 'diem-chuan') return <Navigate to={`${base}/nganh-dao-tao`} replace />
+  // Mục Tuyển sinh (bản demo dữ liệu minh họa) đã bỏ: link cũ chuyển về Tổng quan.
+  if (section === 'tuyen-sinh') return <Navigate to={base} replace />
   return <div className="ud-shell ud-redesign">
     <div className="ud-breadcrumb"><Link to="/truong"><ChevronLeft size={16} aria-hidden="true" />Danh sách trường</Link><span aria-hidden="true">/</span><span>{u.shortName || u.name}</span></div>
     <header className="ud-profile"><div className="ud-profile-body">
@@ -91,7 +91,6 @@ export function DetailContent({ university: u }) {
         <div className="ud-explore">{PAGES.slice(1).map(([id, label, description]) => <Link key={id} to={`${base}/${id}`} className="ud-explore-card"><h3>{label}<ArrowUpRight size={18} aria-hidden="true" /></h3><p>{description}</p></Link>)}</div>
       </>}
       {active === 'nganh-dao-tao' && <section className="ud-section"><MajorAdmissions data={data} /></section>}
-      {active === 'tuyen-sinh' && <AdmissionDemo base={base} admissionsUrl={contact.admissionsUrl} />}
       {active === 'hoc-phi' && <TuitionTable data={data} />}
       {active === 'co-so-vi-tri' && <>
         <section className="ud-section"><h3>Vị trí & cơ sở đào tạo</h3><div className="ud-location"><span aria-hidden="true">⌖</span><p><strong>Trụ sở: </strong>{text(profile.address) || MISSING}</p></div>{profile.campuses?.length > 0 && <><InformationList items={profile.campuses} fields={[["name", ''], ['address', 'Địa chỉ']]} />{verified && <Source href={sources.overview}>Nguồn địa chỉ</Source>}</>}<Suspense fallback={<p className="ud-muted" role="status">Đang tải bản đồ…</p>}><LocationMap university={u} /></Suspense><p className="ud-muted">Nơi học có thể khác nhau theo ngành và chương trình. Liên hệ trường để xác nhận cơ sở học.</p></section>
@@ -100,6 +99,6 @@ export function DetailContent({ university: u }) {
       </>}
       {active === 'lien-he' && <section className="ud-section"><h3>Kênh liên hệ của trường</h3><dl className="ud-contact">{[['Website', contact.website, true], ['Trang tuyển sinh', contact.admissionsUrl, true], ['Điện thoại', profile.phone], ['Email', contact.email], ['Điện thoại tuyển sinh', contact.admissionsPhone], ['Email tuyển sinh', contact.admissionsEmail]].filter(([, value]) => text(value)).map(([label, value, url]) => <div key={label}><dt>{label}</dt><dd>{url ? <Source href={value}>{value}</Source> : value}</dd></div>)}</dl>{![contact.website, contact.admissionsUrl, profile.phone, contact.email, contact.admissionsPhone, contact.admissionsEmail].some(text) && <p className="ud-empty">{MISSING}</p>}{verified && <p className="ud-muted"><Source href={sources.contact}>Nguồn liên hệ chung</Source> · <Source href={sources.admissionsContact}>Nguồn liên hệ tuyển sinh</Source></p>}</section>}
     </div>
-    <footer className="ud-detail-footer"><p>{active === 'tuyen-sinh' ? 'Bản demo tuyển sinh dùng dữ liệu minh họa.' : 'Thông tin tham khảo từ hồ sơ trường. Năm và nguồn được ghi tại từng mục.'}</p><Link to="/ai-tu-van" className="ud-ext-link">Tư vấn chọn trường với AI<ArrowRight size={14} aria-hidden="true" /></Link></footer>
+    <footer className="ud-detail-footer"><p>Thông tin tham khảo từ hồ sơ trường. Năm và nguồn được ghi tại từng mục.</p><Link to="/ai-tu-van" className="ud-ext-link">Tư vấn chọn trường với AI<ArrowRight size={14} aria-hidden="true" /></Link></footer>
   </div>
 }
