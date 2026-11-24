@@ -3,6 +3,7 @@ import { Link, useLocation, useNavigate } from 'react-router-dom'
 import { useAuth } from '../../features/auth/AuthContext'
 import { getErrorMessage } from '../../services/api'
 import { loginDestination } from '../../features/auth/loginDestination'
+import Sticker from '../../components/Sticker'
 import '../PasswordReset/PasswordReset.css'
 
 function Login() {
@@ -32,6 +33,7 @@ function Login() {
   return (
     <div className="container">
       <form className="auth-card" onSubmit={handleSubmit}>
+        <Sticker name="cap" size={64} tilt={12} className="auth-sticker" />
         <h1>Đăng nhập</h1>
         <p className="muted">Đăng nhập để lưu trường yêu thích và lịch sử tư vấn.</p>
 
