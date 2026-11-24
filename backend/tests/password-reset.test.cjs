@@ -188,3 +188,13 @@ test('Mailer: local chưa cấu hình thì in ra terminal, production chưa cấ
   assert.equal(sent[0].options.secure, true)
   assert.equal(sent[0].mail.from, 'UniMatch HCMC <bot@gmail.com>')
 })
+
+test('APP_URL sai định dạng: 503, không tạo mã, không gửi link hỏng', async () => {
+  for (const APP_URL of ['link của web', 'unimatch.tech', 'ftp://unimatch.tech']) {
+    const account = { email: 'a@b.c', status: 'active' }
+    const { service, mails, calls } = makeService({ account, env: { APP_URL } })
+    await assert.rejects(service.requestReset({ email: 'a@b.c' }, NOW), (e) => e.status === 503)
+    assert.equal(mails.length, 0)
+    assert.equal(calls.filters.length, 0)
+  }
+})

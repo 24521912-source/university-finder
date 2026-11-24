@@ -1,3 +1,5 @@
+const { passwordError } = require('../../utils/passwordPolicy')
+
 const EMAIL = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
 const isText = (value) => typeof value === 'string' && value.trim() !== ''
 
@@ -6,8 +8,7 @@ function validateRegister({ fullName, email, password, role } = {}) {
   if (role !== undefined && role !== 'user') return 'Đăng ký công khai chỉ cho phép vai trò user'
   if (!isText(fullName)) return 'Vui lòng nhập họ tên'
   if (typeof email !== 'string' || !EMAIL.test(email.trim())) return 'Email không hợp lệ'
-  if (typeof password !== 'string' || password.length < 6) return 'Mật khẩu tối thiểu 6 ký tự'
-  return null
+  return passwordError(password, { email })
 }
 
 function validateLogin({ email, password } = {}) {
@@ -26,9 +27,8 @@ function validateProfile({ fullName } = {}) {
 
 function validatePasswordChange({ currentPassword, newPassword } = {}) {
   if (typeof currentPassword !== 'string' || !currentPassword) return 'Vui lòng nhập mật khẩu hiện tại'
-  if (typeof newPassword !== 'string' || newPassword.length < 6) return 'Mật khẩu mới tối thiểu 6 ký tự'
-  if (newPassword === currentPassword) return 'Mật khẩu mới phải khác mật khẩu hiện tại'
-  return null
+  if (typeof newPassword === 'string' && newPassword === currentPassword) return 'Mật khẩu mới phải khác mật khẩu hiện tại'
+  return passwordError(newPassword, { label: 'Mật khẩu mới' })
 }
 
 // Mã đặt lại mật khẩu: 32 byte ngẫu nhiên dạng hex (xem passwordReset.service.js).
@@ -42,8 +42,7 @@ function validateForgotPassword({ email } = {}) {
 
 function validateResetPassword({ token, password } = {}) {
   if (typeof token !== 'string' || !RESET_TOKEN.test(token)) return INVALID_LINK
-  if (typeof password !== 'string' || password.length < 6) return 'Mật khẩu mới tối thiểu 6 ký tự'
-  return null
+  return passwordError(password, { label: 'Mật khẩu mới' })
 }
 
 module.exports = {

@@ -337,5 +337,6 @@ MongoDB Atlas là nguồn dữ liệu duy nhất: frontend không đọc file `d
 - `npm run seed -- --overwrite`: ghi thật. Chỉ ghi field có nội dung khác database (giữ `_id` của các dòng không đổi). Không có `--overwrite` thì seed dừng nếu database đã có dữ liệu.
 - ⚠️ Field nào khác giữa seed và database sẽ bị **thay bằng bản seed**, kể cả bản admin vừa sửa trên web. Luôn chạy `--dry-run` trước.
 - Trường Bách khoa có `detailEvidence` (danh sách bản ghi đã duyệt theo `_id`, nhóm mã xét tuyển, link nguồn). Dòng điểm chuẩn / học phí mới chỉ hiện trên trang chi tiết Bách khoa khi được thêm vào đây (admin sửa được ở mục "Dữ liệu duyệt riêng").
+- Trường Công nghệ Thông tin (UIT) có `detailEvidence` gồm `sources`, `profile`, `content` (không có nhóm mã xét tuyển): địa chỉ, cơ sở, cơ sở vật chất, học bổng, đời sống sinh viên, cơ hội nghề nghiệp chỉ hiện khi khớp bản đã duyệt. Điểm chuẩn và học phí UIT vẫn theo quy tắc chung. Dữ liệu gốc: `database/seeds/details/cong-nghe-thong-tin-dhqg.json`, ghi bằng `node src/applyUniversityDetail.js <file> --apply`.
 
 <!-- Thêm API mới bên dưới theo cùng mẫu: phương thức + đường dẫn, body, response, lỗi. Đánh dấu 🔒 nếu cần đăng nhập, 🛡️ nếu chỉ quản trị viên. -->

@@ -2,7 +2,7 @@ import { lazy, Suspense, useEffect, useRef } from 'react'
 import { Link, Navigate, NavLink, useParams } from 'react-router-dom'
 import { MISSING, asArray, detailData, text } from '../../utils/universityDetail'
 import { profilePolicy, safeUrl } from '../../utils/universityDetailPolicy'
-import { hcmutContent, hcmutSources } from '../../utils/hcmutDetail'
+import { evidenceContent, evidenceSources } from '../../utils/detailEvidence'
 import { introBadges } from '../../utils/universityIntro'
 import { useFavorites } from '../../features/favorites/useFavorites'
 import UniversityLogo from '../../components/UniversityLogo'
@@ -19,6 +19,13 @@ const PAGES = [
   ['hoc-phi', 'Học phí', 'Xem mức phí, năm học và phạm vi áp dụng.'],
   ['co-so-vi-tri', 'Cơ sở & vị trí', 'Địa chỉ các cơ sở và điều kiện học tập.'],
   ['lien-he', 'Liên hệ', 'Kết nối với trường và bộ phận tư vấn tuyển sinh.'],
+]
+
+// Mục chỉ hiện với trường có dữ liệu đã duyệt (detailEvidence): [field, tiêu đề, các dòng hiển thị, khóa nguồn, nhãn nguồn]
+const VERIFIED_SECTIONS = [
+  ['scholarships', 'Học bổng', [['name', ''], ['value', 'Giá trị'], ['eligibility', 'Đối tượng'], ['description', '']], 'scholarship', 'Nguồn học bổng'],
+  ['studentLife', 'Đời sống sinh viên', [['name', ''], ['description', '']], 'studentLife', 'Nguồn hoạt động sinh viên'],
+  ['careerOpportunities', 'Cơ hội nghề nghiệp', [['field', ''], ['description', '']], 'career', 'Nguồn cơ hội nghề nghiệp'],
 ]
 
 function Source({ href, children = 'Xem nguồn' }) {
@@ -58,8 +65,8 @@ export function DetailContent({ university: u }) {
   }, [active])
   const data = detailData(u)
   const profile = profilePolicy(u)
-  const verified = hcmutContent(u)
-  const sources = hcmutSources(u)
+  const verified = evidenceContent(u)
+  const sources = evidenceSources(u)
   const content = verified || u
   const contact = u.contact || {}
   const badges = introBadges(u, profile)
@@ -80,6 +87,7 @@ export function DetailContent({ university: u }) {
         <section className="ud-section"><h3>Giới thiệu về trường</h3><p className="ud-intro-text">{text(profile.description) || 'Chưa có thông tin giới thiệu về trường.'}</p>{verified && <Source href={sources.overview}>Nguồn giới thiệu</Source>}
           <dl className="ud-contact ud-basic-info">{[['Hệ thống đại học', profile.universitySystem], ['Địa chỉ trụ sở', profile.address]].filter(([, value]) => text(value)).map(([label, value]) => <div key={label}><dt>{label}</dt><dd>{value}</dd></div>)}</dl>
         </section>
+        {verified && VERIFIED_SECTIONS.filter(([key]) => verified[key].length > 0).map(([key, title, fields, sourceKey, sourceLabel]) => <section key={key} className="ud-section"><h3>{title}</h3><InformationList items={verified[key]} fields={fields} /><Source href={sources[sourceKey]}>{sourceLabel}</Source></section>)}
         <div className="ud-explore">{PAGES.slice(1).map(([id, label, description]) => <Link key={id} to={`${base}/${id}`} className="ud-explore-card"><h3>{label}<ArrowUpRight size={18} aria-hidden="true" /></h3><p>{description}</p></Link>)}</div>
       </>}
       {active === 'nganh-dao-tao' && <section className="ud-section"><MajorAdmissions data={data} /></section>}
@@ -88,6 +96,7 @@ export function DetailContent({ university: u }) {
       {active === 'co-so-vi-tri' && <>
         <section className="ud-section"><h3>Vị trí & cơ sở đào tạo</h3><div className="ud-location"><span aria-hidden="true">⌖</span><p><strong>Trụ sở: </strong>{text(profile.address) || MISSING}</p></div>{profile.campuses?.length > 0 && <><InformationList items={profile.campuses} fields={[["name", ''], ['address', 'Địa chỉ']]} />{verified && <Source href={sources.overview}>Nguồn địa chỉ</Source>}</>}<Suspense fallback={<p className="ud-muted" role="status">Đang tải bản đồ…</p>}><LocationMap university={u} /></Suspense><p className="ud-muted">Nơi học có thể khác nhau theo ngành và chương trình. Liên hệ trường để xác nhận cơ sở học.</p></section>
         <section className="ud-section"><h3>Cơ sở vật chất</h3><InformationList items={content.facilities} fields={[["name", ''], ['description', '']]} />{verified && <p><Source href={sources.library}>Nguồn thư viện</Source> · <Source href={sources.overview}>Nguồn cơ sở vật chất</Source></p>}</section>
+        {text(verified?.dormitory?.description) && <section className="ud-section"><h3>Ký túc xá</h3><p>{verified.dormitory.description}</p><Source href={sources.dormitory}>Nguồn ký túc xá</Source></section>}
       </>}
       {active === 'lien-he' && <section className="ud-section"><h3>Kênh liên hệ của trường</h3><dl className="ud-contact">{[['Website', contact.website, true], ['Trang tuyển sinh', contact.admissionsUrl, true], ['Điện thoại', profile.phone], ['Email', contact.email], ['Điện thoại tuyển sinh', contact.admissionsPhone], ['Email tuyển sinh', contact.admissionsEmail]].filter(([, value]) => text(value)).map(([label, value, url]) => <div key={label}><dt>{label}</dt><dd>{url ? <Source href={value}>{value}</Source> : value}</dd></div>)}</dl>{![contact.website, contact.admissionsUrl, profile.phone, contact.email, contact.admissionsPhone, contact.admissionsEmail].some(text) && <p className="ud-empty">{MISSING}</p>}{verified && <p className="ud-muted"><Source href={sources.contact}>Nguồn liên hệ chung</Source> · <Source href={sources.admissionsContact}>Nguồn liên hệ tuyển sinh</Source></p>}</section>}
     </div>

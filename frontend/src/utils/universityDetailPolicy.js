@@ -1,7 +1,7 @@
 // Quy tắc hiển thị từ database/seeds/DATA_NOTES.md, không thêm thông tin trường.
 // Nguồn tin cậy lấy từ database: university.sourceDomains và admissions[].verifiedForAI.
 import { UNCERTAIN_MAJORS } from '../features/recommendations/config'
-import { hcmutProfile } from './hcmutDetail.js'
+import { evidenceProfile } from './detailEvidence.js'
 
 export function safeUrl(value) {
   if (typeof value !== 'string') return null
@@ -72,7 +72,7 @@ export function profilePolicy(u) {
     // Hiện model không có bằng chứng xác minh tọa độ/cơ sở theo ngành.
     // Tọa độ OSM trong seed không đủ để khẳng định vị trí đã được xác minh.
     map: null,
-    // Ngoại lệ riêng theo giá trị đã đối chiếu, không mở domain/mã ngành cho AI.
-    ...hcmutProfile(u),
+    // Ngoại lệ riêng theo giá trị đã đối chiếu (detailEvidence), không mở domain/mã ngành cho AI.
+    ...evidenceProfile(u),
   }
 }

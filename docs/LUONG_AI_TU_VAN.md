@@ -24,7 +24,7 @@ flowchart TD
     G -->|có| G1[Tính riêng theo công thức thang 100<br/>compositeCandidates]
     G -->|không| H{Loại trường, ĐHQG, ngành<br/>có khớp không?}
     H -->|không| H1[Đếm vào nhóm bị loại]
-    H -->|có| I[Chấm 6 tiêu chí cho từng ngành khớp<br/>giữ ngành điểm cao nhất]
+    H -->|có| I[Chấm 4 tiêu chí cho từng ngành khớp<br/>giữ ngành điểm cao nhất]
     I --> J{Có ngành đã xác minh<br/>+ ít nhất 1 tiêu chí khác?}
     J -->|có| K[Nhóm XẾP HẠNG]
     J -->|không| L[Nhóm CẦN BỔ SUNG DỮ LIỆU]
@@ -77,8 +77,6 @@ Tiêu chí "Ngành" luôn phải có trọng số > 0.
 | Điểm tham chiếu | `50 + 500 × (điểm nhập − điểm chuẩn) / thang điểm`, giới hạn 0–100 | Bỏ khỏi mẫu số |
 | Học phí | `min(100, 100 × ngân sách / học phí tối đa)`; miễn học phí = 100 | Bỏ khỏi mẫu số |
 | Khu vực | Đúng quận trụ sở = 100, khác quận = 0 | Bỏ khỏi mẫu số |
-| Chất lượng / xếp hạng | Chưa có dữ liệu kiểm chứng | Luôn bỏ khỏi mẫu số |
-| Học bổng | Chưa có dữ liệu kiểm chứng | Luôn bỏ khỏi mẫu số |
 
 ### 3.3. Điểm tổng và độ phủ
 
@@ -108,7 +106,7 @@ Các trường này **không xếp chung** với bảng trên mà có mục riê
 
 ```js
 {
-  ranked: [/* top 5 */ { slug, name, major, score, coverage, evaluatedCount, criteria: { major, admission, tuition, geography, quality, scholarship } }],
+  ranked: [/* top 5 */ { slug, name, major, score, coverage, evaluatedCount, criteria: { major, admission, tuition, geography } }],
   rankedCount,   // tổng số trường đủ điều kiện xếp hạng
   needsData: [], // trường khớp ngành nhưng thiếu dữ liệu, kèm lý do
   excluded,      // số trường bị loại do không khớp ngành / loại trường / ĐHQG
@@ -134,4 +132,3 @@ Trên giao diện kết quả (WBS 4.8, `RecommendationResults`):
 ## 6. Việc còn mở
 
 - Lưu lịch sử tư vấn (WBS 5.10, 6.7): đã có model `Consultation` ở backend nhưng chưa có API và giao diện.
-- Tiêu chí Chất lượng và Học bổng chưa có dữ liệu kiểm chứng nên đang luôn bị bỏ qua.

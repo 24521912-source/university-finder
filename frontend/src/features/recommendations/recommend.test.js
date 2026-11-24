@@ -11,16 +11,17 @@ test('học phí đúng ngành từ seed được chấm; tiêu chí thiếu kh�
   const { ranked } = recommend([school('khoa-hoc-tu-nhien-dhqg')], preferences)
   assert.equal(ranked.length, 1)
   assert.equal(ranked[0].score, 100)
-  assert.equal(ranked[0].coverage, 45)
+  assert.equal(ranked[0].coverage, 53) // (ngành 30 + học phí 15) / 85
   assert.equal(ranked[0].criteria.tuition.score, 100)
-  for (const key of ['admission', 'geography', 'quality', 'scholarship']) assert.equal(ranked[0].criteria[key].score, null)
+  assert.deepEqual(Object.keys(ranked[0].criteria), ['major', 'admission', 'tuition', 'geography'])
+  for (const key of ['admission', 'geography']) assert.equal(ranked[0].criteria[key].score, null)
 })
 
 test('chỉ có ngành thì chuyển sang Cần bổ sung dữ liệu, không có điểm tổng', () => {
   const { ranked, needsData } = recommend([school('khoa-hoc-tu-nhien-dhqg')], { ...preferences, budget: 'any' })
   assert.equal(ranked.length, 0)
   assert.equal(needsData[0].score, null)
-  assert.equal(needsData[0].coverage, 30)
+  assert.equal(needsData[0].coverage, 35) // 30 / 85
   assert.equal(needsData[0].criteria.geography.score, null)
 })
 
@@ -32,8 +33,8 @@ test('khu vực: đúng quận trụ sở 100, khác quận 0', () => {
 })
 
 test('mức ưu tiên 1–5 đổi ra trọng số; không quan tâm thì bỏ khỏi phép tính', () => {
-  assert.deepEqual(weightsFromPriorities({ major: 1, admission: 2, tuition: 3, geography: 0, quality: 5, scholarship: 4 }),
-    { major: 1, admission: 0.75, tuition: 0.55, geography: 0, quality: 0.3, scholarship: 0.4 })
+  assert.deepEqual(weightsFromPriorities({ major: 1, admission: 2, tuition: 3, geography: 0 }),
+    { major: 1, admission: 0.75, tuition: 0.55, geography: 0 })
   const u = school('khoa-hoc-tu-nhien-dhqg')
   const p = { ...preferences, budget: '20000000', district: 'Quận Không Tồn Tại' }
   const ignored = recommend([u], p, weightsFromPriorities({ ...DEFAULT_PRIORITIES, geography: 0 })).ranked[0]
@@ -107,7 +108,7 @@ test('điểm THPT VLU dùng đúng ngành, tổ hợp, năm, thang; sai điều
   const a = u.admissions.find((a) => a.majorCode === p.majorCode && a.method === p.method && a.program === 'Standard Program / Global Standard Program')
   assert.ok(a && a.combinations.includes('A00'))
   const r = recommend([u], p).ranked[0]
-  assert.equal(r.coverage, 55)
+  assert.equal(r.coverage, 65) // (ngành 30 + điểm 25) / 85
   assert.equal(r.criteria.admission.score, Math.min(100, 50 + 500 * (16 - a.score) / 30))
   for (const patch of [{ combination: 'Z99' }]) {
     assert.equal(recommend([u], { ...p, ...patch }).ranked.length, 0)
@@ -151,7 +152,7 @@ test('trọng số có thể đổi và mẫu số chỉ gồm tiêu chí hợp 
   const tuitionScore = 20000000 / 38600000 * 100
   assert.equal(r.score, Math.round((100 * 30 + tuitionScore * 30) / 60 * 10) / 10)
   assert.equal(r.usedWeight, 60)
-  assert.equal(r.totalWeight, 115)
+  assert.equal(r.totalWeight, 100) // 30 + 25 + 30 + 15
   assert.throws(() => recommend([], preferences, { ...WEIGHTS, tuition: -1 }))
 })
 

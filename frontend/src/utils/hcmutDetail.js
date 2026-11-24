@@ -1,48 +1,11 @@
-// Bằng chứng đã duyệt riêng HCMUT, lưu trong MongoDB (field detailEvidence của trường, trả về qua API chi tiết).
-// Dùng để kiểm tra dữ liệu API, không thay thế API. Không import vào AI và không thay đổi SOURCES dùng chung.
-const evidenceOf = university => {
-  const evidence = university?.detailEvidence
-  return evidence && typeof evidence === 'object' && evidence.slug === university.slug ? evidence : null
-}
-
-export const isHcmut = university => !!evidenceOf(university)
-export const hcmutSources = university => {
-  const evidence = evidenceOf(university)
-  return evidence ? Object.fromEntries(Object.entries(evidence.sources || {}).map(([key, source]) => [key, source.url])) : {}
-}
-const objects = value => Array.isArray(value) ? value.filter(item => item && typeof item === 'object') : []
-const approvedFields = (item, approved, fields) => approved && fields.every(key => item[key] === approved[key])
-
-export function hcmutProfile(university) {
-  const evidence = evidenceOf(university)
-  if (!evidence) return null
-  const approved = evidence.profile
-  const campuses = objects(university.campuses).filter(item => approved.campuses.some(campus => approvedFields(item, campus, ['_id', 'name', 'address'])))
-  return {
-    foundedYear: university.foundedYear === approved.foundedYear ? university.foundedYear : null,
-    address: university.address?.full === approved.address ? university.address.full : null,
-    phone: university.contact?.phone === approved.phone ? university.contact.phone : null,
-    universitySystem: university.belongsToUniversitySystem === true && university.universitySystem === approved.universitySystem ? university.universitySystem : null,
-    campuses,
-    map: null,
-  }
-}
-
-export function hcmutContent(university) {
-  const evidence = evidenceOf(university)
-  if (!evidence) return null
-  const result = {}
-  for (const key of ['facilities', 'scholarships', 'studentLife', 'careerOpportunities']) {
-    result[key] = objects(university[key]).filter(item => evidence.content[key].some(approved => approvedFields(item, approved, Object.keys(approved))))
-  }
-  result.dormitory = approvedFields(university.dormitory || {}, evidence.content.dormitory, ['available', 'description']) ? university.dormitory : {}
-  return result
-}
+// Điểm chuẩn và học phí đã duyệt riêng của Bách khoa (HCMUT): xét tuyển tổng hợp theo mã xét tuyển, thang 100.
+// Chỉ áp dụng khi detailEvidence có nhóm mã xét tuyển (groups) và bản ghi đã duyệt (records); trường khác dùng detailData chung.
+import { approvedFields, evidenceOf, evidenceSources, objects } from './detailEvidence.js'
 
 export function hcmutDetailData(university) {
   const evidence = evidenceOf(university)
-  if (!evidence) return null
-  const sources = hcmutSources(university)
+  if (!evidence?.groups || !Array.isArray(evidence.records) || !Array.isArray(evidence.tuition)) return null
+  const sources = evidenceSources(university)
   const records = objects(university.admissions)
   const accepted = []
   for (const record of records) {

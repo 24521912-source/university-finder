@@ -1,4 +1,6 @@
 // Kiểm tra dữ liệu quản trị tài khoản. Trả về câu báo lỗi, hoặc null nếu hợp lệ.
+const { passwordError } = require('../../utils/passwordPolicy')
+
 const EMAIL = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
 const OBJECT_ID = /^[a-f0-9]{24}$/i
 const isText = (value) => typeof value === 'string' && value.trim() !== ''
@@ -12,8 +14,7 @@ function validateCreate({ fullName, email, password } = {}) {
   if (!isText(fullName)) return 'Vui lòng nhập họ tên'
   if (fullName.trim().length > 100) return 'Họ tên tối đa 100 ký tự'
   if (typeof email !== 'string' || !EMAIL.test(email.trim())) return 'Email không hợp lệ'
-  if (typeof password !== 'string' || password.length < 6) return 'Mật khẩu tạm tối thiểu 6 ký tự'
-  return null
+  return passwordError(password, { label: 'Mật khẩu tạm', email })
 }
 
 function validateStatus({ status } = {}) {

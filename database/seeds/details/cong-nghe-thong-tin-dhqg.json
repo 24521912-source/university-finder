@@ -1,0 +1,171 @@
+{
+  "slug": "cong-nghe-thong-tin-dhqg",
+  "admissionProgramDefault": "Chương trình chuẩn",
+  "set": {
+    "media": {
+      "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/0/00/Logo_UIT_updated.svg",
+      "gallery": []
+    },
+    "overview": { "studentCount": null, "facultyCount": null, "campusCount": 1 },
+    "campuses": [
+      {
+        "_id": "6b058957622532b69b7960c8",
+        "name": "Cơ sở chính – Khu đô thị ĐHQG-HCM",
+        "address": "Khu đô thị ĐHQG-HCM, Khu phố 9, Phường Linh Xuân, Thành phố Hồ Chí Minh"
+      }
+    ],
+    "facilities": [
+      {
+        "_id": "6b058957622532b69b7960c9",
+        "name": "Khu học tập, nghiên cứu và làm việc",
+        "description": "Tổng diện tích trên 14 hecta trong khuôn viên Khu đô thị ĐHQG-HCM."
+      },
+      {
+        "_id": "6b058957622532b69b7960ca",
+        "name": "Thư viện",
+        "description": "Thư viện trường (thuvien.uit.edu.vn) phục vụ tra cứu sách in, tài liệu số, cơ sở dữ liệu điện tử (EBSCO), danh mục giáo trình và luận văn UIT, có phòng họp nhóm đăng ký trước. Giờ phục vụ: thứ 2 – thứ 6 từ 7:30 đến 18:00, thứ 7 từ 8:00 đến 16:00."
+      },
+      {
+        "_id": "6b058957622532b69b7960cb",
+        "name": "Phòng học thông minh",
+        "description": "Trang tuyển sinh giới thiệu phòng học thông minh trị giá gần 2 tỷ đồng do Nhật Bản tài trợ dành cho sinh viên."
+      }
+    ],
+    "scholarships": [
+      {
+        "_id": "6b058957622532b69b7960cc",
+        "name": "Học bổng Toàn diện – Sáng tạo – Phụng sự (tuyển sinh 2025)",
+        "value": "Từ 40.000.000 đến 250.000.000 đồng/suất tùy thành tích",
+        "eligibility": "Thí sinh trúng tuyển khóa 2025 có thành tích theo danh mục trong thông báo, ví dụ giải học sinh giỏi quốc gia THPT; số suất không giới hạn. Duy trì khi điểm trung bình học kỳ từ 7.0 và điểm rèn luyện từ 65.",
+        "description": "Theo thông báo tháng 06/2025 cho khóa tuyển 2025. Đây là thông tin tham khảo; chính sách học bổng khóa mới theo thông báo của trường."
+      },
+      {
+        "_id": "6b058957622532b69b7960cd",
+        "name": "Học bổng Chương trình Tiên tiến (tuyển sinh 2025)",
+        "value": "Tương đương 100% học phí học kỳ I năm học 2025–2026",
+        "eligibility": "01 suất cho thí sinh có điểm tổ hợp cao nhất và 01 suất cho thí sinh có điểm đánh giá năng lực cao nhất trúng tuyển Chương trình Tiên tiến.",
+        "description": "Theo thông báo tháng 06/2025 cho khóa tuyển 2025; thông tin lịch sử, không phải đợt đang nhận hồ sơ."
+      }
+    ],
+    "studentLife": [
+      {
+        "_id": "6b058957622532b69b7960ce",
+        "category": "Câu lạc bộ",
+        "name": "Câu lạc bộ, đội nhóm và UITtalk",
+        "description": "Trang Cuộc sống sinh viên giới thiệu các câu lạc bộ – đội nhóm, chương trình UITtalk, thành tích sinh viên và câu chuyện UIT."
+      },
+      {
+        "_id": "6b058957622532b69b7960cf",
+        "category": "Học thuật",
+        "name": "Cuộc thi học thuật về AI và khoa học dữ liệu",
+        "description": "Sinh viên tham gia các cuộc thi như AI Challenge TP.HCM (đội OpenCubee_1 của CLB AI đạt giải cao nhất năm 2025) và Hội thi Khoa học Dữ liệu UIT 2026 (vinh danh 6 đội, tổng giải thưởng 50 triệu đồng)."
+      }
+    ],
+    "careerOpportunities": [
+      {
+        "_id": "6b058957622532b69b7960d0",
+        "field": "Ngày hội Sinh viên và Doanh nghiệp",
+        "description": "Trường tổ chức Ngày hội Sinh viên và Doanh nghiệp định kỳ mỗi năm 2 lần, kết nối sinh viên với doanh nghiệp về thực tập và tuyển dụng. Trường không công bố cam kết lương hay tỷ lệ việc làm theo năm trên trang này."
+      }
+    ],
+    "detailEvidence": {
+      "slug": "cong-nghe-thong-tin-dhqg",
+      "reviewedOn": "2026-11-24",
+      "sources": {
+        "overview": {
+          "url": "https://www.uit.edu.vn/bai-viet/tong-quan-ve-truong-dh-cong-nghe-thong-tin",
+          "status": "verified-content",
+          "evidence": "Thành lập theo QĐ 134/2006/QĐ-TTg ngày 08/06/2006; thành viên ĐHQG-HCM; trên 14 hecta trong Khu đô thị ĐHQG-HCM; địa chỉ Khu phố 9, Phường Linh Xuân; Ngày hội Sinh viên và Doanh nghiệp 2 lần/năm."
+        },
+        "brand": {
+          "url": "https://commons.wikimedia.org/wiki/File:Logo_UIT_updated.svg",
+          "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/0/00/Logo_UIT_updated.svg",
+          "status": "verified-content",
+          "evidence": "Logo quỹ đạo và hoa sen của trường, CC BY-SA 4.0. Ảnh LOGO_VNA trên uit.edu.vn là banner 20 năm, không dùng làm logo."
+        },
+        "contact": {
+          "url": "https://www.uit.edu.vn/bai-viet/lien-he",
+          "status": "verified-content",
+          "evidence": "(028) 372 52002; info@uit.edu.vn; địa chỉ như trang tổng quan."
+        },
+        "admissionsLanding": { "url": "https://tuyensinh.uit.edu.vn", "status": "verified-content" },
+        "admissionsContact": {
+          "url": "https://tuyensinh.uit.edu.vn/",
+          "status": "verified-content",
+          "evidence": "Chân trang: (028) 372 52002, hotline 090 883 1246, tuyensinh@uit.edu.vn."
+        },
+        "cutoffs": {
+          "url": "https://www.uit.edu.vn/bai-viet/truong-dai-hoc-cong-nghe-thong-tin-cong-bo-diem-chuan-trung-tuyen-nam-2026",
+          "status": "verified-content",
+          "evidence": "Đăng 09/08/2026. Xét tuyển tổng hợp, thang 100 quy đổi về thang 30 (22,80–30). Bảng điểm từng ngành nằm trong ảnh."
+        },
+        "tuition": {
+          "url": "https://tuyensinh.uit.edu.vn/sites/default/files/uploads/files/202607/dean_moi.pdf",
+          "status": "verified-content",
+          "evidence": "Học phí dự kiến năm học 2026-2027 theo chương trình, đóng 2 lần/năm."
+        },
+        "library": {
+          "url": "https://thuvien.uit.edu.vn/",
+          "status": "verified-content",
+          "evidence": "OPAC, tài liệu số, EBSCO (EDS), giáo trình và luận văn UIT, phòng họp nhóm; giờ T2–T6 7:30–18:00, T7 8:00–16:00."
+        },
+        "facilities": {
+          "url": "https://tuyensinh.uit.edu.vn/",
+          "status": "verified-content",
+          "evidence": "Video giới thiệu phòng học thông minh gần 2 tỷ đồng do Nhật Bản tài trợ; có liên kết tham quan ảo cơ sở vật chất."
+        },
+        "scholarship": {
+          "url": "https://tuyensinh.uit.edu.vn/hoc-phi-hoc-bong",
+          "status": "verified-content-historical",
+          "evidence": "Thông báo 06/2025 cho khóa 2025: học bổng Toàn diện – Sáng tạo – Phụng sự 40–250 triệu, không giới hạn suất; học bổng Chương trình Tiên tiến 100% học phí HK I. Không trình bày như đợt đang mở."
+        },
+        "studentLife": {
+          "url": "https://tuyensinh.uit.edu.vn/cuoc-song-sinh-vien",
+          "status": "verified-content",
+          "evidence": "CLB đội/nhóm, UITtalk, thành tích sinh viên; AI Challenge TP.HCM 2025; Hội thi Khoa học Dữ liệu UIT 2026."
+        },
+        "career": {
+          "url": "https://www.uit.edu.vn/bai-viet/tong-quan-ve-truong-dh-cong-nghe-thong-tin",
+          "status": "verified-content",
+          "evidence": "Ngày hội Sinh viên và Doanh nghiệp định kỳ 2 lần/năm. Câu '100% sinh viên tốt nghiệp có việc làm' không ghi năm nên không đưa vào."
+        },
+        "dormitory": {
+          "url": null,
+          "status": "not-found",
+          "evidence": "Chưa tìm thấy thông tin ký túc xá trên trang chính thức của trường; không hiển thị."
+        }
+      },
+      "profile": {
+        "foundedYear": 2006,
+        "address": "Khu đô thị ĐHQG-HCM, Khu phố 9, Phường Linh Xuân, Thành phố Hồ Chí Minh",
+        "phone": "(028) 372 52002",
+        "universitySystem": "Đại học Quốc gia TP.HCM",
+        "campuses": [
+          {
+            "_id": "6b058957622532b69b7960c8",
+            "name": "Cơ sở chính – Khu đô thị ĐHQG-HCM",
+            "address": "Khu đô thị ĐHQG-HCM, Khu phố 9, Phường Linh Xuân, Thành phố Hồ Chí Minh"
+          }
+        ]
+      },
+      "content": {
+        "facilities": [
+          { "_id": "6b058957622532b69b7960c9", "name": "Khu học tập, nghiên cứu và làm việc", "description": "Tổng diện tích trên 14 hecta trong khuôn viên Khu đô thị ĐHQG-HCM." },
+          { "_id": "6b058957622532b69b7960ca", "name": "Thư viện", "description": "Thư viện trường (thuvien.uit.edu.vn) phục vụ tra cứu sách in, tài liệu số, cơ sở dữ liệu điện tử (EBSCO), danh mục giáo trình và luận văn UIT, có phòng họp nhóm đăng ký trước. Giờ phục vụ: thứ 2 – thứ 6 từ 7:30 đến 18:00, thứ 7 từ 8:00 đến 16:00." },
+          { "_id": "6b058957622532b69b7960cb", "name": "Phòng học thông minh", "description": "Trang tuyển sinh giới thiệu phòng học thông minh trị giá gần 2 tỷ đồng do Nhật Bản tài trợ dành cho sinh viên." }
+        ],
+        "scholarships": [
+          { "_id": "6b058957622532b69b7960cc", "name": "Học bổng Toàn diện – Sáng tạo – Phụng sự (tuyển sinh 2025)" },
+          { "_id": "6b058957622532b69b7960cd", "name": "Học bổng Chương trình Tiên tiến (tuyển sinh 2025)" }
+        ],
+        "studentLife": [
+          { "_id": "6b058957622532b69b7960ce", "name": "Câu lạc bộ, đội nhóm và UITtalk" },
+          { "_id": "6b058957622532b69b7960cf", "name": "Cuộc thi học thuật về AI và khoa học dữ liệu" }
+        ],
+        "careerOpportunities": [
+          { "_id": "6b058957622532b69b7960d0", "field": "Ngày hội Sinh viên và Doanh nghiệp" }
+        ]
+      }
+    }
+  }
+}
