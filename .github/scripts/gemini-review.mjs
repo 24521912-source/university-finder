@@ -8,7 +8,7 @@ import { execFileSync } from 'node:child_process'
 import { existsSync, readFileSync } from 'node:fs'
 import { pathToFileURL } from 'node:url'
 
-const DEFAULT_MODEL = 'gemini-2.5-flash'
+const DEFAULT_MODEL = 'gemini-3.8-flash'
 const MAX_DIFF_CHARS = 120_000 // tránh vượt giới hạn token
 const COMMENT_MARKER = '<!-- gemini-code-review -->'
 
