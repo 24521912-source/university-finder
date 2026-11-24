@@ -17,4 +17,5 @@ Tạo lại: `cd backend && npm run docs`. Khi chạy backend, tài liệu có t
 | 403 | Không đủ quyền |
 | 404 | Không tìm thấy |
 | 409 | Trùng dữ liệu |
+| 429 | Thử quá nhiều lần (đăng ký, đăng nhập sai, quên / đặt lại mật khẩu). Header `Retry-After` cho biết số giây phải chờ |
 | 500 | Lỗi máy chủ |

@@ -1,6 +1,7 @@
-import { Suspense } from 'react'
+import { Suspense, useLayoutEffect } from 'react'
 import { Link, Outlet, useLocation } from 'react-router-dom'
 import { useAuth } from '../features/auth/AuthContext'
+import { titleForPath } from '../utils/pageTitle'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 
@@ -16,6 +17,11 @@ function pageKey(pathname) {
 function MainLayout() {
   const { user } = useAuth()
   const { pathname } = useLocation()
+  // Tiêu đề tab theo trang. useLayoutEffect chạy trước useEffect của trang con,
+  // nên trang chi tiết trường (useDocumentTitle) vẫn ghi đè được bằng tên trường.
+  useLayoutEffect(() => {
+    document.title = titleForPath(pathname)
+  }, [pathname])
   return (
     <>
       <a href="#main-content" className="skip-link">Bỏ qua, đến nội dung chính</a>
