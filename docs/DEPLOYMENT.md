@@ -7,7 +7,7 @@ Nginx làm web server và PM2 quản lý tiến trình API. Cuối tài liệu c
 
 ```mermaid
 flowchart LR
-    U[Người dùng<br/>trình duyệt] -->|https://unimatch.example.com| DNS[(DNS<br/>bản ghi A)]
+    U[Người dùng<br/>trình duyệt] -->|https://unimatch.tech| DNS[(DNS<br/>bản ghi A)]
     DNS --> NG
     subgraph VPS["VPS Ubuntu (cloud)"]
         NG[Nginx :80/:443<br/>HTTPS Let's Encrypt]
@@ -38,9 +38,13 @@ Tại trang quản lý DNS của tên miền, tạo 2 bản ghi trỏ về **IP 
 | A | `@` | `<IP VPS>` | 300 |
 | A | `www` | `<IP VPS>` | 300 |
 
-Kiểm tra (đợi vài phút đến vài giờ để DNS lan truyền): `nslookup unimatch.example.com` phải ra đúng IP VPS.
+Kiểm tra (đợi vài phút đến vài giờ để DNS lan truyền): `nslookup unimatch.tech` phải ra đúng IP VPS.
 
 ## 3. Cài đặt máy chủ (một lần)
+
+> **Cách nhanh:** clone repo lên VPS rồi chạy `bash deploy/setup-server.sh unimatch.tech <email>`.
+> Script làm hết các bước 3 → 7 bên dưới (Node, PM2, swap, ufw, build, Nginx, HTTPS) và chạy lại được nhiều lần.
+> Các mục dưới đây giải thích từng bước script làm.
 
 ```bash
 # Cập nhật hệ thống + công cụ cơ bản
@@ -136,7 +140,7 @@ Nginx: phục vụ file tĩnh React (có fallback `index.html` cho React Router)
 
 ```bash
 sudo apt install -y certbot python3-certbot-nginx
-sudo certbot --nginx -d unimatch.example.com -d www.unimatch.example.com
+sudo certbot --nginx -d unimatch.tech -d www.unimatch.tech
 ```
 
 Certbot tự cấu hình HTTPS, chuyển HTTP → HTTPS và tự gia hạn chứng chỉ (`systemctl list-timers | grep certbot`).

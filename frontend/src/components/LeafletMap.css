@@ -1,5 +1,5 @@
-.leaflet-map { width: 100%; height: 100%; min-height: 320px; border-radius: 12px; border: 1px solid #dbe3ee; z-index: 0; }
+.leaflet-map { width: 100%; height: 100%; min-height: 320px; border-radius: 12px; border: 1px solid var(--control-border); z-index: 0; }
 .map-popup { min-width: 180px; max-width: 260px; }
-.map-popup strong { display: block; font-size: 14px; line-height: 1.4; color: #0f172a; }
-.map-popup p { margin: 6px 0 0 !important; font-size: 12px; color: #475569; }
-.map-popup a { display: inline-block; margin-top: 8px; font-weight: 600; color: #1976d2; }
+.map-popup strong { display: block; font-size: 14px; line-height: 1.4; color: var(--text); }
+.map-popup p { margin: 6px 0 0 !important; font-size: 12px; color: var(--text-soft); }
+.map-popup a { display: inline-block; margin-top: 8px; font-weight: 600; color: var(--primary); }

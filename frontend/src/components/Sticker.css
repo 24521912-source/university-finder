@@ -1,0 +1,29 @@
+/* Viền trắng quanh hình (4 bóng lệch 2px) + một lớp bóng mờ: trông như sticker dán lên trang */
+.sticker {
+  position: absolute;
+  pointer-events: none;
+  overflow: visible;
+  transform: rotate(var(--tilt, 0deg));
+  filter:
+    drop-shadow(2px 0 0 #fff) drop-shadow(-2px 0 0 #fff)
+    drop-shadow(0 2px 0 #fff) drop-shadow(0 -2px 0 #fff)
+    drop-shadow(0 8px 10px rgba(15, 23, 42, 0.18));
+  animation: sticker-float 6s ease-in-out infinite;
+  animation-delay: var(--float-delay, 0s);
+}
+
+:root[data-theme='dark'] .sticker {
+  filter:
+    drop-shadow(2px 0 0 #e7edf6) drop-shadow(-2px 0 0 #e7edf6)
+    drop-shadow(0 2px 0 #e7edf6) drop-shadow(0 -2px 0 #e7edf6)
+    drop-shadow(0 8px 12px rgba(0, 0, 0, 0.45));
+}
+
+@keyframes sticker-float {
+  0%, 100% { transform: translateY(0) rotate(var(--tilt, 0deg)); }
+  50% { transform: translateY(-10px) rotate(calc(var(--tilt, 0deg) + 4deg)); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .sticker { animation: none; }
+}

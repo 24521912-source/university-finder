@@ -53,7 +53,7 @@ export default function AdmissionChecklist({ base, year }) {
   const location = useLocation()
   const accountId = user?.id || user?._id
   return <section className="ud-section ad-section" aria-labelledby="ad-checklist-title">
-    <div className="ad-section-heading"><div><p className="ad-kicker">CHUẨN BỊ GIẤY TỜ</p><h3 id="ad-checklist-title">Hồ sơ cơ bản</h3></div><ClipboardList size={22} aria-hidden="true" /></div>
+    <div className="ad-section-heading"><div><h3 id="ad-checklist-title">Hồ sơ cơ bản</h3></div><ClipboardList size={22} aria-hidden="true" /></div>
     <p className="ad-description">Danh sách tham khảo những giấy tờ thường cần. Mỗi trường và phương thức có thể yêu cầu thêm giấy tờ khác; đối chiếu thông báo chính thức trước khi nộp.</p>
     {loading ? <p className="ad-description" role="status">Đang kiểm tra đăng nhập…</p> : accountId ? <PersonalChecklist key={checklistKey(accountId, base, year)} storageKey={checklistKey(accountId, base, year)} /> : <div className="ad-checklist-login"><LockKeyhole size={28} aria-hidden="true" /><h4>Theo dõi hồ sơ của riêng bạn</h4><p>Đăng nhập để đánh dấu giấy tờ đã chuẩn bị và thêm những mục bạn cần bổ sung.</p><Link to="/dang-nhap" state={{ from: { pathname: location.pathname, search: location.search } }} className="ad-primary-link">Đăng nhập để theo dõi hồ sơ</Link></div>}
   </section>

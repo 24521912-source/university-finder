@@ -4,7 +4,7 @@ import { demoMethods } from './admissionDemoData'
 
 export default function AdmissionMethods({ base, year }) {
   return <section className="ud-section ad-section" aria-labelledby="ad-methods-title">
-    <div className="ad-section-heading"><div><p className="ad-kicker">CHỌN CÁCH XÉT TUYỂN</p><h3 id="ad-methods-title">Phương thức & điều kiện</h3></div><span className="ad-sample-tag">3 phương thức mẫu · {year}</span></div>
+    <div className="ad-section-heading"><div><h3 id="ad-methods-title">Phương thức & điều kiện</h3></div><span className="ad-sample-tag">3 phương thức mẫu · {year}</span></div>
     <p className="ad-description">So sánh đối tượng, điều kiện, cách xét và thời gian đăng ký ngay trong bảng.</p>
     <div className="ad-method-demo-note"><strong>Các ngưỡng điểm, ngành, công thức và thời hạn dưới đây đều là giả định.</strong> Nội dung được tạo để duyệt cách trình bày, không phải chính sách của trường.</div>
     <div className="ud-table-scroll" role="region" aria-label="So sánh các phương thức xét tuyển minh họa" tabIndex={0}>

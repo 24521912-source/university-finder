@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import { useAuth } from '../../features/auth/AuthContext'
 import { getErrorMessage } from '../../services/api'
+import Sticker from '../../components/Sticker'
 
 function Register() {
   const { register } = useAuth()
@@ -30,6 +31,7 @@ function Register() {
   return (
     <div className="container">
       <form className="auth-card" onSubmit={handleSubmit}>
+        <Sticker name="book" size={64} tilt={-10} className="auth-sticker" />
         <h1>Đăng ký</h1>
         <p className="muted">Tạo tài khoản miễn phí để lưu trường và tiêu chí tư vấn.</p>
 
