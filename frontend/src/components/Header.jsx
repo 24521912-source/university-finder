@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from 'react'
 import { Link, NavLink, useNavigate } from 'react-router-dom'
 import { useAuth } from '../features/auth/AuthContext'
 import { isAdmin } from '../utils/roles'
+import ThemeToggle from './ThemeToggle'
 
 const NAV_ITEMS = [
   { to: '/', label: 'Trang chủ', end: true },
@@ -51,6 +52,8 @@ function Header() {
           </span>
           UniMatch HCMC
         </Link>
+
+        <ThemeToggle />
 
         <button
           ref={toggleRef}
