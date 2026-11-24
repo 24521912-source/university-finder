@@ -8,11 +8,12 @@ test('Chỉ nhận state.from nội bộ, trang đã biết và đúng quyền',
   assert.equal(loginDestination({ role: 'admin' }, { pathname: '/admin/users' }), '/admin/users')
 })
 
-test('returns to the admissions checklist and year after login, ignoring unrelated query parameters', () => {
-  const from = { pathname: '/truong/kinh-te-tphcm/tuyen-sinh', search: '?muc=ho-so&nam=2026&redirect=https://example.com' }
-  assert.equal(loginDestination({ role: 'user' }, from), '/truong/kinh-te-tphcm/tuyen-sinh?muc=ho-so&nam=2026')
-  assert.equal(loginDestination({ role: 'user' }, { pathname: '/demo/tuyen-sinh', search: '?muc=ho-so' }), '/demo/tuyen-sinh?muc=ho-so')
-  assert.equal(loginDestination({ role: 'user' }, { pathname: '/truong/kinh-te-tphcm/unknown' }), '/profile')
+test('Quay lại đúng mục của trang trường, bỏ query lạ và mục không tồn tại', () => {
+  const from = { pathname: '/truong/kinh-te-tphcm/hoc-phi', search: '?redirect=https://example.com' }
+  assert.equal(loginDestination({ role: 'user' }, from), '/truong/kinh-te-tphcm/hoc-phi')
+  for (const pathname of ['/truong/kinh-te-tphcm/unknown', '/truong/kinh-te-tphcm/tuyen-sinh', '/demo/tuyen-sinh']) {
+    assert.equal(loginDestination({ role: 'user' }, { pathname }), '/profile')
+  }
 })
 
 test('Quản trị cấp cao được điều hướng như quản trị viên', () => {
