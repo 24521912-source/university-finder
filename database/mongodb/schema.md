@@ -64,7 +64,7 @@ Mọi ngành trong `universities.majors` phải tham chiếu `code` có ở đâ
   dormitory: { available: true, description },
   studentLife: [{ category, name, description }],
   careerOpportunities: [{ field, description }],
-  detailEvidence: { ... },              // (chỉ Bách khoa) danh sách bản ghi đã duyệt theo _id, nhóm mã xét tuyển, link nguồn cho trang chi tiết
+  detailEvidence: { ... },              // (Bách khoa, UIT) link nguồn, hồ sơ và nội dung đã duyệt theo _id cho trang chi tiết; riêng Bách khoa có thêm nhóm mã xét tuyển
   createdAt, updatedAt                  // Mongoose tự tạo
 }
 ```
