@@ -116,8 +116,6 @@ function evaluateMajor(u, base, major, weights, totalWeight) {
     admission: source ? admissionCriterion(u, p) : missing(),
     tuition: source ? tuitionCriterion(u, p) : missing(),
     geography: geographyCriterion(u, p),
-    quality: missing('Chưa có dữ liệu xếp hạng / chất lượng được kiểm chứng.'),
-    scholarship: missing('Chưa có chính sách học bổng được kiểm chứng.'),
   }
   for (const k of Object.keys(criteria)) if (!(weights[k] > 0)) criteria[k] = missing('Bạn chọn không quan tâm tiêu chí này; không tham gia tính điểm.')
   const keys = Object.keys(criteria).filter((k) => criteria[k].score !== null && weights[k] > 0)

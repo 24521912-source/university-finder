@@ -1,14 +1,14 @@
-// Trọng số và quy tắc chỉ áp dụng cho prototype, không phải mô hình dự báo trúng tuyển.
-export const WEIGHTS = { major: 30, admission: 25, tuition: 15, geography: 15, quality: 10, scholarship: 5 }
+// Trọng số chấm điểm phù hợp theo 4 tiêu chí; không phải mô hình dự báo trúng tuyển.
+export const WEIGHTS = { major: 30, admission: 25, tuition: 15, geography: 15 }
 // Người dùng xếp hạng ưu tiên 1–5 (1 = quan trọng nhất) -> trọng số. 0 = không quan tâm.
 export const RANK_WEIGHTS = { 1: 1, 2: 0.75, 3: 0.55, 4: 0.4, 5: 0.3 }
-export const DEFAULT_PRIORITIES = { major: 1, admission: 2, tuition: 3, geography: 4, quality: 5, scholarship: 5 }
+export const DEFAULT_PRIORITIES = { major: 1, admission: 2, tuition: 3, geography: 4 }
 export function weightsFromPriorities(priorities = DEFAULT_PRIORITIES) {
   return Object.fromEntries(Object.keys(WEIGHTS).map((k) => [k, RANK_WEIGHTS[priorities[k]] ?? 0]))
 }
 export const LABELS = {
   major: 'Ngành phù hợp', admission: 'Điểm tham chiếu', tuition: 'Học phí',
-  geography: 'Khu vực', quality: 'Chất lượng / xếp hạng', scholarship: 'Chính sách học bổng',
+  geography: 'Khu vực',
 }
 export const ACADEMIC_YEAR = '2026-2027'
 // Chỉ dùng điểm chuẩn năm này; dữ liệu năm cũ vẫn lưu nhưng không hiển thị/so sánh.
