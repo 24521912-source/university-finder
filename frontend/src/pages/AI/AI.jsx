@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { getErrorMessage } from '../../services/api'
 import { districtsOf, loadRecommendationData } from '../../features/recommendations/data'
 import { recommend, validatePreferences } from '../../features/recommendations/recommend'
@@ -44,6 +44,20 @@ function AI() {
   // Dữ liệu để lưu lịch sử, tạo cùng lúc với results. runId đổi mỗi lần tư vấn để nút Lưu reset.
   const [saved, setSaved] = useState({ runId: 0, payload: null })
   const [priorities, setPriorities] = useState(DEFAULT_PRIORITIES)
+  // Tăng mỗi lần bấm "Tư vấn" mà form còn lỗi -> effect bên dưới đưa người dùng tới lỗi đầu tiên
+  const [invalidSubmits, setInvalidSubmits] = useState(0)
+  const formRef = useRef(null)
+
+  // Lỗi hiện ngay cạnh từng ô, có thể ở phía trên màn hình (nút Tư vấn nằm cuối form).
+  // Cuộn tới lỗi đầu tiên theo thứ tự trên trang; nếu là ô nhập thì đặt con trỏ vào luôn.
+  useEffect(() => {
+    if (!invalidSubmits || !formRef.current) return
+    const first = formRef.current.querySelector('[aria-invalid="true"], .consult-field-error')
+    if (!first) return
+    const smooth = !window.matchMedia('(prefers-reduced-motion: reduce)').matches
+    first.scrollIntoView({ block: 'center', behavior: smooth ? 'smooth' : 'auto' })
+    if (first.matches('input, select, textarea')) first.focus({ preventScroll: true })
+  }, [invalidSubmits])
 
   function changePriority(key, value) {
     setPriorities((p) => ({ ...p, [key]: value }))
@@ -96,7 +110,11 @@ function AI() {
       preferences.subjectScores.forEach((v, i) => { if (!validSubject(v)) nextErrors[`subject${i}`] = 'Nhập điểm từ 0 đến 10.' })
     }
     setErrors(nextErrors)
-    if (Object.keys(nextErrors).length || loading || loadError) return
+    if (Object.keys(nextErrors).length) {
+      setInvalidSubmits((n) => n + 1)
+      return
+    }
+    if (loading || loadError) return
     const next = recommend(universities, effective, weightsFromPriorities(priorities))
     setResults(next)
     setSaved((s) => ({ runId: s.runId + 1, payload: toConsultationPayload(effective, next) }))
@@ -112,7 +130,7 @@ function AI() {
       <p className="page-subtitle">Hãy cho chúng tôi biết nhu cầu của bạn.</p>
       {loading && <p role="status">Đang tải danh sách trường từ API…</p>}
       {loadError && <div className="alert-error" role="alert">{loadError} <button type="button" className="btn btn-outline" onClick={() => { setLoadError(''); setLoading(true); setAttempt((n) => n + 1) }}>Thử lại</button></div>}
-      <form className="consult-form" onSubmit={submit} noValidate>
+      <form ref={formRef} className="consult-form" onSubmit={submit} noValidate>
         <fieldset>
           <legend><span>1</span> Ngành muốn học</legend>
           {priority('major', false)}

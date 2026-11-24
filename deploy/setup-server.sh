@@ -98,9 +98,33 @@ else
       -e "s#/home/azureuser/university-finder#$APP_DIR#g" \
       "$APP_DIR/deploy/nginx/unimatch.conf" | sudo tee "$SITE" >/dev/null
 fi
+
+# Header bảo mật: file riêng, cập nhật mỗi lần chạy script
+HEADERS=/etc/nginx/snippets/unimatch-security-headers.conf
+sudo cp "$APP_DIR/deploy/nginx/security-headers.conf" "$HEADERS"
+# Cấu hình certbot đã sửa (giữ nguyên ở trên) có thể là bản cũ chưa include file header -> chèn vào,
+# sao lưu trước để khôi phục nếu nginx -t báo lỗi
+RESTORE=""
+if ! sudo grep -q "unimatch-security-headers" "$SITE"; then
+  sudo cp "$SITE" "$SITE.bak"
+  RESTORE="$SITE.bak"
+  sudo sed -i \
+    -e "s|^\([[:space:]]*\)index index.html;|&\n\1include $HEADERS;|" \
+    -e "s|^\([[:space:]]*\)add_header Cache-Control \"public, immutable\";|&\n\1include $HEADERS;|" \
+    -e "s|^\([[:space:]]*\)proxy_pass http://unimatch_api;|&\n\1proxy_hide_header X-Powered-By;|" \
+    "$SITE"
+  echo "Đã thêm header bảo mật vào $SITE (bản cũ: $SITE.bak)"
+fi
+
 sudo ln -sf "$SITE" /etc/nginx/sites-enabled/unimatch
 sudo rm -f /etc/nginx/sites-enabled/default
-sudo nginx -t
+if ! sudo nginx -t; then
+  if [ -n "$RESTORE" ]; then
+    sudo cp "$RESTORE" "$SITE"
+    warn "Cấu hình mới bị lỗi, đã khôi phục $SITE từ bản sao lưu."
+  fi
+  exit 1
+fi
 sudo systemctl reload nginx
 
 # ---------- 7. HTTPS ----------
