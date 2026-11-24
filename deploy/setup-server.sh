@@ -79,11 +79,9 @@ VITE_API_URL=/api npm run build
 # ---------- 5. PM2 ----------
 step "Chạy API bằng PM2"
 cd "$APP_DIR"
-if pm2 describe unimatch-api >/dev/null 2>&1; then
-  pm2 reload unimatch-api
-else
-  pm2 start process.json --only unimatch-api --env production
-fi
+# Chưa chạy thì start, đang chạy thì reload lần lượt từng instance (không gián đoạn) và đọc lại biến môi trường
+# trong process.json. Đổi các tùy chọn khác như instances, file log: `pm2 delete unimatch-api` rồi chạy lại script.
+pm2 startOrReload process.json --only unimatch-api --env production --update-env
 pm2 save
 sudo env PATH="$PATH:/usr/bin" "$(command -v pm2)" startup systemd -u "$USER" --hp "$HOME" >/dev/null
 
