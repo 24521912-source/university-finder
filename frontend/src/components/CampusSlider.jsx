@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react'
-import { ChevronLeft, ChevronRight, MapPin, Pause, Play } from 'lucide-react'
+import { ChevronLeft, ChevronRight, MapPin } from 'lucide-react'
 import { CAMPUS_PHOTOS } from '../data/campusPhotos'
 import './CampusSlider.css'
 
@@ -11,10 +11,10 @@ function prefersReducedMotion() {
 }
 
 // Ảnh khuôn viên các trường chạy lần lượt: mờ dần sang ảnh sau + phóng to chậm.
-// Dừng khi rê chuột / focus vào, khi tab bị ẩn, hoặc khi người dùng bấm nút tạm dừng.
+// Dừng khi rê chuột / focus vào hoặc khi tab bị ẩn; không tự chạy nếu người dùng bật giảm chuyển động.
 function CampusSlider({ photos = CAMPUS_PHOTOS }) {
   const [index, setIndex] = useState(0)
-  const [playing, setPlaying] = useState(() => !prefersReducedMotion())
+  const [playing] = useState(() => !prefersReducedMotion())
   const [hovering, setHovering] = useState(false)
   const [tabHidden, setTabHidden] = useState(false)
   const touchStartX = useRef(null)
@@ -94,14 +94,6 @@ function CampusSlider({ photos = CAMPUS_PHOTOS }) {
       <div className="campus-controls">
         <button type="button" className="campus-btn" onClick={() => goTo(index - 1)} aria-label="Ảnh trước">
           <ChevronLeft size={18} aria-hidden="true" />
-        </button>
-        <button
-          type="button"
-          className="campus-btn"
-          onClick={() => setPlaying((value) => !value)}
-          aria-label={playing ? 'Tạm dừng trình chiếu' : 'Tiếp tục trình chiếu'}
-        >
-          {playing ? <Pause size={16} aria-hidden="true" /> : <Play size={16} aria-hidden="true" />}
         </button>
         <button type="button" className="campus-btn" onClick={() => goTo(index + 1)} aria-label="Ảnh sau">
           <ChevronRight size={18} aria-hidden="true" />
