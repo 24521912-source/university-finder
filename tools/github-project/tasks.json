@@ -69,9 +69,9 @@
       "type": "task",
       "module": "Tài liệu & Báo cáo",
       "priority": "P0",
-      "status": "In Progress",
+      "status": "Done",
       "assignee": "24521912-source",
-      "note": "docs/QUY_TRINH_NGHIEP_VU_NGUOI_DUNG.md — nhánh feature/layout-v2, chờ PR"
+      "note": "docs/QUY_TRINH_NGHIEP_VU_NGUOI_DUNG.md — đã gộp vào develop"
     },
     {
       "wbs": "2.2",
@@ -99,9 +99,9 @@
       "type": "task",
       "module": "Tài liệu & Báo cáo",
       "priority": "P0",
-      "status": "In Progress",
+      "status": "Done",
       "assignee": "24521912-source",
-      "note": "docs/LUONG_AI_TU_VAN.md — nhánh feature/ai-advisor, chờ PR"
+      "note": "docs/LUONG_AI_TU_VAN.md — đã gộp vào develop (258d073)"
     },
     {
       "wbs": "2.5",
@@ -229,9 +229,9 @@
       "type": "task",
       "module": "Khung chung",
       "priority": "P0",
-      "status": "In Progress",
+      "status": "Done",
       "assignee": "24521912-source",
-      "note": "nhánh feature/layout-v2, chờ PR (bản đầu ở feature/layout)"
+      "note": "nhánh feature/layout-v2 — đã gộp vào develop"
     },
     {
       "wbs": "4.2",
@@ -259,9 +259,9 @@
       "type": "task",
       "module": "Trường",
       "priority": "P0",
-      "status": "In Progress",
+      "status": "Done",
       "assignee": "24521912-source",
-      "note": "nhánh feature/universities, chờ PR"
+      "note": "nhánh feature/universities — đã gộp vào develop"
     },
     {
       "wbs": "4.5",
@@ -279,9 +279,9 @@
       "type": "task",
       "module": "Trường",
       "priority": "P3",
-      "status": "In Progress",
+      "status": "Done",
       "assignee": "24521912-source",
-      "note": "nhánh feature/universities, chờ PR (so sánh kết quả AI đã có từ PR #21)"
+      "note": "nhánh feature/universities — đã gộp vào develop"
     },
     {
       "wbs": "4.7",
@@ -309,9 +309,9 @@
       "type": "task",
       "module": "Trường",
       "priority": "P2",
-      "status": "Todo",
-      "assignee": null,
-      "note": "Chưa có giao diện bản đồ"
+      "status": "Done",
+      "assignee": "24521912-source",
+      "note": "nhánh feature/map, trang /ban-do — gộp vào develop ở 6ab634d"
     },
     {
       "wbs": "4.10",
@@ -379,9 +379,9 @@
       "type": "task",
       "module": "Trường",
       "priority": "P0",
-      "status": "In Progress",
+      "status": "Done",
       "assignee": "24521912-source",
-      "note": "GET /api/universities/search, /filter-options — nhánh feature/universities"
+      "note": "nhánh feature/universities — đã gộp vào develop"
     },
     {
       "wbs": "5.5",
@@ -399,9 +399,9 @@
       "type": "task",
       "module": "Trường",
       "priority": "P3",
-      "status": "In Progress",
+      "status": "Done",
       "assignee": "24521912-source",
-      "note": "GET /api/universities/compare — nhánh feature/universities"
+      "note": "nhánh feature/universities — đã gộp vào develop"
     },
     {
       "wbs": "5.7",
@@ -409,9 +409,9 @@
       "type": "task",
       "module": "Trường",
       "priority": "P2",
-      "status": "Todo",
-      "assignee": null,
-      "note": "Model có address.location; chưa có API"
+      "status": "Done",
+      "assignee": "24521912-source",
+      "note": "API /api/map/universities, nhánh feature/map — gộp ở 6ab634d"
     },
     {
       "wbs": "5.8",
@@ -439,9 +439,9 @@
       "type": "task",
       "module": "AI tư vấn",
       "priority": "P3",
-      "status": "Todo",
-      "assignee": null,
-      "note": "Model Consultation có sẵn; chưa có API"
+      "status": "Done",
+      "assignee": "24521912-source",
+      "note": "API /api/consultations, nhánh feature/consultation-history — gộp ở 45e066d"
     },
     {
       "wbs": "5.11",
@@ -529,9 +529,9 @@
       "type": "task",
       "module": "AI tư vấn",
       "priority": "P3",
-      "status": "Todo",
-      "assignee": null,
-      "note": "Chưa lưu lịch sử tư vấn"
+      "status": "Done",
+      "assignee": "24521912-source",
+      "note": "Nút \"Lưu kết quả tư vấn\" + tab Lịch sử tư vấn — gộp ở 45e066d"
     },
     {
       "wbs": "6.8",
@@ -542,6 +542,16 @@
       "status": "Done",
       "assignee": "ngochuong-money",
       "note": "recommend.test.js, composite.test.js"
+    },
+    {
+      "wbs": "6.9",
+      "title": "Quên mật khẩu: gửi link đặt lại qua email",
+      "type": "task",
+      "module": "Cá nhân & Tài khoản",
+      "priority": "P2",
+      "status": "Done",
+      "assignee": "24521912-source",
+      "note": "Trang /quen-mat-khau, /dat-lai-mat-khau, API POST /auth/forgot-password, /auth/reset-password (nodemailer) — gộp ở f723358"
     },
     {
       "wbs": "7.1",
@@ -559,9 +569,9 @@
       "type": "task",
       "module": "Quản trị",
       "priority": "P0",
-      "status": "Todo",
-      "assignee": null,
-      "note": "PR #7 (dashboard) đã đóng, chưa merge"
+      "status": "Done",
+      "assignee": "24521912-source",
+      "note": "API /api/admin/dashboard + tab Tổng quan, nhánh feature/admin-dashboard — gộp ở f00801d"
     },
     {
       "wbs": "7.3",
@@ -619,9 +629,9 @@
       "type": "task",
       "module": "Quản trị",
       "priority": "P2",
-      "status": "Todo",
-      "assignee": null,
-      "note": "Chưa có"
+      "status": "Done",
+      "assignee": "24521912-source",
+      "note": "Ô \"Tọa độ trụ sở\" trong trang admin, nhánh feature/map — gộp ở 6ab634d"
     },
     {
       "wbs": "7.9",
@@ -659,9 +669,9 @@
       "type": "task",
       "module": "Trường",
       "priority": "P0",
-      "status": "In Progress",
+      "status": "Done",
       "assignee": "24521912-source",
-      "note": "nhánh feature/universities"
+      "note": "nhánh feature/universities — đã gộp vào develop"
     },
     {
       "wbs": "8.3",
@@ -669,9 +679,9 @@
       "type": "task",
       "module": "Trường",
       "priority": "P2",
-      "status": "Todo",
-      "assignee": null,
-      "note": ""
+      "status": "Done",
+      "assignee": "24521912-source",
+      "note": "Bản đồ nhỏ ở mục Cơ sở & vị trí, nhánh feature/map — gộp ở 6ab634d"
     },
     {
       "wbs": "8.4",
@@ -689,9 +699,9 @@
       "type": "task",
       "module": "Trường",
       "priority": "P3",
-      "status": "In Progress",
+      "status": "Done",
       "assignee": "24521912-source",
-      "note": "nhánh feature/universities"
+      "note": "nhánh feature/universities — đã gộp vào develop"
     },
     {
       "wbs": "8.6",
@@ -919,9 +929,9 @@
       "type": "task",
       "module": "DevOps",
       "priority": "P0",
-      "status": "In Progress",
+      "status": "Done",
       "assignee": "24521912-source",
-      "note": "backend/apidoc/, npm run docs — nhánh feature/devops"
+      "note": "backend/apidoc/, npm run docs, CI build tài liệu mỗi lần chạy — gộp ở dc9d878"
     },
     {
       "wbs": "D.2",
@@ -959,9 +969,9 @@
       "type": "task",
       "module": "DevOps",
       "priority": "P1",
-      "status": "In Progress",
+      "status": "Done",
       "assignee": "24521912-source",
-      "note": ".github/workflows/ci.yml"
+      "note": ".github/workflows/ci.yml — đang chạy trên mọi PR và push develop"
     },
     {
       "wbs": "D.6",
@@ -988,20 +998,20 @@
       "type": "bug",
       "module": "Trường",
       "priority": "P2",
-      "status": "Todo",
-      "assignee": null,
+      "status": "Done",
+      "assignee": "24521912-source",
       "title": "Thẻ trường: \"Học phí từ\" ưu tiên đơn vị năm dù học phí theo học kỳ rẻ hơn",
-      "note": "toCard() chọn đơn vị theo thứ tự năm → học kỳ, nên UIT hiện \"84 tr/năm\" (chương trình đặc biệt) thay vì \"20,9 tr/học kỳ\". Người dùng tưởng UIT rất đắt. File: backend/src/modules/universities/universities.service.js (toCard)."
+      "note": "Sửa ở nhánh fix/university-card (universities.service.js → toCard) — gộp ở eeae0d4"
     },
     {
       "wbs": "BUG-2",
       "type": "bug",
       "module": "Trường",
       "priority": "P3",
-      "status": "Todo",
-      "assignee": null,
+      "status": "Done",
+      "assignee": "24521912-source",
       "title": "Thẻ trường: \"Điểm chuẩn từ\" hiển thị dấu chấm thập phân (22.8) không theo định dạng tiếng Việt",
-      "note": "Học phí hiển thị \"31,5 tr\" (dấu phẩy) nhưng điểm chuẩn hiện \"22.8\". Nên dùng toLocaleString(\"vi-VN\"). File: frontend/src/components/UniversityCard.jsx."
+      "note": "Sửa ở nhánh fix/university-card (UniversityCard.jsx) — gộp ở eeae0d4"
     }
   ]
 }
